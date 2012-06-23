@@ -25,3 +25,15 @@
            (regexp-match (string-append "^" prefix) word))
          (remove-duplicates (words->strings (string->words text-string))))
         string<?))
+
+(module+ test
+  (require rackunit)
+  (define test-str " a (all #all |there\\; [\"'allyour, \"(hi`]) \nthere ")
+  (check-equal? (get-completions test-str 0 "")
+                '("a" "all" "allyour" "hi" "there"))
+  (check-equal? (get-completions test-str 0 "a")
+                '("a" "all" "allyour"))
+  (check-equal? (get-completions test-str 0 "all")
+                '("all" "allyour"))
+  (check-equal? (get-completions test-str 0 "b")
+                '()))
