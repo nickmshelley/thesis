@@ -1,7 +1,8 @@
 #lang racket
 
-(provide get-completions)
-(provide string->words)
+(provide get-completions
+         string->words
+         (struct-out word))
 
 (struct word (pos str))
 
