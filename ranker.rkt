@@ -34,19 +34,30 @@
   (check-equal? (string-truncated-from-word test-string (fourth words))
                 "(this is) a \""))
 
-#;(define (list-random-ref l)
-    (list-ref l (random (length l))))
+(define (list-random-ref l)
+  (list-ref l (random (length l))))
 
 (define (test-file file file-mod)
+  (define percent .2)
   (define text-string (file->string file))
-  (define words (string->words text-string))
+  (define word-list (string->words text-string))
+  (define word-count (* (length word-list) percent))
   (list (path->string file)
-        (for/list ([word words])
+        ; This seemed to complicate the code a bunch just so I could alter the word list functionally
+        ; Any way to improve this?
+        (let loop ([words word-list]
+                   [i 1]
+                   [results empty])
+          (define word (list-random-ref words))
           (define completions (get-completions (file-mod text-string word) 0 ""))
           (define result (member (word-str word) completions))
-          (if result
-              (- (length completions) (length result))
-              #f))))
+          (define tmp-list
+            (cons (if result
+                      (- (length completions) (length result))
+                      #f) results))
+          (if (> (add1 i) word-count)
+              tmp-list
+              (loop (remove word words) (add1 i) tmp-list)))))
 
 (define (analyze results)
   (define hits-list (filter identity (second results)))
@@ -60,8 +71,11 @@
   (check-equal? (analyze (list "name" (list 6 6 4 4 2 1 0 0 5 8 9 #f #f)))
                 (list "name" (list 2 1 1 0 2) (list 5 2))))
 
+; I don't like using list places to mean things without naming them
+; is there a better way to represent the data (maybe a hash, but that seems harder to program with)?
 (define (display-results results)
   (printf "Results for file: ~a~n" (first results))
+  (printf "Total completed tokens: ~a~n" (apply + (append (second results) (third results))))
   (printf "Ranks of correct completions:~n")
   (for ([num (second results)]
         [i (in-range (length (second results)))])
