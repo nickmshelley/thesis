@@ -1,11 +1,15 @@
 #lang racket
-(require "completers/all-tokens.rkt")
+(require "completers/all-tokens.rkt"
+         srfi/13)
 
 ; gets all racket files in directory
 ; TODO: include subdirectories and only include .rkt or .ss files
-(define (get-all-files dir)
-  (for/list ([file (directory-list dir)])
-    (build-path dir file)))
+(define (get-all-source-files dir)
+  (for/list ([path (in-directory dir)]
+             #:when (and (file-exists? path)
+                         (or (string-suffix? ".rkt" (path->string path))
+                             (string-suffix? ".ss" (path->string path)))))
+    path))
 
 (define (test-all-files files file-mod)
   (map analyze (map test-file files (make-list (length files) file-mod))))
@@ -85,6 +89,6 @@
 
 (module+ main
   (printf "Alter file method: Remove~n~n")
-  (for-each display-results (test-all-files (get-all-files "test-files") string-w/o-word))
+  (for-each display-results (test-all-files (get-all-source-files "test-files") string-w/o-word))
   (printf "Alter file method: Truncate~n~n")
-  (for-each display-results (test-all-files (get-all-files "test-files") string-truncated-from-word)))
+  (for-each display-results (test-all-files (get-all-source-files "test-files") string-truncated-from-word)))
