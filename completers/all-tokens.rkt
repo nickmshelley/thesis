@@ -18,7 +18,7 @@
        (regexp-match-positions* (pregexp (format "[^~a]+" delimiters)) s)))
 
 (define (words->strings words)
-  (map (λ (w) (word-str w)) words))
+  (map word-str words))
 
 (define (get-completions text-string position prefix)
   (sort (filter

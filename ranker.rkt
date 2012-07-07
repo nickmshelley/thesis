@@ -1,9 +1,27 @@
-#lang racket
+#lang racket/base
 (require "completers/all-tokens.rkt"
+         racket/list
+         racket/file
+         racket/function
          srfi/13)
 
+; A rankings combines a filename with analyzed stats
+; Filename : string
+; ranked : list of number - index is rank and number is how many of that rank
+; unranked : number
+; missed : number
+(struct rankings (filename ranked unranked missed))
+
+(module+ test
+  ;rankings-equal? : rankings rankings -> boolean
+  (define (rankings-equal? r1 r2)
+    (and (equal? (rankings-filename r1) (rankings-filename r2))
+         (equal? (rankings-ranked r1) (rankings-ranked r2))
+         (equal? (rankings-unranked r1) (rankings-unranked r2))
+         (equal? (rankings-missed r1) (rankings-missed r2)))))
+
+; get-all-source-files : path-string -> list-of-filepath
 ; gets all racket files in directory
-; TODO: include subdirectories and only include .rkt or .ss files
 (define (get-all-source-files dir)
   (for/list ([path (in-directory dir)]
              #:when (and (file-exists? path)
@@ -11,8 +29,9 @@
                              (string-suffix? ".ss" (path->string path)))))
     path))
 
+; test-all-files : list-of-filepath (string word -> string) -> list-of-rankings
 (define (test-all-files files file-mod)
-  (map analyze (map test-file files (make-list (length files) file-mod))))
+  (map (compose1 (curry test-file file-mod)) files))
 
 (define (string-w/o-word s w)
   (string-append (substring s 0 (word-pos w))
@@ -41,54 +60,63 @@
 (define (list-random-ref l)
   (list-ref l (random (length l))))
 
-(define (test-file file file-mod)
+; test-file : (string word -> string) string -> rankings
+; file-mod modifies the string source for autocompletion at that point
+; returns list of ranks in completion list
+(define (test-file file-mod filename)
   (define percent .2)
-  (define text-string (file->string file))
-  (define word-list (string->words text-string))
-  (define word-count (* (length word-list) percent))
-  (list (path->string file)
-        ; This seemed to complicate the code a bunch just so I could alter the word list functionally
-        ; Any way to improve this?
-        (let loop ([words word-list]
-                   [i 1]
-                   [results empty])
-          (define word (list-random-ref words))
-          (define completions (get-completions (file-mod text-string word) 0 ""))
-          (define result (member (word-str word) completions))
-          (define tmp-list
-            (cons (if result
-                      (- (length completions) (length result))
-                      #f) results))
-          (if (> (add1 i) word-count)
-              tmp-list
-              (loop (remove word words) (add1 i) tmp-list)))))
+  (define file-string (file->string filename))
+  (define word-list (string->words file-string))
+  (define total-words (length word-list))
+  (define word-count (inexact->exact (ceiling (* (length word-list) percent))))
+  (define words (list-tail (shuffle word-list) (- total-words word-count)))
+  (define results 
+    (for/list ([word words])
+      (define completions (get-completions (file-mod file-string word) 0 ""))
+      (define result (member (word-str word) completions))
+      (and result
+           (- (length completions) (length result)))))
+  (define-values (ranked unranked missed) (analyze results))
+  (rankings filename ranked unranked missed))
 
+; analyze : string list-of-number -> (values list-of-number number number)
 (define (analyze results)
-  (define hits-list (filter identity (second results)))
+  (define hits-list (filter identity results))
   (define threshold 5)
-  (list (first results)
-        (for/list ([i (in-range threshold)])
-          (count (λ (num) (= num i)) hits-list))
-        (list (count (λ (num) (>= num threshold)) hits-list)
-              (count not (second results)))))
+  (values (for/list ([i (in-range threshold)])
+            (count (λ (num) (= num i)) hits-list))
+          (count (λ (num) (>= num threshold)) hits-list)
+          (count not results)))
 (module+ test
-  (check-equal? (analyze (list "name" (list 6 6 4 4 2 1 0 0 5 8 9 #f #f)))
-                (list "name" (list 2 1 1 0 2) (list 5 2))))
+  (define-values (ranked unranked missed)
+    (analyze (list 6 6 4 4 2 1 0 0 5 8 9 #f #f)))
+  (check-equal? ranked (list 2 1 1 0 2))
+  (check-equal? unranked 5)
+  (check-equal? missed 2))
 
-; I don't like using list places to mean things without naming them
-; is there a better way to represent the data (maybe a hash, but that seems harder to program with)?
-(define (display-results results)
-  (printf "Results for file: ~a~n" (first results))
-  (printf "Total completed tokens: ~a~n" (apply + (append (second results) (third results))))
+(define (display-rankings ranks)
+  (define ranked (rankings-ranked ranks))
+  (define unranked (rankings-unranked ranks))
+  (define missed (rankings-missed ranks))
+  (printf "Results for file: ~a~n" 
+          (rankings-filename ranks))
+  (printf "Total completed tokens: ~a~n" 
+          (apply + unranked missed ranked))
   (printf "Ranks of correct completions:~n")
-  (for ([num (second results)]
-        [i (in-range (length (second results)))])
+  (for ([num ranked]
+        [i (in-range (length ranked))])
     (printf "~a: ~a~n" (add1 i) num))
-  (printf ">~a: ~a~n" (length (second results)) (first (third results)))
-  (printf "Not included: ~a~n~n" (second (third results))))
+  (printf ">~a: ~a~n" (length ranked) unranked)
+  (printf "Not included: ~a~n~n" missed))
 
 (module+ main
   (printf "Alter file method: Remove~n~n")
-  (for-each display-results (test-all-files (get-all-source-files "test-files") string-w/o-word))
+  (for-each display-rankings 
+            (test-all-files 
+             (get-all-source-files "test-files") 
+             string-w/o-word))
   (printf "Alter file method: Truncate~n~n")
-  (for-each display-results (test-all-files (get-all-source-files "test-files") string-truncated-from-word)))
+  (for-each display-rankings 
+            (test-all-files 
+             (get-all-source-files "test-files") 
+             string-truncated-from-word)))
