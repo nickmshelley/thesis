@@ -4,7 +4,7 @@
          string->words
          (struct-out word))
 
-(struct word (pos str))
+(struct word (str pos))
 
 (define delimiters #<<@
 \s\(\)\[\]",'`#|\\;
@@ -14,7 +14,7 @@
 (define (string->words s)
   (map (match-lambda
          [(cons start end)
-          (word start (substring s start end))])
+          (word (substring s start end) start)])
        (regexp-match-positions* (pregexp (format "[^~a]+" delimiters)) s)))
 
 (define (words->strings words)

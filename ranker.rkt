@@ -3,6 +3,7 @@
          racket/list
          racket/file
          racket/function
+         racket/generator
          srfi/13)
 
 ; A rankings combines a filename with analyzed stats
@@ -64,9 +65,9 @@
 ; file-mod modifies the string source for autocompletion at that point
 ; returns list of ranks in completion list
 (define (test-file file-mod filename)
-  (define percent .2)
+  (define percent 1)
   (define file-string (file->string filename))
-  (define word-list (string->words file-string))
+  (define word-list (file-string->word-symbols file-string))
   (define total-words (length word-list))
   (define word-count (inexact->exact (ceiling (* (length word-list) percent))))
   (define words (list-tail (shuffle word-list) (- total-words word-count)))
@@ -78,6 +79,40 @@
            (- (length completions) (length result)))))
   (define-values (ranked unranked missed) (analyze results))
   (rankings filename ranked unranked missed))
+
+; string->words : string -> list-of-word
+(define (file-string->word-symbols s)
+  (define code-stx
+    (parameterize ([read-accept-reader #t]
+                   [read-accept-lang #t])
+      (read-syntax "name" (open-input-string s))))
+  (for/list ([w (in-generator
+                 (let loop ([stx-lst (list code-stx)])
+                   (cond
+                     [(empty? stx-lst) 0]
+                     [(symbol? (syntax-e (first stx-lst)))
+                      (yield (word (symbol->string (syntax-e (first stx-lst))) 
+                                   (sub1 (syntax-position (first stx-lst)))))
+                      (loop (rest stx-lst))]
+                     [(syntax? (syntax-e (first stx-lst)))
+                      (loop (cons (syntax-e (first stx-lst)) (rest stx-lst)))]
+                     [(list? (syntax-e (first stx-lst)))
+                      (loop (append (syntax-e (first stx-lst)) (rest stx-lst)))]
+                     [else
+                      (loop (rest stx-lst))])))])
+    w))
+(module+ test
+  (define (word-equal? w1 w2)
+    (and (equal? (word-pos w1) (word-pos w2))
+         (equal? (word-str w1) (word-str w2))))
+  (define str "(define \"hi there\" 5 8 + < be)")
+  (define results (file-string->word-symbols str))
+  (check-equal? (length results) 4)
+  (check-true (word-equal? (first results) (word "define" 1)))
+  (check-true (word-equal? (second results) (word "+" 23))
+              (format "actual: ~a" (second results)))
+  (check-true (word-equal? (third results) (word "<" 25)))
+  (check-true (word-equal? (fourth results) (word "be" 27))))
 
 ; analyze : string list-of-number -> (values list-of-number number number)
 (define (analyze results)
