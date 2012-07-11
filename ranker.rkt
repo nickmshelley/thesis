@@ -32,7 +32,7 @@
 
 ; test-all-files : list-of-filepath (string word -> string) -> list-of-rankings
 (define (test-all-files files file-mod)
-  (map (compose1 (curry test-file file-mod)) files))
+  (map (curry test-file file-mod) files))
 
 (define (string-w/o-word s w)
   (string-append (substring s 0 (word-pos w))
@@ -86,21 +86,20 @@
     (parameterize ([read-accept-reader #t]
                    [read-accept-lang #t])
       (read-syntax "name" (open-input-string s))))
-  (for/list ([w (in-generator
-                 (let loop ([stx-lst (list code-stx)])
-                   (cond
-                     [(empty? stx-lst) 0]
-                     [(symbol? (syntax-e (first stx-lst)))
-                      (yield (word (symbol->string (syntax-e (first stx-lst))) 
-                                   (sub1 (syntax-position (first stx-lst)))))
-                      (loop (rest stx-lst))]
-                     [(syntax? (syntax-e (first stx-lst)))
-                      (loop (cons (syntax-e (first stx-lst)) (rest stx-lst)))]
-                     [(list? (syntax-e (first stx-lst)))
-                      (loop (append (syntax-e (first stx-lst)) (rest stx-lst)))]
-                     [else
-                      (loop (rest stx-lst))])))])
-    w))
+  (let loop ([stx-lst (list code-stx)])
+    (cond
+      [(empty? stx-lst) empty]
+      [(symbol? (syntax-e (first stx-lst)))
+       (cons (word (symbol->string (syntax-e (first stx-lst))) 
+                   (sub1 (syntax-position (first stx-lst))))
+       (loop (rest stx-lst)))]
+      [(syntax? (syntax-e (first stx-lst)))
+       (loop (cons (syntax-e (first stx-lst)) (rest stx-lst)))]
+      [(list? (syntax-e (first stx-lst)))
+       (loop (append (syntax-e (first stx-lst)) (rest stx-lst)))]
+      [else
+       (loop (rest stx-lst))])))
+
 (module+ test
   (define (word-equal? w1 w2)
     (and (equal? (word-pos w1) (word-pos w2))
