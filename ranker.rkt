@@ -1,10 +1,13 @@
 #lang racket/base
 (require "completers/all-tokens.rkt"
+         "util.rkt"
          racket/list
          racket/file
          racket/function
-         racket/generator
-         srfi/13)
+         racket/generator)
+
+(module+ test
+  (require rackunit))
 
 ; A rankings combines a filename with analyzed stats
 ; Filename : string
@@ -21,45 +24,9 @@
          (equal? (rankings-unranked r1) (rankings-unranked r2))
          (equal? (rankings-missed r1) (rankings-missed r2)))))
 
-; get-all-source-files : path-string -> list-of-filepath
-; gets all racket files in directory
-(define (get-all-source-files dir)
-  (for/list ([path (in-directory dir)]
-             #:when (and (file-exists? path)
-                         (or (string-suffix? ".rkt" (path->string path))
-                             (string-suffix? ".ss" (path->string path)))))
-    path))
-
 ; test-all-files : list-of-filepath (string word -> string) -> list-of-rankings
 (define (test-all-files files file-mod)
   (map (curry test-file file-mod) files))
-
-(define (string-w/o-word s w)
-  (string-append (substring s 0 (word-pos w))
-                 (substring s (+ (word-pos w) (string-length (word-str w))))))
-(module+ test
-  (require rackunit)
-  (define test-string "(this is) a \"test\"")
-  (define words (string->words test-string))
-  (check-equal? (string-w/o-word test-string (third words))
-                "(this is)  \"test\"")
-  (check-equal? (string-w/o-word test-string (first words))
-                "( is) a \"test\"")
-  (check-equal? (string-w/o-word test-string (fourth words))
-                "(this is) a \"\""))
-
-(define (string-truncated-from-word s w)
-  (substring s 0 (word-pos w)))
-(module+ test
-  (check-equal? (string-truncated-from-word test-string (third words))
-                "(this is) ")
-  (check-equal? (string-truncated-from-word test-string (first words))
-                "(")
-  (check-equal? (string-truncated-from-word test-string (fourth words))
-                "(this is) a \""))
-
-(define (list-random-ref l)
-  (list-ref l (random (length l))))
 
 ; test-file : (string word -> string) string -> rankings
 ; file-mod modifies the string source for autocompletion at that point
@@ -67,10 +34,7 @@
 (define (test-file file-mod filename)
   (define percent 1)
   (define file-string (file->string filename))
-  (define word-list (file-string->word-symbols file-string))
-  (define total-words (length word-list))
-  (define word-count (inexact->exact (ceiling (* (length word-list) percent))))
-  (define words (list-tail (shuffle word-list) (- total-words word-count)))
+  (define words (percent-of-words-from-file percent file-string))
   (define results 
     (for/list ([word words])
       (define completions (get-completions (file-mod file-string word) 0 ""))
@@ -79,39 +43,6 @@
            (- (length completions) (length result)))))
   (define-values (ranked unranked missed) (analyze results))
   (rankings filename ranked unranked missed))
-
-; string->words : string -> list-of-word
-(define (file-string->word-symbols s)
-  (define code-stx
-    (parameterize ([read-accept-reader #t]
-                   [read-accept-lang #t])
-      (read-syntax "name" (open-input-string s))))
-  (let loop ([stx-lst (list code-stx)])
-    (cond
-      [(empty? stx-lst) empty]
-      [(symbol? (syntax-e (first stx-lst)))
-       (cons (word (symbol->string (syntax-e (first stx-lst))) 
-                   (sub1 (syntax-position (first stx-lst))))
-       (loop (rest stx-lst)))]
-      [(syntax? (syntax-e (first stx-lst)))
-       (loop (cons (syntax-e (first stx-lst)) (rest stx-lst)))]
-      [(list? (syntax-e (first stx-lst)))
-       (loop (append (syntax-e (first stx-lst)) (rest stx-lst)))]
-      [else
-       (loop (rest stx-lst))])))
-
-(module+ test
-  (define (word-equal? w1 w2)
-    (and (equal? (word-pos w1) (word-pos w2))
-         (equal? (word-str w1) (word-str w2))))
-  (define str "(define \"hi there\" 5 8 + < be)")
-  (define results (file-string->word-symbols str))
-  (check-equal? (length results) 4)
-  (check-true (word-equal? (first results) (word "define" 1)))
-  (check-true (word-equal? (second results) (word "+" 23))
-              (format "actual: ~a" (second results)))
-  (check-true (word-equal? (third results) (word "<" 25)))
-  (check-true (word-equal? (fourth results) (word "be" 27))))
 
 ; analyze : string list-of-number -> (values list-of-number number number)
 (define (analyze results)
