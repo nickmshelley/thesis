@@ -64,18 +64,20 @@
         (rest (syntax-e (fourth (syntax-e code-stx))))
         (list code-stx)))
   (let loop ([stx-lst stx])
-    (cond
-      [(empty? stx-lst) empty]
-      [(symbol? (syntax-e (first stx-lst)))
-       (cons (word (symbol->string (syntax-e (first stx-lst))) 
-                   (sub1 (syntax-position (first stx-lst))))
-       (loop (rest stx-lst)))]
-      [(syntax? (syntax-e (first stx-lst)))
-       (loop (cons (syntax-e (first stx-lst)) (rest stx-lst)))]
-      [(list? (syntax-e (first stx-lst)))
-       (loop (append (syntax-e (first stx-lst)) (rest stx-lst)))]
-      [else
-       (loop (rest stx-lst))])))
+    (if (empty? stx-lst)
+        empty
+        (let ([fst (syntax-e (first stx-lst))])
+          (cond
+            [(symbol? fst)
+             (cons (word (symbol->string fst) 
+                         (sub1 (syntax-position (first stx-lst))))
+                   (loop (rest stx-lst)))]
+            [(syntax? fst)
+             (loop (cons fst (rest stx-lst)))]
+            [(list? fst)
+             (loop (append fst (rest stx-lst)))]
+            [else
+             (loop (rest stx-lst))])))))
 (module+ test
   (require rackunit)
   (define (word-equal? w1 w2)
