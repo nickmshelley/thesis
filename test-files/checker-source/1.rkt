@@ -1,3 +1,5 @@
 #lang racket
 
-(+ 2 3)
+(define x 2)
+
+(+ x x)

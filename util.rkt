@@ -35,26 +35,36 @@
 (define (string-truncated-from-word s w)
   (substring s 0 (word-pos w)))
 (module+ test
+  (set! test-string "(this is) a \"test\" you know?")
+  (set! words (string->words test-string))
   (check-equal? (string-truncated-from-word test-string (third words))
                 "(this is) ")
   (check-equal? (string-truncated-from-word test-string (first words))
                 "(")
   (check-equal? (string-truncated-from-word test-string (fourth words))
-                "(this is) a \""))
+                "(this is) a \"")
+  (check-equal? (string-truncated-from-word test-string (sixth words))
+                "(this is) a \"test\" you "))
 
 (define (list-random-ref l)
   (list-ref l (random (length l))))
 
+; percent-of-words-from-file : float[0, 1] string -> list-of-word
 (define (percent-of-words-from-file percent file-string)
-  (define percent 1)
-  (define word-list (file-string->word-symbols file-string))
+  (define word-list (string->word-symbols file-string))
   (define total-words (length word-list))
   (define word-count (inexact->exact (ceiling (* (length word-list) percent))))
   (define words (list-tail (shuffle word-list) (- total-words word-count)))
   words)
+(module+ test
+  (define percent-str "#lang racket (define \"hi there\" 5 8 + < be) (hi there)")
+  (check-equal? (length (percent-of-words-from-file 1 percent-str))
+                6)
+  (check-equal? (length (percent-of-words-from-file .5 percent-str))
+                3))
 
 ; file-string->word-symbols : string -> list-of-word
-(define (file-string->word-symbols s)
+(define (string->word-symbols s)
   (define code-stx
     (parameterize ([read-accept-reader #t]
                    [read-accept-lang #t])
@@ -79,16 +89,14 @@
             [else
              (loop (rest stx-lst))])))))
 (module+ test
-  (require rackunit)
   (define (word-equal? w1 w2)
     (and (equal? (word-pos w1) (word-pos w2))
          (equal? (word-str w1) (word-str w2))))
   (define str "#lang racket (define \"hi there\" 5 8 + < be) (hi there)")
-  (define results (file-string->word-symbols str))
+  (define results (string->word-symbols str))
   (check-equal? (length results) 6)
   (check-true (word-equal? (first results) (word "define" 14)))
-  (check-true (word-equal? (second results) (word "+" 36))
-              (format "actual: ~a" (second results)))
+  (check-true (word-equal? (second results) (word "+" 36)))
   (check-true (word-equal? (third results) (word "<" 38)))
   (check-true (word-equal? (fourth results) (word "be" 40)))
   (check-true (word-equal? (fifth results) (word "hi" 45)))
