@@ -1,4 +1,7 @@
-#lang racket
+#lang racket/base
+
+(require racket/match
+         racket/list)
 
 (provide get-completions
          string->words
