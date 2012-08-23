@@ -1,5 +1,6 @@
 #lang racket/base
 (require "completers/all-tokens.rkt"
+         "word.rkt"
          "util.rkt"
          racket/list
          racket/file
@@ -27,18 +28,6 @@
         (begin (printf "wordsults1: ~a~nwordsults2: ~a~n"
                        (print-word-results wr1)
                        (print-word-results wr2))
-               #f)))
-  (define (print-word a-word)
-    (printf "(~a ~a)"
-            (word-str a-word)
-            (word-pos a-word)))
-  (define (word-equal? w1 w2)
-    (if (and (equal? (word-pos w1) (word-pos w2))
-             (equal? (word-str w1) (word-str w2)))
-        #t
-        (begin (printf "word1: ~a~nword2: ~a"
-                       (print-word w1)
-                       (print-word w2))
                #f))))
 
 (define (check-all-files files)

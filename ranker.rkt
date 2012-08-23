@@ -1,5 +1,6 @@
 #lang racket/base
 (require "completers/all-tokens.rkt"
+         "word.rkt"
          "util.rkt"
          racket/list
          racket/file

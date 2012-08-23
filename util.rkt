@@ -1,5 +1,5 @@
 #lang racket/base
-(require "completers/all-tokens.rkt"
+(require "word.rkt"
          racket/list
          srfi/13)
 
@@ -89,9 +89,6 @@
             [else
              (loop (rest stx-lst))])))))
 (module+ test
-  (define (word-equal? w1 w2)
-    (and (equal? (word-pos w1) (word-pos w2))
-         (equal? (word-str w1) (word-str w2))))
   (define str "#lang racket (define \"hi there\" 5 8 + < be) (hi there)")
   (define results (string->word-symbols str))
   (check-equal? (length results) 6)
