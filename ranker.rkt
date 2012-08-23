@@ -5,7 +5,7 @@
          racket/list
          racket/file
          racket/function
-         racket/generator)
+         plot)
 
 ; A rankings combines a filename with analyzed stats
 ; Filename : string
@@ -86,29 +86,32 @@
   (check-equal? unranked 5)
   (check-equal? missed 2))
 
-(define (display-rankings ranks)
+(define (display-rankings alter-method ranks)
+  #;(plot-new-window? #t)
+  (define filename (rankings-filename ranks))
   (define ranked (rankings-ranked ranks))
   (define unranked (rankings-unranked ranks))
   (define missed (rankings-missed ranks))
-  (printf "Results for file: ~a~n" 
-          (rankings-filename ranks))
-  (printf "Total completed tokens: ~a~n" 
-          (apply + unranked missed ranked))
-  (printf "Ranks of correct completions:~n")
-  (for ([num ranked]
-        [i (in-range (length ranked))])
-    (printf "~a: ~a~n" (add1 i) num))
-  (printf ">~a: ~a~n" (length ranked) unranked)
-  (printf "Not included: ~a~n~n" missed))
+  (display (plot (discrete-histogram
+                  (append (ranked->vectors ranked)
+                          (list (vector 'Unranked unranked))
+                          (list (vector 'Missed missed))))
+                 #:title (format "~a: ~a" filename alter-method)
+                 #:x-label "Rank"
+                 #:y-label "Amount")))
+
+; ranked->vectors : list-of-number -> list-of #(number number)
+(define (ranked->vectors ranked)
+  (for/list ([i (in-range 1 (add1 (length ranked)))]
+             [num ranked])
+    (vector i num)))
 
 (module+ main
-  (printf "Alter file method: Remove~n~n")
-  (for-each display-rankings 
+  (for-each (curry display-rankings "Remove")
             (test-all-files 
              (get-all-source-files "test-files") 
              string-w/o-word))
-  (printf "Alter file method: Truncate~n~n")
-  (for-each display-rankings 
+  (for-each (curry display-rankings "Truncate")
             (test-all-files 
              (get-all-source-files "test-files") 
              string-truncated-from-word)))
