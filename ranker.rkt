@@ -86,19 +86,26 @@
   (check-equal? unranked 5)
   (check-equal? missed 2))
 
-(define (display-rankings alter-method ranks)
+; display-rankings : list-of-rankings list-of-rankings -> void
+; plots raknings for each file side by side
+(define (display-rankings remove truncate)
   #;(plot-new-window? #t)
-  (define filename (rankings-filename ranks))
-  (define ranked (rankings-ranked ranks))
-  (define unranked (rankings-unranked ranks))
-  (define missed (rankings-missed ranks))
-  (display (plot (discrete-histogram
-                  (append (ranked->vectors ranked)
-                          (list (vector 'Unranked unranked))
-                          (list (vector 'Missed missed))))
-                 #:title (format "~a: ~a" filename alter-method)
-                 #:x-label "Rank"
-                 #:y-label "Amount")))
+  (define filename (rankings-filename remove))
+  (display 
+   (plot (list (discrete-histogram
+                (append (ranked->vectors (rankings-ranked remove))
+                        (list (vector 'Unranked (rankings-unranked remove)))
+                        (list (vector 'Missed (rankings-missed remove))))
+                #:skip 2.5 #:x-min 0 #:label "Remove")
+               (discrete-histogram
+                (append (ranked->vectors (rankings-ranked truncate))
+                        (list (vector 'Unranked (rankings-unranked truncate)))
+                        (list (vector 'Missed (rankings-missed truncate))))
+                #:skip 2.5 #:x-min 1 #:label "Truncate"
+                #:color 2 #:line-color 2))
+         #:title (path->string filename)
+         #:x-label "Rank"
+         #:y-label "Amount")))
 
 ; ranked->vectors : list-of-number -> list-of #(number number)
 (define (ranked->vectors ranked)
@@ -107,11 +114,12 @@
     (vector i num)))
 
 (module+ main
-  (for-each (curry display-rankings "Remove")
-            (test-all-files 
-             (get-all-source-files "test-files") 
-             string-w/o-word))
-  (for-each (curry display-rankings "Truncate")
-            (test-all-files 
-             (get-all-source-files "test-files") 
-             string-truncated-from-word)))
+  (define remove 
+    (test-all-files 
+     (get-all-source-files "test-files") 
+     string-w/o-word))
+  (define truncate
+    (test-all-files 
+     (get-all-source-files "test-files") 
+     string-truncated-from-word))
+  (for-each display-rankings remove truncate))
