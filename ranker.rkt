@@ -38,7 +38,7 @@
   (define percent 1)
   (map (λ (filename)
          (test-file file-mod
-                    filename
+                    (path->string filename)
                     (file->string filename)
                     percent))
        files))
@@ -103,7 +103,7 @@
                         (list (vector 'Missed (rankings-missed truncate))))
                 #:skip 2.5 #:x-min 1 #:label "Truncate"
                 #:color 2 #:line-color 2))
-         #:title (path->string filename)
+         #:title filename
          #:x-label "Rank"
          #:y-label "Amount")))
 
@@ -112,6 +112,17 @@
   (for/list ([i (in-range 1 (add1 (length ranked)))]
              [num ranked])
     (vector i num)))
+
+; sum-rankings : rankings rankings -> rankings
+; adds two rankings together
+(define (add-rankings r1 r2)
+  (rankings "All" 
+            (map + (rankings-ranked r1)
+                 (rankings-ranked r2))
+            (+ (rankings-unranked r1)
+               (rankings-unranked r2))
+            (+ (rankings-missed r1)
+               (rankings-missed r2))))
 
 (module+ main
   (define remove 
@@ -122,4 +133,11 @@
     (test-all-files 
      (get-all-source-files "test-files") 
      string-truncated-from-word))
-  (for-each display-rankings remove truncate))
+  (for-each display-rankings remove truncate)
+  (define remove-sum (foldl add-rankings 
+                            (rankings "All" (make-list 5 0) 0 0)
+                            remove))
+  (define truncate-sum (foldl add-rankings
+                              (rankings "All" (make-list 5 0) 0 0)
+                              truncate))
+  (display-rankings remove-sum truncate-sum))
