@@ -4,7 +4,9 @@
          "util.rkt"
          racket/list
          racket/file
-         racket/system)
+         racket/system
+         racket/string
+         plot)
 
 (module+ test
   (require rackunit))
@@ -14,8 +16,8 @@
 ;word-results : word number list-of-string
 (struct word-results (word passed failed-messages))
 (module+ test
-  (define (print-word-results wordsults)
-    (printf "(~a ~a ~a)"
+  (define (word-results->string wordsults)
+    (format "(~a ~a ~a)"
             (print-word (word-results-word wordsults))
             (word-results-passed wordsults)
             (length (word-results-failed-messages wordsults))))
@@ -26,8 +28,8 @@
                      (length (word-results-failed-messages wr2))))
         #t
         (begin (printf "wordsults1: ~a~nwordsults2: ~a~n"
-                       (print-word-results wr1)
-                       (print-word-results wr2))
+                       (word-results->string wr1)
+                       (word-results->string wr2))
                #f))))
 
 (define (check-all-files files)
@@ -39,7 +41,7 @@
   (define file-string (file->string file))
   (define words (percent-of-words-from-file percent file-string))
   (results 
-   file
+   (path->string file)
    (for/list ([word words])
      (check-word word file-string))))
 
@@ -79,13 +81,17 @@
 
 
 (define (display-results res)
-  (printf "Results for file: ~a~n"
-          (results-filename res))
-  (printf "Total passed: ~a~n"
-          (apply + (map word-results-passed (results-wordsults res))))
-  (printf "Total failed: ~a~n~n"
-          (apply + (map (compose1 length word-results-failed-messages)
-                        (results-wordsults res)))))
+  (define passed (apply + (map word-results-passed (results-wordsults res))))
+  (define failed (apply + (map (compose1 length word-results-failed-messages)
+                               (results-wordsults res))))
+  (define name (string-replace (results-filename res) "/" "_"))
+  (plot-file (discrete-histogram 
+                  (list (vector 'Passed passed)
+                        (vector 'Failed failed)))
+             (format "/tmp/~a--checker.png" name)
+                 #:title name
+                 #:x-label "Type"
+                 #:y-label "Amount"))
 
 (module+ main
   (for-each display-results 
