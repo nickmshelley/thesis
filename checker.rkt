@@ -88,12 +88,21 @@
   (plot-file (discrete-histogram 
                   (list (vector 'Passed passed)
                         (vector 'Failed failed)))
-             (format "/tmp/~a--checker.png" name)
+             (format "output/checker/~a.png" name)
                  #:title name
                  #:x-label "Type"
                  #:y-label "Amount"))
 
+; add-results : results results -> results
+(define (add-results r1 r2)
+  (results "All" (append (results-wordsults r1) (results-wordsults r2))))
+
 (module+ main
-  (for-each display-results 
-            (check-all-files 
-             (get-all-source-files "test-files/checker-source"))))
+  (define the-results 
+    (check-all-files 
+     (get-all-source-files "test-files/checker-source")))
+  (for-each display-results the-results)
+  (define results-sum (foldl add-results
+                             (results "All" empty)
+                             the-results))
+  (display-results results-sum))
