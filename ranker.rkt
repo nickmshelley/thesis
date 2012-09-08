@@ -5,6 +5,7 @@
          racket/list
          racket/file
          racket/function
+         racket/string
          plot)
 
 ; A rankings combines a filename with analyzed stats
@@ -89,23 +90,23 @@
 ; display-rankings : list-of-rankings list-of-rankings -> void
 ; plots raknings for each file side by side
 (define (display-rankings remove truncate)
-  #;(plot-new-window? #t)
-  (define filename (rankings-filename remove))
-  (display 
-   (plot (list (discrete-histogram
-                (append (ranked->vectors (rankings-ranked remove))
-                        (list (vector 'Unranked (rankings-unranked remove)))
-                        (list (vector 'Missed (rankings-missed remove))))
-                #:skip 2.5 #:x-min 0 #:label "Remove")
-               (discrete-histogram
-                (append (ranked->vectors (rankings-ranked truncate))
-                        (list (vector 'Unranked (rankings-unranked truncate)))
-                        (list (vector 'Missed (rankings-missed truncate))))
-                #:skip 2.5 #:x-min 1 #:label "Truncate"
-                #:color 2 #:line-color 2))
-         #:title filename
-         #:x-label "Rank"
-         #:y-label "Amount")))
+  (define name (string-replace (rankings-filename remove) "/" "_"))
+  (plot-file 
+   (list (discrete-histogram
+          (append (ranked->vectors (rankings-ranked remove))
+                  (list (vector 'Unranked (rankings-unranked remove)))
+                  (list (vector 'Missed (rankings-missed remove))))
+          #:skip 2.5 #:x-min 0 #:label "Remove")
+         (discrete-histogram
+          (append (ranked->vectors (rankings-ranked truncate))
+                  (list (vector 'Unranked (rankings-unranked truncate)))
+                  (list (vector 'Missed (rankings-missed truncate))))
+          #:skip 2.5 #:x-min 1 #:label "Truncate"
+          #:color 2 #:line-color 2))
+   (format "output/ranker/~a.png" name)
+   #:title name
+   #:x-label "Rank"
+   #:y-label "Amount"))
 
 ; ranked->vectors : list-of-number -> list-of #(number number)
 (define (ranked->vectors ranked)
@@ -125,6 +126,10 @@
                (rankings-missed r2))))
 
 (module+ main
+  (when (not (directory-exists? "output"))
+    (make-directory "output"))
+  (when (not (directory-exists? "output/ranker"))
+    (make-directory "output/ranker"))
   (define remove 
     (test-all-files 
      (get-all-source-files "test-files") 

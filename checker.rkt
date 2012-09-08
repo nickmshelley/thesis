@@ -6,6 +6,7 @@
          racket/file
          racket/system
          racket/string
+         racket/port
          plot)
 
 (module+ test
@@ -59,7 +60,8 @@
         #:exists 'replace)
       (define error-string (open-output-string)) ;will use this later
       (define success?
-        (parameterize ([current-error-port error-string])
+        (parameterize ([current-error-port error-string]
+                       [current-output-port (open-output-nowhere)])
           (system (format "racket ~a" temp-file))))
       (or success? (get-output-string error-string))))
   (define-values (passed messages) (partition boolean? res))
@@ -86,18 +88,22 @@
                                (results-wordsults res))))
   (define name (string-replace (results-filename res) "/" "_"))
   (plot-file (discrete-histogram 
-                  (list (vector 'Passed passed)
-                        (vector 'Failed failed)))
+              (list (vector 'Passed passed)
+                    (vector 'Failed failed)))
              (format "output/checker/~a.png" name)
-                 #:title name
-                 #:x-label "Type"
-                 #:y-label "Amount"))
+             #:title name
+             #:x-label "Type"
+             #:y-label "Amount"))
 
 ; add-results : results results -> results
 (define (add-results r1 r2)
   (results "All" (append (results-wordsults r1) (results-wordsults r2))))
 
 (module+ main
+  (when (not (directory-exists? "output"))
+    (make-directory "output"))
+  (when (not (directory-exists? "output/checker"))
+    (make-directory "output/checker"))
   (define the-results 
     (check-all-files 
      (get-all-source-files "test-files/checker-source")))
