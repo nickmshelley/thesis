@@ -104,7 +104,7 @@
           #:skip 2.5 #:x-min 1 #:label "Truncate"
           #:color 2 #:line-color 2))
    (format "output/ranker/~a.png" name)
-   #:title name
+   #:title (rankings-filename remove)
    #:x-label "Rank"
    #:y-label "Amount"))
 
