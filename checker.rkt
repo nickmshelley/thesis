@@ -7,7 +7,8 @@
          racket/system
          racket/string
          racket/port
-         plot)
+         plot
+         (only-in srfi/13 string-suffix?))
 
 (module+ test
   (require rackunit))
@@ -65,12 +66,11 @@
         (parameterize ([current-error-port error-string]
                        [current-output-port (open-output-nowhere)])
           (system (format "racket ~a" temp-file))))
-      (printf "~n~n***********ERROR:~n~a*************~n~n" (get-output-string error-string))
       (or success? (get-output-string error-string))))
   (define-values (passed messages) (partition boolean? res))
-  (for-each (λ (message)
-              (printf "~n~a~n" message))
-            messages)
+  #;(for-each (λ (message)
+                (printf "~n~a~n" message))
+              messages)
   (word-results word (length passed) messages))
 (module+ test
   (define str "#lang racket (define x 2) (+ x x) ;y")
@@ -106,18 +106,61 @@
                                         (results-wordsults truncate))))
   (plot-file 
    (list (discrete-histogram 
-          (list (vector 'Passed remove-passed)
-                (vector 'Failed remove-failed))
-          #:skip 2.5 #:x-min 0 #:label "Remove")
+          (append (list (vector 'Passed remove-passed))
+                  (sum-errors (results-wordsults remove)))
+          #:skip 5 #:x-min 0 #:label "Remove")
          (discrete-histogram 
-          (list (vector 'Passed truncate-passed)
-                (vector 'Failed truncate-failed))
-          #:skip 2.5 #:x-min 1 #:label "Truncate"
+          (append (list (vector 'Passed truncate-passed))
+                  (sum-errors (results-wordsults truncate)))
+          #:skip 5 #:x-min 1 #:label "Truncate"
           #:color 2 #:line-color 2))
    (format "output/checker/~a.png" name)
    #:title (results-filename remove)
    #:x-label "Type"
    #:y-label "Amount"))
+
+(define (sum-errors list-of-wordsults)
+  (map vector
+       '(Dup-Def Unbound-ID Not-Proc Contract-V Other)
+       (apply map +
+              (map (compose categorize-errors get-first-lines word-results-failed-messages)
+                   list-of-wordsults))))
+
+(define (get-first-lines str-list)
+  (for/list ([str (in-list str-list)])
+    (first (string-split str "\n"))))
+(module+ test
+  (check-equal? (get-first-lines (list (format "hi~nthere you~nguys")
+                                       (format "another one~nhere")))
+                (list "hi" "another one")))
+
+(define (categorize-errors error-message-first-lines)
+  (define-values (dup unbound not-proc contract other)
+    (for/fold ([dup 0]
+               [unbound 0]
+               [not-proc 0]
+               [contract 0]
+               [other 0])
+      ([message (in-list error-message-first-lines)])
+      (cond
+        [(string-suffix? "duplicate definition for identifier" message)
+         (values (add1 dup) unbound not-proc contract other)]
+        [(string-suffix? "unbound identifier in module" message)
+         (values dup (add1 unbound) not-proc contract other)]
+        [(string-suffix? "not a procedure;" message)
+         (values dup unbound (add1 not-proc) contract other)]
+        [(string-suffix? "contract violation" message)
+         (values dup unbound not-proc (add1 contract) other)]
+        [else
+         (values dup unbound not-proc contract (add1 other))])))
+  (list dup unbound not-proc contract other))
+(module+ test
+  (check-equal? (categorize-errors (list "lang: unbound identifier in module"
+                                         "module: duplicate definition for identifier"
+                                         "application: not a procedure;"
+                                         "+: contract violation"
+                                         "define: not allowed in an expression context"))
+                (make-list 5 1)))
 
 ; add-results : results results -> results
 (define (add-results r1 r2)
