@@ -36,83 +36,63 @@
                #f))))
 
 (define (check-all-files/places/remove files percent)
-  (define num-workers (* 2 (processor-count)))
-  (define places (for/list ([i (in-range num-workers)]
-                            [file files])
-                   (define p (make-worker-place/remove))
-                   (place-channel-put p i)
-                   (place-channel-put p percent)
-                   p))
-  (define result-messages (do-all-work-on-places files places))
-  (map list->results result-messages))
+  (check-all-files/places/? 'remove files percent))
 
 (define (check-all-files/places/truncate files percent)
+  (check-all-files/places/? 'truncate files percent))
+
+(define (check-all-files/places/? f files percent)
   (define num-workers (* 2 (processor-count)))
   (define places (for/list ([i (in-range num-workers)]
                             [file files])
-                   (define p (make-worker-place/truncate))
-                   (place-channel-put p i)
-                   (place-channel-put p percent)
+                   (define p (make-worker-place))
+                   (place-channel-put p (vector f i percent))
                    p))
-  (define result-messages (do-all-work-on-places files places))
+  ; hand out initial messages to get all places working
+  (for ([f files]
+        [p places])
+    (place-channel-put p f))
+  (define result-messages (do-all-work-on-places 
+                           (list-tail files (length places))
+                           places))
   (map list->results result-messages))
 
 ;; do-all-work-on-places : list-of-place-message list-of-place -> list-of-result-messages
-;; number of messages has to be >= number of places
+;; places should have already received their initial messages
 (define (do-all-work-on-places messages places)
-  ; hand out initial messages to get all places working
-  (for ([m messages]
-        [p places])
-    (place-channel-put p m))
-  ; hand out remaining messages
-  (define remaining-messages (list-tail messages (length places)))
-  (define partial-answers 
-    (pass-out-remaining-messages remaining-messages places))
-  (define remaining-answers
-    (wait-until-all-done places))
-  (append partial-answers remaining-answers))
+  (cond
+    [(and (empty? messages) (empty? places))
+     empty]
+    [else
+     (apply
+      sync
+      (for/list ([p (in-list places)])
+        (handle-evt
+         p
+         (λ (answer)
+           (cons answer
+                 (cond
+                   [(empty? messages)
+                    (place-channel-put p #f)
+                    (do-all-work-on-places empty (remove p places))]
+                   [else
+                    (place-channel-put p (first messages))
+                    (do-all-work-on-places (rest messages) places)]))))))]))
 
-(define (pass-out-remaining-messages messages places)
-  (let loop ([remaining messages] [answers empty])
-      (if (empty? remaining)
-          answers
-          (apply sync
-                 (for/list ([e (in-list places)])
-                   (handle-evt e (lambda (ans)
-                                   (place-channel-put e (first remaining))
-                                   (loop (rest remaining) 
-                                         (cons ans answers)))))))))
-
-
-(define (wait-until-all-done evts)
-  (let loop ([left evts] [answers empty])
-    (if (empty? left)
-        answers
-        (apply sync
-               (for/list ([e (in-list left)])
-                 (handle-evt e (lambda (ans) 
-                                 (loop (remove e left) 
-                                       (cons ans answers)))))))))
-
-(define (make-worker-place/remove)
+(require racket/match)
+(define (make-worker-place)
   (place ch
-    (define place-number (place-channel-get ch))
-    (define percent (place-channel-get ch))
+    (match-define (vector f-id place-number percent)
+      (place-channel-get ch))
+    (define f (if (eq? f-id 'remove)
+                  check-file/remove
+                  check-file/truncate))
     (let loop ()
       (define file (place-channel-get ch))
-      (define res (check-file/remove file percent place-number))
-      (place-channel-put ch (results->list res))
-      (loop))))
-
-(define (make-worker-place/truncate)
-  (place ch
-    (define place-number (place-channel-get ch))
-    (define percent (place-channel-get ch))
-    (let loop ()
-      (define file (place-channel-get ch))
-      (define res (check-file/truncate file percent place-number))
-      (place-channel-put ch (results->list res))
-      (loop))))
+      (when file
+        (define res (f file percent place-number))
+        (place-channel-put ch (results->list res))
+        (loop)))))
 
 ; check-file : string -> results
 (define (check-file/remove filename percent place-number)
@@ -154,7 +134,7 @@
   (map (λ (filename)
          (check-file file-mod filename percent))
        files))
-    
+
 ; check-file : string -> results
 (define (check-file file-mod filename percent)
   (define file-string (file->string filename))
