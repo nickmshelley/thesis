@@ -4,8 +4,11 @@
          racket/list)
 
 (provide string->words
+         string->words/nest
+         how-nested?
          words->strings
          (struct-out word)
+         (struct-out word/nest)
          word-equal?
          print-word)
 
