@@ -64,6 +64,8 @@
                 3))
 
 ; file-string->word-symbols : string -> list-of-word
+; the main purpose of this method is to ignore strings in the code
+; this prevents the output from being tainted by non-code symbols
 (define (string->word-symbols s)
   (define code-stx
     (parameterize ([read-accept-reader #t]
