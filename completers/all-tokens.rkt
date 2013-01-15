@@ -10,7 +10,7 @@
 (define (get-completions text-string prefix)
   (sort (filter
          (λ (word)
-           (regexp-match (string-append "^" prefix) word))
+           (regexp-match (regexp-quote (string-append "^" prefix)) word))
          (remove-duplicates (words->strings (string->words text-string))))
         string<?))
 (module+ test
@@ -36,7 +36,7 @@
     (sort 
      (filter
       (λ (wrd/nest)
-        (regexp-match (string-append "^" prefix) (word-str (word/nest-word wrd/nest))))
+        (regexp-match (regexp-quote (string-append "^" prefix)) (word-str (word/nest-word wrd/nest))))
       (string->words/nest text-string))
      (λ (wn1 wn2)
        (define difference (- (abs (- nested (word/nest-level wn2)))
