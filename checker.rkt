@@ -15,17 +15,17 @@
   (require rackunit))
 
 ;results : string list-of-word-results
-(struct results (filename wordsults))
+(struct results (filename wordsults) #:transparent)
 ;word-results : word number list-of-string
-(struct word-results (word passed failed-messages))
+(struct word-results (word passed failed-messages) #:transparent)
 (module+ test
   (define (word-results->string wordsults)
     (format "(~a ~a ~a)"
-            (print-word (word-results-word wordsults))
+            (word-results-word wordsults)
             (word-results-passed wordsults)
             (length (word-results-failed-messages wordsults))))
   (define (word-results-equal? wr1 wr2)
-    (if (and (word-equal? (word-results-word wr1) (word-results-word wr2))
+    (if (and (equal? (word-results-word wr1) (word-results-word wr2))
              (equal? (word-results-passed wr1) (word-results-passed wr2))
              (equal? (length (word-results-failed-messages wr1))
                      (length (word-results-failed-messages wr2))))
@@ -35,18 +35,13 @@
                        (word-results->string wr2))
                #f))))
 
-(define (check-all-files/places/remove files percent)
-  (check-all-files/places/? 'remove files percent))
-
-(define (check-all-files/places/truncate files percent)
-  (check-all-files/places/? 'truncate files percent))
-
-(define (check-all-files/places/? f files percent)
+;; check-all-files/places : symbol sybmol list-of-string float
+(define (check-all-files/places file-mod completion files percent)
   (define num-workers (* 2 (processor-count)))
   (define places (for/list ([i (in-range num-workers)]
                             [file files])
                    (define p (make-worker-place))
-                   (place-channel-put p (vector f i percent))
+                   (place-channel-put p (vector file-mod completion i percent))
                    p))
   ; hand out initial messages to get all places working
   (for ([f files]
@@ -82,35 +77,31 @@
 (require racket/match)
 (define (make-worker-place)
   (place ch
-    (match-define (vector f-id place-number percent)
+    (match-define (vector file-mod-id completion-id place-number percent)
       (place-channel-get ch))
-    (define f (if (eq? f-id 'remove)
-                  check-file/remove
-                  check-file/truncate))
+    (define file-mod-f
+      (if (eq? file-mod-id 'remove)
+          string-w/o-word
+          string-truncated-from-word))
+    (define completion-f
+      (if (eq? completion-id 'naive)
+          get-completions
+          get-completions/nest))
     (let loop ()
       (define file (place-channel-get ch))
       (when file
-        (define res (f file percent place-number))
+        (define res (check-file file file-mod-f completion-f percent place-number))
         (place-channel-put ch (results->list res))
         (loop)))))
 
-; check-file : string -> results
-(define (check-file/remove filename percent place-number)
+; check-file : string symbol symbol integer integer -> results
+(define (check-file filename file-mod completion-f percent place-number)
   (define file-string (file->string filename))
   (define words (percent-of-words-from-file percent file-string))
   (results 
    (path->string filename)
    (for/list ([word words])
-     (check-word word string-w/o-word file-string place-number))))
-
-; check-file : string -> results
-(define (check-file/truncate filename percent place-number)
-  (define file-string (file->string filename))
-  (define words (percent-of-words-from-file percent file-string))
-  (results 
-   (path->string filename)
-   (for/list ([word words])
-     (check-word word string-truncated-from-word file-string place-number))))
+     (check-word word file-mod completion-f file-string place-number))))
 
 (define (list->results l)
   (results (first l) (map list->word-results (second l))))
@@ -130,25 +121,11 @@
 (define (word->list w)
   (list (word-str w) (word-pos w)))
 
-(define (check-all-files files file-mod percent)
-  (map (λ (filename)
-         (check-file file-mod filename percent))
-       files))
-
-; check-file : string -> results
-(define (check-file file-mod filename percent)
-  (define file-string (file->string filename))
-  (define words (percent-of-words-from-file percent file-string))
-  (results 
-   (path->string filename)
-   (for/list ([word words])
-     (check-word word file-mod file-string 1))))
-
 ; check-word : word string -> word-results
 ; runs the programs resulting from replacing a word by all of its completions
-(define (check-word word file-mod file-string place-number)
+(define (check-word word file-mod completion-f file-string place-number)
   (define altered-string (file-mod file-string word))
-  (define completions (get-completions altered-string ""))
+  (define completions (completion-f altered-string "" (word-pos word)))
   (define temp-file (format "/tmp/file-~a.rkt" place-number))
   (define res
     (for/list ([completion completions])
@@ -169,12 +146,12 @@
   (word-results word (length passed) messages))
 (module+ test
   (define str "#lang racket (define x 2) (+ x x) ;y")
-  (define results (check-word (word "x" 29) string-w/o-word str 1))
+  (define results (check-word (word "x" 29) string-w/o-word get-completions str 1))
   (check-true (word-results-equal?
                results
                (word-results (word "x" 29) 2 (make-list 5 "error"))))
   (set! str "#lang racket (define x 2) (+ x x) ;y")
-  (set! results (check-word (word "x" 29) string-truncated-from-word str 1))
+  (set! results (check-word (word "x" 29) string-truncated-from-word get-completions str 1))
   (check-true (word-results-equal?
                results
                (word-results (word "x" 29) 2 (make-list 4 "error")))))
@@ -191,7 +168,7 @@
                 "you say goodbye I say hello"))
 
 
-(define (display-results remove truncate)
+(define (display-results remove truncate method)
   (define name (string-replace (results-filename remove) "/" "_"))
   (define remove-passed (apply + (map word-results-passed (results-wordsults remove))))
   (define remove-failed (apply + (map (compose1 length word-results-failed-messages)
@@ -209,7 +186,7 @@
                   (sum-errors (results-wordsults truncate)))
           #:skip 5 #:x-min 1 #:label "Truncate"
           #:color 2 #:line-color 2))
-   (format "output/checker/~a.png" name)
+   (format "output/checker/~a/~a.png" (symbol->string method) name)
    #:title (results-filename remove)
    #:x-label "Type"
    #:y-label "Amount"))
@@ -261,24 +238,30 @@
 (define (add-results r1 r2)
   (results "All" (append (results-wordsults r1) (results-wordsults r2))))
 
-(module+ main
+(define (test-with-method method)
   (define percent 1)
-  (when (not (directory-exists? "output"))
-    (make-directory "output"))
-  (when (not (directory-exists? "output/checker"))
-    (make-directory "output/checker"))
   (define source-files (get-all-source-files "test-files/checker-source"))
   (define remove
-    (check-all-files/places/remove source-files percent)
-    #;(check-all-files source-files string-w/o-word percent))
+    (check-all-files/places 'remove method source-files percent))
   (define truncate
-    (check-all-files/places/truncate source-files percent)
-    #;(check-all-files source-files string-truncated-from-word percent))
-  (for-each display-results remove truncate)
+    (check-all-files/places 'truncate method source-files percent))
+  (for-each display-results remove truncate (make-list (length remove) method))
   (define remove-sum (foldl add-results
                             (results "All" empty)
                             remove))
   (define truncate-sum (foldl add-results
                               (results "All" empty)
                               truncate))
-  (display-results remove-sum truncate-sum))
+  (display-results remove-sum truncate-sum method))
+
+(module+ main
+  (unless (directory-exists? "output")
+    (make-directory "output"))
+  (unless (directory-exists? "output/checker")
+    (make-directory "output/checker"))
+  (unless (directory-exists? "output/checker/naive")
+    (make-directory "output/checker/naive"))
+  (unless (directory-exists? "output/checker/nest")
+    (make-directory "output/checker/nest"))
+  (test-with-method 'naive)
+  (test-with-method 'nest))
