@@ -3,14 +3,16 @@
 (require "../word.rkt"
          racket/list)
 
-(provide get-completions)
+(provide get-completions
+         get-completions/nest)
 
-; get-completions : string string -> list-of-string
+; get-completions : string string integer -> list-of-string
 ; returns all unique words in the string starting with prifix sorted alphabetically
-(define (get-completions text-string prefix)
+; pos is ignored, but the functions have to take the same number of arguments
+(define (get-completions text-string prefix pos)
   (sort (filter
          (λ (word)
-           (regexp-match (regexp-quote (string-append "^" prefix)) word))
+           (regexp-match (string-append "^" (regexp-quote prefix)) word))
          (remove-duplicates (words->strings (string->words text-string))))
         string<?))
 (module+ test
@@ -36,7 +38,7 @@
     (sort 
      (filter
       (λ (wrd/nest)
-        (regexp-match (regexp-quote (string-append "^" prefix)) (word-str (word/nest-word wrd/nest))))
+        (regexp-match (string-append "^" (regexp-quote prefix)) (word-str (word/nest-word wrd/nest))))
       (string->words/nest text-string))
      (λ (wn1 wn2)
        (define difference (- (abs (- nested (word/nest-level wn2)))
