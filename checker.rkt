@@ -14,6 +14,37 @@
 (module+ test
   (require rackunit))
 
+(module+ main
+  (unless (directory-exists? "output")
+    (make-directory "output"))
+  (unless (directory-exists? "output/checker")
+    (make-directory "output/checker"))
+  (unless (directory-exists? "output/checker/naive")
+    (make-directory "output/checker/naive"))
+  (unless (directory-exists? "output/checker/nest")
+    (make-directory "output/checker/nest"))
+  (unless (directory-exists? "output/checker/keywords")
+    (make-directory "output/checker/keywords"))
+  (test-with-method 'naive)
+  (test-with-method 'nest)
+  (test-with-method 'keywords))
+
+(define (test-with-method method)
+  (define percent 1)
+  (define source-files (get-all-source-files "test-files/checker-source"))
+  (define remove
+    (check-all-files/places 'remove method source-files percent))
+  (define truncate
+    (check-all-files/places 'truncate method source-files percent))
+  (for-each display-results remove truncate (make-list (length remove) method))
+  (define remove-sum (foldl add-results
+                            (results "All" empty)
+                            remove))
+  (define truncate-sum (foldl add-results
+                              (results "All" empty)
+                              truncate))
+  (display-results remove-sum truncate-sum method))
+
 ;results : string list-of-word-results
 (struct results (filename wordsults) #:transparent)
 ;word-results : word number list-of-string
@@ -84,9 +115,15 @@
           string-w/o-word
           string-truncated-from-word))
     (define completion-f
-      (if (eq? completion-id 'naive)
-          get-completions
-          get-completions/nest))
+      (cond
+        [(eq? completion-id 'naive)
+         get-completions]
+        [(eq? completion-id 'nest)
+         get-completions/nest]
+        [(eq? completion-id 'keywords)
+         get-completions/keywords-and-position]
+        [else
+         (error "Unknown method:" completion-id)]))
     (let loop ()
       (define file (place-channel-get ch))
       (when file
@@ -128,7 +165,8 @@
   (define completions (completion-f altered-string "" (word-pos word)))
   (define temp-file (format "/tmp/file-~a.rkt" place-number))
   (define res
-    (for/list ([completion completions])
+    (for/list ([completion completions]
+               [i (in-range 5)])
       (with-output-to-file temp-file
         (lambda () 
           (display (replace-word-with-string word completion file-string)))
@@ -237,31 +275,3 @@
 ; add-results : results results -> results
 (define (add-results r1 r2)
   (results "All" (append (results-wordsults r1) (results-wordsults r2))))
-
-(define (test-with-method method)
-  (define percent 1)
-  (define source-files (get-all-source-files "test-files/checker-source"))
-  (define remove
-    (check-all-files/places 'remove method source-files percent))
-  (define truncate
-    (check-all-files/places 'truncate method source-files percent))
-  (for-each display-results remove truncate (make-list (length remove) method))
-  (define remove-sum (foldl add-results
-                            (results "All" empty)
-                            remove))
-  (define truncate-sum (foldl add-results
-                              (results "All" empty)
-                              truncate))
-  (display-results remove-sum truncate-sum method))
-
-(module+ main
-  (unless (directory-exists? "output")
-    (make-directory "output"))
-  (unless (directory-exists? "output/checker")
-    (make-directory "output/checker"))
-  (unless (directory-exists? "output/checker/naive")
-    (make-directory "output/checker/naive"))
-  (unless (directory-exists? "output/checker/nest")
-    (make-directory "output/checker/nest"))
-  (test-with-method 'naive)
-  (test-with-method 'nest))

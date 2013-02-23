@@ -8,6 +8,52 @@
          racket/string
          plot)
 
+(module+ main
+  (unless (directory-exists? "output")
+    (make-directory "output"))
+  (unless (directory-exists? "output/ranker")
+    (make-directory "output/ranker"))
+  (unless (directory-exists? "output/ranker/naive")
+    (make-directory "output/ranker/naive"))
+  (unless (directory-exists? "output/ranker/nest")
+    (make-directory "output/ranker/nest"))
+  (unless (directory-exists? "output/ranker/keywords")
+    (make-directory "output/ranker/keywords"))
+  (test-with-method 'naive)
+  (test-with-method 'nest)
+  (test-with-method 'keywords))
+
+;; test-with-method : symbol -> void
+(define (test-with-method method)
+  (define completion-f
+    (cond
+      [(eq? method 'naive)
+        get-completions]
+      [(eq? method 'nest)
+        get-completions/nest]
+      [(eq? method 'keywords)
+       get-completions/keywords-and-position]
+      [else
+       (error "Unknown method:" method)]))
+  (define remove 
+    (test-all-files 
+     (get-all-source-files "test-files") 
+     string-w/o-word
+     completion-f))
+  (define truncate
+    (test-all-files 
+     (get-all-source-files "test-files") 
+     string-truncated-from-word
+     completion-f))
+  (for-each display-rankings remove truncate (make-list (length remove) method))
+  (define remove-sum (foldl add-rankings 
+                            (rankings "All" (make-list 5 0) 0 0)
+                            remove))
+  (define truncate-sum (foldl add-rankings
+                              (rankings "All" (make-list 5 0) 0 0)
+                              truncate))
+  (display-rankings remove-sum truncate-sum method))
+
 ; A rankings combines a filename with analyzed stats
 ; Filename : string
 ; ranked : list of number - index is rank and number is how many of that rank
@@ -108,40 +154,3 @@
                (rankings-unranked r2))
             (+ (rankings-missed r1)
                (rankings-missed r2))))
-
-;; test-with-method : symbol -> void
-(define (test-with-method method)
-  (define completion-f
-    (if (eq? method 'naive)
-        get-completions
-        get-completions/nest))
-  (define remove 
-    (test-all-files 
-     (get-all-source-files "test-files") 
-     string-w/o-word
-     completion-f))
-  (define truncate
-    (test-all-files 
-     (get-all-source-files "test-files") 
-     string-truncated-from-word
-     completion-f))
-  (for-each display-rankings remove truncate (make-list (length remove) method))
-  (define remove-sum (foldl add-rankings 
-                            (rankings "All" (make-list 5 0) 0 0)
-                            remove))
-  (define truncate-sum (foldl add-rankings
-                              (rankings "All" (make-list 5 0) 0 0)
-                              truncate))
-  (display-rankings remove-sum truncate-sum method))
-
-(module+ main
-  (unless (directory-exists? "output")
-    (make-directory "output"))
-  (unless (directory-exists? "output/ranker")
-    (make-directory "output/ranker"))
-  (unless (directory-exists? "output/ranker/naive")
-    (make-directory "output/ranker/naive"))
-  (unless (directory-exists? "output/ranker/nest")
-    (make-directory "output/ranker/nest"))
-  (test-with-method 'naive)
-  (test-with-method 'nest))

@@ -4,7 +4,8 @@
          racket/list)
 
 (provide get-completions
-         get-completions/nest)
+         get-completions/nest
+         get-completions/keywords-and-position)
 
 ; get-completions : string string integer -> list-of-string
 ; returns all unique words in the string starting with prifix sorted alphabetically
