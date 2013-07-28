@@ -19,34 +19,26 @@
         [(not (empty? structs))
          (namespace-require 'racket/base)
          (define base (namespace-mapped-symbols))
-         (for ([str structs])
-           (eval (read (open-input-string str))))
-         ;; Why doesn't the following do what the for loop does?
-         ;(apply (compose eval read open-input-string) structs)
-         (filter (λ (v)
-                   (not (member v base)))
-                 (namespace-mapped-symbols))]
+         (for-each (compose eval read open-input-string) structs)
+         (filter-not (λ (v)
+                       (member v base))
+                     (namespace-mapped-symbols))]
         [else empty])))
-   (λ (a b)
-     (string<=? (symbol->string a) (symbol->string b)))))
+     string<=?
+     #:key symbol->string))
 (module+ test
   (require rackunit)
   (check-equal? (get-macro-completions "")
                 empty)
-  (check-equal? (get-macro-completions "(require racket/list \"all-tokens.rkt\") (struct thing (x y)) (struct another (z a))")
-                '(add-between another another-a another-z another3.2 another? append* append-map argmax argmin cons? count drop drop-right dropf dropf-right eighth empty empty? fifth filter-map filter-not first flatten fourth get-completions get-completions/keywords-and-position get-completions/nest in-permutations last last-pair make-list ninth partition permutations range remove-duplicates rest second seventh shuffle sixth split-at split-at-right splitf-at splitf-at-right struct:another struct:thing take take-right takef takef-right tenth thing thing-x thing-y thing1.1 thing? third)))
-
-(define (get-macro-bindings text-string)
-  (define lang (get-lang text-string))
-  (define requires (get-requires text-string))
-  (define structs (get-structs text-string))
-  #f)
+  (check (λ (a b)
+           (equal? (map symbol->string a)
+                   (map symbol->string b)))
+         (get-macro-completions "(require racket/list \"all-tokens.rkt\") (struct thing (x y)) (struct another (z a))")
+         '(add-between another another-a another-z another3.2 another? append* append-map argmax argmin cons? count drop drop-right dropf dropf-right eighth empty empty? fifth filter-map filter-not first flatten fourth get-completions get-completions/keywords-and-position get-completions/nest in-permutations last last-pair make-list ninth partition permutations range remove-duplicates rest second seventh shuffle sixth split-at split-at-right splitf-at splitf-at-right struct:another struct:thing take take-right takef takef-right tenth thing thing-x thing-y thing1.1 thing? third)))
 
 (define (get-lang text-string)
   (define match (regexp-match #px"^#lang\\s+(\\S+)" text-string))
-  (if match
-      (string->symbol (second match))
-      #f))
+  (and match (string->symbol (second match))))
 (module+ test
   (check-equal? (get-lang "hi") #f)
   (check-equal? (get-lang "#lang racket") 'racket)
