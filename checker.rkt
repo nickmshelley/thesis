@@ -1,5 +1,6 @@
 #lang racket/base
 (require "completers/all-tokens.rkt"
+         "completers/macros.rkt"
          "word.rkt"
          "util.rkt"
          racket/list
@@ -25,9 +26,12 @@
     (make-directory "output/checker/nest"))
   (unless (directory-exists? "output/checker/keywords")
     (make-directory "output/checker/keywords"))
+  (unless (directory-exists? "output/checker/macros")
+    (make-directory "output/checker/macros"))
   (test-with-method 'naive)
   (test-with-method 'nest)
-  (test-with-method 'keywords))
+  (test-with-method 'keywords)
+  (test-with-method 'macros))
 
 (define (test-with-method method)
   (define percent 1)
@@ -122,6 +126,8 @@
          get-completions/nest]
         [(eq? completion-id 'keywords)
          get-completions/keywords-and-position]
+        [(eq? completion-id 'macros)
+         get-macro-completions]
         [else
          (error "Unknown method:" completion-id)]))
     (let loop ()

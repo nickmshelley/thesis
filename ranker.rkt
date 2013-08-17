@@ -1,5 +1,6 @@
 #lang racket/base
 (require "completers/all-tokens.rkt"
+         "completers/macros.rkt"
          "word.rkt"
          "util.rkt"
          racket/list
@@ -19,9 +20,12 @@
     (make-directory "output/ranker/nest"))
   (unless (directory-exists? "output/ranker/keywords")
     (make-directory "output/ranker/keywords"))
+  (unless (directory-exists? "output/ranker/macros")
+    (make-directory "output/ranker/macros"))
   (test-with-method 'naive)
   (test-with-method 'nest)
-  (test-with-method 'keywords))
+  (test-with-method 'keywords)
+  (test-with-method 'macros))
 
 ;; test-with-method : symbol -> void
 (define (test-with-method method)
@@ -33,6 +37,8 @@
         get-completions/nest]
       [(eq? method 'keywords)
        get-completions/keywords-and-position]
+      [(eq? method 'macros)
+         get-macro-completions]
       [else
        (error "Unknown method:" method)]))
   (define remove 

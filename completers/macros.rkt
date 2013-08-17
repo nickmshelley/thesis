@@ -2,39 +2,37 @@
 
 (provide get-macro-completions)
 
-(define (get-macro-completions text)
+(define (get-macro-completions text prefix pos)
   (sort
-   (append
-    (parameterize ([current-namespace (make-base-empty-namespace)])
-      (define lang (get-lang text))
-      (when lang (namespace-require (quasiquote ,lang)))
-      (namespace-mapped-symbols))
-    (parameterize ([current-namespace (make-base-empty-namespace)])
-      (define requires (get-requires text))
-      (map namespace-require requires)
-      (namespace-mapped-symbols))
-    (parameterize ([current-namespace (make-base-empty-namespace)])
-      (define structs (get-structs text))
-      (cond
-        [(not (empty? structs))
-         (namespace-require 'racket/base)
-         (define base (namespace-mapped-symbols))
-         (for-each (compose eval read open-input-string) structs)
-         (filter-not (λ (v)
-                       (member v base))
-                     (namespace-mapped-symbols))]
-        [else empty])))
-     string<=?
-     #:key symbol->string))
+   (map 
+    symbol->string
+    (append
+     (parameterize ([current-namespace (make-base-empty-namespace)])
+       (define lang (get-lang text))
+       (when lang (namespace-require (quasiquote ,lang)))
+       (namespace-mapped-symbols))
+     (parameterize ([current-namespace (make-base-empty-namespace)])
+       (define requires (get-requires text))
+       (map namespace-require requires)
+       (namespace-mapped-symbols))
+     (parameterize ([current-namespace (make-base-empty-namespace)])
+       (define structs (get-structs text))
+       (cond
+         [(not (empty? structs))
+          (namespace-require 'racket/base)
+          (define base (namespace-mapped-symbols))
+          (for-each (compose eval read open-input-string) structs)
+          (filter-not (λ (v)
+                        (member v base))
+                      (namespace-mapped-symbols))]
+         [else empty]))))
+   string<=?))
 (module+ test
   (require rackunit)
-  (check-equal? (get-macro-completions "")
+  (check-equal? (get-macro-completions "" "" 0)
                 empty)
-  (check (λ (a b)
-           (equal? (map symbol->string a)
-                   (map symbol->string b)))
-         (get-macro-completions "(require racket/list \"all-tokens.rkt\") (struct thing (x y)) (struct another (z a))")
-         '(add-between another another-a another-z another3.2 another? append* append-map argmax argmin cons? count drop drop-right dropf dropf-right eighth empty empty? fifth filter-map filter-not first flatten fourth get-completions get-completions/keywords-and-position get-completions/nest in-permutations last last-pair make-list ninth partition permutations range remove-duplicates rest second seventh shuffle sixth split-at split-at-right splitf-at splitf-at-right struct:another struct:thing take take-right takef takef-right tenth thing thing-x thing-y thing1.1 thing? third)))
+  (check-equal? (get-macro-completions "(require racket/list \"all-tokens.rkt\") (struct thing (x y)) (struct another (z a))" "" 0)
+                (map symbol->string '(add-between another another-a another-z another3.2 another? append* append-map argmax argmin cons? count drop drop-right dropf dropf-right eighth empty empty? fifth filter-map filter-not first flatten fourth get-completions get-completions/keywords-and-position get-completions/nest in-permutations last last-pair make-list ninth partition permutations range remove-duplicates rest second seventh shuffle sixth split-at split-at-right splitf-at splitf-at-right struct:another struct:thing take take-right takef takef-right tenth thing thing-x thing-y thing1.1 thing? third))))
 
 (define (get-lang text-string)
   (define match (regexp-match #px"^#lang\\s+(\\S+)" text-string))
@@ -45,7 +43,7 @@
   (check-equal? (get-lang "#lang racket/base") 'racket/base))
 
 (define (get-requires text-string)
-  (define matches (regexp-match* #px"\\(require\\s+([^\\)]+)\\)" text-string #:match-select second))
+  (define matches (regexp-match* #px"\\(require\\s+([^\\(\\)]+)\\)" text-string #:match-select second))
   (map (λ (arg)
          (if (char=? (string-ref arg 0) #\")
              (string-trim arg "\"")
