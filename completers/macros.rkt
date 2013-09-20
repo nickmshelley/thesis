@@ -2,7 +2,7 @@
 
 (provide get-macro-completions)
 
-(define (get-macro-completions text prefix pos)
+(define (get-macro-completions filename text prefix pos)
   (sort
    (map 
     symbol->string
@@ -29,9 +29,9 @@
    string<=?))
 (module+ test
   (require rackunit)
-  (check-equal? (get-macro-completions "" "" 0)
+  (check-equal? (get-macro-completions "name" "" "" 0)
                 empty)
-  (check-equal? (get-macro-completions "(require racket/list \"all-tokens.rkt\") (struct thing (x y)) (struct another (z a))" "" 0)
+  (check-equal? (get-macro-completions "name" "(require racket/list \"all-tokens.rkt\") (struct thing (x y)) (struct another (z a))" "" 0)
                 (map symbol->string '(add-between another another-a another-z another3.2 another? append* append-map argmax argmin cons? count drop drop-right dropf dropf-right eighth empty empty? fifth filter-map filter-not first flatten fourth get-completions get-completions/keywords-and-position get-completions/nest in-permutations last last-pair make-list ninth partition permutations range remove-duplicates rest second seventh shuffle sixth split-at split-at-right splitf-at splitf-at-right struct:another struct:thing take take-right takef takef-right tenth thing thing-x thing-y thing1.1 thing? third))))
 
 (define (get-lang text-string)

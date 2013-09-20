@@ -10,7 +10,7 @@
 ; get-completions : string string integer -> list-of-string
 ; returns all unique words in the string starting with prifix sorted alphabetically
 ; pos is ignored, but the functions have to take the same number of arguments
-(define (get-completions text-string prefix pos)
+(define (get-completions filename text-string prefix pos)
   (sort (prefix-filtered-strings
          prefix
          (remove-duplicates (words->strings (string->words text-string))))
@@ -18,18 +18,18 @@
 (module+ test
   (require rackunit)
   (define test-str " a (all #all |there\\; [\"'allyour, \"(hi`]) \nthere ")
-  (check-equal? (get-completions test-str "" 0)
+  (check-equal? (get-completions "name" test-str "" 0)
                 '("a" "all" "allyour" "hi" "there"))
-  (check-equal? (get-completions test-str "a" 0)
+  (check-equal? (get-completions "name" test-str "a" 0)
                 '("a" "all" "allyour"))
-  (check-equal? (get-completions test-str "all" 0)
+  (check-equal? (get-completions "name" test-str "all" 0)
                 '("all" "allyour"))
-  (check-equal? (get-completions test-str "b" 0)
+  (check-equal? (get-completions "name" test-str "b" 0)
                 '()))
 
 ; get-completions/nest : string string integer -> list-of-string
 ; returns all unique words in the string starting with prifix sorted alphabetically
-(define (get-completions/nest text-string prefix pos)
+(define (get-completions/nest filename text-string prefix pos)
   (define nested (how-nested? text-string pos))
   (remove-duplicates
    (map
@@ -53,11 +53,11 @@
                     (word-str (word/nest-word wn2)))]))))))
 (module+ test
   (set! test-str "h (d (c) b (g f) e) a")
-  (check-equal? (get-completions/nest test-str "" 0)
+  (check-equal? (get-completions/nest "name" test-str "" 0)
                 '("a" "h" "b" "d" "e" "c" "f" "g"))
-  (check-equal? (get-completions/nest test-str "" 12)
+  (check-equal? (get-completions/nest "name" test-str "" 12)
                 '("c" "f" "g" "b" "d" "e" "a" "h"))
-  (check-equal? (get-completions/nest test-str "b" 12)
+  (check-equal? (get-completions/nest "name" test-str "b" 12)
                 '("b")))
 
 (define (prefix-filtered-strings prefix strs #:selector [selector #f])
@@ -73,7 +73,7 @@
 ;; get-completions/keywords-and-position : string string integer -> list-of-string
 ;; uses postion to see whether we are in a function application or argument position
 ;; uses keywords such as define to find possible functions and named values and ranks them higher
-(define (get-completions/keywords-and-position text-string prefix pos)
+(define (get-completions/keywords-and-position filename text-string prefix pos)
   (define priority-completions
     ;; I can't think of a reason (or a good way) to distinguish between argument and other,
     ;; so I'm just lumping all non-function positions into the argument category
@@ -82,11 +82,11 @@
         empty))
   (remove-duplicates
    (append (sort (prefix-filtered-strings prefix priority-completions) string<?)
-           (get-completions text-string prefix pos))))
+           (get-completions filename text-string prefix pos))))
 (module+ test
-  (check-equal? (get-completions/keywords-and-position "( (define (zebra a) b)" "" 1)
+  (check-equal? (get-completions/keywords-and-position "name" "( (define (zebra a) b)" "" 1)
                 (list "zebra" "a" "b" "define"))
-  (check-equal? (get-completions/keywords-and-position "( (define (zebra a) b)" "" 2)
+  (check-equal? (get-completions/keywords-and-position "name" "( (define (zebra a) b)" "" 2)
                 (list "a" "b" "define" "zebra")))
 
 ;; function-position? : string integer -> bool

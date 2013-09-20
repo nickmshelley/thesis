@@ -2,16 +2,22 @@
 
 (require compiler/zo-parse
          racket/function
-         racket/list)
+         racket/list
+         racket/system
+         racket/string)
 
-;; file is a path-string to the compiled zo file
-(define (get-zo-completions file)
-  (define comps (explode-path file))
-  (define-values (base-comps others) (split-at comps (- (length comps) 2)))
-  (define base (apply build-path base-comps))
-  (define res (with-input-from-file file zo-parse))
-  res
-  #;(append (require-tokens res base)
+(provide get-zo-completions)
+
+;; file is a path-string to the file
+(define (get-zo-completions filename text prefix pos)
+  (system (format "/Applications/plt/racket/bin/raco make ~a" filename))
+  (define-values (base name _) (split-path filename))
+  (define compiled-file (build-path base
+                                    "compiled"
+                                    (string-append (string-replace (path->string name) "." "_")
+                                                   ".zo")))
+  (define res (with-input-from-file compiled-file zo-parse))
+  (append (require-tokens res base)
           (top-levels res)))
 
 (define (require-tokens res base)
@@ -31,5 +37,5 @@
              (filter symbol? (prefix-toplevels (mod-prefix (compilation-top-code res)))))
         string<=?))
 
-(define file "/Users/heather/Nick/thesis/thesis/compiled/util_rkt.zo")
-(get-zo-completions file)
+;;(define file "/Users/heather/Nick/thesis/thesis/util.rkt")
+;;(get-zo-completions file "" "" 0)

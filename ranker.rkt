@@ -1,6 +1,7 @@
 #lang racket/base
 (require "completers/all-tokens.rkt"
          "completers/macros.rkt"
+         "completers/bytecode.rkt"
          "word.rkt"
          "util.rkt"
          racket/list
@@ -10,35 +11,31 @@
          plot)
 
 (module+ main
+  (define methods '(naive nest keywords macros bytecode))
   (unless (directory-exists? "output")
     (make-directory "output"))
   (unless (directory-exists? "output/ranker")
     (make-directory "output/ranker"))
-  (unless (directory-exists? "output/ranker/naive")
-    (make-directory "output/ranker/naive"))
-  (unless (directory-exists? "output/ranker/nest")
-    (make-directory "output/ranker/nest"))
-  (unless (directory-exists? "output/ranker/keywords")
-    (make-directory "output/ranker/keywords"))
-  (unless (directory-exists? "output/ranker/macros")
-    (make-directory "output/ranker/macros"))
-  (test-with-method 'naive)
-  (test-with-method 'nest)
-  (test-with-method 'keywords)
-  (test-with-method 'macros))
+  (for ([method (in-list methods)])
+    (define dir (string-append "output/ranker/" (symbol->string method)))
+    (unless (directory-exists? dir)
+      (make-directory dir))
+    (test-with-method method)))
 
 ;; test-with-method : symbol -> void
 (define (test-with-method method)
   (define completion-f
     (cond
       [(eq? method 'naive)
-        get-completions]
+       get-completions]
       [(eq? method 'nest)
-        get-completions/nest]
+       get-completions/nest]
       [(eq? method 'keywords)
        get-completions/keywords-and-position]
       [(eq? method 'macros)
-         get-macro-completions]
+       get-macro-completions]
+      [(eq? method 'bytecode)
+       get-zo-completions]
       [else
        (error "Unknown method:" method)]))
   (define remove 
@@ -87,7 +84,7 @@
   (define words (percent-of-words-from-file percent file-string))
   (define results 
     (for/list ([word words])
-      (define completions (completion-f (file-mod file-string word) "" (word-pos word)))
+      (define completions (completion-f filename (file-mod file-string word) "" (word-pos word)))
       (define result (member (word-str word) completions))
       (and result
            (- (length completions) (length result)))))

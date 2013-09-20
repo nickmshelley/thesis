@@ -1,6 +1,7 @@
 #lang racket/base
 (require "completers/all-tokens.rkt"
          "completers/macros.rkt"
+         "completers/bytecode.rkt"
          "word.rkt"
          "util.rkt"
          racket/list
@@ -16,22 +17,16 @@
   (require rackunit))
 
 (module+ main
+  (define methods '(naive nest keywords macros bytecode))
   (unless (directory-exists? "output")
     (make-directory "output"))
   (unless (directory-exists? "output/checker")
     (make-directory "output/checker"))
-  (unless (directory-exists? "output/checker/naive")
-    (make-directory "output/checker/naive"))
-  (unless (directory-exists? "output/checker/nest")
-    (make-directory "output/checker/nest"))
-  (unless (directory-exists? "output/checker/keywords")
-    (make-directory "output/checker/keywords"))
-  (unless (directory-exists? "output/checker/macros")
-    (make-directory "output/checker/macros"))
-  (test-with-method 'naive)
-  (test-with-method 'nest)
-  (test-with-method 'keywords)
-  (test-with-method 'macros))
+  (for ([method (in-list methods)])
+    (define dir (string-append "output/checker/" (symbol->string method)))
+    (unless (directory-exists? dir)
+      (make-directory dir))
+    (test-with-method method)))
 
 (define (test-with-method method)
   (define percent 1)
@@ -128,6 +123,8 @@
          get-completions/keywords-and-position]
         [(eq? completion-id 'macros)
          get-macro-completions]
+        [(eq? completion-id 'bytecode)
+         get-zo-completions]
         [else
          (error "Unknown method:" completion-id)]))
     (let loop ()
@@ -144,7 +141,7 @@
   (results 
    (path->string filename)
    (for/list ([word words])
-     (check-word word file-mod completion-f file-string place-number))))
+     (check-word word (path->string filename) file-mod completion-f file-string place-number))))
 
 (define (list->results l)
   (results (first l) (map list->word-results (second l))))
@@ -166,9 +163,9 @@
 
 ; check-word : word string -> word-results
 ; runs the programs resulting from replacing a word by all of its completions
-(define (check-word word file-mod completion-f file-string place-number)
+(define (check-word word filename file-mod completion-f file-string place-number)
   (define altered-string (file-mod file-string word))
-  (define completions (completion-f altered-string "" (word-pos word)))
+  (define completions (completion-f filename altered-string "" (word-pos word)))
   (define temp-file (format "/tmp/file-~a.rkt" place-number))
   (define res
     (for/list ([completion completions]
