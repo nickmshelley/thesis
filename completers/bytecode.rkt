@@ -1,30 +1,30 @@
 #lang racket/base
 
 (require compiler/zo-parse
+         compiler/cm
          racket/function
-         racket/list
-         racket/system
-         racket/string)
+         racket/dict)
 
 (provide get-zo-completions)
 
 ;; file is a path-string to the file
 (define (get-zo-completions filename text prefix pos)
-  (system (format "/Applications/plt/racket/bin/raco make ~a" filename))
+  (managed-compile-zo filename)
   (define-values (base name _) (split-path filename))
   (define compiled-file (build-path base
                                     "compiled"
-                                    (string-append (string-replace (path->string name) "." "_")
-                                                   ".zo")))
+                                    (path-add-suffix name ".zo")))
   (define res (with-input-from-file compiled-file zo-parse))
   (append (require-tokens res base)
           (top-levels res)))
 
 (define (require-tokens res base)
-  (define requires (map (curry mpi-submod base) (cdr (assoc 0 (mod-requires (compilation-top-code res))))))
+  (define requires 
+    (map (curry mpi-submod base) 
+         (dict-ref (mod-requires (compilation-top-code res)) 0)))
   (parameterize ([current-namespace (make-base-empty-namespace)])
     (map namespace-require requires)
-    (sort (map symbol->string (namespace-mapped-symbols)) string<=?)))
+    (sorted-strings-from-symbols (namespace-mapped-symbols))))
 
 (define (mpi-submod base mpi)
   (define-values (submod mp) (module-path-index-split mpi))
@@ -33,9 +33,11 @@
       (build-path base submod)))
 
 (define (top-levels res)
-  (sort (map symbol->string
-             (filter symbol? (prefix-toplevels (mod-prefix (compilation-top-code res)))))
-        string<=?))
+  (sorted-strings-from-symbols
+   (filter symbol? (prefix-toplevels (mod-prefix (compilation-top-code res))))))
+
+(define (sorted-strings-from-symbols symbols)
+  (sort (map symbol->string symbols) string<=?))
 
 ;;(define file "/Users/heather/Nick/thesis/thesis/util.rkt")
 ;;(get-zo-completions file "" "" 0)
