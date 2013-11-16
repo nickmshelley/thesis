@@ -40,7 +40,7 @@
        get-zo-completions]
       [else
        (error "Unknown method:" method)]))
-  (define dir "test-files/packages/frog")
+  (define dir "test-files/packages")
   (printf "REMOVE~n")
   (define remove 
     (test-all-files 

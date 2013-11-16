@@ -1,9 +1,6 @@
 [submodule "test-files/packages/frog"]
 	path = test-files/packages/frog
 	url = https://github.com/greghendershott/frog.git
-[submodule "test-files/packages/get-bonus"]
-	path = test-files/packages/get-bonus
-	url = https://github.com/get-bonus/get-bonus.git
 [submodule "test-files/packages/marketplace"]
 	path = test-files/packages/marketplace
 	url = https://github.com/tonyg/marketplace.git

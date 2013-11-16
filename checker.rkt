@@ -33,7 +33,7 @@
 (define (test-with-method method)
   (printf "TESTING WITH ~a~n" method)
   (define percent .01)
-  (define source-files (get-all-source-files "frog/"))
+  (define source-files (get-all-source-files "test-files/packages"))
   (printf "REMOVE~n")
   (define remove
     (check-all-files/places 'remove method source-files percent))
