@@ -69,7 +69,8 @@
 (define (string->word-symbols s)
   (define code-stx
     (parameterize ([read-accept-reader #t]
-                   [read-accept-lang #t])
+                   [read-accept-lang #t]
+                   [port-count-lines-enabled #t])
       (read-syntax "name" (open-input-string s))))
   (define stx 
     (if (string-prefix? "#lang racket" s)
@@ -91,6 +92,12 @@
             [else
              (loop (rest stx-lst))])))))
 (module+ test
+  (define lam-str "#lang racket (λ (a) b)")
+  (define lam-results (string->word-symbols lam-str))
+  (check-equal? (length lam-results) 3)
+  (check-equal? (first lam-results) (word "λ" 14))
+  (check-equal? (second lam-results) (word "a" 17))
+  (check-equal? (third lam-results) (word "b" 20))
   (define str "#lang racket (define \"hi there\" 5 8 + < be) (hi there)")
   (define results (string->word-symbols str))
   (check-equal? (length results) 6)

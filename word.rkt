@@ -45,24 +45,27 @@
 ; returns every sequence of non-delimiter characters, regardless of type
 (define (string->words/nest s)
   (define wrds (string->words s))
-  (define first-word/nest
-    (word/nest (first wrds)
-               (how-nested? s (word-pos (first wrds)))))
-  (cons first-word/nest
-        (let loop ([words (rest wrds)]
-                   [prev-word/nest first-word/nest])
-          (cond
-            [(empty? words)
-             empty]
-            [else
-             (match-define (word str start) (first words))
-             (define this-word/nest
-               (word/nest (first words)
-                          (+ (how-nested? (substring s (word-pos (word/nest-word prev-word/nest)) start)
-                                          (- start (word-pos (word/nest-word prev-word/nest))))
-                             (word/nest-level prev-word/nest))))
-             (cons this-word/nest
-                   (loop (rest words) this-word/nest))]))))
+  (cond 
+    [(> (length wrds) 0)
+     (define first-word/nest
+       (word/nest (first wrds)
+                  (how-nested? s (word-pos (first wrds)))))
+     (cons first-word/nest
+           (let loop ([words (rest wrds)]
+                      [prev-word/nest first-word/nest])
+             (cond
+               [(empty? words)
+                empty]
+               [else
+                (match-define (word str start) (first words))
+                (define this-word/nest
+                  (word/nest (first words)
+                             (+ (how-nested? (substring s (word-pos (word/nest-word prev-word/nest)) start)
+                                             (- start (word-pos (word/nest-word prev-word/nest))))
+                                (word/nest-level prev-word/nest))))
+                (cons this-word/nest
+                      (loop (rest words) this-word/nest))])))]
+    [else empty]))
 (module+ test
   (require rackunit)
   (set! str "#lang racket (define \"hi there\" 5 + be) (hi (there))")
@@ -82,16 +85,16 @@
 (define (how-nested? input-string offset)
   (define input (open-input-string input-string))
   (for/sum
-   ([i (in-range offset)])
-   (match (read-char input)
-     [(? eof-object?)
-      (error 'how-nested? "invalid offset ~e, file ended early" offset)]
-     [#\(
-      1]
-     [#\)
-      -1]
-     [_
-      0])))
+      ([i (in-range offset)])
+    (match (read-char input)
+      [(? eof-object?)
+       (error 'how-nested? "invalid offset ~e, file ended early" offset)]
+      [#\(
+       1]
+      [#\)
+       -1]
+      [_
+       0])))
 (module+ test
   (require rackunit)
   (define sample "(a(b)c(d(e(f)g(h(i)j(k)l(m)n)o)p)q)r")

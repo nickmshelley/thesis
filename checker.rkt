@@ -10,6 +10,7 @@
          racket/string
          racket/port
          racket/place
+         racket/sandbox
          plot
          (only-in srfi/13 string-suffix?))
 
@@ -18,6 +19,7 @@
 
 (module+ main
   (define methods '(naive nest keywords macros bytecode))
+  #;(define methods '(macros))
   (unless (directory-exists? "output")
     (make-directory "output"))
   (unless (directory-exists? "output/checker")
@@ -29,10 +31,13 @@
     (test-with-method method)))
 
 (define (test-with-method method)
-  (define percent 1)
-  (define source-files (get-all-source-files "test-files/checker-source"))
+  (printf "TESTING WITH ~a~n" method)
+  (define percent .01)
+  (define source-files (get-all-source-files "frog/"))
+  (printf "REMOVE~n")
   (define remove
     (check-all-files/places 'remove method source-files percent))
+  (printf "TRUNCATE~n")
   (define truncate
     (check-all-files/places 'truncate method source-files percent))
   (for-each display-results remove truncate (make-list (length remove) method))
@@ -80,6 +85,7 @@
   (define result-messages (do-all-work-on-places 
                            (list-tail files (length places))
                            places))
+  (printf "GETTING RESULTS~n")
   (map list->results result-messages))
 
 ;; do-all-work-on-places : list-of-place-message list-of-place -> list-of-result-messages
@@ -136,6 +142,7 @@
 
 ; check-file : string symbol symbol integer integer -> results
 (define (check-file filename file-mod completion-f percent place-number)
+  (printf "Checking ~a...~n" filename)
   (define file-string (file->string filename))
   (define words (percent-of-words-from-file percent file-string))
   (results 
@@ -174,16 +181,23 @@
         (lambda () 
           (display (replace-word-with-string word completion file-string)))
         #:exists 'replace)
-      (define error-string (open-output-string))
+      (define-values (proc in out err) (subprocess #f #f #f (find-executable-path "racket") temp-file))
+      (define result (sync/timeout 5 proc))
       (define success?
-        (parameterize ([current-error-port error-string]
-                       [current-output-port (open-output-nowhere)])
-          (system (format "racket ~a" temp-file))))
-      (or success? (get-output-string error-string))))
+        (if result
+            (= (subprocess-status result) 0)
+            (begin
+              (subprocess-kill proc #t)
+              #f)))
+      (define error-string (port->string err))
+      (close-input-port in)
+      (close-output-port out)
+      (close-input-port err)
+      (or success? error-string)))
   (define-values (passed messages) (partition boolean? res))
   #;(for-each (λ (message)
-                (printf "~n~a~n" message))
-              messages)
+              (printf "MESSAGE:~n~a~n" message))
+            messages)
   (word-results word (length passed) messages))
 (module+ test
   (define str "#lang racket (define x 2) (+ x x) ;y")
@@ -221,11 +235,11 @@
    (list (discrete-histogram 
           (append (list (vector 'Passed remove-passed))
                   (sum-errors (results-wordsults remove)))
-          #:skip 5 #:x-min 0 #:label "Remove")
+          #:skip 5 #:x-min 0 #:y-min .1 #:label "Remove")
          (discrete-histogram 
           (append (list (vector 'Passed truncate-passed))
                   (sum-errors (results-wordsults truncate)))
-          #:skip 5 #:x-min 1 #:label "Truncate"
+          #:skip 5 #:x-min 1 #:y-min .1 #:label "Truncate"
           #:color 2 #:line-color 2))
    (format "output/checker/~a/~a.png" (symbol->string method) name)
    #:title (results-filename remove)

@@ -12,6 +12,7 @@
 
 (module+ main
   (define methods '(naive nest keywords macros bytecode))
+  #;(define methods '(macros))
   (unless (directory-exists? "output")
     (make-directory "output"))
   (unless (directory-exists? "output/ranker")
@@ -24,6 +25,7 @@
 
 ;; test-with-method : symbol -> void
 (define (test-with-method method)
+  (printf "TESTING WITH ~a~n" method)
   (define completion-f
     (cond
       [(eq? method 'naive)
@@ -38,14 +40,17 @@
        get-zo-completions]
       [else
        (error "Unknown method:" method)]))
+  (define dir "test-files/packages/frog")
+  (printf "REMOVE~n")
   (define remove 
     (test-all-files 
-     (get-all-source-files "test-files") 
+     (get-all-source-files dir) 
      string-w/o-word
      completion-f))
+  (printf "TRUNCATE~n")
   (define truncate
     (test-all-files 
-     (get-all-source-files "test-files") 
+     (get-all-source-files dir) 
      string-truncated-from-word
      completion-f))
   (for-each display-rankings remove truncate (make-list (length remove) method))
@@ -68,7 +73,7 @@
 
 ; test-all-files : list-of-filepath (string word -> string) -> list-of-rankings
 (define (test-all-files files file-mod completion-f)
-  (define percent 1)
+  (define percent .1)
   (map (λ (filename)
          (test-file file-mod
                     completion-f
@@ -81,6 +86,7 @@
 ; file-mod modifies the string source for autocompletion at that point
 ; returns list of ranks in completion list
 (define (test-file file-mod completion-f filename file-string percent)
+  (printf "testing ~a~n" filename)
   (define words (percent-of-words-from-file percent file-string))
   (define results 
     (for/list ([word words])
@@ -129,12 +135,12 @@
           (append (ranked->vectors (rankings-ranked remove))
                   (list (vector 'Unranked (rankings-unranked remove)))
                   (list (vector 'Missed (rankings-missed remove))))
-          #:skip 2.5 #:x-min 0 #:label "Remove")
+          #:skip 2.5 #:x-min 0 #:y-min .1 #:label "Remove")
          (discrete-histogram
           (append (ranked->vectors (rankings-ranked truncate))
                   (list (vector 'Unranked (rankings-unranked truncate)))
                   (list (vector 'Missed (rankings-missed truncate))))
-          #:skip 2.5 #:x-min 1 #:label "Truncate"
+          #:skip 2.5 #:x-min 1 #:y-min .1 #:label "Truncate"
           #:color 2 #:line-color 2))
    (format "output/ranker/~a/~a.png" (symbol->string method) name)
    #:title (rankings-filename remove)
