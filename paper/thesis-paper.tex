@@ -399,15 +399,31 @@ The lack of testing done on dynamic auto-completers helped me realize the need f
 
 \chapter{Implementation}
 
-Stuff
+There are two major metrics to be considered when testing code completion. The first is how well a completer can get expected results near the top of the list. The second is how well a completer can keep failing results out of the list. I wrote a separate testing framework for each of these metrics, both of which use common base functionality.
+
+\section{Foundation}
+
+There are two main ways to tell whether code completion meets users' needs. One is to do user studies or get feedback from users, while another is to measure completion results against existing code. This testing framework takes the second approach.
+
+In order to test against existing source, the source file must be tokenized. One way to do this is just to delimit on whitespace. However, since it is uncommon for data such as numbers and strings to use code completion, we decided to use the language grammar to only test valid identifiers.
+
+I used Racket's built-in reader to tokenize existing Racket source. I take the results of the reader and store each identifier along with source location in a word structure. This identifier+location structure is what is used in all of the testing.
+
+Since testing every token of every source file can take a very long time when the amount of source code is large, we used randomized testing to save time while still collecting representative data. To do this, I collect all of the identifiers from a file as described above and then randomly choose a percentage of those tokens to test against.
+
+When an identifier from the original source is tested, the source file can be modified in several ways. We chose two simple ways to modify the source. The first way is to simply remove the token from the source file, which represents modifying or maintaining existing source code. The second way is to truncate the source file from the chosen identifier, which represents writing new source code.
 
 \section{Ranker}
 
-Stuff
+For a given token in a source file, the ranker will modify the file at that position, either by removing or truncating as described above, and then invoke an auto-completer to get a list of completion results. It then compares the list of results to the original token, which represents the programmer's intent. If the original token is found in the first five results, its rank is recorded. It is also noted whether the original token is found later in the list or not at all.
+
+This method of testing completion results allows changes affecting the number and location of results to be checked quantifiably and consistently.
 
 \section{Checker}
 
-Stuff
+Similar to the ranker, the checker asks an auto-completer for a list of completions from a modified source file. However, instead of checking against the original token, the original token is replaced by one of the completion results, and the resulting program is compiled and run. If the program runs to completion, the completion results is recorded as a success. If the program fails to compile or terminates for any reason, the type of error is recorded.
+
+This method allows auto-completers to test how top completion results fail for different methods of completion. With this information, targeted changes can help reduce certain types of failures.
 
 \chapter{Verification}
 
