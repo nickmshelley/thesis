@@ -1,25 +1,36 @@
 #lang racket/base
 
 (require "../word.rkt"
-         racket/list)
+         racket/list
+         racket/function)
 
 (provide get-completions
          get-completions/nest
          get-completions/keywords-and-position)
 
+;; proximity<? : number word word -> boolean
+;; returns #t if the absolute value of the difference between w1 and origin is less than that of w2 and origin
+(define (proximity<? origin w1 w2)
+  (< (abs (- (word-pos w1) origin))
+     (abs (- (word-pos w2) origin))))
+
 ; get-completions : string string integer -> list-of-string
 ; returns all unique words in the string starting with prifix sorted alphabetically
 ; pos is ignored, but the functions have to take the same number of arguments
 (define (get-completions filename text-string prefix pos)
-  (sort (prefix-filtered-strings
-         prefix
-         (remove-duplicates (words->strings (string->words text-string))))
-        string<?))
+  (prefix-filtered-strings
+   prefix
+   (remove-duplicates 
+    (words->strings
+     (sort (string->words text-string)
+           (curry proximity<? pos))))))
 (module+ test
   (require rackunit)
   (define test-str " a (all #all |there\\; [\"'allyour, \"(hi`]) \nthere ")
-  (check-equal? (get-completions "name" test-str "" 0)
-                '("a" "all" "allyour" "hi" "there"))
+  (check-equal? (get-completions "name" test-str "" 14)
+                '("there" "all" "allyour" "a" "hi"))
+    (check-equal? (get-completions "name" test-str "" 0)
+                '("a" "all" "there" "allyour" "hi"))
   (check-equal? (get-completions "name" test-str "a" 0)
                 '("a" "all" "allyour"))
   (check-equal? (get-completions "name" test-str "all" 0)
@@ -85,9 +96,9 @@
            (get-completions filename text-string prefix pos))))
 (module+ test
   (check-equal? (get-completions/keywords-and-position "name" "( (define (zebra a) b)" "" 1)
-                (list "zebra" "a" "b" "define"))
+                (list "zebra" "define" "a" "b"))
   (check-equal? (get-completions/keywords-and-position "name" "( (define (zebra a) b)" "" 2)
-                (list "a" "b" "define" "zebra")))
+                (list "define" "zebra" "a" "b")))
 
 ;; function-position? : string integer -> bool
 ;; returns whether a given position is where a function application would go

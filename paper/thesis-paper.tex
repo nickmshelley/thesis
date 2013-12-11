@@ -429,13 +429,17 @@ This method allows auto-completers to test how top completion results fail for d
 
 Stuff
 
-\section{Naive Implementation}
+\section{Textual Heuristics}
 
-Stuff
+Textual heuristics uses source code tokenization to determine which completions to suggest. Suggestions are prioritized based on proximity.
 
 \subsection{Method Implementation}
 
-Stuff
+This implementation is fairly straightforward. We just separate based on the language's defined delimiters by processing the whole text file with the following regular expression: \scheme{[^\s()[]",'`#|\;]+}
+
+The resulting strings and positions are combined into the word struct. When the completer is invoked at a specific position, these results are prioritized based on the following sort order:
+
+\scheme{s(w1, w2) = |(w1 position) - (completer position)| < |(w2 position) - (completer position)|}
 
 \subsection{Ranker Results}
 
@@ -445,29 +449,17 @@ Stuff
 
 Stuff
 
-\section{Nesting Level}
+\section{Structural Heuristics}
 
-Stuff
-
-\subsection{Method Implementation}
-
-Stuff
-
-\subsection{Ranker Results}
-
-Stuff
-
-\subsection{Checker Results}
-
-Stuff
-
-\section{Language Keywords}
-
-Stuff
+The structure of the language can give good hints about how to filter and prioritize completion suggestions. The two ways we did this for Racket are by nesting level and by keywords and position.
 
 \subsection{Method Implementation}
 
-Stuff
+For nesting level, we took each word returned by the textual heuristics method and attached nesting level information to it. We did this by starting at the beginning of the file and keeping track of how many parentheses and brackets had passed. The nesting level was incremented for each opening parenthesis or bracket and decremented for each closing.
+
+This nesting information was then used to prioritize results. Suggestions were ordered based on the difference in nesting level between the current position at completion invocation and each suggestion.
+
+For language keywords, a regular expression was used to find all function names based on the \scheme{define} and \scheme{let} keywords. We then determined whether the position of the completer invocation was in function application position. In Racket this is a simple check: if the position is directly after an opening parenthesis, it is in function application position. If this was the case, all function names we found previously were prioritized ahead of all other tokens.
 
 \subsection{Ranker Results}
 
@@ -493,7 +485,7 @@ Stuff
 
 Stuff
 
-\section{Bytecode Compilation}
+\section{Macro Analysis}
 
 Stuff
 
