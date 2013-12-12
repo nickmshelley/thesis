@@ -471,11 +471,15 @@ Stuff
 
 \section{Macro Heuristics}
 
-Stuff
+As we've discussed, macros can do arbitrary things to the source code. However, many macros come as part of the language, so we can take advantage of the knowledge of what to expect.
+
+Because auto-completers are focused on identifiers more than functionality, it makes sense to limit macro heuristics to macros that introduce new identifiers. In Racket, the most common of these are \scheme{#lang}, \scheme{require}, and \scheme{define-struct}.
 
 \subsection{Method Implementation}
 
-Stuff
+The implementation makes use of Racket namespaces and dynamic evaluation. For both \scheme{#lang} and \scheme{require}, we find macros of this kind using a regular expression and then \scheme{dynamic-require} them into a new empty namespace. The resulting list of mapped symbols in that namespace is the list of identifiers introduced by those macros.
+
+With structs, we again find uses by processing the file with a regular expression. However, because there is no pre-defined form for dynamically creating structs, it is necessary to \scheme{eval} the resulting forms in a new namespace. Again, the resulting identifiers are queried from the namespace and added to the previous list.
 
 \subsection{Ranker Results}
 
