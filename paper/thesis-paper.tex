@@ -491,11 +491,31 @@ Stuff
 
 \section{Macro Analysis}
 
-Stuff
+The only sure way to know what identifiers are available in the presence of the problems listed above is to fully expand and link the program. The downside to this is that the source has to be compilable for this to work. The upside is that the information gained is the most accurate.
+
+Because getting any results requires the file to compile without errors, we did not use the truncate source alteration method for any of these tests.
 
 \subsection{Method Implementation}
 
+Racket source files can be expanded and compiled to byte code with \scheme{zo-parse}. The result of this process is .zo file that contains all the information needed to run the program.
+
+The two pieces of information we used for the completer were required identifiers and top level (or global) identifiers. These are tokens that could most likely be used at any point in the program.
+
+\subsection{Ranker Results}
+
 Stuff
+
+\subsection{Checker Results}
+
+Stuff
+
+\section{Combined}
+
+We hypothesized that a select combination of all the above methods would give the best results. Because all of the methods could just be called one after the other, the real problem was deciding how to order them.
+
+\subsection{Method Implementation}
+
+We found the best results by putting text heuristics results first, ordered by functions (if the token is in function application position), then by proximity. We then just appended the results of macro heuristics in alphabetical order.
 
 \subsection{Ranker Results}
 
