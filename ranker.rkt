@@ -8,6 +8,7 @@
          racket/file
          racket/function
          racket/string
+         racket/pretty
          plot)
 
 (module+ main
@@ -40,7 +41,8 @@
        get-zo-completions]
       [else
        (error "Unknown method:" method)]))
-  (define dir "test-files/packages")
+  #;(define dir "test-files/packages")
+  (define dir "test-files/checker-source")
   (printf "REMOVE~n")
   (define remove 
     (test-all-files 
@@ -130,6 +132,9 @@
 ; plots raknings for each file side by side
 (define (display-rankings remove truncate method)
   (define name (string-replace (rankings-filename remove) "/" "_"))
+  (define prefix (format "output/ranker/~a/~a" (symbol->string method) name))
+  (with-output-to-file (format "~a.txt" prefix)
+    (λ () (pretty-print `((remove . ,remove) (truncate . ,truncate)))))
   (plot-file 
    (list (discrete-histogram
           (append (ranked->vectors (rankings-ranked remove))
@@ -142,7 +147,7 @@
                   (list (vector 'Missed (rankings-missed truncate))))
           #:skip 2.5 #:x-min 1 #:y-min .1 #:label "Truncate"
           #:color 2 #:line-color 2))
-   (format "output/ranker/~a/~a.png" (symbol->string method) name)
+   (format "~a.png" prefix)
    #:title (rankings-filename remove)
    #:x-label "Rank"
    #:y-label "Amount"))

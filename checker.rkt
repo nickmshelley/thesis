@@ -11,6 +11,7 @@
          racket/port
          racket/place
          racket/sandbox
+         racket/pretty
          plot
          (only-in srfi/13 string-suffix?))
 
@@ -19,7 +20,7 @@
 
 (module+ main
   (define methods '(naive nest keywords macros bytecode))
-  #;(define methods '(macros))
+  #;(define methods '(naive))
   (unless (directory-exists? "output")
     (make-directory "output"))
   (unless (directory-exists? "output/checker")
@@ -32,8 +33,8 @@
 
 (define (test-with-method method)
   (printf "TESTING WITH ~a~n" method)
-  (define percent .01)
-  (define source-files (get-all-source-files "test-files/packages"))
+  (define percent .1)
+  (define source-files (get-all-source-files "test-files/checker-source" #;"test-files/packages"))
   (printf "REMOVE~n")
   (define remove
     (check-all-files/places 'remove method source-files percent))
@@ -51,8 +52,10 @@
 
 ;results : string list-of-word-results
 (struct results (filename wordsults) #:transparent)
+
 ;word-results : word number list-of-string
 (struct word-results (word passed failed-messages) #:transparent)
+
 (module+ test
   (define (word-results->string wordsults)
     (format "(~a ~a ~a)"
@@ -196,8 +199,8 @@
       (or success? error-string)))
   (define-values (passed messages) (partition boolean? res))
   #;(for-each (λ (message)
-              (printf "MESSAGE:~n~a~n" message))
-            messages)
+                (printf "MESSAGE:~n~a~n" message))
+              messages)
   (word-results word (length passed) messages))
 (module+ test
   (define str "#lang racket (define x 2) (+ x x) ;y")
@@ -226,11 +229,15 @@
 (define (display-results remove truncate method)
   (define name (string-replace (results-filename remove) "/" "_"))
   (define remove-passed (apply + (map word-results-passed (results-wordsults remove))))
-  (define remove-failed (apply + (map (compose1 length word-results-failed-messages)
-                                      (results-wordsults remove))))
+  (define remove-failed (really-sum-errors (flatten (map (compose get-first-lines word-results-failed-messages) (results-wordsults remove)))))
   (define truncate-passed (apply + (map word-results-passed (results-wordsults truncate))))
-  (define truncate-failed (apply + (map (compose1 length word-results-failed-messages)
-                                        (results-wordsults truncate))))
+  (define truncate-failed (really-sum-errors (flatten (map (compose get-first-lines word-results-failed-messages) (results-wordsults truncate)))))
+  (define remove-write `((passed . ,remove-passed) (failed . ,remove-failed)))
+  (define truncate-write `((passed . ,truncate-passed) (failed . ,truncate-failed)))
+  (define prefix (format "output/checker/~a/~a" (symbol->string method) name))
+  (with-output-to-file (format "~a.txt" prefix)
+    (λ () (pretty-print `((remove . ,remove-write) (truncate . ,truncate-write))))
+    #:exists 'replace)
   (plot-file 
    (list (discrete-histogram 
           (append (list (vector 'Passed remove-passed))
@@ -241,10 +248,20 @@
                   (sum-errors (results-wordsults truncate)))
           #:skip 5 #:x-min 1 #:y-min .1 #:label "Truncate"
           #:color 2 #:line-color 2))
-   (format "output/checker/~a/~a.png" (symbol->string method) name)
+   (format "~a.png" prefix)
    #:title (results-filename remove)
    #:x-label "Type"
    #:y-label "Amount"))
+
+(define (really-sum-errors error-message-first-lines)
+  (define single-errors (remove-duplicates error-message-first-lines))
+  (cons `(total . ,(length error-message-first-lines))
+        (sort 
+         (for/list ([error-message (in-list single-errors)])
+           `(,error-message . ,(count (λ (arg) (equal? arg error-message))
+                                      error-message-first-lines)))
+         >
+         #:key cdr)))
 
 (define (sum-errors list-of-wordsults)
   (map vector
@@ -255,7 +272,10 @@
 
 (define (get-first-lines str-list)
   (for/list ([str (in-list str-list)])
-    (first (string-split str "\n"))))
+    (string-trim 
+     (last (string-split
+            (first (string-split str "\n"))
+            ":")))))
 (module+ test
   (check-equal? (get-first-lines (list (format "hi~nthere you~nguys")
                                        (format "another one~nhere")))
