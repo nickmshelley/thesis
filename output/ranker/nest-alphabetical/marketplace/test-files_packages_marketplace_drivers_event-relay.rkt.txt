@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/marketplace/drivers/event-relay.rkt"
+   '(1 1 0 0 1)
+   4
+   2))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/marketplace/drivers/event-relay.rkt"
+   '(0 0 0 0 0)
+   6
+   3)))

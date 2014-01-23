@@ -9,9 +9,6 @@ TAGS
 # compiled folder
 compiled
 
-# output plots
-output
-
 #TeX stuff
 *.aux
 *.glo

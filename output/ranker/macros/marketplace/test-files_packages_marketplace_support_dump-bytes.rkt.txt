@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/marketplace/support/dump-bytes.rkt"
+   '(0 0 0 0 0)
+   6
+   9))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/marketplace/support/dump-bytes.rkt"
+   '(0 0 0 0 0)
+   4
+   11)))

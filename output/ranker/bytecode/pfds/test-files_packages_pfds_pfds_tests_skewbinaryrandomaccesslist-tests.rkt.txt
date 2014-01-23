@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/pfds/pfds/tests/skewbinaryrandomaccesslist-tests.rkt"
+   '(0 0 0 0 0)
+   20
+   1))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/pfds/pfds/tests/skewbinaryrandomaccesslist-tests.rkt"
+   '(0 0 0 0 0)
+   18
+   3)))

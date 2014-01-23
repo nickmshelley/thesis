@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/marketplace/support/gui.rkt"
+   '(3 8 11 9 4)
+   56
+   12))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/marketplace/support/gui.rkt"
+   '(4 6 4 9 9)
+   42
+   29)))

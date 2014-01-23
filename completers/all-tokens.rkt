@@ -6,7 +6,8 @@
 
 (provide get-completions
          get-completions/nest
-         get-completions/keywords-and-position)
+         get-completions/keywords-and-position
+         #;get-completions/awesome)
 
 ;; proximity<? : number word word -> boolean
 ;; returns #t if the absolute value of the difference between w1 and origin is less than that of w2 and origin
@@ -60,14 +61,13 @@
          [(negative? difference)
           #f]
          [else
-          (string<? (word-str (word/nest-word wn1))
-                    (word-str (word/nest-word wn2)))]))))))
+          (proximity<? pos (word/nest-word wn1) (word/nest-word wn2))]))))))
 (module+ test
   (set! test-str "h (d (c) b (g f) e) a")
   (check-equal? (get-completions/nest "name" test-str "" 0)
-                '("a" "h" "b" "d" "e" "c" "f" "g"))
+                '("h" "a" "d" "b" "e" "c" "g" "f"))
   (check-equal? (get-completions/nest "name" test-str "" 12)
-                '("c" "f" "g" "b" "d" "e" "a" "h"))
+                '("g" "f" "c" "b" "e" "d" "a" "h"))
   (check-equal? (get-completions/nest "name" test-str "b" 12)
                 '("b")))
 

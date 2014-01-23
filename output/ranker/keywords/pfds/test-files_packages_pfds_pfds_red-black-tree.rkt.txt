@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/pfds/pfds/red-black-tree.rkt"
+   '(2 3 2 11 9)
+   139
+   6))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/pfds/pfds/red-black-tree.rkt"
+   '(1 9 17 4 8)
+   115
+   18)))

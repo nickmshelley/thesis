@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/pfds/pfds/queue/bootstrapped.rkt"
+   '(1 8 13 15 1)
+   46
+   6))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/pfds/pfds/queue/bootstrapped.rkt"
+   '(1 12 8 7 6)
+   43
+   13)))

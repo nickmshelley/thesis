@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/pfds/pfds/ralist/skew.rkt"
+   '(2 34 11 14 9)
+   86
+   0))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/pfds/pfds/ralist/skew.rkt"
+   '(4 21 14 6 5)
+   97
+   9)))

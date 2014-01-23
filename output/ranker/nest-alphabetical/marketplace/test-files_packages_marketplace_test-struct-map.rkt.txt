@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/marketplace/test-struct-map.rkt"
+   '(0 0 0 0 0)
+   3
+   2))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/marketplace/test-struct-map.rkt"
+   '(0 1 0 0 0)
+   2
+   2)))

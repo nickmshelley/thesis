@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/pfds/pfds/deque/real-time.rkt"
+   '(1 4 3 11 8)
+   122
+   0))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/pfds/pfds/deque/real-time.rkt"
+   '(1 11 10 9 8)
+   94
+   16)))

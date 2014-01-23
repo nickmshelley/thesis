@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/marketplace/sugar-typed.rkt"
+   '(0 0 0 0 0)
+   14
+   21))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/marketplace/sugar-typed.rkt"
+   '(0 0 0 0 0)
+   13
+   22)))

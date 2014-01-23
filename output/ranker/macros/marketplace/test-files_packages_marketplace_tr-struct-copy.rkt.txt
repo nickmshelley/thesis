@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/marketplace/tr-struct-copy.rkt"
+   '(0 0 0 0 0)
+   21
+   14))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/marketplace/tr-struct-copy.rkt"
+   '(0 0 0 1 0)
+   18
+   16)))

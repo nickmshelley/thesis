@@ -1,0 +1,7 @@
+(list
+ (cons
+  'remove
+  (rankings "test-files/packages/marketplace/nested.rkt" '(0 1 0 0 0) 1 3))
+ (cons
+  'truncate
+  (rankings "test-files/packages/marketplace/nested.rkt" '(0 2 0 0 0) 1 2)))

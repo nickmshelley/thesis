@@ -1,0 +1,11 @@
+(list
+ (cons
+  'remove
+  (rankings "test-files/packages/pfds/pfds/heap/splay.rkt" '(0 0 0 0 0) 60 58))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/pfds/pfds/heap/splay.rkt"
+   '(0 0 0 0 0)
+   68
+   50)))

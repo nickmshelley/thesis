@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/marketplace/examples/chat-paper-raw.rkt"
+   '(0 0 0 0 0)
+   4
+   24))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/marketplace/examples/chat-paper-raw.rkt"
+   '(0 0 0 0 0)
+   5
+   23)))

@@ -3,20 +3,22 @@
 (require compiler/zo-parse
          compiler/cm
          racket/function
-         racket/dict)
+         racket/dict
+         racket/list)
 
 (provide get-zo-completions)
 
 ;; file is a path-string to the file
 (define (get-zo-completions filename text prefix pos)
-  (managed-compile-zo filename)
-  (define-values (base name _) (split-path filename))
-  (define compiled-file (build-path base
-                                    "compiled"
-                                    (path-add-suffix name ".zo")))
-  (define res (with-input-from-file compiled-file zo-parse))
-  (append (require-tokens res base)
-          (top-levels res)))
+  (with-handlers ([(λ (x) #t) (λ (e) (printf "Ignoring exception ~a~n~n" e) empty)])
+    (managed-compile-zo filename)
+    (define-values (base name _) (split-path filename))
+    (define compiled-file (build-path base
+                                      "compiled"
+                                      (path-add-suffix name ".zo")))
+    (define res (with-input-from-file compiled-file zo-parse))
+    (append (require-tokens res base)
+            (top-levels res))))
 
 (define (require-tokens res base)
   (define requires 

@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/marketplace/drivers/tcp-bare-with-ground.rkt"
+   '(0 1 1 2 1)
+   41
+   11))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/marketplace/drivers/tcp-bare-with-ground.rkt"
+   '(1 4 0 6 0)
+   29
+   17)))

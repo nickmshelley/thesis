@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/pfds/pfds/tests/pairingheap-test.rkt"
+   '(2 1 0 2 6)
+   24
+   0))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/pfds/pfds/tests/pairingheap-test.rkt"
+   '(1 0 4 1 0)
+   25
+   4)))

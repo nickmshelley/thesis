@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/pfds/pfds/tests/binary-ran-access-list-tests.rkt"
+   '(1 0 0 1 0)
+   12
+   3))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/pfds/pfds/tests/binary-ran-access-list-tests.rkt"
+   '(0 0 0 0 0)
+   14
+   3)))

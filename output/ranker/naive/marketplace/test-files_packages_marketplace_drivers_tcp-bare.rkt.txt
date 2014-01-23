@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/marketplace/drivers/tcp-bare.rkt"
+   '(1 0 2 0 3)
+   37
+   5))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/marketplace/drivers/tcp-bare.rkt"
+   '(0 4 2 1 2)
+   24
+   15)))

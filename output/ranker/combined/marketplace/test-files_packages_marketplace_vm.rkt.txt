@@ -1,0 +1,7 @@
+(list
+ (cons
+  'remove
+  (rankings "test-files/packages/marketplace/vm.rkt" '(1 5 1 0 3) 30 0))
+ (cons
+  'truncate
+  (rankings "test-files/packages/marketplace/vm.rkt" '(0 4 2 4 2) 22 6)))

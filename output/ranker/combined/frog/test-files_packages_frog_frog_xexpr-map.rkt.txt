@@ -1,0 +1,7 @@
+(list
+ (cons
+  'remove
+  (rankings "test-files/packages/frog/frog/xexpr-map.rkt" '(0 0 3 0 1) 22 0))
+ (cons
+  'truncate
+  (rankings "test-files/packages/frog/frog/xexpr-map.rkt" '(2 2 2 1 2) 15 2)))

@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/marketplace/examples/echo-paper.rkt"
+   '(1 0 0 0 0)
+   3
+   1))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/marketplace/examples/echo-paper.rkt"
+   '(1 0 0 0 0)
+   1
+   3)))

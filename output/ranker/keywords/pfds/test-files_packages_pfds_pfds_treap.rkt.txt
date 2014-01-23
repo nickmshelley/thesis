@@ -1,0 +1,7 @@
+(list
+ (cons
+  'remove
+  (rankings "test-files/packages/pfds/pfds/treap.rkt" '(0 1 3 8 5) 105 2))
+ (cons
+  'truncate
+  (rankings "test-files/packages/pfds/pfds/treap.rkt" '(3 9 8 6 4) 81 13)))

@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/pfds/pfds/catenable-list.rkt"
+   '(6 2 9 5 3)
+   80
+   2))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/pfds/pfds/catenable-list.rkt"
+   '(10 6 6 2 13)
+   59
+   11)))

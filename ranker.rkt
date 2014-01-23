@@ -12,8 +12,8 @@
          plot)
 
 (module+ main
-  (define methods '(naive nest keywords macros bytecode))
-  #;(define methods '(macros))
+  #;(define methods '(naive nest keywords macros bytecode combined))
+  (define methods '(combined))
   (unless (directory-exists? "output")
     (make-directory "output"))
   (unless (directory-exists? "output/ranker")
@@ -39,30 +39,47 @@
        get-macro-completions]
       [(eq? method 'bytecode)
        get-zo-completions]
+      [(eq? method 'combined)
+       (λ (fn txt prefix pos)
+         (remove-duplicates
+          (append (get-completions/nest fn txt prefix pos)
+                  (get-zo-completions fn txt prefix pos))))]
       [else
        (error "Unknown method:" method)]))
-  #;(define dir "test-files/packages")
-  (define dir "test-files/checker-source")
-  (printf "REMOVE~n")
-  (define remove 
-    (test-all-files 
-     (get-all-source-files dir) 
-     string-w/o-word
-     completion-f))
-  (printf "TRUNCATE~n")
-  (define truncate
-    (test-all-files 
-     (get-all-source-files dir) 
-     string-truncated-from-word
-     completion-f))
-  (for-each display-rankings remove truncate (make-list (length remove) method))
-  (define remove-sum (foldl add-rankings 
-                            (rankings "All" (make-list 5 0) 0 0)
-                            remove))
-  (define truncate-sum (foldl add-rankings
-                              (rankings "All" (make-list 5 0) 0 0)
-                              truncate))
-  (display-rankings remove-sum truncate-sum method))
+  (define dir-base "test-files/packages")
+  (define sub-dirs '("frog" "marketplace" "pfds"))
+  (define top-output-dir (build-path "output/ranker" (symbol->string method)))
+  (define-values (remove-sum truncate-sum)
+    (for/fold ([remove-total-sum (rankings "All" (make-list 5 0) 0 0)]
+               [truncate-total-sum (rankings "All" (make-list 5 0) 0 0)])
+      ([dir (in-list sub-dirs)])
+      (define test-dir (build-path dir-base dir))
+      (define output-dir (build-path top-output-dir dir))
+      (unless (directory-exists? output-dir)
+        (make-directory output-dir))
+      (printf "REMOVE~n")
+      (define remove 
+        (test-all-files 
+         (get-all-source-files test-dir) 
+         string-w/o-word
+         completion-f))
+      (printf "TRUNCATE~n")
+      (define truncate
+        (test-all-files 
+         (get-all-source-files test-dir) 
+         string-truncated-from-word
+         completion-f))
+      (for-each display-rankings remove truncate (make-list (length remove) output-dir))
+      (define remove-sum (foldl add-rankings 
+                                (rankings "All" (make-list 5 0) 0 0)
+                                remove))
+      (define truncate-sum (foldl add-rankings
+                                  (rankings "All" (make-list 5 0) 0 0)
+                                  truncate))
+      (display-rankings remove-sum truncate-sum output-dir)
+      (values (add-rankings remove-total-sum remove-sum)
+              (add-rankings truncate-total-sum truncate-sum))))
+  (display-rankings remove-sum truncate-sum top-output-dir))
 
 ; A rankings combines a filename with analyzed stats
 ; Filename : string
@@ -130,9 +147,9 @@
 
 ; display-rankings : list-of-rankings list-of-rankings -> void
 ; plots raknings for each file side by side
-(define (display-rankings remove truncate method)
+(define (display-rankings remove truncate output-dir)
   (define name (string-replace (rankings-filename remove) "/" "_"))
-  (define prefix (format "output/ranker/~a/~a" (symbol->string method) name))
+  (define prefix (format "~a/~a" output-dir name))
   (with-output-to-file (format "~a.txt" prefix)
     (λ () (pretty-print `((remove . ,remove) (truncate . ,truncate)))))
   (plot-file 

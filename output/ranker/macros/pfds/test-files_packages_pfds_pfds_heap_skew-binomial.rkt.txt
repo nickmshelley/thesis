@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/pfds/pfds/heap/skew-binomial.rkt"
+   '(0 0 0 0 0)
+   41
+   90))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/pfds/pfds/heap/skew-binomial.rkt"
+   '(0 0 0 0 0)
+   40
+   91)))

@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/marketplace/drivers/tcp.rkt"
+   '(0 4 10 4 7)
+   46
+   6))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/marketplace/drivers/tcp.rkt"
+   '(1 3 6 3 7)
+   48
+   9)))

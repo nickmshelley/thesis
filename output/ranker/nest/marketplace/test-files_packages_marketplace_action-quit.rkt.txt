@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/marketplace/action-quit.rkt"
+   '(0 3 3 0 0)
+   7
+   1))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/marketplace/action-quit.rkt"
+   '(0 1 0 1 1)
+   6
+   5)))

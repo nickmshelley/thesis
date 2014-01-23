@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/pfds/pfds/queue/physicists.rkt"
+   '(0 14 9 9 6)
+   55
+   6))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/pfds/pfds/queue/physicists.rkt"
+   '(2 15 13 6 5)
+   48
+   10)))

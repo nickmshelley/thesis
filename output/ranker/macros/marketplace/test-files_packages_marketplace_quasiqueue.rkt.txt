@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/marketplace/quasiqueue.rkt"
+   '(0 0 0 0 0)
+   6
+   11))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/marketplace/quasiqueue.rkt"
+   '(0 0 0 0 0)
+   6
+   11)))

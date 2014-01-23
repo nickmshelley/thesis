@@ -1,0 +1,7 @@
+(list
+ (cons
+  'remove
+  (rankings "test-files/packages/frog/frog/template.rkt" '(0 0 0 1 0) 4 2))
+ (cons
+  'truncate
+  (rankings "test-files/packages/frog/frog/template.rkt" '(0 0 0 0 0) 1 6)))

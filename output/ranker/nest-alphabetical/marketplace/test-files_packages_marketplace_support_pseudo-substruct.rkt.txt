@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/marketplace/support/pseudo-substruct.rkt"
+   '(3 1 0 0 0)
+   2
+   1))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/marketplace/support/pseudo-substruct.rkt"
+   '(0 0 0 0 1)
+   0
+   6)))

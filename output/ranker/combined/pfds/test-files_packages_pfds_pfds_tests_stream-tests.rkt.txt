@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/pfds/pfds/tests/stream-tests.rkt"
+   '(0 3 4 2 0)
+   7
+   1))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/pfds/pfds/tests/stream-tests.rkt"
+   '(0 3 3 2 1)
+   8
+   0)))

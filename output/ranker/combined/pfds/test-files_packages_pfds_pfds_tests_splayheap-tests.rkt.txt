@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/pfds/pfds/tests/splayheap-tests.rkt"
+   '(4 2 2 2 3)
+   15
+   1))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/pfds/pfds/tests/splayheap-tests.rkt"
+   '(4 5 0 2 3)
+   13
+   2)))

@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/marketplace/log-untyped.rkt"
+   '(0 0 0 0 0)
+   2
+   7))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/marketplace/log-untyped.rkt"
+   '(0 0 0 0 0)
+   5
+   4)))

@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/pfds/pfds/tests/bankers-queue-benchmarks.rkt"
+   '(0 1 1 0 2)
+   6
+   1))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/pfds/pfds/tests/bankers-queue-benchmarks.rkt"
+   '(0 1 0 0 2)
+   6
+   2)))

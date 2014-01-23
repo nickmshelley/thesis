@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/pfds/pfds/queue/hood-melville.rkt"
+   '(0 0 0 0 0)
+   41
+   66))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/pfds/pfds/queue/hood-melville.rkt"
+   '(0 0 0 0 0)
+   48
+   59)))

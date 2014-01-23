@@ -1,0 +1,7 @@
+(list
+ (cons
+  'remove
+  (rankings "test-files/packages/frog/frog/verbosity.rkt" '(0 0 0 0 0) 0 5))
+ (cons
+  'truncate
+  (rankings "test-files/packages/frog/frog/verbosity.rkt" '(0 1 0 0 0) 2 2)))

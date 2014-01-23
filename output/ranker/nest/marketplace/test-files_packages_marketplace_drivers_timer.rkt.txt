@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/marketplace/drivers/timer.rkt"
+   '(0 2 2 1 5)
+   33
+   8))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/marketplace/drivers/timer.rkt"
+   '(2 0 5 1 2)
+   23
+   18)))

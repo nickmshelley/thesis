@@ -1,0 +1,7 @@
+(list
+ (cons
+  'remove
+  (rankings "test-files/packages/marketplace/unify.rkt" '(6 0 4 5 6) 54 5))
+ (cons
+  'truncate
+  (rankings "test-files/packages/marketplace/unify.rkt" '(1 5 6 11 6) 39 12)))

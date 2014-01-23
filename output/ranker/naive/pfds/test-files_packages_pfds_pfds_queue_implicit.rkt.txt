@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/pfds/pfds/queue/implicit.rkt"
+   '(2 6 5 13 9)
+   59
+   0))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/pfds/pfds/queue/implicit.rkt"
+   '(2 6 6 10 3)
+   60
+   7)))

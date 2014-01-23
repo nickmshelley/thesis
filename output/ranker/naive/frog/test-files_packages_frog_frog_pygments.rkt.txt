@@ -1,0 +1,7 @@
+(list
+ (cons
+  'remove
+  (rankings "test-files/packages/frog/frog/pygments.rkt" '(0 0 0 1 0) 11 4))
+ (cons
+  'truncate
+  (rankings "test-files/packages/frog/frog/pygments.rkt" '(1 0 0 0 0) 6 9)))

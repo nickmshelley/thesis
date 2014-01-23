@@ -1,0 +1,7 @@
+(list
+ (cons
+  'remove
+  (rankings "test-files/packages/frog/frog/scribble.rkt" '(0 0 0 0 0) 12 8))
+ (cons
+  'truncate
+  (rankings "test-files/packages/frog/frog/scribble.rkt" '(0 0 0 0 0) 10 10)))

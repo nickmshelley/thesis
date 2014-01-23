@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/marketplace/drivers/udp.rkt"
+   '(0 1 1 0 1)
+   48
+   5))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/marketplace/drivers/udp.rkt"
+   '(2 1 0 1 2)
+   31
+   19)))

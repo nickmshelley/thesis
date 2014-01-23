@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/pfds/pfds/partialstream.rkt"
+   '(0 6 0 2 3)
+   14
+   0))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/pfds/pfds/partialstream.rkt"
+   '(1 5 1 0 1)
+   13
+   4)))

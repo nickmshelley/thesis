@@ -1,0 +1,3 @@
+(list
+ (cons 'remove (rankings "All" '(60 105 177 313 205) 2282 103))
+ (cons 'truncate (rankings "All" '(67 198 215 199 148) 1990 428)))

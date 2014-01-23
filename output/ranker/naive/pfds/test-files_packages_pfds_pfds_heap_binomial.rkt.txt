@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/pfds/pfds/heap/binomial.rkt"
+   '(3 4 3 7 6)
+   89
+   1))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/pfds/pfds/heap/binomial.rkt"
+   '(2 9 6 8 6)
+   71
+   11)))

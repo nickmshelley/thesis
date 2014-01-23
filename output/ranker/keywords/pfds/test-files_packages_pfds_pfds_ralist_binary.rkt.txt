@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/pfds/pfds/ralist/binary.rkt"
+   '(2 0 4 13 8)
+   129
+   2))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/pfds/pfds/ralist/binary.rkt"
+   '(1 12 9 5 5)
+   109
+   17)))

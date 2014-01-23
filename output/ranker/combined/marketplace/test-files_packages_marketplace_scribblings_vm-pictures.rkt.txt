@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/marketplace/scribblings/vm-pictures.rkt"
+   '(2 4 1 1 1)
+   21
+   0))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/marketplace/scribblings/vm-pictures.rkt"
+   '(0 6 1 1 0)
+   21
+   1)))

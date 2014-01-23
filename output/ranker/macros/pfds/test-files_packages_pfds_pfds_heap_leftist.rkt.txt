@@ -1,0 +1,15 @@
+(list
+ (cons
+  'remove
+  (rankings
+   "test-files/packages/pfds/pfds/heap/leftist.rkt"
+   '(0 0 0 0 0)
+   36
+   64))
+ (cons
+  'truncate
+  (rankings
+   "test-files/packages/pfds/pfds/heap/leftist.rkt"
+   '(0 0 0 0 0)
+   32
+   68)))
