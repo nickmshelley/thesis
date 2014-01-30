@@ -1,0 +1,29 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 25)
+    ("unbound identifier in module" . 8)
+    ("Declaration for `less-than?' provided, but `less-than?' has no definition"
+     .
+     4)
+    ("Declaration for `gt' provided, but `gt' has no definition" . 4)
+    ("type name used out of context" . 3)
+    ("must be used in a definition context" . 2)
+    ("bad syntax (multiple expressions after identifier)" . 1)
+    ("expects only 2 arguments, but found 3" . 1)
+    ("duplicate argument identifier" . 1)
+    ("bad syntax" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 29)
+    ("type name used out of context" . 12)
+    ("unbound identifier in module" . 9)
+    ("Declaration for `less-than?' provided, but `less-than?' has no definition"
+     .
+     5)
+    ("identifier is already imported" . 1)
+    ("Declaration for `typed/test-engine/scheme-tests' provided, but `typed/test-engine/scheme-tests' has no definition"
+     .
+     1)
+    ("bad module path" . 1))))

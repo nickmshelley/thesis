@@ -1,0 +1,20 @@
+'((remove
+   (passed . 2)
+   (failed
+    (total . 18)
+    ("expected a `)' to close `('" . 5)
+    ("unexpected `)'" . 5)
+    ("expected a closing '\"'" . 5)
+    ("unbound identifier in module" . 1)
+    ("duplicate definition" . 1)
+    ("undefined;" . 1)))
+  (truncate
+   (passed . 1)
+   (failed
+    (total . 14)
+    ("unexpected `)'" . 5)
+    ("not a well-formed definition" . 4)
+    ("unbound identifier in module" . 2)
+    ("undefined;" . 1)
+    ("not allowed in an expression context" . 1)
+    ("not a procedure;" . 1))))

@@ -1,0 +1,22 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 10)
+    ("expected a `module' declaration" . 5)
+    ("bad syntax" . 1)
+    ("Unbound type name define" . 1)
+    ("Unbound type name" . 1)
+    ("Unbound type name list-max" . 1)
+    ("Unbound type name provide" . 1)))
+  (truncate
+   (passed . 1)
+   (failed
+    (total . 8)
+    ("Polymorphic function `foldr' could not be applied to arguments" . 2)
+    ("unbound identifier in module" . 2)
+    ("Declaration for `typed/racket/base' provided, but `typed/racket/base' has no definition"
+     .
+     1)
+    ("Declaration for `lang' provided, but `lang' has no definition" . 1)
+    ("must be used in a definition context" . 1)
+    ("not a provide sub-form" . 1))))

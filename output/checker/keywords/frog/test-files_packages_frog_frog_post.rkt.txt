@@ -1,0 +1,11 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 10)
+    ("not a provide sub-form" . 5)
+    ("identifier is not bound to struct type information" . 5)))
+  (truncate
+   (passed . 5)
+   (failed
+    (total . 5)
+    ("identifier is not bound to struct type information" . 5))))

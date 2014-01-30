@@ -1,0 +1,24 @@
+'((remove
+   (passed . 16)
+   (failed
+    (total . 19)
+    ("missing `)' to close preceding `(', found instead `]'" . 5)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("no pattern variables before ellipsis in template" . 3)
+    ("too many ellipses in template" . 2)
+    ("unbound identifier in module" . 1)
+    ("provided identifier not defined or imported for phase 0" . 1)
+    ("(super-type TypeParam ...) SubType sub-type sub-type?)" . 1)
+    ("invalid pattern" . 1)))
+  (truncate
+   (passed . 7)
+   (failed
+    (total . 23)
+    ("missing `]' to close preceding `[', found instead `)'" . 10)
+    ("collection not found" . 4)
+    ("unbound identifier in module" . 3)
+    ("variable used twice in pattern" . 2)
+    ("bad module path" . 1)
+    ("no pattern variables before ellipsis in template" . 1)
+    ("not a provide sub-form" . 1)
+    ("not a require sub-form" . 1))))

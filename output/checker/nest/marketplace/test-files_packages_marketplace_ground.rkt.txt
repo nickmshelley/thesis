@@ -1,0 +1,29 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 58)
+    ("unbound identifier in module" . 30)
+    ("collection not found" . 9)
+    ("expected a `module' declaration" . 5)
+    ("bad syntax" . 3)
+    ("type name used out of context" . 2)
+    ("this match expander must be used inside match" . 2)
+    ("must be used in a definition context" . 2)
+    ("missing type" . 1)
+    ("duplicate clause binding name" . 1)
+    ("invalid module-path form" . 1)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     1)
+    ("wildcard not allowed as an expression" . 1)))
+  (truncate
+   (passed . 15)
+   (failed
+    (total . 38)
+    ("unbound identifier in module" . 21)
+    ("Illegal clause in endpoint definition" . 6)
+    ("expected a `)' to close `('" . 5)
+    ("Illegal use of on-message outside endpoint definition context" . 3)
+    ("(publisher topic clause ...)" . 1)
+    ("duplicate identifier" . 1)
+    ("Illegal use of on-absence outside endpoint definition context" . 1))))

@@ -1,0 +1,245 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 296)
+    ("unbound identifier in module" . 75)
+    ("type name used out of context" . 14)
+    ("(A)" . 14)
+    ("bad syntax (multiple types after identifier)" . 12)
+    ("type mismatch" . 11)
+    ("Unbound type name A" . 10)
+    ("bad syntax" . 8)
+    ("duplicate identifier" . 8)
+    ("'" . 8)
+    ("must be used in a definition context" . 8)
+    ("Polymorphic function `Heap2' could not be applied to arguments" . 6)
+    ("Declaration for `delete-min/max' provided, but `delete-min/max' has no definition"
+     .
+     5)
+    ("no expression after a sequence of internal definitions" . 5)
+    ("duplicate argument identifier" . 5)
+    ("collection not found" . 5)
+    ("13 Heap> ((A A -> Boolean) (Listof (Node A)))), since it is not a function type"
+     .
+     5)
+    ("Polymorphic function `find-min/max' could not be applied to arguments"
+     .
+     5)
+    ("Polymorphic function `car' could not be applied to arguments" . 5)
+    ("Polymorphic function `cdr' could not be applied to arguments" . 4)
+    ("Declaration for `fold' provided, but `fold' has no definition" . 4)
+    ("Polymorphic function `heap-andmap' could not be applied to arguments"
+     .
+     4)
+    ("Polymorphic function `Node-rank' could not be applied to arguments" . 4)
+    ("Polymorphic function `Heap-comparer' could not be applied to arguments"
+     .
+     4)
+    ("Expected a polymorphic function without ..., but given function/annotation had ..."
+     .
+     3)
+    ("Polymorphic function `Heap-trees' could not be applied to arguments" . 3)
+    ("Polymorphic function `inner' could not be applied to arguments" . 3)
+    ("Type variable B must be used with ..." . 2)
+    ("bad syntax (missing binding pairs or body)" . 2)
+    ("bad syntax (multiple expressions after identifier)" . 2)
+    ("variable used twice in pattern" . 2)
+    ("Cannot apply expression of type A, since it is not a function type" . 2)
+    ("Unbound type name head" . 2)
+    ("Wrong number of arguments, expected 2 and got 1" . 2)
+    ("Polymorphic function `Node-val' could not be applied to arguments" . 2)
+    ("unexpected `)'" . 1)
+    ("illegal use of `.'" . 1)
+    ("ellipses not allowed as an expression" . 1)
+    ("duplicate argument name" . 1)
+    ("Expected a polymorphic function with ..., but function/annotation had no ..."
+     .
+     1)
+    ("Unbound type name car" . 1)
+    ("Unbound type name sorted-list" . 1)
+    ("duplicate type variable or index" . 1)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 1)
+    ("13 Heap> ((A A -> Boolean) (Pairof (Node A) (Listof (Node A))))), since it is not a function type"
+     .
+     1)
+    ("bad syntax;" . 1)
+    ("Duplicate type annotation of (All (A) (Nonnegative-Integer (Nonnegative-Integer -> A) (A A -> Boolean) -> (Heap A))) for remove, previous was (All (A) ((A -> Boolean) (Heap A) -> (Heap A)))"
+     .
+     1)
+    ("Duplicate type annotation of (All (A) (Nonnegative-Integer (Nonnegative-Integer -> A) (A A -> Boolean) -> (Heap A))) for filter, previous was (All (A) ((A -> Boolean) (Heap A) -> (Heap A)))"
+     .
+     1)
+    ("Cannot apply expression of type Nonnegative-Integer, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Pairof (Node A) (Listof (Node A)))), since it is not a function type"
+     .
+     1)
+    ("Wrong number of arguments, expected 1 and got 2" . 1)
+    ("Polymorphic function `rest' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (A B ... B -> Boolean), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (Pairof (Node A) (Listof (Node A))), since it is not a function type"
+     .
+     1)
+    ("13 Node> (Integer A (Listof (Node A)))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name y" . 1)
+    ("Unbound type name x" . 1)
+    ("Unbound type name comparer" . 1)
+    ("Unbound type name min-trees" . 1)
+    ("Polymorphic function `heap-ormap' could not be applied to arguments" . 1)
+    ("Unbound type name empty?" . 1)
+    ("Duplicate type annotation of (All (A) (A (Heap A) -> (Heap A))) for ins-tree, previous was (All (A) ((Node A) (Listof (Node A)) (A A -> Boolean) -> (Heap A)))"
+     .
+     1)
+    ("Cannot apply expression of type (Pairof (Node A) (Pairof (Node A) (Listof (Node A)))), since it is not a function type"
+     .
+     1)
+    ("(Pairof (Node A) (Pairof (Node A) (Listof (Node A))))" . 1)
+    ("(Boolean Boolean)" . 1)
+    ("(A Boolean)" . 1)
+    ("(Heap Boolean)" . 1)
+    ("Unbound type name heaps" . 1)
+    ("expected optionally type-annotated binding" . 1)
+    ("Cannot apply expression of type (List (Heap B) ... B), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `map' could not be applied to arguments" . 1)
+    ("Bad arguments to polymorphic function in apply" . 1)
+    ("Unbound type name not" . 1)
+    ("Cannot apply expression of type C, since it is not a function type" . 1)
+    ("Wrong number of arguments, expected 2 and got 3" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 333)
+    ("unbound identifier in module" . 73)
+    ("(A)" . 21)
+    ("bad syntax" . 15)
+    ("type name used out of context" . 15)
+    ("must be used in a definition context" . 12)
+    ("Type variable B must be used with ..." . 9)
+    ("Component of case-lambda type was not a function clause" . 9)
+    ("Unbound type name A" . 9)
+    ("bad syntax (multiple types after identifier)" . 8)
+    ("duplicate type variable declaration" . 8)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 6)
+    ("type mismatch" . 6)
+    ("Polymorphic function `Node-val' could not be applied to arguments" . 6)
+    ("Bad arguments to function in apply" . 6)
+    ("Declaration for `delete-min/max' provided, but `delete-min/max' has no definition"
+     .
+     5)
+    ("Polymorphic function `Heap2' could not be applied to arguments" . 5)
+    ("Polymorphic function `insert' could not be applied to arguments" . 5)
+    ("Declaration for `sorted-list' provided, but `sorted-list' has no definition"
+     .
+     5)
+    ("Polymorphic function `Heap-trees' could not be applied to arguments" . 5)
+    ("Declaration for `heap-ormap' provided, but `heap-ormap' has no definition"
+     .
+     4)
+    ("Polymorphic function `ins-tree' could not be applied to arguments" . 4)
+    ("expected identifier" . 4)
+    ("bad syntax (missing body)" . 3)
+    ("bad syntax (multiple expressions after identifier)" . 3)
+    ("13 Heap> ((A A -> Boolean) (Listof (Node A)))), since it is not a function type"
+     .
+     3)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 3)
+    ("Polymorphic function `merge-helper' could not be applied to arguments"
+     .
+     3)
+    ("Unbound type name ..." . 3)
+    ("Polymorphic function `delete-min/max' could not be applied to arguments"
+     .
+     3)
+    ("identifier already provided (as a different binding)" . 2)
+    ("Expected a polymorphic function with ..., but function/annotation had no ..."
+     .
+     2)
+    ("not allowed as an expression" . 2)
+    ("no expression after a sequence of internal definitions" . 2)
+    ("duplicate argument identifier" . 2)
+    ("duplicate type variable or index" . 2)
+    ("Bad arguments to polymorphic function in apply" . 2)
+    ("Unbound type name" . 2)
+    ("13 Heap> ((A A -> Boolean) (Pairof (Node A) (Listof (Node A))))), since it is not a function type"
+     .
+     2)
+    ("Wrong number of arguments, expected 2 and got 1" . 2)
+    ("Polymorphic function `get-min' could not be applied to arguments" . 2)
+    ("Polymorphic function `heap-andmap' could not be applied to arguments"
+     .
+     2)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Heap) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("bad syntax (not an identifier and expression for a binding)" . 1)
+    ("duplicate argument name" . 1)
+    ("not allowed in an expression context" . 1)
+    ("expected optionally type-annotated binding" . 1)
+    ("(C)" . 1)
+    ("Polymorphic function `Node1' could not be applied to arguments" . 1)
+    ("Wrong number of arguments, expected 1 and got 3" . 1)
+    ("Wrong number of arguments, expected 2 and got 3" . 1)
+    ("ellipses not allowed as an expression" . 1)
+    ("Unbound type name empty" . 1)
+    ("Polymorphic function `Heap-comparer' could not be applied to arguments"
+     .
+     1)
+    ("Polymorphic function `rest' could not be applied to arguments" . 1)
+    ("13 Node> (Integer A (Listof (Node A))))" . 1)
+    ("Unbound type name trees" . 1)
+    ("Unbound type name val" . 1)
+    ("Cannot instantiate non-polymorphic type (Heap A)" . 1)
+    ("Wrong number of arguments, expected 1 and got 2" . 1)
+    ("(link node1 node2 func)" . 1)
+    ("bad syntax;" . 1)
+    ("Unbound type name node1" . 1)
+    ("Unbound type name cons" . 1)
+    ("Unbound type name node2" . 1)
+    ("Unbound type name Node-rank" . 1)
+    ("Polymorphic function `find-min/max' could not be applied to arguments"
+     .
+     1)
+    ("Cannot apply expression of type (List (Heap B) ... B), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `car' could not be applied to arguments" . 1)
+    ("(A A Boolean)" . 1)
+    ("(A Nonnegative-Integer Boolean)" . 1)
+    ("Unbound type name hep" . 1)
+    ("Unbound type name Heap-comparer" . 1)
+    ("Unbound type name heap2-trees" . 1)
+    ("Unbound type name heap1-trees" . 1)
+    ("Unbound type name merge-helper" . 1)
+    ("Unbound type name null?" . 1)
+    ("(C C Boolean)" . 1)
+    ("(C Heap Boolean)" . 1)
+    ("(C A Boolean)" . 1)
+    ("(C Boolean Boolean)" . 1)
+    ("(((A -> Boolean) (Heap A) -> Boolean) ((A B ... B -> Boolean) (Heap A) (Heap B) ... B -> Boolean))"
+     .
+     1)
+    ("Unbound type name or" . 1)
+    ("type]" . 1)
+    ("Cannot apply expression of type (Pairof (Node A) (Listof (Node A))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Pairof (Node A) (Listof (Node A)))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `cdr' could not be applied to arguments" . 1))))

@@ -1,0 +1,27 @@
+'((remove
+   (passed . 101)
+   (failed
+    (total . 49)
+    ("unbound identifier in module" . 33)
+    ("duplicate definition for identifier" . 6)
+    ("identifier is already imported" . 4)
+    ("bad syntax (not an identifier for procedure name, and not a nested procedure form)"
+     .
+     3)
+    ("illegal use of `.'" . 1)
+    ("bad syntax (missing expression after identifier)" . 1)
+    ("illegal use of syntax" . 1)))
+  (truncate
+   (passed . 19)
+   (failed
+    (total . 23)
+    ("unbound identifier in module" . 15)
+    ("missing ellipsis with pattern variable in template" . 2)
+    ("no pattern variables before ellipsis in template" . 1)
+    ("ellipses not allowed as an expression" . 1)
+    ("variable used twice in pattern" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("misplaced ellipsis in template" . 1)
+    ("not a provide sub-form" . 1))))

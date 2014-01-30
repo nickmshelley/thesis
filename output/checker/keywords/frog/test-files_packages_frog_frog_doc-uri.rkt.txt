@@ -1,0 +1,33 @@
+'((remove
+   (passed . 44)
+   (failed
+    (total . 56)
+    ("unbound identifier in module" . 28)
+    ("missing `]' to close preceding `[', found instead `)'" . 7)
+    ("variable not bound in all or patterns" . 5)
+    ("bad syntax" . 4)
+    ("duplicate argument identifier" . 3)
+    ("missing `]' to close `[' on line 62, found instead `)'" . 2)
+    ("allowed only in a module body" . 2)
+    ("missing `]' to close `[' on line 23, found instead `)'; indentation suggests a missing `]' before line 24"
+     .
+     2)
+    ("not allowed in an expression context" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 31"
+     .
+     1)))
+  (truncate
+   (passed . 62)
+   (failed
+    (total . 67)
+    ("unbound identifier in module" . 42)
+    ("missing `]' to close preceding `[', found instead `)'" . 10)
+    ("missing `]' to close `[' on line 35, found instead `)'" . 5)
+    ("ellipses not allowed as an expression" . 3)
+    ("incorrect use of ... in pattern" . 2)
+    ("duplicate argument identifier" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("collection not found" . 1)
+    ("cannot open module file" . 1)
+    ("duplicate argument name" . 1))))

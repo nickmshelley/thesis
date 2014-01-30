@@ -1,0 +1,123 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 296)
+    ("unbound identifier in module" . 81)
+    ("must be used in a definition context" . 22)
+    ("bad syntax (multiple types after identifier)" . 20)
+    ("type name used out of context" . 18)
+    ("(A)" . 16)
+    ("Type variable B must be used with ..." . 16)
+    ("expected identifier" . 15)
+    ("bad syntax" . 14)
+    ("duplicate definition for identifier" . 8)
+    ("duplicate type variable declaration" . 7)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 6)
+    ("Component of case-lambda type was not a function clause" . 6)
+    ("bad syntax (multiple expressions after identifier)" . 5)
+    ("Declaration for `list-foldr' provided, but `list-foldr' has no definition"
+     .
+     5)
+    ("too many forms in body of All type" . 5)
+    ("collection not found" . 5)
+    ("not a provide sub-form" . 5)
+    ("duplicate type variable or index" . 4)
+    ("identifier already provided (as a different binding)" . 4)
+    ("not allowed as an expression" . 4)
+    ("Declaration for `list-length' provided, but `list-length' has no definition"
+     .
+     3)
+    ("Declaration for `list-sixth' provided, but `list-sixth' has no definition"
+     .
+     3)
+    ("ellipses not allowed as an expression" . 2)
+    ("bad syntax (not an identifier for procedure name, and not a nested procedure form)"
+     .
+     2)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     2)
+    ("duplicate argument identifier" . 2)
+    ("duplicate argument name" . 2)
+    ("duplicate identifier" . 2)
+    ("not allowed in an expression context" . 1)
+    ("Structure type constructor Root applied to non-regular arguments (RAList)"
+     .
+     1)
+    ("Structure type constructor Root applied to non-regular arguments (Root)"
+     .
+     1)
+    ("Structure type constructor Root applied to non-regular arguments (Tree)"
+     .
+     1)
+    ("Structure type constructor Root applied to non-regular arguments (Node)"
+     .
+     1)
+    ("identifier is already imported" . 1)
+    ("expected optionally type-annotated binding" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("bad syntax (`else' clause must be last)" . 1)
+    ("illegal use of `.'" . 1)
+    ("Declaration for `local-reverse' provided, but `local-reverse' has no definition"
+     .
+     1)
+    ("Unbound type name RAList" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 323)
+    ("unbound identifier in module" . 80)
+    ("type name used out of context" . 44)
+    ("(A)" . 34)
+    ("Type variable B must be used with ..." . 27)
+    ("bad syntax (multiple types after identifier)" . 24)
+    ("must be used in a definition context" . 23)
+    ("bad syntax" . 16)
+    ("duplicate definition for identifier" . 6)
+    ("bad syntax (multiple expressions after identifier)" . 6)
+    ("not allowed as an expression" . 5)
+    ("expected identifier" . 5)
+    ("too many forms in body of All type" . 5)
+    ("'" . 5)
+    ("bad syntax (not an identifier and expression for a binding)" . 4)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 4)
+    ("duplicate type variable or index" . 4)
+    ("duplicate type variable declaration" . 3)
+    ("duplicate type variable" . 3)
+    ("ellipses not allowed as an expression" . 2)
+    ("identifier already provided (as a different binding)" . 2)
+    ("Declaration for `tree-lookup' provided, but `tree-lookup' has no definition"
+     .
+     2)
+    ("duplicate field identifier" . 2)
+    ("Structure type constructor Node applied to non-regular arguments (Tree)"
+     .
+     1)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (List) not bound with ... as a bound on a ..." . 1)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("illegal use of `.'" . 1)
+    ("not allowed in an expression context" . 1)
+    ("Declaration for `list-length' provided, but `list-length' has no definition"
+     .
+     1)
+    ("bad syntax (missing body)" . 1)
+    ("Structure type constructor Root applied to non-regular arguments (RAList)"
+     .
+     1)
+    ("Structure type constructor Root applied to non-regular arguments (Tree)"
+     .
+     1)
+    ("Structure type constructor Root applied to non-regular arguments (Node)"
+     .
+     1)
+    ("Structure type constructor Root applied to non-regular arguments (Leaf)"
+     .
+     1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("duplicate argument name" . 1))))

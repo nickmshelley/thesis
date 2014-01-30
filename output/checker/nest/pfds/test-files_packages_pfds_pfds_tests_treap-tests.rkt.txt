@@ -1,0 +1,25 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 22)
+    ("unbound identifier in module" . 8)
+    ("type name used out of context" . 8)
+    ("bad syntax" . 2)
+    ("collection not found" . 2)
+    ("bad module path" . 2)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 43)
+    ("unbound identifier in module" . 23)
+    ("type name used out of context" . 6)
+    ("expected identifier" . 4)
+    ("bad syntax" . 3)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     2)
+    ("collection not found" . 1)
+    ("pfds/heap/skew-binomial" . 1)
+    ("cannot open module file" . 1)
+    ("bad module path" . 1)
+    ("'" . 1))))

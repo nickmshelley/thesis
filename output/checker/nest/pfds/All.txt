@@ -1,0 +1,1130 @@
+'((remove
+   (passed . 29)
+   (failed
+    (total . 6263)
+    ("unbound identifier in module" . 1886)
+    ("type name used out of context" . 463)
+    ("Type variable B must be used with ..." . 372)
+    ("bad syntax" . 288)
+    ("bad syntax (multiple types after identifier)" . 273)
+    ("must be used in a definition context" . 210)
+    ("expected identifier" . 204)
+    ("(A)" . 173)
+    ("duplicate argument identifier" . 145)
+    ("expected a `module' declaration" . 100)
+    ("collection not found" . 81)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 72)
+    ("duplicate definition for identifier" . 71)
+    ("'" . 64)
+    ("duplicate type variable declaration" . 62)
+    ("type mismatch" . 59)
+    ("bad syntax (multiple expressions after identifier)" . 57)
+    ("use of a class keyword is not in a class" . 51)
+    ("duplicate type variable or index" . 45)
+    ("no expression after a sequence of internal definitions" . 44)
+    ("duplicate argument name" . 44)
+    ("syntax error in pattern" . 43)
+    ("Component of case-lambda type was not a function clause" . 43)
+    ("unexpected term" . 39)
+    ("duplicate identifier" . 39)
+    ("not allowed as an expression" . 37)
+    ("Declaration for `tail' provided, but `tail' has no definition" . 30)
+    ("ellipses not allowed as an expression" . 30)
+    ("too many forms in body of All type" . 30)
+    ("(empty A)" . 29)
+    ("duplicate type variable" . 29)
+    ("illegal use of `.'" . 26)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 22)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 22)
+    ("Declaration for `fold' provided, but `fold' has no definition" . 21)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     21)
+    ("not a provide sub-form" . 20)
+    ("identifier already provided (as a different binding)" . 19)
+    ("struct does not refer to a structure definition" . 18)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 18)
+    ("Declaration for `enqueue' provided, but `enqueue' has no definition"
+     .
+     16)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     16)
+    ("duplicate field identifier" . 15)
+    ("Unbound type name A" . 14)
+    ("Wrong number of arguments, expected 1 and got 2" . 14)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 13)
+    ("Polymorphic function `car' could not be applied to arguments" . 13)
+    ("Declaration for `local-reverse' provided, but `local-reverse' has no definition"
+     .
+     11)
+    ("expected 1 but got 2" . 10)
+    ("identifier is already imported" . 10)
+    ("not a require sub-form" . 10)
+    ("Declaration for `tl-help' provided, but `tl-help' has no definition"
+     .
+     10)
+    ("illegal use of syntax" . 10)
+    ("Declaration for `build-heap' provided, but `build-heap' has no definition"
+     .
+     10)
+    ("Polymorphic function `force' could not be applied to arguments" . 10)
+    ("found a test that is not at the top level" . 10)
+    ("bad syntax;" . 9)
+    ("bad syntax (missing binding pairs or body)" . 9)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     9)
+    ("Declaration for `exec2' provided, but `exec2' has no definition" . 9)
+    ("expected annotated-formals" . 9)
+    ("Declaration for `deque' provided, but `deque' has no definition" . 8)
+    ("unexpected `)'" . 8)
+    ("Declaration for `sorted-list' provided, but `sorted-list' has no definition"
+     .
+     8)
+    ("Declaration for `list-eighth' provided, but `list-eighth' has no definition"
+     .
+     8)
+    ("Declaration for `insert' provided, but `insert' has no definition" . 8)
+    ("Declaration for `build-queue' provided, but `build-queue' has no definition"
+     .
+     8)
+    ("Declaration for `gt' provided, but `gt' has no definition" . 8)
+    ("expected 3 but got 2" . 7)
+    ("Expected a polymorphic function without ..., but given function/annotation had ..."
+     .
+     7)
+    ("Declaration for `head+tail' provided, but `head+tail' has no definition"
+     .
+     7)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     7)
+    ("Polymorphic function `map' could not be applied to arguments" . 7)
+    ("bad module path" . 7)
+    ("duplicate definition" . 7)
+    ("not an identifier, identifier with default, or keyword" . 7)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     7)
+    ("expected 2 and got 1" . 6)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 6)
+    ("Declaration for `list-foldr' provided, but `list-foldr' has no definition"
+     .
+     6)
+    ("Polymorphic function `cdr' could not be applied to arguments" . 6)
+    ("Polymorphic function `Heap2' could not be applied to arguments" . 6)
+    ("expected optionally type-annotated binding" . 6)
+    ("Declaration for `rank' provided, but `rank' has no definition" . 6)
+    ("expected a field-specification keyword" . 6)
+    ("Declaration for `list-fifth' provided, but `list-fifth' has no definition"
+     .
+     6)
+    ("provided identifier not defined or imported for phase 0" . 6)
+    ("Unbound type name null?" . 6)
+    ("Declaration for `rotate-drop' provided, but `rotate-drop' has no definition"
+     .
+     5)
+    ("missing an \"else\" expression" . 5)
+    ("Polymorphic function `pstake' could not be applied to arguments" . 5)
+    ("Declaration for `clist->list' provided, but `clist->list' has no definition"
+     .
+     5)
+    ("Declaration for `delete-min/max' provided, but `delete-min/max' has no definition"
+     .
+     5)
+    ("13 Heap> ((A A -> Boolean) (Listof (Node A)))), since it is not a function type"
+     .
+     5)
+    ("Polymorphic function `find-min/max' could not be applied to arguments"
+     .
+     5)
+    ("Declaration for `del-right' provided, but `del-right' has no definition"
+     .
+     5)
+    ("Declaration for `list-length' provided, but `list-length' has no definition"
+     .
+     5)
+    ("not allowed in an expression context" . 5)
+    ("Declaration for `tu-help' provided, but `tu-help' has no definition" . 5)
+    ("Declaration for `phelp-rgt' provided, but `phelp-rgt' has no definition"
+     .
+     5)
+    ("expected a `)' to close `('" . 5)
+    ("missing procedure expression;" . 5)
+    ("Declaration for `internal-queue' provided, but `internal-queue' has no definition"
+     .
+     5)
+    ("untyped identifier pscar" . 5)
+    ("Recursive Type Alias Reference" . 5)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     5)
+    ("Declaration for `str-less-than?' provided, but `str-less-than?' has no definition"
+     .
+     5)
+    ("Polymorphic function `append' could not be applied to arguments" . 5)
+    ("expected 0 but got 2" . 4)
+    ("cons does not refer to a structure definition" . 4)
+    ("Used a type variable (or) not bound with ... as a bound on a ..." . 4)
+    ("Declaration for `deque-andmap' provided, but `deque-andmap' has no definition"
+     .
+     4)
+    ("empty does not refer to a structure definition" . 4)
+    ("(stream-cons x stream)" . 4)
+    ("Declaration for `build-deque-front' provided, but `build-deque-front' has no definition"
+     .
+     4)
+    ("Declaration for `deque->list' provided, but `deque->list' has no definition"
+     .
+     4)
+    ("Polymorphic function `init' could not be applied to arguments" . 4)
+    ("Declaration for `head' provided, but `head' has no definition" . 4)
+    ("Polymorphic function `heap-andmap' could not be applied to arguments"
+     .
+     4)
+    ("Polymorphic function `Node-rank' could not be applied to arguments" . 4)
+    ("Polymorphic function `Heap-comparer' could not be applied to arguments"
+     .
+     4)
+    ("Declaration for `get-right' provided, but `get-right' has no definition"
+     .
+     4)
+    ("Declaration for `root' provided, but `root' has no definition" . 4)
+    ("bad syntax (not an identifier)" . 4)
+    ("Declaration for `list-foldl' provided, but `list-foldl' has no definition"
+     .
+     4)
+    ("Declaration for `->list' provided, but `->list' has no definition" . 4)
+    ("bad syntax (not an identifier and expression for a binding)" . 4)
+    ("Declaration for `queue' provided, but `queue' has no definition" . 4)
+    ("Declaration for `queue-ormap' provided, but `queue-ormap' has no definition"
+     .
+     4)
+    ("Declaration for `size' provided, but `size' has no definition" . 4)
+    ("Declaration for `queue->list' provided, but `queue->list' has no definition"
+     .
+     4)
+    ("Declaration for `vcons' provided, but `vcons' has no definition" . 4)
+    ("Unbound type name lst" . 4)
+    ("Declaration for `less-than?' provided, but `less-than?' has no definition"
+     .
+     4)
+    ("Declaration for `lookup' provided, but `lookup' has no definition" . 4)
+    ("(K)" . 4)
+    ("bad syntax for require sub-form" . 4)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     4)
+    ("" . 4)
+    ("contract violation" . 4)
+    ("expected 0 but got 3" . 3)
+    ("expected 1 but got 3" . 3)
+    ("error does not refer to a structure definition" . 3)
+    ("given does not refer to a structure definition" . 3)
+    ("m does not refer to a structure definition" . 3)
+    ("expected an identifier for the structure type name" . 3)
+    ("Polymorphic function `Deque-lenf' could not be applied to arguments" . 3)
+    ("13 Deque> ((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) Integer (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) Integer)), since it is not a function type"
+     .
+     3)
+    ("Expected a polymorphic function with ..., but function/annotation had no ..."
+     .
+     3)
+    ("Polymorphic function `Heap-trees' could not be applied to arguments" . 3)
+    ("Polymorphic function `inner' could not be applied to arguments" . 3)
+    ("Bad arguments to polymorphic function in apply" . 3)
+    ("expected 4 but got 2" . 3)
+    ("bad syntax (not an identifier for procedure name, and not a nested procedure form)"
+     .
+     3)
+    ("Declaration for `list-sixth' provided, but `list-sixth' has no definition"
+     .
+     3)
+    ("bad syntax (missing body)" . 3)
+    ("Used a type variable (Heap) not bound with ... as a bound on a ..." . 3)
+    ("not in a definition context" . 3)
+    ("wildcard not allowed as an expression" . 3)
+    ("Used a type variable (Queue) not bound with ... as a bound on a ..." . 3)
+    ("Declaration for `invalidate' provided, but `invalidate' has no definition"
+     .
+     3)
+    ("Unbound type name pscdr" . 3)
+    ("untyped identifier empty-stream imported from module <typed/racket>" . 3)
+    ("Cannot apply expression of type (U (Pairof A (Rec g506 (U Null (Boxof (U (Pairof A g506) (-> (Pairof A g506))))))) (-> (Pairof A (Rec g512 (U Null (Boxof (U (Pairof A g512) (-> (Pairof A g512))))))))), since it is not a function type"
+     .
+     3)
+    ("expected 2 but got 3" . 2)
+    ("parent struct type not defined" . 2)
+    ("expected 0 but got 1" . 2)
+    ("use of a class keyword is not in a class top-level" . 2)
+    ("deque does not refer to a structure definition" . 2)
+    ("r does not refer to a structure definition" . 2)
+    ("force does not refer to a structure definition" . 2)
+    ("Declaration for `deque-map' provided, but `deque-map' has no definition"
+     .
+     2)
+    ("apply requires a final list argument, given only a function argument of type (Deque A)"
+     .
+     2)
+    ("invalid pattern" . 2)
+    ("untyped identifier foldr" . 2)
+    ("Cannot apply expression of type (List (Deque B) ... B), since it is not a function type"
+     .
+     2)
+    ("variable used twice in pattern" . 2)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     2)
+    ("Cannot apply expression of type A, since it is not a function type" . 2)
+    ("Unbound type name head" . 2)
+    ("Cannot apply expression of type Nonnegative-Integer, since it is not a function type"
+     .
+     2)
+    ("Wrong number of arguments, expected 2 and got 1" . 2)
+    ("Polymorphic function `Node-val' could not be applied to arguments" . 2)
+    ("Unbound type name empty?" . 2)
+    ("elem does not refer to a structure definition" . 2)
+    ("Declaration for `del-left' provided, but `del-left' has no definition"
+     .
+     2)
+    ("expected more terms starting with any term" . 2)
+    ("heap does not refer to a structure definition" . 2)
+    ("in-pair does not refer to a structure definition" . 2)
+    ("make-Tree does not refer to a structure definition" . 2)
+    ("Reversing does not refer to a structure definition" . 2)
+    ("Structure type constructor Tree applied to non-regular arguments ((U Null (Tree A)))"
+     .
+     2)
+    ("no binding for identifier" . 2)
+    ("(rotate val1 prio1 val2 prio2 t1 t2 t3)" . 2)
+    ("(xor l r)" . 2)
+    ("Cannot apply expression of type (U Negative-Integer Exact-Positive-Integer), since it is not a function type"
+     .
+     2)
+    ("Unbound type name l1" . 2)
+    ("Cannot apply expression of type (U (Pairof A (Rec g257 (U Null (Boxof (U (Pairof A g257) (-> (Pairof A g257))))))) (-> (Pairof A (Rec g263 (U Null (Boxof (U (Pairof A g263) (-> (Pairof A g263))))))))), since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `unbox' could not be applied to arguments" . 2)
+    ("Unbound type name stream" . 2)
+    ("Unbound type name loop" . 2)
+    ("Polymorphic function `stream-car' could not be applied to arguments" . 2)
+    ("Unbound type name *" . 2)
+    ("Unbound type name if" . 2)
+    ("Polymorphic function `cons' could not be applied to arguments" . 2)
+    ("((Pairof A Stream))" . 2)
+    ("expects only 2 arguments, but found 3" . 2)
+    ("Expected 2 type variables, but given 1" . 2)
+    ("Polymorphic function `build-deque' could not be applied to arguments"
+     .
+     2)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `build-queue' could not be applied to arguments"
+     .
+     2)
+    ("Unbound type name sum" . 2)
+    ("Used a type variable (Deque) not bound with ... as a bound on a ..." . 1)
+    ("expected 2 but got 1" . 1)
+    ("expected 3 but got 1" . 1)
+    ("tail does not refer to a structure definition" . 1)
+    ("A does not refer to a structure definition" . 1)
+    ("f does not refer to a structure definition" . 1)
+    ("(Zero)" . 1)
+    ("Deep does not refer to a structure definition" . 1)
+    ("is does not refer to a structure definition" . 1)
+    ("mid does not refer to a structure definition" . 1)
+    ("car does not refer to a structure definition" . 1)
+    ("let* does not refer to a structure definition" . 1)
+    ("Duplicate type annotation of (All (A) ((Deque A) -> (Deque A))) for head, previous was (All (A) ((Deque A) -> A))"
+     .
+     1)
+    ("Expected a function of type (-> ((Deque A) -> (Deque A))), but got a function with the wrong arity"
+     .
+     1)
+    ("Cannot apply expression of type (A B ... B -> C), since it is not a function type"
+     .
+     1)
+    ("13 Deque> ((Rec g4351 (U Null (Boxof (U (Boxof g4351) (-> (Boxof g4351)))) (Pairof C g4351))) Integer (Rec g4357 (U Null (Boxof (U (Boxof g4357) (-> (Boxof g4357)))) (Pairof C g4357))) Integer)), since it is not a function type"
+     .
+     1)
+    ("Duplicate type annotation of (All (A C B ...) (case-> ((C A -> C) C (Deque A) -> C) ((C A B ... B -> C) C (Deque A) (Deque B) ... B -> C))) for map-multiple, previous was (All (A C B ...) ((Deque C) (A B ... B -> C) (Deque A) (Deque B) ... B -> (Deque C)))"
+     .
+     1)
+    ("Polymorphic function `enqueue' could not be applied to arguments" . 1)
+    ("Polymorphic function `ormap' could not be applied to arguments" . 1)
+    ("Unbound type name car" . 1)
+    ("Unbound type name sorted-list" . 1)
+    ("13 Heap> ((A A -> Boolean) (Pairof (Node A) (Listof (Node A))))), since it is not a function type"
+     .
+     1)
+    ("Duplicate type annotation of (All (A) (Nonnegative-Integer (Nonnegative-Integer -> A) (A A -> Boolean) -> (Heap A))) for remove, previous was (All (A) ((A -> Boolean) (Heap A) -> (Heap A)))"
+     .
+     1)
+    ("Duplicate type annotation of (All (A) (Nonnegative-Integer (Nonnegative-Integer -> A) (A A -> Boolean) -> (Heap A))) for filter, previous was (All (A) ((A -> Boolean) (Heap A) -> (Heap A)))"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Pairof (Node A) (Listof (Node A)))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `rest' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (A B ... B -> Boolean), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (Pairof (Node A) (Listof (Node A))), since it is not a function type"
+     .
+     1)
+    ("13 Node> (Integer A (Listof (Node A)))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name y" . 1)
+    ("Unbound type name x" . 1)
+    ("Unbound type name comparer" . 1)
+    ("Unbound type name min-trees" . 1)
+    ("Polymorphic function `heap-ormap' could not be applied to arguments" . 1)
+    ("Duplicate type annotation of (All (A) (A (Heap A) -> (Heap A))) for ins-tree, previous was (All (A) ((Node A) (Listof (Node A)) (A A -> Boolean) -> (Heap A)))"
+     .
+     1)
+    ("Cannot apply expression of type (Pairof (Node A) (Pairof (Node A) (Listof (Node A)))), since it is not a function type"
+     .
+     1)
+    ("(Pairof (Node A) (Pairof (Node A) (Listof (Node A))))" . 1)
+    ("(Boolean Boolean)" . 1)
+    ("(A Boolean)" . 1)
+    ("(Heap Boolean)" . 1)
+    ("Unbound type name heaps" . 1)
+    ("Cannot apply expression of type (List (Heap B) ... B), since it is not a function type"
+     .
+     1)
+    ("Unbound type name not" . 1)
+    ("Cannot apply expression of type C, since it is not a function type" . 1)
+    ("Wrong number of arguments, expected 2 and got 3" . 1)
+    ("Declaration for `comp' provided, but `comp' has no definition" . 1)
+    ("Polymorphic function `BSHeap2' could not be applied to arguments" . 1)
+    ("ins does not refer to a structure definition" . 1)
+    ("func does not refer to a structure definition" . 1)
+    ("Declaration for `A' provided, but `A' has no definition" . 1)
+    ("get-left does not refer to a structure definition" . 1)
+    ("right does not refer to a structure definition" . 1)
+    ("get-right does not refer to a structure definition" . 1)
+    ("Structure type constructor Root applied to non-regular arguments (RAList)"
+     .
+     1)
+    ("Structure type constructor Root applied to non-regular arguments (Root)"
+     .
+     1)
+    ("Structure type constructor Root applied to non-regular arguments (Tree)"
+     .
+     1)
+    ("Structure type constructor Root applied to non-regular arguments (Node)"
+     .
+     1)
+    ("bad syntax (`else' clause must be last)" . 1)
+    ("Unbound type name RAList" . 1)
+    ("find-min/max does not refer to a structure definition" . 1)
+    ("expected 3 but got 0" . 1)
+    ("Structure type constructor Tree applied to non-regular arguments (IntHeap)"
+     .
+     1)
+    ("Structure type constructor Tree applied to non-regular arguments (Tree)"
+     .
+     1)
+    ("Structure type constructor Tree applied to non-regular arguments (Boolean)"
+     .
+     1)
+    ("Mt" . 1)
+    ("if does not refer to a structure definition" . 1)
+    ("tree does not refer to a structure definition" . 1)
+    ("delete-min/max does not refer to a structure definition" . 1)
+    ("(empty? que)" . 1)
+    ("(check-pref-inv pref front lenf rear lenr)" . 1)
+    ("(check-len-inv pref front lenf rear lenr)" . 1)
+    ("(let promise)" . 1)
+    ("()" . 1)
+    ("28 Zero>" . 1)
+    ("empty A)" . 1)
+    ("(delay e)" . 1)
+    ("bad syntax (not a sequence of identifier--expression bindings)" . 1)
+    ("Cannot apply expression of type (Pairof A (Rec g346 (U Null (Boxof (U (Boxof g346) (-> (Boxof g346)))) (Pairof A g346)))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Boxof (Rec g330 (U Null (Boxof (U (Boxof g330) (-> (Boxof g330)))) (Pairof A g330)))) (-> (Boxof (Rec g336 (U Null (Boxof (U (Boxof g336) (-> (Boxof g336)))) (Pairof A g336))))))) (Pairof A (Rec g342 (U Null (Boxof (U (Boxof g342) (-> (Boxof g342)))) (Pairof A g342))))), since it is not a function type"
+     .
+     1)
+    ("No function domains matched in function application" . 1)
+    ("Cannot apply expression of type (U (Boxof (U (Boxof (Rec g213 (U Null (Boxof (U (Boxof g213) (-> (Boxof g213)))) (Pairof A g213)))) (-> (Boxof (Rec g219 (U Null (Boxof (U (Boxof g219) (-> (Boxof g219)))) (Pairof A g219))))))) (Pairof A (Rec g225 (U Null (Boxof (U (Boxof g225) (-> (Boxof g225)))) (Pairof A g225))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (Pairof A (Rec g201 (U Null (Boxof (U (Boxof g201) (-> (Boxof g201)))) (Pairof A g201)))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name U" . 1)
+    ("Unbound type name force" . 1)
+    ("Unbound type name l2" . 1)
+    ("Duplicate type annotation of (All (A) (Integer (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))))) for stream->list, previous was (All (A) ((Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> (Listof A)))"
+     .
+     1)
+    ("Unbound type name null" . 1)
+    ("Cannot apply expression of type (Pairof A (Rec g254 (U Null (Boxof (U (Pairof A g254) (-> (Pairof A g254))))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g260 (U Null (Boxof (U (Pairof A g260) (-> (Pairof A g260))))))) (-> (Pairof A (Rec g266 (U Null (Boxof (U (Pairof A g266) (-> (Pairof A g266)))))))))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `drop' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (U Null (Pairof A (Listof A))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Pairof A (Rec g238 (U Null (Boxof (U (Pairof A g238) (-> (Pairof A g238))))))) (-> (Pairof A (Rec g244 (U Null (Boxof (U (Pairof A g244) (-> (Pairof A g244))))))))))), since it is not a function type"
+     .
+     1)
+    ("Duplicate type annotation of (All (A) ((Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> A)) for empty-stream?, previous was (All (A) ((Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> Boolean))"
+     .
+     1)
+    ("Duplicate type annotation of (All (A) ((Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> A)) for null, previous was Null"
+     .
+     1)
+    ("Duplicate type annotation of (All (A) ((Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> A)) for empty-stream, previous was Null"
+     .
+     1)
+    ("Cannot apply expression of type (Pairof A (Rec g562 (U Null (Boxof (U (Pairof A g562) (-> (Pairof A g562))))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g568 (U Null (Boxof (U (Pairof A g568) (-> (Pairof A g568))))))) (-> (Pairof A (Rec g574 (U Null (Boxof (U (Pairof A g574) (-> (Pairof A g574)))))))))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name error" . 1)
+    ("Unbound type name forced" . 1)
+    ("Unbound type name B" . 1)
+    ("Unbound type name lambda" . 1)
+    ("Unbound type name stream1" . 1)
+    ("Cannot apply expression of type (Pairof A (Rec g549 (U Null (Boxof (U (Pairof A g549) (-> (Pairof A g549))))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g555 (U Null (Boxof (U (Pairof A g555) (-> (Pairof A g555))))))) (-> (Pairof A (Rec g561 (U Null (Boxof (U (Pairof A g561) (-> (Pairof A g561)))))))))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `set-box!' could not be applied to arguments" . 1)
+    ("Wrong number of arguments, expected 0 and got 2" . 1)
+    ("Cannot apply expression of type (Pairof A (Rec g546 (U Null (Boxof (U (Pairof A g546) (-> (Pairof A g546))))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g451 (U Null (Boxof (U (Pairof A g451) (-> (Pairof A g451))))))) (-> (Pairof A (Rec g457 (U Null (Boxof (U (Pairof A g457) (-> (Pairof A g457)))))))))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name p" . 1)
+    ("Unbound type name stream-car" . 1)
+    ("Unbound type name sub1" . 1)
+    ("Unbound type name num" . 1)
+    ("Unbound type name cdr" . 1)
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g467 (U Null (Boxof (U (Pairof A g467) (-> (Pairof A g467))))))) (-> (Pairof A (Rec g473 (U Null (Boxof (U (Pairof A g473) (-> (Pairof A g473)))))))))), since it is not a function type"
+     .
+     1)
+    ("Duplicate type annotation of (All (A) ((Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))))) for stream-car, previous was (All (A) ((Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> A))"
+     .
+     1)
+    ("not a well-formed definition" . 1)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found"
+     .
+     1)
+    ("expected 1 and got 2" . 1)
+    ("#<syntax Deque> ((Rec g413 (U Null (Boxof (U (Boxof g413) (-> (Boxof g413)))) (Pairof Positive-Integer g413))) Integer (Rec g419 (U Null (Boxof (U (Boxof g419) (-> (Boxof g419)))) (Pairof Positive-Integer g419))) Integer)), since it is not a function type"
+     .
+     1)
+    ("Unbound type name q" . 1)
+    ("Unbound type name +" . 1)
+    ("#<syntax Deque> ((Rec g389 (U Null (Boxof (U (Boxof g389) (-> (Boxof g389)))) (Pairof Positive-Integer g389))) Integer (Rec g395 (U Null (Boxof (U (Boxof g395) (-> (Boxof g395)))) (Pairof Positive-Integer g395))) Integer)), since it is not a function type"
+     .
+     1)
+    ("#<syntax Queue> ((Rec g311 (U Null (Boxof (U (Boxof g311) (-> (Boxof g311)))) (Pairof Positive-Integer g311))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function could not be applied to arguments" . 1)
+    ("#<syntax Queue> ((Rec g887 (U Null (Boxof (U (Boxof g887) (-> (Boxof g887)))) (Pairof Positive-Integer g887))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("#<syntax Queue> ((Rec g677 (U Null (Boxof (U (Boxof g677) (-> (Boxof g677)))) (Pairof Positive-Integer g677))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("scribble/manual" . 1)
+    ("missing type" . 1)
+    ("expects 2 arguments, but found none" . 1)
+    ("Polymorphic function `stream-cdr' could not be applied to arguments" . 1)
+    ("Polymorphic function `reverse' could not be applied to arguments" . 1)
+    ("Polymorphic function `stream-append' could not be applied to arguments"
+     .
+     1)
+    ("identifier `get' not included in nested require spec" . 1)
+    ("identifier `prefix-in' not included in nested require spec" . 1)
+    ("' not included in nested require spec" . 1)
+    ("identifier `vfilter' not included in nested require spec" . 1)
+    ("identifier `racket/base' not included in nested require spec" . 1)
+    ("Polymorphic function `trie' could not be applied to arguments" . 1)
+    ("Wrong number of arguments, expected 1 and got 3" . 1)
+    ("Polymorphic function `bind' could not be applied to arguments" . 1)
+    ("Polymorphic function `tries' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (U (Boxof (U (Boxof (Rec g260 (U Null (Boxof (U (Boxof g260) (-> (Boxof g260)))) (Pairof Integer g260)))) (-> (Boxof (Rec g266 (U Null (Boxof (U (Boxof g266) (-> (Boxof g266)))) (Pairof Integer g266))))))) (Pairof Integer (Rec g272 (U Null (Boxof (U (Boxof g272) (-> (Boxof g272)))) (Pairof Integer g272))))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name reverse" . 1)
+    ("(Integer)" . 1)
+    ("Unbound type name delay" . 1)))
+  (truncate
+   (passed . 26)
+   (failed
+    (total . 6658)
+    ("unbound identifier in module" . 2381)
+    ("type name used out of context" . 601)
+    ("Type variable B must be used with ..." . 309)
+    ("bad syntax (multiple types after identifier)" . 303)
+    ("bad syntax" . 267)
+    ("(A)" . 255)
+    ("must be used in a definition context" . 226)
+    ("expected identifier" . 178)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 133)
+    ("duplicate definition for identifier" . 91)
+    ("duplicate type variable declaration" . 90)
+    ("'" . 80)
+    ("duplicate argument identifier" . 67)
+    ("bad syntax (multiple expressions after identifier)" . 55)
+    ("use of a class keyword is not in a class" . 50)
+    ("Component of case-lambda type was not a function clause" . 49)
+    ("syntax error in pattern" . 46)
+    ("no expression after a sequence of internal definitions" . 43)
+    ("duplicate type variable" . 39)
+    ("duplicate type variable or index" . 37)
+    ("ellipses not allowed as an expression" . 34)
+    ("too many forms in body of All type" . 30)
+    ("type mismatch" . 30)
+    ("Unbound type name A" . 30)
+    ("not allowed as an expression" . 29)
+    ("duplicate argument name" . 26)
+    ("illegal use of `.'" . 25)
+    ("provided identifier not defined or imported for phase 0" . 23)
+    ("found a test that is not at the top level" . 21)
+    ("(empty A)" . 20)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     20)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     20)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 18)
+    ("Declaration for `head+tail' provided, but `head+tail' has no definition"
+     .
+     16)
+    ("struct does not refer to a structure definition" . 15)
+    ("bad syntax;" . 15)
+    ("duplicate identifier" . 15)
+    ("identifier already provided (as a different binding)" . 15)
+    ("expected a `)' to close `('" . 15)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 14)
+    ("Declaration for `tail' provided, but `tail' has no definition" . 14)
+    ("unexpected term" . 13)
+    ("collection not found" . 13)
+    ("not a require sub-form" . 13)
+    ("Declaration for `heap-ormap' provided, but `heap-ormap' has no definition"
+     .
+     12)
+    ("not allowed in an expression context" . 11)
+    ("Polymorphic function `map' could not be applied to arguments" . 11)
+    ("duplicate field identifier" . 10)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 10)
+    ("bad syntax (not an identifier and expression for a binding)" . 10)
+    ("Declaration for `head' provided, but `head' has no definition" . 10)
+    ("bad syntax (missing body)" . 10)
+    ("expected annotated-formals" . 10)
+    ("Declaration for `dqfoldl' provided, but `dqfoldl' has no definition" . 9)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     9)
+    ("illegal use of syntax" . 9)
+    ("not a well-formed definition" . 9)
+    ("expected 1 and got 2" . 8)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 8)
+    ("Bad arguments to function in apply" . 8)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 8)
+    ("Declaration for `sorted-list' provided, but `sorted-list' has no definition"
+     .
+     8)
+    ("Declaration for `str-less-than?' provided, but `str-less-than?' has no definition"
+     .
+     8)
+    ("Polymorphic function `tail' could not be applied to arguments" . 8)
+    ("identifier is already imported" . 7)
+    ("Expected a polymorphic function without ..., but given function/annotation had ..."
+     .
+     7)
+    ("bad syntax (missing binding pairs or body)" . 7)
+    ("expected optionally type-annotated binding" . 7)
+    ("Declaration for `comp' provided, but `comp' has no definition" . 7)
+    ("Declaration for `merge' provided, but `merge' has no definition" . 7)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     7)
+    ("expected 2 and got 1" . 6)
+    ("missing an \"else\" expression" . 6)
+    ("Unbound type name" . 6)
+    ("Polymorphic function `Node-val' could not be applied to arguments" . 6)
+    ("Declaration for `root' provided, but `root' has no definition" . 6)
+    ("Declaration for `insert' provided, but `insert' has no definition" . 6)
+    ("Declaration for `tl-help' provided, but `tl-help' has no definition" . 6)
+    ("Declaration for `delete-min/max' provided, but `delete-min/max' has no definition"
+     .
+     5)
+    ("Wrong number of arguments, expected 1 and got 2" . 5)
+    ("Polymorphic function `Heap2' could not be applied to arguments" . 5)
+    ("Polymorphic function `insert' could not be applied to arguments" . 5)
+    ("Polymorphic function `Heap-trees' could not be applied to arguments" . 5)
+    ("Polymorphic function `cdr' could not be applied to arguments" . 5)
+    ("Declaration for `find-min/max' provided, but `find-min/max' has no definition"
+     .
+     5)
+    ("no binding for identifier" . 5)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     5)
+    ("Declaration for `list-length' provided, but `list-length' has no definition"
+     .
+     5)
+    ("missing procedure expression;" . 5)
+    ("unexpected `)'" . 5)
+    ("Polymorphic function `loop' could not be applied to arguments" . 5)
+    ("bad module path" . 5)
+    ("Declaration for `less-than?' provided, but `less-than?' has no definition"
+     .
+     5)
+    ("not a definition sequence" . 5)
+    ("cannot open module file" . 5)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     5)
+    ("not at module level or top level" . 5)
+    ("expected 0 but got 3" . 4)
+    ("Declaration for `deque-andmap' provided, but `deque-andmap' has no definition"
+     .
+     4)
+    ("expected 1 but got 2" . 4)
+    ("expected 0 but got 1" . 4)
+    ("Declaration for `build-deque' provided, but `build-deque' has no definition"
+     .
+     4)
+    ("expected 3 but got 2" . 4)
+    ("Declaration for `last+init' provided, but `last+init' has no definition"
+     .
+     4)
+    ("omit-define-syntaxes" . 4)
+    ("Declaration for `rotate-drop' provided, but `rotate-drop' has no definition"
+     .
+     4)
+    ("(delay e)" . 4)
+    ("invalid pattern" . 4)
+    ("Bad arguments to polymorphic function in apply" . 4)
+    ("Polymorphic function `ormap' could not be applied to arguments" . 4)
+    ("Wrong number of arguments, expected 1 and got 3" . 4)
+    ("Unbound type name empty" . 4)
+    ("Cannot apply expression of type Nonnegative-Integer, since it is not a function type"
+     .
+     4)
+    ("Expected a polymorphic function with ..., but function/annotation had no ..."
+     .
+     4)
+    ("Polymorphic function `ins-tree' could not be applied to arguments" . 4)
+    ("Polymorphic function `car' could not be applied to arguments" . 4)
+    ("red does not refer to a structure definition" . 4)
+    ("Declaration for `fold' provided, but `fold' has no definition" . 4)
+    ("Declaration for `rake-red' provided, but `rake-red' has no definition"
+     .
+     4)
+    ("Declaration for `list-tenth' provided, but `list-tenth' has no definition"
+     .
+     4)
+    ("Declaration for `ins-tree' provided, but `ins-tree' has no definition"
+     .
+     4)
+    ("not in a definition context" . 4)
+    ("not a provide sub-form" . 4)
+    ("Declaration for `qmap' provided, but `qmap' has no definition" . 4)
+    ("Declaration for `vremove' provided, but `vremove' has no definition" . 4)
+    ("Declaration for `helper' provided, but `helper' has no definition" . 4)
+    ("Unbound type name l1" . 4)
+    ("Polymorphic function `box' could not be applied to arguments" . 4)
+    ("Unbound type name force" . 4)
+    ("Unbound type name ann" . 4)
+    ("Polymorphic function `psdrop' could not be applied to arguments" . 4)
+    ("Declaration for `pstake' provided, but `pstake' has no definition" . 4)
+    ("(K)" . 4)
+    ("Declaration for `tries' provided, but `tries' has no definition" . 4)
+    ("expects 2 arguments, but found none" . 4)
+    ("not an identifier, identifier with default, or keyword" . 4)
+    ("Polymorphic function `tries' could not be applied to arguments" . 4)
+    ("parent struct type not defined" . 3)
+    ("expected 2 but got 3" . 3)
+    ("expected 1 but got 3" . 3)
+    ("A does not refer to a structure definition" . 3)
+    ("Declaration for `enqueue' provided, but `enqueue' has no definition" . 3)
+    ("expected 2 but got 1" . 3)
+    ("Expected 1 type variables, but given 2" . 3)
+    ("wildcard not allowed as an expression" . 3)
+    ("Declaration for `enqueue-front' provided, but `enqueue-front' has no definition"
+     .
+     3)
+    ("use of a class keyword is not in a class top-level" . 3)
+    ("Used a type variable (Deque) not bound with ... as a bound on a ..." . 3)
+    ("(stream-cons x stream)" . 3)
+    ("bad syntax (not an identifier for procedure name, and not a nested procedure form)"
+     .
+     3)
+    ("(B)" . 3)
+    ("Unbound type name let" . 3)
+    ("Polymorphic function `cons' could not be applied to arguments" . 3)
+    ("Used a type variable (Heap) not bound with ... as a bound on a ..." . 3)
+    ("13 Heap> ((A A -> Boolean) (Listof (Node A)))), since it is not a function type"
+     .
+     3)
+    ("Polymorphic function `merge-helper' could not be applied to arguments"
+     .
+     3)
+    ("Unbound type name ..." . 3)
+    ("Unbound type name null?" . 3)
+    ("Polymorphic function `delete-min/max' could not be applied to arguments"
+     .
+     3)
+    ("Declaration for `redblacktree->list' provided, but `redblacktree->list' has no definition"
+     .
+     3)
+    ("y does not refer to a structure definition" . 3)
+    ("Declaration for `remove-mintree' provided, but `remove-mintree' has no definition"
+     .
+     3)
+    ("Declaration for `make-lheap' provided, but `make-lheap' has no definition"
+     .
+     3)
+    ("Declaration for `exec2' provided, but `exec2' has no definition" . 3)
+    ("Declaration for `rotate' provided, but `rotate' has no definition" . 3)
+    ("Declaration for `internal-queue' provided, but `internal-queue' has no definition"
+     .
+     3)
+    ("Polymorphic function `force' could not be applied to arguments" . 3)
+    ("Unbound type name lst" . 3)
+    ("Polymorphic function `head' could not be applied to arguments" . 3)
+    ("Polymorphic function `build-queue' could not be applied to arguments"
+     .
+     3)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     3)
+    ("Polymorphic function `stream-car' could not be applied to arguments" . 3)
+    ("(Integer)" . 3)
+    ("expected a field-specification keyword" . 2)
+    ("Used a type variable (and) not bound with ... as a bound on a ..." . 2)
+    ("expected 0 but got 2" . 2)
+    ("expected 3 but got 1" . 2)
+    ("let* does not refer to a structure definition" . 2)
+    ("Used a type variable (ques) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (tail) not bound with ... as a bound on a ..." . 2)
+    ("empty does not refer to a structure definition" . 2)
+    ("Used a type variable (func) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (empty) not bound with ... as a bound on a ..." . 2)
+    ("Unbound type name add1" . 2)
+    ("Polymorphic function `enqueue-front' could not be applied to arguments"
+     .
+     2)
+    ("13 Heap> ((A A -> Boolean) (Pairof (Node A) (Listof (Node A))))), since it is not a function type"
+     .
+     2)
+    ("Unbound type name cons" . 2)
+    ("Wrong number of arguments, expected 2 and got 1" . 2)
+    ("Polymorphic function `get-min' could not be applied to arguments" . 2)
+    ("Polymorphic function `heap-andmap' could not be applied to arguments"
+     .
+     2)
+    ("type]" . 2)
+    ("Declaration for `tree-lookup' provided, but `tree-lookup' has no definition"
+     .
+     2)
+    ("Structure type constructor Tree applied to non-regular arguments (IntHeap)"
+     .
+     2)
+    ("Used a type variable (Queue) not bound with ... as a bound on a ..." . 2)
+    ("duplicate definition" . 2)
+    ("Polymorphic function `psappend' could not be applied to arguments" . 2)
+    ("Unbound type name car" . 2)
+    ("(Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))" . 2)
+    ("(A Stream)" . 2)
+    ("Unbound type name loop" . 2)
+    ("Declaration for `typed/test-engine/scheme-tests' provided, but `typed/test-engine/scheme-tests' has no definition"
+     .
+     2)
+    ("Unbound type name expt" . 2)
+    ("Polymorphic function `build-deque' could not be applied to arguments"
+     .
+     2)
+    ("(Positive-Integer)" . 2)
+    ("" . 2)
+    ("Polymorphic function `bind' could not be applied to arguments" . 2)
+    ("Unbound type name list" . 2)
+    ("Used a type variable (queues) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Deque does not refer to a structure definition" . 1)
+    ("expected an identifier for the structure type name" . 1)
+    ("bad syntax (not a sequence of identifier--expression bindings)" . 1)
+    ("is does not refer to a structure definition" . 1)
+    ("deque does not refer to a structure definition" . 1)
+    ("given does not refer to a structure definition" . 1)
+    ("Used a type variable (foldr) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (let) not bound with ... as a bound on a ..." . 1)
+    ("Polymorphic function `Deque1' could not be applied to arguments" . 1)
+    ("13 Deque> ((Rec g7283 (U Null (Boxof (U (Boxof g7283) (-> (Boxof g7283)))) (Pairof A g7283))) Integer (Rec g7289 (U Null (Boxof (U (Boxof g7289) (-> (Boxof g7289)))) (Pairof A g7289))) Integer)), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (List (Deque B) ... B), since it is not a function type"
+     .
+     1)
+    ("Unbound type name pscar" . 1)
+    ("Unbound type name lenr" . 1)
+    ("Unbound type name internal-deque" . 1)
+    ("Unbound type name front" . 1)
+    ("Polymorphic function `maintainF' could not be applied to arguments" . 1)
+    ("Unbound type name que" . 1)
+    ("Cannot apply expression of type Positive-Integer, since it is not a function type"
+     .
+     1)
+    ("Unbound type name is" . 1)
+    ("Unbound type name deque" . 1)
+    ("13 Deque> ((Rec g8468 (U Null (Boxof (U (Boxof g8468) (-> (Boxof g8468)))) (Pairof A g8468))) Integer (Rec g8474 (U Null (Boxof (U (Boxof g8474) (-> (Boxof g8474)))) (Pairof A g8474))) Integer)), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `Deque-rear' could not be applied to arguments" . 1)
+    ("Declaration for `list-foldr' provided, but `list-foldr' has no definition"
+     .
+     1)
+    ("apply requires a final list argument, given only a function argument of type (U Null (List A))"
+     .
+     1)
+    ("(C)" . 1)
+    ("Polymorphic function `Node1' could not be applied to arguments" . 1)
+    ("Wrong number of arguments, expected 2 and got 3" . 1)
+    ("Polymorphic function `Heap-comparer' could not be applied to arguments"
+     .
+     1)
+    ("Polymorphic function `rest' could not be applied to arguments" . 1)
+    ("13 Node> (Integer A (Listof (Node A))))" . 1)
+    ("Unbound type name trees" . 1)
+    ("Unbound type name val" . 1)
+    ("Cannot instantiate non-polymorphic type (Heap A)" . 1)
+    ("(link node1 node2 func)" . 1)
+    ("Unbound type name node1" . 1)
+    ("Unbound type name node2" . 1)
+    ("Unbound type name Node-rank" . 1)
+    ("Polymorphic function `find-min/max' could not be applied to arguments"
+     .
+     1)
+    ("Cannot apply expression of type (List (Heap B) ... B), since it is not a function type"
+     .
+     1)
+    ("(A A Boolean)" . 1)
+    ("(A Nonnegative-Integer Boolean)" . 1)
+    ("Unbound type name hep" . 1)
+    ("Unbound type name Heap-comparer" . 1)
+    ("Unbound type name heap2-trees" . 1)
+    ("Unbound type name heap1-trees" . 1)
+    ("Unbound type name merge-helper" . 1)
+    ("(C C Boolean)" . 1)
+    ("(C Heap Boolean)" . 1)
+    ("(C A Boolean)" . 1)
+    ("(C Boolean Boolean)" . 1)
+    ("(((A -> Boolean) (Heap A) -> Boolean) ((A B ... B -> Boolean) (Heap A) (Heap B) ... B -> Boolean))"
+     .
+     1)
+    ("Unbound type name or" . 1)
+    ("Cannot apply expression of type (Pairof (Node A) (Listof (Node A))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Pairof (Node A) (Listof (Node A)))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name pairing.rkt" . 1)
+    ("expected more terms" . 1)
+    ("Structure type constructor IntHeap applied to non-regular arguments (IntHeap)"
+     .
+     1)
+    ("Structure type constructor IntHeap applied to non-regular arguments (Heap)"
+     .
+     1)
+    ("Unbound type name heap" . 1)
+    ("tre does not refer to a structure definition" . 1)
+    ("RBNode-right does not refer to a structure definition" . 1)
+    ("expected a clause with a pattern and a result" . 1)
+    ("Structure type constructor RBNode applied to non-regular arguments (Tree)"
+     .
+     1)
+    ("-> does not refer to a structure definition" . 1)
+    ("c does not refer to a structure definition" . 1)
+    ("b does not refer to a structure definition" . 1)
+    ("expected a struct-specification keyword" . 1)
+    ("Structure type constructor Node applied to non-regular arguments (Tree)"
+     .
+     1)
+    ("Used a type variable (List) not bound with ... as a bound on a ..." . 1)
+    ("Structure type constructor Root applied to non-regular arguments (RAList)"
+     .
+     1)
+    ("Structure type constructor Root applied to non-regular arguments (Tree)"
+     .
+     1)
+    ("Structure type constructor Root applied to non-regular arguments (Node)"
+     .
+     1)
+    ("Structure type constructor Root applied to non-regular arguments (Leaf)"
+     .
+     1)
+    ("bad syntax (not an identifier)" . 1)
+    ("expected `)' to close preceding `(', found instead `}'" . 1)
+    ("missing `}' to close `{' on line 109, found instead `)'" . 1)
+    ("bad syntax (clause is not a test-value pair)" . 1)
+    ("expected `]' to close preceding `[', found instead `}'" . 1)
+    ("Declaration for `phelp-rgt' provided, but `phelp-rgt' has no definition"
+     .
+     1)
+    ("tree does not refer to a structure definition" . 1)
+    ("cons does not refer to a structure definition" . 1)
+    ("Declaration for `rank' provided, but `rank' has no definition" . 1)
+    ("Used a type variable (deques) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("exec does not refer to a structure definition" . 1)
+    ("expected 5 but got 1" . 1)
+    ("Listof does not refer to a structure definition" . 1)
+    ("Cannot apply expression of type (Boxof (U (Boxof A) (-> (Boxof A)))), since it is not a function type"
+     .
+     1)
+    ("Used a type variable (internal-queue) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (is) not bound with ... as a bound on a ..." . 1)
+    ("(internal-queue pref front lenf rear lenr)" . 1)
+    ("(check-len-inv pref front lenf rear lenr)" . 1)
+    ("(check-pref-inv pref front lenf rear lenr)" . 1)
+    ("(force promise)" . 1)
+    ("variable used twice in pattern" . 1)
+    ("let does not refer to a structure definition" . 1)
+    ("Queue does not refer to a structure definition" . 1)
+    ("elem does not refer to a structure definition" . 1)
+    ("Structure type constructor Deep applied to non-regular arguments (Queue)"
+     .
+     1)
+    ("Structure type constructor Deep applied to non-regular arguments (Pairof)"
+     .
+     1)
+    ("Structure type constructor Deep applied to non-regular arguments (Promise)"
+     .
+     1)
+    ("Structure type constructor Deep applied to non-regular arguments (OneTwo)"
+     .
+     1)
+    ("25 Zero>" . 1)
+    ("Declaration for `vreverse-helper' provided, but `vreverse-helper' has no definition"
+     .
+     1)
+    ("Used a type variable (loop) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (n) not bound with ... as a bound on a ..." . 1)
+    ("(rotate frnt rer accum)" . 1)
+    ("(empty? que)" . 1)
+    ("A)" . 1)
+    ("Declaration for `rear' provided, but `rear' has no definition" . 1)
+    ("too many forms" . 1)
+    ("(rotate val1 prio1 val2 prio2 t1 t2 t3)" . 1)
+    ("(xor l r)" . 1)
+    ("Unbound type name l2" . 1)
+    ("Unbound type name psappend" . 1)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     1)
+    ("Unbound type name cdr" . 1)
+    ("Unbound type name delay" . 1)
+    ("Unbound type name X" . 1)
+    ("Duplicate type annotation of (All (A) ((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) -> (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))))) for pscdr, previous was (All (A) ((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) -> (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X))))))))"
+     .
+     1)
+    ("Duplicate type annotation of (All (A) ((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) -> (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))))) for pscar, previous was (All (A) ((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) -> A))"
+     .
+     1)
+    ("Cannot apply expression of type (Pairof A (Rec g384 (U Null (Boxof (U (Boxof g384) (-> (Boxof g384)))) (Pairof A g384)))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name define-type" . 1)
+    ("Unbound type name box" . 1)
+    ("Unbound type name xs" . 1)
+    ("Unbound type name lambda" . 1)
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g269 (U Null (Boxof (U (Pairof A g269) (-> (Pairof A g269))))))) (-> (Pairof A (Rec g275 (U Null (Boxof (U (Pairof A g275) (-> (Pairof A g275)))))))))), since it is not a function type"
+     .
+     1)
+    ("(if x stream)" . 1)
+    ("Unbound type name stream" . 1)
+    ("Cannot apply expression of type (U (Pairof A (Rec g244 (U Null (Boxof (U (Pairof A g244) (-> (Pairof A g244))))))) (-> (Pairof A (Rec g250 (U Null (Boxof (U (Pairof A g250) (-> (Pairof A g250))))))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U (Pairof A (Rec g250 (U Null (Boxof (U (Pairof A g250) (-> (Pairof A g250))))))) (-> (Pairof A (Rec g256 (U Null (Boxof (U (Pairof A g256) (-> (Pairof A g256))))))))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name if" . 1)
+    ("Unbound type name p" . 1)
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g470 (U Null (Boxof (U (Pairof A g470) (-> (Pairof A g470))))))) (-> (Pairof A (Rec g476 (U Null (Boxof (U (Pairof A g476) (-> (Pairof A g476)))))))))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name U" . 1)
+    ("Recursive types are not allowed directly inside their definition" . 1)
+    ("Unbound type name Rec" . 1)
+    ("Unbound type name All" . 1)
+    ("Cannot apply expression of type (U (Pairof A (Rec g547 (U Null (Boxof (U (Pairof A g547) (-> (Pairof A g547))))))) (-> (Pairof A (Rec g553 (U Null (Boxof (U (Pairof A g553) (-> (Pairof A g553))))))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Pairof A (Rec g238 (U Null (Boxof (U (Pairof A g238) (-> (Pairof A g238))))))) (-> (Pairof A (Rec g244 (U Null (Boxof (U (Pairof A g244) (-> (Pairof A g244))))))))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Pairof A (Rec g314 (U Null (Boxof (U (Pairof A g314) (-> (Pairof A g314))))))) (-> (Pairof A (Rec g320 (U Null (Boxof (U (Pairof A g320) (-> (Pairof A g320))))))))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type A, since it is not a function type" . 1)
+    ("Declaration for `pfds/heap/binomial' provided, but `pfds/heap/binomial' has no definition"
+     .
+     1)
+    ("Declaration for `typed-scheme' provided, but `typed-scheme' has no definition"
+     .
+     1)
+    ("#<syntax Deque> ((Rec g580 (U Null (Boxof (U (Boxof g580) (-> (Boxof g580)))) (Pairof Positive-Integer g580))) Integer (Rec g586 (U Null (Boxof (U (Boxof g586) (-> (Boxof g586)))) (Pairof Positive-Integer g586))) Integer)), since it is not a function type"
+     .
+     1)
+    ("Unbound type name time" . 1)
+    ("Unbound type name q" . 1)
+    ("#<syntax Queue> ((Rec g887 (U Null (Boxof (U (Boxof g887) (-> (Boxof g887)))) (Pairof Positive-Integer g887))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("No function domains matched in function application" . 1)
+    ("Wrong number of arguments, expected at least 2 and got 1" . 1)
+    ("#<syntax Queue> ((Rec g830 (U Null (Boxof (U (Boxof g830) (-> (Boxof g830)))) (Pairof Positive-Integer g830))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("#<syntax Queue> ((Rec g601 (U Null (Boxof (U (Boxof g601) (-> (Boxof g601)))) (Pairof Positive-Integer g601))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("pfds/treap" . 1)
+    ("bad argument sequence" . 1)
+    ("pfds/heap/skew-binomial" . 1)
+    ("Polymorphic function `append' could not be applied to arguments" . 1)
+    ("Polymorphic function `stream-cdr' could not be applied to arguments" . 1)
+    ("bad sequence binding clause" . 1)
+    ("pfds/queue/physicists" . 1)
+    ("Polymorphic function `lookup' could not be applied to arguments" . 1)
+    ("Wrong number of arguments, expected 1 and got 4" . 1)
+    ("(check-type e t)" . 1)
+    ("Cannot apply expression of type (List One Positive-Byte Positive-Byte), since it is not a function type"
+     .
+     1)
+    ("Unbound type name reverse" . 1)
+    ("\"../delay.rkt\"" . 1)
+    ("Unbound type name +" . 1))))

@@ -1,0 +1,48 @@
+'((remove
+   (passed . 116)
+   (failed
+    (total . 124)
+    ("no pattern variables before ellipsis in template" . 18)
+    ("pattern variable cannot be used outside of a template" . 17)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 16)
+    ("variable used twice in pattern" . 13)
+    ("missing ellipsis with pattern variable in template" . 13)
+    ("missing `)' to close preceding `(', found instead `]'" . 9)
+    ("unbound identifier in module (in the transformer environment, which does not include the run-time definition)"
+     .
+     7)
+    ("expected a `)' to close `('" . 5)
+    ("missing procedure expression;" . 4)
+    ("provided identifier not defined or imported for phase 0" . 4)
+    ("too many ellipses in template" . 3)
+    ("ellipses not allowed as an expression" . 3)
+    ("misplaced ellipsis in pattern (follows other ellipsis)" . 2)
+    ("bad form" . 2)
+    ("missing `)' to close `(' on line 174, found instead `]'; indentation suggests a missing `)' before line 178"
+     .
+     1)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 124"
+     .
+     1)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 128"
+     .
+     1)
+    ("not allowed in an expression context" . 1)
+    ("missing `)' to close `(' on line 206, found instead `]'; indentation suggests a missing `)' before line 209"
+     .
+     1)
+    ("bad syntax" . 1)
+    ("illegal use of syntax" . 1)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 193"
+     .
+     1)))
+  (truncate
+   (passed . 17)
+   (failed
+    (total . 39)
+    ("unbound identifier in module" . 23)
+    ("Illegal clause in endpoint definition" . 10)
+    ("duplicate argument identifier" . 2)
+    ("(publisher topic clause ...)" . 2)
+    ("wildcard not allowed as an expression" . 1)
+    ("(observe-publishers topic clause ...)" . 1))))

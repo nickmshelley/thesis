@@ -1,0 +1,20 @@
+'((remove
+   (passed . 6)
+   (failed
+    (total . 19)
+    ("unbound identifier in module" . 10)
+    ("not a procedure;" . 5)
+    ("illegal use of syntax" . 1)
+    ("result arity mismatch;" . 1)
+    ("arity mismatch;" . 1)
+    ("duplicate binding name" . 1)))
+  (truncate
+   (passed . 49)
+   (failed
+    (total . 26)
+    ("unbound identifier in module" . 16)
+    ("expected a `)' to close `('" . 6)
+    ("duplicate argument identifier" . 1)
+    ("illegal use of `.'" . 1)
+    ("not allowed in an expression context" . 1)
+    ("missing an \"else\" expression" . 1))))

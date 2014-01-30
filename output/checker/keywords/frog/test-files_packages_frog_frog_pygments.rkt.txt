@@ -1,0 +1,20 @@
+'((remove
+   (passed . 45)
+   (failed
+    (total . 35)
+    ("unbound identifier in module" . 28)
+    ("bad module path" . 2)
+    ("collection not found" . 2)
+    ("not allowed as an expression" . 2)
+    ("bad syntax" . 1)))
+  (truncate
+   (passed . 32)
+   (failed
+    (total . 48)
+    ("unbound identifier in module" . 24)
+    ("syntax error in pattern" . 10)
+    ("not allowed as an expression" . 5)
+    ("not a require sub-form" . 5)
+    ("bad syntax" . 2)
+    ("duplicate argument identifier" . 1)
+    ("use of 'any' outside the range of an arrow contract" . 1))))

@@ -1,0 +1,26 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 170)
+    ("The type of vm-processes cannot be converted to a contract" . 152)
+    ("expected a `)' to close `('" . 13)
+    ("missing `)' to close preceding `(', found instead `]'" . 4)
+    ("missing `)' to close `(' on line 76, found instead `]'; indentation suggests a missing `)' before line 77"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 52)
+    ("unbound identifier in module" . 25)
+    ("expected a `)' to close `('" . 9)
+    ("syntax error in pattern" . 4)
+    ("type name used out of context" . 4)
+    ("must be used in a definition context" . 4)
+    ("Declaration for `transition-accepter' provided, but `transition-accepter' has no definition"
+     .
+     2)
+    ("(send-to-user* debug-name pid (e) failure-result enclosed-expr)" . 1)
+    ("not allowed in an expression context" . 1)
+    ("duplicate argument identifier" . 1)
+    ("bad syntax" . 1))))

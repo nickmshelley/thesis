@@ -1,0 +1,22 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 25)
+    ("unbound identifier in module" . 13)
+    ("found a test that is not at the top level" . 8)
+    ("expected identifier" . 1)
+    ("'" . 1)
+    ("expected annotated-formals" . 1)
+    ("not allowed in an expression context" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 32)
+    ("unbound identifier in module" . 11)
+    ("found a test that is not at the top level" . 9)
+    ("type name used out of context" . 6)
+    ("bad syntax" . 2)
+    ("unexpected term" . 2)
+    ("Declaration for `less-than?' provided, but `less-than?' has no definition"
+     .
+     2))))

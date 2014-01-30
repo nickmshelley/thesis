@@ -1,0 +1,105 @@
+'((remove
+   (passed . 40)
+   (failed
+    (total . 135)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 29)
+    ("missing `]' to close preceding `[', found instead `)'" . 18)
+    ("missing `)' to close preceding `(', found instead `]'" . 13)
+    ("missing `]' to close `[' on line 20, found instead `)'" . 9)
+    ("bad syntax" . 7)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 23"
+     .
+     3)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 92"
+     .
+     3)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 130"
+     .
+     3)
+    ("missing `]' to close `[' on line 21, found instead `)'; indentation suggests a missing `]' before line 23"
+     .
+     2)
+    ("missing `)' to close `(' on line 53, found instead `]'; indentation suggests a missing `)' before line 157"
+     .
+     2)
+    ("missing `]' to close `[' on line 156, found instead `)'; indentation suggests a missing `)' before line 157"
+     .
+     2)
+    ("pattern variable cannot be used outside of a template" . 2)
+    ("missing `)' to close `(' on line 57, found instead `]'" . 2)
+    ("missing `)' to close `(' on line 53, found instead `]'; indentation suggests a missing `)' before line 163"
+     .
+     2)
+    ("missing `]' to close `[' on line 161, found instead `)'" . 2)
+    ("missing `)' to close `(' on line 53, found instead `]'; indentation suggests a missing `)' before line 161"
+     .
+     2)
+    ("missing `]' to close `[' on line 160, found instead `)'; indentation suggests a missing `]' before line 161"
+     .
+     2)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 75"
+     .
+     2)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 109"
+     .
+     2)
+    ("missing `]' to close `[' on line 93, found instead `)'" . 2)
+    ("missing `]' to close `[' on line 40, found instead `)'" . 2)
+    ("missing `]' to close `[' on line 91, found instead `)'; indentation suggests a missing `]' before line 92"
+     .
+     2)
+    ("missing `)' to close `(' on line 53, found instead `]'; indentation suggests a missing `)' before line 155"
+     .
+     2)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 95"
+     .
+     2)
+    ("missing `]' to close `[' on line 94, found instead `)'; indentation suggests a missing `]' before line 95"
+     .
+     2)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 98"
+     .
+     2)
+    ("missing `)' to close `(' on line 21, found instead `]'; indentation suggests a missing `)' before line 159"
+     .
+     1)
+    ("missing `)' to close `(' on line 54, found instead `]'" . 1)
+    ("missing `)' to close `(' on line 21, found instead `]'; indentation suggests a missing `)' before line 163"
+     .
+     1)
+    ("missing `)' to close `(' on line 21, found instead `]'; indentation suggests a missing `)' before line 161"
+     .
+     1)
+    ("missing `)' to close `(' on line 73, found instead `]'; indentation suggests a missing `)' before line 75"
+     .
+     1)
+    ("not allowed as an expression" . 1)
+    ("missing `)' to close `(' on line 105, found instead `]'; indentation suggests a missing `)' before line 109"
+     .
+     1)
+    ("missing `)' to close `(' on line 91, found instead `]'" . 1)
+    ("missing `)' to close `(' on line 39, found instead `]'" . 1)
+    ("missing `)' to close `(' on line 21, found instead `]'; indentation suggests a missing `)' before line 155"
+     .
+     1)
+    ("missing `)' to close `(' on line 91, found instead `]'; indentation suggests a missing `)' before line 95"
+     .
+     1)
+    ("missing `)' to close `(' on line 91, found instead `]'; indentation suggests a missing `)' before line 98"
+     .
+     1)
+    ("missing `]' to close `[' on line 20, found instead `)'; indentation suggests a missing `)' before line 161"
+     .
+     1)
+    ("wildcard not allowed as an expression" . 1)))
+  (truncate
+   (passed . 33)
+   (failed
+    (total . 47)
+    ("unbound identifier in module" . 31)
+    ("expected a `)' to close `('" . 6)
+    ("duplicate argument identifier" . 4)
+    ("duplicate definition for identifier" . 3)
+    ("duplicate identifier" . 1)
+    ("duplicate argument name" . 1)
+    ("bad syntax" . 1))))

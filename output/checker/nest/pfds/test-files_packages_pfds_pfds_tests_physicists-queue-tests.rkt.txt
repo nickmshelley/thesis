@@ -1,0 +1,16 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 22)
+    ("unbound identifier in module" . 12)
+    ("collection not found" . 4)
+    ("(empty A)" . 3)
+    ("not a require sub-form" . 1)
+    ("found a test that is not at the top level" . 1)
+    ("bad syntax" . 1)))
+  (truncate
+   (passed . 1)
+   (failed
+    (total . 4)
+    ("unbound identifier in module" . 3)
+    ("bad syntax (missing body)" . 1))))

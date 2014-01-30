@@ -1,0 +1,42 @@
+'((remove
+   (passed . 41)
+   (failed
+    (total . 59)
+    ("unbound identifier in module" . 39)
+    ("missing `]' to close `[' on line 62, found instead `)'; indentation suggests a missing `]' before line 63"
+     .
+     5)
+    ("duplicate argument identifier" . 5)
+    ("arity mismatch;" . 2)
+    ("bad syntax" . 1)
+    ("expected more terms starting with any term" . 1)
+    ("illegal use of `.'" . 1)
+    ("broke its contract" . 1)
+    ("duplicate identifier" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("contract violation" . 1)))
+  (truncate
+   (passed . 53)
+   (failed
+    (total . 47)
+    ("unbound identifier in module" . 15)
+    ("missing `]' to close `[' on line 75, found instead `)'; indentation suggests a missing `]' before line 76"
+     .
+     5)
+    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 77"
+     .
+     5)
+    ("missing `)' to close preceding `(', found instead `]'" . 5)
+    ("syntax error in pattern" . 5)
+    ("illegal use of `.'" . 3)
+    ("not allowed in an expression context" . 2)
+    ("bad syntax" . 2)
+    ("ellipses not allowed as an expression" . 2)
+    ("wildcard not allowed as an expression" . 1)
+    ("duplicate argument identifier" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1))))

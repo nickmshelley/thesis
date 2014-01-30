@@ -1,0 +1,18 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 12)
+    ("unbound identifier in module" . 5)
+    ("collection not found" . 4)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     2)
+    ("found a test that is not at the top level" . 1)))
+  (truncate
+   (passed . 11)
+   (failed
+    (total . 14)
+    ("provided identifier not defined or imported for phase 0" . 7)
+    ("unbound identifier in module" . 5)
+    ("identifier is already imported" . 1)
+    ("duplicate definition for identifier" . 1))))

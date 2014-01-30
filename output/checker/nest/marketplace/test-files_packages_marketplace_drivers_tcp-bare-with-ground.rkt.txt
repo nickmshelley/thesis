@@ -1,0 +1,37 @@
+'((remove
+   (passed . 156)
+   (failed
+    (total . 129)
+    ("unbound identifier in module" . 43)
+    ("variable not bound in all or patterns" . 24)
+    ("not allowed as an expression" . 10)
+    ("Illegal clause in endpoint definition" . 9)
+    ("syntax error in pattern" . 8)
+    ("bad syntax" . 5)
+    ("Illegal use of match-state outside endpoint definition context" . 5)
+    ("wildcard not allowed as an expression" . 4)
+    ("missing argument expression after keyword" . 4)
+    ("unexpected term" . 3)
+    ("(publisher topic clause ...)" . 2)
+    ("(subscriber topic clause ...)" . 2)
+    ("this match expander must be used inside match" . 2)
+    ("duplicate argument identifier" . 2)
+    ("Illegal use of match-conversation outside endpoint definition context"
+     .
+     1)
+    ("expected a clause with a pattern and a result" . 1)
+    ("(transition/no-state action ...)" . 1)
+    ("Illegal use of on-absence outside endpoint definition context" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("Illegal use of on-message outside endpoint definition context" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 28)
+    ("unbound identifier in module" . 13)
+    ("bad syntax (multiple types after identifier)" . 8)
+    ("expected identifier" . 5)
+    ("bad syntax" . 1)
+    ("not allowed in an expression context" . 1))))

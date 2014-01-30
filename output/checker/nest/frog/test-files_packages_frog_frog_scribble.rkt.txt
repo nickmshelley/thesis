@@ -1,0 +1,39 @@
+'((remove
+   (passed . 47)
+   (failed
+    (total . 53)
+    ("unbound identifier in module" . 23)
+    ("expected `)' to close `(' on line 62, found instead `]'" . 5)
+    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 75"
+     .
+     5)
+    ("not a require sub-form" . 5)
+    ("provided identifier not defined or imported for phase 0" . 4)
+    ("procedure does not accept keyword arguments" . 2)
+    ("ellipses not allowed as an expression" . 2)
+    ("illegal use of `.'" . 1)
+    ("identifier `only-in' not included in nested require spec" . 1)
+    ("identifier `read-scribble-file' not included in nested require spec" . 1)
+    ("identifier `path' not included in nested require spec" . 1)
+    ("img-local-path' not included in nested require spec" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("identifier is already imported" . 1)))
+  (truncate
+   (passed . 43)
+   (failed
+    (total . 57)
+    ("unbound identifier in module" . 36)
+    ("missing `]' to close `[' on line 61, found instead `)'; indentation suggests a missing `]' before line 62"
+     .
+     5)
+    ("duplicate definition for identifier" . 3)
+    ("bad syntax" . 2)
+    ("wildcard not allowed as an expression" . 2)
+    ("illegal use of syntax" . 2)
+    ("expected a clause with a pattern and a result" . 1)
+    ("expected more terms starting with any term" . 1)
+    ("expected an identifier for a submodule, found something else" . 1)
+    ("contract violation" . 1)
+    ("not a provide sub-form" . 1)
+    ("collection not found" . 1)
+    ("not allowed in an expression context" . 1))))

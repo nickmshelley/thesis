@@ -1,0 +1,12 @@
+'((remove
+   (passed . 2)
+   (failed
+    (total . 8)
+    ("not a provide sub-form" . 5)
+    ("identifier already provided (as a different binding)" . 3)))
+  (truncate
+   (passed . 5)
+   (failed
+    (total . 5)
+    ("not a provide sub-form" . 4)
+    ("bad syntax for provide sub-form" . 1))))

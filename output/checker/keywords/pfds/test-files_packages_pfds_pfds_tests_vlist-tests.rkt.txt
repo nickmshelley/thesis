@@ -1,0 +1,16 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 30)
+    ("unbound identifier in module" . 13)
+    ("found a test that is not at the top level" . 7)
+    ("collection not found" . 4)
+    ("type name used out of context" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("identifier `size' not included in nested require spec" . 1)
+    ("identifier `vreverse' not included in nested require spec" . 1)
+    ("identifier `vfoldr' not included in nested require spec" . 1)
+    ("not allowed in an expression context" . 1)))
+  (truncate
+   (passed . 0)
+   (failed (total . 2) ("unbound identifier in module" . 2))))

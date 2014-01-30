@@ -1,0 +1,43 @@
+'((remove
+   (passed . 62)
+   (failed
+    (total . 68)
+    ("unbound identifier in module" . 34)
+    ("expected a closing '\"'" . 5)
+    ("missing `]' to close `[' on line 70, found instead `)'; indentation suggests a missing `]' before line 71"
+     .
+     5)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("provided identifier not defined or imported for phase 0" . 4)
+    ("ellipses not allowed as an expression" . 3)
+    ("incorrect use of ... in pattern" . 2)
+    ("collection not found" . 2)
+    ("duplicate argument name" . 1)
+    ("non-list pattern inside unquote-splicing" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("wildcard not allowed as an expression" . 1)
+    ("duplicate argument identifier" . 1)
+    ("unexpected `)'" . 1)
+    ("not at module level or top level" . 1)
+    ("default-value expression missing" . 1)))
+  (truncate
+   (passed . 60)
+   (failed
+    (total . 66)
+    ("unbound identifier in module" . 30)
+    ("missing `]' to close preceding `[', found instead `)'" . 10)
+    ("missing `]' to close `[' on line 35, found instead `)'" . 5)
+    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 94"
+     .
+     5)
+    ("syntax error in pattern" . 4)
+    ("incorrect use of ... in pattern" . 3)
+    ("ellipses not allowed as an expression" . 2)
+    ("unbound identifier;" . 2)
+    ("wildcard not allowed as an expression" . 1)
+    ("missing an \"else\" expression" . 1)
+    ("illegal use of `.'" . 1)
+    ("collection not found" . 1)
+    ("cannot open module file" . 1))))

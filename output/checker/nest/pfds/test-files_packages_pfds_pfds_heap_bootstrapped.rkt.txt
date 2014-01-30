@@ -1,0 +1,91 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 180)
+    ("unbound identifier in module" . 64)
+    ("type name used out of context" . 21)
+    ("Type variable B must be used with ..." . 19)
+    ("bad syntax" . 8)
+    ("must be used in a definition context" . 7)
+    ("not allowed as an expression" . 6)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 6)
+    ("duplicate argument identifier" . 6)
+    ("ellipses not allowed as an expression" . 4)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("collection not found" . 4)
+    ("Declaration for `sorted-list' provided, but `sorted-list' has no definition"
+     .
+     4)
+    ("duplicate type variable declaration" . 3)
+    ("Component of case-lambda type was not a function clause" . 3)
+    ("no expression after a sequence of internal definitions" . 2)
+    ("illegal use of `.'" . 2)
+    ("duplicate type variable" . 2)
+    ("bad syntax (multiple expressions after identifier)" . 2)
+    ("duplicate definition for identifier" . 2)
+    ("Expected a polymorphic function with ..., but function/annotation had no ..."
+     .
+     2)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("Declaration for `comp' provided, but `comp' has no definition" . 1)
+    ("duplicate type variable or index" . 1)
+    ("duplicate argument name" . 1)
+    ("bad module path" . 1)
+    ("Polymorphic function `BSHeap2' could not be applied to arguments" . 1)
+    ("expected identifier" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 198)
+    ("unbound identifier in module" . 63)
+    ("type name used out of context" . 16)
+    ("(A)" . 13)
+    ("bad syntax (multiple types after identifier)" . 12)
+    ("Type variable B must be used with ..." . 10)
+    ("Component of case-lambda type was not a function clause" . 10)
+    ("bad syntax" . 8)
+    ("Declaration for `comp' provided, but `comp' has no definition" . 7)
+    ("use of a class keyword is not in a class" . 6)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 6)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     5)
+    ("expected identifier" . 4)
+    ("must be used in a definition context" . 4)
+    ("duplicate argument identifier" . 3)
+    ("Declaration for `find-min/max' provided, but `find-min/max' has no definition"
+     .
+     3)
+    ("duplicate definition for identifier" . 3)
+    ("duplicate type variable" . 3)
+    ("Declaration for `sorted-list' provided, but `sorted-list' has no definition"
+     .
+     3)
+    ("ellipses not allowed as an expression" . 2)
+    ("bad syntax (missing binding pairs or body)" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("no binding for identifier" . 1)
+    ("'" . 1)
+    ("Unbound type name pairing.rkt" . 1)
+    ("not allowed as an expression" . 1)
+    ("expected more terms" . 1)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 1)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Heap) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Structure type constructor IntHeap applied to non-regular arguments (IntHeap)"
+     .
+     1)
+    ("Structure type constructor IntHeap applied to non-regular arguments (Heap)"
+     .
+     1)
+    ("Unbound type name" . 1)
+    ("Unbound type name heap" . 1)
+    ("bad syntax (multiple expressions after identifier)" . 1))))

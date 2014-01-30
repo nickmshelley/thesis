@@ -1,0 +1,21 @@
+'((remove
+   (passed . 39)
+   (failed
+    (total . 46)
+    ("unbound identifier in module" . 25)
+    ("missing procedure expression;" . 9)
+    ("unexpected `)'" . 5)
+    ("bad syntax" . 2)
+    ("name must be an identifier" . 2)
+    ("wildcard not allowed as an expression" . 1)
+    ("duplicate binding name" . 1)
+    ("allowed only in a module body" . 1)))
+  (truncate
+   (passed . 37)
+   (failed
+    (total . 48)
+    ("unexpected `)'" . 20)
+    ("unbound identifier in module" . 11)
+    ("expected a `)' to close `('" . 10)
+    ("missing procedure expression;" . 5)
+    ("duplicate argument identifier" . 2))))

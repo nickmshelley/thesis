@@ -1,0 +1,29 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 48)
+    ("unbound identifier in module" . 17)
+    ("Declaration for `do-spawn' provided, but `do-spawn' has no definition"
+     .
+     9)
+    ("type name used out of context" . 7)
+    ("(OldState)" . 5)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("bad syntax" . 3)
+    ("syntax error in pattern" . 1)
+    ("not a require sub-form" . 1)
+    ("identifier is not bound to a structure type" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 22)
+    ("unbound identifier in module" . 13)
+    ("(send-to-user p (e) failure-result enclosed-expr)" . 2)
+    ("must be used in a definition context" . 2)
+    ("bad syntax" . 1)
+    ("type name used out of context" . 1)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     1)
+    ("not allowed in an expression context" . 1)
+    ("'" . 1))))

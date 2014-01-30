@@ -1,0 +1,17 @@
+'((remove
+   (passed . 23)
+   (failed
+    (total . 32)
+    ("unbound identifier in module" . 22)
+    ("duplicate definition for identifier" . 5)
+    ("duplicate argument identifier" . 2)
+    ("duplicate binding name" . 2)
+    ("not allowed in an expression context" . 1)))
+  (truncate
+   (passed . 26)
+   (failed
+    (total . 29)
+    ("unbound identifier in module" . 19)
+    ("duplicate argument identifier" . 7)
+    ("bad syntax" . 2)
+    ("bad sequence binding clause" . 1))))

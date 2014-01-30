@@ -1,0 +1,26 @@
+'((remove
+   (passed . 10)
+   (failed
+    (total . 84)
+    ("unbound identifier in module" . 66)
+    ("missing `)' to close `(' on line 85, found instead `]'; indentation suggests a missing `)' before line 86"
+     .
+     5)
+    ("expected a `)' to close `('" . 5)
+    ("syntax error in pattern" . 5)
+    ("bad syntax" . 1)
+    ("(publisher topic clause ...)" . 1)
+    ("duplicate argument identifier" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 163)
+    ("The type of vm-processes cannot be converted to a contract" . 158)
+    ("expected a `)' to close `('" . 2)
+    ("missing `)' to close `(' on line 74, found instead `]'; indentation suggests a missing `)' before line 75"
+     .
+     1)
+    ("missing `)' to close preceding `(', found instead `]'" . 1)
+    ("missing `)' to close `(' on line 78, found instead `]'; indentation suggests a missing `)' before line 79"
+     .
+     1))))

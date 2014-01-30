@@ -1,0 +1,13 @@
+'((remove
+   (passed . 4)
+   (failed
+    (total . 6)
+    ("unbound identifier in module" . 4)
+    ("not a provide sub-form" . 1)
+    ("duplicate field identifier" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 10)
+    ("identifier is not bound to struct type information" . 5)
+    ("not a provide sub-form" . 5))))

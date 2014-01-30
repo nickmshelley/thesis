@@ -1,0 +1,26 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 20)
+    ("unbound identifier in module" . 8)
+    ("expected a `module' declaration" . 5)
+    ("type mismatch" . 2)
+    ("duplicate argument identifier" . 1)
+    ("Wrong number of arguments, expected 2 and got 1" . 1)
+    ("Polymorphic function `k' could not be applied to arguments" . 1)
+    ("Cannot instantiate non-polymorphic type vm" . 1)
+    ("bad syntax" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 21)
+    ("unbound identifier in module" . 8)
+    ("Unbound type name All" . 2)
+    ("Unbound type name struct-copy" . 2)
+    ("Unbound type name tr-struct-copy" . 2)
+    ("type name used out of context" . 2)
+    ("Unbound type name tr-struct-copy.rkt" . 1)
+    ("Unbound type name rename-in" . 1)
+    ("(PID process-spec)" . 1)
+    ("(State process-spec)" . 1)
+    ("duplicate argument identifier" . 1))))

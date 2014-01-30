@@ -1,0 +1,40 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 98)
+    ("unbound identifier in module" . 28)
+    ("expected identifier" . 25)
+    ("type name used out of context" . 12)
+    ("must be used in a definition context" . 10)
+    ("bad syntax" . 5)
+    ("found a test that is not at the top level" . 5)
+    ("expected a `module' declaration" . 5)
+    ("expected annotated-formals" . 2)
+    ("bad argument sequence" . 2)
+    ("no expression after a sequence of internal definitions" . 2)
+    ("not an identifier, identifier with default, or keyword" . 1)
+    ("not a require sub-form" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 86)
+    ("missing `]' to close preceding `[', found instead `)'" . 39)
+    ("unbound identifier in module" . 13)
+    ("bad syntax" . 7)
+    ("'" . 4)
+    ("Declaration for `lookup' provided, but `lookup' has no definition" . 4)
+    ("missing `]' to close `[' on line 103, found instead `)'; indentation suggests a missing `]' before line 105"
+     .
+     3)
+    ("missing `]' to close `[' on line 59, found instead `)'; indentation suggests a missing `]' before line 60"
+     .
+     3)
+    ("Declaration for `trie' provided, but `trie' has no definition" . 2)
+    ("syntax error in pattern" . 2)
+    ("type name used out of context" . 2)
+    ("must be used in a definition context" . 2)
+    ("duplicate argument identifier" . 1)
+    ("Declaration for `V' provided, but `V' has no definition" . 1)
+    ("Declaration for `K' provided, but `K' has no definition" . 1)
+    ("Declaration for `fst' provided, but `fst' has no definition" . 1)
+    ("missing `]' to close `[' on line 25, found instead `)'" . 1))))

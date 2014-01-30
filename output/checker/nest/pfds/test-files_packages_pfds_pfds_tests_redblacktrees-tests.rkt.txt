@@ -1,0 +1,15 @@
+'((remove
+   (passed . 0)
+   (failed (total . 6) ("unbound identifier in module" . 6)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 14)
+    ("expected a `)' to close `('" . 5)
+    ("unbound identifier in module" . 3)
+    ("collection not found" . 1)
+    ("pfds/queue/physicists" . 1)
+    ("cannot open module file" . 1)
+    ("type name used out of context" . 1)
+    ("(empty A)" . 1)
+    ("found a test that is not at the top level" . 1))))

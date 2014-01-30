@@ -1,0 +1,31 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 34)
+    ("unbound identifier in module" . 8)
+    ("too many forms in body of All type" . 6)
+    ("expected a `module' declaration" . 5)
+    ("collection not found" . 5)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("bad syntax" . 3)
+    ("duplicate clause binding name" . 2)
+    ("Declaration for `web-server/private/util' provided, but `web-server/private/util' has no definition"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 34)
+    ("unbound identifier in module" . 13)
+    ("(State)" . 5)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("type name used out of context" . 3)
+    ("duplicate argument identifier" . 3)
+    ("bad syntax;" . 1)
+    ("bad syntax" . 1)
+    ("Expected a function of type (PID Reason (process State) -> (-> (values (U False (process State)) vm (Listof (U send-message quit delete-endpoint (spawn vm) (add-endpoint vm) (yield vm) (at-meta-level vm)))))), but got a function with the wrong arity"
+     .
+     1)
+    ("collection not found" . 1)
+    ("typed/racket/base" . 1)
+    ("cannot open module file" . 1))))

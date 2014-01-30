@@ -1,0 +1,4 @@
+'((remove
+   (passed . 0)
+   (failed (total . 3) ("expected a `module' declaration" . 3)))
+  (truncate (passed . 0) (failed (total . 2) ("cannot open module file" . 2))))

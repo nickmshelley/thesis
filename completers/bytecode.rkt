@@ -10,7 +10,7 @@
 
 ;; file is a path-string to the file
 (define (get-zo-completions filename text prefix pos)
-  (with-handlers ([(λ (x) #t) (λ (e) (printf "Ignoring exception ~a~n~n" e) empty)])
+  (with-handlers ([(λ (x) #t) (λ (e) empty)])
     (managed-compile-zo filename)
     (define-values (base name _) (split-path filename))
     (define compiled-file (build-path base

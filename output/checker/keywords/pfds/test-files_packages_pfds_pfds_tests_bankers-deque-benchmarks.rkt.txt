@@ -1,0 +1,50 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 51)
+    ("expected a `module' declaration" . 10)
+    ("unbound identifier in module" . 7)
+    ("bad syntax" . 5)
+    ("collection not found" . 4)
+    ("missing `]' to close preceding `[', found instead `)'" . 4)
+    ("Polymorphic function `build-deque' could not be applied to arguments"
+     .
+     2)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     2)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ."
+     .
+     1)
+    ("missing `]' to close `[' on line 62, found instead `)'; indentation suggests a missing `]' before line 63"
+     .
+     1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("type name used out of context" . 1)
+    ("#<syntax Deque> ((Rec g535 (U Null (Boxof (U (Boxof g535) (-> (Boxof g535)))) (Pairof Positive-Integer g535))) Integer (Rec g541 (U Null (Boxof (U (Boxof g541) (-> (Boxof g541)))) (Pairof Positive-Integer g541))) Integer)), since it is not a function type"
+     .
+     1)
+    ("type mismatch" . 1)
+    ("Polymorphic function `last' could not be applied to arguments" . 1)
+    ("bad syntax (missing binding pairs or body)" . 1)
+    ("Unbound type name q" . 1)
+    ("Unbound type name" . 1)
+    ("Unbound type name if" . 1)
+    ("Unbound type name empty?" . 1)
+    ("#<syntax Deque> ((Rec g176 (U Null (Boxof (U (Boxof g176) (-> (Boxof g176)))) (Pairof Positive-Integer g176))) Integer (Rec g182 (U Null (Boxof (U (Boxof g182) (-> (Boxof g182)))) (Pairof Positive-Integer g182))) Integer)), since it is not a function type"
+     .
+     1)
+    ("bad syntax;" . 1)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     1)
+    ("Wrong number of arguments, expected 1 and got 2" . 1)
+    ("missing `]' to close `[' on line 44, found instead `)'" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 14)
+    ("type name used out of context" . 6)
+    ("found a test that is not at the top level" . 5)
+    ("(empty A)" . 2)
+    ("unbound identifier in module" . 1))))

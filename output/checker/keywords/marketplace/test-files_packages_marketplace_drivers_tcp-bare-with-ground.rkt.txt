@@ -1,0 +1,77 @@
+'((remove
+   (passed . 125)
+   (failed
+    (total . 160)
+    ("unbound identifier in module" . 67)
+    ("missing `]' to close preceding `[', found instead `)'" . 20)
+    ("variable not bound in all or patterns" . 8)
+    ("Illegal clause in endpoint definition" . 8)
+    ("syntax error in pattern" . 8)
+    ("bad syntax" . 7)
+    ("Illegal use of match-state outside endpoint definition context" . 6)
+    ("missing argument expression after keyword" . 5)
+    ("duplicate argument identifier" . 4)
+    ("duplicate definition for identifier" . 3)
+    ("not allowed in an expression context" . 3)
+    ("(subscriber topic clause ...)" . 3)
+    ("identifier is not bound to struct type information" . 3)
+    ("undefined;" . 2)
+    ("(observe-publishers topic clause ...)" . 1)
+    ("Illegal use of on-absence outside endpoint definition context" . 1)
+    ("(transition/no-state action ...)" . 1)
+    ("missing `]' to close `[' on line 168, found instead `)'; indentation suggests a missing `]' before line 169"
+     .
+     1)
+    ("missing `]' to close `[' on line 48, found instead `)'; indentation suggests a missing `]' before line 49"
+     .
+     1)
+    ("missing `]' to close `[' on line 153, found instead `)'; indentation suggests a missing `]' before line 154"
+     .
+     1)
+    ("wildcard not allowed as an expression" . 1)
+    ("missing `]' to close `[' on line 107, found instead `)'; indentation suggests a missing `]' before line 108"
+     .
+     1)
+    ("(publisher topic clause ...)" . 1)
+    ("missing `]' to close `[' on line 93, found instead `)'" . 1)
+    ("multiple bindings of `remote-hostname' in the same clause" . 1)
+    ("multiple bindings of `local-hostname' in the same clause" . 1)
+    ("multiple bindings of `remote-port' in the same clause" . 1)))
+  (truncate
+   (passed . 144)
+   (failed
+    (total . 141)
+    ("unbound identifier in module" . 58)
+    ("syntax error in pattern" . 15)
+    ("duplicate definition for identifier" . 5)
+    ("variable not bound in all or patterns" . 5)
+    ("not allowed as an expression" . 5)
+    ("missing procedure expression;" . 4)
+    ("(subscriber topic clause ...)" . 4)
+    ("Illegal use of match-state outside endpoint definition context" . 4)
+    ("bad syntax" . 3)
+    ("Illegal clause in endpoint definition" . 3)
+    ("(publisher topic clause ...)" . 3)
+    ("wildcard not allowed as an expression" . 3)
+    ("this match expander must be used inside match" . 2)
+    ("expected a clause with a pattern and a result" . 2)
+    ("missing `]' to close preceding `[', found instead `)'" . 2)
+    ("identifier is not bound to struct type information" . 2)
+    ("Illegal use of on-presence outside endpoint definition context" . 2)
+    ("Illegal use of match-conversation outside endpoint definition context"
+     .
+     2)
+    ("Illegal use of on-absence outside endpoint definition context" . 2)
+    ("not allowed in an expression context" . 2)
+    ("arity mismatch;" . 2)
+    ("identifier is already imported" . 1)
+    ("Illegal use of on-message outside endpoint definition context" . 1)
+    ("multiple bindings of `local-port' in the same clause" . 1)
+    ("multiple bindings of `local-hostname' in the same clause" . 1)
+    ("pid" . 1)
+    ("(observe-publishers topic clause ...)" . 1)
+    ("(observe-subscribers/everything topic clause ...)" . 1)
+    ("undefined;" . 1)
+    ("missing argument expression after keyword" . 1)
+    ("unexpected term" . 1)
+    ("not a require sub-form" . 1))))

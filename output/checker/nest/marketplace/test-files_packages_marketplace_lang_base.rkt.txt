@@ -1,0 +1,34 @@
+'((remove
+   (passed . 43)
+   (failed
+    (total . 52)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 28)
+    ("missing `]' to close `[' on line 47, found instead `)'" . 5)
+    ("missing procedure expression;" . 5)
+    ("collection not found" . 3)
+    ("duplicate argument identifier" . 3)
+    ("not allowed in an expression context" . 2)
+    ("bad syntax" . 2)
+    ("bad module path" . 1)
+    ("illegal use (not in a module top-level)" . 1)
+    ("unbound identifier in module (in the transformer environment, which does not include the macro definition that is visible to run-time expressions)"
+     .
+     1)
+    ("pattern variable cannot be used outside of a template" . 1)))
+  (truncate
+   (passed . 56)
+   (failed
+    (total . 39)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 11)
+    ("missing `]' to close `[' on line 23, found instead `)'; indentation suggests a missing `)' before line 47"
+     .
+     10)
+    ("missing `]' to close `[' on line 47, found instead `)'" . 5)
+    ("not a provide sub-form" . 3)
+    ("duplicate argument identifier" . 3)
+    ("identifier already provided (as a different binding)" . 2)
+    ("no pattern variables before ellipsis in template" . 1)
+    ("bad syntax for provide sub-form" . 1)
+    ("bad syntax" . 1)
+    ("pattern variable cannot be used outside of a template" . 1)
+    ("not allowed in an expression context" . 1))))

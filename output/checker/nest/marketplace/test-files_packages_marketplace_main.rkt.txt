@@ -1,0 +1,15 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 21)
+    ("unbound identifier in module" . 12)
+    ("illegal use of syntax" . 4)
+    ("Component of case-lambda type was not a function clause" . 4)
+    ("type name used out of context" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 14)
+    ("unbound identifier in module" . 12)
+    ("Component of case-lambda type was not a function clause" . 1)
+    ("Unbound type name struct-copy" . 1))))

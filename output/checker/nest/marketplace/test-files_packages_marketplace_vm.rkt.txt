@@ -1,0 +1,48 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 89)
+    ("unbound identifier in module" . 29)
+    ("too many forms in body of All type" . 10)
+    ("(A)" . 5)
+    ("type name used out of context" . 5)
+    ("identifier is not bound to a structure type" . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("(unwrap-process State Result (p wp) body ...)" . 4)
+    ("bad syntax" . 3)
+    ("missing ellipsis with pattern variable in template" . 3)
+    ("Declaration for `inject-process' provided, but `inject-process' has no definition"
+     .
+     3)
+    ("Declaration for `coproc' provided, but `coproc' has no definition" . 3)
+    ("duplicate field identifier" . 2)
+    ("misplaced ellipsis in template" . 2)
+    ("Declaration for `mkProcess' provided, but `mkProcess' has no definition"
+     .
+     2)
+    ("too many ellipses in template" . 1)
+    ("not allowed in an expression context" . 1)
+    ("must be used in a definition context" . 1)
+    ("expected 2 and got 1" . 1)
+    ("bad syntax for provide sub-form" . 1)
+    ("missing procedure expression;" . 1)
+    ("identifier is already imported" . 1)
+    ("duplicate definition for identifier" . 1)))
+  (truncate
+   (passed . 15)
+   (failed
+    (total . 73)
+    ("unbound identifier in module" . 45)
+    ("bad syntax" . 7)
+    ("missing `)' to close `(' on line 85, found instead `]'; indentation suggests a missing `)' before line 86"
+     .
+     5)
+    ("wildcard not allowed as an expression" . 4)
+    ("syntax error in pattern" . 3)
+    ("collection not found" . 3)
+    ("expected 1 but got 2" . 1)
+    ("(publisher topic clause ...)" . 1)
+    ("identifier is already imported" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("unexpected term" . 1)
+    ("bad module path" . 1))))

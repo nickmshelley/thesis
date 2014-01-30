@@ -1,0 +1,20 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 25)
+    ("type name used out of context" . 10)
+    ("unbound identifier in module" . 8)
+    ("collection not found" . 4)
+    ("not an identifier, identifier with default, or keyword" . 1)
+    ("bad syntax" . 1)
+    ("(empty A)" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 18)
+    ("unbound identifier in module" . 8)
+    ("expected identifier" . 5)
+    ("type name used out of context" . 2)
+    ("found a test that is not at the top level" . 1)
+    ("not allowed in an expression context" . 1)
+    ("duplicate argument identifier" . 1))))

@@ -1,0 +1,29 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 31)
+    ("unbound identifier in module" . 11)
+    ("expected identifier" . 5)
+    ("expected a `module' declaration" . 5)
+    ("(empty A)" . 3)
+    ("bad syntax" . 2)
+    ("found a test that is not at the top level" . 1)
+    ("identifier is already imported" . 1)
+    ("type name used out of context" . 1)
+    ("expects 2 arguments, but found none" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 32)
+    ("unbound identifier in module" . 14)
+    ("type name used out of context" . 7)
+    ("(empty A)" . 6)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     2)
+    ("not a require sub-form" . 1)
+    ("collection not found" . 1)
+    ("expects 2 arguments, but found none" . 1))))

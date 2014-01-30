@@ -1,0 +1,49 @@
+'((remove
+   (passed . 15)
+   (failed
+    (total . 70)
+    ("must be used in a definition context" . 13)
+    ("unbound identifier in module" . 8)
+    ("too many forms in body of All type" . 5)
+    ("collection not found" . 5)
+    ("Declaration for `quasiqueue->list' provided, but `quasiqueue->list' has no definition"
+     .
+     5)
+    ("duplicate definition for identifier" . 4)
+    ("Unbound type name define" . 2)
+    ("Polymorphic function `append' could not be applied to arguments" . 2)
+    ("bad syntax" . 2)
+    ("Unbound type name empty-quasiqueue" . 2)
+    ("Unbound type name list->quasiqueue" . 2)
+    ("Unbound type name loop" . 2)
+    ("Unbound type name quasiqueue" . 2)
+    ("Unbound type name quasiqueue->cons-tree" . 2)
+    ("Polymorphic function `empty-quasiqueue' could not be applied to arguments"
+     .
+     2)
+    ("Polymorphic function `quasiqueue' could not be applied to arguments" . 2)
+    ("Polymorphic function `quasiqueue->cons-tree' could not be applied to arguments"
+     .
+     2)
+    ("type mismatch" . 2)
+    ("Unbound type name quasiqueue-append" . 1)
+    ("Polymorphic function `list->quasiqueue' could not be applied to arguments"
+     .
+     1)
+    ("type name used out of context" . 1)
+    ("Declaration for `empty-quasiqueue' provided, but `empty-quasiqueue' has no definition"
+     .
+     1)
+    ("Unbound type name quasiqueue-append-list" . 1)
+    ("duplicate argument identifier" . 1)))
+  (truncate
+   (passed . 9)
+   (failed
+    (total . 6)
+    ("missing ellipsis with pattern variable in template" . 2)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 12"
+     .
+     1)
+    ("missing `)' to close preceding `(', found instead `]'" . 1)
+    ("misplaced ellipsis in template" . 1)
+    ("no pattern variables before ellipsis in template" . 1))))

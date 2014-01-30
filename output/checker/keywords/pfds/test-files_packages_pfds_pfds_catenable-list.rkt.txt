@@ -1,0 +1,95 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 262)
+    ("missing `]' to close preceding `[', found instead `)'" . 69)
+    ("unbound identifier in module" . 43)
+    ("Type variable B must be used with ..." . 19)
+    ("bad syntax" . 15)
+    ("must be used in a definition context" . 13)
+    ("bad syntax (multiple types after identifier)" . 12)
+    ("identifier already provided (as a different binding)" . 9)
+    ("(A)" . 8)
+    ("unexpected term" . 5)
+    ("duplicate type variable" . 5)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 5)
+    ("type name used out of context" . 4)
+    ("missing `]' to close `[' on line 67, found instead `)'; indentation suggests a missing `]' before line 68"
+     .
+     3)
+    ("Declaration for `A' provided, but `A' has no definition" . 3)
+    ("missing `]' to close `[' on line 168, found instead `)'" . 3)
+    ("missing `]' to close `[' on line 252, found instead `)'; indentation suggests a missing `]' before line 253"
+     .
+     3)
+    ("missing `]' to close `[' on line 246, found instead `)'" . 3)
+    ("missing `]' to close `[' on line 262, found instead `)'" . 3)
+    ("missing `]' to close `[' on line 131, found instead `)'" . 3)
+    ("missing `]' to close `[' on line 254, found instead `)'" . 3)
+    ("duplicate argument identifier" . 3)
+    ("missing `]' to close `[' on line 260, found instead `)'" . 3)
+    ("missing `]' to close `[' on line 82, found instead `)'" . 3)
+    ("missing `]' to close `[' on line 190, found instead `)'" . 3)
+    ("missing `]' to close `[' on line 43, found instead `)'; indentation suggests a missing `]' before line 44"
+     .
+     3)
+    ("missing `]' to close `[' on line 234, found instead `)'" . 3)
+    ("Declaration for `head' provided, but `head' has no definition" . 2)
+    ("duplicate type variable declaration" . 2)
+    ("not allowed as an expression" . 2)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("use of a class keyword is not in a class" . 1)
+    ("unexpected `)'" . 1)
+    ("duplicate identifier" . 1)
+    ("no binding for identifier" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 351)
+    ("missing `]' to close preceding `[', found instead `)'" . 126)
+    ("unbound identifier in module" . 63)
+    ("bad syntax" . 22)
+    ("(A)" . 20)
+    ("duplicate argument identifier" . 15)
+    ("Type variable B must be used with ..." . 10)
+    ("'" . 9)
+    ("duplicate definition for identifier" . 9)
+    ("missing `]' to close `[' on line 344, found instead `)'" . 5)
+    ("duplicate type variable declaration" . 5)
+    ("missing `]' to close `[' on line 373, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 361, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 331, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 349, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 303, found instead `)'" . 4)
+    ("missing `]' to close `[' on line 300, found instead `)'; indentation suggests a missing `]' before line 301"
+     .
+     4)
+    ("must be used in a definition context" . 4)
+    ("Component of case-lambda type was not a function clause" . 4)
+    ("(empty A)" . 3)
+    ("missing `]' to close `[' on line 261, found instead `)'" . 3)
+    ("identifier already provided (as a different binding)" . 3)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("type name used out of context" . 2)
+    ("not allowed in an expression context" . 2)
+    ("Declaration for `function' provided, but `function' has no definition"
+     .
+     2)
+    ("Declaration for `to' provided, but `to' has no definition" . 2)
+    ("Expected a polymorphic function with ..., but function/annotation had no ..."
+     .
+     2)
+    ("ellipses not allowed as an expression" . 1)
+    ("Declaration for `constructor' provided, but `constructor' has no definition"
+     .
+     1)
+    ("Declaration for `A' provided, but `A' has no definition" . 1)
+    ("Declaration for `lst' provided, but `lst' has no definition" . 1)
+    ("Declaration for `rtdq' provided, but `rtdq' has no definition" . 1)
+    ("bad syntax (no expressions for procedure body)" . 1)
+    ("invalid pattern" . 1)
+    ("Declaration for `strem' provided, but `strem' has no definition" . 1)
+    ("(stream-cons x stream)" . 1)
+    ("duplicate field identifier" . 1))))

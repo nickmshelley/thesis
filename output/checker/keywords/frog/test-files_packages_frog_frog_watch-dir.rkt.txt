@@ -1,0 +1,32 @@
+'((remove
+   (passed . 24)
+   (failed
+    (total . 61)
+    ("unbound identifier in module" . 42)
+    ("bad syntax" . 4)
+    ("illegal use of `.'" . 3)
+    ("duplicate identifier as sequence binding" . 2)
+    ("duplicate argument name" . 2)
+    ("arity mismatch;" . 2)
+    ("misuse of module-path constructor (not within, e.g., `require' or `provide')"
+     .
+     1)
+    ("unexpected `)'" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("not allowed as an expression" . 1)
+    ("misuse of compound-unit keyword" . 1)
+    ("expected name and value binding" . 1)))
+  (truncate
+   (passed . 48)
+   (failed
+    (total . 27)
+    ("unbound identifier in module" . 15)
+    ("pattern variable cannot be used outside of a template" . 4)
+    ("ellipses not allowed as an expression" . 1)
+    ("not allowed as an expression" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("variable used twice in pattern" . 1)
+    ("no pattern variables before ellipsis in template" . 1)
+    ("bad syntax" . 1)
+    ("not allowed in an expression context" . 1)
+    ("bad syntax (clause is not a test-value pair)" . 1))))

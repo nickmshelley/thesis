@@ -1,0 +1,14 @@
+'((remove
+   (passed . 12)
+   (failed
+    (total . 3)
+    ("missing ellipsis with pattern variable in template" . 1)
+    ("no pattern variables before ellipsis in template" . 1)
+    ("variable used twice in pattern" . 1)))
+  (truncate
+   (passed . 9)
+   (failed
+    (total . 6)
+    ("too many ellipses in template" . 3)
+    ("variable used twice in pattern" . 2)
+    ("misplaced ellipsis in template" . 1))))

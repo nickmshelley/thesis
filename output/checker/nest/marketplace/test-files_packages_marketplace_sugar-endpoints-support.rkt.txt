@@ -1,0 +1,9 @@
+'((remove
+   (passed . 0)
+   (failed (total . 10) ("duplicate definition for identifier" . 10)))
+  (truncate
+   (passed . 5)
+   (failed
+    (total . 5)
+    ("duplicate definition for identifier" . 4)
+    ("identifier is already imported" . 1))))

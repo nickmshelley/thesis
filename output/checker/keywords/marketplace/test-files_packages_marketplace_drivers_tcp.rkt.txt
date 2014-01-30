@@ -1,0 +1,107 @@
+'((remove
+   (passed . 104)
+   (failed
+    (total . 281)
+    ("unbound identifier in module" . 103)
+    ("expected a `)' to close `('" . 50)
+    ("Illegal clause in endpoint definition" . 21)
+    ("syntax error in pattern" . 16)
+    ("variable not bound in all or patterns" . 13)
+    ("missing `)' to close preceding `(', found instead `]'" . 8)
+    ("provided identifier not defined or imported for phase 0" . 7)
+    ("missing `)' to close `(' on line 272, found instead `]'; indentation suggests a missing `)' before line 273"
+     .
+     5)
+    ("bad syntax" . 5)
+    ("identifier is not bound to struct type information" . 4)
+    ("missing argument expression after keyword" . 4)
+    ("duplicate argument identifier" . 3)
+    ("not a provide sub-form" . 3)
+    ("(publisher topic clause ...)" . 2)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 172"
+     .
+     2)
+    ("collection not found" . 2)
+    ("bad module path" . 2)
+    ("missing `)' to close `(' on line 208, found instead `]'; indentation suggests a missing `)' before line 209"
+     .
+     2)
+    ("Illegal use of on-absence outside endpoint definition context" . 2)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 220"
+     .
+     2)
+    ("missing `)' to close `(' on line 238, found instead `]'; indentation suggests a missing `)' before line 239"
+     .
+     2)
+    ("(subscriber topic clause ...)" . 2)
+    ("Illegal use of match-state outside endpoint definition context" . 2)
+    ("missing `)' to close `(' on line 216, found instead `]'; indentation suggests a missing `)' before line 217"
+     .
+     2)
+    ("missing `)' to close `(' on line 145, found instead `]'; indentation suggests a missing `)' before line 146"
+     .
+     2)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 122"
+     .
+     2)
+    ("missing `)' to close `(' on line 127, found instead `]'; indentation suggests a missing `)' before line 128"
+     .
+     2)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 149"
+     .
+     2)
+    ("missing `)' to close `(' on line 146, found instead `]'; indentation suggests a missing `)' before line 147"
+     .
+     2)
+    ("identifier is already imported" . 1)
+    ("this match expander must be used inside match" . 1)
+    ("Illegal use of on-message outside endpoint definition context" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("duplicate field identifier" . 1)
+    ("duplicate binding name" . 1)
+    ("not allowed as an expression" . 1)))
+  (truncate
+   (passed . 193)
+   (failed
+    (total . 192)
+    ("unbound identifier in module" . 106)
+    ("Illegal clause in endpoint definition" . 10)
+    ("syntax error in pattern" . 9)
+    ("variable not bound in all or patterns" . 9)
+    ("duplicate argument identifier" . 7)
+    ("expected a `)' to close `('" . 5)
+    ("not a provide sub-form" . 4)
+    ("duplicate definition for identifier" . 4)
+    ("bad syntax" . 4)
+    ("arity mismatch;" . 3)
+    ("missing `)' to close `(' on line 248, found instead `]'; indentation suggests a missing `)' before line 249"
+     .
+     2)
+    ("wildcard not allowed as an expression" . 2)
+    ("(observe-subscribers/everything topic clause ...)" . 2)
+    ("(publisher topic clause ...)" . 2)
+    ("missing `)' to close preceding `(', found instead `]'" . 2)
+    ("collection not found" . 2)
+    ("Illegal use of on-absence outside endpoint definition context" . 2)
+    ("Illegal use of on-message outside endpoint definition context" . 2)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 220"
+     .
+     2)
+    ("not allowed in an expression context" . 2)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 204"
+     .
+     1)
+    ("not allowed as an expression" . 1)
+    ("identifier is already imported" . 1)
+    ("bad module path" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("missing `)' to close `(' on line 211, found instead `]'; indentation suggests a missing `)' before line 212"
+     .
+     1)
+    ("missing argument expression after keyword" . 1)
+    ("(observe-subscribers topic clause ...)" . 1)
+    ("bad syntax (no expressions for procedure body)" . 1)
+    ("undefined;" . 1)
+    ("(observe-publishers topic clause ...)" . 1))))

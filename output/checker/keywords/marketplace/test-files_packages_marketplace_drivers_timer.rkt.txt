@@ -1,0 +1,113 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 154)
+    ("expected a `)' to close `('" . 36)
+    ("unbound identifier in module" . 18)
+    ("'" . 8)
+    ("must be used in a definition context" . 7)
+    ("duplicate definition for identifier" . 6)
+    ("provided identifier not defined or imported for phase 0" . 5)
+    ("type name used out of context" . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("collection not found" . 4)
+    ("missing `)' to close preceding `(', found instead `]'" . 4)
+    ("type mismatch" . 4)
+    ("syntax error in pattern" . 3)
+    ("Declaration for `timer-driver' provided, but `timer-driver' has no definition"
+     .
+     3)
+    ("bad syntax" . 3)
+    ("Illegal clause in endpoint definition" . 3)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 2)
+    ("missing `)' to close `(' on line 160, found instead `]'; indentation suggests a missing `)' before line 161"
+     .
+     2)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 182"
+     .
+     2)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 202"
+     .
+     2)
+    ("missing `)' to close `(' on line 213, found instead `]'" . 2)
+    ("Unbound type name fire-timers!" . 2)
+    ("Unbound type name install-timer!" . 2)
+    ("Unbound type name make-timer-heap" . 2)
+    ("Wrong number of arguments, expected 2 and got 1" . 2)
+    ("Wrong number of arguments, expected 3 and got 1" . 2)
+    ("Wrong number of arguments, expected 0 and got 1" . 2)
+    ("Recursive Type Alias Reference" . 1)
+    ("duplicate field identifier" . 1)
+    ("identifier is already imported" . 1)
+    ("invalid module-path form" . 1)
+    ("Declaration for `back.' provided, but `back.' has no definition" . 1)
+    ("Declaration for `ParentState' provided, but `ParentState' has no definition"
+     .
+     1)
+    ("State topic clause ...)" . 1)
+    ("Wrong number of type arguments to polymorphic type (All (State) (State (Rec g21448 (U False Void Null (spawn State) (add-endpoint State) send-message quit delete-endpoint (yield State) (at-meta-level State) (Pairof g21448 g21448))) * -> (transition State)))"
+     .
+     1)
+    ("Unbound type name at-meta-level" . 1)
+    ("Unbound type name label" . 1)
+    ("Unbound type name next-counter" . 1)
+    ("Wrong number of arguments, expected 2 and got 0" . 1)
+    ("Wrong number of arguments, expected 3 and got 0" . 1)
+    ("Unbound type name tivetive" . 1)
+    ("Unbound type name Utive" . 1)
+    ("Unbound type name absolutetive" . 1)
+    ("Unbound type name TimerKindtive" . 1)
+    ("Unbound type name Thetive" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 169)
+    ("unbound identifier in module" . 44)
+    ("duplicate definition for identifier" . 16)
+    ("syntax error in pattern" . 15)
+    ("type name used out of context" . 14)
+    ("bad syntax (multiple types after identifier)" . 9)
+    ("missing argument expression after keyword" . 6)
+    ("bad syntax" . 6)
+    ("Illegal clause in endpoint definition" . 5)
+    ("identifier is not bound to struct type information" . 5)
+    ("not a provide sub-form" . 5)
+    ("identifier is already imported" . 4)
+    ("must be used in a definition context" . 4)
+    ("Illegal use of on-absence outside endpoint definition context" . 3)
+    ("type mismatch" . 3)
+    ("Polymorphic function `set-remove' could not be applied to arguments" . 3)
+    ("wildcard not allowed as an expression" . 2)
+    ("duplicate field identifier" . 2)
+    ("Declaration for `valid-port-number?' provided, but `valid-port-number?' has no definition"
+     .
+     2)
+    ("collection not found" . 1)
+    ("expected 3 but got 2" . 1)
+    ("expected more terms starting with expression" . 1)
+    ("not a require sub-form" . 1)
+    ("provided identifier not defined or imported for phase 0" . 1)
+    ("Illegal use of on-presence outside endpoint definition context" . 1)
+    ("Declaration for `handle-presence' provided, but `handle-presence' has no definition"
+     .
+     1)
+    ("not allowed in an expression context" . 1)
+    ("Illegal use of match-state outside endpoint definition context" . 1)
+    ("(super-type TypeParam ...) SubType sub-type sub-type?)" . 1)
+    ("Unbound type name pseudo-substruct" . 1)
+    ("Unbound type name udp-packet?" . 1)
+    ("Unbound type name udp-packet" . 1)
+    ("Wrong number of arguments, expected 2 and got 0" . 1)
+    ("Could not infer types for applying polymorphic function `udp-driver'"
+     .
+     1)
+    ("Cannot apply expression of type UdpLocalAddress, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     1)
+    ("Unbound type name" . 1)
+    ("Unbound type name bind-socket!" . 1)
+    ("Unbound type name local-addr" . 1)
+    ("Unbound type name active-handles" . 1))))

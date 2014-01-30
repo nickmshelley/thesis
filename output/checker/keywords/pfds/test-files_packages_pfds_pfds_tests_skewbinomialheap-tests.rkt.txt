@@ -1,0 +1,20 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 15)
+    ("expected a `module' declaration" . 5)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("found a test that is not at the top level" . 3)
+    ("unexpected term" . 3)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 40)
+    ("type name used out of context" . 13)
+    ("found a test that is not at the top level" . 12)
+    ("bad syntax" . 6)
+    ("unbound identifier in module" . 5)
+    ("collection not found" . 1)
+    ("pfds/treap" . 1)
+    ("cannot open module file" . 1)
+    ("no expression after a sequence of internal definitions" . 1))))

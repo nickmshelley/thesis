@@ -1,0 +1,16 @@
+'((remove
+   (passed . 65)
+   (failed
+    (total . 10)
+    ("unbound identifier in module" . 8)
+    ("duplicate argument identifier" . 2)))
+  (truncate
+   (passed . 40)
+   (failed
+    (total . 35)
+    ("unbound identifier in module" . 27)
+    ("provided identifier not defined or imported for phase 0" . 4)
+    ("duplicate binding name" . 1)
+    ("bad syntax" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("missing an \"else\" expression" . 1))))

@@ -1,0 +1,96 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 104)
+    ("bad syntax (multiple types after identifier)" . 16)
+    ("Polymorphic function `force' could not be applied to arguments" . 10)
+    ("type name used out of context" . 9)
+    ("unbound identifier in module" . 9)
+    ("type mismatch" . 6)
+    ("not allowed as an expression" . 6)
+    ("Polymorphic function `car' could not be applied to arguments" . 6)
+    ("(A)" . 5)
+    ("untyped identifier pscar" . 5)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     5)
+    ("bad syntax" . 4)
+    ("Unbound type name null?" . 3)
+    ("Unbound type name l1" . 2)
+    ("Unbound type name pscdr" . 2)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     2)
+    ("Unbound type name lst" . 2)
+    ("Polymorphic function `cdr' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (Pairof A (Rec g346 (U Null (Boxof (U (Boxof g346) (-> (Boxof g346)))) (Pairof A g346)))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Boxof (Rec g330 (U Null (Boxof (U (Boxof g330) (-> (Boxof g330)))) (Pairof A g330)))) (-> (Boxof (Rec g336 (U Null (Boxof (U (Boxof g336) (-> (Boxof g336)))) (Pairof A g336))))))) (Pairof A (Rec g342 (U Null (Boxof (U (Boxof g342) (-> (Boxof g342)))) (Pairof A g342))))), since it is not a function type"
+     .
+     1)
+    ("No function domains matched in function application" . 1)
+    ("Polymorphic function `pstake' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (U Negative-Integer Exact-Positive-Integer), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U (Boxof (U (Boxof (Rec g213 (U Null (Boxof (U (Boxof g213) (-> (Boxof g213)))) (Pairof A g213)))) (-> (Boxof (Rec g219 (U Null (Boxof (U (Boxof g219) (-> (Boxof g219)))) (Pairof A g219))))))) (Pairof A (Rec g225 (U Null (Boxof (U (Boxof g225) (-> (Boxof g225)))) (Pairof A g225))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (Pairof A (Rec g201 (U Null (Boxof (U (Boxof g201) (-> (Boxof g201)))) (Pairof A g201)))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name U" . 1)
+    ("Recursive Type Alias Reference" . 1)
+    ("Unbound type name force" . 1)
+    ("Unbound type name l2" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 102)
+    ("unbound identifier in module" . 28)
+    ("type name used out of context" . 7)
+    ("Unbound type name l1" . 4)
+    ("Polymorphic function `box' could not be applied to arguments" . 4)
+    ("Unbound type name force" . 4)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("Polymorphic function `psdrop' could not be applied to arguments" . 4)
+    ("Declaration for `pstake' provided, but `pstake' has no definition" . 4)
+    ("Polymorphic function `force' could not be applied to arguments" . 3)
+    ("Unbound type name ann" . 3)
+    ("Polymorphic function `cdr' could not be applied to arguments" . 3)
+    ("provided identifier not defined or imported for phase 0" . 3)
+    ("Unbound type name A" . 3)
+    ("Polymorphic function `psappend' could not be applied to arguments" . 2)
+    ("Unbound type name car" . 2)
+    ("Unbound type name lst" . 2)
+    ("Polymorphic function `car' could not be applied to arguments" . 2)
+    ("not allowed as an expression" . 2)
+    ("type mismatch" . 1)
+    ("Unbound type name l2" . 1)
+    ("Unbound type name psappend" . 1)
+    ("Unbound type name cons" . 1)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     1)
+    ("(delay e)" . 1)
+    ("bad syntax" . 1)
+    ("(A)" . 1)
+    ("Unbound type name cdr" . 1)
+    ("duplicate argument identifier" . 1)
+    ("collection not found" . 1)
+    ("Unbound type name delay" . 1)
+    ("Unbound type name X" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("Duplicate type annotation of (All (A) ((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) -> (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))))) for pscdr, previous was (All (A) ((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) -> (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X))))))))"
+     .
+     1)
+    ("Duplicate type annotation of (All (A) ((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) -> (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))))) for pscar, previous was (All (A) ((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) -> A))"
+     .
+     1)
+    ("Cannot apply expression of type (Pairof A (Rec g384 (U Null (Boxof (U (Boxof g384) (-> (Boxof g384)))) (Pairof A g384)))), since it is not a function type"
+     .
+     1)
+    ("'" . 1))))

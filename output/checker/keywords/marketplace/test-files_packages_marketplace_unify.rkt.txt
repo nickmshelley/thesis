@@ -1,0 +1,46 @@
+'((remove
+   (passed . 177)
+   (failed
+    (total . 223)
+    ("unbound identifier in module" . 57)
+    ("expected a `)' to close `('" . 54)
+    ("missing `)' to close preceding `(', found instead `]'" . 45)
+    ("bad syntax" . 14)
+    ("not allowed as an expression" . 10)
+    ("duplicate definition for identifier" . 10)
+    ("collection not found" . 6)
+    ("identifier is not bound to struct type information" . 4)
+    ("missing `)' to close `(' on line 216, found instead `]'; indentation suggests a missing `)' before line 217"
+     .
+     3)
+    ("missing `)' to close `(' on line 286, found instead `]'; indentation suggests a missing `)' before line 287"
+     .
+     3)
+    ("missing `)' to close `(' on line 153, found instead `]'; indentation suggests a missing `)' before line 154"
+     .
+     3)
+    ("missing `)' to close `(' on line 170, found instead `]'; indentation suggests a missing `)' before line 171"
+     .
+     3)
+    ("missing `)' to close `(' on line 157, found instead `]'; indentation suggests a missing `)' before line 158"
+     .
+     3)
+    ("invalid module-path form" . 2)
+    ("not allowed in an expression context" . 2)
+    ("not at module level or top level" . 1)
+    ("identifier `object?' not included in nested require spec" . 1)
+    ("duplicate argument identifier" . 1)
+    ("arrow not allowed as an expression" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 42)
+    ("unbound identifier in module" . 25)
+    ("type name used out of context" . 8)
+    ("bad syntax" . 2)
+    ("collection not found" . 2)
+    ("expected `)' to close preceding `(', found instead `}'" . 1)
+    ("illegal use of syntax" . 1)
+    ("syntax error in pattern" . 1)
+    ("unexpected `)'" . 1)
+    ("cannot open module file" . 1))))

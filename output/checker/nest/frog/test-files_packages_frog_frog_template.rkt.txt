@@ -1,0 +1,18 @@
+'((remove
+   (passed . 19)
+   (failed
+    (total . 16)
+    ("unbound identifier in module" . 6)
+    ("unexpected `)'" . 5)
+    ("bad syntax" . 3)
+    ("illegal use of `.'" . 1)
+    ("duplicate binding name" . 1)))
+  (truncate
+   (passed . 12)
+   (failed
+    (total . 20)
+    ("unbound identifier in module" . 16)
+    ("collection not found" . 1)
+    ("cannot open module file" . 1)
+    ("duplicate binding name" . 1)
+    ("illegal use of `.'" . 1))))

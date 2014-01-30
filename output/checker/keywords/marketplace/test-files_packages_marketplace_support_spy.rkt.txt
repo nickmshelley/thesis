@@ -1,0 +1,27 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 32)
+    ("unbound identifier in module" . 8)
+    ("expected a `module' declaration" . 5)
+    ("expected a `)' to close `('" . 5)
+    ("bad syntax" . 4)
+    ("must be used in a definition context" . 4)
+    ("type name used out of context" . 3)
+    ("Illegal use of match-orientation outside endpoint definition context"
+     .
+     1)
+    ("pid" . 1)
+    ("no expression after a sequence of internal definitions" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 22)
+    ("expected a `)' to close `('" . 5)
+    ("unbound identifier in module" . 4)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("Illegal clause in endpoint definition" . 3)
+    ("bad syntax" . 2)
+    ("Illegal use of on-message outside endpoint definition context" . 2)
+    ("Illegal use of on-presence outside endpoint definition context" . 1)
+    ("Illegal use of match-reason outside endpoint definition context" . 1))))

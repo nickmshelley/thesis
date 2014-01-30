@@ -1,0 +1,89 @@
+'((remove
+   (passed . 15)
+   (failed
+    (total . 70)
+    ("too many forms in body of All type" . 15)
+    ("unbound identifier in module" . 12)
+    ("Polymorphic function `reverse' could not be applied to arguments" . 7)
+    ("type name used out of context" . 6)
+    ("expected a `module' declaration" . 5)
+    ("Declaration for `quasiqueue-append-list' provided, but `quasiqueue-append-list' has no definition"
+     .
+     4)
+    ("type mismatch" . 4)
+    ("Polymorphic function `append' could not be applied to arguments" . 3)
+    ("Cannot apply expression of type (U Null (Pairof X (Listof X))), since it is not a function type"
+     .
+     2)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 1)
+    ("Unbound type name Rec" . 1)
+    ("Duplicate type annotation of (All (X) ((Listof X) -> (Listof X))) for quasiqueue, previous was (All (X) (X * -> (Listof X)))"
+     .
+     1)
+    ("duplicate argument identifier" . 1)
+    ("Cannot apply expression of type (U Null (Pairof a (Listof a))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `quasiqueue->cons-tree' could not be applied to arguments"
+     .
+     1)
+    ("(X)" . 1)
+    ("Unbound type name if" . 1)
+    ("Unbound type name acc" . 1)
+    ("unexpected `)'" . 1)
+    ("Duplicate type annotation of (All (X) ((Listof X) (Listof X) -> (Listof X))) for quasiqueue-empty?, previous was (All (X) ((Listof X) -> Boolean))"
+     .
+     1)
+    ("Duplicate type annotation of (All (X) ((Listof X) (Listof X) -> (Listof X))) for empty-quasiqueue, previous was (All (X) (-> (Listof X)))"
+     .
+     1)))
+  (truncate
+   (passed . 15)
+   (failed
+    (total . 70)
+    ("(X)" . 10)
+    ("bad syntax (multiple types after identifier)" . 8)
+    ("type name used out of context" . 5)
+    ("Declaration for `quasiqueue->list' provided, but `quasiqueue->list' has no definition"
+     .
+     4)
+    ("too many forms in body of All type" . 4)
+    ("Declaration for `empty-quasiqueue' provided, but `empty-quasiqueue' has no definition"
+     .
+     4)
+    ("Unbound type name X" . 4)
+    ("type mismatch" . 3)
+    ("Unbound type name xs" . 3)
+    ("Unbound type name reverse" . 3)
+    ("Polymorphic function `reverse' could not be applied to arguments" . 3)
+    ("unbound identifier in module" . 2)
+    ("Cannot apply expression of type (U Null (Pairof X (Listof X))), since it is not a function type"
+     .
+     2)
+    ("Unbound type name All" . 1)
+    ("Unbound type name q1" . 1)
+    ("Unbound type name q2" . 1)
+    ("Unbound type name append" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("Declaration for `empty-quasiqueue' provided, but `empty-quasiqueue' is defined in another module"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Pairof a (Listof a))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U False Void Null X (Pairof (Rec g316 (U False Void Null X (Pairof g316 g316))) (Rec g322 (U False Void Null X (Pairof g322 g322))))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `cons' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (Pairof X (Listof X)), since it is not a function type"
+     .
+     1)
+    ("expected `)' to close preceding `(', found instead `}'" . 1)
+    ("must be used in a definition context" . 1)
+    ("missing `}' to close preceding `{', found instead `)'" . 1)
+    ("Duplicate type annotation of (All (X) ((Listof X) -> (Listof X))) for quasiqueue, previous was (All (X) (X * -> (Listof X)))"
+     .
+     1)
+    ("Duplicate type annotation of (All (X) ((Listof X) -> (Listof X))) for quasiqueue-append, previous was (All (X) ((Listof X) (Listof X) -> (Listof X)))"
+     .
+     1))))

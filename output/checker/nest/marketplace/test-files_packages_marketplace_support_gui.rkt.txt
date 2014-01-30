@@ -1,0 +1,47 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 515)
+    ("The type of vm-processes cannot be converted to a contract" . 350)
+    ("unbound identifier in module" . 117)
+    ("bad syntax" . 16)
+    ("duplicate declared identifier" . 9)
+    ("duplicate argument identifier" . 4)
+    ("collection not found" . 3)
+    ("expected identifier" . 3)
+    ("method name is not an identifier" . 2)
+    ("not allowed in an expression context" . 2)
+    ("missing an \"else\" expression" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("syntax error in pattern" . 1)
+    ("expected a method name" . 1)
+    ("contract violation" . 1)
+    ("duplicate binding name" . 1)
+    ("bad sequence binding clause" . 1)
+    ("expected name and value binding" . 1)
+    ("bad syntax (missing expression after identifier)" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 515)
+    ("The type of vm-processes cannot be converted to a contract" . 358)
+    ("unbound identifier in module" . 91)
+    ("missing `]' to close preceding `[', found instead `)'" . 15)
+    ("bad syntax" . 13)
+    ("duplicate declared identifier" . 5)
+    ("ndpoints" . 5)
+    ("method name is not an identifier" . 5)
+    ("missing `]' to close `[' on line 231, found instead `)'; indentation suggests a missing `]' before line 232"
+     .
+     5)
+    ("expected a `)' to close `('" . 5)
+    ("missing procedure expression;" . 3)
+    ("cannot mutate syntax identifier" . 3)
+    ("duplicate field identifier" . 2)
+    ("missing an \"else\" expression" . 1)
+    ("bad argument sequence" . 1)
+    ("syntax error in pattern" . 1)
+    ("expected more terms starting with any term" . 1)
+    ("not allowed in an expression context" . 1))))

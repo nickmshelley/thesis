@@ -1,0 +1,13 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 13)
+    ("unbound identifier in module" . 9)
+    ("collection not found" . 4)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 7)
+    ("found a test that is not at the top level" . 3)
+    ("unbound identifier in module" . 3)
+    ("not at module level or top level" . 1))))

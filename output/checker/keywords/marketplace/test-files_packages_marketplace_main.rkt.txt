@@ -1,0 +1,20 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 12)
+    ("expected a `module' declaration" . 5)
+    ("Unbound type name ground?" . 2)
+    ("Unbound type name non-wild?" . 1)
+    ("bad syntax" . 1)
+    ("Unbound type name provide" . 1)
+    ("Unbound type name all-from-out" . 1)
+    ("provided identifier not defined or imported for phase 0" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 5)
+    ("Unbound type name" . 1)
+    ("Unbound type name list-max" . 1)
+    ("Unbound type name provide" . 1)
+    ("Unbound type name typed/racket/base" . 1)
+    ("Unbound type name lang" . 1))))

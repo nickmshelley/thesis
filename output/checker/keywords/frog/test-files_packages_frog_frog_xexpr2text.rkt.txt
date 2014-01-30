@@ -1,0 +1,34 @@
+'((remove
+   (passed . 66)
+   (failed
+    (total . 84)
+    ("unbound identifier in module" . 43)
+    ("collection not found" . 8)
+    ("syntax error in pattern" . 5)
+    ("unexpected `)'" . 5)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("variable not bound in all or patterns" . 5)
+    ("duplicate binding name" . 3)
+    ("ellipses not allowed as an expression" . 2)
+    ("incorrect use of ... in pattern" . 2)
+    ("bad module path" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ."
+     .
+     1)
+    ("wildcard not allowed as an expression" . 1)
+    ("unbound identifier;" . 1)
+    ("misuse of unit import and export keyword" . 1)))
+  (truncate
+   (passed . 75)
+   (failed
+    (total . 75)
+    ("unbound identifier in module" . 51)
+    ("unexpected `)'" . 5)
+    ("expected a `)' to close `('" . 5)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("ellipses not allowed as an expression" . 3)
+    ("duplicate argument identifier" . 2)
+    ("not allowed in an expression context" . 2)
+    ("not a provide sub-form" . 1)
+    ("unbound identifier;" . 1))))

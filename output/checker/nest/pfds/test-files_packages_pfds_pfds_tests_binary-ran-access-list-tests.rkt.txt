@@ -1,0 +1,23 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 16)
+    ("unbound identifier in module" . 7)
+    ("not an identifier, identifier with default, or keyword" . 4)
+    ("collection not found" . 2)
+    ("bad syntax for require sub-form" . 2)
+    ("bad syntax" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 76)
+    ("unbound identifier in module" . 36)
+    ("expected identifier" . 17)
+    ("type name used out of context" . 7)
+    ("must be used in a definition context" . 4)
+    ("'" . 3)
+    ("no expression after a sequence of internal definitions" . 3)
+    ("not an identifier, identifier with default, or keyword" . 2)
+    ("expected annotated-formals" . 2)
+    ("bad syntax" . 1)
+    ("duplicate argument name" . 1))))

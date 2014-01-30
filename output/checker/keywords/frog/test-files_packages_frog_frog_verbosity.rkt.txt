@@ -1,0 +1,21 @@
+'((remove
+   (passed . 7)
+   (failed
+    (total . 18)
+    ("missing `]' to close `[' on line 17, found instead `)'" . 5)
+    ("duplicate definition for identifier" . 5)
+    ("unbound identifier in module" . 3)
+    ("undefined;" . 3)
+    ("bad syntax" . 2)))
+  (truncate
+   (passed . 6)
+   (failed
+    (total . 18)
+    ("duplicate definition for identifier" . 5)
+    ("provided identifier not defined or imported for phase 0" . 4)
+    ("collection not found" . 2)
+    ("undefined;" . 2)
+    ("bad syntax" . 2)
+    ("cannot open module file" . 1)
+    ("not allowed in an expression context" . 1)
+    ("unbound identifier in module" . 1))))

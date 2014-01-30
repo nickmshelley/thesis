@@ -1,0 +1,26 @@
+'((remove
+   (passed . 16)
+   (failed
+    (total . 29)
+    ("unbound identifier in module" . 21)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("duplicate definition for identifier" . 2)
+    ("unbound identifier in the transformer environment;" . 1)
+    ("misplaced ellipsis in template" . 1)
+    ("missing ellipsis with pattern variable in template" . 1)
+    ("expected more terms starting with expression" . 1)))
+  (truncate
+   (passed . 85)
+   (failed
+    (total . 65)
+    ("unbound identifier in module" . 47)
+    ("duplicate definition for identifier" . 6)
+    ("not a procedure;" . 4)
+    ("arity mismatch;" . 2)
+    ("duplicate argument identifier" . 2)
+    ("not a require sub-form" . 1)
+    ("illegal use of syntax" . 1)
+    ("not allowed in an expression context" . 1)
+    ("bad syntax (not an identifier for procedure name, and not a nested procedure form)"
+     .
+     1))))

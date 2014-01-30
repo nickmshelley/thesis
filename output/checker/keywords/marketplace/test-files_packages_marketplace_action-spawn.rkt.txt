@@ -1,0 +1,30 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 50)
+    ("unbound identifier in module" . 17)
+    ("expected a `)' to close `('" . 16)
+    ("must be used in a definition context" . 5)
+    ("type name used out of context" . 4)
+    ("(send-to-user* debug-name pid (e) failure-result enclosed-expr)" . 1)
+    ("Expected a function of type (process-spec (U False (PID -> (OldState -> (transition OldState)))) (process OldState) -> (vm -> (values (U False (process OldState)) vm))), but got a function with the wrong arity"
+     .
+     1)
+    ("syntax error in pattern" . 1)
+    ("identifier `struct-copy' not included in nested require spec" . 1)
+    ("identifier `PR13149' not included in nested require spec" . 1)
+    ("identifier `tr-struct-copy.rkt' not included in nested require spec" . 1)
+    ("identifier `workaround' not included in nested require spec" . 1)
+    ("identifier `rename-in' not included in nested require spec" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 23)
+    ("unbound identifier in module" . 10)
+    ("Declaration for `send-to-process' provided, but `send-to-process' has no definition"
+     .
+     6)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("bad syntax" . 1)
+    ("bad syntax (clause is not a test-value pair)" . 1)
+    ("not allowed as an expression" . 1))))

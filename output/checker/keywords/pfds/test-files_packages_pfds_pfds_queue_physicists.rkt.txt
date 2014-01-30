@@ -1,0 +1,89 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 322)
+    ("missing `]' to close preceding `[', found instead `)'" . 170)
+    ("unbound identifier in module" . 42)
+    ("bad syntax (multiple types after identifier)" . 20)
+    ("bad syntax" . 16)
+    ("Type variable B must be used with ..." . 13)
+    ("missing `]' to close `[' on line 29, found instead `)'; indentation suggests a missing `]' before line 30"
+     .
+     5)
+    ("missing `]' to close `[' on line 254, found instead `)'" . 5)
+    ("unexpected `)'" . 5)
+    ("missing `]' to close `[' on line 268, found instead `)'" . 5)
+    ("'" . 5)
+    ("missing `]' to close `[' on line 70, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 88, found instead `)'; indentation suggests a missing `]' before line 89"
+     .
+     5)
+    ("Declaration for `qmap' provided, but `qmap' has no definition" . 4)
+    ("duplicate argument identifier" . 3)
+    ("Declaration for `queue-ormap' provided, but `queue-ormap' has no definition"
+     .
+     3)
+    ("(force promise)" . 2)
+    ("must be used in a definition context" . 2)
+    ("Declaration for `A' provided, but `A' has no definition" . 2)
+    ("(internal-queue pref front lenf rear lenr)" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("duplicate field identifier" . 1)
+    ("Declaration for `que' provided, but `que' has no definition" . 1)
+    ("(empty A)" . 1)
+    ("Declaration for `the' provided, but `the' has no definition" . 1)
+    ("use of a class keyword is not in a class" . 1)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 301)
+    ("missing `]' to close preceding `[', found instead `)'" . 125)
+    ("unbound identifier in module" . 54)
+    ("bad syntax" . 18)
+    ("(A)" . 8)
+    ("must be used in a definition context" . 7)
+    ("missing `]' to close `[' on line 251, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 154, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 243, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 204, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 146, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 246, found instead `)'; indentation suggests a missing `]' before line 247"
+     .
+     5)
+    ("duplicate definition for identifier" . 4)
+    ("missing `]' to close `[' on line 112, found instead `)'; indentation suggests a missing `]' before line 113"
+     .
+     4)
+    ("type name used out of context" . 4)
+    ("not allowed as an expression" . 4)
+    ("Type variable B must be used with ..." . 4)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("Declaration for `fold' provided, but `fold' has no definition" . 4)
+    ("use of a class keyword is not in a class" . 3)
+    ("Declaration for `heap-map' provided, but `heap-map' has no definition"
+     .
+     3)
+    ("missing `]' to close `[' on line 91, found instead `)'" . 3)
+    ("missing `]' to close `[' on line 80, found instead `)'" . 3)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (Heap) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("missing `]' to close `[' on line 68, found instead `)'; indentation suggests a missing `)' before line 69"
+     .
+     2)
+    ("no binding for identifier" . 1)
+    ("missing `]' to close `[' on line 49, found instead `)'; indentation suggests a missing `]' before line 50"
+     .
+     1)
+    ("bad syntax (multiple expressions after identifier)" . 1)
+    ("illegal use of `.'" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("not allowed in an expression context" . 1)
+    ("duplicate type variable or index" . 1))))

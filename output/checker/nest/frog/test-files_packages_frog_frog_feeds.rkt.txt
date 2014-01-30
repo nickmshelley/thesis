@@ -1,0 +1,47 @@
+'((remove
+   (passed . 104)
+   (failed
+    (total . 171)
+    ("unbound identifier in module" . 86)
+    ("unexpected `)'" . 15)
+    ("missing `]' to close preceding `[', found instead `)'" . 10)
+    ("missing `]' to close `[' on line 176, found instead `)'" . 10)
+    ("misuse of unit import and export keyword" . 7)
+    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 172"
+     .
+     5)
+    ("provided identifier not defined or imported for phase 0" . 5)
+    ("expected a `)' to close `('" . 5)
+    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 76"
+     .
+     5)
+    ("expected a `module' declaration" . 5)
+    ("duplicate argument identifier" . 4)
+    ("bad syntax" . 3)
+    ("duplicate binding name" . 3)
+    ("illegal use of `.'" . 2)
+    ("not allowed as an expression" . 2)
+    ("misuse of compound-unit keyword" . 1)
+    ("ellipses not allowed as an expression" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("wildcard not allowed as an expression" . 1)))
+  (truncate
+   (passed . 126)
+   (failed
+    (total . 141)
+    ("unbound identifier in module" . 77)
+    ("unexpected `)'" . 20)
+    ("missing `]' to close preceding `[', found instead `)'" . 10)
+    ("illegal use of `.'" . 8)
+    ("misuse of unit import and export keyword" . 5)
+    ("expected a `)' to close `('" . 5)
+    ("not allowed as an expression" . 4)
+    ("bad syntax" . 3)
+    ("syntax error in pattern" . 2)
+    ("duplicate argument identifier" . 2)
+    ("duplicate binding name" . 2)
+    ("misuse of compound-unit keyword" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("misuse of module-path constructor (not within, e.g., `require' or `provide')"
+     .
+     1))))

@@ -1,0 +1,25 @@
+'((remove
+   (passed . 47)
+   (failed
+    (total . 38)
+    ("unbound identifier in module" . 11)
+    ("bad syntax" . 7)
+    ("expected a `module' declaration" . 5)
+    ("illegal use of `.'" . 4)
+    ("use of 'any' outside the range of an arrow contract" . 3)
+    ("duplicate argument identifier" . 3)
+    ("unexpected `)'" . 1)
+    ("provided identifier not defined or imported for phase 0" . 1)
+    ("duplicate identifier as sequence binding" . 1)
+    ("contract violation" . 1)
+    ("arity mismatch;" . 1)))
+  (truncate
+   (passed . 36)
+   (failed
+    (total . 49)
+    ("unbound identifier in module" . 39)
+    ("bad syntax" . 4)
+    ("illegal use of `.'" . 3)
+    ("wildcard not allowed as an expression" . 1)
+    ("expected a range contract" . 1)
+    ("contract violation" . 1))))

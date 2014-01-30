@@ -1,0 +1,28 @@
+'((remove
+   (passed . 11)
+   (failed
+    (total . 44)
+    ("unbound identifier in module" . 26)
+    ("expected a `module' declaration" . 5)
+    ("duplicate argument identifier" . 4)
+    ("not in a definition context" . 2)
+    ("bad syntax" . 2)
+    ("duplicate binding name" . 2)
+    ("duplicate definition for identifier" . 1)
+    ("not a provide sub-form" . 1)
+    ("not a require sub-form" . 1)))
+  (truncate
+   (passed . 6)
+   (failed
+    (total . 42)
+    ("unbound identifier in module" . 25)
+    ("not a provide sub-form" . 5)
+    ("not allowed as an expression" . 4)
+    ("duplicate definition for identifier" . 1)
+    ("not in a definition context" . 1)
+    ("not a require sub-form" . 1)
+    ("expected name and value binding" . 1)
+    ("bad sequence binding clause" . 1)
+    ("duplicate argument identifier" . 1)
+    ("collection not found" . 1)
+    ("cannot open module file" . 1))))

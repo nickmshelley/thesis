@@ -1,0 +1,84 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 225)
+    ("missing `]' to close preceding `[', found instead `)'" . 108)
+    ("unbound identifier in module" . 28)
+    ("bad syntax" . 9)
+    ("Type variable B must be used with ..." . 9)
+    ("duplicate definition for identifier" . 5)
+    ("(A)" . 4)
+    ("use of a class keyword is not in a class" . 4)
+    ("Declaration for `A' provided, but `A' has no definition" . 4)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("type name used out of context" . 4)
+    ("duplicate argument identifier" . 4)
+    ("Declaration for `qmap' provided, but `qmap' has no definition" . 4)
+    ("missing `]' to close `[' on line 171, found instead `)'; indentation suggests a missing `]' before line 172"
+     .
+     3)
+    ("missing `]' to close `[' on line 238, found instead `)'" . 3)
+    ("must be used in a definition context" . 3)
+    ("missing `]' to close `[' on line 212, found instead `)'" . 3)
+    ("missing `]' to close `[' on line 224, found instead `)'" . 3)
+    ("missing `]' to close `[' on line 225, found instead `)'" . 3)
+    ("missing `]' to close `[' on line 158, found instead `)'" . 3)
+    ("missing `]' to close `[' on line 219, found instead `)'" . 3)
+    ("missing `]' to close `[' on line 157, found instead `)'; indentation suggests a missing `]' before line 158"
+     .
+     3)
+    ("duplicate type variable declaration" . 2)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 2)
+    ("Declaration for `the' provided, but `the' has no definition" . 1)
+    ("duplicate identifier" . 1)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (define) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Declaration for `C' provided, but `C' has no definition" . 1)
+    ("Declaration for `deqs' provided, but `deqs' has no definition" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 178)
+    ("unbound identifier in module" . 30)
+    ("missing `]' to close preceding `[', found instead `)'" . 24)
+    ("bad syntax (multiple types after identifier)" . 20)
+    ("bad syntax" . 17)
+    ("Type variable B must be used with ..." . 15)
+    ("must be used in a definition context" . 10)
+    ("'" . 8)
+    ("missing `]' to close `[' on line 215, found instead `)'" . 4)
+    ("use of a class keyword is not in a class" . 4)
+    ("missing `]' to close `[' on line 223, found instead `)'" . 4)
+    ("missing `]' to close `[' on line 207, found instead `)'" . 4)
+    ("duplicate definition for identifier" . 3)
+    ("Declaration for `internal-queue' provided, but `internal-queue' has no definition"
+     .
+     3)
+    ("provided identifier not defined or imported for phase 0" . 3)
+    ("duplicate type variable declaration" . 3)
+    ("duplicate argument identifier" . 3)
+    ("missing `]' to close `[' on line 157, found instead `)'; indentation suggests a missing `]' before line 158"
+     .
+     2)
+    ("(empty A)" . 2)
+    ("Declaration for `the' provided, but `the' has no definition" . 2)
+    ("Declaration for `function' provided, but `function' has no definition"
+     .
+     2)
+    ("Declaration for `to' provided, but `to' has no definition" . 2)
+    ("missing `]' to close `[' on line 81, found instead `)'" . 1)
+    ("ellipses not allowed as an expression" . 1)
+    ("Declaration for `common' provided, but `common' has no definition" . 1)
+    ("Declaration for `more' provided, but `more' has no definition" . 1)
+    ("Declaration for `of' provided, but `of' has no definition" . 1)
+    ("duplicate field identifier" . 1)
+    ("type name used out of context" . 1)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Queue) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 1)
+    ("(delay e)" . 1)
+    ("duplicate type variable" . 1))))

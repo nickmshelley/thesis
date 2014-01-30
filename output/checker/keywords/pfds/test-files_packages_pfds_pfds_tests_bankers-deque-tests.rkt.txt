@@ -1,0 +1,18 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 16)
+    ("found a test that is not at the top level" . 7)
+    ("type name used out of context" . 5)
+    ("unbound identifier in module" . 3)
+    ("not allowed in an expression context" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 32)
+    ("found a test that is not at the top level" . 10)
+    ("unbound identifier in module" . 9)
+    ("type name used out of context" . 8)
+    ("(empty A)" . 2)
+    ("bad syntax" . 2)
+    ("not at module level or top level" . 1))))

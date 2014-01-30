@@ -1,0 +1,22 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 43)
+    ("The type of vm-processes cannot be converted to a contract" . 37)
+    ("duplicate argument identifier" . 6)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 23)
+    ("unbound identifier in module" . 7)
+    ("unexpected `)'" . 5)
+    ("Illegal clause in endpoint definition" . 4)
+    ("bad syntax" . 2)
+    ("type name used out of context" . 2)
+    ("Declaration for `../support/event.rkt' provided, but `../support/event.rkt' has no definition"
+     .
+     1)
+    ("Declaration for `../sugar-typed.rkt' provided, but `../sugar-typed.rkt' has no definition"
+     .
+     1)
+    ("empty form not allowed" . 1))))

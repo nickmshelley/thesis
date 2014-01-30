@@ -1,0 +1,14 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 16)
+    ("found a test that is not at the top level" . 6)
+    ("unbound identifier in module" . 5)
+    ("expected a `module' declaration" . 5)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 18)
+    ("found a test that is not at the top level" . 12)
+    ("unbound identifier in module" . 5)
+    ("type name used out of context" . 1))))

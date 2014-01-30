@@ -1,0 +1,17 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 19)
+    ("found a test that is not at the top level" . 8)
+    ("unbound identifier in module" . 6)
+    ("expected a `module' declaration" . 5)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 25)
+    ("expected a `)' to close `('" . 10)
+    ("found a test that is not at the top level" . 6)
+    ("unbound identifier in module" . 6)
+    ("not at module level or top level" . 1)
+    ("collection not found" . 1)
+    ("type name used out of context" . 1))))

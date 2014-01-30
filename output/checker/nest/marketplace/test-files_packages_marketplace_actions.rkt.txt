@@ -1,0 +1,71 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 163)
+    ("unbound identifier in module" . 76)
+    ("type name used out of context" . 26)
+    ("bad syntax (multiple types after identifier)" . 9)
+    ("bad syntax" . 8)
+    ("expected a `module' declaration" . 5)
+    ("(State)" . 5)
+    ("Declaration for `process-alive?' provided, but `process-alive?' has no definition"
+     .
+     5)
+    ("Declaration for `wrap-trapk' provided, but `wrap-trapk' has no definition"
+     .
+     4)
+    ("duplicate identifier" . 4)
+    ("duplicate binding name" . 2)
+    ("bad syntax (multiple expressions after identifier)" . 2)
+    ("identifier is already imported" . 2)
+    ("(unwrap-process State Result (p wp) body ...)" . 2)
+    ("Declaration for `dispatch-spawn-k' provided, but `dispatch-spawn-k' has no definition"
+     .
+     2)
+    ("(send-to-user p (e) failure-result enclosed-expr)" . 1)
+    ("not allowed in an expression context" . 1)
+    ("must be used in a definition context" . 1)
+    ("expected `)' to close preceding `(', found instead `}'" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("duplicate argument identifier" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("bad syntax (missing binding pairs or body)" . 1)
+    ("unexpected `)'" . 1)
+    ("unexpected `}'" . 1)
+    ("duplicate clause binding name" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 176)
+    ("unbound identifier in module" . 105)
+    ("type name used out of context" . 13)
+    ("bad syntax" . 8)
+    ("bad syntax (multiple types after identifier)" . 8)
+    ("too many forms in body of All type" . 5)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     5)
+    ("(unwrap-process State Result (p wp) body ...)" . 4)
+    ("Declaration for `dump-state' provided, but `dump-state' has no definition"
+     .
+     4)
+    ("empty body not allowed" . 2)
+    ("must be used in a definition context" . 2)
+    ("bad syntax (multiple expressions after identifier)" . 2)
+    ("duplicate identifier" . 2)
+    ("expected type-annotated identifier" . 1)
+    ("'" . 1)
+    ("identifier `tr-struct-copy.rkt' not included in nested require spec" . 1)
+    ("identifier `rename-in' not included in nested require spec" . 1)
+    ("identifier `require' not included in nested require spec" . 1)
+    ("identifier `list-utils.rkt' not included in nested require spec" . 1)
+    ("identifier `action-quit.rkt' not included in nested require spec" . 1)
+    ("bad syntax (not an identifier and expression for a binding)" . 1)
+    ("collection not found" . 1)
+    ("bad syntax (missing binding pairs or body)" . 1)
+    ("expected `)' to close preceding `(', found instead `}'" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("missing `}' to close `{' on line 113, found instead `)'" . 1)
+    ("identifier is already imported" . 1)
+    ("expected more terms starting with expression" . 1)
+    ("not allowed in an expression context" . 1))))

@@ -1,0 +1,14 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 39)
+    ("unbound identifier in module" . 26)
+    ("expected a `module' declaration" . 10)
+    ("(State)" . 1)
+    ("\"types.rkt\"" . 1)
+    ("bad syntax (clause is not a test-value pair)" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 170)
+    ("The type of vm-processes cannot be converted to a contract" . 170))))

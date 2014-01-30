@@ -1,0 +1,9 @@
+'((remove
+   (passed . 0)
+   (failed (total . 2) ("unbound identifier in module" . 2)))
+  (truncate
+   (passed . 1)
+   (failed
+    (total . 4)
+    ("not a procedure;" . 2)
+    ("unbound identifier in module" . 2))))

@@ -1,0 +1,18 @@
+'((remove
+   (passed . 6)
+   (failed
+    (total . 19)
+    ("unbound identifier in module" . 7)
+    ("bad syntax" . 5)
+    ("illegal use of `.'" . 3)
+    ("undefined;" . 3)
+    ("not a procedure;" . 1)))
+  (truncate
+   (passed . 12)
+   (failed
+    (total . 10)
+    ("undefined;" . 5)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("not a procedure;" . 1)
+    ("arity mismatch;" . 1)
+    ("bad syntax" . 1))))

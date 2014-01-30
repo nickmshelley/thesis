@@ -1,0 +1,14 @@
+'((remove
+   (passed . 5)
+   (failed
+    (total . 20)
+    ("unbound identifier in module" . 13)
+    ("not a procedure;" . 7)))
+  (truncate
+   (passed . 3)
+   (failed
+    (total . 22)
+    ("duplicate definition for identifier" . 12)
+    ("unbound identifier in module" . 6)
+    ("not a procedure;" . 3)
+    ("illegal use of syntax" . 1))))

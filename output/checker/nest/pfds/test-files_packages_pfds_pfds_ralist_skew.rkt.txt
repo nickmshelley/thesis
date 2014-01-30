@@ -1,0 +1,90 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 294)
+    ("unbound identifier in module" . 89)
+    ("type name used out of context" . 24)
+    ("too many forms in body of All type" . 15)
+    ("bad syntax (multiple types after identifier)" . 14)
+    ("expected identifier" . 12)
+    ("duplicate argument identifier" . 11)
+    ("Type variable B must be used with ..." . 10)
+    ("duplicate type variable declaration" . 10)
+    ("Declaration for `tl-help' provided, but `tl-help' has no definition"
+     .
+     10)
+    ("bad syntax" . 9)
+    ("must be used in a definition context" . 8)
+    ("duplicate definition for identifier" . 7)
+    ("duplicate argument name" . 6)
+    ("Declaration for `local-reverse' provided, but `local-reverse' has no definition"
+     .
+     5)
+    ("not a provide sub-form" . 5)
+    ("Declaration for `tu-help' provided, but `tu-help' has no definition" . 5)
+    ("Declaration for `list-eighth' provided, but `list-eighth' has no definition"
+     .
+     4)
+    ("duplicate type variable or index" . 4)
+    ("identifier already provided (as a different binding)" . 4)
+    ("Declaration for `list-foldl' provided, but `list-foldl' has no definition"
+     .
+     4)
+    ("Component of case-lambda type was not a function clause" . 4)
+    ("Declaration for `->list' provided, but `->list' has no definition" . 4)
+    ("illegal use of `.'" . 3)
+    ("collection not found" . 3)
+    ("duplicate identifier" . 2)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     2)
+    ("bad syntax (not an identifier)" . 2)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 2)
+    ("not allowed as an expression" . 2)
+    ("(A)" . 2)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 2)
+    ("bad syntax (multiple expressions after identifier)" . 2)
+    ("bad module path" . 2)
+    ("unexpected `)'" . 1)
+    ("ellipses not allowed as an expression" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 288)
+    ("unbound identifier in module" . 112)
+    ("type name used out of context" . 32)
+    ("bad syntax (multiple types after identifier)" . 32)
+    ("(A)" . 25)
+    ("bad syntax" . 18)
+    ("must be used in a definition context" . 8)
+    ("Type variable B must be used with ..." . 7)
+    ("Declaration for `tl-help' provided, but `tl-help' has no definition" . 6)
+    ("too many forms in body of All type" . 5)
+    ("'" . 4)
+    ("Declaration for `list-length' provided, but `list-length' has no definition"
+     .
+     4)
+    ("duplicate argument identifier" . 4)
+    ("Declaration for `list-tenth' provided, but `list-tenth' has no definition"
+     .
+     4)
+    ("duplicate definition for identifier" . 3)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 3)
+    ("bad syntax (multiple expressions after identifier)" . 3)
+    ("identifier already provided (as a different binding)" . 3)
+    ("duplicate argument name" . 3)
+    ("duplicate type variable declaration" . 3)
+    ("duplicate type variable" . 2)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("bad syntax (missing binding pairs or body)" . 1)
+    ("omit-define-syntaxes" . 1)
+    ("bad syntax (not an identifier)" . 1)
+    ("bad syntax (not an identifier and expression for a binding)" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("expected identifier" . 1))))

@@ -1,0 +1,27 @@
+'((remove
+   (passed . 30)
+   (failed
+    (total . 50)
+    ("unbound identifier in module" . 31)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("syntax error in pattern" . 5)
+    ("collection not found" . 3)
+    ("bad syntax" . 3)
+    ("duplicate definition for identifier" . 1)
+    ("bad module path" . 1)
+    ("duplicate binding name" . 1)))
+  (truncate
+   (passed . 35)
+   (failed
+    (total . 45)
+    ("unbound identifier in module" . 27)
+    ("missing `]' to close `[' on line 40, found instead `)'" . 5)
+    ("use of 'any' outside the range of an arrow contract" . 3)
+    ("duplicate argument identifier" . 2)
+    ("duplicate binding name" . 2)
+    ("not allowed as an expression" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("bad syntax (not an identifier and expression for a binding)" . 1)
+    ("bad syntax (missing body)" . 1)
+    ("syntax error in pattern" . 1)
+    ("bad syntax" . 1))))

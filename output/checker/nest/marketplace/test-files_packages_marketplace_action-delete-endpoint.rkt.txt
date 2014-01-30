@@ -1,0 +1,43 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 37)
+    ("unbound identifier in module" . 10)
+    ("expected a `module' declaration" . 5)
+    ("(State)" . 5)
+    ("Declaration for `do-delete-endpoint' provided, but `do-delete-endpoint' has no definition"
+     .
+     5)
+    ("identifier is not bound to a structure type" . 5)
+    ("duplicate argument identifier" . 3)
+    ("bad syntax (multiple expressions after identifier)" . 1)
+    ("expected more terms starting with expression" . 1)
+    ("type name used out of context" . 1)
+    ("not allowed in an expression context" . 1)))
+  (truncate
+   (passed . 104)
+   (failed
+    (total . 136)
+    ("unbound identifier in module" . 78)
+    ("syntax error in pattern" . 15)
+    ("Illegal clause in endpoint definition" . 12)
+    ("bad syntax" . 6)
+    ("duplicate argument identifier" . 3)
+    ("Illegal use of match-state outside endpoint definition context" . 3)
+    ("missing argument expression after keyword" . 3)
+    ("Illegal use of on-message outside endpoint definition context" . 2)
+    ("Illegal use of on-presence outside endpoint definition context" . 2)
+    ("wildcard not allowed as an expression" . 2)
+    ("Illegal use of match-conversation outside endpoint definition context"
+     .
+     2)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("Illegal use of match-interest-type outside endpoint definition context"
+     .
+     1)
+    ("collection not found" . 1)
+    ("bad syntax;" . 1)
+    ("bad syntax (missing name or binding pairs)" . 1)
+    ("Illegal use of on-absence outside endpoint definition context" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("bad syntax (no expressions for procedure body)" . 1))))

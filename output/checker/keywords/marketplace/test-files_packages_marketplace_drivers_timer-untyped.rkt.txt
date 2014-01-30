@@ -1,0 +1,6 @@
+'((remove (passed . 10) (failed (total . 0)))
+  (truncate
+   (passed . 8)
+   (failed
+    (total . 2)
+    ("identifier already provided (as a different binding)" . 2))))

@@ -1,0 +1,120 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 268)
+    ("missing `]' to close preceding `[', found instead `)'" . 85)
+    ("unbound identifier in module" . 42)
+    ("bad syntax" . 18)
+    ("Type variable B must be used with ..." . 18)
+    ("bad syntax (multiple types after identifier)" . 16)
+    ("duplicate argument identifier" . 11)
+    ("expected a `module' declaration" . 10)
+    ("missing `]' to close `[' on line 229, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 217, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 250, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 95, found instead `)'; indentation suggests a missing `]' before line 96"
+     .
+     5)
+    ("missing `]' to close `[' on line 48, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 136, found instead `)'; indentation suggests a missing `]' before line 137"
+     .
+     5)
+    ("missing `]' to close `[' on line 150, found instead `)'; indentation suggests a missing `]' before line 151"
+     .
+     5)
+    ("missing `]' to close `[' on line 266, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 82, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 251, found instead `)'" . 5)
+    ("duplicate type variable or index" . 4)
+    ("duplicate type variable declaration" . 3)
+    ("Declaration for `A' provided, but `A' has no definition" . 2)
+    ("duplicate identifier" . 2)
+    ("Structure type constructor Tree applied to non-regular arguments (IntHeap)"
+     .
+     1)
+    ("Declaration for `heaps.' provided, but `heaps.' has no definition" . 1)
+    ("Declaration for `two' provided, but `two' has no definition" . 1)
+    ("type name used out of context" . 1)
+    ("use of a class keyword is not in a class" . 1)
+    ("Declaration for `constructor' provided, but `constructor' has no definition"
+     .
+     1)
+    ("no binding for identifier" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 409)
+    ("missing `]' to close preceding `[', found instead `)'" . 219)
+    ("unbound identifier in module" . 25)
+    ("bad syntax" . 18)
+    ("Type variable B must be used with ..." . 11)
+    ("bad syntax (multiple types after identifier)" . 9)
+    ("expected identifier" . 8)
+    ("type name used out of context" . 6)
+    ("identifier already provided (as a different binding)" . 6)
+    ("not allowed as an expression" . 6)
+    ("missing `]' to close `[' on line 193, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 320, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 347, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 310, found instead `)'; indentation suggests a missing `]' before line 311"
+     .
+     5)
+    ("missing `]' to close `[' on line 211, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 177, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 273, found instead `)'; indentation suggests a missing `)' before line 274"
+     .
+     5)
+    ("missing `]' to close `[' on line 282, found instead `)'" . 5)
+    ("duplicate definition for identifier" . 4)
+    ("Declaration for `tree-lookup' provided, but `tree-lookup' has no definition"
+     .
+     4)
+    ("Component of case-lambda type was not a function clause" . 4)
+    ("Declaration for `ls' provided, but `ls' has no definition" . 3)
+    ("missing `]' to close `[' on line 127, found instead `)'" . 3)
+    ("missing `]' to close `[' on line 124, found instead `)'; indentation suggests a missing `]' before line 125"
+     .
+     3)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 3)
+    ("missing `]' to close `[' on line 132, found instead `)'" . 3)
+    ("missing `]' to close `[' on line 104, found instead `)'; indentation suggests a missing `]' before line 105"
+     .
+     3)
+    ("duplicate type variable declaration" . 2)
+    ("Declaration for `function' provided, but `function' has no definition"
+     .
+     2)
+    ("Declaration for `to' provided, but `to' has no definition" . 2)
+    ("Declaration for `ralist' provided, but `ralist' has no definition" . 2)
+    ("not allowed in an expression context" . 2)
+    ("duplicate type variable" . 2)
+    ("Declaration for `list-map' provided, but `list-map' has no definition"
+     .
+     2)
+    ("Structure type constructor Node applied to non-regular arguments (Tree)"
+     .
+     1)
+    ("Declaration for `tail' provided, but `tail' has no definition" . 1)
+    ("missing `]' to close `[' on line 74, found instead `)'; indentation suggests a missing `]' before line 75"
+     .
+     1)
+    ("Declaration for `pos' provided, but `pos' has no definition" . 1)
+    ("Declaration for `constructor' provided, but `constructor' has no definition"
+     .
+     1)
+    ("provided identifier not defined or imported for phase 0" . 1)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("bad syntax (missing expression after identifier)" . 1)
+    ("missing `]' to close `[' on line 62, found instead `)'" . 1)
+    ("duplicate argument identifier" . 1)
+    ("Declaration for `tu-help' provided, but `tu-help' has no definition" . 1)
+    ("duplicate identifier" . 1)
+    ("must be used in a definition context" . 1)
+    ("ellipses not allowed as an expression" . 1)
+    ("Declaration for `tl-help' provided, but `tl-help' has no definition"
+     .
+     1))))

@@ -20,7 +20,7 @@
 
 (module+ main
   #;(define methods '(naive nest keywords macros bytecode combined))
-  (define methods '(naive))
+  (define methods '(macros bytecode combined))
   (unless (directory-exists? "output")
     (make-directory "output"))
   (unless (directory-exists? "output/checker")

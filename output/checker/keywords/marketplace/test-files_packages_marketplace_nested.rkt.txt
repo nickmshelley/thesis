@@ -1,0 +1,28 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 23)
+    ("unbound identifier in module" . 9)
+    ("(State)" . 5)
+    ("collection not found" . 3)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ."
+     .
+     2)
+    ("must be used in a definition context" . 1)
+    ("type name used out of context" . 1)
+    ("not a provide sub-form" . 1)
+    ("Polymorphic function `make-nested-vm' could not be applied to arguments"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 19)
+    ("type mismatch" . 7)
+    ("unbound identifier in module" . 4)
+    ("(State)" . 3)
+    ("Polymorphic function `spawn13' could not be applied to arguments" . 1)
+    ("process-spec" . 1)
+    ("bad syntax" . 1)
+    ("Unbound type name All" . 1)
+    ("Unbound type name" . 1))))

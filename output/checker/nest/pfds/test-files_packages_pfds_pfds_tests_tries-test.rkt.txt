@@ -1,0 +1,37 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 54)
+    ("unbound identifier in module" . 21)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     7)
+    ("Polymorphic function `map' could not be applied to arguments" . 6)
+    ("Wrong number of arguments, expected 1 and got 2" . 5)
+    ("expected a `module' declaration" . 5)
+    ("collection not found" . 2)
+    ("bad syntax for require sub-form" . 2)
+    ("Polymorphic function `trie' could not be applied to arguments" . 1)
+    ("Wrong number of arguments, expected 1 and got 3" . 1)
+    ("Polymorphic function `bind' could not be applied to arguments" . 1)
+    ("Polymorphic function `tries' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     1)
+    ("found a test that is not at the top level" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 55)
+    ("unbound identifier in module" . 25)
+    ("Polymorphic function `map' could not be applied to arguments" . 11)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     7)
+    ("Polymorphic function `tries' could not be applied to arguments" . 4)
+    ("Wrong number of arguments, expected 1 and got 2" . 2)
+    ("Polymorphic function `bind' could not be applied to arguments" . 2)
+    ("Polymorphic function `lookup' could not be applied to arguments" . 1)
+    ("found a test that is not at the top level" . 1)
+    ("Wrong number of arguments, expected 1 and got 3" . 1)
+    ("Wrong number of arguments, expected 1 and got 4" . 1))))

@@ -1,0 +1,21 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 19)
+    ("found a test that is not at the top level" . 8)
+    ("unbound identifier in module" . 6)
+    ("collection not found" . 3)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found"
+     .
+     1)
+    ("type name used out of context" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 24)
+    ("unbound identifier in module" . 10)
+    ("found a test that is not at the top level" . 8)
+    ("collection not found" . 2)
+    ("cannot open module file" . 2)
+    ("pfds/queue/implicit" . 1)
+    ("bad syntax" . 1))))

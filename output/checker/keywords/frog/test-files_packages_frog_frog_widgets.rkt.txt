@@ -1,0 +1,25 @@
+'((remove
+   (passed . 19)
+   (failed
+    (total . 36)
+    ("unbound identifier in module" . 28)
+    ("missing `]' to close `[' on line 88, found instead `)'; indentation suggests a missing `]' before line 89"
+     .
+     1)
+    ("missing `]' to close `[' on line 56, found instead `)'" . 1)
+    ("bad syntax" . 1)
+    ("not allowed in an expression context" . 1)
+    ("ellipses not allowed as an expression" . 1)
+    ("missing `]' to close `[' on line 155, found instead `)'" . 1)
+    ("duplicate argument identifier" . 1)
+    ("expected a closing '\"'" . 1)))
+  (truncate
+   (passed . 23)
+   (failed
+    (total . 27)
+    ("unbound identifier in module" . 16)
+    ("duplicate definition for identifier" . 4)
+    ("duplicate argument identifier" . 3)
+    ("missing `]' to close preceding `[', found instead `)'" . 2)
+    ("unexpected `}'" . 1)
+    ("unexpected `]'" . 1))))

@@ -1,0 +1,145 @@
+'((remove
+   (passed . 5)
+   (failed
+    (total . 170)
+    ("unbound identifier in module" . 43)
+    ("type name used out of context" . 16)
+    ("bad syntax" . 16)
+    ("type mismatch" . 11)
+    ("duplicate definition for identifier" . 7)
+    ("syntax error in pattern" . 5)
+    ("Illegal clause in endpoint definition" . 5)
+    ("too many forms in body of All type" . 5)
+    ("expected a `module' declaration" . 5)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("Declaration for `next-timer!' provided, but `next-timer!' has no definition"
+     .
+     4)
+    ("'" . 4)
+    ("missing argument expression after keyword" . 3)
+    ("must be used in a definition context" . 3)
+    ("duplicate argument identifier" . 3)
+    ("Declaration for `make-timer-heap' provided, but `make-timer-heap' has no definition"
+     .
+     2)
+    ("Cannot apply expression of type Real, since it is not a function type"
+     .
+     2)
+    ("No function domains matched in function application" . 2)
+    ("omit-define-syntaxes" . 1)
+    ("identifier `typed/racket/base' not included in nested require spec" . 1)
+    ("identifier `pending-timer' not included in nested require spec" . 1)
+    ("identifier `AbsoluteSeconds' not included in nested require spec" . 1)
+    ("Illegal use of match-state outside endpoint definition context" . 1)
+    ("identifier is already imported" . 1)
+    ("provided identifier not defined or imported for phase 0" . 1)
+    ("Illegal use of on-message outside endpoint definition context" . 1)
+    ("Cannot apply expression of type pending-timer, since it is not a function type"
+     .
+     1)
+    ("Wrong number of arguments, expected 1 and got 2" . 1)
+    ("Unbound type name heap-remove-min!" . 1)
+    ("Expected a function of type (-> (-> Evt)), but got a function with the wrong arity"
+     .
+     1)
+    ("Unbound type name" . 1)
+    ("Unbound type name define" . 1)
+    ("Unbound type name timer-evt" . 1)
+    ("Cannot apply expression of type Heap, since it is not a function type"
+     .
+     1)
+    ("Wrong number of arguments, expected 1 and got 3" . 1)
+    ("Wrong number of arguments, expected 2 and got 3" . 1)
+    ("(Void Void)" . 1)
+    ("(Heap Void)" . 1)
+    ("(pending-timer Void)" . 1)
+    ("Unbound type name *" . 1)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `make-immutable-hash' could not be applied to arguments"
+     .
+     1)
+    ("Polymorphic function `add-endpoint10' could not be applied to arguments"
+     .
+     1)
+    ("Cannot apply expression of type driver-state, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Any, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type RelayKey, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `hash-remove' could not be applied to arguments"
+     .
+     1)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     1)))
+  (truncate
+   (passed . 11)
+   (failed
+    (total . 143)
+    ("unbound identifier in module" . 28)
+    ("type name used out of context" . 22)
+    ("type mismatch" . 11)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("bad syntax" . 5)
+    ("syntax error in pattern" . 5)
+    ("Illegal clause in endpoint definition" . 5)
+    ("must be used in a definition context" . 5)
+    ("'" . 5)
+    ("Polymorphic function `hash-remove' could not be applied to arguments"
+     .
+     5)
+    ("Unbound type name" . 4)
+    ("Unbound type name label" . 4)
+    ("missing argument expression after keyword" . 3)
+    ("Declaration for `make-timer-heap' provided, but `make-timer-heap' has no definition"
+     .
+     2)
+    ("Polymorphic function `add-endpoint10' could not be applied to arguments"
+     .
+     2)
+    ("Cannot apply expression of type pending-timer, since it is not a function type"
+     .
+     2)
+    ("wildcard not allowed as an expression" . 2)
+    ("identifier `typed/racket/base' not included in nested require spec" . 1)
+    ("identifier `../support/pseudo-substruct.rkt' not included in nested require spec"
+     .
+     1)
+    ("not at module level or top level" . 1)
+    ("identifier `../support/event.rkt' not included in nested require spec"
+     .
+     1)
+    ("duplicate definition for identifier" . 1)
+    ("Unbound type name Utive" . 1)
+    ("Unbound type name timer-expired-reprtive" . 1)
+    ("Unbound type name struct-outtive" . 1)
+    ("Unbound type name set-timer-reprtive" . 1)
+    ("Unbound type name Evttive" . 1)
+    ("Unbound type name msecs" . 1)
+    ("(Any Heap)" . 1)
+    ("(Real Heap)" . 1)
+    ("Unbound type name deadline" . 1)
+    ("Unbound type name at-meta-level" . 1)
+    ("Unbound type name subscriber" . 1)
+    ("Cannot apply expression of type RelayKey, since it is not a function type"
+     .
+     1)
+    ("Wrong number of arguments, expected 0 and got 2" . 1)
+    ("Cannot apply expression of type Any, since it is not a function type"
+     .
+     1)
+    ("Wrong number of arguments, expected at least 2 and got 1" . 1)
+    ("Wrong number of arguments, expected 0 and got 1" . 1)
+    ("Recursive Type Alias Reference" . 1)
+    ("Unbound type name define-type" . 1)
+    ("transparent" . 1)
+    ("Unbound type name wrap-evt" . 1)
+    ("Unbound type name typed/racket/base" . 1)
+    ("Unbound type name require/typed" . 1)
+    ("Unbound type name ../support/pseudo-substruct.rkt" . 1))))

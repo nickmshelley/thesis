@@ -1,0 +1,102 @@
+'((remove
+   (passed . 3)
+   (failed
+    (total . 169)
+    ("pattern variable cannot be used outside of a template" . 26)
+    ("missing ellipsis with pattern variable in template" . 21)
+    ("no pattern variables before ellipsis in template" . 19)
+    ("expected a `)' to close `('" . 14)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 13)
+    ("not allowed in an expression context" . 8)
+    ("duplicate argument identifier" . 7)
+    ("provided identifier not defined or imported for phase 0" . 6)
+    ("unbound identifier in module" . 5)
+    ("expected `)' to close `(' on line 81, found instead `]'" . 5)
+    ("not a require sub-form" . 4)
+    ("missing `)' to close preceding `(', found instead `]'" . 4)
+    ("Declaration for `name-endpoint' provided, but `name-endpoint' has no definition"
+     .
+     4)
+    ("too many ellipses in template" . 4)
+    ("too few ellipses for pattern variable in template" . 4)
+    ("missing procedure expression;" . 4)
+    ("bad form" . 3)
+    ("ellipses not allowed as an expression" . 3)
+    ("misplaced ellipsis in template" . 2)
+    ("variable used twice in pattern" . 2)
+    ("bad syntax" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("syntax error in pattern" . 1)
+    ("missing `)' to close `(' on line 159, found instead `]'; indentation suggests a missing `)' before line 161"
+     .
+     1)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 207"
+     .
+     1)
+    ("unbound identifier in module (in the transformer environment, which does not include the run-time definition)"
+     .
+     1)
+    ("missing `)' to close `(' on line 220, found instead `]'; indentation suggests a missing `)' before line 225"
+     .
+     1)
+    ("missing `)' to close `(' on line 169, found instead `]'; indentation suggests a missing `)' before line 170"
+     .
+     1)
+    ("missing `)' to close `(' on line 195, found instead `]'; indentation suggests a missing `)' before line 196"
+     .
+     1)
+    ("illegal use of syntax" . 1)
+    ("missing `)' to close `(' on line 187, found instead `]'; indentation suggests a missing `)' before line 188"
+     .
+     1)))
+  (truncate
+   (passed . 4)
+   (failed
+    (total . 146)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 22)
+    ("no pattern variables before ellipsis in template" . 14)
+    ("variable used twice in pattern" . 13)
+    ("pattern variable cannot be used outside of a template" . 11)
+    ("missing ellipsis with pattern variable in template" . 9)
+    ("too many ellipses in template" . 8)
+    ("missing `)' to close preceding `(', found instead `]'" . 7)
+    ("missing `]' to close `[' on line 217, found instead `)'" . 6)
+    ("unbound identifier in module (in the transformer environment, which does not include the run-time definition)"
+     .
+     5)
+    ("unbound identifier in module" . 5)
+    ("missing `]' to close `[' on line 204, found instead `)'" . 5)
+    ("expected a `)' to close `('" . 4)
+    ("misplaced ellipsis in pattern (follows other ellipsis)" . 4)
+    ("missing `]' to close `[' on line 217, found instead `)'; indentation suggests a missing `)' before line 222"
+     .
+     4)
+    ("type name used out of context" . 4)
+    ("duplicate argument identifier" . 3)
+    ("misplaced ellipsis in template" . 3)
+    ("not a require sub-form" . 3)
+    ("bad syntax" . 2)
+    ("collection not found" . 2)
+    ("ellipses not allowed as an expression" . 2)
+    ("illegal use of syntax" . 1)
+    ("missing `)' to close `(' on line 196, found instead `]'; indentation suggests a missing `)' before line 200"
+     .
+     1)
+    ("typed/racket/base" . 1)
+    ("cannot open module file" . 1)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 156"
+     .
+     1)
+    ("Declaration for `name-endpoint' provided, but `name-endpoint' has no definition"
+     .
+     1)
+    ("bad form" . 1)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 167"
+     .
+     1)
+    ("Cannot apply expression of type PreEID, since it is not a function type"
+     .
+     1)
+    ("missing `)' to close `(' on line 148, found instead `]'; indentation suggests a missing `)' before line 150"
+     .
+     1))))

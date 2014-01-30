@@ -1,0 +1,172 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 159)
+    ("unbound identifier in module" . 31)
+    ("type mismatch" . 23)
+    ("type name used out of context" . 14)
+    ("bad syntax" . 5)
+    ("expected a `module' declaration" . 5)
+    ("Wrong number of arguments, expected 1 and got 2" . 4)
+    ("Recursive Type Alias Reference" . 4)
+    ("Unbound type name A" . 4)
+    ("untyped identifier empty-stream imported from module <typed/racket>" . 3)
+    ("Unbound type name null?" . 3)
+    ("Cannot apply expression of type (U (Pairof A (Rec g506 (U Null (Boxof (U (Pairof A g506) (-> (Pairof A g506))))))) (-> (Pairof A (Rec g512 (U Null (Boxof (U (Pairof A g512) (-> (Pairof A g512))))))))), since it is not a function type"
+     .
+     3)
+    ("Cannot apply expression of type (U (Pairof A (Rec g257 (U Null (Boxof (U (Pairof A g257) (-> (Pairof A g257))))))) (-> (Pairof A (Rec g263 (U Null (Boxof (U (Pairof A g263) (-> (Pairof A g263))))))))), since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `unbox' could not be applied to arguments" . 2)
+    ("(A)" . 2)
+    ("Unbound type name stream" . 2)
+    ("Unbound type name loop" . 2)
+    ("Polymorphic function `stream-car' could not be applied to arguments" . 2)
+    ("Unbound type name *" . 2)
+    ("Polymorphic function `car' could not be applied to arguments" . 2)
+    ("Polymorphic function `cons' could not be applied to arguments" . 2)
+    ("((Pairof A Stream))" . 2)
+    ("Duplicate type annotation of (All (A) (Integer (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))))) for stream->list, previous was (All (A) ((Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> (Listof A)))"
+     .
+     1)
+    ("Unbound type name null" . 1)
+    ("Cannot apply expression of type (Pairof A (Rec g254 (U Null (Boxof (U (Pairof A g254) (-> (Pairof A g254))))))), since it is not a function type"
+     .
+     1)
+    ("bad syntax (missing binding pairs or body)" . 1)
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g260 (U Null (Boxof (U (Pairof A g260) (-> (Pairof A g260))))))) (-> (Pairof A (Rec g266 (U Null (Boxof (U (Pairof A g266) (-> (Pairof A g266)))))))))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `drop' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Pairof A (Listof A))), since it is not a function type"
+     .
+     1)
+    ("(stream-cons x stream)" . 1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Pairof A (Rec g238 (U Null (Boxof (U (Pairof A g238) (-> (Pairof A g238))))))) (-> (Pairof A (Rec g244 (U Null (Boxof (U (Pairof A g244) (-> (Pairof A g244))))))))))), since it is not a function type"
+     .
+     1)
+    ("Duplicate type annotation of (All (A) ((Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> A)) for empty-stream?, previous was (All (A) ((Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> Boolean))"
+     .
+     1)
+    ("Duplicate type annotation of (All (A) ((Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> A)) for null, previous was Null"
+     .
+     1)
+    ("Duplicate type annotation of (All (A) ((Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> A)) for empty-stream, previous was Null"
+     .
+     1)
+    ("bad syntax (not an identifier and expression for a binding)" . 1)
+    ("Cannot apply expression of type (Pairof A (Rec g562 (U Null (Boxof (U (Pairof A g562) (-> (Pairof A g562))))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g568 (U Null (Boxof (U (Pairof A g568) (-> (Pairof A g568))))))) (-> (Pairof A (Rec g574 (U Null (Boxof (U (Pairof A g574) (-> (Pairof A g574)))))))))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name error" . 1)
+    ("missing procedure expression;" . 1)
+    ("Unbound type name forced" . 1)
+    ("Unbound type name if" . 1)
+    ("Unbound type name B" . 1)
+    ("Unbound type name lambda" . 1)
+    ("Unbound type name stream1" . 1)
+    ("Cannot apply expression of type (Pairof A (Rec g549 (U Null (Boxof (U (Pairof A g549) (-> (Pairof A g549))))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g555 (U Null (Boxof (U (Pairof A g555) (-> (Pairof A g555))))))) (-> (Pairof A (Rec g561 (U Null (Boxof (U (Pairof A g561) (-> (Pairof A g561)))))))))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `set-box!' could not be applied to arguments" . 1)
+    ("Wrong number of arguments, expected 0 and got 2" . 1)
+    ("provided identifier not defined or imported for phase 0" . 1)
+    ("Cannot apply expression of type (Pairof A (Rec g546 (U Null (Boxof (U (Pairof A g546) (-> (Pairof A g546))))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Negative-Integer Exact-Positive-Integer), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `cdr' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g451 (U Null (Boxof (U (Pairof A g451) (-> (Pairof A g451))))))) (-> (Pairof A (Rec g457 (U Null (Boxof (U (Pairof A g457) (-> (Pairof A g457)))))))))), since it is not a function type"
+     .
+     1)
+    ("expected 2 and got 1" . 1)
+    ("Unbound type name p" . 1)
+    ("Unbound type name stream-car" . 1)
+    ("Unbound type name sub1" . 1)
+    ("Unbound type name num" . 1)
+    ("Unbound type name cdr" . 1)
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g467 (U Null (Boxof (U (Pairof A g467) (-> (Pairof A g467))))))) (-> (Pairof A (Rec g473 (U Null (Boxof (U (Pairof A g473) (-> (Pairof A g473)))))))))), since it is not a function type"
+     .
+     1)
+    ("Duplicate type annotation of (All (A) ((Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))))) for stream-car, previous was (All (A) ((Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> A))"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 153)
+    ("unbound identifier in module" . 30)
+    ("type name used out of context" . 19)
+    ("Unbound type name A" . 14)
+    ("(A)" . 12)
+    ("type mismatch" . 7)
+    ("bad syntax" . 6)
+    ("too many forms in body of All type" . 6)
+    ("Polymorphic function `loop' could not be applied to arguments" . 5)
+    ("must be used in a definition context" . 5)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("duplicate definition for identifier" . 3)
+    ("(Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))" . 2)
+    ("Polymorphic function `cons' could not be applied to arguments" . 2)
+    ("(A Stream)" . 2)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("Unbound type name define-type" . 1)
+    ("Unbound type name box" . 1)
+    ("Unbound type name xs" . 1)
+    ("expected 1 and got 2" . 1)
+    ("Unbound type name lambda" . 1)
+    ("Unbound type name let" . 1)
+    ("Unbound type name empty" . 1)
+    ("bad syntax (multiple expressions after identifier)" . 1)
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g269 (U Null (Boxof (U (Pairof A g269) (-> (Pairof A g269))))))) (-> (Pairof A (Rec g275 (U Null (Boxof (U (Pairof A g275) (-> (Pairof A g275)))))))))), since it is not a function type"
+     .
+     1)
+    ("not allowed as an expression" . 1)
+    ("(if x stream)" . 1)
+    ("Unbound type name loop" . 1)
+    ("Unbound type name stream" . 1)
+    ("Unbound type name null?" . 1)
+    ("Cannot apply expression of type (U (Pairof A (Rec g244 (U Null (Boxof (U (Pairof A g244) (-> (Pairof A g244))))))) (-> (Pairof A (Rec g250 (U Null (Boxof (U (Pairof A g250) (-> (Pairof A g250))))))))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `car' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (U (Pairof A (Rec g250 (U Null (Boxof (U (Pairof A g250) (-> (Pairof A g250))))))) (-> (Pairof A (Rec g256 (U Null (Boxof (U (Pairof A g256) (-> (Pairof A g256))))))))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name if" . 1)
+    ("Unbound type name p" . 1)
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g470 (U Null (Boxof (U (Pairof A g470) (-> (Pairof A g470))))))) (-> (Pairof A (Rec g476 (U Null (Boxof (U (Pairof A g476) (-> (Pairof A g476)))))))))), since it is not a function type"
+     .
+     1)
+    ("Wrong number of arguments, expected 1 and got 2" . 1)
+    ("missing an \"else\" expression" . 1)
+    ("not allowed in an expression context" . 1)
+    ("Unbound type name U" . 1)
+    ("Recursive types are not allowed directly inside their definition" . 1)
+    ("Unbound type name Rec" . 1)
+    ("Unbound type name All" . 1)
+    ("Cannot apply expression of type (U (Pairof A (Rec g547 (U Null (Boxof (U (Pairof A g547) (-> (Pairof A g547))))))) (-> (Pairof A (Rec g553 (U Null (Boxof (U (Pairof A g553) (-> (Pairof A g553))))))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Pairof A (Rec g238 (U Null (Boxof (U (Pairof A g238) (-> (Pairof A g238))))))) (-> (Pairof A (Rec g244 (U Null (Boxof (U (Pairof A g244) (-> (Pairof A g244))))))))))), since it is not a function type"
+     .
+     1)
+    ("expected identifier" . 1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Pairof A (Rec g314 (U Null (Boxof (U (Pairof A g314) (-> (Pairof A g314))))))) (-> (Pairof A (Rec g320 (U Null (Boxof (U (Pairof A g320) (-> (Pairof A g320))))))))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type A, since it is not a function type" . 1)
+    ("(stream-cons x stream)" . 1)
+    ("bad syntax;" . 1))))

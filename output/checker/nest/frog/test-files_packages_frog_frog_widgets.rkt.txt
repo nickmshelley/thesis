@@ -1,0 +1,20 @@
+'((remove
+   (passed . 14)
+   (failed
+    (total . 41)
+    ("unbound identifier in module" . 26)
+    ("duplicate argument identifier" . 7)
+    ("expected a `module' declaration" . 5)
+    ("missing closing `}'" . 3)))
+  (truncate
+   (passed . 20)
+   (failed
+    (total . 29)
+    ("unbound identifier in module" . 14)
+    ("bad syntax" . 5)
+    ("not a provide sub-form" . 4)
+    ("expected `)' to close preceding `(', found instead `}'" . 2)
+    ("unexpected whitespace after @" . 1)
+    ("duplicate argument identifier" . 1)
+    ("identifier used out of context" . 1)
+    ("unexpected `}'" . 1))))

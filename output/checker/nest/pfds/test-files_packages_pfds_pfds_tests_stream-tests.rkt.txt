@@ -1,0 +1,48 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 65)
+    ("unbound identifier in module" . 12)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     10)
+    ("expected identifier" . 10)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     7)
+    ("Polymorphic function `append' could not be applied to arguments" . 5)
+    ("" . 4)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     3)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     3)
+    ("Bad arguments to polymorphic function in apply" . 2)
+    ("must be used in a definition context" . 2)
+    ("Polymorphic function `stream-cdr' could not be applied to arguments" . 1)
+    ("type name used out of context" . 1)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `reverse' could not be applied to arguments" . 1)
+    ("expected annotated-formals" . 1)
+    ("identifier is already imported" . 1)
+    ("Polymorphic function `stream-append' could not be applied to arguments"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 22)
+    ("unbound identifier in module" . 9)
+    ("expected identifier" . 4)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     3)
+    ("collection not found" . 1)
+    ("expects 2 arguments, but found none" . 1)
+    ("bad syntax" . 1)
+    ("type name used out of context" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("expected annotated-formals" . 1))))

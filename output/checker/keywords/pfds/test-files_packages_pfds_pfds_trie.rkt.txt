@@ -1,0 +1,57 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 110)
+    ("missing `]' to close preceding `[', found instead `)'" . 48)
+    ("unbound identifier in module" . 28)
+    ("duplicate argument identifier" . 6)
+    ("bad syntax" . 5)
+    ("must be used in a definition context" . 4)
+    ("not a definition sequence" . 4)
+    ("missing `]' to close `[' on line 55, found instead `)'; indentation suggests a missing `]' before line 56"
+     .
+     3)
+    ("missing `]' to close `[' on line 103, found instead `)'; indentation suggests a missing `]' before line 105"
+     .
+     3)
+    ("missing `]' to close `[' on line 84, found instead `)'; indentation suggests a missing `]' before line 86"
+     .
+     3)
+    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 45"
+     .
+     3)
+    ("missing `]' to close `[' on line 65, found instead `)'; indentation suggests a missing `]' before line 66"
+     .
+     3)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 46)
+    ("unbound identifier in module" . 8)
+    ("missing `]' to close preceding `[', found instead `)'" . 7)
+    ("type mismatch" . 7)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     4)
+    ("No function domains matched in function application" . 3)
+    ("Cannot apply expression of type Nonnegative-Integer, since it is not a function type"
+     .
+     3)
+    ("Polymorphic function `build-queue' could not be applied to arguments"
+     .
+     3)
+    ("bad syntax (not an identifier)" . 2)
+    ("Wrong number of arguments, expected 1 and got 2" . 2)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     1)
+    ("Wrong number of arguments, expected at least 2 and got 1" . 1)
+    ("bad syntax;" . 1)
+    ("#<syntax Queue> ((Rec g688 (U Null (Boxof (U (Boxof g688) (-> (Boxof g688)))) (Pairof Positive-Integer g688))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("type name used out of context" . 1)
+    ("bad syntax" . 1)
+    ("#<syntax Queue> ((Rec g453 (U Null (Boxof (U (Boxof g453) (-> (Boxof g453)))) (Pairof Positive-Integer g453))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1))))

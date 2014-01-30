@@ -1,0 +1,12 @@
+'((remove
+   (passed . 1)
+   (failed
+    (total . 9)
+    ("collection not found" . 4)
+    ("duplicate definition" . 2)
+    ("not a well-formed definition" . 1)
+    ("unbound identifier in module" . 1)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ."
+     .
+     1)))
+  (truncate (passed . 0) (failed (total . 1) ("collection not found" . 1))))

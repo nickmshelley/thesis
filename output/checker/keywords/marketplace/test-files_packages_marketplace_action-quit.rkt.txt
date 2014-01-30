@@ -1,0 +1,23 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 31)
+    ("expected a `module' declaration" . 10)
+    ("Declaration for `log-quit' provided, but `log-quit' has no definition"
+     .
+     5)
+    ("too many forms in body of All type" . 5)
+    ("duplicate clause binding name" . 4)
+    ("unbound identifier in module" . 4)
+    ("bad syntax" . 2)
+    ("bad syntax;" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 24)
+    ("unbound identifier in module" . 6)
+    ("exn" . 5)
+    ("not a require sub-form" . 5)
+    ("too many forms in body of All type" . 5)
+    ("bad syntax" . 2)
+    ("missing an \"else\" expression" . 1))))

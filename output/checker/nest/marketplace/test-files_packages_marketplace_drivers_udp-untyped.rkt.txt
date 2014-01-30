@@ -1,0 +1,18 @@
+'((remove
+   (passed . 12)
+   (failed
+    (total . 3)
+    ("identifier already provided (as a different binding)" . 3)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 15)
+    ("identifier already provided (as a different binding)" . 5)
+    ("unbound identifier in module" . 5)
+    ("identifier to remove `except-out' not included in nested provide spec"
+     .
+     2)
+    ("identifier to remove `udp.rkt' not included in nested provide spec" . 2)
+    ("identifier to remove `all-from-out' not included in nested provide spec"
+     .
+     1))))

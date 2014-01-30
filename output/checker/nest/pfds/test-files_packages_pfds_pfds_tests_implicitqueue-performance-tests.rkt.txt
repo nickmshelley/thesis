@@ -1,0 +1,17 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 5)
+    ("contract violation" . 2)
+    ("bad syntax" . 2)
+    ("unbound identifier in module" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 16)
+    ("unbound identifier in module" . 8)
+    ("type name used out of context" . 3)
+    ("(empty A)" . 2)
+    ("found a test that is not at the top level" . 1)
+    ("not at module level or top level" . 1)
+    ("collection not found" . 1))))

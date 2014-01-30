@@ -1,0 +1,12 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 9)
+    ("unbound identifier in module" . 5)
+    ("found a test that is not at the top level" . 4)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 10)
+    ("found a test that is not at the top level" . 8)
+    ("unbound identifier in module" . 2))))

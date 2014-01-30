@@ -1,0 +1,29 @@
+'((remove
+   (passed . 58)
+   (failed
+    (total . 92)
+    ("unbound identifier in module" . 56)
+    ("illegal use of syntax" . 10)
+    ("bad syntax" . 6)
+    ("undefined;" . 4)
+    ("duplicate definition for identifier" . 4)
+    ("collection not found" . 3)
+    ("not allowed in an expression context" . 2)
+    ("identifier `pi' not included in nested require spec" . 2)
+    ("duplicate argument identifier" . 2)
+    ("arity mismatch;" . 2)
+    ("illegal use of `.'" . 1)))
+  (truncate
+   (passed . 83)
+   (failed
+    (total . 67)
+    ("unbound identifier in module" . 33)
+    ("duplicate definition for identifier" . 13)
+    ("collection not found" . 6)
+    ("bad syntax" . 6)
+    ("illegal use of syntax" . 6)
+    ("not allowed in an expression context" . 1)
+    ("duplicate argument identifier" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1))))

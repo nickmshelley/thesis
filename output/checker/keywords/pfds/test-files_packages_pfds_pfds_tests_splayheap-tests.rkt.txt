@@ -1,0 +1,25 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 23)
+    ("type name used out of context" . 6)
+    ("unbound identifier in module" . 4)
+    ("bad syntax" . 3)
+    ("Declaration for `gt' provided, but `gt' has no definition" . 3)
+    ("duplicate definition for identifier" . 2)
+    ("unexpected term" . 2)
+    ("expected identifier" . 1)
+    ("found a test that is not at the top level" . 1)
+    ("'" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 89)
+    ("unbound identifier in module" . 36)
+    ("expected identifier" . 19)
+    ("found a test that is not at the top level" . 11)
+    ("type name used out of context" . 9)
+    ("must be used in a definition context" . 7)
+    ("bad syntax" . 4)
+    ("not an identifier, identifier with default, or keyword" . 2)
+    ("not at module level or top level" . 1))))

@@ -1,0 +1,35 @@
+'((remove
+   (passed . 20)
+   (failed
+    (total . 25)
+    ("unbound identifier in module" . 6)
+    ("syntax error in pattern" . 4)
+    ("missing procedure expression;" . 3)
+    ("variable used twice in pattern" . 2)
+    ("missing `)' to close `(' on line 33, found instead `]'; indentation suggests a missing `)' before line 36"
+     .
+     1)
+    ("expected a clause with a pattern and a result" . 1)
+    ("missing `)' to close preceding `(', found instead `]'" . 1)
+    ("expected a `)' to close `('" . 1)
+    ("undefined;" . 1)
+    ("misplaced ellipsis in pattern (follows other ellipsis)" . 1)
+    ("missing ellipsis with pattern variable in template" . 1)
+    ("no pattern variables before ellipsis in template" . 1)
+    ("missing `)' to close `(' on line 33, found instead `]'; indentation suggests a missing `)' before line 35"
+     .
+     1)
+    ("missing `)' to close `(' on line 37, found instead `]'; indentation suggests a missing `)' before line 38"
+     .
+     1)))
+  (truncate
+   (passed . 23)
+   (failed
+    (total . 19)
+    ("unbound identifier in module" . 12)
+    ("variable used twice in pattern" . 3)
+    ("too many ellipses in template" . 2)
+    ("not allowed in an expression context" . 1)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 16"
+     .
+     1))))

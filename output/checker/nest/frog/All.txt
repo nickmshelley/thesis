@@ -1,0 +1,224 @@
+'((remove
+   (passed . 976)
+   (failed
+    (total . 1349)
+    ("unbound identifier in module" . 739)
+    ("bad syntax" . 50)
+    ("unexpected `)'" . 48)
+    ("missing `]' to close preceding `[', found instead `)'" . 45)
+    ("expected a `)' to close `('" . 40)
+    ("duplicate argument identifier" . 33)
+    ("syntax error in pattern" . 32)
+    ("variable not bound in all or patterns" . 22)
+    ("not allowed as an expression" . 20)
+    ("expected a `module' declaration" . 20)
+    ("provided identifier not defined or imported for phase 0" . 19)
+    ("wildcard not allowed as an expression" . 16)
+    ("illegal use of `.'" . 16)
+    ("misuse of unit import and export keyword" . 15)
+    ("collection not found" . 14)
+    ("incorrect use of ... in pattern" . 12)
+    ("not a require sub-form" . 11)
+    ("duplicate binding name" . 10)
+    ("ellipses not allowed as an expression" . 10)
+    ("missing `]' to close `[' on line 176, found instead `)'" . 10)
+    ("contract violation" . 8)
+    ("not a procedure;" . 8)
+    ("not allowed in an expression context" . 6)
+    ("not in a definition context" . 5)
+    ("duplicate definition for identifier" . 5)
+    ("expected a `]' to close `['" . 5)
+    ("missing `)' to close `(' on line 425, found instead `]'; indentation suggests a missing `)' before line 427"
+     .
+     5)
+    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 172"
+     .
+     5)
+    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 76"
+     .
+     5)
+    ("expected a closing '\"'" . 5)
+    ("missing `]' to close `[' on line 70, found instead `)'; indentation suggests a missing `]' before line 71"
+     .
+     5)
+    ("expected `)' to close `(' on line 62, found instead `]'" . 5)
+    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 75"
+     .
+     5)
+    ("missing `]' to close `[' on line 62, found instead `)'; indentation suggests a missing `]' before line 63"
+     .
+     5)
+    ("misuse of module-path constructor (not within, e.g., `require' or `provide')"
+     .
+     4)
+    ("not a provide sub-form" . 4)
+    ("bad sequence binding clause" . 3)
+    ("expected more terms starting with any term" . 3)
+    ("bad syntax (clause is not a test-value pair)" . 3)
+    ("not at module level or top level" . 3)
+    ("non-list pattern inside unquote-splicing" . 3)
+    ("arity mismatch;" . 3)
+    ("use of 'any' outside the range of an arrow contract" . 3)
+    ("variable used twice in pattern" . 3)
+    ("pattern variable cannot be used outside of a template" . 3)
+    ("missing closing `}'" . 3)
+    ("undefined;" . 3)
+    ("expected more terms starting with expression" . 2)
+    ("no expression after a sequence of internal definitions" . 2)
+    ("identifier `only-in' not included in nested require spec" . 2)
+    ("identifier `find-parent-containing' not included in nested require spec"
+     .
+     2)
+    ("duplicate identifier as sequence binding" . 2)
+    ("missing `}' to close preceding `{', found instead `)'; indentation suggests a missing `}' before line 175"
+     .
+     2)
+    ("identifier is already imported" . 2)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     2)
+    ("procedure does not accept keyword arguments" . 2)
+    ("duplicate definition" . 2)
+    ("expected an identifier for a submodule, found something else" . 1)
+    ("identifier `find-parent-dir' not included in nested require spec" . 1)
+    ("identifier `srfi/1' not included in nested require spec" . 1)
+    ("expected 10 but got 8" . 1)
+    ("bad syntax (`else' clause must be last)" . 1)
+    ("args" . 1)
+    ("missing `}' to close `{' on line 221, found instead `)'; indentation suggests a missing `}' before line 223"
+     .
+     1)
+    ("bad syntax (missing expression after identifier)" . 1)
+    ("expected `)' to close `(' on line 218, found instead `}'" . 1)
+    ("missing `}' to close `{' on line 174, found instead `)'; indentation suggests a missing `}' before line 177"
+     .
+     1)
+    ("misuse of compound-unit keyword" . 1)
+    ("bad syntax (not an identifier for procedure name, and not a nested procedure form)"
+     .
+     1)
+    ("unbound identifier;" . 1)
+    ("multiple bindings of `path' in the same clause" . 1)
+    ("bad syntax (multiple expressions after identifier)" . 1)
+    ("duplicate argument name" . 1)
+    ("default-value expression missing" . 1)
+    ("identifier `read-scribble-file' not included in nested require spec" . 1)
+    ("identifier `path' not included in nested require spec" . 1)
+    ("img-local-path' not included in nested require spec" . 1)
+    ("broke its contract" . 1)
+    ("duplicate identifier" . 1)
+    ("bad module path" . 1)
+    ("expected a clause with a pattern and a result" . 1)
+    ("too many ellipses in template" . 1)
+    ("not an identifier" . 1)
+    ("duplicate field identifier" . 1)
+    ("not a well-formed definition" . 1)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ."
+     .
+     1)))
+  (truncate
+   (passed . 1010)
+   (failed
+    (total . 1273)
+    ("unbound identifier in module" . 716)
+    ("missing `]' to close preceding `[', found instead `)'" . 60)
+    ("bad syntax" . 51)
+    ("unexpected `)'" . 45)
+    ("syntax error in pattern" . 36)
+    ("not allowed as an expression" . 25)
+    ("duplicate definition for identifier" . 21)
+    ("illegal use of `.'" . 21)
+    ("duplicate argument identifier" . 20)
+    ("wildcard not allowed as an expression" . 18)
+    ("duplicate binding name" . 15)
+    ("not a provide sub-form" . 15)
+    ("misuse of unit import and export keyword" . 11)
+    ("ellipses not allowed as an expression" . 10)
+    ("expected a `)' to close `('" . 10)
+    ("missing `)' to close preceding `(', found instead `]'" . 10)
+    ("not allowed in an expression context" . 9)
+    ("collection not found" . 8)
+    ("expected `)' to close `(' on line 323, found instead `]'" . 5)
+    ("misuse of module-path constructor (not within, e.g., `require' or `provide')"
+     .
+     5)
+    ("missing `)' to close `(' on line 433, found instead `]'" . 5)
+    ("missing `]' to close `[' on line 360, found instead `)'" . 5)
+    ("missing `)' to close `(' on line 425, found instead `]'; indentation suggests a missing `)' before line 427"
+     .
+     5)
+    ("not a procedure;" . 5)
+    ("variable not bound in all or patterns" . 5)
+    ("provided identifier not defined or imported for phase 0" . 5)
+    ("missing `]' to close `[' on line 35, found instead `)'" . 5)
+    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 94"
+     .
+     5)
+    ("missing `]' to close `[' on line 61, found instead `)'; indentation suggests a missing `]' before line 62"
+     .
+     5)
+    ("missing `]' to close `[' on line 75, found instead `)'; indentation suggests a missing `]' before line 76"
+     .
+     5)
+    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 77"
+     .
+     5)
+    ("missing `]' to close `[' on line 40, found instead `)'" . 5)
+    ("no pattern variables before ellipsis in template" . 5)
+    ("missing `]' to close `[' on line 34, found instead `)'" . 5)
+    ("undefined;" . 5)
+    ("identifier is not bound to struct type information" . 5)
+    ("expected a closing '\"'" . 5)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     4)
+    ("name must be an identifier" . 4)
+    ("expected an identifier for a submodule, found something else" . 4)
+    ("incorrect use of ... in pattern" . 4)
+    ("bad syntax (not an identifier and expression for a binding)" . 3)
+    ("bad sequence binding clause" . 3)
+    ("missing `}' to close preceding `{', found instead `)'; indentation suggests a missing `}' before line 175"
+     .
+     3)
+    ("expected `)' to close preceding `(', found instead `}'" . 3)
+    ("cannot open module file" . 3)
+    ("illegal use of syntax" . 3)
+    ("use of 'any' outside the range of an arrow contract" . 3)
+    ("not a sequence of identifiers" . 2)
+    ("bad syntax (multiple expressions after identifier)" . 2)
+    ("keyword used as an expression" . 2)
+    ("expected more terms starting with expression" . 2)
+    ("duplicate identifier as sequence binding" . 2)
+    ("identifier `break' not included in nested require spec" . 2)
+    ("unbound identifier;" . 2)
+    ("expected a clause with a pattern and a result" . 2)
+    ("contract violation" . 2)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 2)
+    ("missing `}' to close `{' on line 221, found instead `)'; indentation suggests a missing `}' before line 223"
+     .
+     1)
+    ("missing `}' to close preceding `{', found instead `)'; indentation suggests a missing `}' before line 222"
+     .
+     1)
+    ("missing `}' to close `{' on line 174, found instead `)'; indentation suggests a missing `}' before line 176"
+     .
+     1)
+    ("bad syntax (clause is not a test-value pair)" . 1)
+    ("default-value expression missing" . 1)
+    ("misuse of compound-unit keyword" . 1)
+    ("bad syntax (not an identifier for procedure name, and not a nested procedure form)"
+     .
+     1)
+    ("missing an \"else\" expression" . 1)
+    ("expected more terms starting with any term" . 1)
+    ("bad syntax (missing body)" . 1)
+    ("expected a range contract" . 1)
+    ("misplaced ellipsis in template" . 1)
+    ("not in a definition context" . 1)
+    ("not a require sub-form" . 1)
+    ("expected name and value binding" . 1)
+    ("unexpected whitespace after @" . 1)
+    ("identifier used out of context" . 1)
+    ("unexpected `}'" . 1)
+    ("not at module level or top level" . 1)
+    ("arity mismatch;" . 1))))

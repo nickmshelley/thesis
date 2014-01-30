@@ -1,0 +1,22 @@
+'((remove
+   (passed . 7)
+   (failed
+    (total . 18)
+    ("unbound identifier in module" . 11)
+    ("not a procedure;" . 3)
+    ("duplicate argument name" . 2)
+    ("expected an identifier for the structure type name" . 1)
+    ("arity mismatch;" . 1)))
+  (truncate
+   (passed . 2)
+   (failed
+    (total . 23)
+    ("unbound identifier in module" . 15)
+    ("duplicate field identifier" . 1)
+    ("not a procedure;" . 1)
+    ("expected an identifier for the structure type name" . 1)
+    ("bad argument sequence" . 1)
+    ("result arity mismatch;" . 1)
+    ("not in a definition context" . 1)
+    ("not an identifier, identifier with default, or keyword" . 1)
+    ("illegal use of syntax" . 1))))

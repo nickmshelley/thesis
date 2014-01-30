@@ -1,0 +1,15 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 9)
+    ("type name used out of context" . 6)
+    ("found a test that is not at the top level" . 2)
+    ("unbound identifier in module" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 16)
+    ("found a test that is not at the top level" . 8)
+    ("unbound identifier in module" . 6)
+    ("type name used out of context" . 1)
+    ("bad syntax" . 1))))

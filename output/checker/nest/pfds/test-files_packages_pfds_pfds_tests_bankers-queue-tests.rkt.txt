@@ -1,0 +1,41 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 4)
+    ("unbound identifier in module" . 3)
+    ("type name used out of context" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 47)
+    ("unbound identifier in module" . 14)
+    ("type mismatch" . 8)
+    ("Polymorphic function `tail' could not be applied to arguments" . 5)
+    ("Polymorphic function `build-queue' could not be applied to arguments"
+     .
+     3)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     3)
+    ("Cannot apply expression of type Nonnegative-Integer, since it is not a function type"
+     .
+     3)
+    ("#<syntax Queue> ((Rec g887 (U Null (Boxof (U (Boxof g887) (-> (Boxof g887)))) (Pairof Positive-Integer g887))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("Wrong number of arguments, expected 1 and got 3" . 1)
+    ("Wrong number of arguments, expected 1 and got 2" . 1)
+    ("No function domains matched in function application" . 1)
+    ("Wrong number of arguments, expected at least 2 and got 1" . 1)
+    ("#<syntax Queue> ((Rec g830 (U Null (Boxof (U (Boxof g830) (-> (Boxof g830)))) (Pairof Positive-Integer g830))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("bad syntax" . 1)
+    ("#<syntax Queue> ((Rec g601 (U Null (Boxof (U (Boxof g601) (-> (Boxof g601)))) (Pairof Positive-Integer g601))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("bad syntax (not an identifier and expression for a binding)" . 1)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     1))))

@@ -1,0 +1,20 @@
+'((remove
+   (passed . 29)
+   (failed
+    (total . 46)
+    ("unbound identifier in module" . 27)
+    ("expected a `)' to close `('" . 8)
+    ("provided identifier not defined or imported for phase 0" . 4)
+    ("bad syntax" . 3)
+    ("duplicate argument identifier" . 2)
+    ("not allowed in an expression context" . 1)
+    ("unexpected `)'" . 1)))
+  (truncate
+   (passed . 7)
+   (failed
+    (total . 8)
+    ("no pattern variables before ellipsis in template" . 3)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("variable used twice in pattern" . 1)
+    ("missing ellipsis with pattern variable in template" . 1)
+    ("misplaced ellipsis in template" . 1))))

@@ -1,0 +1,93 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 379)
+    ("missing `]' to close preceding `[', found instead `)'" . 190)
+    ("unbound identifier in module" . 47)
+    ("bad syntax" . 30)
+    ("bad syntax (multiple types after identifier)" . 16)
+    ("Type variable B must be used with ..." . 12)
+    ("duplicate argument identifier" . 12)
+    ("must be used in a definition context" . 5)
+    ("missing `]' to close `[' on line 328, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 87, found instead `)'; indentation suggests a missing `]' before line 88"
+     .
+     5)
+    ("missing `]' to close `[' on line 183, found instead `)'" . 5)
+    ("duplicate type variable declaration" . 5)
+    ("missing `]' to close `[' on line 43, found instead `)'; indentation suggests a missing `)' before line 44"
+     .
+     5)
+    ("missing `]' to close `[' on line 172, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 311, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 208, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 68, found instead `)'; indentation suggests a missing `]' before line 69"
+     .
+     5)
+    ("missing `]' to close `[' on line 182, found instead `)'; indentation suggests a missing `]' before line 183"
+     .
+     5)
+    ("missing `]' to close `[' on line 104, found instead `)'; indentation suggests a missing `)' before line 105"
+     .
+     5)
+    ("duplicate type variable" . 3)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 2)
+    ("missing `}' to close preceding `{', found instead `)'" . 1)
+    ("type name used out of context" . 1)
+    ("Declaration for `A' provided, but `A' has no definition" . 1)
+    ("Declaration for `errors' provided, but `errors' has no definition" . 1)
+    (", or @" . 1)
+    ("unbound identifier;" . 1)
+    ("not allowed as an expression" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 306)
+    ("missing `]' to close preceding `[', found instead `)'" . 141)
+    ("unbound identifier in module" . 51)
+    ("bad syntax (multiple types after identifier)" . 16)
+    ("bad syntax" . 10)
+    ("Type variable B must be used with ..." . 9)
+    ("missing `]' to close `[' on line 224, found instead `)'; indentation suggests a missing `]' before line 225"
+     .
+     5)
+    ("missing `]' to close `[' on line 213, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 91, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 192, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 196, found instead `)'; indentation suggests a missing `]' before line 197"
+     .
+     5)
+    ("missing `]' to close `[' on line 100, found instead `)'; indentation suggests a missing `]' before line 101"
+     .
+     5)
+    ("missing `]' to close `[' on line 220, found instead `)'; indentation suggests a missing `]' before line 221"
+     .
+     5)
+    ("missing `]' to close `[' on line 88, found instead `)'; indentation suggests a missing `)' before line 89"
+     .
+     4)
+    ("duplicate argument identifier" . 4)
+    ("expected identifier" . 4)
+    ("collection not found" . 3)
+    ("duplicate definition for identifier" . 3)
+    ("not a provide sub-form" . 3)
+    ("bad module path" . 2)
+    ("duplicate identifier" . 2)
+    ("Declaration for `the' provided, but `the' has no definition" . 2)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("duplicate type variable declaration" . 2)
+    ("Declaration for `delete-min/max' provided, but `delete-min/max' has no definition"
+     .
+     1)
+    ("Declaration for `of' provided, but `of' has no definition" . 1)
+    ("Declaration for `element' provided, but `element' has no definition" . 1)
+    ("ellipses not allowed as an expression" . 1)
+    ("type name used out of context" . 1)
+    ("Declaration for `common' provided, but `common' has no definition" . 1)
+    ("Declaration for `more' provided, but `more' has no definition" . 1)
+    ("not allowed as an expression" . 1)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 1)
+    ("bad syntax (missing binding pairs or body)" . 1)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 1))))

@@ -1,0 +1,111 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 326)
+    ("missing `]' to close preceding `[', found instead `)'" . 145)
+    ("Type variable B must be used with ..." . 24)
+    ("unbound identifier in module" . 21)
+    ("bad syntax (multiple types after identifier)" . 16)
+    ("bad syntax" . 15)
+    ("expected identifier" . 10)
+    ("duplicate type variable or index" . 6)
+    ("duplicate argument identifier" . 5)
+    ("missing `]' to close `[' on line 192, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 41, found instead `)'; indentation suggests a missing `]' before line 42"
+     .
+     5)
+    ("missing `]' to close `[' on line 249, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 60, found instead `)'; indentation suggests a missing `]' before line 61"
+     .
+     5)
+    ("missing `]' to close `[' on line 54, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 133, found instead `)'; indentation suggests a missing `]' before line 134"
+     .
+     5)
+    ("missing `]' to close `[' on line 105, found instead `)'; indentation suggests a missing `]' before line 106"
+     .
+     5)
+    ("missing `]' to close `[' on line 132, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 244, found instead `)'" . 5)
+    ("unexpected term" . 5)
+    ("missing `]' to close `[' on line 45, found instead `)'" . 5)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 3)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 3)
+    ("Declaration for `A' provided, but `A' has no definition" . 3)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 3)
+    ("identifier already provided (as a different binding)" . 3)
+    ("duplicate type variable declaration" . 3)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("wildcard not allowed as an expression" . 1)
+    ("Declaration for `common' provided, but `common' has no definition" . 1)
+    ("Declaration for `function' provided, but `function' has no definition"
+     .
+     1)
+    ("Declaration for `B' provided, but `B' has no definition" . 1)
+    ("duplicate identifier" . 1)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 1)
+    ("Declaration for `the' provided, but `the' has no definition" . 1)
+    ("Used a type variable (Heap) not bound with ... as a bound on a ..." . 1)
+    ("type name used out of context" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 250)
+    ("missing `]' to close preceding `[', found instead `)'" . 92)
+    ("unbound identifier in module" . 22)
+    ("Type variable B must be used with ..." . 16)
+    ("bad syntax" . 15)
+    ("must be used in a definition context" . 8)
+    ("type name used out of context" . 7)
+    ("missing `]' to close `[' on line 181, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 148, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 172, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 251, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 245, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 255, found instead `)'" . 5)
+    ("expected identifier" . 4)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("missing `]' to close `[' on line 114, found instead `)'; indentation suggests a missing `]' before line 115"
+     .
+     4)
+    ("missing `]' to close `[' on line 108, found instead `)'" . 4)
+    ("Declaration for `heap-map' provided, but `heap-map' has no definition"
+     .
+     3)
+    ("duplicate definition for identifier" . 3)
+    ("(A)" . 3)
+    ("duplicate type variable declaration" . 3)
+    ("missing `]' to close `[' on line 62, found instead `)'" . 2)
+    ("identifier already provided (as a different binding)" . 2)
+    ("use of a class keyword is not in a class" . 2)
+    ("duplicate identifier" . 2)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (Heap) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 2)
+    ("Declaration for `make-lheap' provided, but `make-lheap' has no definition"
+     .
+     2)
+    ("missing `]' to close `[' on line 70, found instead `)'" . 2)
+    ("Expected a polymorphic function with ..., but function/annotation had no ..."
+     .
+     2)
+    ("missing `]' to close `[' on line 46, found instead `)'; indentation suggests a missing `]' before line 47"
+     .
+     1)
+    ("Declaration for `function' provided, but `function' has no definition"
+     .
+     1)
+    ("Declaration for `to' provided, but `to' has no definition" . 1)
+    ("Declaration for `sorted' provided, but `sorted' has no definition" . 1)
+    ("Declaration for `a' provided, but `a' has no definition" . 1)
+    ("Declaration for `Returns' provided, but `Returns' has no definition" . 1)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 1)
+    ("duplicate argument name" . 1)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 1)
+    ("Declaration for `rank' provided, but `rank' has no definition" . 1)
+    ("Declaration for `heap' provided, but `heap' has no definition" . 1))))

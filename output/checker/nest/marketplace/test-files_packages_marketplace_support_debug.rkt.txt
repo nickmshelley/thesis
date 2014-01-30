@@ -1,0 +1,24 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 170)
+    ("The type of vm-processes cannot be converted to a contract" . 170)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 49)
+    ("unbound identifier in module" . 18)
+    ("type name used out of context" . 10)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     5)
+    ("Declaration for `new-cotransition' provided, but `new-cotransition' has no definition"
+     .
+     4)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("Declaration for `do-spawn' provided, but `do-spawn' has no definition"
+     .
+     3)
+    ("bad syntax" . 2)
+    ("identifier is already imported" . 2)
+    ("(send-to-user p (e) failure-result enclosed-expr)" . 1))))

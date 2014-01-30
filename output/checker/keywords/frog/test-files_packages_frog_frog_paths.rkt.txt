@@ -1,0 +1,44 @@
+'((remove
+   (passed . 32)
+   (failed
+    (total . 68)
+    ("unbound identifier in module" . 22)
+    ("missing `]' to close preceding `[', found instead `)'" . 13)
+    ("syntax error in pattern" . 8)
+    ("duplicate definition for identifier" . 8)
+    ("wildcard not allowed as an expression" . 4)
+    ("undefined;" . 4)
+    ("illegal use of syntax" . 4)
+    ("missing `]' to close `[' on line 50, found instead `)'; indentation suggests a missing `]' before line 51"
+     .
+     1)
+    ("missing `]' to close `[' on line 55, found instead `)'; indentation suggests a missing `]' before line 56"
+     .
+     1)
+    ("missing `]' to close `[' on line 81, found instead `)'; indentation suggests a missing `]' before line 82"
+     .
+     1)
+    ("missing `]' to close `[' on line 76, found instead `)'" . 1)
+    ("missing `]' to close `[' on line 83, found instead `)'; indentation suggests a missing `]' before line 84"
+     .
+     1)))
+  (truncate
+   (passed . 40)
+   (failed
+    (total . 60)
+    ("unbound identifier in module" . 33)
+    ("missing `]' to close preceding `[', found instead `)'" . 6)
+    ("missing `]' to close `[' on line 62, found instead `)'; indentation suggests a missing `]' before line 63"
+     .
+     5)
+    ("collection not found" . 5)
+    ("expected even number of items for dictionary" . 2)
+    ("duplicate argument identifier" . 2)
+    ("arity mismatch;" . 2)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("illegal use of `.'" . 1)
+    ("not used in definition context" . 1)
+    ("missing `]' to close `[' on line 42, found instead `)'; indentation suggests a missing `]' before line 43"
+     .
+     1))))

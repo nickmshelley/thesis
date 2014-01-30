@@ -1,0 +1,65 @@
+'((remove
+   (passed . 36)
+   (failed
+    (total . 44)
+    ("unbound identifier in module" . 18)
+    ("expected a `)' to close `('" . 8)
+    ("missing `)' to close preceding `(', found instead `]'" . 6)
+    ("duplicate argument identifier" . 3)
+    ("duplicate definition for identifier" . 2)
+    ("missing `)' to close `(' on line 26, found instead `]'; indentation suggests a missing `)' before line 27"
+     .
+     2)
+    ("duplicate identifier" . 2)
+    ("provided identifier not defined or imported for phase 0" . 1)
+    ("duplicate argument name" . 1)
+    ("bad syntax" . 1)))
+  (truncate
+   (passed . 63)
+   (failed
+    (total . 112)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 32)
+    ("missing `]' to close preceding `[', found instead `)'" . 23)
+    ("bad syntax" . 10)
+    ("pattern variable cannot be used outside of a template" . 6)
+    ("expected a `)' to close `('" . 5)
+    ("missing `)' to close `(' on line 156, found instead `]'" . 5)
+    ("missing `]' to close `[' on line 141, found instead `)'; indentation suggests a missing `]' before line 142"
+     .
+     3)
+    ("missing procedure expression;" . 3)
+    ("missing `)' to close `(' on line 53, found instead `]'; indentation suggests a missing `)' before line 163"
+     .
+     2)
+    ("missing `]' to close `[' on line 161, found instead `)'" . 2)
+    ("ellipses not allowed as an expression" . 2)
+    ("missing `)' to close `(' on line 53, found instead `]'; indentation suggests a missing `)' before line 156"
+     .
+     2)
+    ("missing `]' to close `[' on line 66, found instead `)'; indentation suggests a missing `]' before line 67"
+     .
+     2)
+    ("not allowed as an expression" . 2)
+    ("missing `)' to close `(' on line 53, found instead `]'; indentation suggests a missing `)' before line 160"
+     .
+     2)
+    ("missing `]' to close `[' on line 159, found instead `)'; indentation suggests a missing `]' before line 160"
+     .
+     2)
+    ("missing `)' to close `(' on line 21, found instead `]'; indentation suggests a missing `)' before line 163"
+     .
+     1)
+    ("missing an \"else\" expression" . 1)
+    ("unbound identifier in module (in the transformer environment, which does not include the macro definition that is visible to run-time expressions)"
+     .
+     1)
+    ("not allowed in an expression context" . 1)
+    ("bad syntax (not an identifier and expression for a binding)" . 1)
+    ("multiple bindings of `pred' in the same clause" . 1)
+    ("multiple bindings of `construct' in the same clause" . 1)
+    ("missing `]' to close `[' on line 25, found instead `)'; indentation suggests a missing `]' before line 26"
+     .
+     1)
+    ("missing `)' to close `(' on line 21, found instead `]'; indentation suggests a missing `)' before line 160"
+     .
+     1))))

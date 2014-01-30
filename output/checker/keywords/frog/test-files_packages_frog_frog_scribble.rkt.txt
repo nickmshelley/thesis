@@ -1,0 +1,35 @@
+'((remove
+   (passed . 45)
+   (failed
+    (total . 55)
+    ("unbound identifier in module" . 16)
+    ("missing `)' to close preceding `(', found instead `]'" . 15)
+    ("missing `]' to close `[' on line 78, found instead `)'; indentation suggests a missing `]' before line 79"
+     .
+     5)
+    ("missing `]' to close `[' on line 77, found instead `)'; indentation suggests a missing `]' before line 78"
+     .
+     5)
+    ("syntax error in pattern" . 5)
+    ("procedure does not accept keyword arguments" . 3)
+    ("duplicate binding name" . 2)
+    ("ellipses not allowed as an expression" . 1)
+    ("incorrect use of ... in pattern" . 1)
+    ("illegal use of `.'" . 1)
+    ("wildcard not allowed as an expression" . 1)))
+  (truncate
+   (passed . 32)
+   (failed
+    (total . 65)
+    ("unbound identifier in module" . 39)
+    ("missing `)' to close preceding `(', found instead `]'" . 5)
+    ("missing `]' to close `[' on line 69, found instead `)'; indentation suggests a missing `)' before line 73"
+     .
+     5)
+    ("wildcard not allowed as an expression" . 4)
+    ("ellipses not allowed as an expression" . 3)
+    ("unbound identifier;" . 2)
+    ("duplicate argument identifier" . 2)
+    ("non-list pattern inside unquote-splicing" . 2)
+    ("incorrect use of ... in pattern" . 2)
+    ("not a provide sub-form" . 1))))

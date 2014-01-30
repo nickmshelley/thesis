@@ -1,0 +1,21 @@
+'((remove
+   (passed . 14)
+   (failed
+    (total . 11)
+    ("Illegal clause in endpoint definition" . 6)
+    ("unbound identifier in module" . 3)
+    ("Illegal use of on-absence outside endpoint definition context" . 1)
+    ("bad syntax (missing expression after identifier)" . 1)))
+  (truncate
+   (passed . 7)
+   (failed
+    (total . 18)
+    ("unbound identifier in module" . 8)
+    ("collection not found" . 3)
+    ("bad module path" . 1)
+    ("cannot open module file" . 1)
+    ("bad syntax" . 1)
+    ("not allowed in an expression context" . 1)
+    ("not at module level or top level" . 1)
+    ("Illegal use of on-message outside endpoint definition context" . 1)
+    ("Illegal use of on-absence outside endpoint definition context" . 1))))

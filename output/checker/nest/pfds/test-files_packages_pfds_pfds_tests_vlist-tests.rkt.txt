@@ -1,0 +1,48 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 37)
+    ("unbound identifier in module" . 17)
+    ("not a require sub-form" . 5)
+    ("collection not found" . 5)
+    ("duplicate identifier" . 3)
+    ("bad syntax" . 2)
+    ("identifier `get' not included in nested require spec" . 1)
+    ("identifier `prefix-in' not included in nested require spec" . 1)
+    ("' not included in nested require spec" . 1)
+    ("identifier `vfilter' not included in nested require spec" . 1)
+    ("identifier `racket/base' not included in nested require spec" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 63)
+    ("unbound identifier in module" . 23)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     7)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     7)
+    ("expected identifier" . 4)
+    ("Polymorphic function `stream-car' could not be applied to arguments" . 3)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     2)
+    ("found a test that is not at the top level" . 2)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     2)
+    ("" . 2)
+    ("type name used out of context" . 1)
+    ("must be used in a definition context" . 1)
+    ("Polymorphic function `append' could not be applied to arguments" . 1)
+    ("Polymorphic function `cdr' could not be applied to arguments" . 1)
+    ("not at module level or top level" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("duplicate definition for identifier" . 1)
+    ("identifier is already imported" . 1)
+    ("Polymorphic function `stream-cdr' could not be applied to arguments" . 1)
+    ("expected annotated-formals" . 1)
+    ("Bad arguments to polymorphic function in apply" . 1))))

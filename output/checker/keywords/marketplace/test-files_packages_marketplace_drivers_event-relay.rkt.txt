@@ -1,0 +1,49 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 27)
+    ("unbound identifier in module" . 9)
+    ("expected a `)' to close `('" . 5)
+    ("'" . 4)
+    ("type name used out of context" . 4)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("Illegal use of match-conversation outside endpoint definition context"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 55)
+    ("unbound identifier in module" . 26)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("bad syntax" . 4)
+    ("syntax error in pattern" . 4)
+    ("Declaration for `evt-handler' provided, but `evt-handler' has no definition"
+     .
+     3)
+    ("missing `)' to close `(' on line 63, found instead `]'; indentation suggests a missing `)' before line 71"
+     .
+     2)
+    ("missing `)' to close `(' on line 63, found instead `]'; indentation suggests a missing `)' before line 64"
+     .
+     2)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 54"
+     .
+     1)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 53"
+     .
+     1)
+    ("expected a `)' to close `('" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("identifier is already imported" . 1)
+    ("not allowed in an expression context" . 1)
+    ("missing `)' to close `(' on line 64, found instead `]'; indentation suggests a missing `)' before line 71"
+     .
+     1)
+    ("missing `)' to close `(' on line 61, found instead `]'; indentation suggests a missing `)' before line 62"
+     .
+     1)
+    ("missing `)' to close `(' on line 49, found instead `]'" . 1)
+    ("missing `)' to close `(' on line 64, found instead `]'; indentation suggests a missing `)' before line 65"
+     .
+     1))))

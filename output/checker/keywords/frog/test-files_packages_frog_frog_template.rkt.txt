@@ -1,0 +1,18 @@
+'((remove
+   (passed . 10)
+   (failed
+    (total . 25)
+    ("unbound identifier in module" . 11)
+    ("provided identifier not defined or imported for phase 0" . 4)
+    ("collection not found" . 4)
+    ("duplicate argument identifier" . 2)
+    ("duplicate binding name" . 1)
+    ("duplicate identifier as sequence binding" . 1)
+    ("bad syntax" . 1)
+    ("identifier is already imported" . 1)))
+  (truncate
+   (passed . 18)
+   (failed
+    (total . 14)
+    ("unbound identifier in module" . 12)
+    ("bad syntax" . 2))))

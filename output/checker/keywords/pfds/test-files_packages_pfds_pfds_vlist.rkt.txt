@@ -1,0 +1,124 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 397)
+    ("missing `]' to close preceding `[', found instead `)'" . 220)
+    ("unbound identifier in module" . 23)
+    ("Type variable B must be used with ..." . 20)
+    ("bad syntax (multiple types after identifier)" . 16)
+    ("bad syntax" . 13)
+    ("too many forms in body of All type" . 10)
+    ("duplicate type variable declaration" . 8)
+    ("identifier already provided (as a different binding)" . 6)
+    ("'" . 5)
+    ("missing `]' to close `[' on line 115, found instead `)'; indentation suggests a missing `]' before line 116"
+     .
+     5)
+    ("missing `]' to close `[' on line 266, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 160, found instead `)'; indentation suggests a missing `]' before line 161"
+     .
+     5)
+    ("Declaration for `A' provided, but `A' has no definition" . 5)
+    ("missing `]' to close `[' on line 207, found instead `)'; indentation suggests a missing `]' before line 208"
+     .
+     5)
+    ("missing `]' to close `[' on line 281, found instead `)'; indentation suggests a missing `]' before line 282"
+     .
+     5)
+    ("missing `]' to close `[' on line 239, found instead `)'; indentation suggests a missing `]' before line 240"
+     .
+     5)
+    ("missing `]' to close `[' on line 100, found instead `)'; indentation suggests a missing `]' before line 101"
+     .
+     5)
+    ("missing `]' to close `[' on line 169, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 173, found instead `)'; indentation suggests a missing `]' before line 174"
+     .
+     5)
+    ("missing `]' to close `[' on line 65, found instead `)'; indentation suggests a missing `]' before line 66"
+     .
+     4)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 3)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 3)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 2)
+    ("duplicate argument identifier" . 2)
+    ("Declaration for `function' provided, but `function' has no definition"
+     .
+     2)
+    ("must be used in a definition context" . 2)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("Used a type variable (List) not bound with ... as a bound on a ..." . 1)
+    ("Declaration for `lists' provided, but `lists' has no definition" . 1)
+    ("type name used out of context" . 1)
+    ("Declaration for `loop' provided, but `loop' has no definition" . 1)
+    ("duplicate identifier" . 1)
+    ("not allowed as an expression" . 1)
+    ("Declaration for `vlst' provided, but `vlst' has no definition" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 354)
+    ("missing `]' to close preceding `[', found instead `)'" . 143)
+    ("unbound identifier in module" . 54)
+    ("bad syntax" . 24)
+    ("bad syntax (multiple types after identifier)" . 21)
+    ("Type variable B must be used with ..." . 7)
+    ("missing `]' to close `[' on line 218, found instead `)'" . 5)
+    ("type name used out of context" . 5)
+    ("missing `]' to close `[' on line 316, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 207, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 313, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 301, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 326, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 148, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 103, found instead `)'" . 4)
+    ("missing `]' to close `[' on line 118, found instead `)'" . 4)
+    ("variable used twice in pattern" . 4)
+    ("(A)" . 4)
+    ("duplicate identifier" . 3)
+    ("missing `]' to close `[' on line 102, found instead `)'; indentation suggests a missing `]' before line 103"
+     .
+     3)
+    ("missing `]' to close `[' on line 120, found instead `)'; indentation suggests a missing `)' before line 121"
+     .
+     3)
+    ("Declaration for `root' provided, but `root' has no definition" . 3)
+    ("missing `]' to close `[' on line 137, found instead `)'; indentation suggests a missing `)' before line 138"
+     .
+     3)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 2)
+    ("duplicate argument identifier" . 2)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (Treap) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 2)
+    ("not allowed in an expression context" . 2)
+    ("duplicate type variable declaration" . 2)
+    ("duplicate definition for identifier" . 2)
+    ("(xor l r)" . 2)
+    ("missing `]' to close `[' on line 54, found instead `)'; indentation suggests a missing `]' before line 55"
+     .
+     2)
+    ("(rotate val1 prio1 val2 prio2 t1 t2 t3)" . 1)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Declaration for `treaps' provided, but `treaps' has no definition" . 1)
+    ("Declaration for `func' provided, but `func' has no definition" . 1)
+    ("expected identifier" . 1)
+    ("missing `]' to close `[' on line 120, found instead `)'; indentation suggests a missing `]' before line 123"
+     .
+     1)
+    ("Declaration for `treap.' provided, but `treap.' has no definition" . 1)
+    ("Declaration for `given' provided, but `given' has no definition" . 1)
+    ("Declaration for `the' provided, but `the' has no definition" . 1)
+    ("Declaration for `from' provided, but `from' has no definition" . 1)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 1)
+    ("Declaration for `function.' provided, but `function.' has no definition"
+     .
+     1)
+    ("Declaration for `in' provided, but `in' has no definition" . 1)
+    ("missing `]' to close `[' on line 137, found instead `)'; indentation suggests a missing `]' before line 139"
+     .
+     1))))

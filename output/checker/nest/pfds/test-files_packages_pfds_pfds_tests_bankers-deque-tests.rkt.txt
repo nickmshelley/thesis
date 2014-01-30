@@ -1,0 +1,33 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 10)
+    ("unbound identifier in module" . 5)
+    ("type name used out of context" . 2)
+    ("(empty A)" . 1)
+    ("expected annotated-formals" . 1)
+    ("not a require sub-form" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 31)
+    ("unbound identifier in module" . 13)
+    ("Declaration for `str-less-than?' provided, but `str-less-than?' has no definition"
+     .
+     4)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("type name used out of context" . 3)
+    ("must be used in a definition context" . 2)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("Declaration for `typed/test-engine/scheme-tests' provided, but `typed/test-engine/scheme-tests' has no definition"
+     .
+     1)
+    ("Declaration for `pfds/heap/binomial' provided, but `pfds/heap/binomial' has no definition"
+     .
+     1)
+    ("Declaration for `typed-scheme' provided, but `typed-scheme' has no definition"
+     .
+     1)
+    ("'" . 1))))

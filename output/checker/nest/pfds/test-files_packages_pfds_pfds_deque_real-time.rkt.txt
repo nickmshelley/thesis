@@ -1,0 +1,94 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 278)
+    ("unbound identifier in module" . 86)
+    ("duplicate argument identifier" . 39)
+    ("(A)" . 25)
+    ("type name used out of context" . 16)
+    ("Type variable B must be used with ..." . 16)
+    ("bad syntax" . 14)
+    ("duplicate type variable declaration" . 9)
+    ("bad syntax (multiple types after identifier)" . 8)
+    ("expected a `module' declaration" . 5)
+    ("Declaration for `rotate-drop' provided, but `rotate-drop' has no definition"
+     .
+     5)
+    ("too many forms in body of All type" . 5)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 5)
+    ("use of a class keyword is not in a class" . 5)
+    ("Declaration for `enqueue' provided, but `enqueue' has no definition" . 4)
+    ("Declaration for `tail' provided, but `tail' has no definition" . 4)
+    ("Declaration for `deque' provided, but `deque' has no definition" . 4)
+    ("'" . 4)
+    ("duplicate argument name" . 3)
+    ("(empty A)" . 3)
+    ("Polymorphic function `Deque-lenf' could not be applied to arguments" . 3)
+    ("no expression after a sequence of internal definitions" . 2)
+    ("Expected a polymorphic function without ..., but given function/annotation had ..."
+     .
+     2)
+    ("duplicate type variable" . 2)
+    ("(stream-cons x stream)" . 2)
+    ("expected 2 and got 1" . 1)
+    ("bad syntax (missing binding pairs or body)" . 1)
+    ("apply requires a final list argument, given only a function argument of type (Deque A)"
+     .
+     1)
+    ("duplicate type variable or index" . 1)
+    ("Duplicate type annotation of (All (A) ((Deque A) -> (Deque A))) for head, previous was (All (A) ((Deque A) -> A))"
+     .
+     1)
+    ("ellipses not allowed as an expression" . 1)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 287)
+    ("unbound identifier in module" . 116)
+    ("type name used out of context" . 17)
+    ("bad syntax (multiple types after identifier)" . 16)
+    ("(A)" . 16)
+    ("Type variable B must be used with ..." . 12)
+    ("expected identifier" . 11)
+    ("must be used in a definition context" . 11)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 9)
+    ("bad syntax" . 7)
+    ("(empty A)" . 5)
+    ("duplicate type variable or index" . 4)
+    ("bad syntax (multiple expressions after identifier)" . 4)
+    ("duplicate argument identifier" . 4)
+    ("too many forms in body of All type" . 4)
+    ("use of a class keyword is not in a class" . 4)
+    ("Declaration for `rotate-drop' provided, but `rotate-drop' has no definition"
+     .
+     4)
+    ("Declaration for `dqfoldl' provided, but `dqfoldl' has no definition" . 4)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 3)
+    ("duplicate argument name" . 3)
+    ("duplicate type variable" . 3)
+    ("duplicate field identifier" . 3)
+    ("Expected a polymorphic function without ..., but given function/annotation had ..."
+     .
+     3)
+    ("bad syntax;" . 2)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (Deque) not bound with ... as a bound on a ..." . 2)
+    ("(stream-cons x stream)" . 2)
+    ("omit-define-syntaxes" . 2)
+    ("duplicate definition for identifier" . 2)
+    ("duplicate identifier" . 1)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("bad syntax (not an identifier and expression for a binding)" . 1)
+    ("Used a type variable (func) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (foldr) not bound with ... as a bound on a ..." . 1)
+    ("identifier is already imported" . 1)
+    ("bad syntax (not an identifier for procedure name, and not a nested procedure form)"
+     .
+     1)
+    ("illegal use of `.'" . 1)
+    ("expected 2 and got 1" . 1)
+    ("collection not found" . 1))))

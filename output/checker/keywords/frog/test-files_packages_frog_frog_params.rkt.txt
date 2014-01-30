@@ -1,0 +1,18 @@
+'((remove
+   (passed . 6)
+   (failed
+    (total . 19)
+    ("unbound identifier in module" . 9)
+    ("undefined;" . 6)
+    ("not allowed in an expression context" . 2)
+    ("bad syntax" . 1)
+    ("duplicate definition for identifier" . 1)))
+  (truncate
+   (passed . 7)
+   (failed
+    (total . 18)
+    ("unbound identifier in module" . 7)
+    ("undefined;" . 4)
+    ("duplicate definition for identifier" . 4)
+    ("bad syntax" . 2)
+    ("not allowed in an expression context" . 1))))

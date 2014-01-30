@@ -1,0 +1,17 @@
+'((remove
+   (passed . 12)
+   (failed
+    (total . 18)
+    ("collection not found" . 7)
+    ("provided identifier not defined or imported for phase 0" . 4)
+    ("identifier is already imported" . 2)
+    ("unbound identifier in module" . 2)
+    ("duplicate definition for identifier" . 2)
+    ("scribble/manual" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 15)
+    ("unbound identifier in module" . 10)
+    ("found a test that is not at the top level" . 4)
+    ("not a require sub-form" . 1))))

@@ -1,0 +1,18 @@
+'((remove
+   (passed . 15)
+   (failed
+    (total . 15)
+    ("unbound identifier in module" . 8)
+    ("collection not found" . 3)
+    ("provided identifier not defined or imported for phase 0" . 3)
+    ("scribble/manual" . 1)))
+  (truncate
+   (passed . 13)
+   (failed
+    (total . 17)
+    ("unbound identifier in module" . 8)
+    ("provided identifier not defined or imported for phase 0" . 4)
+    ("bad syntax" . 2)
+    ("identifier is already imported" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("bad syntax (multiple expressions after identifier)" . 1))))

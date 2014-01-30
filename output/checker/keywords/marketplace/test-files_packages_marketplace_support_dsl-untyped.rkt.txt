@@ -1,0 +1,7 @@
+'((remove
+   (passed . 12)
+   (failed
+    (total . 3)
+    ("missing ellipsis with pattern variable in template" . 2)
+    ("variable used twice in pattern" . 1)))
+  (truncate (passed . 0) (failed (total . 1) ("collection not found" . 1))))

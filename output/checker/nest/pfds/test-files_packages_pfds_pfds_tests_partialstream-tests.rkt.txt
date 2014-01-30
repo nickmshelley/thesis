@@ -1,0 +1,61 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 32)
+    ("type name used out of context" . 6)
+    ("type mismatch" . 5)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("Unbound type name sum" . 2)
+    ("Unbound type name lst" . 2)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     1)
+    ("duplicate definition for identifier" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("expected identifier" . 1)
+    ("bad syntax" . 1)
+    ("Unbound type name if" . 1)
+    ("unbound identifier in module" . 1)
+    ("Cannot apply expression of type (U (Boxof (U (Boxof (Rec g260 (U Null (Boxof (U (Boxof g260) (-> (Boxof g260)))) (Pairof Integer g260)))) (-> (Boxof (Rec g266 (U Null (Boxof (U (Boxof g266) (-> (Boxof g266)))) (Pairof Integer g266))))))) (Pairof Integer (Rec g272 (U Null (Boxof (U (Boxof g272) (-> (Boxof g272)))) (Pairof Integer g272))))), since it is not a function type"
+     .
+     1)
+    ("Wrong number of arguments, expected 1 and got 2" . 1)
+    ("Unbound type name reverse" . 1)
+    ("(Integer)" . 1)
+    ("Unbound type name delay" . 1)
+    ("Unbound type name pscdr" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 37)
+    ("type name used out of context" . 7)
+    ("unbound identifier in module" . 3)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     3)
+    ("(Integer)" . 3)
+    ("type mismatch" . 2)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     2)
+    ("Unbound type name list" . 2)
+    ("bad module path" . 2)
+    ("(check-type e t)" . 1)
+    ("Cannot apply expression of type (List One Positive-Byte Positive-Byte), since it is not a function type"
+     .
+     1)
+    ("missing an \"else\" expression" . 1)
+    ("Unbound type name reverse" . 1)
+    ("collection not found" . 1)
+    ("\"../delay.rkt\"" . 1)
+    ("cannot open module file" . 1)
+    ("(delay e)" . 1)
+    ("Unbound type name ann" . 1)
+    ("Unbound type name +" . 1)
+    ("Unbound type name lst" . 1)
+    ("Unbound type name null?" . 1)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     1))))

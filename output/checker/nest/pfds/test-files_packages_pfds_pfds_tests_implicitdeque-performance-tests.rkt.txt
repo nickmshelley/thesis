@@ -1,0 +1,9 @@
+'((remove
+   (passed . 0)
+   (failed (total . 5) ("bad syntax" . 3) ("contract violation" . 2)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 10)
+    ("unbound identifier in module" . 9)
+    ("bad sequence binding clause" . 1))))

@@ -1,0 +1,96 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 251)
+    ("expected a `)' to close `('" . 85)
+    ("unbound identifier in module" . 64)
+    ("missing `)' to close preceding `(', found instead `]'" . 25)
+    ("bad syntax (multiple types after identifier)" . 13)
+    ("bad syntax" . 12)
+    ("identifier is not bound to a structure type" . 10)
+    ("missing `)' to close `(' on line 188, found instead `]'" . 5)
+    ("missing `)' to close `(' on line 202, found instead `]'; indentation suggests a missing `)' before line 203"
+     .
+     5)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 101"
+     .
+     5)
+    ("missing `)' to close `(' on line 169, found instead `]'; indentation suggests a missing `)' before line 170"
+     .
+     5)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 207"
+     .
+     4)
+    ("collection not found" . 3)
+    ("type name used out of context" . 2)
+    ("duplicate argument identifier" . 2)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ."
+     .
+     2)
+    ("identifier `struct-copy' not included in nested require spec" . 1)
+    ("identifier `PR13149' not included in nested require spec" . 1)
+    ("identifier `tr-struct-copy.rkt' not included in nested require spec" . 1)
+    ("identifier `workaround' not included in nested require spec" . 1)
+    ("identifier `rename-in' not included in nested require spec" . 1)
+    ("not allowed in an expression context" . 1)
+    ("(unwrap-process State Result (p wp) body ...)" . 1)
+    ("provided identifier not defined or imported for phase 0" . 1)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 206"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 194)
+    ("unbound identifier in module" . 58)
+    ("expected a `)' to close `('" . 38)
+    ("missing `)' to close preceding `(', found instead `]'" . 21)
+    ("missing `)' to close `(' on line 193, found instead `]'; indentation suggests a missing `)' before line 194"
+     .
+     10)
+    ("bad syntax" . 9)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 187"
+     .
+     5)
+    ("must be used in a definition context" . 5)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 196"
+     .
+     5)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 189"
+     .
+     5)
+    ("missing `)' to close `(' on line 203, found instead `]'; indentation suggests a missing `)' before line 204"
+     .
+     5)
+    ("missing `)' to close `(' on line 100, found instead `]'" . 4)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 206"
+     .
+     3)
+    ("syntax error in pattern" . 3)
+    ("missing `)' to close `(' on line 49, found instead `]'" . 2)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 207"
+     .
+     2)
+    ("missing `)' to close `(' on line 53, found instead `]'; indentation suggests a missing `)' before line 54"
+     .
+     2)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 67"
+     .
+     2)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 100"
+     .
+     2)
+    ("not allowed in an expression context" . 2)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 56"
+     .
+     2)
+    ("type name used out of context" . 2)
+    ("duplicate definition for identifier" . 2)
+    ("missing `)' to close `(' on line 55, found instead `]'; indentation suggests a missing `)' before line 58"
+     .
+     2)
+    ("Declaration for `processes' provided, but `processes' has no definition"
+     .
+     1)
+    ("Declaration for `p' provided, but `p' has no definition" . 1)
+    ("Declaration for `pid' provided, but `pid' has no definition" . 1))))

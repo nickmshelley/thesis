@@ -1,0 +1,107 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 332)
+    ("missing `]' to close preceding `[', found instead `)'" . 160)
+    ("unbound identifier in module" . 39)
+    ("bad syntax" . 17)
+    ("Declaration for `A' provided, but `A' has no definition" . 6)
+    ("missing `]' to close `[' on line 213, found instead `)'" . 5)
+    ("unexpected term" . 5)
+    ("type name used out of context" . 5)
+    ("duplicate argument identifier" . 5)
+    ("missing `]' to close `[' on line 169, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 58, found instead `)'; indentation suggests a missing `]' before line 59"
+     .
+     5)
+    ("Type variable B must be used with ..." . 5)
+    ("missing `]' to close `[' on line 193, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 41, found instead `)'; indentation suggests a missing `]' before line 42"
+     .
+     5)
+    ("missing `]' to close `[' on line 259, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 54, found instead `)'; indentation suggests a missing `]' before line 55"
+     .
+     5)
+    ("missing `]' to close `[' on line 265, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 126, found instead `)'" . 5)
+    ("'" . 5)
+    ("missing `]' to close `[' on line 194, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 88, found instead `)'; indentation suggests a missing `)' before line 89"
+     .
+     5)
+    ("missing `]' to close `[' on line 250, found instead `)'" . 5)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("identifier already provided (as a different binding)" . 3)
+    ("use of a class keyword is not in a class" . 2)
+    ("must be used in a definition context" . 2)
+    ("not allowed as an expression" . 2)
+    ("Declaration for `the' provided, but `the' has no definition" . 2)
+    ("duplicate type variable or index" . 2)
+    ("Declaration for `constructor' provided, but `constructor' has no definition"
+     .
+     1)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("illegal use of `.'" . 1)
+    ("Declaration for `lst' provided, but `lst' has no definition" . 1)
+    ("Declaration for `common' provided, but `common' has no definition" . 1)
+    ("duplicate field identifier" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 441)
+    ("missing `]' to close preceding `[', found instead `)'" . 181)
+    ("unbound identifier in module" . 68)
+    ("too many forms in body of All type" . 20)
+    ("bad syntax (multiple types after identifier)" . 20)
+    ("bad syntax" . 15)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 12)
+    ("Type variable B must be used with ..." . 8)
+    ("type name used out of context" . 7)
+    ("must be used in a definition context" . 6)
+    ("identifier already provided (as a different binding)" . 6)
+    ("duplicate type variable" . 5)
+    ("'" . 5)
+    ("duplicate definition for identifier" . 5)
+    ("missing `]' to close `[' on line 365, found instead `)'; indentation suggests a missing `]' before line 366"
+     .
+     5)
+    ("missing `]' to close `[' on line 278, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 146, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 218, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 269, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 217, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 326, found instead `)'" . 5)
+    ("Component of case-lambda type was not a function clause" . 4)
+    ("unexpected term" . 4)
+    ("(A)" . 4)
+    ("duplicate type variable or index" . 3)
+    ("not allowed in an expression context" . 3)
+    ("duplicate identifier" . 3)
+    ("duplicate argument identifier" . 3)
+    ("Declaration for `Helpers' provided, but `Helpers' has no definition" . 2)
+    ("Declaration for `function' provided, but `function' has no definition"
+     .
+     2)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 2)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("Declaration for `newsize' provided, but `newsize' has no definition" . 1)
+    ("Declaration for `common' provided, but `common' has no definition" . 1)
+    ("Declaration for `more' provided, but `more' has no definition" . 1)
+    ("Declaration for `the' provided, but `the' has no definition" . 1)
+    ("not allowed as an expression" . 1)
+    ("Declaration for `to' provided, but `to' has no definition" . 1)
+    ("Declaration for `head' provided, but `head' has no definition" . 1)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (List) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 1)
+    ("bad syntax (not an identifier)" . 1)
+    ("Declaration for `racket' provided, but `racket' has no definition" . 1)
+    ("Declaration for `of' provided, but `of' has no definition" . 1)
+    ("Declaration for `lists' provided, but `lists' has no definition" . 1)
+    ("Declaration for `rst' provided, but `rst' has no definition" . 1))))

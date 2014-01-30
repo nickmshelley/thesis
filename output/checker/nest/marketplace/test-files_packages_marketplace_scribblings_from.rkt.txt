@@ -1,0 +1,12 @@
+'((remove
+   (passed . 8)
+   (failed
+    (total . 2)
+    ("variable used twice in pattern" . 1)
+    ("misplaced ellipsis in pattern (follows other ellipsis)" . 1)))
+  (truncate
+   (passed . 7)
+   (failed
+    (total . 3)
+    ("missing ellipsis with pattern variable in template" . 2)
+    ("misplaced ellipsis in template" . 1))))
