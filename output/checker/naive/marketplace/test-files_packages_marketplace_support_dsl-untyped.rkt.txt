@@ -1,0 +1,17 @@
+'((remove
+   (passed . 9)
+   (failed
+    (total . 6)
+    ("too many ellipses in template" . 2)
+    ("variable used twice in pattern" . 2)
+    ("misplaced ellipsis in template" . 1)
+    ("provided identifier not defined or imported for phase 0" . 1)))
+  (truncate
+   (passed . 1)
+   (failed
+    (total . 11)
+    ("provided identifier not defined or imported for phase 0" . 4)
+    ("no pattern variables before ellipsis in template" . 3)
+    ("unbound identifier in module" . 2)
+    ("variable used twice in pattern" . 1)
+    ("missing ellipsis with pattern variable in template" . 1))))

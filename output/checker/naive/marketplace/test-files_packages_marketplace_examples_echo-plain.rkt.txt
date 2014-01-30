@@ -1,0 +1,24 @@
+'((remove
+   (passed . 15)
+   (failed
+    (total . 10)
+    ("unbound identifier in module" . 5)
+    ("Illegal use of match-conversation outside endpoint definition context"
+     .
+     1)
+    ("Illegal use of on-absence outside endpoint definition context" . 1)
+    ("unexpected term" . 1)
+    ("Illegal use of on-presence outside endpoint definition context" . 1)
+    ("wildcard not allowed as an expression" . 1)))
+  (truncate
+   (passed . 16)
+   (failed
+    (total . 9)
+    ("syntax error in pattern" . 2)
+    ("wildcard not allowed as an expression" . 1)
+    ("Illegal use of on-message outside endpoint definition context" . 1)
+    ("unbound identifier in module" . 1)
+    ("expected 1 but got 3" . 1)
+    ("(publisher topic clause ...)" . 1)
+    ("(transition/no-state action ...)" . 1)
+    ("(subscriber topic clause ...)" . 1))))

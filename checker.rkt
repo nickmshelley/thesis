@@ -19,8 +19,8 @@
   (require rackunit))
 
 (module+ main
-  (define methods '(naive nest keywords macros bytecode))
-  #;(define methods '(naive))
+  #;(define methods '(naive nest keywords macros bytecode combined))
+  (define methods '(naive))
   (unless (directory-exists? "output")
     (make-directory "output"))
   (unless (directory-exists? "output/checker")
@@ -34,21 +34,36 @@
 (define (test-with-method method)
   (printf "TESTING WITH ~a~n" method)
   (define percent .1)
-  (define source-files (get-all-source-files "test-files/checker-source" #;"test-files/packages"))
-  (printf "REMOVE~n")
-  (define remove
-    (check-all-files/places 'remove method source-files percent))
-  (printf "TRUNCATE~n")
-  (define truncate
-    (check-all-files/places 'truncate method source-files percent))
-  (for-each display-results remove truncate (make-list (length remove) method))
-  (define remove-sum (foldl add-results
-                            (results "All" empty)
-                            remove))
-  (define truncate-sum (foldl add-results
-                              (results "All" empty)
-                              truncate))
-  (display-results remove-sum truncate-sum method))
+  (define dir-base "test-files/packages")
+  (define sub-dirs '("frog" "marketplace" "pfds"))
+  (define top-output-dir (build-path "output/checker" (symbol->string method)))
+  (define-values (remove-sum truncate-sum)
+    (for/fold ([remove-total-sum (results "All" empty)]
+               [truncate-total-sum (results "All" empty)])
+      ([dir (in-list sub-dirs)])
+      (define test-dir (build-path dir-base dir))
+      (define output-dir (build-path top-output-dir dir))
+      (unless (directory-exists? output-dir)
+        (make-directory output-dir))
+      (define source-files (get-all-source-files test-dir))
+      (pretty-print source-files)
+      (printf "REMOVE~n")
+      (define remove
+        (check-all-files/places 'remove method source-files percent))
+      (printf "TRUNCATE~n")
+      (define truncate
+        (check-all-files/places 'truncate method source-files percent))
+      (for-each display-results remove truncate (make-list (length remove) output-dir))
+      (define remove-sum (foldl add-results
+                                (results "All" empty)
+                                remove))
+      (define truncate-sum (foldl add-results
+                                  (results "All" empty)
+                                  truncate))
+      (display-results remove-sum truncate-sum output-dir)
+      (values (add-results remove-total-sum remove-sum)
+              (add-results truncate-total-sum truncate-sum))))
+  (display-results remove-sum truncate-sum top-output-dir))
 
 ;results : string list-of-word-results
 (struct results (filename wordsults) #:transparent)
@@ -134,6 +149,11 @@
          get-macro-completions]
         [(eq? completion-id 'bytecode)
          get-zo-completions]
+        [(eq? completion-id 'combined)
+         (λ (fn txt prefix pos)
+           (remove-duplicates
+            (append (get-completions/nest fn txt prefix pos)
+                    (get-zo-completions fn txt prefix pos))))]
         [else
          (error "Unknown method:" completion-id)]))
     (let loop ()
@@ -176,7 +196,8 @@
 (define (check-word word filename file-mod completion-f file-string place-number)
   (define altered-string (file-mod file-string word))
   (define completions (completion-f filename altered-string "" (word-pos word)))
-  (define temp-file (format "/tmp/file-~a.rkt" place-number))
+  (define-values (base fn _) (split-path filename))
+  (define temp-file (build-path base (format "nicks-thesis-file-~a.nick" place-number)))
   (define res
     (for/list ([completion completions]
                [i (in-range 5)])
@@ -184,7 +205,8 @@
         (lambda () 
           (display (replace-word-with-string word completion file-string)))
         #:exists 'replace)
-      (define-values (proc in out err) (subprocess #f #f #f (find-executable-path "racket") temp-file))
+      (define-values (proc in out err)
+        (subprocess #f #f #f (find-executable-path "racket") temp-file))
       (define result (sync/timeout 5 proc))
       (define success?
         (if result
@@ -196,10 +218,12 @@
       (close-input-port in)
       (close-output-port out)
       (close-input-port err)
+      (delete-file temp-file)
       (or success? error-string)))
   (define-values (passed messages) (partition boolean? res))
   #;(for-each (λ (message)
-                (printf "MESSAGE:~n~a~n" message))
+                (when (> (length (string-split message "cannot open module file")) 1)
+                  (printf "MESSAGE:~n~a~n" message)))
               messages)
   (word-results word (length passed) messages))
 (module+ test
@@ -226,7 +250,7 @@
                 "you say goodbye I say hello"))
 
 
-(define (display-results remove truncate method)
+(define (display-results remove truncate output-dir)
   (define name (string-replace (results-filename remove) "/" "_"))
   (define remove-passed (apply + (map word-results-passed (results-wordsults remove))))
   (define remove-failed (really-sum-errors (flatten (map (compose get-first-lines word-results-failed-messages) (results-wordsults remove)))))
@@ -234,7 +258,7 @@
   (define truncate-failed (really-sum-errors (flatten (map (compose get-first-lines word-results-failed-messages) (results-wordsults truncate)))))
   (define remove-write `((passed . ,remove-passed) (failed . ,remove-failed)))
   (define truncate-write `((passed . ,truncate-passed) (failed . ,truncate-failed)))
-  (define prefix (format "output/checker/~a/~a" (symbol->string method) name))
+  (define prefix (format "~a/~a" output-dir name))
   (with-output-to-file (format "~a.txt" prefix)
     (λ () (pretty-print `((remove . ,remove-write) (truncate . ,truncate-write))))
     #:exists 'replace)
@@ -271,7 +295,8 @@
                    list-of-wordsults))))
 
 (define (get-first-lines str-list)
-  (for/list ([str (in-list str-list)])
+  (for/list ([str (in-list str-list)]
+             #:when (> (string-length str) 0))
     (string-trim 
      (last (string-split
             (first (string-split str "\n"))

@@ -1,0 +1,43 @@
+'((remove
+   (passed . 41)
+   (failed
+    (total . 34)
+    ("unbound identifier in module" . 10)
+    ("bad syntax" . 6)
+    ("not allowed in an expression context" . 6)
+    ("pattern variable cannot be used outside of a template" . 4)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 4)
+    ("variable used twice in pattern" . 1)
+    ("not allowed as an expression" . 1)
+    ("ellipses not allowed as an expression" . 1)
+    ("bad syntax (clause is not a test-value pair)" . 1)))
+  (truncate
+   (passed . 16)
+   (failed
+    (total . 84)
+    ("unbound identifier in module" . 29)
+    ("missing `]' to close preceding `[', found instead `)'" . 15)
+    ("missing `)' to close `(' on line 43, found instead `]'; indentation suggests a missing `)' before line 46"
+     .
+     5)
+    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 76"
+     .
+     5)
+    ("missing `]' to close `[' on line 69, found instead `)'; indentation suggests a missing `)' before line 73"
+     .
+     5)
+    ("syntax error in pattern" . 5)
+    ("missing `]' to close `[' on line 74, found instead `)'; indentation suggests a missing `]' before line 75"
+     .
+     5)
+    ("collection not found" . 2)
+    ("identifier `read-html-as-xml' not included in nested require spec" . 2)
+    ("ellipses not allowed as an expression" . 2)
+    ("procedure does not accept keyword arguments" . 2)
+    ("non-list pattern inside unquote-splicing" . 1)
+    ("incorrect use of ... in pattern" . 1)
+    ("cannot open module file" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("illegal use of `.'" . 1)
+    ("undefined;" . 1)
+    ("illegal use of syntax" . 1))))

@@ -1,0 +1,9 @@
+'((remove (passed . 9) (failed (total . 1) ("duplicate field identifier" . 1)))
+  (truncate
+   (passed . 8)
+   (failed
+    (total . 17)
+    ("unbound identifier in module" . 12)
+    ("undefined;" . 2)
+    ("duplicate definition for identifier" . 2)
+    ("not allowed in an expression context" . 1))))

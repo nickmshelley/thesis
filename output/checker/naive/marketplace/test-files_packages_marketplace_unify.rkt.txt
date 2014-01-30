@@ -1,0 +1,26 @@
+'((remove
+   (passed . 214)
+   (failed
+    (total . 186)
+    ("unbound identifier in module" . 139)
+    ("bad syntax" . 21)
+    ("duplicate argument identifier" . 6)
+    ("not allowed as an expression" . 5)
+    ("not a provide sub-form" . 4)
+    ("not allowed in an expression context" . 3)
+    ("provided identifier not defined or imported for phase 0" . 3)
+    ("bad syntax (clause is not a test-value pair)" . 2)
+    ("arrow not allowed as an expression" . 1)
+    ("duplicate argument name" . 1)
+    ("not in a definition context" . 1)))
+  (truncate
+   (passed . 3)
+   (failed
+    (total . 7)
+    ("identifier already provided (as a different binding)" . 5)
+    ("identifier to remove `timer.rkt' not included in nested provide spec"
+     .
+     1)
+    ("identifier to remove `all-from-out' not included in nested provide spec"
+     .
+     1))))

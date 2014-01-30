@@ -1,0 +1,13 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 166)
+    ("The type of vm-processes cannot be converted to a contract" . 161)
+    ("expected a `module' declaration" . 5)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 162)
+    ("The type of vm-processes cannot be converted to a contract" . 160)
+    ("illegal use of syntax" . 1)
+    ("collection not found" . 1))))

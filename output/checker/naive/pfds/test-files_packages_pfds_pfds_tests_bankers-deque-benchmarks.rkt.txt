@@ -1,0 +1,42 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 50)
+    ("unbound identifier in module" . 17)
+    ("expected a `module' declaration" . 5)
+    ("type mismatch" . 4)
+    ("unexpected term" . 4)
+    ("bad syntax" . 4)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `build-deque-front' could not be applied to arguments"
+     .
+     2)
+    ("Polymorphic function `build-deque' could not be applied to arguments"
+     .
+     2)
+    ("Unbound type name q" . 1)
+    ("Unbound type name" . 1)
+    ("Unbound type name if" . 1)
+    ("Unbound type name empty?" . 1)
+    ("#<syntax Deque> ((Rec g535 (U Null (Boxof (U (Boxof g535) (-> (Boxof g535)))) (Pairof Positive-Integer g535))) Integer (Rec g541 (U Null (Boxof (U (Boxof g541) (-> (Boxof g541)))) (Pairof Positive-Integer g541))) Integer)), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `last' could not be applied to arguments" . 1)
+    ("#<syntax Deque> ((Rec g466 (U Null (Boxof (U (Boxof g466) (-> (Boxof g466)))) (Pairof Positive-Integer g466))) Integer (Rec g472 (U Null (Boxof (U (Boxof g472) (-> (Boxof g472)))) (Pairof Positive-Integer g472))) Integer)), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 1)
+    ("#<syntax Deque> ((Rec g389 (U Null (Boxof (U (Boxof g389) (-> (Boxof g389)))) (Pairof Positive-Integer g389))) Integer (Rec g395 (U Null (Boxof (U (Boxof g395) (-> (Boxof g395)))) (Pairof Positive-Integer g395))) Integer)), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `head' could not be applied to arguments" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 15)
+    ("found a test that is not at the top level" . 6)
+    ("type name used out of context" . 5)
+    ("unbound identifier in module" . 3)
+    ("(empty A)" . 1))))

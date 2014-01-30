@@ -1,0 +1,15 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 10)
+    ("found a test that is not at the top level" . 9)
+    ("unbound identifier in module" . 1)))
+  (truncate
+   (passed . 12)
+   (failed
+    (total . 13)
+    ("arity mismatch;" . 4)
+    ("unbound identifier in module" . 3)
+    ("undefined;" . 2)
+    ("not allowed in an expression context" . 2)
+    ("provided identifier not defined or imported for phase 0" . 2))))

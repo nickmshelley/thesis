@@ -1,0 +1,102 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 267)
+    ("unbound identifier in module" . 104)
+    ("bad syntax" . 21)
+    ("type name used out of context" . 17)
+    ("(A)" . 14)
+    ("bad syntax (multiple types after identifier)" . 13)
+    ("expected identifier" . 9)
+    ("must be used in a definition context" . 7)
+    ("Declaration for `list-second' provided, but `list-second' has no definition"
+     .
+     6)
+    ("Type variable B must be used with ..." . 6)
+    ("identifier already provided (as a different binding)" . 5)
+    ("Declaration for `loop' provided, but `loop' has no definition" . 5)
+    ("bad syntax;" . 5)
+    ("expected a `module' declaration" . 5)
+    ("Declaration for `list-third' provided, but `list-third' has no definition"
+     .
+     4)
+    ("Component of case-lambda type was not a function clause" . 4)
+    ("not allowed as an expression" . 4)
+    ("Declaration for `list-length' provided, but `list-length' has no definition"
+     .
+     4)
+    ("duplicate definition for identifier" . 3)
+    ("duplicate type variable" . 3)
+    ("duplicate argument identifier" . 3)
+    ("Declaration for `list-map' provided, but `list-map' has no definition"
+     .
+     3)
+    ("Declaration for `vreverse-helper' provided, but `vreverse-helper' has no definition"
+     .
+     2)
+    ("Declaration for `A' provided, but `A' has no definition" . 2)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 2)
+    ("duplicate type variable or index" . 2)
+    ("missing an \"else\" expression" . 2)
+    ("duplicate type variable declaration" . 2)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 2)
+    ("Declaration for `function' provided, but `function' has no definition"
+     .
+     1)
+    ("Declaration for `C' provided, but `C' has no definition" . 1)
+    ("provided identifier not defined or imported for phase 0" . 1)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("ellipses not allowed as an expression" . 1)
+    ("not allowed in an expression context" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 211)
+    ("unbound identifier in module" . 64)
+    ("bad syntax" . 22)
+    ("(A)" . 15)
+    ("Type variable B must be used with ..." . 13)
+    ("Component of case-lambda type was not a function clause" . 11)
+    ("type name used out of context" . 10)
+    ("bad syntax (multiple types after identifier)" . 8)
+    ("must be used in a definition context" . 6)
+    ("duplicate argument identifier" . 5)
+    ("expected identifier" . 5)
+    ("duplicate type variable declaration" . 4)
+    ("'" . 4)
+    ("bad syntax (missing binding pairs or body)" . 3)
+    ("Declaration for `queue' provided, but `queue' has no definition" . 3)
+    ("missing an \"else\" expression" . 3)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 3)
+    ("Declaration for `head+tail' provided, but `head+tail' has no definition"
+     .
+     3)
+    ("use of a class keyword is not in a class" . 2)
+    ("bad syntax (not an identifier and expression for a binding)" . 2)
+    ("ellipses not allowed as an expression" . 2)
+    ("duplicate type variable" . 2)
+    ("no expression after a sequence of internal definitions" . 2)
+    ("duplicate definition for identifier" . 2)
+    ("duplicate argument name" . 2)
+    ("Declaration for `internal-queue' provided, but `internal-queue' has no definition"
+     .
+     2)
+    ("bad syntax;" . 1)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Queue) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("not allowed in an expression context" . 1)
+    ("duplicate field identifier" . 1)
+    ("bad syntax (multiple expressions after identifier)" . 1)
+    ("provided identifier not defined or imported for phase 0" . 1)
+    ("Declaration for `rotate' provided, but `rotate' has no definition" . 1)
+    ("collection not found" . 1)
+    ("Declaration for `the' provided, but `the' has no definition" . 1)
+    ("Declaration for `of' provided, but `of' has no definition" . 1))))

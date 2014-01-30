@@ -1,0 +1,110 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 248)
+    ("unbound identifier in module" . 67)
+    ("bad syntax" . 26)
+    ("Type variable B must be used with ..." . 17)
+    ("type name used out of context" . 16)
+    ("bad syntax (multiple types after identifier)" . 13)
+    ("(A)" . 8)
+    ("Declaration for `A' provided, but `A' has no definition" . 8)
+    ("not allowed as an expression" . 8)
+    ("must be used in a definition context" . 8)
+    ("expected identifier" . 7)
+    ("bad syntax;" . 7)
+    ("Declaration for `tu-help' provided, but `tu-help' has no definition" . 5)
+    ("too many forms in body of All type" . 5)
+    ("Declaration for `list-set' provided, but `list-set' has no definition"
+     .
+     4)
+    ("illegal use of syntax" . 3)
+    ("not allowed in an expression context" . 3)
+    ("Declaration for `ls' provided, but `ls' has no definition" . 3)
+    ("Declaration for `function' provided, but `function' has no definition"
+     .
+     3)
+    ("Declaration for `list-last' provided, but `list-last' has no definition"
+     .
+     3)
+    ("Declaration for `tl-help' provided, but `tl-help' has no definition" . 3)
+    ("identifier already provided (as a different binding)" . 3)
+    ("duplicate type variable or index" . 2)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 2)
+    ("duplicate argument identifier" . 2)
+    ("Declaration for `list-eighth' provided, but `list-eighth' has no definition"
+     .
+     2)
+    ("illegal use of `.'" . 2)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("duplicate definition for identifier" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("Declaration for `C' provided, but `C' has no definition" . 1)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 1)
+    ("bad syntax (missing body)" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("bad syntax (missing binding pairs or body)" . 1)
+    ("bad syntax (not an identifier)" . 1)
+    ("duplicate argument name" . 1)
+    ("bad syntax (clause is not a test-value pair)" . 1)
+    ("Used a type variable (define) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Declaration for `lists' provided, but `lists' has no definition" . 1)
+    ("Component of case-lambda type was not a function clause" . 1)
+    ("Declaration for `head' provided, but `head' has no definition" . 1)
+    ("missing an \"else\" expression" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 313)
+    ("unbound identifier in module" . 86)
+    ("bad syntax" . 31)
+    ("type name used out of context" . 29)
+    ("bad syntax (multiple types after identifier)" . 28)
+    ("(A)" . 25)
+    ("Type variable B must be used with ..." . 15)
+    ("must be used in a definition context" . 9)
+    ("Component of case-lambda type was not a function clause" . 9)
+    ("'" . 9)
+    ("bad syntax;" . 7)
+    ("expected identifier" . 6)
+    ("not allowed in an expression context" . 6)
+    ("duplicate argument identifier" . 6)
+    ("missing an \"else\" expression" . 5)
+    ("Declaration for `local-reverse' provided, but `local-reverse' has no definition"
+     .
+     5)
+    ("ellipses not allowed as an expression" . 3)
+    ("Declaration for `to' provided, but `to' has no definition" . 2)
+    ("bad syntax (missing binding pairs or body)" . 2)
+    ("Declaration for `list-last' provided, but `list-last' has no definition"
+     .
+     2)
+    ("duplicate identifier" . 2)
+    ("Declaration for `tail' provided, but `tail' has no definition" . 2)
+    ("no expression after a sequence of internal definitions" . 2)
+    ("not allowed as an expression" . 2)
+    ("Unbound type name RAList" . 2)
+    ("identifier already provided (as a different binding)" . 2)
+    ("Declaration for `normal' provided, but `normal' has no definition" . 1)
+    ("Declaration for `access' provided, but `access' has no definition" . 1)
+    ("duplicate type variable or index" . 1)
+    ("bad syntax (multiple expressions after identifier)" . 1)
+    ("Declaration for `function' provided, but `function' has no definition"
+     .
+     1)
+    ("Declaration for `->list' provided, but `->list' has no definition" . 1)
+    ("bad syntax (clause is not a test-value pair)" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("duplicate argument name" . 1)
+    ("Declaration for `bound' provided, but `bound' has no definition" . 1)
+    ("Declaration for `of' provided, but `of' has no definition" . 1)
+    ("Declaration for `out' provided, but `out' has no definition" . 1)
+    ("Declaration for `index' provided, but `index' has no definition" . 1)
+    ("bad syntax (not an identifier)" . 1)
+    ("illegal use of syntax" . 1)
+    ("collection not found" . 1))))

@@ -1,0 +1,44 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 43)
+    ("unbound identifier in module" . 23)
+    ("type name used out of context" . 4)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("bad syntax" . 1)
+    ("(send-to-user p (e) failure-result enclosed-expr)" . 1)
+    ("missing an \"else\" expression" . 1)
+    ("(send-to-user* debug-name pid (e) failure-result enclosed-expr)" . 1)
+    ("illegal use of syntax" . 1)
+    ("Expected a function of type (process-spec (U False (PID -> (OldState -> (transition OldState)))) (process OldState) -> (vm -> (values (U False (process OldState)) vm))), but got a function with the wrong arity"
+     .
+     1)
+    ("identifier `struct-copy' not included in nested require spec" . 1)
+    ("identifier `PR13149' not included in nested require spec" . 1)
+    ("identifier `tr-struct-copy.rkt' not included in nested require spec" . 1)
+    ("identifier `workaround' not included in nested require spec" . 1)
+    ("identifier `rename-in' not included in nested require spec" . 1)
+    ("must be used in a definition context" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 33)
+    ("unbound identifier in module" . 10)
+    ("too many forms in body of All type" . 10)
+    ("must be used in a definition context" . 1)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     1)
+    ("not allowed in an expression context" . 1)
+    ("identifier `tr-struct-copy.rkt' not included in nested require spec" . 1)
+    ("identifier `rename-in' not included in nested require spec" . 1)
+    ("identifier `require' not included in nested require spec" . 1)
+    ("identifier `process.rkt' not included in nested require spec" . 1)
+    ("identifier `vm.rkt' not included in nested require spec" . 1)
+    ("Declaration for `workaround' provided, but `workaround' has no definition"
+     .
+     1)
+    ("Declaration for `PR13149' provided, but `PR13149' has no definition" . 1)
+    ("vm" . 1)
+    ("(send-to-user p (e) failure-result enclosed-expr)" . 1)
+    ("bad syntax" . 1))))

@@ -1,0 +1,43 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 35)
+    ("unbound identifier in module" . 13)
+    ("expected a `module' declaration" . 5)
+    ("too many forms in body of All type" . 5)
+    ("type name used out of context" . 2)
+    ("bad module path" . 2)
+    ("bad syntax;" . 2)
+    ("missing type" . 1)
+    ("collection not found" . 1)
+    ("typed/racket/base" . 1)
+    ("cannot open module file" . 1)
+    ("bad syntax" . 1)
+    ("missing an \"else\" expression" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 106)
+    ("unbound identifier in module" . 71)
+    ("bad syntax" . 10)
+    ("(State)" . 5)
+    ("type name used out of context" . 4)
+    ("duplicate argument identifier" . 3)
+    ("Error in macro expansion -- insufficient type information to typecheck. please add more type annotations"
+     .
+     2)
+    ("missing an \"else\" expression" . 1)
+    ("bad syntax (clause is not a test-value pair)" . 1)
+    ("not allowed in an expression context" . 1)
+    ("arrow not allowed as an expression" . 1)
+    ("syntax error in pattern" . 1)
+    ("duplicate binding name" . 1)
+    ("(send-to-user* debug-name pid (e) failure-result enclosed-expr)" . 1)
+    ("not allowed as an expression" . 1)
+    ("Declaration for `pn' provided, but `pn' has no definition" . 1)
+    ("Declaration for `flow->notification' provided, but `flow->notification' has no definition"
+     .
+     1)
+    ("Declaration for `flow-toward-n' provided, but `flow-toward-n' has no definition"
+     .
+     1))))

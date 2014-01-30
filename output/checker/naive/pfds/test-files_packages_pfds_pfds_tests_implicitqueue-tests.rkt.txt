@@ -1,0 +1,16 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 12)
+    ("unbound identifier in module" . 7)
+    ("found a test that is not at the top level" . 4)
+    ("not an identifier, identifier with default, or keyword" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 21)
+    ("unbound identifier in module" . 10)
+    ("found a test that is not at the top level" . 8)
+    ("not an identifier, identifier with default, or keyword" . 1)
+    ("collection not found" . 1)
+    ("not a require sub-form" . 1))))

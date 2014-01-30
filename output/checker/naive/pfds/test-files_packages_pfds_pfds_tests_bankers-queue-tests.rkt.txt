@@ -1,0 +1,34 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 5)
+    ("found a test that is not at the top level" . 4)
+    ("(empty A)" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 48)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     8)
+    ("bad syntax" . 7)
+    ("Polymorphic function `tail' could not be applied to arguments" . 7)
+    ("expected single value, got multiple (or zero) values" . 5)
+    ("type mismatch" . 4)
+    ("unbound identifier in module" . 3)
+    ("Wrong number of arguments, expected 1 and got 2" . 3)
+    ("Wrong number of arguments, expected 2 and got 1" . 2)
+    ("type name used out of context" . 2)
+    ("missing an \"else\" expression" . 1)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     1)
+    ("bad syntax (not a sequence of identifier--expression bindings)" . 1)
+    ("bad syntax (missing body)" . 1)
+    ("Cannot apply expression of type Positive-Index, since it is not a function type"
+     .
+     1)
+    ("must be used in a definition context" . 1))))

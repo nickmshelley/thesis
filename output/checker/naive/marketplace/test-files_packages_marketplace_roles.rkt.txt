@@ -1,0 +1,79 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 80)
+    ("unbound identifier in module" . 17)
+    ("type mismatch" . 10)
+    ("Cannot apply expression of type role, since it is not a function type"
+     .
+     9)
+    ("bad syntax (multiple types after identifier)" . 9)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("expected a `module' declaration" . 5)
+    ("bad syntax" . 4)
+    ("type name used out of context" . 2)
+    ("Wrong number of arguments, expected 1 and got 2" . 2)
+    ("Wrong number of arguments, expected 2 and got 4" . 2)
+    ("((-> Topic) (Symbol -> Topic))" . 2)
+    ("Expected a function of type (role -> (-> (U False Topic))), but got a function with the wrong arity"
+     .
+     1)
+    ("Unbound type name" . 1)
+    ("Wrong number of arguments, expected 1 and got 4" . 1)
+    ("Unbound type name wild" . 1)
+    ("Unbound type name unify.rkt" . 1)
+    ("must be used in a definition context" . 1)
+    ("Wrong number of arguments, expected 3 and got 1" . 1)
+    ("identifier `case->' not included in nested require spec" . 1)
+    ("identifier `->' not included in nested require spec" . 1)
+    ("identifier is already imported" . 1)
+    ("identifier `unify.rkt' not included in nested require spec" . 1)
+    ("identifier `Symbol' not included in nested require spec" . 1)
+    ("Wrong number of arguments, expected 2 and got 1" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 81)
+    ("type mismatch" . 15)
+    ("bad syntax (multiple types after identifier)" . 13)
+    ("unbound identifier in module" . 10)
+    ("Cannot apply expression of type role, since it is not a function type"
+     .
+     5)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("type name used out of context" . 3)
+    ("Wrong number of arguments, expected 2 and got 1" . 3)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("Wrong number of arguments, expected 1 and got 5" . 2)
+    ("Declaration for `co-orientations' provided, but `co-orientations' has no definition"
+     .
+     2)
+    ("Declaration for `flow-visible?' provided, but `flow-visible?' has no definition"
+     .
+     2)
+    ("bad syntax" . 2)
+    ("Wrong number of arguments, expected 2 and got 5" . 1)
+    ("Unbound type name" . 1)
+    ("Unbound type name flow-visible?" . 1)
+    ("Unbound type name --------------+--------------+------------------------"
+     .
+     1)
+    ("Unbound type name yes" . 1)
+    ("duplicate argument identifier" . 1)
+    ("identifier is already imported" . 1)
+    ("unexpected term" . 1)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     1)
+    ("not allowed in an expression context" . 1)
+    ("Declaration for `mean?' provided, but `mean?' has no definition" . 1)
+    ("Declaration for `it' provided, but `it' has no definition" . 1)
+    ("Declaration for `does' provided, but `does' has no definition" . 1)
+    ("Declaration for `What' provided, but `What' has no definition" . 1)
+    ("Declaration for `new-topic' provided, but `new-topic' has no definition"
+     .
+     1)
+    ("Declaration for `topic' provided, but `topic' has no definition" . 1)
+    ("Declaration for `remote-role' provided, but `remote-role' has no definition"
+     .
+     1))))

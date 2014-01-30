@@ -1,0 +1,55 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 77)
+    ("unbound identifier in module" . 13)
+    ("found a test that is not at the top level" . 8)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     6)
+    ("expected identifier" . 5)
+    ("type name used out of context" . 4)
+    ("Polymorphic function `drop' could not be applied to arguments" . 3)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     3)
+    ("Polymorphic function `stream-car' could not be applied to arguments" . 3)
+    ("Polymorphic function `empty-stream?' could not be applied to arguments"
+     .
+     3)
+    ("Polymorphic function `append' could not be applied to arguments" . 3)
+    ("" . 3)
+    ("collection not found" . 2)
+    ("Polymorphic function `stream->list' could not be applied to arguments"
+     .
+     2)
+    ("Polymorphic function `take' could not be applied to arguments" . 2)
+    ("bad syntax" . 2)
+    ("Bad arguments to polymorphic function in apply" . 2)
+    ("apply requires a final list argument, given only a function argument of type (Rec g326 (U Null (Boxof (U (Pairof Integer g326) (-> (Pairof Integer g326))))))"
+     .
+     1)
+    ("cannot open module file" . 1)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("must be used in a definition context" . 1)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     1)
+    ("untyped identifier lst2" . 1)
+    ("Declaration for `lst2' provided, but `lst2' has no definition" . 1)
+    ("Unbound type name" . 1)
+    ("Unbound type name x" . 1)
+    ("Unbound type name λ" . 1)
+    ("Unbound type name test" . 1)
+    ("Polymorphic function `build-list' could not be applied to arguments"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 3)
+    ("unbound identifier in module" . 2)
+    ("bad syntax" . 1))))

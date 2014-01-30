@@ -1,0 +1,32 @@
+'((remove
+   (passed . 67)
+   (failed
+    (total . 83)
+    ("unbound identifier in module" . 40)
+    ("missing `]' to close preceding `[', found instead `)'" . 15)
+    ("syntax error in pattern" . 10)
+    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 47"
+     .
+     5)
+    ("wildcard not allowed as an expression" . 4)
+    ("ellipses not allowed as an expression" . 2)
+    ("misuse of unit import and export keyword" . 2)
+    ("bad syntax" . 2)
+    ("collection not found" . 1)
+    ("not at module level or top level" . 1)
+    ("incorrect use of ... in pattern" . 1)))
+  (truncate
+   (passed . 81)
+   (failed
+    (total . 69)
+    ("unbound identifier in module" . 26)
+    ("syntax error in pattern" . 15)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("ellipses not allowed as an expression" . 5)
+    ("unexpected `)'" . 5)
+    ("wildcard not allowed as an expression" . 4)
+    ("collection not found" . 3)
+    ("incorrect use of ... in pattern" . 2)
+    ("bad module path" . 2)
+    ("unbound identifier;" . 1)
+    ("bad syntax" . 1))))

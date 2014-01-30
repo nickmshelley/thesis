@@ -1,0 +1,18 @@
+'((remove
+   (passed . 21)
+   (failed
+    (total . 24)
+    ("unbound identifier in module" . 17)
+    ("variable used twice in pattern" . 2)
+    ("misplaced ellipsis in pattern (follows other ellipsis)" . 1)
+    ("bad syntax (missing name or binding pairs)" . 1)
+    ("arity mismatch;" . 1)
+    ("misplaced ellipsis in template" . 1)
+    ("missing ellipsis with pattern variable in template" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 14)
+    ("unbound identifier in module" . 12)
+    ("bad syntax" . 1)
+    ("Unbound type name non-wild?" . 1))))

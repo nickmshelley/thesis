@@ -1,0 +1,99 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 279)
+    ("unbound identifier in module" . 101)
+    ("bad syntax" . 30)
+    ("must be used in a definition context" . 15)
+    ("Type variable B must be used with ..." . 14)
+    ("bad syntax (multiple types after identifier)" . 12)
+    ("type name used out of context" . 10)
+    ("(A)" . 10)
+    ("expected identifier" . 10)
+    ("not allowed as an expression" . 7)
+    ("duplicate argument identifier" . 7)
+    ("use of a class keyword is not in a class" . 4)
+    ("syntax error in pattern" . 4)
+    ("duplicate type variable or index" . 4)
+    ("Declaration for `remove-mintree' provided, but `remove-mintree' has no definition"
+     .
+     4)
+    ("Declaration for `sorted-list' provided, but `sorted-list' has no definition"
+     .
+     3)
+    ("Declaration for `heap-map' provided, but `heap-map' has no definition"
+     .
+     3)
+    ("duplicate definition for identifier" . 3)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 3)
+    ("Declaration for `find-min/max' provided, but `find-min/max' has no definition"
+     .
+     3)
+    ("Declaration for `heap-ormap' provided, but `heap-ormap' has no definition"
+     .
+     3)
+    ("Declaration for `delete-min/max' provided, but `delete-min/max' has no definition"
+     .
+     3)
+    ("Declaration for `rank' provided, but `rank' has no definition" . 3)
+    ("Declaration for `ins-all' provided, but `ins-all' has no definition" . 2)
+    ("missing `}' to close preceding `{', found instead `)'" . 2)
+    ("missing an \"else\" expression" . 2)
+    ("duplicate type variable declaration" . 2)
+    ("duplicate identifier" . 1)
+    ("Component of case-lambda type was not a function clause" . 1)
+    ("expected 2 and got 1" . 1)
+    ("bad syntax (missing body)" . 1)
+    ("bad syntax (clause is not a test-value pair)" . 1)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("bad syntax;" . 1)
+    ("not allowed in an expression context" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("Declaration for `tree' provided, but `tree' has no definition" . 1)
+    ("Declaration for `A' provided, but `A' has no definition" . 1)
+    ("Declaration for `the' provided, but `the' has no definition" . 1)
+    ("illegal use of `.'" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 283)
+    ("unbound identifier in module" . 108)
+    ("bad syntax" . 27)
+    ("Type variable B must be used with ..." . 25)
+    ("bad syntax (multiple types after identifier)" . 12)
+    ("type name used out of context" . 11)
+    ("(A)" . 10)
+    ("Component of case-lambda type was not a function clause" . 9)
+    ("expected identifier" . 9)
+    ("duplicate argument identifier" . 8)
+    ("must be used in a definition context" . 8)
+    ("duplicate definition for identifier" . 7)
+    ("Declaration for `merge' provided, but `merge' has no definition" . 7)
+    ("Declaration for `insert' provided, but `insert' has no definition" . 4)
+    ("no expression after a sequence of internal definitions" . 3)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 3)
+    ("bad syntax (missing binding pairs or body)" . 3)
+    ("identifier already provided (as a different binding)" . 3)
+    ("Declaration for `remove-mintree' provided, but `remove-mintree' has no definition"
+     .
+     3)
+    ("Declaration for `find-min/max' provided, but `find-min/max' has no definition"
+     .
+     3)
+    ("ellipses not allowed as an expression" . 2)
+    ("duplicate type variable or index" . 2)
+    ("duplicate type variable declaration" . 2)
+    ("not allowed in an expression context" . 2)
+    ("duplicate field identifier" . 2)
+    ("expected `)' to close preceding `(', found instead `}'" . 1)
+    ("expected 2 and got 1" . 1)
+    ("bad syntax (clause is not a test-value pair)" . 1)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 1)
+    ("illegal use of `.'" . 1)
+    ("not allowed as an expression" . 1)
+    ("missing an \"else\" expression" . 1)
+    (", or @" . 1)
+    ("unbound identifier;" . 1)
+    ("unexpected `)'" . 1))))

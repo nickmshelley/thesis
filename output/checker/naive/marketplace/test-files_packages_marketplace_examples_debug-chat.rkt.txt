@@ -1,0 +1,20 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 33)
+    ("The type of vm-processes cannot be converted to a contract" . 17)
+    ("missing `)' to close preceding `(', found instead `]'" . 10)
+    ("expected a `)' to close `('" . 5)
+    ("illegal use of `.'" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 39)
+    ("unbound identifier in module" . 20)
+    ("type name used out of context" . 7)
+    ("bad syntax" . 5)
+    ("missing an \"else\" expression" . 2)
+    ("identifier is already imported" . 2)
+    ("bad syntax;" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("duplicate argument identifier" . 1))))

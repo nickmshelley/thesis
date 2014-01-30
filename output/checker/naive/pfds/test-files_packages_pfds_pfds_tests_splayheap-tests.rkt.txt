@@ -1,0 +1,21 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 28)
+    ("found a test that is not at the top level" . 8)
+    ("type name used out of context" . 6)
+    ("unbound identifier in module" . 4)
+    ("bad syntax" . 3)
+    ("must be used in a definition context" . 3)
+    ("bad module path" . 2)
+    ("collection not found" . 2)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 28)
+    ("unbound identifier in module" . 15)
+    ("found a test that is not at the top level" . 8)
+    ("type name used out of context" . 2)
+    ("Declaration for `lst1' provided, but `lst1' has no definition" . 1)
+    ("expected annotated-formals" . 1)
+    ("illegal use of syntax" . 1))))

@@ -1,0 +1,141 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 323)
+    ("unbound identifier in module" . 77)
+    ("bad syntax" . 31)
+    ("Type variable B must be used with ..." . 26)
+    ("bad syntax (multiple types after identifier)" . 20)
+    ("type name used out of context" . 18)
+    ("(A)" . 10)
+    ("duplicate argument identifier" . 9)
+    ("Declaration for `A' provided, but `A' has no definition" . 8)
+    ("must be used in a definition context" . 8)
+    ("expected identifier" . 7)
+    ("duplicate definition for identifier" . 7)
+    ("identifier already provided (as a different binding)" . 6)
+    ("Component of case-lambda type was not a function clause" . 6)
+    ("duplicate type variable declaration" . 6)
+    ("Declaration for `list-tenth' provided, but `list-tenth' has no definition"
+     .
+     6)
+    ("not a provide sub-form" . 5)
+    ("duplicate identifier" . 5)
+    ("too many forms in body of All type" . 5)
+    ("Declaration for `list-map' provided, but `list-map' has no definition"
+     .
+     4)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 4)
+    ("Declaration for `tree-drop' provided, but `tree-drop' has no definition"
+     .
+     4)
+    ("Declaration for `list-set' provided, but `list-set' has no definition"
+     .
+     4)
+    ("Declaration for `tail' provided, but `tail' has no definition" . 4)
+    ("Declaration for `tree-update' provided, but `tree-update' has no definition"
+     .
+     3)
+    ("Declaration for `list-seventh' provided, but `list-seventh' has no definition"
+     .
+     3)
+    ("Declaration for `local-reverse' provided, but `local-reverse' has no definition"
+     .
+     3)
+    ("Declaration for `function' provided, but `function' has no definition"
+     .
+     3)
+    ("Declaration for `list-foldr' provided, but `list-foldr' has no definition"
+     .
+     3)
+    ("Declaration for `list-ormap' provided, but `list-ormap' has no definition"
+     .
+     3)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 2)
+    ("not allowed as an expression" . 2)
+    ("Declaration for `ls' provided, but `ls' has no definition" . 2)
+    ("bad syntax (ill-formed clause)" . 2)
+    ("bad syntax (clause is not a test-value pair)" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("'" . 1)
+    ("duplicate type variable or index" . 1)
+    ("Declaration for `lists' provided, but `lists' has no definition" . 1)
+    ("missing an \"else\" expression" . 1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("Declaration for `C' provided, but `C' has no definition" . 1)
+    ("ellipses not allowed as an expression" . 1)
+    ("bad syntax;" . 1)
+    ("Declaration for `list-length' provided, but `list-length' has no definition"
+     .
+     1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("expected a sequence of type variables" . 1)
+    ("not allowed in an expression context" . 1)
+    ("Used a type variable (define) not bound with ... as a bound on a ..."
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 295)
+    ("unbound identifier in module" . 78)
+    ("bad syntax" . 27)
+    ("type name used out of context" . 24)
+    ("(A)" . 15)
+    ("Type variable B must be used with ..." . 14)
+    ("bad syntax (multiple types after identifier)" . 13)
+    ("expected identifier" . 10)
+    ("too many forms in body of All type" . 10)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 9)
+    ("not allowed in an expression context" . 8)
+    ("must be used in a definition context" . 5)
+    ("bad syntax;" . 5)
+    ("Declaration for `tu-help' provided, but `tu-help' has no definition" . 5)
+    ("duplicate argument identifier" . 5)
+    ("bad syntax (clause is not a test-value pair)" . 4)
+    ("unexpected term" . 4)
+    ("Declaration for `tl-help' provided, but `tl-help' has no definition" . 4)
+    ("identifier already provided (as a different binding)" . 4)
+    ("Declaration for `head' provided, but `head' has no definition" . 4)
+    ("ellipses not allowed as an expression" . 3)
+    ("no expression after a sequence of internal definitions" . 3)
+    ("bad syntax (missing binding pairs or body)" . 3)
+    ("Component of case-lambda type was not a function clause" . 3)
+    ("not a require sub-form" . 3)
+    ("duplicate identifier" . 2)
+    ("duplicate type variable or index" . 2)
+    ("Declaration for `list-tenth' provided, but `list-tenth' has no definition"
+     .
+     2)
+    ("Declaration for `function' provided, but `function' has no definition"
+     .
+     2)
+    ("Declaration for `ls' provided, but `ls' has no definition" . 2)
+    ("collection not found" . 2)
+    ("Declaration for `list-last' provided, but `list-last' has no definition"
+     .
+     2)
+    ("duplicate definition for identifier" . 2)
+    ("bad syntax (missing body)" . 1)
+    ("missing an \"else\" expression" . 1)
+    ("Declaration for `common' provided, but `common' has no definition" . 1)
+    ("Declaration for `more' provided, but `more' has no definition" . 1)
+    ("Declaration for `the' provided, but `the' has no definition" . 1)
+    ("Declaration for `tree-drop' provided, but `tree-drop' has no definition"
+     .
+     1)
+    ("duplicate type variable declaration" . 1)
+    ("Declaration for `list-andmap' provided, but `list-andmap' has no definition"
+     .
+     1)
+    ("Declaration for `to' provided, but `to' has no definition" . 1)
+    ("Declaration for `racket' provided, but `racket' has no definition" . 1)
+    ("Declaration for `of' provided, but `of' has no definition" . 1)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 1)
+    ("Declaration for `pos' provided, but `pos' has no definition" . 1)
+    ("Declaration for `ralist' provided, but `ralist' has no definition" . 1)
+    ("bad module path" . 1)
+    ("cannot open module file" . 1))))

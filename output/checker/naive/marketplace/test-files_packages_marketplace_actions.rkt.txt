@@ -1,0 +1,60 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 173)
+    ("unbound identifier in module" . 94)
+    ("syntax error in pattern" . 21)
+    ("bad syntax" . 13)
+    ("type name used out of context" . 7)
+    ("accessor name not associated with the given structure type" . 5)
+    ("unexpected `)'" . 5)
+    ("expected a `module' declaration" . 5)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("Declaration for `wrap-trapk' provided, but `wrap-trapk' has no definition"
+     .
+     3)
+    ("collection not found" . 3)
+    ("must be used in a definition context" . 2)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ."
+     .
+     2)
+    ("duplicate argument identifier" . 2)
+    ("bad syntax;" . 1)
+    ("expected more terms starting with expression" . 1)
+    ("Declaration for `p' provided, but `p' has no definition" . 1)
+    ("not allowed in an expression context" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("expected 1 and got 3" . 1)
+    ("no mapping for #<syntax vm>" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 146)
+    ("unbound identifier in module" . 68)
+    ("type name used out of context" . 14)
+    ("bad syntax (multiple types after identifier)" . 14)
+    ("bad syntax" . 9)
+    ("syntax error in pattern" . 7)
+    ("accessor name not associated with the given structure type" . 5)
+    ("Declaration for `dump-state' provided, but `dump-state' has no definition"
+     .
+     4)
+    ("provided identifier not defined or imported for phase 0" . 3)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     3)
+    ("(send-to-user p (e) failure-result enclosed-expr)" . 2)
+    ("must be used in a definition context" . 2)
+    ("missing an \"else\" expression" . 2)
+    ("Declaration for `p' provided, but `p' has no definition" . 2)
+    ("collection not found" . 1)
+    ("expected 3 but got 2" . 1)
+    ("bad syntax (missing expression after identifier)" . 1)
+    ("not allowed in an expression context" . 1)
+    ("duplicate identifier" . 1)
+    ("not an identifier for structure type" . 1)
+    ("identifier is already imported" . 1)
+    ("Declaration for `state' provided, but `state' has no definition" . 1)
+    ("unexpected `)'" . 1)
+    ("Declaration for `acc' provided, but `acc' has no definition" . 1)
+    ("bad syntax;" . 1))))

@@ -1,0 +1,28 @@
+'((remove
+   (passed . 16)
+   (failed
+    (total . 39)
+    ("unbound identifier in module" . 18)
+    ("missing `]' to close `[' on line 151, found instead `)'" . 5)
+    ("too many ellipses in template" . 4)
+    ("bad syntax" . 3)
+    ("missing closing `}'" . 3)
+    ("duplicate argument identifier" . 2)
+    ("unexpected whitespace after @" . 1)
+    ("expected `)' to close preceding `(', found instead `}'" . 1)
+    ("variable used twice in pattern" . 1)
+    ("missing ellipsis with pattern variable in template" . 1)))
+  (truncate
+   (passed . 51)
+   (failed
+    (total . 34)
+    ("unbound identifier in module" . 17)
+    ("unexpected `)'" . 5)
+    ("bad syntax" . 3)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("missing procedure expression;" . 2)
+    ("not a sequence of identifiers" . 1)
+    ("not in a definition context" . 1)
+    ("bad syntax (not an identifier and expression for a binding)" . 1)
+    ("bad syntax (clause is not a test-value pair)" . 1)
+    ("duplicate argument identifier" . 1))))

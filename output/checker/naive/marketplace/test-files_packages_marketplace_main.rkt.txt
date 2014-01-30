@@ -1,0 +1,19 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 18)
+    ("unbound identifier in module" . 8)
+    ("provided identifier not defined or imported for phase 0" . 4)
+    ("duplicate definition for identifier" . 2)
+    ("bad syntax" . 1)
+    ("Unbound type name provide" . 1)
+    ("Unbound type name all-from-out" . 1)
+    ("Unbound type name ground?" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 5)
+    ("type name used out of context" . 3)
+    ("Declaration for `list-max' provided, but `list-max' has no definition"
+     .
+     2))))

@@ -1,6 +1,7 @@
 #lang racket/base
 (require "word.rkt"
          racket/list
+         racket/sequence
          srfi/13)
 
 (provide get-all-source-files

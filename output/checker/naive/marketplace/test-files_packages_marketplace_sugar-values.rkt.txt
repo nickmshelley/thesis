@@ -1,0 +1,31 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 49)
+    ("unbound identifier in module" . 20)
+    ("type name used out of context" . 7)
+    ("Component of case-lambda type was not a function clause" . 6)
+    ("illegal use of `.'" . 2)
+    ("missing `}' to close `{' on line 18, found instead `)'" . 2)
+    ("expected `)' to close preceding `(', found instead `}'" . 2)
+    ("bad syntax" . 2)
+    ("Declaration for `State' provided, but `State' has no definition" . 1)
+    ("Declaration for `wild' provided, but `wild' has no definition" . 1)
+    ("bad syntax;" . 1)
+    ("Declaration for `send-message' provided, but `send-message' has no definition"
+     .
+     1)
+    ("not allowed in an expression context" . 1)
+    ("must be used in a definition context" . 1)
+    ("missing `}' to close preceding `{', found instead `)'" . 1)
+    ("identifier already provided (as a different binding)" . 1)))
+  (truncate
+   (passed . 4)
+   (failed
+    (total . 7)
+    ("unbound identifier in module" . 2)
+    ("not allowed in an expression context" . 1)
+    ("Illegal clause in endpoint definition" . 1)
+    ("(subscriber topic clause ...)" . 1)
+    ("bad syntax (multiple expressions after identifier)" . 1)
+    ("unexpected term" . 1))))

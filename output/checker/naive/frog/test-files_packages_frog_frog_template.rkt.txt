@@ -1,0 +1,20 @@
+'((remove
+   (passed . 4)
+   (failed
+    (total . 31)
+    ("unbound identifier in module" . 21)
+    ("collection not found" . 4)
+    ("bad syntax" . 2)
+    ("duplicate argument identifier" . 2)
+    ("illegal use of `.'" . 1)
+    ("not allowed in an expression context" . 1)))
+  (truncate
+   (passed . 19)
+   (failed
+    (total . 31)
+    ("unbound identifier in module" . 18)
+    ("duplicate argument identifier" . 6)
+    ("expected `)' to close preceding `(', found instead `}'" . 3)
+    ("unexpected `}'" . 2)
+    ("illegal use of `.'" . 1)
+    ("bad syntax" . 1))))

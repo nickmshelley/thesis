@@ -1,0 +1,16 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 10)
+    ("unbound identifier in module" . 5)
+    ("(from require-spec pre-content ...)" . 2)
+    ("invalid pattern" . 1)
+    ("collection not found" . 1)
+    ("provided identifier not defined or imported for phase 0" . 1)))
+  (truncate
+   (passed . 3)
+   (failed
+    (total . 7)
+    ("unbound identifier in module" . 5)
+    ("no pattern variables before ellipsis in template" . 1)
+    ("missing ellipsis with pattern variable in template" . 1))))

@@ -1,0 +1,15 @@
+'((remove
+   (passed . 13)
+   (failed
+    (total . 7)
+    ("expected a `)' to close `('" . 5)
+    ("undefined;" . 1)
+    ("unbound identifier in module" . 1)))
+  (truncate
+   (passed . 4)
+   (failed
+    (total . 12)
+    ("expected a closing '\"'" . 5)
+    ("expected a `)' to close `('" . 5)
+    ("collection not found" . 1)
+    ("unbound identifier in module" . 1))))

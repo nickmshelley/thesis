@@ -1,0 +1,34 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 25)
+    ("unbound identifier in module" . 9)
+    ("(State)" . 2)
+    ("type mismatch" . 2)
+    ("duplicate argument identifier" . 1)
+    ("(process-spec process-spec)" . 1)
+    ("(PID process-spec)" . 1)
+    ("(State process-spec)" . 1)
+    ("(Any process-spec)" . 1)
+    ("Unbound type name All" . 1)
+    ("Polymorphic function `spawn13' could not be applied to arguments" . 1)
+    ("Unbound type name define" . 1)
+    ("Unbound type name make-nested-vm" . 1)
+    ("Wrong number of arguments, expected 0 and got 1" . 1)
+    ("bad syntax" . 1)
+    ("Unbound type name" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 19)
+    ("unbound identifier in module" . 9)
+    ("Cannot instantiate non-polymorphic type Any" . 4)
+    ("Cannot apply expression of type Any, since it is not a function type"
+     .
+     2)
+    ("Declaration for `workaround' provided, but `workaround' has no definition"
+     .
+     1)
+    ("Declaration for `PR13149' provided, but `PR13149' has no definition" . 1)
+    ("bad syntax" . 1)
+    ("not allowed in an expression context" . 1))))

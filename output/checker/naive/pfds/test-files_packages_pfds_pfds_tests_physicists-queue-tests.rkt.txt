@@ -1,0 +1,24 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 34)
+    ("unexpected `)'" . 10)
+    ("unbound identifier in module" . 8)
+    ("found a test that is not at the top level" . 5)
+    ("expected a `)' to close `('" . 5)
+    ("type name used out of context" . 2)
+    ("collection not found" . 2)
+    ("(empty A)" . 1)
+    ("cannot open module file" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 28)
+    ("unbound identifier in module" . 14)
+    ("found a test that is not at the top level" . 5)
+    ("bad syntax" . 4)
+    ("expected identifier" . 1)
+    ("bad syntax (not a datum sequence)" . 1)
+    ("type name used out of context" . 1)
+    ("must be used in a definition context" . 1)
+    ("expected annotated-formals" . 1))))

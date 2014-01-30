@@ -1,0 +1,37 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 28)
+    ("Declaration for `send-to-process' provided, but `send-to-process' has no definition"
+     .
+     5)
+    ("too many forms in body of All type" . 5)
+    ("unbound identifier in module" . 5)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     2)
+    ("bad syntax" . 2)
+    ("not allowed in an expression context" . 2)
+    ("identifier `struct-copy' not included in nested require spec" . 1)
+    ("identifier `PR13149' not included in nested require spec" . 1)
+    ("identifier `tr-struct-copy.rkt' not included in nested require spec" . 1)
+    ("identifier `workaround' not included in nested require spec" . 1)
+    ("identifier `rename-in' not included in nested require spec" . 1)
+    ("bad syntax (clause is not a test-value pair)" . 1)
+    ("(send-to-user p (e) failure-result enclosed-expr)" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 45)
+    ("unbound identifier in module" . 20)
+    ("type name used out of context" . 7)
+    ("syntax error in pattern" . 6)
+    ("bad syntax" . 4)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     3)
+    ("Declaration for `e' provided, but `e' has no definition" . 1)
+    ("Declaration for `f' provided, but `f' has no definition" . 1)
+    ("not allowed in an expression context" . 1)
+    ("(send-to-user p (e) failure-result enclosed-expr)" . 1)
+    ("vm" . 1))))

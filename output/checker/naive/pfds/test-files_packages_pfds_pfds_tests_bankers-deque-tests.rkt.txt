@@ -1,0 +1,19 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 18)
+    ("unbound identifier in module" . 6)
+    ("found a test that is not at the top level" . 5)
+    ("type name used out of context" . 5)
+    ("(empty A)" . 1)
+    ("expected identifier" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 24)
+    ("found a test that is not at the top level" . 9)
+    ("unbound identifier in module" . 9)
+    ("type name used out of context" . 2)
+    ("(empty A)" . 2)
+    ("not at module level or top level" . 1)
+    ("collection not found" . 1))))

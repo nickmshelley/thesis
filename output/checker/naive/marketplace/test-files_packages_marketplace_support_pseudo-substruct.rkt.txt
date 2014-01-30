@@ -1,0 +1,25 @@
+'((remove
+   (passed . 7)
+   (failed
+    (total . 28)
+    ("missing ellipsis with pattern variable in template" . 6)
+    ("expected a `module' declaration" . 5)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("too many ellipses in template" . 4)
+    ("no pattern variables before ellipsis in template" . 3)
+    ("unbound identifier in module" . 2)
+    ("(super-type TypeParam ...) SubType sub-type sub-type?)" . 1)
+    ("invalid pattern" . 1)
+    ("bad module path" . 1)))
+  (truncate
+   (passed . 4)
+   (failed
+    (total . 22)
+    ("collection not found" . 5)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("unbound identifier in module" . 4)
+    ("variable used twice in pattern" . 3)
+    ("missing ellipsis with pattern variable in template" . 2)
+    ("no pattern variables before ellipsis in template" . 1)
+    ("bad module path" . 1)
+    ("expected an identifier for the structure type name" . 1))))

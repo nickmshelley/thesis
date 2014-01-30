@@ -1,0 +1,14 @@
+'((remove
+   (passed . 1)
+   (failed
+    (total . 9)
+    ("unbound identifier in module" . 5)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("duplicate definition for identifier" . 1)
+    ("type name used out of context" . 1)))
+  (truncate
+   (passed . 3)
+   (failed
+    (total . 3)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("collection not found" . 1))))

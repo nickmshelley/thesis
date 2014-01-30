@@ -1,0 +1,16 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 12)
+    ("expected a `module' declaration" . 5)
+    ("found a test that is not at the top level" . 4)
+    ("unbound identifier in module" . 3)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 11)
+    ("found a test that is not at the top level" . 6)
+    ("unbound identifier in module" . 2)
+    ("collection not found" . 1)
+    ("pfds/queue/bootstrapped" . 1)
+    ("cannot open module file" . 1))))

@@ -1,0 +1,47 @@
+'((remove
+   (passed . 131)
+   (failed
+    (total . 144)
+    ("unbound identifier in module" . 90)
+    ("duplicate argument identifier" . 9)
+    ("illegal use of `.'" . 6)
+    ("unexpected `)'" . 5)
+    ("syntax error in pattern" . 5)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 76"
+     .
+     5)
+    ("not allowed in an expression context" . 4)
+    ("provided identifier not defined or imported for phase 0" . 4)
+    ("duplicate binding name" . 2)
+    ("bad syntax" . 2)
+    ("misuse of module-path constructor (not within, e.g., `require' or `provide')"
+     .
+     2)
+    ("misuse of unit import and export keyword" . 1)
+    ("expected more terms starting with any term" . 1)
+    ("bad syntax (clause is not a test-value pair)" . 1)
+    ("misuse of compound-unit keyword" . 1)
+    ("wildcard not allowed as an expression" . 1)))
+  (truncate
+   (passed . 129)
+   (failed
+    (total . 133)
+    ("unbound identifier in module" . 80)
+    ("unexpected `)'" . 10)
+    ("illegal use of `.'" . 6)
+    ("expected a `)' to close `('" . 5)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("not allowed in an expression context" . 4)
+    ("not allowed as an expression" . 4)
+    ("bad syntax" . 3)
+    ("duplicate binding name" . 3)
+    ("duplicate argument identifier" . 3)
+    ("misuse of compound-unit keyword" . 2)
+    ("collection not found" . 2)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("syntax error in pattern" . 1)
+    ("expected an identifier for a submodule, found something else" . 1)
+    ("cannot open module file" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("ellipses not allowed as an expression" . 1))))

@@ -1,0 +1,94 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 251)
+    ("unbound identifier in module" . 95)
+    ("bad syntax" . 18)
+    ("Type variable B must be used with ..." . 15)
+    ("bad syntax (multiple types after identifier)" . 12)
+    ("expected a `module' declaration" . 10)
+    ("expected identifier" . 9)
+    ("(A)" . 9)
+    ("type name used out of context" . 8)
+    ("syntax error in pattern" . 7)
+    ("duplicate type variable declaration" . 5)
+    ("'" . 5)
+    ("must be used in a definition context" . 5)
+    ("unexpected term" . 5)
+    ("duplicate type variable or index" . 4)
+    ("Declaration for `build-heap' provided, but `build-heap' has no definition"
+     .
+     4)
+    ("duplicate identifier" . 3)
+    ("Declaration for `heap-map' provided, but `heap-map' has no definition"
+     .
+     3)
+    ("Declaration for `phelp-rgt' provided, but `phelp-rgt' has no definition"
+     .
+     3)
+    ("bad syntax;" . 3)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 3)
+    ("Declaration for `heap-ormap' provided, but `heap-ormap' has no definition"
+     .
+     3)
+    ("duplicate definition for identifier" . 2)
+    ("Declaration for `heap-andmap' provided, but `heap-andmap' has no definition"
+     .
+     2)
+    ("duplicate argument identifier" . 2)
+    ("expected 2 and got 1" . 1)
+    ("bad syntax (missing binding pairs or body)" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("illegal use of `.'" . 1)
+    ("expected 3 but got 2" . 1)
+    ("expected a sequence of type variables" . 1)
+    ("expected 0 but got 2" . 1)
+    ("duplicate argument name" . 1)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Heap) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 1)
+    ("missing an \"else\" expression" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("not in a definition context" . 1)
+    ("Declaration for `A' provided, but `A' has no definition" . 1)
+    ("Declaration for `constructor' provided, but `constructor' has no definition"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 206)
+    ("unbound identifier in module" . 48)
+    ("Type variable B must be used with ..." . 24)
+    ("bad syntax" . 22)
+    ("type name used out of context" . 17)
+    ("bad syntax (multiple types after identifier)" . 16)
+    ("(A)" . 10)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 10)
+    ("use of a class keyword is not in a class" . 7)
+    ("Declaration for `insert' provided, but `insert' has no definition" . 7)
+    ("expected 3 but got 2" . 5)
+    ("expected identifier" . 5)
+    ("Component of case-lambda type was not a function clause" . 4)
+    ("duplicate type variable declaration" . 4)
+    ("Declaration for `fold' provided, but `fold' has no definition" . 2)
+    ("duplicate identifier" . 2)
+    ("bad syntax (missing binding pairs or body)" . 2)
+    ("identifier already provided (as a different binding)" . 2)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (Heap) not bound with ... as a bound on a ..." . 2)
+    ("Declaration for `sorted-list' provided, but `sorted-list' has no definition"
+     .
+     2)
+    ("duplicate argument identifier" . 2)
+    ("ellipses not allowed as an expression" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("must be used in a definition context" . 1)
+    ("Structure type constructor IntHeap applied to non-regular arguments ((U Null (IntHeap A)))"
+     .
+     1)
+    ("Declaration for `Checks' provided, but `Checks' has no definition" . 1)
+    ("Declaration for `A' provided, but `A' has no definition" . 1)
+    ("duplicate definition for identifier" . 1))))

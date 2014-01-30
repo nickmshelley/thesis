@@ -1,0 +1,84 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 153)
+    ("unbound identifier in module" . 32)
+    ("bad syntax" . 20)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 14)
+    ("Type variable B must be used with ..." . 14)
+    ("must be used in a definition context" . 11)
+    ("type name used out of context" . 7)
+    ("duplicate type variable declaration" . 5)
+    ("duplicate type variable or index" . 5)
+    ("Declaration for `link-all' provided, but `link-all' has no definition"
+     .
+     5)
+    ("expected identifier" . 4)
+    ("Component of case-lambda type was not a function clause" . 4)
+    ("Unbound type name A" . 4)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("no binding for identifier" . 3)
+    ("bad syntax;" . 3)
+    ("duplicate argument identifier" . 3)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 2)
+    ("bad syntax (missing binding pairs or body)" . 1)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("duplicate type variable" . 1)
+    ("misuse of compound-unit keyword" . 1)
+    ("Used a type variable (CatenableList) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Structure type constructor List applied to non-regular arguments (List)"
+     .
+     1)
+    ("Unbound type name define-type" . 1)
+    ("Structure type constructor List applied to non-regular arguments (Promise)"
+     .
+     1)
+    ("Structure type constructor List applied to non-regular arguments (CatenableList)"
+     .
+     1)
+    ("Structure type constructor List applied to non-regular arguments (Queue)"
+     .
+     1)
+    ("bad syntax (clause is not a test-value pair)" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 182)
+    ("unbound identifier in module" . 32)
+    ("bad syntax (multiple types after identifier)" . 28)
+    ("bad syntax" . 21)
+    ("Type variable B must be used with ..." . 20)
+    ("identifier already provided (as a different binding)" . 10)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 10)
+    ("expected identifier" . 9)
+    ("type name used out of context" . 7)
+    ("bad syntax;" . 5)
+    ("duplicate type variable or index" . 5)
+    ("not allowed in an expression context" . 4)
+    ("duplicate argument identifier" . 4)
+    ("Declaration for `head' provided, but `head' has no definition" . 4)
+    ("no expression after a sequence of internal definitions" . 3)
+    ("duplicate argument name" . 2)
+    ("illegal use of `.'" . 2)
+    ("duplicate type variable" . 2)
+    ("Declaration for `list-foldl' provided, but `list-foldl' has no definition"
+     .
+     2)
+    ("ellipses not allowed as an expression" . 2)
+    ("duplicate type variable declaration" . 2)
+    ("Component of case-lambda type was not a function clause" . 1)
+    ("no binding for identifier" . 1)
+    ("not allowed as an expression" . 1)
+    ("apply requires a final list argument, given only a function argument of type (Pairof (U Null (List A)) (Listof (U Null (List A))))"
+     .
+     1)
+    ("Declaration for `cat' provided, but `cat' has no definition" . 1)
+    ("Declaration for `is' provided, but `is' has no definition" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("bad syntax (missing binding pairs or body)" . 1))))

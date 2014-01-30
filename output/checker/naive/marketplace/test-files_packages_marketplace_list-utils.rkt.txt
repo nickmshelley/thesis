@@ -1,0 +1,24 @@
+'((remove
+   (passed . 1)
+   (failed
+    (total . 9)
+    ("expected a `module' declaration" . 5)
+    ("Polymorphic function `foldr' could not be applied to arguments" . 4)))
+  (truncate
+   (passed . 4)
+   (failed
+    (total . 39)
+    ("unbound identifier in module" . 26)
+    ("ellipses not allowed as an expression" . 2)
+    ("undefined;" . 2)
+    ("bad syntax (multiple expressions after identifier)" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("no matching clause for \"MARKETPLACE_LOG\"" . 1)
+    ("contract violation" . 1)
+    ("not allowed in an expression context" . 1)
+    ("not at module level" . 1)
+    ("bad syntax (missing body)" . 1)
+    ("collection not found" . 1)
+    ("cannot open module file" . 1))))

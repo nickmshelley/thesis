@@ -1,0 +1,18 @@
+'((remove
+   (passed . 48)
+   (failed
+    (total . 27)
+    ("unbound identifier in module" . 19)
+    ("provided identifier not defined or imported for phase 0" . 3)
+    ("bad syntax" . 2)
+    ("illegal use of `.'" . 1)
+    ("undefined;" . 1)
+    ("not allowed in an expression context" . 1)))
+  (truncate
+   (passed . 56)
+   (failed
+    (total . 19)
+    ("unbound identifier in module" . 12)
+    ("bad syntax" . 5)
+    ("bad syntax;" . 1)
+    ("not allowed in an expression context" . 1))))

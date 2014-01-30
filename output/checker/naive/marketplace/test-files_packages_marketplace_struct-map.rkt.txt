@@ -1,0 +1,20 @@
+'((remove
+   (passed . 39)
+   (failed
+    (total . 41)
+    ("unbound identifier in module" . 33)
+    ("duplicate binding name" . 2)
+    ("duplicate argument identifier" . 2)
+    ("duplicate definition for identifier" . 1)
+    ("not allowed in an expression context" . 1)
+    ("not allowed as an expression" . 1)
+    ("bad syntax" . 1)))
+  (truncate
+   (passed . 37)
+   (failed
+    (total . 42)
+    ("unbound identifier in module" . 32)
+    ("provided identifier not defined or imported for phase 0" . 4)
+    ("duplicate binding name" . 3)
+    ("duplicate definition for identifier" . 2)
+    ("no expression after a sequence of internal definitions" . 1))))

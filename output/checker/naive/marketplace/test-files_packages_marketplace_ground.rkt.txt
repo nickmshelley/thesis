@@ -1,0 +1,21 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 54)
+    ("unbound identifier in module" . 37)
+    ("bad syntax" . 4)
+    ("collection not found" . 3)
+    ("identifier is already imported" . 2)
+    ("invalid module-path form" . 2)
+    ("(unwrap-process State Result (p wp) body ...)" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("type name used out of context" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("this match expander must be used inside match" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 31)
+    ("The type of vm-processes cannot be converted to a contract" . 26)
+    ("missing `]' to close `[' on line 27, found instead `)'" . 5))))

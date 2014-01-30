@@ -1,0 +1,10 @@
+'((remove
+   (passed . 11)
+   (failed
+    (total . 14)
+    ("unbound identifier in module" . 9)
+    ("identifier is not bound to struct type information" . 4)
+    ("illegal use of syntax" . 1)))
+  (truncate
+   (passed . 2)
+   (failed (total . 8) ("duplicate definition for identifier" . 8))))

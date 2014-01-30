@@ -1,0 +1,20 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 31)
+    ("unbound identifier in module" . 12)
+    ("found a test that is not at the top level" . 8)
+    ("type name used out of context" . 7)
+    ("bad syntax" . 2)
+    ("expected identifier" . 1)
+    ("Declaration for `lst1' provided, but `lst1' has no definition" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 48)
+    ("type name used out of context" . 14)
+    ("unbound identifier in module" . 13)
+    ("found a test that is not at the top level" . 10)
+    ("expected identifier" . 7)
+    ("bad syntax" . 3)
+    ("bad module path" . 1))))

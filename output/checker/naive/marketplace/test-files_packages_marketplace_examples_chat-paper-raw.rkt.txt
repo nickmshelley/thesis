@@ -1,0 +1,36 @@
+'((remove
+   (passed . 19)
+   (failed
+    (total . 72)
+    ("unbound identifier in module" . 44)
+    ("expected a `module' declaration" . 5)
+    ("missing `)' to close `(' on line 50, found instead `]'" . 5)
+    ("collection not found" . 4)
+    ("wildcard not allowed as an expression" . 3)
+    ("(publisher topic clause ...)" . 2)
+    ("bad syntax" . 2)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("duplicate argument identifier" . 1)
+    ("Illegal clause in endpoint definition" . 1)
+    ("unexpected term" . 1)
+    ("(subscriber topic clause ...)" . 1)
+    ("illegal use of `.'" . 1)
+    ("not allowed in an expression context" . 1)))
+  (truncate
+   (passed . 14)
+   (failed
+    (total . 67)
+    ("unbound identifier in module" . 41)
+    ("missing `)' to close `(' on line 85, found instead `]'; indentation suggests a missing `)' before line 86"
+     .
+     5)
+    ("unexpected `)'" . 5)
+    ("syntax error in pattern" . 4)
+    ("not allowed in an expression context" . 2)
+    ("wildcard not allowed as an expression" . 2)
+    ("Illegal clause in endpoint definition" . 2)
+    ("bad syntax" . 2)
+    ("expected at least one expression on the right-hand side" . 1)
+    ("not an identifier, identifier with default, or keyword" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("duplicate argument identifier" . 1))))

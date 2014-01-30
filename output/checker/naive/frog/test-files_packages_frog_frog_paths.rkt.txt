@@ -1,0 +1,38 @@
+'((remove
+   (passed . 34)
+   (failed
+    (total . 66)
+    ("unbound identifier in module" . 32)
+    ("missing `]' to close `[' on line 59, found instead `)'; indentation suggests a missing `]' before line 60"
+     .
+     5)
+    ("missing `]' to close `[' on line 60, found instead `)'; indentation suggests a missing `]' before line 61"
+     .
+     5)
+    ("missing `]' to close `[' on line 61, found instead `)'; indentation suggests a missing `]' before line 62"
+     .
+     5)
+    ("duplicate argument identifier" . 4)
+    ("wildcard not allowed as an expression" . 3)
+    ("bad syntax" . 3)
+    ("illegal use of `.'" . 2)
+    ("duplicate identifier" . 1)
+    ("expected even number of items for dictionary" . 1)
+    ("undefined;" . 1)
+    ("not allowed in an expression context" . 1)
+    ("contract violation" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("no expression after a sequence of internal definitions" . 1)))
+  (truncate
+   (passed . 43)
+   (failed
+    (total . 37)
+    ("unbound identifier in module" . 14)
+    ("syntax error in pattern" . 5)
+    ("bad syntax" . 5)
+    ("not a require sub-form" . 5)
+    ("provided identifier not defined or imported for phase 0" . 3)
+    ("wildcard not allowed as an expression" . 2)
+    ("not allowed as an expression" . 1)
+    ("not allowed in an expression context" . 1)
+    ("bad syntax (clause is not a test-value pair)" . 1))))

@@ -1,0 +1,21 @@
+'((remove
+   (passed . 16)
+   (failed
+    (total . 69)
+    ("unbound identifier in module" . 38)
+    ("unexpected `)'" . 10)
+    ("expected a `)' to close `('" . 5)
+    ("not allowed as an expression" . 5)
+    ("duplicate argument identifier" . 3)
+    ("name must be an identifier" . 3)
+    ("duplicate binding name" . 2)
+    ("bad syntax (missing body)" . 1)
+    ("not a sequence of identifiers" . 1)
+    ("bad syntax" . 1)))
+  (truncate
+   (passed . 13)
+   (failed
+    (total . 22)
+    ("unbound identifier in module" . 15)
+    ("provided identifier not defined or imported for phase 0" . 4)
+    ("bad syntax" . 3))))

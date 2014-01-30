@@ -1,0 +1,16 @@
+'((remove
+   (passed . 3)
+   (failed
+    (total . 7)
+    ("unbound identifier in module" . 3)
+    ("duplicate definition for identifier" . 3)
+    ("illegal use of syntax" . 1)))
+  (truncate
+   (passed . 9)
+   (failed
+    (total . 15)
+    ("unbound identifier in module" . 8)
+    ("not a procedure;" . 4)
+    ("arity mismatch;" . 1)
+    ("duplicate binding name" . 1)
+    ("contract violation" . 1))))

@@ -1,0 +1,38 @@
+'((remove
+   (passed . 92)
+   (failed
+    (total . 58)
+    ("unbound identifier in module" . 25)
+    ("not allowed in an expression context" . 9)
+    ("bad syntax" . 5)
+    ("not a provide sub-form" . 4)
+    ("collection not found" . 3)
+    ("duplicate argument identifier" . 3)
+    ("illegal use of `.'" . 2)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     2)
+    ("identifier `pi' not included in nested require spec" . 2)
+    ("bad syntax for provide sub-form" . 1)
+    ("illegal use of syntax" . 1)
+    ("duplicate definition for identifier" . 1)))
+  (truncate
+   (passed . 78)
+   (failed
+    (total . 72)
+    ("unbound identifier in module" . 41)
+    ("duplicate definition for identifier" . 8)
+    ("bad syntax" . 7)
+    ("not allowed in an expression context" . 5)
+    ("identifier is already imported" . 3)
+    ("bad syntax (not an identifier for procedure name, and not a nested procedure form)"
+     .
+     2)
+    ("undefined;" . 1)
+    ("not a procedure;" . 1)
+    ("illegal use of syntax" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("illegal use of `.'" . 1)
+    ("no expression after a sequence of internal definitions" . 1))))

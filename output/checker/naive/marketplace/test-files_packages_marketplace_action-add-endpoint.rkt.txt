@@ -1,0 +1,23 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 19)
+    ("unbound identifier in module" . 6)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("bad syntax" . 3)
+    ("not allowed in an expression context" . 2)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("type name used out of context" . 1)
+    ("must be used in a definition context" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 23)
+    ("unbound identifier in module" . 12)
+    ("must be used in a definition context" . 5)
+    ("type name used out of context" . 2)
+    ("duplicate clause binding name" . 2)
+    ("bad syntax" . 2))))

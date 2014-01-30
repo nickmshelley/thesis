@@ -1,0 +1,59 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 87)
+    ("unbound identifier in module" . 50)
+    ("bad syntax" . 9)
+    ("duplicate argument identifier" . 6)
+    ("'" . 5)
+    ("type name used out of context" . 3)
+    ("must be used in a definition context" . 3)
+    ("expected 1 and got 2" . 2)
+    ("expected 2 and got 1" . 1)
+    ("duplicate type variable" . 1)
+    ("expected more terms starting with any term" . 1)
+    ("Declaration for `K' provided, but `K' has no definition" . 1)
+    ("Declaration for `V' provided, but `V' has no definition" . 1)
+    ("Declaration for `tree' provided, but `tree' has no definition" . 1)
+    ("Structure type constructor Trie applied to non-regular arguments (K (Trie K V))"
+     .
+     1)
+    ("bad syntax;" . 1)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 104)
+    ("unbound identifier in module" . 55)
+    ("bad syntax" . 7)
+    ("must be used in a definition context" . 5)
+    ("'" . 4)
+    ("type name used out of context" . 4)
+    ("syntax error in pattern" . 4)
+    ("Declaration for `V' provided, but `V' has no definition" . 2)
+    ("Declaration for `K' provided, but `K' has no definition" . 2)
+    ("duplicate definition for identifier" . 2)
+    ("not allowed in an expression context" . 2)
+    ("missing an \"else\" expression" . 1)
+    ("expected identifier" . 1)
+    ("unexpected term" . 1)
+    ("duplicate argument identifier" . 1)
+    ("expected a clause with a pattern and a result" . 1)
+    ("Declaration for `fst' provided, but `fst' has no definition" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("duplicate type variable" . 1)
+    ("collection not found" . 1)
+    ("bad syntax (missing binding pairs or body)" . 1)
+    ("Structure type constructor Trie applied to non-regular arguments (K K)"
+     .
+     1)
+    ("Structure type constructor Trie applied to non-regular arguments (K Trie)"
+     .
+     1)
+    ("Structure type constructor Trie applied to non-regular arguments (K HashTable)"
+     .
+     1)
+    ("expected 1 and got 2" . 1)
+    ("not a definition sequence" . 1)
+    ("duplicate identifier" . 1)
+    ("bad syntax;" . 1))))

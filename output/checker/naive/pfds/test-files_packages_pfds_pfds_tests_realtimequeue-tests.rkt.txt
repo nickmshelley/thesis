@@ -1,0 +1,17 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 17)
+    ("unbound identifier in module" . 6)
+    ("found a test that is not at the top level" . 6)
+    ("type name used out of context" . 2)
+    ("(empty A)" . 2)
+    ("not an identifier, identifier with default, or keyword" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 17)
+    ("found a test that is not at the top level" . 9)
+    ("unbound identifier in module" . 6)
+    ("bad syntax" . 1)
+    ("not a require sub-form" . 1))))

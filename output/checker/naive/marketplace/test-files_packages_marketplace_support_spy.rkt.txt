@@ -1,0 +1,30 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 30)
+    ("unbound identifier in module" . 8)
+    ("unexpected `)'" . 5)
+    ("too many forms in body of All type" . 5)
+    ("Declaration for `generic-spy' provided, but `generic-spy' has no definition"
+     .
+     4)
+    ("Illegal clause in endpoint definition" . 4)
+    ("Illegal use of on-absence outside endpoint definition context" . 2)
+    ("empty form not allowed" . 1)
+    ("type name used out of context" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 22)
+    ("Illegal clause in endpoint definition" . 5)
+    ("unbound identifier in module" . 4)
+    ("bad syntax" . 4)
+    ("Illegal use of on-presence outside endpoint definition context" . 2)
+    ("Illegal use of match-reason outside endpoint definition context" . 2)
+    ("Illegal use of match-interest-type outside endpoint definition context"
+     .
+     1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("type name used out of context" . 1)
+    ("Illegal use of on-message outside endpoint definition context" . 1)
+    ("Illegal use of on-absence outside endpoint definition context" . 1))))

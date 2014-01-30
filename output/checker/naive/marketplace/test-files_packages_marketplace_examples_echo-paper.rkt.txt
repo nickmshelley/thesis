@@ -1,0 +1,25 @@
+'((remove
+   (passed . 2)
+   (failed
+    (total . 13)
+    ("syntax error in pattern" . 5)
+    ("unbound identifier in module" . 4)
+    ("duplicate argument identifier" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("Illegal use of on-absence outside endpoint definition context" . 1)
+    ("(subscriber topic clause ...)" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 45)
+    ("unbound identifier in module" . 12)
+    ("type name used out of context" . 8)
+    ("expected `)' to close preceding `(', found instead `}'" . 6)
+    ("must be used in a definition context" . 4)
+    ("bad syntax" . 4)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("missing `}' to close preceding `{', found instead `)'" . 3)
+    ("Component of case-lambda type was not a function clause" . 1)
+    ("expected `]' to close preceding `[', found instead `}'" . 1)
+    ("missing `}' to close preceding `{', found instead `]'" . 1)
+    ("Declaration for `quit' provided, but `quit' has no definition" . 1))))

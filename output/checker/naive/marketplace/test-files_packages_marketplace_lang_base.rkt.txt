@@ -1,0 +1,43 @@
+'((remove
+   (passed . 46)
+   (failed
+    (total . 49)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 15)
+    ("missing `]' to close `[' on line 47, found instead `)'" . 5)
+    ("missing procedure expression;" . 4)
+    ("no pattern variables before ellipsis in template" . 4)
+    ("not allowed in an expression context" . 4)
+    ("not in a definition context" . 3)
+    ("collection not found" . 2)
+    ("bad module path" . 2)
+    ("not in a module-definition context" . 2)
+    ("bad syntax" . 2)
+    ("pattern variable cannot be used outside of a template" . 2)
+    ("duplicate argument identifier" . 2)
+    ("bad syntax;" . 1)
+    ("bad syntax (missing binding pairs or body)" . 1)))
+  (truncate
+   (passed . 47)
+   (failed
+    (total . 47)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 10)
+    ("no pattern variables before ellipsis in template" . 10)
+    ("missing `]' to close `[' on line 23, found instead `)'; indentation suggests a missing `)' before line 47"
+     .
+     5)
+    ("unbound identifier in module" . 4)
+    ("bad syntax" . 3)
+    ("not a provide sub-form" . 3)
+    ("not a require sub-form" . 3)
+    ("unbound identifier in module (in the transformer environment, which does not include the macro definition that is visible to run-time expressions)"
+     .
+     2)
+    ("misplaced ellipsis in template" . 1)
+    ("missing ellipsis with pattern variable in template" . 1)
+    ("illegal use of syntax" . 1)
+    ("bad syntax for provide sub-form" . 1)
+    ("not allowed in an expression context" . 1)
+    ("pattern variable cannot be used outside of a template" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1))))

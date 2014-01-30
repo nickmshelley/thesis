@@ -1,0 +1,40 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 40)
+    ("(State)" . 10)
+    ("unbound identifier in module" . 8)
+    ("not allowed in an expression context" . 6)
+    ("accessor name not associated with the given structure type" . 5)
+    ("must be used in a definition context" . 2)
+    ("not allowed as an expression" . 2)
+    ("type name used out of context" . 1)
+    ("Declaration for `State' provided, but `State' has no definition" . 1)
+    ("Declaration for `state' provided, but `state' has no definition" . 1)
+    ("Declaration for `p' provided, but `p' has no definition" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     1)
+    ("bad syntax" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 34)
+    ("unbound identifier in module" . 9)
+    ("(State)" . 5)
+    ("Declaration for `do-delete-endpoint' provided, but `do-delete-endpoint' has no definition"
+     .
+     3)
+    ("duplicate argument identifier" . 3)
+    ("type name used out of context" . 3)
+    ("identifier is already imported" . 2)
+    ("bad syntax" . 2)
+    ("bad syntax (clause is not a test-value pair)" . 2)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     1)
+    ("not allowed in an expression context" . 1)
+    ("expected more terms starting with expression" . 1)
+    ("expected `)' to close preceding `(', found instead `}'" . 1)
+    ("must be used in a definition context" . 1))))

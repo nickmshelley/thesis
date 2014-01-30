@@ -1,0 +1,107 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 220)
+    ("unbound identifier in module" . 74)
+    ("'" . 16)
+    ("bad syntax" . 16)
+    ("type name used out of context" . 12)
+    ("(A)" . 10)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 8)
+    ("duplicate type variable or index" . 8)
+    ("bad syntax (multiple types after identifier)" . 8)
+    ("duplicate argument identifier" . 5)
+    ("Declaration for `sorted-list' provided, but `sorted-list' has no definition"
+     .
+     5)
+    ("Declaration for `comp' provided, but `comp' has no definition" . 5)
+    ("must be used in a definition context" . 5)
+    ("expected identifier" . 5)
+    ("Unbound type name A" . 4)
+    ("not allowed as an expression" . 3)
+    ("duplicate type variable" . 3)
+    ("illegal use of syntax" . 3)
+    ("Type variable B must be used with ..." . 2)
+    ("Declaration for `A' provided, but `A' has no definition" . 2)
+    ("bad syntax;" . 2)
+    ("Polymorphic function `merge-help' could not be applied to arguments" . 2)
+    ("duplicate definition for identifier" . 1)
+    ("bad syntax (missing binding pairs or body)" . 1)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Heap) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Polymorphic function `IntHeap-elem' could not be applied to arguments"
+     .
+     1)
+    ("Unbound type name struct" . 1)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 1)
+    ("illegal use of `.'" . 1)
+    ("duplicate identifier" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("ellipses not allowed as an expression" . 1)
+    ("not allowed in an expression context" . 1)
+    ("missing an \"else\" expression" . 1)
+    ("bad syntax (clause is not a test-value pair)" . 1)
+    ("Declaration for `function' provided, but `function' has no definition"
+     .
+     1)
+    ("Declaration for `B' provided, but `B' has no definition" . 1)
+    ("Unbound type name define-type" . 1)
+    ("Unbound type name" . 1)
+    ("Unbound type name heap" . 1)
+    ("expected 1 and got 2" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 208)
+    ("unbound identifier in module" . 62)
+    ("Type variable B must be used with ..." . 24)
+    ("bad syntax" . 17)
+    ("type name used out of context" . 17)
+    ("expected identifier" . 10)
+    ("must be used in a definition context" . 8)
+    ("bad syntax (multiple types after identifier)" . 8)
+    ("not allowed as an expression" . 6)
+    ("(A)" . 5)
+    ("Declaration for `heap-ormap' provided, but `heap-ormap' has no definition"
+     .
+     4)
+    ("duplicate type variable declaration" . 4)
+    ("bad syntax (missing binding pairs or body)" . 4)
+    ("duplicate type variable" . 3)
+    ("ellipses not allowed as an expression" . 2)
+    ("Declaration for `comp' provided, but `comp' has no definition" . 2)
+    ("duplicate identifier" . 2)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 2)
+    ("duplicate type variable or index" . 2)
+    ("bad syntax (clause is not a test-value pair)" . 2)
+    ("not allowed in an expression context" . 2)
+    ("type mismatch" . 2)
+    ("duplicate argument identifier" . 2)
+    ("Structure type constructor IntHeap applied to non-regular arguments (IntHeap)"
+     .
+     1)
+    ("Structure type constructor IntHeap applied to non-regular arguments (Heap)"
+     .
+     1)
+    ("bad syntax;" . 1)
+    ("bad syntax (not an identifier and expression for a binding)" . 1)
+    ("missing an \"else\" expression" . 1)
+    ("Declaration for `heaps' provided, but `heaps' has no definition" . 1)
+    ("Declaration for `given' provided, but `given' has no definition" . 1)
+    ("Declaration for `two' provided, but `two' has no definition" . 1)
+    ("Declaration for `Merges' provided, but `Merges' has no definition" . 1)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Heap) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("Component of case-lambda type was not a function clause" . 1)
+    ("Unbound type name U" . 1)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 1)
+    ("collection not found" . 1))))

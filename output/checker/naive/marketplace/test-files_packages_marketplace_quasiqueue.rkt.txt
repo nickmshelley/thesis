@@ -1,0 +1,64 @@
+'((remove
+   (passed . 11)
+   (failed
+    (total . 73)
+    ("unbound identifier in module" . 9)
+    ("type mismatch" . 8)
+    ("bad syntax" . 5)
+    ("Unbound type name define" . 5)
+    ("Polymorphic function `cons' could not be applied to arguments" . 5)
+    ("too many forms in body of All type" . 5)
+    ("Declaration for `quasiqueue-empty?' provided, but `quasiqueue-empty?' has no definition"
+     .
+     5)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("must be used in a definition context" . 3)
+    ("Declaration for `empty-quasiqueue' provided, but `empty-quasiqueue' has no definition"
+     .
+     3)
+    ("Polymorphic function `append' could not be applied to arguments" . 3)
+    ("duplicate definition for identifier" . 2)
+    ("Unbound type name quasiqueue->cons-tree" . 2)
+    ("type name used out of context" . 1)
+    ("Cannot apply expression of type (Pairof X (Listof X)), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U False Void Null X (Pairof (Rec g316 (U False Void Null X (Pairof g316 g316))) (Rec g322 (U False Void Null X (Pairof g322 g322))))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `car' could not be applied to arguments" . 1)
+    ("Wrong number of arguments, expected 2 and got 1" . 1)
+    ("(X)" . 1)
+    ("Unbound type name quasiqueue" . 1)
+    ("Unbound type name *" . 1)
+    ("missing `}' to close `{' on line 48, found instead `)'; indentation suggests a missing `}' before line 49"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Pairof a (Listof a))), since it is not a function type"
+     .
+     1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("Polymorphic function `quasiqueue->cons-tree' could not be applied to arguments"
+     .
+     1)
+    ("bad syntax (missing expression after identifier)" . 1)
+    ("Unbound type name quasiqueue->list" . 1)))
+  (truncate
+   (passed . 52)
+   (failed
+    (total . 68)
+    ("defaults)" . 15)
+    ("unbound identifier in module" . 9)
+    ("duplicate attribute" . 8)
+    ("not defined as syntax class" . 7)
+    ("syntax error in pattern" . 6)
+    ("duplicate identifier" . 5)
+    ("not a provide sub-form" . 5)
+    ("undefined;" . 4)
+    ("missing ellipsis with pattern variable in template" . 2)
+    ("too many ellipses in template" . 2)
+    ("not allowed in an expression context" . 1)
+    ("terms left over after keyword options" . 1)
+    ("misplaced ellipsis in template" . 1)
+    ("head pattern not allowed here" . 1)
+    ("bad syntax" . 1))))

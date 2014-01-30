@@ -1,0 +1,30 @@
+'((remove
+   (passed . 5)
+   (failed
+    (total . 5)
+    ("unbound identifier in module" . 3)
+    ("bad syntax for provide sub-form" . 1)
+    ("bad syntax" . 1)))
+  (truncate
+   (passed . 256)
+   (failed
+    (total . 144)
+    ("unbound identifier in module" . 91)
+    ("bad syntax" . 16)
+    ("not allowed as an expression" . 8)
+    ("not in a definition context" . 5)
+    ("not allowed in an expression context" . 4)
+    ("duplicate argument name" . 3)
+    ("provided identifier not defined or imported for phase 0" . 3)
+    ("bad syntax (not an identifier and expression for a binding)" . 2)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     2)
+    ("duplicate identifier" . 2)
+    ("duplicate argument identifier" . 2)
+    ("bad syntax (missing body)" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("bad syntax (clause is not a test-value pair)" . 1)
+    ("bad syntax (missing binding pairs or body)" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("bad argument sequence" . 1))))

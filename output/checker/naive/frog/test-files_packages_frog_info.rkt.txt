@@ -1,0 +1,11 @@
+'((remove
+   (passed . 1)
+   (failed
+    (total . 9)
+    ("expected a `module' declaration" . 5)
+    ("duplicate definition" . 2)
+    ("unbound identifier in module" . 1)
+    ("not a well-formed definition" . 1)))
+  (truncate
+   (passed . 6)
+   (failed (total . 4) ("not a well-formed definition" . 4))))

@@ -1,0 +1,27 @@
+'((remove
+   (passed . 37)
+   (failed
+    (total . 43)
+    ("unbound identifier in module" . 29)
+    ("missing `)' to close preceding `(', found instead `]'" . 5)
+    ("not allowed as an expression" . 2)
+    ("use of 'any' outside the range of an arrow contract" . 2)
+    ("illegal use of syntax" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("duplicate argument identifier" . 1)
+    ("duplicate binding name" . 1)))
+  (truncate
+   (passed . 29)
+   (failed
+    (total . 56)
+    ("unbound identifier in module" . 30)
+    ("bad syntax" . 13)
+    ("wildcard not allowed as an expression" . 3)
+    ("duplicate argument name" . 2)
+    ("arity mismatch;" . 2)
+    ("use of 'any' outside the range of an arrow contract" . 2)
+    ("duplicate argument identifier" . 1)
+    ("illegal use of `.'" . 1)
+    ("not used in definition context" . 1)
+    ("unexpected `)'" . 1))))

@@ -1,0 +1,20 @@
+'((remove
+   (passed . 17)
+   (failed
+    (total . 38)
+    ("unbound identifier in module" . 19)
+    ("not a provide sub-form" . 5)
+    ("not allowed as an expression" . 5)
+    ("collection not found" . 4)
+    ("duplicate binding name" . 2)
+    ("misuse of unit import keyword" . 1)
+    ("bad syntax" . 1)
+    ("allowed only in a module body" . 1)))
+  (truncate
+   (passed . 29)
+   (failed
+    (total . 26)
+    ("unbound identifier in module" . 21)
+    ("bad syntax" . 3)
+    ("duplicate argument identifier" . 1)
+    ("expected name and value binding" . 1))))

@@ -1,0 +1,49 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 129)
+    ("unbound identifier in module" . 73)
+    ("duplicate argument identifier" . 8)
+    ("'" . 5)
+    ("(State)" . 5)
+    ("arrow not allowed as an expression" . 5)
+    ("Declaration for `notify-route-change-vm' provided, but `notify-route-change-vm' has no definition"
+     .
+     5)
+    ("variable used twice in pattern" . 4)
+    ("not allowed in an expression context" . 3)
+    ("type name used out of context" . 2)
+    ("bad module path" . 2)
+    ("(send-to-user p (e) failure-result enclosed-expr)" . 2)
+    ("expected identifier" . 2)
+    ("missing `}' to close `{' on line 35, found instead `)'; indentation suggests a missing `}' before line 44"
+     .
+     1)
+    ("must be used in a definition context" . 1)
+    (", or @" . 1)
+    ("Declaration for `e' provided, but `e' has no definition" . 1)
+    ("Declaration for `State' provided, but `State' has no definition" . 1)
+    ("Declaration for `f' provided, but `f' has no definition" . 1)
+    ("collection not found" . 1)
+    ("typed/racket/base" . 1)
+    ("cannot open module file" . 1)
+    ("bad syntax;" . 1)
+    ("not allowed as an expression" . 1)
+    ("bad syntax" . 1)
+    ("provided identifier not defined or imported for phase 0" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 34)
+    ("unbound identifier in module" . 10)
+    ("identifier is not bound to a structure type" . 5)
+    ("(State)" . 5)
+    ("too many forms in body of All type" . 5)
+    ("bad syntax" . 4)
+    ("collection not found" . 1)
+    ("typed/racket/base" . 1)
+    ("cannot open module file" . 1)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     1)
+    ("not allowed in an expression context" . 1))))
