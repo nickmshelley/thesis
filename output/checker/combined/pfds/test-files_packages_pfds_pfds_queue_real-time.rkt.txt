@@ -1,0 +1,67 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 147)
+    ("unbound identifier in module" . 55)
+    ("bad syntax (multiple types after identifier)" . 16)
+    ("type name used out of context" . 14)
+    ("bad syntax" . 9)
+    ("Type variable B must be used with ..." . 8)
+    ("expected identifier" . 6)
+    ("expected a `module' declaration" . 5)
+    ("duplicate type variable declaration" . 5)
+    ("use of a class keyword is not in a class" . 4)
+    ("duplicate argument identifier" . 4)
+    ("Declaration for `build-queue' provided, but `build-queue' has no definition"
+     .
+     4)
+    ("Declaration for `head' provided, but `head' has no definition" . 3)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 3)
+    ("no expression after a sequence of internal definitions" . 2)
+    ("ellipses not allowed as an expression" . 2)
+    ("duplicate definition for identifier" . 1)
+    ("must be used in a definition context" . 1)
+    ("(stream-cons x stream)" . 1)
+    ("duplicate type variable or index" . 1)
+    ("duplicate identifier" . 1)
+    ("duplicate type variable" . 1)
+    ("illegal use of `.'" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 247)
+    ("unbound identifier in module" . 67)
+    ("must be used in a definition context" . 19)
+    ("Type variable B must be used with ..." . 19)
+    ("type name used out of context" . 18)
+    ("(A)" . 18)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 16)
+    ("bad syntax" . 14)
+    ("bad syntax (multiple types after identifier)" . 8)
+    ("identifier already provided (as a different binding)" . 6)
+    ("bad syntax (multiple expressions after identifier)" . 5)
+    ("collection not found" . 5)
+    ("duplicate definition for identifier" . 5)
+    ("too many forms in body of All type" . 5)
+    ("'" . 5)
+    ("Declaration for `list-seventh' provided, but `list-seventh' has no definition"
+     .
+     4)
+    ("Declaration for `vremove' provided, but `vremove' has no definition" . 4)
+    ("Declaration for `get' provided, but `get' has no definition" . 4)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     4)
+    ("expected identifier" . 4)
+    ("no expression after a sequence of internal definitions" . 3)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (List) not bound with ... as a bound on a ..." . 2)
+    ("duplicate type variable or index" . 2)
+    ("bad module path" . 1)
+    ("Declaration for `vreverse-helper' provided, but `vreverse-helper' has no definition"
+     .
+     1)
+    ("duplicate identifier" . 1)
+    ("duplicate argument identifier" . 1))))

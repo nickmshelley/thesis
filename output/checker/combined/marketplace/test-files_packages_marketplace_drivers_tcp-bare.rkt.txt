@@ -1,0 +1,35 @@
+'((remove
+   (passed . 119)
+   (failed
+    (total . 121)
+    ("unbound identifier in module" . 58)
+    ("Illegal clause in endpoint definition" . 20)
+    ("syntax error in pattern" . 17)
+    ("duplicate binding name" . 4)
+    ("not a provide sub-form" . 4)
+    ("duplicate argument identifier" . 2)
+    ("Illegal use of match-interest-type outside endpoint definition context"
+     .
+     2)
+    ("Illegal use of on-message outside endpoint definition context" . 2)
+    ("Illegal use of match-state outside endpoint definition context" . 2)
+    ("duplicate definition for identifier" . 2)
+    ("arity mismatch;" . 2)
+    ("pid" . 1)
+    ("undefined;" . 1)
+    ("Illegal use of on-absence outside endpoint definition context" . 1)
+    ("multiple bindings of `remote-hostname' in the same clause" . 1)
+    ("multiple bindings of `local-port' in the same clause" . 1)
+    ("bad syntax" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 39)
+    ("unbound identifier in module" . 25)
+    ("not allowed in an expression context" . 6)
+    ("provided identifier not defined or imported for phase 0" . 5)
+    ("bad syntax (multiple expressions after identifier)" . 1)
+    ("duplicate argument identifier" . 1)
+    ("Polymorphic function `endpoint-id' could not be applied to arguments"
+     .
+     1))))

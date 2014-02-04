@@ -1,0 +1,19 @@
+'((remove
+   (passed . 10)
+   (failed
+    (total . 10)
+    ("variable used twice in pattern" . 3)
+    ("too many ellipses in template" . 2)
+    ("identifier `Logger' not included in nested require spec" . 1)
+    ("identifier `log-untyped.rkt' not included in nested require spec" . 1)
+    ("identifier `require/typed' not included in nested require spec" . 1)
+    ("identifier `define-syntax' not included in nested require spec" . 1)
+    ("bad syntax" . 1)))
+  (truncate
+   (passed . 9)
+   (failed
+    (total . 11)
+    ("missing ellipsis with pattern variable in template" . 5)
+    ("variable used twice in pattern" . 3)
+    ("too many ellipses in template" . 2)
+    ("no pattern variables before ellipsis in template" . 1))))

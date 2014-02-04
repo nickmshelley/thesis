@@ -1,0 +1,31 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 22)
+    ("expected a `module' declaration" . 5)
+    ("expected identifier" . 5)
+    ("collection not found" . 4)
+    ("unbound identifier in module" . 3)
+    ("bad syntax" . 2)
+    ("type name used out of context" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 28)
+    ("unbound identifier in module" . 8)
+    ("expected a `)' to close `('" . 5)
+    ("expected a `module' declaration" . 5)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     4)
+    ("(empty A)" . 2)
+    ("collection not found" . 1)
+    ("type name used out of context" . 1)
+    ("found a test that is not at the top level" . 1)
+    ("not a require sub-form" . 1))))

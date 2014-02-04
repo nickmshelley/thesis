@@ -1,0 +1,60 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 45)
+    ("type mismatch" . 10)
+    ("unbound identifier in module" . 8)
+    ("Polymorphic function `tail' could not be applied to arguments" . 6)
+    ("collection not found" . 5)
+    ("bad syntax" . 4)
+    ("expected single value, got multiple (or zero) values" . 4)
+    ("Polymorphic function `build-queue' could not be applied to arguments"
+     .
+     2)
+    ("must be used in a definition context" . 1)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     1)
+    ("#<syntax Queue> ((Rec g382 (U Null (Boxof (U (Boxof g382) (-> (Boxof g382)))) (Pairof Positive-Integer g382))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("No function domains matched in function application" . 1)
+    ("bad syntax (not a sequence of identifier--expression bindings)" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 41)
+    ("unbound identifier in module" . 15)
+    ("type mismatch" . 7)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     4)
+    ("Polymorphic function `build-queue' could not be applied to arguments"
+     .
+     3)
+    ("bad syntax" . 2)
+    ("bad syntax;" . 1)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     1)
+    ("#<syntax Queue> ((Rec g382 (U Null (Boxof (U (Boxof g382) (-> (Boxof g382)))) (Pairof Positive-Integer g382))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `tail' could not be applied to arguments" . 1)
+    ("No function domains matched in function application" . 1)
+    ("#<syntax Queue> ((Rec g901 (U Null (Boxof (U (Boxof g901) (-> (Boxof g901)))) (Pairof Positive-Integer g901))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function could not be applied to arguments" . 1)
+    ("#<syntax Queue> ((Rec g830 (U Null (Boxof (U (Boxof g830) (-> (Boxof g830)))) (Pairof Positive-Integer g830))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Nonnegative-Integer, since it is not a function type"
+     .
+     1)
+    ("#<syntax Queue> ((Rec g601 (U Null (Boxof (U (Boxof g601) (-> (Boxof g601)))) (Pairof Positive-Integer g601))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1))))

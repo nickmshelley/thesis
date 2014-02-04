@@ -1,0 +1,24 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 77)
+    ("unbound identifier in module" . 25)
+    ("expected identifier" . 25)
+    ("type name used out of context" . 9)
+    ("must be used in a definition context" . 5)
+    ("bad syntax" . 4)
+    ("expected annotated-formals" . 3)
+    ("no expression after a sequence of internal definitions" . 3)
+    ("duplicate argument name" . 3)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 88)
+    ("unbound identifier in module" . 53)
+    ("expected identifier" . 12)
+    ("type name used out of context" . 8)
+    ("duplicate argument name" . 5)
+    ("must be used in a definition context" . 4)
+    ("bad syntax" . 4)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("expected annotated-formals" . 1))))

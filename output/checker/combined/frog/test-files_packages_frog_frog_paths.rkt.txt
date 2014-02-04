@@ -1,0 +1,31 @@
+'((remove
+   (passed . 47)
+   (failed
+    (total . 53)
+    ("unbound identifier in module" . 34)
+    ("syntax error in pattern" . 5)
+    ("duplicate argument identifier" . 4)
+    ("expected even number of items for dictionary" . 3)
+    ("illegal use of `.'" . 2)
+    ("duplicate definition for identifier" . 2)
+    ("wildcard not allowed as an expression" . 1)
+    ("bad syntax" . 1)
+    ("contract violation" . 1)))
+  (truncate
+   (passed . 47)
+   (failed
+    (total . 83)
+    ("unbound identifier in module" . 55)
+    ("unexpected `)'" . 5)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("missing `]' to close `[' on line 68, found instead `)'; indentation suggests a missing `]' before line 69"
+     .
+     5)
+    ("incorrect use of ... in pattern" . 2)
+    ("ellipses not allowed as an expression" . 2)
+    ("collection not found" . 2)
+    ("cannot open module file" . 2)
+    ("bad module path" . 2)
+    ("wildcard not allowed as an expression" . 1)
+    ("bad syntax" . 1)
+    ("illegal use of `.'" . 1))))

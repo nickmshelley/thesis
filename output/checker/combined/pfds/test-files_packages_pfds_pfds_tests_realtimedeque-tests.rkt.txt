@@ -1,0 +1,23 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 22)
+    ("type name used out of context" . 10)
+    ("unbound identifier in module" . 9)
+    ("(empty A)" . 2)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 21)
+    ("expected a `module' declaration" . 5)
+    ("unbound identifier in module" . 4)
+    ("type name used out of context" . 4)
+    ("(empty A)" . 2)
+    ("bad module path" . 2)
+    ("bad syntax" . 1)
+    ("collection not found" . 1)
+    ("cannot open module file" . 1)
+    ("found a test that is not at the top level" . 1))))

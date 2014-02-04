@@ -1,0 +1,90 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 241)
+    ("unbound identifier in module" . 83)
+    ("type name used out of context" . 25)
+    ("Type variable B must be used with ..." . 22)
+    ("bad syntax" . 18)
+    ("bad syntax (multiple types after identifier)" . 16)
+    ("duplicate argument identifier" . 13)
+    ("must be used in a definition context" . 12)
+    ("unexpected term" . 5)
+    ("expected a `module' declaration" . 5)
+    ("Declaration for `build-heap' provided, but `build-heap' has no definition"
+     .
+     4)
+    ("Declaration for `heap-ormap' provided, but `heap-ormap' has no definition"
+     .
+     4)
+    ("bad syntax (multiple expressions after identifier)" . 4)
+    ("Declaration for `delete-min/max' provided, but `delete-min/max' has no definition"
+     .
+     4)
+    ("Declaration for `ins-tree' provided, but `ins-tree' has no definition"
+     .
+     4)
+    ("no expression after a sequence of internal definitions" . 3)
+    ("duplicate definition for identifier" . 3)
+    ("ellipses not allowed as an expression" . 2)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 2)
+    ("identifier already provided (as a different binding)" . 2)
+    ("duplicate identifier" . 2)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Heap) not bound with ... as a bound on a ..." . 1)
+    ("Declaration for `rank' provided, but `rank' has no definition" . 1)
+    ("duplicate type variable or index" . 1)
+    ("bad syntax;" . 1)
+    ("Declaration for `ins-all' provided, but `ins-all' has no definition"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 274)
+    ("unbound identifier in module" . 130)
+    ("type name used out of context" . 21)
+    ("bad syntax (multiple types after identifier)" . 16)
+    ("must be used in a definition context" . 14)
+    ("bad syntax" . 12)
+    ("duplicate argument identifier" . 10)
+    ("expected identifier" . 9)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("duplicate definition for identifier" . 4)
+    ("Type variable B must be used with ..." . 4)
+    ("duplicate field identifier" . 4)
+    ("Declaration for `ins-tree' provided, but `ins-tree' has no definition"
+     .
+     4)
+    ("Declaration for `heap-ormap' provided, but `heap-ormap' has no definition"
+     .
+     4)
+    ("Declaration for `heap-map' provided, but `heap-map' has no definition"
+     .
+     4)
+    ("(A)" . 4)
+    ("duplicate identifier" . 3)
+    ("Declaration for `rank' provided, but `rank' has no definition" . 3)
+    ("bad syntax;" . 2)
+    ("not allowed in an expression context" . 2)
+    ("duplicate type variable declaration" . 2)
+    ("bad syntax (multiple expressions after identifier)" . 2)
+    ("ellipses not allowed as an expression" . 2)
+    ("expected `)' to close preceding `(', found instead `}'" . 2)
+    ("Declaration for `ins-all' provided, but `ins-all' has no definition" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("use of a class keyword is not in a class" . 1)
+    ("expected optionally type-annotated binding" . 1)
+    ("bad syntax (missing binding pairs or body)" . 1)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (hep) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Heap-comparer) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("duplicate type variable or index" . 1)
+    ("missing `}' to close preceding `{', found instead `)'" . 1))))

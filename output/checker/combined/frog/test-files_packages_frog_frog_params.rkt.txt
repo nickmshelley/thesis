@@ -1,0 +1,19 @@
+'((remove
+   (passed . 4)
+   (failed
+    (total . 21)
+    ("unbound identifier in module" . 14)
+    ("duplicate definition for identifier" . 4)
+    ("not a provide sub-form" . 1)
+    ("illegal use of syntax" . 1)
+    ("not a procedure;" . 1)))
+  (truncate
+   (passed . 4)
+   (failed
+    (total . 21)
+    ("unbound identifier in module" . 8)
+    ("not a provide sub-form" . 5)
+    ("duplicate definition for identifier" . 4)
+    ("illegal use of syntax" . 2)
+    ("undefined;" . 1)
+    ("not allowed in an expression context" . 1))))

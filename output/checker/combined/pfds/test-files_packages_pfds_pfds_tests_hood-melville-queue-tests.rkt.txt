@@ -1,0 +1,16 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 12)
+    ("unbound identifier in module" . 5)
+    ("collection not found" . 4)
+    ("expected annotated-formals" . 1)
+    ("expects 2 arguments, but found none" . 1)
+    ("bad syntax" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 5)
+    ("unbound identifier in module" . 3)
+    ("bad syntax" . 1)
+    ("found a test that is not at the top level" . 1))))

@@ -1,0 +1,91 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 180)
+    ("unbound identifier in module" . 45)
+    ("Type variable B must be used with ..." . 30)
+    ("type name used out of context" . 14)
+    ("bad syntax" . 12)
+    ("expected identifier" . 11)
+    ("duplicate definition for identifier" . 8)
+    ("Component of case-lambda type was not a function clause" . 6)
+    ("(A)" . 5)
+    ("use of a class keyword is not in a class" . 5)
+    ("not a provide sub-form" . 5)
+    ("duplicate identifier" . 4)
+    ("duplicate argument identifier" . 4)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("duplicate type variable declaration" . 4)
+    ("'" . 4)
+    ("Declaration for `merge' provided, but `merge' has no definition" . 4)
+    ("duplicate field identifier" . 2)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("bad syntax;" . 1)
+    ("ellipses not allowed as an expression" . 1)
+    ("must be used in a definition context" . 1)
+    ("duplicate type variable" . 1)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("Structure type constructor Tree applied to non-regular arguments (IntHeap)"
+     .
+     1)
+    ("Structure type constructor Tree applied to non-regular arguments (Tree)"
+     .
+     1)
+    ("Structure type constructor Tree applied to non-regular arguments (Boolean)"
+     .
+     1)
+    ("unexpected term" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 270)
+    ("unbound identifier in module" . 91)
+    ("Type variable B must be used with ..." . 18)
+    ("type name used out of context" . 16)
+    ("(A)" . 16)
+    ("syntax error in pattern" . 14)
+    ("expected identifier" . 14)
+    ("bad syntax" . 13)
+    ("use of a class keyword is not in a class" . 10)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 7)
+    ("must be used in a definition context" . 6)
+    ("'" . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("bad syntax;" . 5)
+    ("expected a `module' declaration" . 5)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     4)
+    ("duplicate definition for identifier" . 4)
+    ("duplicate argument identifier" . 3)
+    ("no expression after a sequence of internal definitions" . 3)
+    ("ellipses not allowed as an expression" . 3)
+    ("Declaration for `phelp-lft' provided, but `phelp-lft' has no definition"
+     .
+     3)
+    ("struct does not refer to a structure definition" . 2)
+    ("bad syntax (missing binding pairs or body)" . 2)
+    ("Declaration for `phelp-rgt' provided, but `phelp-rgt' has no definition"
+     .
+     2)
+    ("bad syntax (multiple expressions after identifier)" . 2)
+    ("duplicate type variable or index" . 2)
+    ("collection not found" . 1)
+    ("empty does not refer to a structure definition" . 1)
+    ("is does not refer to a structure definition" . 1)
+    ("heap does not refer to a structure definition" . 1)
+    ("duplicate argument name" . 1)
+    ("expected an identifier for the structure type name" . 1)
+    ("func does not refer to a structure definition" . 1)
+    ("make-Heap does not refer to a structure definition" . 1)
+    ("b does not refer to a structure definition" . 1)
+    ("bad syntax (missing body)" . 1)
+    ("identifier already provided (as a different binding)" . 1)
+    ("bad syntax (not an identifier and expression for a binding)" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("not in a definition context" . 1)
+    ("expected a clause with a pattern and a result" . 1))))

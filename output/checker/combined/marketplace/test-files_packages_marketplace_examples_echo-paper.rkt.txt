@@ -1,0 +1,31 @@
+'((remove
+   (passed . 4)
+   (failed
+    (total . 10)
+    ("unbound identifier in module" . 4)
+    ("Illegal use of on-absence outside endpoint definition context" . 3)
+    ("Illegal clause in endpoint definition" . 1)
+    ("Illegal use of on-message outside endpoint definition context" . 1)
+    ("Illegal use of match-conversation outside endpoint definition context"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 53)
+    ("unbound identifier in module" . 17)
+    ("type name used out of context" . 8)
+    ("bad syntax" . 6)
+    ("(State)" . 4)
+    (", or @" . 3)
+    ("expected `)' to close preceding `(', found instead `}'" . 3)
+    ("no binding for identifier" . 2)
+    ("duplicate identifier" . 2)
+    ("unexpected `}'" . 1)
+    ("delete-endpoint" . 1)
+    ("missing `}' to close `{' on line 22, found instead `)'" . 1)
+    ("expected `)' to close `(' on line 37, found instead `}'" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("missing `}' to close preceding `{', found instead `)'" . 1)
+    ("bad syntax;" . 1)
+    ("expected identifier" . 1))))

@@ -1,0 +1,170 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 265)
+    ("unbound identifier in module" . 65)
+    ("must be used in a definition context" . 19)
+    ("bad syntax (multiple types after identifier)" . 16)
+    ("Type variable B must be used with ..." . 15)
+    ("duplicate type variable declaration" . 12)
+    ("bad syntax" . 9)
+    ("Unbound type name A" . 9)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 8)
+    ("type name used out of context" . 6)
+    ("use of a class keyword is not in a class" . 5)
+    ("duplicate type variable" . 5)
+    ("expected a `module' declaration" . 5)
+    ("bad syntax (multiple expressions after identifier)" . 4)
+    ("Declaration for `build-deque-front' provided, but `build-deque-front' has no definition"
+     .
+     4)
+    ("Declaration for `enqueue' provided, but `enqueue' has no definition" . 4)
+    ("Declaration for `head+tail' provided, but `head+tail' has no definition"
+     .
+     4)
+    ("Declaration for `deque->list' provided, but `deque->list' has no definition"
+     .
+     4)
+    ("duplicate field identifier" . 4)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 4)
+    ("Expected a polymorphic function with ..., but function/annotation had no ..."
+     .
+     4)
+    ("Polymorphic function `Deque-lenf' could not be applied to arguments" . 4)
+    ("Polymorphic function `force' could not be applied to arguments" . 4)
+    ("duplicate argument identifier" . 3)
+    ("duplicate argument name" . 3)
+    ("Component of case-lambda type was not a function clause" . 3)
+    ("Bad arguments to polymorphic function in apply" . 3)
+    ("Polymorphic function `inner' could not be applied to arguments" . 3)
+    ("Polymorphic function `head' could not be applied to arguments" . 3)
+    ("(empty A)" . 2)
+    ("duplicate definition for identifier" . 2)
+    ("type mismatch" . 2)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     2)
+    ("Cannot apply expression of type (U Null (Boxof (U (Boxof (Rec g652 (U Null (Boxof (U (Boxof g652) (-> (Boxof g652)))) (Pairof A g652)))) (-> (Boxof (Rec g658 (U Null (Boxof (U (Boxof g658) (-> (Boxof g658)))) (Pairof A g658))))))) (Pairof A (Rec g664 (U Null (Boxof (U (Boxof g664) (-> (Boxof g664)))) (Pairof A g664))))), since it is not a function type"
+     .
+     2)
+    ("bad syntax;" . 1)
+    ("duplicate type variable or index" . 1)
+    ("use of a class keyword is not in a class top-level" . 1)
+    ("bad syntax for provide sub-form" . 1)
+    ("identifier already provided (as a different binding)" . 1)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("Cannot apply expression of type (U (Boxof (U (Boxof (Rec g8074 (U Null (Boxof (U (Boxof g8074) (-> (Boxof g8074)))) (Pairof A g8074)))) (-> (Boxof (Rec g8080 (U Null (Boxof (U (Boxof g8080) (-> (Boxof g8080)))) (Pairof A g8080))))))) (Pairof A (Rec g8086 (U Null (Boxof (U (Boxof g8086) (-> (Boxof g8086)))) (Pairof A g8086))))), since it is not a function type"
+     .
+     1)
+    ("13 Deque> ((Rec g8068 (U Null (Boxof (U (Boxof g8068) (-> (Boxof g8068)))) (Pairof A g8068))) Integer (Rec g8074 (U Null (Boxof (U (Boxof g8074) (-> (Boxof g8074)))) (Pairof A g8074))) Integer)), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `Deque-rear' could not be applied to arguments" . 1)
+    ("Polymorphic function `pstake' could not be applied to arguments" . 1)
+    ("Expected a polymorphic function without ..., but given function/annotation had ..."
+     .
+     1)
+    ("Duplicate type annotation of (All (A) ((Deque A) -> (Deque A))) for last, previous was (All (A) ((Deque A) -> A))"
+     .
+     1)
+    ("(A)" . 1)
+    ("Unbound type name Deque-lenf" . 1)
+    ("Unbound type name que" . 1)
+    ("Unbound type name Deque-lenr" . 1)
+    ("((Nonnegative-Integer -> A) Nonnegative-Integer (Deque A))" . 1)
+    ("((Nonnegative-Integer -> A) A (Deque A))" . 1)
+    ("((Nonnegative-Integer -> A) Deque (Deque A))" . 1)
+    ("Unbound type name n" . 1)
+    ("Unbound type name" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 320)
+    ("unbound identifier in module" . 103)
+    ("type name used out of context" . 19)
+    ("Type variable B must be used with ..." . 19)
+    ("(A)" . 17)
+    ("bad syntax (multiple types after identifier)" . 12)
+    ("must be used in a definition context" . 11)
+    ("bad syntax" . 11)
+    ("expected identifier" . 10)
+    ("Component of case-lambda type was not a function clause" . 10)
+    ("expected a `module' declaration" . 5)
+    ("duplicate type variable declaration" . 5)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 5)
+    ("(empty A)" . 5)
+    ("Polymorphic function `force' could not be applied to arguments" . 5)
+    ("Polymorphic function `init' could not be applied to arguments" . 5)
+    ("Unbound type name A" . 5)
+    ("Declaration for `build-deque' provided, but `build-deque' has no definition"
+     .
+     4)
+    ("Polymorphic function `map' could not be applied to arguments" . 4)
+    ("type mismatch" . 4)
+    ("bad syntax (multiple expressions after identifier)" . 3)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 3)
+    ("duplicate type variable or index" . 3)
+    ("Unbound type name let" . 3)
+    ("duplicate type variable" . 2)
+    ("bad syntax;" . 2)
+    ("'" . 2)
+    ("use of a class keyword is not in a class" . 2)
+    ("Polymorphic function `Deque-lenf' could not be applied to arguments" . 2)
+    ("Polymorphic function `Deque-front' could not be applied to arguments"
+     .
+     2)
+    ("invalid pattern" . 1)
+    ("Used a type variable (let) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (empty) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (is) not bound with ... as a bound on a ..." . 1)
+    ("ellipses not allowed as an expression" . 1)
+    ("(empty? que)" . 1)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (func) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (foldr) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Deque) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Cannot apply expression of type (List (Deque B) ... B), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 1)
+    ("Polymorphic function `ormap' could not be applied to arguments" . 1)
+    ("13 Deque> ((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) Integer (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) Integer)), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `tail' could not be applied to arguments" . 1)
+    ("Polymorphic function `pscar' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (U (Boxof (U (Boxof (Rec g2338 (U Null (Boxof (U (Boxof g2338) (-> (Boxof g2338)))) (Pairof A g2338)))) (-> (Boxof (Rec g2344 (U Null (Boxof (U (Boxof g2344) (-> (Boxof g2344)))) (Pairof A g2344))))))) (Pairof A (Rec g2350 (U Null (Boxof (U (Boxof g2350) (-> (Boxof g2350)))) (Pairof A g2350))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U (Boxof (U (Boxof (Rec g8761 (U Null (Boxof (U (Boxof g8761) (-> (Boxof g8761)))) (Pairof A g8761)))) (-> (Boxof (Rec g8767 (U Null (Boxof (U (Boxof g8767) (-> (Boxof g8767)))) (Pairof A g8767))))))) (Pairof A (Rec g8773 (U Null (Boxof (U (Boxof g8773) (-> (Boxof g8773)))) (Pairof A g8773))))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `pscdr' could not be applied to arguments" . 1)
+    ("13 Deque> ((Rec g8755 (U Null (Boxof (U (Boxof g8755) (-> (Boxof g8755)))) (Pairof A g8755))) Integer (Rec g8761 (U Null (Boxof (U (Boxof g8761) (-> (Boxof g8761)))) (Pairof A g8761))) Integer)), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `Deque-rear' could not be applied to arguments" . 1)
+    ("Polymorphic function `map-single' could not be applied to arguments" . 1)
+    ("Unbound type name ..." . 1)
+    ("Unbound type name if" . 1)
+    ("Unbound type name rear" . 1)
+    ("Unbound type name lenr" . 1)
+    ("Unbound type name que" . 1)
+    ("Cannot apply expression of type (U (Boxof (U (Boxof (Rec g8213 (U Null (Boxof (U (Boxof g8213) (-> (Boxof g8213)))) (Pairof A g8213)))) (-> (Boxof (Rec g8219 (U Null (Boxof (U (Boxof g8219) (-> (Boxof g8219)))) (Pairof A g8219))))))) (Pairof A (Rec g8225 (U Null (Boxof (U (Boxof g8225) (-> (Boxof g8225)))) (Pairof A g8225))))), since it is not a function type"
+     .
+     1)
+    ("Wrong number of arguments, expected 1 and got 2" . 1)
+    ("13 Deque> ((Rec g8207 (U Null (Boxof (U (Boxof g8207) (-> (Boxof g8207)))) (Pairof A g8207))) Integer (Rec g8213 (U Null (Boxof (U (Boxof g8213) (-> (Boxof g8213)))) (Pairof A g8213))) Integer)), since it is not a function type"
+     .
+     1)
+    ("Unbound type name front" . 1)
+    ("Polymorphic function `head' could not be applied to arguments" . 1)
+    ("Polymorphic function `cons' could not be applied to arguments" . 1)
+    ("Unbound type name empty" . 1)
+    ("Unbound type name n" . 1))))

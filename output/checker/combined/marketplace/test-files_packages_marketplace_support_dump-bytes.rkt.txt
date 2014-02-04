@@ -1,0 +1,19 @@
+'((remove
+   (passed . 49)
+   (failed
+    (total . 26)
+    ("unbound identifier in module" . 21)
+    ("illegal use of `.'" . 1)
+    ("duplicate binding name" . 1)
+    ("bad syntax" . 1)
+    ("duplicate argument identifier" . 1)
+    ("bad syntax;" . 1)))
+  (truncate
+   (passed . 46)
+   (failed
+    (total . 29)
+    ("unbound identifier in module" . 22)
+    ("bad syntax (not an identifier)" . 4)
+    ("bad syntax;" . 1)
+    ("duplicate binding name" . 1)
+    ("not allowed in an expression context" . 1))))

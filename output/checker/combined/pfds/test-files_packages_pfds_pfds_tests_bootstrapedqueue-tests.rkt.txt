@@ -1,0 +1,16 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 17)
+    ("expected a `module' declaration" . 10)
+    ("unbound identifier in module" . 7)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 11)
+    ("unbound identifier in module" . 5)
+    ("bad module path" . 2)
+    ("collection not found" . 1)
+    ("cannot open module file" . 1)
+    ("not a require sub-form" . 1)
+    ("found a test that is not at the top level" . 1))))

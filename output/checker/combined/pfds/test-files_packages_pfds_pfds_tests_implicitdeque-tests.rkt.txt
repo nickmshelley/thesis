@@ -1,0 +1,15 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 3)
+    ("bad argument sequence" . 1)
+    ("bad syntax" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 9)
+    ("unbound identifier in module" . 6)
+    ("found a test that is not at the top level" . 3))))

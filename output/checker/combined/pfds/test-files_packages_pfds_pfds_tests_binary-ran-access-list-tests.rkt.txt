@@ -1,0 +1,20 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 14)
+    ("expected a `module' declaration" . 5)
+    ("collection not found" . 4)
+    ("unbound identifier in module" . 2)
+    ("bad module path" . 1)
+    ("found a test that is not at the top level" . 1)
+    ("not allowed in an expression context" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 12)
+    ("unbound identifier in module" . 6)
+    ("collection not found" . 2)
+    ("pfds/ralist/binary" . 1)
+    ("bad module path" . 1)
+    ("found a test that is not at the top level" . 1)
+    ("not allowed in an expression context" . 1))))

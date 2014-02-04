@@ -1,0 +1,23 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 20)
+    ("unbound identifier in module" . 8)
+    ("Declaration for `make-nested-vm' provided, but `make-nested-vm' has no definition"
+     .
+     4)
+    ("collection not found" . 4)
+    ("not a require sub-form" . 1)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found"
+     .
+     1)
+    ("(State)" . 1)
+    ("Unbound type name Any" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 23)
+    ("unbound identifier in module" . 16)
+    ("unexpected `)'" . 5)
+    ("empty form not allowed" . 1)
+    ("type name used out of context" . 1))))

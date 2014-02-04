@@ -1,0 +1,22 @@
+'((remove
+   (passed . 16)
+   (failed
+    (total . 9)
+    ("collection not found" . 4)
+    ("unbound identifier in module" . 2)
+    ("Illegal use of match-conversation outside endpoint definition context"
+     .
+     1)
+    ("wildcard not allowed as an expression" . 1)
+    ("pid" . 1)))
+  (truncate
+   (passed . 4)
+   (failed
+    (total . 21)
+    ("unbound identifier in module" . 8)
+    ("Illegal clause in endpoint definition" . 5)
+    ("syntax error in pattern" . 4)
+    ("duplicate argument identifier" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("(subscriber topic clause ...)" . 1)
+    ("(publisher topic clause ...)" . 1))))

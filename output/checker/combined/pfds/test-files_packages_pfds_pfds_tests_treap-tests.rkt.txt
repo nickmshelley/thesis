@@ -1,0 +1,22 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 17)
+    ("expected a `module' declaration" . 5)
+    ("unbound identifier in module" . 5)
+    ("collection not found" . 2)
+    ("bad module path" . 2)
+    ("type name used out of context" . 2)
+    ("bad syntax" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 42)
+    ("type name used out of context" . 17)
+    ("unbound identifier in module" . 16)
+    ("expected identifier" . 6)
+    ("bad syntax" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("not a require sub-form" . 1))))

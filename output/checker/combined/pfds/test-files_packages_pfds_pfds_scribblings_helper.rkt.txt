@@ -1,0 +1,25 @@
+'((remove
+   (passed . 19)
+   (failed
+    (total . 11)
+    ("unbound identifier in module" . 4)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("arity mismatch;" . 2)
+    ("undefined;" . 2)
+    ("not allowed in an expression context" . 1)))
+  (truncate
+   (passed . 6)
+   (failed
+    (total . 24)
+    ("provided identifier not defined or imported for phase 0" . 6)
+    ("unbound identifier in module" . 5)
+    ("collection not found" . 3)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     3)
+    ("arity mismatch;" . 2)
+    ("illegal use of syntax" . 1)
+    ("undefined;" . 1)
+    ("not allowed in an expression context" . 1)
+    ("identifier is already imported" . 1)
+    ("duplicate definition for identifier" . 1))))

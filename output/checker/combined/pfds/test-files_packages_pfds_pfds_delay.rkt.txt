@@ -1,0 +1,29 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 30)
+    ("expected a `module' declaration" . 10)
+    ("unbound identifier in module" . 10)
+    ("Duplicate type annotation of (All (A) ((Boxof (U (Boxof A) (-> (Boxof A)))) -> A)) for force, previous was #<procedure>"
+     .
+     3)
+    ("(A)" . 1)
+    ("Polymorphic function `unbox' could not be applied to arguments" . 1)
+    ("Unbound type name e" . 1)
+    ("Unbound type name unbox" . 1)
+    ("Unbound type name box" . 1)
+    ("Unbound type name b" . 1)
+    ("type name used out of context" . 1)))
+  (truncate
+   (passed . 2)
+   (failed
+    (total . 28)
+    ("unbound identifier in module" . 10)
+    ("Unbound type name A" . 5)
+    ("(A)" . 4)
+    ("type name used out of context" . 3)
+    ("Polymorphic function `unbox' could not be applied to arguments" . 2)
+    ("not a provide sub-form" . 1)
+    ("((Boxof A))" . 1)
+    ("bad syntax" . 1)
+    ("Recursive Type Alias Reference" . 1))))

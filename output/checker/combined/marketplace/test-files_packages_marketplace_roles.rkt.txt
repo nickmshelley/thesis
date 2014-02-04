@@ -1,0 +1,52 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 96)
+    ("unbound identifier in module" . 18)
+    ("bad syntax (multiple types after identifier)" . 14)
+    ("type name used out of context" . 10)
+    ("type mismatch" . 6)
+    ("Declaration for `orientations-intersect?' provided, but `orientations-intersect?' has no definition"
+     .
+     5)
+    ("identifier is not bound to a structure type" . 5)
+    ("Declaration for `flow-visible?' provided, but `flow-visible?' has no definition"
+     .
+     5)
+    ("illegal use of syntax" . 4)
+    ("duplicate argument identifier" . 4)
+    ("Polymorphic function `memq' could not be applied to arguments" . 2)
+    ("bad syntax" . 2)
+    ("must be used in a definition context" . 2)
+    ("Cannot apply expression of type Orientation, since it is not a function type"
+     .
+     2)
+    ("Unbound type name define" . 2)
+    ("Unbound type name" . 2)
+    ("Declaration for `refine-role' provided, but `refine-role' has no definition"
+     .
+     2)
+    ("not a provide sub-form" . 1)
+    ("Unbound type name subscriber" . 1)
+    ("Unbound type name publisher" . 1)
+    ("Unbound type name flow-visible?" . 1)
+    ("Expected a function of type (role -> (-> role)), but got a function with the wrong arity"
+     .
+     1)
+    ("Unbound type name refine-role" . 1)
+    ("identifier `unify.rkt' not included in nested require spec" . 1)
+    ("identifier `require/typed' not included in nested require spec" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("identifier `log-typed.rkt' not included in nested require spec" . 1)
+    ("identifier `require' not included in nested require spec" . 1)))
+  (truncate
+   (passed . 1)
+   (failed
+    (total . 13)
+    ("Illegal clause in endpoint definition" . 5)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     4)
+    ("wildcard not allowed as an expression" . 2)
+    ("collection not found" . 1)
+    ("Illegal use of on-presence outside endpoint definition context" . 1))))

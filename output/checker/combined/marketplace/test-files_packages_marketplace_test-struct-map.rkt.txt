@@ -1,0 +1,16 @@
+'((remove
+   (passed . 4)
+   (failed
+    (total . 21)
+    ("unbound identifier in module" . 11)
+    ("not a procedure;" . 3)
+    ("expected an identifier for the structure type name" . 2)
+    ("illegal use of syntax" . 2)
+    ("duplicate argument name" . 2)
+    ("not a require sub-form" . 1)))
+  (truncate
+   (passed . 3)
+   (failed
+    (total . 7)
+    ("expected a `module' declaration" . 5)
+    ("provided identifier not defined or imported for phase 0" . 2))))

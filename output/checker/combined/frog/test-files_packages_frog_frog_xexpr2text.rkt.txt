@@ -1,0 +1,34 @@
+'((remove
+   (passed . 61)
+   (failed
+    (total . 89)
+    ("unbound identifier in module" . 45)
+    ("syntax error in pattern" . 9)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("unexpected `)'" . 5)
+    ("expected a `module' declaration" . 5)
+    ("variable not bound in all or patterns" . 5)
+    ("wildcard not allowed as an expression" . 3)
+    ("collection not found" . 3)
+    ("duplicate binding name" . 2)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("ellipses not allowed as an expression" . 1)
+    ("bad module path" . 1)
+    ("bad syntax for require sub-form" . 1)
+    ("unbound identifier;" . 1)
+    ("incorrect use of ... in pattern" . 1)))
+  (truncate
+   (passed . 63)
+   (failed
+    (total . 87)
+    ("unbound identifier in module" . 51)
+    ("missing `]' to close preceding `[', found instead `)'" . 15)
+    ("expected a `)' to close `('" . 10)
+    ("variable not bound in all or patterns" . 5)
+    ("ellipses not allowed as an expression" . 2)
+    ("bad syntax (not an identifier for procedure name, and not a nested procedure form)"
+     .
+     1)
+    ("misuse of unit import and export keyword" . 1)
+    ("incorrect use of ... in pattern" . 1)
+    ("duplicate argument identifier" . 1))))

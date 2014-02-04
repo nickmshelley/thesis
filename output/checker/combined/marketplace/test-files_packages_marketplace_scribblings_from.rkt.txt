@@ -1,0 +1,12 @@
+'((remove
+   (passed . 6)
+   (failed
+    (total . 4)
+    ("missing ellipsis with pattern variable in template" . 3)
+    ("misplaced ellipsis in template" . 1)))
+  (truncate
+   (passed . 6)
+   (failed
+    (total . 4)
+    ("missing ellipsis with pattern variable in template" . 3)
+    ("no pattern variables before ellipsis in template" . 1))))

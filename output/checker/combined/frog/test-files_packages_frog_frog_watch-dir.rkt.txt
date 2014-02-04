@@ -1,0 +1,34 @@
+'((remove
+   (passed . 30)
+   (failed
+    (total . 55)
+    ("unbound identifier in module" . 33)
+    ("duplicate argument identifier" . 5)
+    ("expected a `module' declaration" . 5)
+    ("not allowed as an expression" . 4)
+    ("duplicate argument name" . 2)
+    ("use of 'any' outside the range of an arrow contract" . 1)
+    ("provided identifier not defined or imported for phase 0" . 1)
+    ("unexpected `)'" . 1)
+    ("misuse of compound-unit keyword" . 1)
+    ("bad syntax" . 1)
+    ("missing argument identifier after keyword" . 1)))
+  (truncate
+   (passed . 41)
+   (failed
+    (total . 44)
+    ("unbound identifier in module" . 19)
+    ("expected a `module' declaration" . 10)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     4)
+    ("bad syntax" . 3)
+    ("misuse of module-path constructor (not within, e.g., `require' or `provide')"
+     .
+     2)
+    ("illegal use of `.'" . 1)
+    ("expected a range contract" . 1)
+    ("arity mismatch;" . 1)
+    ("contract violation" . 1)
+    ("duplicate identifier as sequence binding" . 1)
+    ("collection not found" . 1))))

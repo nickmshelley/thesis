@@ -1,0 +1,29 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 26)
+    ("type name used out of context" . 14)
+    ("collection not found" . 4)
+    ("unbound identifier in module" . 3)
+    ("(empty A)" . 2)
+    ("bad syntax" . 2)
+    ("bad argument sequence" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 56)
+    ("unbound identifier in module" . 19)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     18)
+    ("Polymorphic function `map' could not be applied to arguments" . 8)
+    ("Wrong number of arguments, expected 1 and got 5" . 2)
+    ("Wrong number of arguments, expected 1 and got 2" . 2)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     2)
+    ("not a require sub-form" . 1)
+    ("Wrong number of arguments, expected 1 and got 4" . 1)
+    ("Polymorphic function `tries' could not be applied to arguments" . 1)
+    ("found a test that is not at the top level" . 1)
+    ("Polymorphic function `trie' could not be applied to arguments" . 1))))

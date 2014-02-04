@@ -1,0 +1,17 @@
+'((remove
+   (passed . 6)
+   (failed
+    (total . 19)
+    ("undefined;" . 11)
+    ("collection not found" . 4)
+    ("missing procedure expression;" . 1)
+    ("bad syntax for require sub-form" . 1)
+    ("pattern variable cannot be used outside of a template" . 1)
+    ("wildcard not allowed as an expression" . 1)))
+  (truncate
+   (passed . 21)
+   (failed
+    (total . 4)
+    ("illegal use of `.'" . 2)
+    ("bad syntax" . 1)
+    ("provided identifier not defined or imported for phase 0" . 1))))

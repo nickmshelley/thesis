@@ -1,0 +1,12 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 7)
+    ("unbound identifier in module" . 6)
+    ("bad syntax (missing body)" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 8)
+    ("unbound identifier in module" . 7)
+    ("bad syntax" . 1))))

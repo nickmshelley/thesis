@@ -1,0 +1,35 @@
+'((remove
+   (passed . 96)
+   (failed
+    (total . 54)
+    ("unbound identifier in module" . 36)
+    ("not a procedure;" . 5)
+    ("not a require sub-form" . 5)
+    ("duplicate definition for identifier" . 2)
+    ("bad syntax (not an identifier for procedure name, and not a nested procedure form)"
+     .
+     2)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     2)
+    ("bad syntax (multiple expressions after identifier)" . 1)
+    ("arity mismatch;" . 1)))
+  (truncate
+   (passed . 81)
+   (failed
+    (total . 69)
+    ("unbound identifier in module" . 43)
+    ("duplicate definition for identifier" . 7)
+    ("not a procedure;" . 4)
+    ("duplicate argument identifier" . 3)
+    ("bad syntax" . 3)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     2)
+    ("arity mismatch;" . 2)
+    ("identifier is already imported" . 2)
+    ("missing argument identifier after keyword" . 1)
+    ("illegal use of `.'" . 1)
+    ("bad syntax (not an identifier for procedure name, and not a nested procedure form)"
+     .
+     1))))

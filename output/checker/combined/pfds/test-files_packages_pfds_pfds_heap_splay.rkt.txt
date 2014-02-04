@@ -1,0 +1,95 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 263)
+    ("unbound identifier in module" . 94)
+    ("Type variable B must be used with ..." . 28)
+    ("type name used out of context" . 18)
+    ("must be used in a definition context" . 13)
+    ("bad syntax" . 12)
+    ("duplicate type variable declaration" . 11)
+    ("expected identifier" . 10)
+    ("bad syntax (multiple types after identifier)" . 8)
+    ("duplicate argument identifier" . 8)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 6)
+    ("Declaration for `phelp-rgt' provided, but `phelp-rgt' has no definition"
+     .
+     5)
+    ("duplicate type variable" . 4)
+    ("bad syntax (multiple expressions after identifier)" . 4)
+    ("'" . 4)
+    ("Declaration for `insert' provided, but `insert' has no definition" . 4)
+    ("(A)" . 4)
+    ("ellipses not allowed as an expression" . 3)
+    ("duplicate type variable or index" . 3)
+    ("syntax error in pattern" . 3)
+    ("duplicate field identifier" . 2)
+    ("illegal use of `.'" . 2)
+    ("duplicate identifier" . 2)
+    ("expected an identifier for the structure type name" . 2)
+    ("wildcard not allowed as an expression" . 1)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Heap) not bound with ... as a bound on a ..." . 1)
+    ("duplicate argument name" . 1)
+    ("bad syntax;" . 1)
+    ("Structure type constructor Tree applied to non-regular arguments (IntHeap)"
+     .
+     1)
+    ("Structure type constructor Tree applied to non-regular arguments (Tree)"
+     .
+     1)
+    ("Structure type constructor Tree applied to non-regular arguments (Boolean)"
+     .
+     1)
+    ("Mt" . 1)
+    ("use of a class keyword is not in a class" . 1)
+    ("expected 0 but got 2" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 202)
+    ("unbound identifier in module" . 69)
+    ("bad syntax" . 14)
+    ("type name used out of context" . 12)
+    ("expected identifier" . 10)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 9)
+    ("'" . 8)
+    ("syntax error in pattern" . 7)
+    ("duplicate argument identifier" . 6)
+    ("duplicate type variable declaration" . 6)
+    ("missing `]' to close `[' on line 89, found instead `)'; indentation suggests a missing `]' before line 90"
+     .
+     5)
+    ("(A)" . 5)
+    ("expected a `module' declaration" . 5)
+    ("not a provide sub-form" . 5)
+    ("misuse of compound-unit keyword" . 4)
+    ("ellipses not allowed as an expression" . 3)
+    ("must be used in a definition context" . 3)
+    ("Declaration for `sorted-list' provided, but `sorted-list' has no definition"
+     .
+     3)
+    ("duplicate argument name" . 2)
+    ("no expression after a sequence of internal definitions" . 2)
+    ("illegal use of `.'" . 2)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 2)
+    ("identifier already provided (as a different binding)" . 2)
+    ("Type variable B must be used with ..." . 2)
+    ("struct does not refer to a structure definition" . 1)
+    ("-> does not refer to a structure definition" . 1)
+    ("A does not refer to a structure definition" . 1)
+    ("if does not refer to a structure definition" . 1)
+    ("cons does not refer to a structure definition" . 1)
+    ("Used a type variable (func) not bound with ... as a bound on a ..." . 1)
+    ("expected 3 but got 2" . 1)
+    ("bad syntax (missing binding pairs or body)" . 1)
+    ("expected optionally type-annotated binding" . 1)
+    ("Structure type constructor IntHeap applied to non-regular arguments ((U Null (IntHeap A)))"
+     .
+     1)
+    ("Used a type variable (Heap) not bound with ... as a bound on a ..." . 1)
+    ("not a require sub-form" . 1))))

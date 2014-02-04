@@ -1,0 +1,7 @@
+'((remove
+   (passed . 3)
+   (failed
+    (total . 7)
+    ("not a well-formed definition" . 5)
+    ("duplicate definition" . 2)))
+  (truncate (passed . 5) (failed (total . 0))))

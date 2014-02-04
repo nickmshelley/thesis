@@ -1,0 +1,22 @@
+'((remove
+   (passed . 16)
+   (failed
+    (total . 39)
+    ("unbound identifier in module" . 31)
+    ("duplicate argument identifier" . 5)
+    ("expected `)' to close preceding `(', found instead `}'" . 2)
+    ("missing `}' to close preceding `{', found instead `)'" . 1)))
+  (truncate
+   (passed . 25)
+   (failed
+    (total . 30)
+    ("unbound identifier in module" . 15)
+    ("expected a `module' declaration" . 5)
+    ("illegal use of syntax" . 2)
+    ("duplicate argument identifier" . 2)
+    ("not allowed in an expression context" . 1)
+    ("bad syntax" . 1)
+    ("not a require sub-form" . 1)
+    ("bad sequence binding clause" . 1)
+    ("misuse of unit import keyword" . 1)
+    ("not in a definition context" . 1))))

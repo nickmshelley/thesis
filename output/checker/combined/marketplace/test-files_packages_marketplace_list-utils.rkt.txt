@@ -1,0 +1,19 @@
+'((remove
+   (passed . 1)
+   (failed
+    (total . 9)
+    ("unbound identifier in module" . 3)
+    ("type name used out of context" . 2)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("type mismatch" . 1)
+    ("missing type" . 1)
+    ("bad syntax (missing expression after identifier)" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 10)
+    ("unbound identifier in module" . 7)
+    ("must be used in a definition context" . 2)
+    ("not a provide sub-form" . 1))))

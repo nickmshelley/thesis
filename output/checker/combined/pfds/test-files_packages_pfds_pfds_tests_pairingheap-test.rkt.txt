@@ -1,0 +1,39 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 89)
+    ("unbound identifier in module" . 29)
+    ("expected identifier" . 26)
+    ("type name used out of context" . 7)
+    ("expected a `module' declaration" . 5)
+    ("must be used in a definition context" . 5)
+    ("bad syntax" . 4)
+    ("expected annotated-formals" . 4)
+    ("collection not found" . 3)
+    ("duplicate argument name" . 2)
+    ("not an identifier, identifier with default, or keyword" . 1)
+    ("'" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("bad module path" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 47)
+    ("unbound identifier in module" . 17)
+    ("type name used out of context" . 8)
+    ("Declaration for `str-less-than?' provided, but `str-less-than?' has no definition"
+     .
+     5)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     3)
+    ("expected annotated-formals" . 2)
+    ("expected identifier" . 1)
+    ("duplicate argument identifier" . 1)
+    ("bad syntax (multiple expressions after identifier)" . 1)
+    ("must be used in a definition context" . 1)
+    ("collection not found" . 1)
+    ("found a test that is not at the top level" . 1)
+    ("not allowed in an expression context" . 1)
+    ("bad syntax" . 1))))

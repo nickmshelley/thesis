@@ -1,0 +1,27 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 25)
+    ("unbound identifier in module" . 13)
+    ("expected a `module' declaration" . 5)
+    ("type name used out of context" . 4)
+    ("expected identifier" . 1)
+    ("found a test that is not at the top level" . 1)
+    ("illegal use of syntax" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 40)
+    ("unbound identifier in module" . 15)
+    ("type name used out of context" . 10)
+    ("expected a `module' declaration" . 5)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     4)
+    ("bad syntax" . 2)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("'" . 1)
+    ("collection not found" . 1)
+    ("unexpected term" . 1))))

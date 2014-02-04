@@ -1,0 +1,91 @@
+'((remove
+   (passed . 19)
+   (failed
+    (total . 64)
+    ("type name used out of context" . 9)
+    ("expected a `module' declaration" . 5)
+    ("unbound identifier in module" . 5)
+    ("too many forms in body of All type" . 5)
+    ("provided identifier not defined or imported for phase 0" . 4)
+    ("Declaration for `list->quasiqueue' provided, but `list->quasiqueue' has no definition"
+     .
+     4)
+    ("Unbound type name X" . 4)
+    ("(X)" . 3)
+    ("Polymorphic function `cons' could not be applied to arguments" . 3)
+    ("type mismatch" . 3)
+    ("expected `)' to close preceding `(', found instead `}'" . 2)
+    ("must be used in a definition context" . 2)
+    ("Cannot apply expression of type (U False Void Null X (Pairof (Rec g334 (U False Void Null X (Pairof g334 g334))) (Rec g340 (U False Void Null X (Pairof g340 g340))))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `car' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (U Null (Pairof X (Listof X))), since it is not a function type"
+     .
+     1)
+    ("duplicate definition for identifier" . 1)
+    ("' is defined in another module" . 1)
+    ("Declaration for `define' provided, but `define' is defined in another module"
+     .
+     1)
+    ("Duplicate type annotation of (All (X) ((Listof X) -> (Listof X))) for list->quasiqueue, previous was (All (X) (X * -> (Listof X)))"
+     .
+     1)
+    ("Duplicate type annotation of (All (X) (X * -> (Listof X))) for quasiqueue-append, previous was (All (X) ((Listof X) (Listof X) -> (Listof X)))"
+     .
+     1)
+    ("Duplicate type annotation of (All (X) ((Listof X) -> (Listof X))) for quasiqueue->list, previous was (All (X) (X * -> (Listof X)))"
+     .
+     1)
+    ("Cannot apply expression of type (Pairof X (Listof X)), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U False Void Null X (Pairof (Rec g279 (U False Void Null X (Pairof g279 g279))) (Rec g285 (U False Void Null X (Pairof g285 g285))))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name U" . 1)
+    ("Cannot apply expression of type (U Null (Pairof a (Listof a))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `quasiqueue->cons-tree' could not be applied to arguments"
+     .
+     1)
+    ("Unbound type name if" . 1)))
+  (truncate
+   (passed . 12)
+   (failed
+    (total . 70)
+    ("(X)" . 11)
+    ("expected a `module' declaration" . 10)
+    ("type name used out of context" . 7)
+    ("unbound identifier in module" . 6)
+    ("Polymorphic function `append' could not be applied to arguments" . 5)
+    ("type mismatch" . 4)
+    ("Declaration for `quasiqueue-append-list' provided, but `quasiqueue-append-list' has no definition"
+     .
+     4)
+    ("Polymorphic function `car' could not be applied to arguments" . 3)
+    ("Unbound type name xs" . 2)
+    ("Unbound type name reverse" . 2)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("Cannot apply expression of type (U Null (Pairof X (Listof X))), since it is not a function type"
+     .
+     2)
+    ("Duplicate type annotation of (All (X) ((Listof X) (Listof X) -> (Listof X))) for quasiqueue-empty?, previous was (All (X) ((Listof X) -> Boolean))"
+     .
+     1)
+    ("Duplicate type annotation of (All (X) ((Listof X) (Listof X) -> (Listof X))) for empty-quasiqueue, previous was (All (X) (-> (Listof X)))"
+     .
+     1)
+    ("duplicate argument identifier" . 1)
+    ("expected `)' to close preceding `(', found instead `}'" . 1)
+    ("must be used in a definition context" . 1)
+    ("missing `}' to close preceding `{', found instead `)'" . 1)
+    ("Unbound type name U" . 1)
+    ("Recursive types are not allowed directly inside their definition" . 1)
+    ("Cannot apply expression of type (U Null (Pairof a (Listof a))), since it is not a function type"
+     .
+     1)
+    ("illegal use of `.'" . 1)
+    ("Polymorphic function `quasiqueue' could not be applied to arguments" . 1)
+    ("No function domains matched in function application" . 1))))

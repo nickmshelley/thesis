@@ -1,0 +1,28 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 11)
+    ("unbound identifier in module" . 8)
+    ("bad syntax" . 1)
+    ("Unbound type name all-from-out" . 1)
+    ("Unbound type name types.rkt" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 25)
+    ("duplicate definition for identifier" . 5)
+    ("identifier `opaque' not included in nested require spec" . 2)
+    ("Unbound type name struct-copy" . 2)
+    ("Unbound type name tr-struct-copy" . 2)
+    ("Unbound type name tr-struct-copy.rkt" . 2)
+    ("identifier `require' not included in nested require spec" . 2)
+    ("Component of case-lambda type was not a function clause" . 1)
+    ("Unbound type name rename-in" . 1)
+    ("bad syntax" . 1)
+    ("Unbound type name case->" . 1)
+    ("identifier `tr-struct-copy.rkt' not included in nested require spec" . 1)
+    ("identifier `rename-in' not included in nested require spec" . 1)
+    ("identifier `ground.rkt' not included in nested require spec" . 1)
+    ("identifier `nested.rkt' not included in nested require spec" . 1)
+    ("identifier `unify.rkt' not included in nested require spec" . 1)
+    ("identifier `require/typed' not included in nested require spec" . 1))))

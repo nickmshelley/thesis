@@ -1,0 +1,49 @@
+'((remove
+   (passed . 1)
+   (failed
+    (total . 36)
+    ("expected a `module' declaration" . 10)
+    ("type name used out of context" . 8)
+    ("Declaration for `sum' provided, but `sum' has no definition" . 3)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     2)
+    ("(Integer)" . 2)
+    ("Unbound type name delay" . 2)
+    ("Unbound type name lst" . 2)
+    ("Unbound type name pscdr" . 2)
+    ("(delay e)" . 1)
+    ("not a require sub-form" . 1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Boxof (Rec g218 (U Null (Boxof (U (Boxof g218) (-> (Boxof g218)))) (Pairof Integer g218)))) (-> (Boxof (Rec g224 (U Null (Boxof (U (Boxof g224) (-> (Boxof g224)))) (Pairof Integer g224))))))) (Pairof Integer (Rec g230 (U Null (Boxof (U (Boxof g230) (-> (Boxof g230)))) (Pairof Integer g230))))), since it is not a function type"
+     .
+     1)
+    ("Wrong number of arguments, expected 1 and got 3" . 1)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 35)
+    ("type name used out of context" . 10)
+    ("Declaration for `sum' provided, but `sum' has no definition" . 4)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     4)
+    ("unbound identifier in module" . 3)
+    ("type mismatch" . 2)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     2)
+    ("identifier is already imported" . 1)
+    ("Cannot apply expression of type (U (Boxof (U (Boxof (Rec g194 (U Null (Boxof (U (Boxof g194) (-> (Boxof g194)))) (Pairof Integer g194)))) (-> (Boxof (Rec g200 (U Null (Boxof (U (Boxof g200) (-> (Boxof g200)))) (Pairof Integer g200))))))) (Pairof Integer (Rec g206 (U Null (Boxof (U (Boxof g206) (-> (Boxof g206)))) (Pairof Integer g206))))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name delay" . 1)
+    ("(Integer)" . 1)
+    ("Unbound type name lst" . 1)
+    ("Unbound type name pscdr" . 1)
+    ("Unbound type name" . 1)
+    ("Unbound type name sum" . 1)
+    ("Unbound type name typed/rackunit" . 1)
+    ("Unbound type name require" . 1))))

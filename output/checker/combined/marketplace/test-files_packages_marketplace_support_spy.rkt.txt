@@ -1,0 +1,26 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 17)
+    ("unbound identifier in module" . 13)
+    ("must be used in a definition context" . 3)
+    ("provided identifier not defined or imported for phase 0" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 25)
+    ("type mismatch" . 6)
+    ("not a require sub-form" . 5)
+    ("unbound identifier in module" . 2)
+    ("Unbound type name k" . 1)
+    ("Unbound type name inst" . 1)
+    ("Unbound type name lambda" . 1)
+    ("Unbound type name nested-vm-pid" . 1)
+    ("must be used in a definition context" . 1)
+    ("not a provide sub-form" . 1)
+    ("collection not found" . 1)
+    ("(PID process-spec)" . 1)
+    ("(State process-spec)" . 1)
+    ("Unbound type name All" . 1)
+    ("Unbound type name struct-copy" . 1)
+    ("Unbound type name tr-struct-copy" . 1))))

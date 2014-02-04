@@ -1,0 +1,20 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 24)
+    ("unbound identifier in module" . 10)
+    ("collection not found" . 8)
+    ("expected a `module' declaration" . 5)
+    ("bad syntax" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 24)
+    ("unbound identifier in module" . 15)
+    ("collection not found" . 4)
+    ("bad module path" . 2)
+    ("illegal use of syntax" . 1)
+    ("cannot open module file" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1))))

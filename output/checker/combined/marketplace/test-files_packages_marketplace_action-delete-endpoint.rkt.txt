@@ -1,0 +1,45 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 34)
+    ("must be used in a definition context" . 8)
+    ("unbound identifier in module" . 7)
+    ("not allowed in an expression context" . 5)
+    ("Declaration for `delete-all-endpoints' provided, but `delete-all-endpoints' has no definition"
+     .
+     5)
+    ("'" . 5)
+    ("type name used out of context" . 1)
+    ("bad syntax (multiple expressions after identifier)" . 1)
+    ("expected type-annotated identifier" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)))
+  (truncate
+   (passed . 94)
+   (failed
+    (total . 146)
+    ("unbound identifier in module" . 80)
+    ("syntax error in pattern" . 12)
+    ("Illegal clause in endpoint definition" . 12)
+    ("duplicate definition for identifier" . 9)
+    ("identifier is not bound to struct type information" . 7)
+    ("collection not found" . 5)
+    ("wildcard not allowed as an expression" . 3)
+    ("Illegal use of on-absence outside endpoint definition context" . 2)
+    ("bad syntax" . 2)
+    ("bad module path" . 2)
+    ("Illegal use of match-interest-type outside endpoint definition context"
+     .
+     1)
+    ("Illegal use of on-presence outside endpoint definition context" . 1)
+    ("bad syntax;" . 1)
+    ("multiple bindings of `local-hostname' in the same clause" . 1)
+    ("Illegal use of on-message outside endpoint definition context" . 1)
+    ("Illegal use of match-state outside endpoint definition context" . 1)
+    ("provided identifier not defined or imported for phase 0" . 1)
+    ("duplicate argument identifier" . 1)
+    ("duplicate field identifier" . 1)
+    ("this match expander must be used inside match" . 1)
+    ("identifier is already imported" . 1)
+    ("missing argument expression after keyword" . 1))))

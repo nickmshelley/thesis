@@ -1,0 +1,12 @@
+'((remove
+   (passed . 0)
+   (failed (total . 10) ("duplicate definition for identifier" . 10)))
+  (truncate
+   (passed . 4)
+   (failed
+    (total . 6)
+    ("collection not found" . 2)
+    ("cannot open module file" . 1)
+    ("bad module path" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("identifier is already imported" . 1))))

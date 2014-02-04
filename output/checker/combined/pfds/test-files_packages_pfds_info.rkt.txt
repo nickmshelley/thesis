@@ -1,0 +1,12 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 10)
+    ("expected a closing '\"'" . 5)
+    ("expected a `module' declaration" . 5)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 10)
+    ("not a well-formed definition" . 5)
+    ("expected a closing '\"'" . 5))))

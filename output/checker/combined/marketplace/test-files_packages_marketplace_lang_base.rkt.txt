@@ -1,0 +1,36 @@
+'((remove
+   (passed . 56)
+   (failed
+    (total . 39)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 17)
+    ("missing `]' to close `[' on line 23, found instead `)'; indentation suggests a missing `)' before line 47"
+     .
+     5)
+    ("pattern variable cannot be used outside of a template" . 5)
+    ("missing procedure expression;" . 4)
+    ("bad syntax" . 2)
+    ("duplicate argument identifier" . 2)
+    ("bad syntax;" . 1)
+    ("not in a module-definition context" . 1)
+    ("ellipses not allowed as an expression" . 1)
+    ("not allowed in an expression context" . 1)))
+  (truncate
+   (passed . 55)
+   (failed
+    (total . 40)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 17)
+    ("pattern variable cannot be used outside of a template" . 6)
+    ("no pattern variables before ellipsis in template" . 5)
+    ("duplicate argument identifier" . 2)
+    ("bad syntax" . 2)
+    ("bad syntax (missing binding pairs or body)" . 2)
+    ("unbound identifier in module (in the transformer environment, which does not include the macro definition that is visible to run-time expressions)"
+     .
+     1)
+    ("illegal use of syntax" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("bad syntax;" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("ellipses not allowed as an expression" . 1))))

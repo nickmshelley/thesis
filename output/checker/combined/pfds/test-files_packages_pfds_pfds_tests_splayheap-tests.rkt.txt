@@ -1,0 +1,23 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 25)
+    ("unbound identifier in module" . 16)
+    ("Declaration for `gt' provided, but `gt' has no definition" . 4)
+    ("type name used out of context" . 3)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("must be used in a definition context" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 27)
+    ("unbound identifier in module" . 16)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     4)
+    ("type name used out of context" . 3)
+    ("illegal use of syntax" . 2)
+    ("collection not found" . 1)
+    ("no expression after a sequence of internal definitions" . 1))))

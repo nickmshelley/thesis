@@ -1,0 +1,71 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 47)
+    ("unbound identifier in module" . 18)
+    ("must be used in a definition context" . 4)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("Declaration for `transition' provided, but `transition' has no definition"
+     .
+     4)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found"
+     .
+     3)
+    ("Declaration for `quit' provided, but `quit' has no definition" . 2)
+    ("expected `)' to close preceding `(', found instead `}'" . 2)
+    ("bad syntax" . 2)
+    ("duplicate identifier" . 2)
+    ("collection not found" . 2)
+    ("missing `}' to close `{' on line 33, found instead `)'" . 1)
+    ("identifier is already imported" . 1)
+    ("missing `}' to close preceding `{', found instead `]'" . 1)
+    ("syntax error in pattern" . 1)))
+  (truncate
+   (passed . 2)
+   (failed
+    (total . 90)
+    ("unbound identifier in module" . 22)
+    ("type mismatch" . 11)
+    ("type name used out of context" . 7)
+    ("Error in macro expansion -- insufficient type information to typecheck. please add more type annotations"
+     .
+     5)
+    ("Cannot apply expression of type role, since it is not a function type"
+     .
+     4)
+    ("Declaration for `role-intersection' provided, but `role-intersection' has no definition"
+     .
+     4)
+    ("Declaration for `roles-equal?' provided, but `roles-equal?' has no definition"
+     .
+     3)
+    ("identifier is already imported" . 3)
+    ("Declaration for `co-orientations' provided, but `co-orientations' has no definition"
+     .
+     3)
+    ("Wrong number of arguments, expected 1 and got 2" . 3)
+    ("must be used in a definition context" . 3)
+    ("Wrong number of arguments, expected 2 and got 7" . 2)
+    ("bad syntax (multiple expressions after identifier)" . 2)
+    ("collection not found" . 1)
+    ("Wrong number of arguments, expected 1 and got 7" . 1)
+    ("No function domains matched in function application" . 1)
+    ("bad syntax" . 1)
+    ("Unbound type name" . 1)
+    ("Unbound type name flow-visible?" . 1)
+    ("Unbound type name result" . 1)
+    ("Cannot apply expression of type Orientation, since it is not a function type"
+     .
+     1)
+    ("Unbound type name case->" . 1)
+    ("Unbound type name specialization?" . 1)
+    ("Unbound type name freshen" . 1)
+    ("Unbound type name t" . 1)
+    ("Unbound type name and" . 1)
+    ("Unbound type name r" . 1)
+    ("Unbound type name l" . 1)
+    ("Unbound type name orientations-intersect?" . 1)
+    ("Cannot apply expression of type (U False Topic), since it is not a function type"
+     .
+     1)
+    ("Wrong number of arguments, expected 2 and got 5" . 1))))

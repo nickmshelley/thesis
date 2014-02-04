@@ -20,7 +20,7 @@
 
 (module+ main
   #;(define methods '(naive nest keywords macros bytecode combined))
-  (define methods '(macros))
+  (define methods '(combined))
   (unless (directory-exists? "output")
     (make-directory "output"))
   (unless (directory-exists? "output/checker")
@@ -35,7 +35,7 @@
   (printf "TESTING WITH ~a~n" method)
   (define percent .1)
   (define dir-base "test-files/packages")
-  (define sub-dirs '(#;"frog" "marketplace" "pfds"))
+  (define sub-dirs '("frog" "marketplace" "pfds"))
   (define top-output-dir (build-path "output/checker" (symbol->string method)))
   (define-values (remove-sum truncate-sum)
     (for/fold ([remove-total-sum (results "All" empty)]

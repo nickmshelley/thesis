@@ -1,0 +1,31 @@
+'((remove
+   (passed . 15)
+   (failed
+    (total . 66)
+    ("unbound identifier in module" . 48)
+    ("wildcard not allowed as an expression" . 5)
+    ("missing `)' to close preceding `(', found instead `]'" . 5)
+    ("syntax error in pattern" . 3)
+    ("Illegal clause in endpoint definition" . 2)
+    ("bad syntax" . 1)
+    ("expected 2 but got 3" . 1)
+    ("not allowed in an expression context" . 1)))
+  (truncate
+   (passed . 5)
+   (failed
+    (total . 81)
+    ("unbound identifier in module" . 51)
+    ("syntax error in pattern" . 6)
+    ("missing `)' to close preceding `(', found instead `]'" . 5)
+    ("expected a `)' to close `('" . 5)
+    ("wildcard not allowed as an expression" . 3)
+    ("identifier is already imported" . 3)
+    ("bad syntax" . 2)
+    ("duplicate definition for identifier" . 1)
+    ("expected 2 but got 3" . 1)
+    ("expected 1 but got 2" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("not at module level or top level" . 1)
+    ("Illegal clause in endpoint definition" . 1))))

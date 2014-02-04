@@ -1,0 +1,20 @@
+'((remove
+   (passed . 20)
+   (failed
+    (total . 35)
+    ("unbound identifier in module" . 25)
+    ("duplicate argument identifier" . 3)
+    ("missing closing `}'" . 2)
+    ("missing ellipsis with pattern variable in template" . 2)
+    ("bad syntax" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("misplaced ellipsis in template" . 1)))
+  (truncate
+   (passed . 15)
+   (failed
+    (total . 40)
+    ("unbound identifier in module" . 30)
+    ("duplicate argument identifier" . 4)
+    ("expected `)' to close preceding `(', found instead `}'" . 3)
+    ("bad syntax" . 2)
+    ("expected `]' to close preceding `[', found instead `}'" . 1))))

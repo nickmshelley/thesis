@@ -1,0 +1,17 @@
+'((remove
+   (passed . 21)
+   (failed
+    (total . 14)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("misplaced ellipsis in template" . 3)
+    ("missing ellipsis with pattern variable in template" . 3)
+    ("no pattern variables before ellipsis in template" . 2)
+    ("too many ellipses in template" . 1)))
+  (truncate
+   (passed . 25)
+   (failed
+    (total . 10)
+    ("missing `)' to close preceding `(', found instead `]'" . 5)
+    ("variable used twice in pattern" . 2)
+    ("misplaced ellipsis in template" . 2)
+    ("missing ellipsis with pattern variable in template" . 1))))

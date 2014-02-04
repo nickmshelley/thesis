@@ -1,0 +1,46 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 515)
+    ("The type of vm-processes cannot be converted to a contract" . 312)
+    ("unbound identifier in module" . 136)
+    ("bad syntax" . 14)
+    ("syntax error in pattern" . 11)
+    ("duplicate declared identifier" . 10)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("missing `]' to close `[' on line 134, found instead `)'; indentation suggests a missing `]' before line 135"
+     .
+     5)
+    ("missing argument expression after keyword" . 4)
+    ("duplicate argument identifier" . 4)
+    ("method name is not an identifier" . 3)
+    ("bad syntax (multiple expressions after identifier)" . 2)
+    ("cannot mutate syntax identifier" . 2)
+    ("duplicate definition for identifier" . 2)
+    ("expected identifier" . 2)
+    ("duplicate argument name" . 1)
+    ("collection not found" . 1)
+    ("not allowed in an expression context" . 1)))
+  (truncate
+   (passed . 2)
+   (failed
+    (total . 513)
+    ("The type of vm-processes cannot be converted to a contract" . 315)
+    ("unbound identifier in module" . 129)
+    ("bad syntax" . 23)
+    ("syntax error in pattern" . 10)
+    ("duplicate declared identifier" . 9)
+    ("expected a `)' to close `('" . 5)
+    ("ndpoints" . 5)
+    ("method name is not an identifier" . 4)
+    ("bad syntax (multiple expressions after identifier)" . 2)
+    ("bad syntax (missing expression after identifier)" . 2)
+    ("cannot mutate syntax identifier" . 2)
+    ("duplicate definition for identifier" . 2)
+    ("contract violation" . 1)
+    ("collection not found" . 1)
+    ("bad syntax;" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("expected a method name" . 1))))

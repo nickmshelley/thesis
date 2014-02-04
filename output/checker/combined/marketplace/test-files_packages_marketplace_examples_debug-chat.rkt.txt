@@ -1,0 +1,14 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 44)
+    ("The type of vm-processes cannot be converted to a contract" . 34)
+    ("expected a `module' declaration" . 5)
+    ("missing `]' to close `[' on line 27, found instead `)'" . 5)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 38)
+    ("The type of vm-processes cannot be converted to a contract" . 32)
+    ("missing `]' to close `[' on line 27, found instead `)'" . 5)
+    ("not a require sub-form" . 1))))

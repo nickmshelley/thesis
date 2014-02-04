@@ -1,0 +1,46 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 30)
+    ("unbound identifier in module" . 11)
+    ("Declaration for `log-quit' provided, but `log-quit' has no definition"
+     .
+     5)
+    ("bad module path" . 4)
+    ("duplicate argument identifier" . 3)
+    ("vm" . 1)
+    ("bad syntax" . 1)
+    ("type name used out of context" . 1)
+    ("Declaration for `web-server/private/util' provided, but `web-server/private/util' has no definition"
+     .
+     1)
+    ("collection not found" . 1)
+    ("duplicate clause binding name" . 1)
+    ("provided identifier not defined or imported for phase 0" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 131)
+    ("unbound identifier in module" . 63)
+    ("type name used out of context" . 12)
+    ("bad syntax (multiple types after identifier)" . 12)
+    ("identifier is not bound to a structure type" . 6)
+    ("(SNew)" . 5)
+    ("expected a `module' declaration" . 5)
+    ("(State)" . 5)
+    ("Error in macro expansion -- insufficient type information to typecheck. please add more type annotations"
+     .
+     5)
+    ("too many forms in body of All type" . 4)
+    ("variable used twice in pattern" . 3)
+    ("Declaration for `quit-interruptk' provided, but `quit-interruptk' has no definition"
+     .
+     2)
+    ("bad syntax" . 2)
+    ("'" . 1)
+    ("duplicate argument identifier" . 1)
+    ("duplicate binding name" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("(send-to-user* debug-name pid (e) failure-result enclosed-expr)" . 1)
+    ("(send-to-user p (e) failure-result enclosed-expr)" . 1)
+    ("identifier is already imported" . 1))))

@@ -1,0 +1,29 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 37)
+    ("Declaration for `do-send-message' provided, but `do-send-message' has no definition"
+     .
+     9)
+    ("unbound identifier in module" . 8)
+    ("(State)" . 5)
+    ("must be used in a definition context" . 3)
+    ("duplicate argument identifier" . 3)
+    ("(send-to-user p (e) failure-result enclosed-expr)" . 2)
+    ("type name used out of context" . 2)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("bad syntax (multiple expressions after identifier)" . 1)
+    ("not a require sub-form" . 1)
+    ("type mismatch" . 1)
+    ("Polymorphic function `process-endpoints' could not be applied to arguments"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 35)
+    ("unbound identifier in module" . 19)
+    ("expected a `module' declaration" . 5)
+    ("too many forms in body of All type" . 5)
+    ("provided identifier not defined or imported for phase 0" . 3)
+    ("duplicate argument identifier" . 3))))

@@ -1,0 +1,135 @@
+'((remove
+   (passed . 6)
+   (failed
+    (total . 153)
+    ("unbound identifier in module" . 35)
+    ("duplicate definition for identifier" . 10)
+    ("type name used out of context" . 10)
+    ("type mismatch" . 10)
+    ("'" . 8)
+    ("bad syntax (multiple types after identifier)" . 8)
+    ("too many forms in body of All type" . 5)
+    ("missing argument expression after keyword" . 4)
+    ("identifier is not bound to struct type information" . 4)
+    ("bad module path" . 3)
+    ("Unbound type name *" . 3)
+    ("Illegal clause in endpoint definition" . 3)
+    ("bad syntax" . 2)
+    ("syntax error in pattern" . 2)
+    ("duplicate field identifier" . 2)
+    ("Illegal use of match-state outside endpoint definition context" . 2)
+    ("Declaration for `timer-evt' provided, but `timer-evt' has no definition"
+     .
+     2)
+    ("identifier is already imported" . 2)
+    ("Declaration for `fire-timers!' provided, but `fire-timers!' has no definition"
+     .
+     2)
+    ("Unbound type name subscriber" . 2)
+    ("Polymorphic function `hash-set' could not be applied to arguments" . 2)
+    ("must be used in a definition context" . 1)
+    ("identifier `opaque' not included in nested require spec" . 1)
+    ("identifier `data/heap' not included in nested require spec" . 1)
+    ("identifier `require/typed' not included in nested require spec" . 1)
+    ("at least one specification is required" . 1)
+    ("Illegal use of on-message outside endpoint definition context" . 1)
+    ("expected identifier" . 1)
+    ("collection not found" . 1)
+    ("provided identifier not defined or imported for phase 0" . 1)
+    ("Expected a function of type (-> (pending-timer -> Boolean)), but got a function with the wrong arity"
+     .
+     1)
+    ("(Void Void)" . 1)
+    ("(Heap Void)" . 1)
+    ("(pending-timer Void)" . 1)
+    ("Unbound type name make-immutable-hash" . 1)
+    ("Unbound type name set-timer-pattern" . 1)
+    ("Unbound type name match-state" . 1)
+    ("Unbound type name state" . 1)
+    ("Unbound type name U" . 1)
+    ("Unbound type name at-meta-level" . 1)
+    ("Polymorphic function `add-endpoint10' could not be applied to arguments"
+     .
+     1)
+    ("Recursive Type Alias Reference" . 1)
+    ("Unbound type name define-type" . 1)
+    ("transparent" . 1)
+    ("Unbound type name" . 1)
+    ("Expected a function of type (-> (Real -> (Listof send-message))), but got a function with the wrong arity"
+     .
+     1)
+    ("Unbound type name fire-timers!" . 1)
+    ("Unbound type name define" . 1)
+    ("Wrong number of arguments, expected 3 and got 2" . 1)
+    ("Wrong number of arguments, expected 0 and got 2" . 1)
+    ("Unbound type name alarm-evt" . 1)
+    ("Unbound type name msecs" . 1)
+    ("Unbound type name lambda" . 1)))
+  (truncate
+   (passed . 5)
+   (failed
+    (total . 156)
+    ("unbound identifier in module" . 42)
+    ("type mismatch" . 12)
+    ("type name used out of context" . 10)
+    ("syntax error in pattern" . 9)
+    ("bad syntax (multiple types after identifier)" . 8)
+    ("duplicate definition for identifier" . 5)
+    ("Wrong number of arguments, expected 1 and got 2" . 5)
+    ("unexpected term" . 5)
+    ("'" . 5)
+    ("expected a `)' to close `('" . 5)
+    ("(RelayKey Any)" . 4)
+    ("Illegal use of match-state outside endpoint definition context" . 3)
+    ("collection not found" . 3)
+    ("bad syntax" . 3)
+    ("Declaration for `timer-driver' provided, but `timer-driver' has no definition"
+     .
+     2)
+    ("must be used in a definition context" . 2)
+    ("Declaration for `timer-relay' provided, but `timer-relay' has no definition"
+     .
+     2)
+    ("invalid module-path form" . 2)
+    ("Unbound type name" . 2)
+    ("Unbound type name label" . 2)
+    ("Cannot apply expression of type Real, since it is not a function type"
+     .
+     2)
+    ("Wrong number of arguments, expected 1 and got 3" . 2)
+    ("Cannot apply expression of type pending-timer, since it is not a function type"
+     .
+     2)
+    ("Recursive Type Alias Reference" . 1)
+    ("expected 2 but got 3" . 1)
+    ("expected simple-clause; expected struct-clause; or expected opaque-clause"
+     .
+     1)
+    ("Illegal use of on-message outside endpoint definition context" . 1)
+    ("Unbound type name wrap-evt" . 1)
+    ("Unbound type name msecs" . 1)
+    ("Unbound type name timer-evt" . 1)
+    ("Wrong number of type arguments to polymorphic type (All (State) (process-spec (U False (PID -> (State -> (transition State)))) Any -> (spawn State)))"
+     .
+     1)
+    ("parent" . 1)
+    ("Unbound type name spawn" . 1)
+    ("Unbound type name timer-relay" . 1)
+    ("Wrong number of arguments, expected 3 and got 2" . 1)
+    ("(wild)" . 1)
+    ("Polymorphic function `make-immutable-hash' could not be applied to arguments"
+     .
+     1)
+    ("Cannot apply expression of type RelayKey, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (HashTable RelayKey Any), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `add-endpoint10' could not be applied to arguments"
+     .
+     1)
+    ("Cannot apply expression of type Heap, since it is not a function type"
+     .
+     1)
+    ("No function domains matched in function application" . 1))))

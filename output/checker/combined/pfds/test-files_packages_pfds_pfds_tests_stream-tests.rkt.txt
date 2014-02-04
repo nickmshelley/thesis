@@ -1,0 +1,44 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 65)
+    ("unbound identifier in module" . 20)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     10)
+    ("Bad arguments to polymorphic function in apply" . 6)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     5)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     3)
+    ("must be used in a definition context" . 3)
+    ("Polymorphic function `stream-cdr' could not be applied to arguments" . 2)
+    ("type mismatch" . 2)
+    ("type name used out of context" . 2)
+    ("Polymorphic function `build-list' could not be applied to arguments" . 2)
+    ("Polymorphic function `stream->list' could not be applied to arguments"
+     .
+     2)
+    ("'" . 1)
+    ("Polymorphic function `stream-reverse' could not be applied to arguments"
+     .
+     1)
+    ("Polymorphic function `drop' could not be applied to arguments" . 1)
+    ("expected annotated-formals" . 1)
+    ("Polymorphic function `cdr' could not be applied to arguments" . 1)
+    ("not a require sub-form" . 1)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     1)
+    ("" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 36)
+    ("unbound identifier in module" . 26)
+    ("expected a `module' declaration" . 5)
+    ("duplicate identifier" . 2)
+    ("illegal use of syntax" . 2)
+    ("type name used out of context" . 1))))

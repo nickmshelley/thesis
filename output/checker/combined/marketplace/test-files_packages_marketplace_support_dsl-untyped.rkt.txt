@@ -1,0 +1,9 @@
+'((remove (passed . 10) (failed (total . 5) ("not a require sub-form" . 5)))
+  (truncate
+   (passed . 5)
+   (failed
+    (total . 10)
+    ("not a require sub-form" . 5)
+    ("unbound identifier in module" . 2)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("illegal use of syntax" . 1))))

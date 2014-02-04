@@ -1,0 +1,32 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 50)
+    ("type name used out of context" . 17)
+    ("unbound identifier in module" . 12)
+    ("syntax error in pattern" . 6)
+    ("not a require sub-form" . 5)
+    ("must be used in a definition context" . 3)
+    ("(send-to-user* debug-name pid (e) failure-result enclosed-expr)" . 1)
+    ("bad syntax (multiple expressions after identifier)" . 1)
+    ("identifier is not bound to a structure type" . 1)
+    ("expected more terms starting with expression" . 1)
+    ("missing type" . 1)
+    ("collection not found" . 1)
+    ("quit" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 49)
+    ("unbound identifier in module" . 23)
+    ("type name used out of context" . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("not a require sub-form" . 5)
+    ("Declaration for `new-cotransition' provided, but `new-cotransition' has no definition"
+     .
+     4)
+    ("duplicate argument identifier" . 2)
+    ("(send-to-user* debug-name pid (e) failure-result enclosed-expr)" . 2)
+    ("(send-to-user p (e) failure-result enclosed-expr)" . 1)
+    ("bad syntax" . 1)
+    ("expected more terms starting with expression" . 1))))

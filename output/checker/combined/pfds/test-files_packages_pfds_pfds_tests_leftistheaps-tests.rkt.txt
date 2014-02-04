@@ -1,0 +1,35 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 59)
+    ("unbound identifier in module" . 25)
+    ("expected identifier" . 12)
+    ("type name used out of context" . 5)
+    ("bad syntax" . 3)
+    ("must be used in a definition context" . 2)
+    ("'" . 2)
+    ("no expression after a sequence of internal definitions" . 2)
+    ("expected annotated-formals" . 2)
+    ("expects 2 arguments, but found none" . 1)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
+     .
+     1)
+    ("not a require sub-form" . 1)
+    ("bad argument sequence" . 1)
+    ("identifier is already imported" . 1)
+    ("duplicate argument name" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 88)
+    ("unbound identifier in module" . 36)
+    ("expected identifier" . 18)
+    ("type name used out of context" . 10)
+    ("expected annotated-formals" . 6)
+    ("must be used in a definition context" . 6)
+    ("no expression after a sequence of internal definitions" . 3)
+    ("bad syntax" . 3)
+    ("'" . 2)
+    ("duplicate argument name" . 2)
+    ("not allowed in an expression context" . 1)
+    ("expects 2 arguments, but found none" . 1))))

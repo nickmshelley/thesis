@@ -1,0 +1,86 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 40)
+    ("collection not found" . 5)
+    ("expected a `module' declaration" . 5)
+    ("Polymorphic function `last' could not be applied to arguments" . 4)
+    ("Polymorphic function `head' could not be applied to arguments" . 3)
+    ("Polymorphic function `build-deque-front' could not be applied to arguments"
+     .
+     2)
+    ("unbound identifier in module" . 2)
+    ("type mismatch" . 2)
+    ("type name used out of context" . 2)
+    ("Polymorphic function `Deque1' could not be applied to arguments" . 2)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     2)
+    ("must be used in a definition context" . 1)
+    ("bad syntax" . 1)
+    ("#<syntax Deque> ((Rec g917 (U Null (Boxof (U (Boxof g917) (-> (Boxof g917)))) (Pairof Positive-Integer g917))) Integer (Rec g923 (U Null (Boxof (U (Boxof g923) (-> (Boxof g923)))) (Pairof Positive-Integer g923))) Integer)), since it is not a function type"
+     .
+     1)
+    ("#<syntax Deque> ((Rec g580 (U Null (Boxof (U (Boxof g580) (-> (Boxof g580)))) (Pairof Positive-Integer g580))) Integer (Rec g586 (U Null (Boxof (U (Boxof g586) (-> (Boxof g586)))) (Pairof Positive-Integer g586))) Integer)), since it is not a function type"
+     .
+     1)
+    ("expected identifier" . 1)
+    ("#<syntax Deque> ((Rec g962 (U Null (Boxof (U (Boxof g962) (-> (Boxof g962)))) (Pairof Positive-Integer g962))) Integer (Rec g968 (U Null (Boxof (U (Boxof g968) (-> (Boxof g968)))) (Pairof Positive-Integer g968))) Integer)), since it is not a function type"
+     .
+     1)
+    ("expected optionally type-annotated binding" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("#<syntax Deque> ((Rec g604 (U Null (Boxof (U (Boxof g604) (-> (Boxof g604)))) (Pairof Positive-Integer g604))) Integer (Rec g610 (U Null (Boxof (U (Boxof g610) (-> (Boxof g610)))) (Pairof Positive-Integer g610))) Integer)), since it is not a function type"
+     .
+     1)
+    ("#<syntax Deque> ((Rec g588 (U Null (Boxof (U (Boxof g588) (-> (Boxof g588)))) (Pairof Positive-Integer g588))) Integer (Rec g594 (U Null (Boxof (U (Boxof g594) (-> (Boxof g594)))) (Pairof Positive-Integer g594))) Integer)), since it is not a function type"
+     .
+     1)
+    ("#<syntax Deque> ((Rec g779 (U Null (Boxof (U (Boxof g779) (-> (Boxof g779)))) (Pairof Positive-Integer g779))) Integer (Rec g785 (U Null (Boxof (U (Boxof g785) (-> (Boxof g785)))) (Pairof Positive-Integer g785))) Integer)), since it is not a function type"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 50)
+    ("unbound identifier in module" . 13)
+    ("type name used out of context" . 4)
+    ("Polymorphic function `Deque1' could not be applied to arguments" . 3)
+    ("Polymorphic function `build-deque' could not be applied to arguments"
+     .
+     2)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 2)
+    ("Polymorphic function `build-deque-front' could not be applied to arguments"
+     .
+     2)
+    ("type mismatch" . 2)
+    ("Unbound type name" . 2)
+    ("Unbound type name loop" . 2)
+    ("Unbound type name let" . 2)
+    ("Unbound type name time" . 2)
+    ("bad syntax (not a sequence of identifier--expression bindings)" . 1)
+    ("untyped identifier stream-eager imported from module <private/stream-cons.rkt>"
+     .
+     1)
+    ("bad syntax" . 1)
+    ("must be used in a definition context" . 1)
+    ("#<syntax Deque> ((Rec g275 (U Null (Boxof (U (Boxof g275) (-> (Boxof g275)))) (Pairof Positive-Integer g275))) Integer (Rec g281 (U Null (Boxof (U (Boxof g281) (-> (Boxof g281)))) (Pairof Positive-Integer g281))) Integer)), since it is not a function type"
+     .
+     1)
+    ("Unbound type name add1" . 1)
+    ("#<syntax Deque> ((Rec g389 (U Null (Boxof (U (Boxof g389) (-> (Boxof g389)))) (Pairof Positive-Integer g389))) Integer (Rec g395 (U Null (Boxof (U (Boxof g395) (-> (Boxof g395)))) (Pairof Positive-Integer g395))) Integer)), since it is not a function type"
+     .
+     1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("Wrong number of arguments, expected 1 and got 3" . 1)
+    ("#<syntax Deque> ((Rec g771 (U Null (Boxof (U (Boxof g771) (-> (Boxof g771)))) (Pairof Positive-Integer g771))) Integer (Rec g777 (U Null (Boxof (U (Boxof g777) (-> (Boxof g777)))) (Pairof Positive-Integer g777))) Integer)), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     1)
+    ("#<syntax Deque> ((Rec g535 (U Null (Boxof (U (Boxof g535) (-> (Boxof g535)))) (Pairof Positive-Integer g535))) Integer (Rec g541 (U Null (Boxof (U (Boxof g541) (-> (Boxof g541)))) (Pairof Positive-Integer g541))) Integer)), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `last' could not be applied to arguments" . 1)
+    ("Polymorphic function `head' could not be applied to arguments" . 1))))

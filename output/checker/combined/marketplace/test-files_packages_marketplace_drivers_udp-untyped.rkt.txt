@@ -1,0 +1,28 @@
+'((remove
+   (passed . 7)
+   (failed
+    (total . 8)
+    ("not a provide sub-form" . 4)
+    ("identifier already provided (as a different binding)" . 3)
+    ("bad syntax for provide sub-form" . 1)))
+  (truncate
+   (passed . 221)
+   (failed
+    (total . 179)
+    ("unbound identifier in module" . 130)
+    ("bad syntax" . 12)
+    ("not allowed as an expression" . 10)
+    ("provided identifier not defined or imported for phase 0" . 5)
+    ("identifier is not bound to struct type information" . 4)
+    ("duplicate argument name" . 3)
+    ("duplicate identifier" . 3)
+    ("not allowed in an expression context" . 2)
+    ("bad module path" . 2)
+    ("duplicate binding name" . 1)
+    ("not a sequence of identifiers" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("collection not found" . 1)
+    ("cannot open module file" . 1)
+    ("bad syntax (clause is not a test-value pair)" . 1)
+    ("bad syntax (not an identifier and expression for a binding)" . 1)
+    ("arrow not allowed as an expression" . 1))))

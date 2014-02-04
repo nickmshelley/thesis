@@ -1,0 +1,22 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 33)
+    ("unbound identifier in module" . 17)
+    ("(State)" . 5)
+    ("duplicate argument identifier" . 4)
+    ("expected 1 and got 2" . 2)
+    ("bad syntax (multiple expressions after identifier)" . 1)
+    ("bad syntax" . 1)
+    ("type name used out of context" . 1)
+    ("vm" . 1)
+    ("eid" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 22)
+    ("unbound identifier in module" . 14)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("bad syntax" . 2)
+    ("role" . 1)
+    ("duplicate argument identifier" . 1))))

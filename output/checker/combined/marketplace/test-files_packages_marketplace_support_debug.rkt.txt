@@ -1,0 +1,13 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 174)
+    ("The type of vm-processes cannot be converted to a contract" . 164)
+    ("not a require sub-form" . 5)
+    ("bad module path" . 4)
+    ("collection not found" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 167)
+    ("The type of vm-processes cannot be converted to a contract" . 167))))

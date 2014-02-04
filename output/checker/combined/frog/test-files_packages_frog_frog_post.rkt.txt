@@ -1,0 +1,4 @@
+'((remove (passed . 8) (failed (total . 2) ("duplicate field identifier" . 2)))
+  (truncate
+   (passed . 4)
+   (failed (total . 6) ("not a provide sub-form" . 5) ("bad syntax;" . 1))))

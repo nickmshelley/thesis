@@ -1,0 +1,17 @@
+'((remove
+   (passed . 3)
+   (failed
+    (total . 7)
+    ("unbound identifier in module" . 4)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("not a provide sub-form" . 1)))
+  (truncate
+   (passed . 5)
+   (failed
+    (total . 20)
+    ("unbound identifier in module" . 6)
+    ("not a provide sub-form" . 5)
+    ("contract violation" . 4)
+    ("not a procedure;" . 3)
+    ("duplicate argument name" . 1)
+    ("name must be an identifier" . 1))))

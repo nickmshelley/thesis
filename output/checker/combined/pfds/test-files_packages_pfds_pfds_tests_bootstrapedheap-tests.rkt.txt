@@ -1,0 +1,27 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 24)
+    ("unbound identifier in module" . 14)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("type name used out of context" . 2)
+    ("bad syntax" . 2)
+    ("must be used in a definition context" . 1)
+    ("expected identifier" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 33)
+    ("unbound identifier in module" . 13)
+    ("expected a `module' declaration" . 5)
+    ("Declaration for `less-than?' provided, but `less-than?' has no definition"
+     .
+     5)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     4)
+    ("type name used out of context" . 2)
+    ("bad syntax" . 1)
+    ("collection not found" . 1)
+    ("'" . 1)
+    ("unexpected term" . 1))))

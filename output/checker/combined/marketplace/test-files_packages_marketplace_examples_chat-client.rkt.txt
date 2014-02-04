@@ -1,0 +1,37 @@
+'((remove
+   (passed . 10)
+   (failed
+    (total . 46)
+    ("unbound identifier in module" . 20)
+    ("syntax error in pattern" . 9)
+    ("expected a `module' declaration" . 5)
+    ("Illegal clause in endpoint definition" . 5)
+    ("Illegal use of on-message outside endpoint definition context" . 4)
+    ("Illegal use of on-absence outside endpoint definition context" . 3)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 71)
+    ("unbound identifier in module" . 31)
+    ("syntax error in pattern" . 9)
+    ("type name used out of context" . 4)
+    ("wildcard not allowed as an expression" . 3)
+    ("bad syntax" . 3)
+    ("Declaration for `evt-handler' provided, but `evt-handler' has no definition"
+     .
+     3)
+    ("Declaration for `run-ground-vm' provided, but `run-ground-vm' has no definition"
+     .
+     3)
+    ("duplicate argument identifier" . 2)
+    ("bad module path" . 2)
+    ("identifier is already imported" . 2)
+    ("this match expander must be used inside match" . 1)
+    ("missing an \"else\" expression" . 1)
+    ("(rename \"tr-struct-copy.rkt\" ..." . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("collection not found" . 1)
+    ("typed/racket/base" . 1)
+    ("cannot open module file" . 1)
+    ("not allowed in an expression context" . 1)
+    ("duplicate clause binding name" . 1))))
