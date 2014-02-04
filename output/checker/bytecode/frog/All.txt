@@ -1,0 +1,140 @@
+'((remove
+   (passed . 670)
+   (failed
+    (total . 1655)
+    ("bad syntax" . 403)
+    ("unbound identifier in module" . 322)
+    ("allowed only around a module body" . 175)
+    ("not in module body" . 139)
+    ("wrong number of parts" . 120)
+    ("unexpected `)'" . 70)
+    ("function application is not allowed;" . 59)
+    ("literal data is not allowed;" . 39)
+    ("syntax error in pattern" . 35)
+    ("missing `]' to close preceding `[', found instead `)'" . 35)
+    ("provided identifier not defined or imported for phase 0" . 26)
+    ("bad module path" . 25)
+    ("expected a `)' to close `('" . 20)
+    ("variable not bound in all or patterns" . 20)
+    ("illegal use" . 16)
+    ("expected a `module' declaration" . 10)
+    ("cannot mutate syntax identifier" . 10)
+    ("missing `)' to close preceding `(', found instead `]'" . 10)
+    ("pattern variable cannot be used outside of a template" . 6)
+    ("wildcard not allowed as an expression" . 6)
+    ("not a provide sub-form" . 5)
+    ("missing ellipsis with pattern variable in template" . 5)
+    ("not a require sub-form" . 5)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     5)
+    ("missing `)' to close `(' on line 43, found instead `]'; indentation suggests a missing `)' before line 46"
+     .
+     5)
+    ("missing `]' to close `[' on line 69, found instead `)'; indentation suggests a missing `)' before line 73"
+     .
+     5)
+    ("missing `]' to close `[' on line 54, found instead `)'" . 5)
+    ("expected a closing '\"'" . 5)
+    ("missing `]' to close `[' on line 176, found instead `)'" . 5)
+    ("illegal use of `.'" . 5)
+    ("invalid module-path form" . 5)
+    ("missing `)' to close `(' on line 425, found instead `]'; indentation suggests a missing `)' before line 429"
+     .
+     5)
+    ("unexpected `]'" . 5)
+    ("expected a `]' to close `['" . 5)
+    ("expected `)' to close preceding `(', found instead `]'" . 5)
+    ("not allowed as an expression" . 4)
+    ("undefined;" . 4)
+    ("misuse of unit import and export keyword" . 4)
+    ("not a procedure;" . 3)
+    ("no pattern variables before ellipsis in template" . 3)
+    ("not at module level or top level" . 3)
+    ("identifier is not bound to struct type information" . 2)
+    ("contract violation" . 2)
+    ("missing procedure expression;" . 1)
+    ("ellipses not allowed as an expression" . 1)
+    ("arity mismatch;" . 1)
+    ("no info for #%app" . 1)
+    ("no info for #%datum" . 1)
+    ("no info for #%declare" . 1)
+    ("no info for #%expression" . 1)
+    ("no info for #%module-begin" . 1)
+    ("keyword used as an expression" . 1)))
+  (truncate
+   (passed . 728)
+   (failed
+    (total . 1596)
+    ("bad syntax" . 400)
+    ("unbound identifier in module" . 306)
+    ("allowed only around a module body" . 161)
+    ("not in module body" . 132)
+    ("wrong number of parts" . 98)
+    ("function application is not allowed;" . 65)
+    ("unexpected `)'" . 55)
+    ("literal data is not allowed;" . 41)
+    ("missing `]' to close preceding `[', found instead `)'" . 40)
+    ("syntax error in pattern" . 40)
+    ("expected a `module' declaration" . 25)
+    ("bad module path" . 20)
+    ("variable not bound in all or patterns" . 20)
+    ("illegal use" . 17)
+    ("expected a `)' to close `('" . 15)
+    ("missing ellipsis with pattern variable in template" . 10)
+    ("expected a `]' to close `['" . 10)
+    ("misuse of unit import and export keyword" . 10)
+    ("provided identifier not defined or imported for phase 0" . 7)
+    ("not a well-formed definition" . 5)
+    ("not a provide sub-form" . 5)
+    ("not allowed as an expression" . 5)
+    ("missing `)' to close `(' on line 32, found instead `]'; indentation suggests a missing `)' before line 34"
+     .
+     5)
+    ("missing `)' to close `(' on line 46, found instead `]'" . 5)
+    ("missing `]' to close `[' on line 75, found instead `)'; indentation suggests a missing `]' before line 76"
+     .
+     5)
+    ("missing `]' to close `[' on line 65, found instead `)'; indentation suggests a missing `]' before line 69"
+     .
+     5)
+    ("missing `]' to close `[' on line 43, found instead `)'" . 5)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     5)
+    ("missing `]' to close `[' on line 59, found instead `)'; indentation suggests a missing `]' before line 60"
+     .
+     5)
+    ("expected a closing '\"'" . 5)
+    ("unbalanced `|'" . 5)
+    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 129"
+     .
+     5)
+    ("missing `)' to close `(' on line 360, found instead `]'; indentation suggests a missing `)' before line 361"
+     .
+     5)
+    ("missing `]' to close `[' on line 425, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 360, found instead `)'" . 5)
+    ("invalid module-path form" . 5)
+    ("not a require sub-form" . 5)
+    ("missing `]' to close `[' on line 717, found instead `)'" . 5)
+    ("undefined;" . 4)
+    ("no pattern variables before ellipsis in template" . 3)
+    ("contract violation" . 3)
+    ("illegal use of syntax" . 2)
+    ("pattern variable cannot be used outside of a template" . 2)
+    ("misuse of module-path constructor (not within, e.g., `require' or `provide')"
+     .
+     2)
+    ("not at module level or top level" . 2)
+    ("missing procedure expression;" . 1)
+    ("broke its contract" . 1)
+    ("procedure does not accept keyword arguments" . 1)
+    ("not a procedure;" . 1)
+    ("keyword used as an expression" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("identifier `#%app' not included in nested require spec" . 1)
+    ("identifier `#%datum' not included in nested require spec" . 1)
+    ("identifier `#%declare' not included in nested require spec" . 1)
+    ("identifier `#%expression' not included in nested require spec" . 1)
+    ("identifier `#%module-begin' not included in nested require spec" . 1))))

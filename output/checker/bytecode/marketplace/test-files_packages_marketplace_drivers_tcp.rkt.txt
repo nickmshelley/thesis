@@ -1,0 +1,44 @@
+'((remove
+   (passed . 72)
+   (failed
+    (total . 311)
+    ("unbound identifier in module" . 90)
+    ("bad syntax" . 68)
+    ("allowed only around a module body" . 25)
+    ("not in module body" . 23)
+    ("syntax error in pattern" . 20)
+    ("illegal use" . 17)
+    ("wrong number of parts" . 16)
+    ("Illegal clause in endpoint definition" . 15)
+    ("function application is not allowed;" . 13)
+    ("variable not bound in all or patterns" . 10)
+    ("missing procedure expression;" . 5)
+    ("literal data is not allowed;" . 4)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("missing argument expression after keyword" . 1)
+    ("unrecognized keyword" . 1)
+    ("not a procedure;" . 1)))
+  (truncate
+   (passed . 80)
+   (failed
+    (total . 304)
+    ("unbound identifier in module" . 63)
+    ("bad syntax" . 60)
+    ("Illegal clause in endpoint definition" . 50)
+    ("allowed only around a module body" . 21)
+    ("syntax error in pattern" . 20)
+    ("not in module body" . 19)
+    ("illegal use" . 15)
+    ("wrong number of parts" . 12)
+    ("function application is not allowed;" . 11)
+    ("variable not bound in all or patterns" . 10)
+    ("provided identifier not defined or imported for phase 0" . 5)
+    ("missing `)' to close `(' on line 278, found instead `]'; indentation suggests a missing `)' before line 279"
+     .
+     5)
+    ("missing `)' to close `(' on line 268, found instead `]'; indentation suggests a missing `)' before line 269"
+     .
+     5)
+    ("literal data is not allowed;" . 4)
+    ("illegal use of syntax" . 2)
+    ("missing procedure expression;" . 2))))

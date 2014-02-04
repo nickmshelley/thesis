@@ -1,0 +1,20 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 32)
+    ("bad syntax" . 12)
+    ("allowed only around a module body" . 7)
+    ("not in module body" . 6)
+    ("wrong number of parts" . 4)
+    ("illegal use" . 3)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 31)
+    ("allowed only around a module body" . 7)
+    ("not in module body" . 6)
+    ("unbound identifier in module" . 5)
+    ("bad module path" . 5)
+    ("bad syntax" . 4)
+    ("wrong number of parts" . 3)
+    ("illegal use" . 1))))

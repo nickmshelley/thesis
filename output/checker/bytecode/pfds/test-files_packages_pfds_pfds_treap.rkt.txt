@@ -1,0 +1,69 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 317)
+    ("bad syntax" . 94)
+    ("unbound identifier in module" . 50)
+    ("not in module body" . 26)
+    ("bad syntax (multiple types after identifier)" . 25)
+    ("identifier used out of context" . 23)
+    ("illegal use" . 22)
+    ("wrong number of parts" . 16)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 15)
+    ("expected identifier" . 10)
+    ("function application is not allowed;" . 9)
+    ("Type variable B must be used with ..." . 5)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("must be used in a definition context" . 5)
+    ("'" . 5)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("literal data is not allowed;" . 1)
+    ("#???" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 221)
+    ("bad syntax" . 58)
+    ("unbound identifier in module" . 24)
+    ("not in module body" . 20)
+    ("identifier used out of context" . 18)
+    ("wrong number of parts" . 15)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 15)
+    ("illegal use" . 14)
+    ("(A)" . 10)
+    ("bad syntax (multiple types after identifier)" . 10)
+    ("Type variable B must be used with ..." . 5)
+    ("expected a `module' declaration" . 5)
+    ("function application is not allowed;" . 4)
+    ("Declaration for `enqueue' provided, but `enqueue' has no definition" . 4)
+    ("Declaration for `tail' provided, but `tail' has no definition" . 3)
+    ("must be used in a definition context" . 2)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("(#%app A)" . 1)
+    ("(#%datum A)" . 1)
+    ("literal data is not allowed;" . 1)
+    ("#???" . 1))))

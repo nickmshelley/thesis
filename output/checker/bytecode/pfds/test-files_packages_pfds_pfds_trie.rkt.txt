@@ -1,0 +1,42 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 130)
+    ("bad syntax" . 32)
+    ("unbound identifier in module" . 30)
+    ("illegal use" . 8)
+    ("not in module body" . 8)
+    ("wrong number of parts" . 6)
+    ("function application is not allowed;" . 6)
+    ("identifier used out of context" . 5)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     5)
+    ("syntax error in pattern" . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("'" . 5)
+    ("expected a `module' declaration" . 5)
+    ("(K)" . 5)
+    ("Declaration for `lookup' provided, but `lookup' has no definition" . 4)
+    ("literal data is not allowed;" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 89)
+    ("not in module body" . 16)
+    ("wrong number of parts" . 16)
+    ("unbound identifier in module" . 14)
+    ("untyped identifier less-than?" . 9)
+    ("bad syntax" . 8)
+    ("allowed only around a module body" . 6)
+    ("expected identifier" . 5)
+    ("Declaration for `less-than?' provided, but `less-than?' has no definition"
+     .
+     4)
+    ("function application is not allowed;" . 3)
+    ("illegal use" . 2)
+    ("identifier used out of context" . 2)
+    ("untyped identifier int-list" . 1)
+    ("literal data is not allowed;" . 1)
+    ("missing procedure expression;" . 1)
+    ("type mismatch" . 1))))

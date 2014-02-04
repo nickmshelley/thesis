@@ -1,0 +1,28 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 21)
+    ("'" . 5)
+    ("unbound identifier in module" . 4)
+    ("bad syntax" . 4)
+    ("not in module body" . 2)
+    ("identifier used out of context" . 2)
+    ("function application is not allowed;" . 1)
+    ("illegal use" . 1)
+    ("type mismatch" . 1)
+    ("wrong number of parts" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 30)
+    ("not in module body" . 5)
+    ("syntax error in pattern" . 5)
+    ("unbound identifier in module" . 5)
+    ("identifier used out of context" . 4)
+    ("bad syntax" . 4)
+    ("wrong number of parts" . 2)
+    ("type mismatch" . 1)
+    ("allowed only around a module body" . 1)
+    ("illegal use" . 1)
+    ("function application is not allowed;" . 1)
+    ("#???" . 1))))

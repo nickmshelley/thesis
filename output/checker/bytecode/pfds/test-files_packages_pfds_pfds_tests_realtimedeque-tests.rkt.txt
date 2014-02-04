@@ -1,0 +1,27 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 53)
+    ("wrong number of parts" . 13)
+    ("not in module body" . 11)
+    ("allowed only around a module body" . 10)
+    ("unbound identifier in module" . 6)
+    ("bad module path" . 5)
+    ("bad syntax" . 4)
+    ("untyped identifier lst" . 2)
+    ("Polymorphic function `map' could not be applied to arguments" . 1)
+    ("illegal use" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 59)
+    ("bad syntax" . 12)
+    ("not in module body" . 11)
+    ("allowed only around a module body" . 10)
+    ("wrong number of parts" . 8)
+    ("expected a `module' declaration" . 5)
+    ("unbound identifier in module" . 5)
+    ("illegal use" . 3)
+    ("type name used out of context" . 3)
+    ("Polymorphic function `map' could not be applied to arguments" . 1)
+    ("untyped identifier lst" . 1))))

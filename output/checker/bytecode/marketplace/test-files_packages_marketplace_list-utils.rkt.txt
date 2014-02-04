@@ -1,0 +1,24 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 10)
+    ("Declaration for `list-max' provided, but `list-max' has no definition"
+     .
+     4)
+    ("type mismatch" . 2)
+    ("not in module body" . 1)
+    ("wrong number of parts" . 1)
+    ("identifier used out of context" . 1)
+    ("unbound identifier in module" . 1)))
+  (truncate
+   (passed . 2)
+   (failed
+    (total . 15)
+    ("Unbound type name #%app" . 2)
+    ("Unbound type name #%datum" . 2)
+    ("Unbound type name #%declare" . 2)
+    ("Unbound type name #%expression" . 2)
+    ("Unbound type name #%module-begin" . 2)
+    ("unbound identifier in module" . 2)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("wrong number of parts" . 1))))

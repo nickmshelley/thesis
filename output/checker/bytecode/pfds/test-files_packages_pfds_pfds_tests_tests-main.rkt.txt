@@ -1,0 +1,10 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 5)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     5)))
+  (truncate
+   (passed . 0)
+   (failed (total . 5) ("expected a `module' declaration" . 5))))

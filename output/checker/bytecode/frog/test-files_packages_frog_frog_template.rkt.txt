@@ -1,0 +1,27 @@
+'((remove
+   (passed . 13)
+   (failed
+    (total . 22)
+    ("allowed only around a module body" . 4)
+    ("bad syntax" . 4)
+    ("not in module body" . 3)
+    ("unbound identifier in module" . 3)
+    ("wrong number of parts" . 2)
+    ("undefined;" . 2)
+    ("missing procedure expression;" . 1)
+    ("function application is not allowed;" . 1)
+    ("literal data is not allowed;" . 1)
+    ("illegal use" . 1)))
+  (truncate
+   (passed . 12)
+   (failed
+    (total . 73)
+    ("bad syntax" . 20)
+    ("unbound identifier in module" . 13)
+    ("unexpected `)'" . 10)
+    ("expected a `)' to close `('" . 10)
+    ("allowed only around a module body" . 6)
+    ("wrong number of parts" . 5)
+    ("illegal use" . 5)
+    ("not in module body" . 3)
+    ("function application is not allowed;" . 1))))

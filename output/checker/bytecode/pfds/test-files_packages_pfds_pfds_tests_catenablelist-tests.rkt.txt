@@ -1,0 +1,35 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 47)
+    ("bad syntax" . 8)
+    ("not in module body" . 8)
+    ("wrong number of parts" . 6)
+    ("allowed only around a module body" . 5)
+    ("expected a `module' declaration" . 5)
+    ("not a require sub-form" . 5)
+    ("illegal use of syntax" . 3)
+    ("illegal use" . 2)
+    ("untyped identifier lst" . 2)
+    ("unbound identifier in module" . 2)
+    ("type mismatch" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 91)
+    ("bad syntax" . 28)
+    ("not in module body" . 11)
+    ("wrong number of parts" . 10)
+    ("allowed only around a module body" . 8)
+    ("illegal use" . 7)
+    ("unbound identifier in module" . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     5)
+    ("bad module path" . 5)
+    ("Declaration for `str-less-than?' provided, but `str-less-than?' has no definition"
+     .
+     4)
+    ("untyped identifier int-list" . 2)
+    ("identifier used out of context" . 1))))

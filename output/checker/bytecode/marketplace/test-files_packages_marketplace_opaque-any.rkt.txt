@@ -1,0 +1,4 @@
+'((remove
+   (passed . 9)
+   (failed (total . 1) ("literal data is not allowed;" . 1)))
+  (truncate (passed . 0) (failed (total . 0))))

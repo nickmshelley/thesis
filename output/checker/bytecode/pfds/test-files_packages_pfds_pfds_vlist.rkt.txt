@@ -1,0 +1,85 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 356)
+    ("bad syntax" . 91)
+    ("unbound identifier in module" . 33)
+    ("bad syntax (multiple types after identifier)" . 25)
+    ("not in module body" . 25)
+    ("wrong number of parts" . 22)
+    ("identifier used out of context" . 22)
+    ("illegal use" . 21)
+    ("Type variable B must be used with ..." . 20)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 15)
+    ("too many forms in body of All type" . 10)
+    ("expected identifier" . 10)
+    ("must be used in a definition context" . 7)
+    ("function application is not allowed;" . 7)
+    ("(A)" . 5)
+    ("identifier already provided (as a different binding)" . 5)
+    ("bad module path" . 5)
+    ("not a provide sub-form" . 5)
+    ("expected a `module' declaration" . 5)
+    ("Declaration for `list-length' provided, but `list-length' has no definition"
+     .
+     4)
+    ("Declaration for `vlist->list' provided, but `vlist->list' has no definition"
+     .
+     4)
+    ("Declaration for `list-foldr' provided, but `list-foldr' has no definition"
+     .
+     3)
+    ("literal data is not allowed;" . 2)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     2)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 412)
+    ("bad syntax" . 153)
+    ("unbound identifier in module" . 42)
+    ("illegal use" . 38)
+    ("bad syntax (multiple types after identifier)" . 30)
+    ("not in module body" . 27)
+    ("identifier used out of context" . 23)
+    ("wrong number of parts" . 17)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 15)
+    ("function application is not allowed;" . 11)
+    ("'" . 10)
+    ("Type variable B must be used with ..." . 5)
+    ("unexpected term" . 5)
+    ("not a provide sub-form" . 5)
+    ("(A)" . 5)
+    ("expected identifier" . 5)
+    ("too many forms in body of All type" . 5)
+    ("Declaration for `treap-map' provided, but `treap-map' has no definition"
+     .
+     4)
+    ("literal data is not allowed;" . 3)
+    ("illegal use of syntax" . 2)
+    ("must be used in a definition context" . 1)
+    ("#???" . 1)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     1))))

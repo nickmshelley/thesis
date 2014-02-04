@@ -1,0 +1,13 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 17)
+    ("not a require sub-form" . 5)
+    ("unbound identifier in module" . 4)
+    ("illegal use of syntax" . 3)
+    ("#???" . 2)
+    ("allowed only around a module body" . 2)
+    ("Cannot apply expression of type String, since it is not a function type"
+     .
+     1)))
+  (truncate (passed . 0) (failed (total . 0))))

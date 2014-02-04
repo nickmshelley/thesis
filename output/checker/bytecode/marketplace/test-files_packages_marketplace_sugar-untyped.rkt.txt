@@ -1,0 +1,56 @@
+'((remove
+   (passed . 45)
+   (failed
+    (total . 75)
+    ("bad syntax" . 12)
+    ("defaults)" . 10)
+    ("duplicate attribute" . 10)
+    ("unbound identifier in module" . 8)
+    ("too many ellipses in template" . 5)
+    ("not a require sub-form" . 5)
+    ("wrong number of parts" . 4)
+    ("allowed only around a module body" . 4)
+    ("provided identifier not defined or imported for phase 0" . 4)
+    ("illegal use" . 3)
+    ("pattern variable cannot be used outside of a template" . 2)
+    ("not in module body" . 2)
+    ("undefined;" . 1)
+    ("identifier `#%app' not included in nested require spec" . 1)
+    ("identifier `#%datum' not included in nested require spec" . 1)
+    ("identifier `#%declare' not included in nested require spec" . 1)
+    ("identifier `#%expression' not included in nested require spec" . 1)
+    ("identifier `#%module-begin' not included in nested require spec" . 1)))
+  (truncate
+   (passed . 10)
+   (failed
+    (total . 75)
+    ("Unbound type name X" . 10)
+    ("Polymorphic function `reverse' could not be applied to arguments" . 6)
+    ("unbound identifier in module" . 5)
+    ("bad syntax" . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("Declaration for `empty-quasiqueue' provided, but `empty-quasiqueue' has no definition"
+     .
+     5)
+    ("Unbound type name #%app" . 4)
+    ("Unbound type name #%datum" . 4)
+    ("Unbound type name #%declare" . 4)
+    ("Unbound type name #%expression" . 4)
+    ("Unbound type name #%module-begin" . 4)
+    ("Declaration for `quasiqueue-empty?' provided, but `quasiqueue-empty?' has no definition"
+     .
+     4)
+    ("Declaration for `list->quasiqueue' provided, but `list->quasiqueue' has no definition"
+     .
+     4)
+    ("wrong number of parts" . 2)
+    ("function application is not allowed;" . 2)
+    ("must be used in a definition context" . 1)
+    ("#???" . 1)
+    ("illegal use" . 1)
+    ("Cannot apply expression of type Boolean, since it is not a function type"
+     .
+     1)
+    ("type mismatch" . 1)
+    ("not in module body" . 1)
+    ("identifier used out of context" . 1))))

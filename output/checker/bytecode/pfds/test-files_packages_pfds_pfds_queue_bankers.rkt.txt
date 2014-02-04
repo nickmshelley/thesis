@@ -1,0 +1,83 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 198)
+    ("bad syntax" . 53)
+    ("not in module body" . 20)
+    ("identifier used out of context" . 16)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 15)
+    ("bad syntax (multiple types after identifier)" . 15)
+    ("illegal use" . 13)
+    ("wrong number of parts" . 11)
+    ("unbound identifier in module" . 10)
+    ("expected identifier" . 10)
+    ("use of a class keyword is not in a class" . 7)
+    ("Type variable B must be used with ..." . 5)
+    ("unexpected term" . 5)
+    ("Declaration for `head' provided, but `head' has no definition" . 4)
+    ("Declaration for `queue-ormap' provided, but `queue-ormap' has no definition"
+     .
+     4)
+    ("function application is not allowed;" . 3)
+    ("must be used in a definition context" . 1)
+    ("allowed only around a module body" . 1)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 342)
+    ("bad syntax" . 103)
+    ("unbound identifier in module" . 38)
+    ("(A)" . 35)
+    ("illegal use" . 25)
+    ("not in module body" . 20)
+    ("identifier used out of context" . 20)
+    ("expected identifier" . 15)
+    ("wrong number of parts" . 14)
+    ("function application is not allowed;" . 11)
+    ("too many forms in body of All type" . 10)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 5)
+    ("'" . 5)
+    ("Declaration for `list-fourth' provided, but `list-fourth' has no definition"
+     .
+     4)
+    ("Declaration for `list-map' provided, but `list-map' has no definition"
+     .
+     4)
+    ("literal data is not allowed;" . 4)
+    ("Declaration for `list-foldl' provided, but `list-foldl' has no definition"
+     .
+     4)
+    ("must be used in a definition context" . 3)
+    ("Declaration for `vfilter' provided, but `vfilter' has no definition" . 3)
+    ("Declaration for `list-third' provided, but `list-third' has no definition"
+     .
+     3)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("#???" . 1))))

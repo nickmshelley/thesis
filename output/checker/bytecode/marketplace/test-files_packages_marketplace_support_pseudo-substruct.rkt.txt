@@ -1,0 +1,14 @@
+'((remove
+   (passed . 16)
+   (failed
+    (total . 19)
+    ("missing ellipsis with pattern variable in template" . 10)
+    ("bad module path" . 5)
+    ("(super-type TypeParam ...) SubType sub-type sub-type?)" . 2)
+    ("#???" . 1)
+    ("unbound identifier in module" . 1)))
+  (truncate
+   (passed . 30)
+   (failed
+    (total . 5)
+    ("no pattern variables before ellipsis in template" . 5))))

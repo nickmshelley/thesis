@@ -1,0 +1,12 @@
+'((remove (passed . 0) (failed (total . 0)))
+  (truncate
+   (passed . 2)
+   (failed
+    (total . 19)
+    ("syntax error in pattern" . 5)
+    ("allowed only around a module body" . 4)
+    ("bad syntax" . 3)
+    ("not in module body" . 3)
+    ("wrong number of parts" . 2)
+    ("illegal use" . 1)
+    ("not a procedure;" . 1))))

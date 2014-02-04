@@ -1,0 +1,93 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 422)
+    ("bad syntax" . 116)
+    ("unbound identifier in module" . 52)
+    ("not in module body" . 38)
+    ("identifier used out of context" . 33)
+    ("illegal use" . 28)
+    ("wrong number of parts" . 28)
+    ("Type variable B must be used with ..." . 20)
+    ("(A)" . 20)
+    ("bad syntax (multiple types after identifier)" . 15)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 15)
+    ("function application is not allowed;" . 12)
+    ("Declaration for `rotate-rev' provided, but `rotate-rev' has no definition"
+     .
+     7)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("Expected a polymorphic function with ..., but function/annotation had no ..."
+     .
+     5)
+    ("must be used in a definition context" . 4)
+    ("Declaration for `exec-one' provided, but `exec-one' has no definition"
+     .
+     3)
+    ("literal data is not allowed;" . 2)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("#???" . 2)
+    ("type name used out of context" . 2)
+    ("Unbound type name #%app" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("Unbound type name #%module-begin" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 413)
+    ("bad syntax" . 129)
+    ("unbound identifier in module" . 56)
+    ("not in module body" . 35)
+    ("illegal use" . 31)
+    ("wrong number of parts" . 28)
+    ("identifier used out of context" . 28)
+    ("bad syntax (multiple types after identifier)" . 20)
+    ("Type variable B must be used with ..." . 15)
+    ("function application is not allowed;" . 12)
+    ("expected identifier" . 10)
+    ("must be used in a definition context" . 5)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("expected a `module' declaration" . 5)
+    ("'" . 5)
+    ("(A)" . 5)
+    ("#???" . 4)
+    ("literal data is not allowed;" . 3)
+    ("Declaration for `deque-ormap' provided, but `deque-ormap' has no definition"
+     .
+     3)
+    ("Declaration for `head' provided, but `head' has no definition" . 3)
+    ("Declaration for `list->deque' provided, but `list->deque' has no definition"
+     .
+     3)
+    ("allowed only around a module body" . 1)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("type name used out of context" . 1)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     1))))

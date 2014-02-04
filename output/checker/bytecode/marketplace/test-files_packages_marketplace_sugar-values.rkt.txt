@@ -1,0 +1,36 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 54)
+    ("bad syntax" . 16)
+    ("provided identifier not defined or imported for phase 0" . 5)
+    ("(State)" . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("illegal use" . 4)
+    ("not in module body" . 3)
+    ("wrong number of parts" . 3)
+    ("identifier used out of context" . 2)
+    ("type name used out of context" . 2)
+    ("unbound identifier in module" . 2)
+    ("function application is not allowed;" . 1)
+    ("literal data is not allowed;" . 1)))
+  (truncate
+   (passed . 37)
+   (failed
+    (total . 58)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 19)
+    ("bad syntax" . 12)
+    ("function application is not allowed;" . 4)
+    ("allowed only around a module body" . 4)
+    ("no corresponding require" . 4)
+    ("provided identifier not defined or imported for phase 0" . 3)
+    ("illegal use" . 3)
+    ("illegal use of syntax" . 2)
+    ("not in module body" . 2)
+    ("wrong number of parts" . 2)
+    ("identifier to remove `#%module-begin' not included in nested provide spec"
+     .
+     1)
+    ("pattern variable cannot be used outside of a template" . 1)
+    ("identifier already provided (as a different binding)" . 1))))

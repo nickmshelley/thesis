@@ -1,0 +1,63 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 363)
+    ("bad syntax" . 116)
+    ("unbound identifier in module" . 45)
+    ("not in module body" . 34)
+    ("identifier used out of context" . 31)
+    ("illegal use" . 28)
+    ("wrong number of parts" . 21)
+    ("bad syntax (multiple types after identifier)" . 20)
+    ("function application is not allowed;" . 10)
+    ("(A)" . 10)
+    ("expected identifier" . 10)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 5)
+    ("Type variable B must be used with ..." . 5)
+    ("Declaration for `heap' provided, but `heap' has no definition" . 4)
+    ("must be used in a definition context" . 4)
+    ("use of a class keyword is not in a class" . 4)
+    ("#???" . 3)
+    ("literal data is not allowed;" . 2)
+    ("illegal use of `.'" . 1)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 362)
+    ("bad syntax" . 99)
+    ("unbound identifier in module" . 69)
+    ("not in module body" . 31)
+    ("identifier used out of context" . 28)
+    ("illegal use" . 24)
+    ("bad syntax (multiple types after identifier)" . 20)
+    ("wrong number of parts" . 20)
+    ("Type variable B must be used with ..." . 15)
+    ("function application is not allowed;" . 15)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 10)
+    ("'" . 5)
+    ("(A)" . 5)
+    ("Declaration for `sorted-list' provided, but `sorted-list' has no definition"
+     .
+     4)
+    ("Declaration for `root' provided, but `root' has no definition" . 4)
+    ("Declaration for `build-heap' provided, but `build-heap' has no definition"
+     .
+     4)
+    ("#???" . 3)
+    ("must be used in a definition context" . 3)
+    ("literal data is not allowed;" . 2)
+    ("misuse of compound-unit keyword" . 1))))

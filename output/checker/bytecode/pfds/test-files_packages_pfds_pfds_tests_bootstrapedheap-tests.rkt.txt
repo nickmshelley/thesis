@@ -1,0 +1,37 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 92)
+    ("bad syntax" . 24)
+    ("not in module body" . 14)
+    ("wrong number of parts" . 14)
+    ("type name used out of context" . 8)
+    ("untyped identifier less-than?" . 6)
+    ("illegal use" . 6)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("unbound identifier in module" . 5)
+    ("Declaration for `less-than?' provided, but `less-than?' has no definition"
+     .
+     4)
+    ("allowed only around a module body" . 3)
+    ("missing procedure expression;" . 1)
+    ("untyped identifier int-list" . 1)
+    ("untyped identifier gt" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 128)
+    ("unbound identifier in module" . 38)
+    ("bad syntax" . 29)
+    ("not in module body" . 10)
+    ("function application is not allowed;" . 9)
+    ("identifier used out of context" . 8)
+    ("illegal use" . 7)
+    ("wrong number of parts" . 6)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("bad module path" . 5)
+    ("Declaration for `lookup' provided, but `lookup' has no definition" . 4)
+    ("type name used out of context" . 4)
+    ("must be used in a definition context" . 1)
+    ("#???" . 1)
+    ("literal data is not allowed;" . 1))))

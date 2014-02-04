@@ -1,0 +1,38 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 83)
+    ("bad syntax" . 17)
+    ("wrong number of parts" . 13)
+    ("not in module body" . 11)
+    ("untyped identifier less-than?" . 8)
+    ("expected a `module' declaration" . 5)
+    ("bad module path" . 5)
+    ("illegal use" . 4)
+    ("unbound identifier in module" . 4)
+    ("Declaration for `gt' provided, but `gt' has no definition" . 4)
+    ("allowed only around a module body" . 3)
+    ("type name used out of context" . 2)
+    ("Polymorphic function `remove' could not be applied to arguments" . 2)
+    ("Polymorphic function `andmap' could not be applied to arguments" . 1)
+    ("must be used in a definition context" . 1)
+    ("Polymorphic function `map' could not be applied to arguments" . 1)
+    ("function application is not allowed;" . 1)
+    ("literal data is not allowed;" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 69)
+    ("wrong number of parts" . 14)
+    ("bad syntax" . 12)
+    ("not in module body" . 10)
+    ("untyped identifier less-than?" . 10)
+    ("unbound identifier in module" . 5)
+    ("expected a `module' declaration" . 5)
+    ("allowed only around a module body" . 4)
+    ("Declaration for `str-less-than?' provided, but `str-less-than?' has no definition"
+     .
+     4)
+    ("illegal use" . 3)
+    ("function application is not allowed;" . 1)
+    ("untyped identifier int-list" . 1))))

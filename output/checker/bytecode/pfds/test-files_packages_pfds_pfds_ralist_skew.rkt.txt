@@ -1,0 +1,97 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 467)
+    ("bad syntax" . 153)
+    ("bad syntax (multiple types after identifier)" . 40)
+    ("illegal use" . 37)
+    ("not in module body" . 35)
+    ("identifier used out of context" . 32)
+    ("unbound identifier in module" . 32)
+    ("wrong number of parts" . 23)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 15)
+    ("(A)" . 15)
+    ("Type variable B must be used with ..." . 10)
+    ("function application is not allowed;" . 10)
+    ("too many forms in body of All type" . 10)
+    ("expected identifier" . 10)
+    ("literal data is not allowed;" . 7)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("must be used in a definition context" . 4)
+    ("Declaration for `list-fourth' provided, but `list-fourth' has no definition"
+     .
+     4)
+    ("Declaration for `list-sixth' provided, but `list-sixth' has no definition"
+     .
+     4)
+    ("Declaration for `tail' provided, but `tail' has no definition" . 4)
+    ("Declaration for `list-eighth' provided, but `list-eighth' has no definition"
+     .
+     3)
+    ("Declaration for `list-last' provided, but `list-last' has no definition"
+     .
+     3)
+    ("Declaration for `list-foldr' provided, but `list-foldr' has no definition"
+     .
+     3)
+    ("type name used out of context" . 2)
+    ("#???" . 2)
+    ("allowed only around a module body" . 1)
+    ("missing argument expression after keyword" . 1)
+    ("unrecognized keyword" . 1)
+    ("keyword used as an expression" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 475)
+    ("bad syntax" . 176)
+    ("illegal use" . 44)
+    ("unbound identifier in module" . 39)
+    ("not in module body" . 32)
+    ("identifier used out of context" . 27)
+    ("expected identifier" . 20)
+    ("bad syntax (multiple types after identifier)" . 20)
+    ("wrong number of parts" . 16)
+    ("(A)" . 15)
+    ("function application is not allowed;" . 14)
+    ("too many forms in body of All type" . 10)
+    ("literal data is not allowed;" . 5)
+    ("Type variable B must be used with ..." . 5)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 5)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("expected a `module' declaration" . 5)
+    ("bad module path" . 5)
+    ("Declaration for `list-foldl' provided, but `list-foldl' has no definition"
+     .
+     4)
+    ("Declaration for `list-andmap' provided, but `list-andmap' has no definition"
+     .
+     4)
+    ("Declaration for `list-seventh' provided, but `list-seventh' has no definition"
+     .
+     3)
+    ("illegal use of syntax" . 3)
+    ("Declaration for `list-foldr' provided, but `list-foldr' has no definition"
+     .
+     3)
+    ("Declaration for `list-fourth' provided, but `list-fourth' has no definition"
+     .
+     3)
+    ("Declaration for `tree-update' provided, but `tree-update' has no definition"
+     .
+     3)
+    ("not allowed as an expression" . 2)
+    ("allowed only around a module body" . 2)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     1))))

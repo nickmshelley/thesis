@@ -1,0 +1,11 @@
+'((remove
+   (passed . 35)
+   (failed
+    (total . 10)
+    ("missing ellipsis with pattern variable in template" . 5)
+    ("unbound identifier in module" . 3)
+    ("function application is not allowed;" . 1)
+    ("literal data is not allowed;" . 1)))
+  (truncate
+   (passed . 0)
+   (failed (total . 5) ("expected a `module' declaration" . 5))))

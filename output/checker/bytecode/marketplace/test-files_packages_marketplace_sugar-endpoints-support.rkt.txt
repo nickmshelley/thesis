@@ -1,0 +1,9 @@
+'((remove (passed . 10) (failed (total . 0)))
+  (truncate
+   (passed . 1)
+   (failed
+    (total . 9)
+    ("provided identifier not defined or imported for phase 0" . 5)
+    ("type name used out of context" . 2)
+    ("#???" . 1)
+    ("wrong number of parts" . 1))))

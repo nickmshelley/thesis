@@ -1,0 +1,25 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 36)
+    ("bad syntax" . 8)
+    ("not in module body" . 7)
+    ("allowed only around a module body" . 7)
+    ("wrong number of parts" . 6)
+    ("expected a `module' declaration" . 5)
+    ("illegal use" . 2)
+    ("Polymorphic function `remove' could not be applied to arguments" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 39)
+    ("not in module body" . 9)
+    ("allowed only around a module body" . 8)
+    ("wrong number of parts" . 6)
+    ("unbound identifier in module" . 5)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     5)
+    ("bad syntax" . 4)
+    ("Polymorphic function `remove' could not be applied to arguments" . 1)
+    ("illegal use" . 1))))

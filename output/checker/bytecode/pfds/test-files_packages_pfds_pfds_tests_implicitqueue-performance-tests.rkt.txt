@@ -1,0 +1,15 @@
+'((remove
+   (passed . 0)
+   (failed (total . 5) ("bad syntax" . 4) ("illegal use" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 34)
+    ("not in module body" . 10)
+    ("allowed only around a module body" . 8)
+    ("wrong number of parts" . 6)
+    ("expected a `module' declaration" . 5)
+    ("unbound identifier in module" . 2)
+    ("Polymorphic function `map' could not be applied to arguments" . 1)
+    ("type mismatch" . 1)
+    ("Polymorphic function `remove' could not be applied to arguments" . 1))))

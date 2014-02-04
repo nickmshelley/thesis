@@ -1,0 +1,57 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 122)
+    ("unbound identifier in module" . 28)
+    ("bad syntax (multiple types after identifier)" . 15)
+    ("bad syntax" . 13)
+    ("not in module body" . 10)
+    ("wrong number of parts" . 9)
+    ("identifier used out of context" . 7)
+    ("too many forms in body of All type" . 5)
+    ("identifier is not bound to struct type information" . 5)
+    ("'" . 5)
+    ("(State)" . 5)
+    ("Declaration for `process-map' provided, but `process-map' has no definition"
+     .
+     4)
+    ("Declaration for `reset-pending-actions' provided, but `reset-pending-actions' has no definition"
+     .
+     4)
+    ("type name used out of context" . 4)
+    ("illegal use" . 3)
+    ("function application is not allowed;" . 3)
+    ("must be used in a definition context" . 1)
+    ("#???" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 111)
+    ("bad syntax" . 16)
+    ("'" . 15)
+    ("expected a `module' declaration" . 10)
+    ("unbound identifier in module" . 9)
+    ("not in module body" . 7)
+    ("identifier used out of context" . 6)
+    ("Error in macro expansion -- insufficient type information to typecheck. please add more type annotations"
+     .
+     5)
+    ("wrong number of parts" . 5)
+    ("Declaration for `coproc' provided, but `coproc' has no definition" . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("accessor name not associated with the given structure type" . 5)
+    ("illegal use" . 4)
+    ("Declaration for `Process-pid' provided, but `Process-pid' has no definition"
+     .
+     4)
+    ("Declaration for `inject-process' provided, but `inject-process' has no definition"
+     .
+     4)
+    ("function application is not allowed;" . 3)
+    ("allowed only around a module body" . 2)
+    ("missing procedure expression;" . 1)
+    ("#???" . 1)
+    ("missing argument expression after keyword" . 1)
+    ("identifier is not bound to struct type information" . 1)
+    ("unrecognized keyword" . 1)
+    ("keyword used as an expression" . 1))))

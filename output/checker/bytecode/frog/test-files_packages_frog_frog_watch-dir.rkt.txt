@@ -1,0 +1,26 @@
+'((remove
+   (passed . 15)
+   (failed
+    (total . 70)
+    ("bad syntax" . 30)
+    ("unbound identifier in module" . 17)
+    ("not in module body" . 6)
+    ("wrong number of parts" . 6)
+    ("allowed only around a module body" . 6)
+    ("function application is not allowed;" . 3)
+    ("literal data is not allowed;" . 1)
+    ("contract violation" . 1)))
+  (truncate
+   (passed . 15)
+   (failed
+    (total . 65)
+    ("bad syntax" . 30)
+    ("unbound identifier in module" . 10)
+    ("not in module body" . 5)
+    ("allowed only around a module body" . 5)
+    ("expected a `module' declaration" . 5)
+    ("missing `)' to close `(' on line 32, found instead `]'; indentation suggests a missing `)' before line 34"
+     .
+     5)
+    ("wrong number of parts" . 3)
+    ("function application is not allowed;" . 2))))

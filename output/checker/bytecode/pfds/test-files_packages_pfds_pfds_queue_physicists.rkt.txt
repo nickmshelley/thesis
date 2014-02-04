@@ -1,0 +1,79 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 293)
+    ("bad syntax" . 107)
+    ("unbound identifier in module" . 35)
+    ("illegal use" . 26)
+    ("not in module body" . 18)
+    ("identifier used out of context" . 14)
+    ("wrong number of parts" . 11)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 10)
+    ("Type variable B must be used with ..." . 10)
+    ("bad syntax (multiple types after identifier)" . 10)
+    ("Declaration for `enqueue' provided, but `enqueue' has no definition" . 8)
+    ("function application is not allowed;" . 7)
+    ("missing `)' to close preceding `(', found instead `]'" . 5)
+    ("expected identifier" . 5)
+    ("(A)" . 5)
+    ("unexpected `)'" . 5)
+    ("use of a class keyword is not in a class" . 3)
+    ("must be used in a definition context" . 3)
+    ("literal data is not allowed;" . 3)
+    ("missing procedure expression;" . 2)
+    ("allowed only around a module body" . 1)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 288)
+    ("bad syntax" . 85)
+    ("unbound identifier in module" . 55)
+    ("illegal use" . 21)
+    ("not in module body" . 20)
+    ("identifier used out of context" . 16)
+    ("bad syntax (multiple types after identifier)" . 15)
+    ("wrong number of parts" . 13)
+    ("Type variable B must be used with ..." . 10)
+    ("function application is not allowed;" . 7)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 5)
+    ("unexpected term" . 5)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 115"
+     .
+     5)
+    ("expected a `)' to close `('" . 5)
+    ("Declaration for `queue' provided, but `queue' has no definition" . 4)
+    ("#???" . 3)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("missing procedure expression;" . 2)
+    ("must be used in a definition context" . 1)
+    ("illegal use of `.'" . 1)
+    ("allowed only around a module body" . 1)
+    ("type name used out of context" . 1)
+    ("(#%app pref front lenf rear lenr)" . 1)
+    ("(#%app A)" . 1)
+    ("(#%datum A)" . 1))))

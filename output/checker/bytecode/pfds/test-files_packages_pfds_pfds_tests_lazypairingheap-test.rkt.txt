@@ -1,0 +1,28 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 120)
+    ("bad syntax" . 32)
+    ("expected identifier" . 20)
+    ("unbound identifier in module" . 15)
+    ("not in module body" . 13)
+    ("wrong number of parts" . 12)
+    ("illegal use" . 8)
+    ("allowed only around a module body" . 7)
+    ("bad module path" . 5)
+    ("identifier used out of context" . 3)
+    ("function application is not allowed;" . 2)
+    ("missing procedure expression;" . 1)
+    ("type mismatch" . 1)
+    ("literal data is not allowed;" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 51)
+    ("not in module body" . 13)
+    ("wrong number of parts" . 12)
+    ("allowed only around a module body" . 10)
+    ("bad syntax" . 8)
+    ("type name used out of context" . 5)
+    ("illegal use" . 2)
+    ("Polymorphic function `last' could not be applied to arguments" . 1))))

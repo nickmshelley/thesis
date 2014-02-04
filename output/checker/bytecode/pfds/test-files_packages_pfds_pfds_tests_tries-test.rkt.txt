@@ -1,0 +1,57 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 55)
+    ("allowed only around a module body" . 11)
+    ("not in module body" . 10)
+    ("wrong number of parts" . 10)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     5)
+    ("Polymorphic function `bind' could not be applied to arguments" . 3)
+    ("Cannot apply expression of type String, since it is not a function type"
+     .
+     3)
+    ("Cannot apply expression of type (List One Positive-Byte Positive-Byte Positive-Byte), since it is not a function type"
+     .
+     2)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `lookup' could not be applied to arguments" . 2)
+    ("type mismatch" . 2)
+    ("Polymorphic function `tries' could not be applied to arguments" . 2)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     1)
+    ("#???" . 1)
+    ("Cannot apply expression of type (List One Positive-Byte Positive-Byte Positive-Byte Positive-Byte), since it is not a function type"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 55)
+    ("allowed only around a module body" . 12)
+    ("not in module body" . 10)
+    ("wrong number of parts" . 9)
+    ("Polymorphic function `lookup' could not be applied to arguments" . 8)
+    ("Cannot apply expression of type String, since it is not a function type"
+     .
+     4)
+    ("type mismatch" . 2)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     2)
+    ("#???" . 2)
+    ("Cannot apply expression of type (U Null (Pairof Char (Listof Char))), since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `trie' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (List One Positive-Byte Positive-Byte Positive-Byte Positive-Byte), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `tries' could not be applied to arguments" . 1))))

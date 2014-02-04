@@ -1,0 +1,8 @@
+'((remove
+   (passed . 0)
+   (failed (total . 5) ("expected a `module' declaration" . 5)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 5)
+    ("initial import is not a well-formed module path" . 5))))

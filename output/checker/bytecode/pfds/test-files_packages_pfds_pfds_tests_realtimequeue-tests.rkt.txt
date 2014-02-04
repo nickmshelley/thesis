@@ -1,0 +1,26 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 40)
+    ("expected a `module' declaration" . 10)
+    ("allowed only around a module body" . 8)
+    ("not in module body" . 8)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     5)
+    ("wrong number of parts" . 4)
+    ("type name used out of context" . 3)
+    ("type mismatch" . 1)
+    ("missing procedure expression;" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 40)
+    ("allowed only around a module body" . 9)
+    ("not in module body" . 8)
+    ("wrong number of parts" . 7)
+    ("unexpected `)'" . 5)
+    ("bad module path" . 5)
+    ("bad syntax" . 4)
+    ("illegal use" . 1)
+    ("Polymorphic function `remove' could not be applied to arguments" . 1))))

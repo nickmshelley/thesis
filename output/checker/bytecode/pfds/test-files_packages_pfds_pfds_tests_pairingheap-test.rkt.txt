@@ -1,0 +1,25 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 127)
+    ("bad syntax" . 44)
+    ("unbound identifier in module" . 16)
+    ("expected identifier" . 15)
+    ("illegal use" . 11)
+    ("not in module body" . 11)
+    ("wrong number of parts" . 11)
+    ("allowed only around a module body" . 6)
+    ("expected a `module' declaration" . 5)
+    ("function application is not allowed;" . 3)
+    ("identifier used out of context" . 3)
+    ("type mismatch" . 1)
+    ("Polymorphic function `remove' could not be applied to arguments" . 1)))
+  (truncate
+   (passed . 10)
+   (failed
+    (total . 20)
+    ("provided identifier not defined or imported for phase 0" . 6)
+    ("bad module path" . 5)
+    ("unbound identifier in module" . 3)
+    ("wrong number of parts" . 3)
+    ("allowed only around a module body" . 3))))

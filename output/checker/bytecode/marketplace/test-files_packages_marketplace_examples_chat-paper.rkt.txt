@@ -1,0 +1,44 @@
+'((remove
+   (passed . 2)
+   (failed
+    (total . 69)
+    ("Illegal clause in endpoint definition" . 15)
+    ("allowed only around a module body" . 9)
+    ("unbound identifier in module" . 8)
+    ("not in module body" . 7)
+    ("bad syntax" . 6)
+    ("missing `)' to close preceding `(', found instead `]'" . 5)
+    ("expected a `)' to close `('" . 5)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     5)
+    ("wrong number of parts" . 3)
+    ("illegal use" . 2)
+    ("Illegal use of on-absence outside endpoint definition context" . 1)
+    ("Illegal use of match-conversation outside endpoint definition context"
+     .
+     1)
+    ("not a procedure;" . 1)
+    ("0>)) because no further metalevel exists" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 69)
+    ("bad syntax" . 17)
+    ("unbound identifier in module" . 9)
+    ("wrong number of parts" . 7)
+    ("not in module body" . 6)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("illegal use" . 4)
+    ("type name used out of context" . 4)
+    ("provided identifier not defined or imported for phase 0" . 3)
+    ("identifier used out of context" . 3)
+    ("illegal use of syntax" . 3)
+    ("function application is not allowed;" . 2)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     2)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("literal data is not allowed;" . 1)
+    ("must be used in a definition context" . 1))))

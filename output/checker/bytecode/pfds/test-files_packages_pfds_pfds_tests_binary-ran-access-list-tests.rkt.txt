@@ -1,0 +1,25 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 52)
+    ("bad syntax" . 12)
+    ("not in module body" . 10)
+    ("wrong number of parts" . 9)
+    ("allowed only around a module body" . 8)
+    ("expected a `module' declaration" . 5)
+    ("illegal use" . 3)
+    ("Polymorphic function `list-set' could not be applied to arguments" . 3)
+    ("Polymorphic function `tail' could not be applied to arguments" . 1)
+    ("untyped identifier lst" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 48)
+    ("bad syntax" . 12)
+    ("allowed only around a module body" . 11)
+    ("not in module body" . 10)
+    ("wrong number of parts" . 9)
+    ("illegal use" . 3)
+    ("Polymorphic function `tail' could not be applied to arguments" . 1)
+    ("Polymorphic function `->list' could not be applied to arguments" . 1)
+    ("Polymorphic function `drop' could not be applied to arguments" . 1))))

@@ -1,0 +1,23 @@
+'((remove
+   (passed . 3)
+   (failed
+    (total . 22)
+    ("provided identifier not defined or imported for phase 0" . 10)
+    ("allowed only around a module body" . 4)
+    ("unbound identifier in module" . 3)
+    ("wrong number of parts" . 2)
+    ("pattern variable cannot be used outside of a template" . 2)
+    ("bad syntax" . 1)))
+  (truncate
+   (passed . 5)
+   (failed
+    (total . 20)
+    ("undefined;" . 4)
+    ("bad syntax" . 4)
+    ("wrong number of parts" . 3)
+    ("allowed only around a module body" . 3)
+    ("not in module body" . 2)
+    ("illegal use" . 1)
+    ("function application is not allowed;" . 1)
+    ("literal data is not allowed;" . 1)
+    ("missing procedure expression;" . 1))))

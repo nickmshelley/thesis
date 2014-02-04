@@ -1,0 +1,19 @@
+'((remove
+   (passed . 2)
+   (failed
+    (total . 18)
+    ("not a well-formed definition" . 10)
+    ("expected a closing '\"'" . 5)
+    ("not a procedure;" . 1)
+    ("illegal use (not a module body)" . 1)
+    ("bad syntax" . 1)))
+  (truncate
+   (passed . 10)
+   (failed
+    (total . 10)
+    ("expected a `module' declaration" . 5)
+    ("function application is not allowed;" . 1)
+    ("literal data is not allowed;" . 1)
+    ("not a procedure;" . 1)
+    ("illegal use (not a module body)" . 1)
+    ("bad syntax" . 1))))

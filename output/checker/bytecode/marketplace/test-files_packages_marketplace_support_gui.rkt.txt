@@ -1,0 +1,15 @@
+'((remove (passed . 0) (failed (total . 0)))
+  (truncate
+   (passed . 40)
+   (failed
+    (total . 110)
+    ("unbound identifier in module" . 35)
+    ("allowed only around a module body" . 20)
+    ("not in module body" . 17)
+    ("wrong number of parts" . 16)
+    ("function application is not allowed;" . 6)
+    ("literal data is not allowed;" . 5)
+    ("missing procedure expression;" . 4)
+    ("bad syntax" . 4)
+    ("not a procedure;" . 2)
+    ("illegal use" . 1))))

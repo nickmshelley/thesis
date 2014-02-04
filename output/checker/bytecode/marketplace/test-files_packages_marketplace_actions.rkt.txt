@@ -1,0 +1,46 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 257)
+    ("bad syntax" . 69)
+    ("unbound identifier in module" . 35)
+    ("not in module body" . 26)
+    ("identifier used out of context" . 22)
+    ("illegal use" . 17)
+    ("wrong number of parts" . 17)
+    ("syntax error in pattern" . 15)
+    ("too many forms in body of All type" . 10)
+    ("accessor name not associated with the given structure type" . 10)
+    ("function application is not allowed;" . 7)
+    ("identifier is not bound to a structure type" . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("'" . 5)
+    ("(State)" . 5)
+    ("literal data is not allowed;" . 3)
+    ("Declaration for `dispatch-spawn-k' provided, but `dispatch-spawn-k' has no definition"
+     .
+     3)
+    ("allowed only around a module body" . 2)
+    ("must be used in a definition context" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 271)
+    ("bad syntax" . 93)
+    ("unbound identifier in module" . 58)
+    ("illegal use" . 23)
+    ("not in module body" . 21)
+    ("wrong number of parts" . 16)
+    ("identifier used out of context" . 16)
+    ("function application is not allowed;" . 11)
+    ("bad syntax (multiple types after identifier)" . 10)
+    ("unexpected `)'" . 5)
+    ("identifier is not bound to a structure type" . 5)
+    ("Declaration for `run-vm' provided, but `run-vm' has no definition" . 4)
+    ("Declaration for `process-alive?' provided, but `process-alive?' has no definition"
+     .
+     4)
+    ("type name used out of context" . 2)
+    ("missing procedure expression;" . 1)
+    ("allowed only around a module body" . 1)
+    ("must be used in a definition context" . 1))))

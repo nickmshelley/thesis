@@ -1,0 +1,24 @@
+'((remove
+   (passed . 7)
+   (failed
+    (total . 8)
+    ("not a provide sub-form" . 5)
+    ("illegal use of syntax" . 1)
+    ("wrong number of parts" . 1)
+    ("allowed only around a module body" . 1)))
+  (truncate
+   (passed . 5)
+   (failed
+    (total . 10)
+    ("not a provide sub-form" . 5)
+    ("identifier to remove `#%app' not included in nested provide spec" . 1)
+    ("identifier to remove `#%datum' not included in nested provide spec" . 1)
+    ("identifier to remove `#%declare' not included in nested provide spec"
+     .
+     1)
+    ("identifier to remove `#%expression' not included in nested provide spec"
+     .
+     1)
+    ("identifier to remove `#%module-begin' not included in nested provide spec"
+     .
+     1))))

@@ -1,0 +1,34 @@
+'((remove
+   (passed . 29)
+   (failed
+    (total . 66)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 16)
+    ("not a provide sub-form" . 15)
+    ("bad syntax" . 8)
+    ("bad module path" . 5)
+    ("function application is not allowed;" . 5)
+    ("missing `]' to close `[' on line 47, found instead `)'" . 5)
+    ("provided identifier not defined or imported for phase 0" . 3)
+    ("pattern variable cannot be used outside of a template" . 2)
+    ("no pattern variables before ellipsis in template" . 2)
+    ("missing ellipsis with pattern variable in template" . 2)
+    ("illegal use" . 2)
+    ("identifier to remove `#%module-begin' not included in nested provide spec"
+     .
+     1)))
+  (truncate
+   (passed . 4)
+   (failed
+    (total . 62)
+    ("unbound identifier in module" . 17)
+    ("bad syntax" . 9)
+    ("allowed only around a module body" . 5)
+    ("unexpected `)'" . 5)
+    ("Illegal clause in endpoint definition" . 5)
+    ("missing `)' to close preceding `(', found instead `]'" . 5)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("function application is not allowed;" . 4)
+    ("illegal use" . 3)
+    ("not in module body" . 2)
+    ("wrong number of parts" . 1)
+    ("literal data is not allowed;" . 1))))

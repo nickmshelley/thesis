@@ -1,0 +1,4 @@
+'((remove (passed . 5) (failed (total . 0)))
+  (truncate
+   (passed . 5)
+   (failed (total . 5) ("not a well-formed definition" . 5))))

@@ -1,0 +1,37 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 54)
+    ("unbound identifier in module" . 20)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("too many forms in body of All type" . 5)
+    ("(NewState)" . 5)
+    ("bad syntax" . 4)
+    ("Declaration for `transition-accepter' provided, but `transition-accepter' has no definition"
+     .
+     4)
+    ("function application is not allowed;" . 3)
+    ("not in module body" . 2)
+    ("wrong number of parts" . 2)
+    ("literal data is not allowed;" . 2)
+    ("allowed only around a module body" . 1)
+    ("illegal use" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 53)
+    ("bad syntax" . 17)
+    ("unbound identifier in module" . 7)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("not in module body" . 5)
+    ("illegal use" . 4)
+    ("wrong number of parts" . 4)
+    ("Declaration for `do-spawn' provided, but `do-spawn' has no definition"
+     .
+     4)
+    ("identifier used out of context" . 3)
+    ("type name used out of context" . 2)
+    ("must be used in a definition context" . 1)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     1))))

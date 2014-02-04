@@ -1,0 +1,36 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 49)
+    ("bad syntax" . 12)
+    ("unbound identifier in module" . 9)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("expected a `module' declaration" . 5)
+    ("illegal use" . 3)
+    ("not in module body" . 3)
+    ("wrong number of parts" . 2)
+    ("identifier used out of context" . 2)
+    ("function application is not allowed;" . 1)
+    ("literal data is not allowed;" . 1)
+    ("allowed only around a module body" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 49)
+    ("bad syntax" . 16)
+    ("unbound identifier in module" . 7)
+    ("(KilledState)" . 5)
+    ("illegal use" . 4)
+    ("#???" . 2)
+    ("identifier `#%app' not included in nested require spec" . 2)
+    ("identifier `#%datum' not included in nested require spec" . 2)
+    ("identifier `#%declare' not included in nested require spec" . 2)
+    ("identifier `#%expression' not included in nested require spec" . 2)
+    ("identifier `#%module-begin' not included in nested require spec" . 2)
+    ("allowed only around a module body" . 2)
+    ("not in module body" . 1)
+    ("wrong number of parts" . 1)
+    ("identifier used out of context" . 1))))

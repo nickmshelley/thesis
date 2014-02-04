@@ -1,0 +1,18 @@
+'((remove
+   (passed . 5)
+   (failed
+    (total . 5)
+    ("missing ellipsis with pattern variable in template" . 5)))
+  (truncate
+   (passed . 15)
+   (failed
+    (total . 65)
+    ("bad syntax" . 24)
+    ("unbound identifier in module" . 15)
+    ("illegal use" . 6)
+    ("not in module body" . 5)
+    ("allowed only around a module body" . 5)
+    ("function application is not allowed;" . 4)
+    ("wrong number of parts" . 4)
+    ("literal data is not allowed;" . 1)
+    ("arrow not allowed as an expression" . 1))))

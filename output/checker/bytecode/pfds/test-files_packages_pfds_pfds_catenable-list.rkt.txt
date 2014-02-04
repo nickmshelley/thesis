@@ -1,0 +1,92 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 329)
+    ("bad syntax" . 133)
+    ("illegal use" . 33)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 20)
+    ("expected identifier" . 15)
+    ("not in module body" . 14)
+    ("unbound identifier in module" . 14)
+    ("identifier used out of context" . 11)
+    ("wrong number of parts" . 10)
+    ("(A)" . 10)
+    ("Type variable B must be used with ..." . 10)
+    ("bad syntax (multiple types after identifier)" . 10)
+    ("Declaration for `list-map' provided, but `list-map' has no definition"
+     .
+     7)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("function application is not allowed;" . 4)
+    ("Declaration for `kons' provided, but `kons' has no definition" . 4)
+    ("Declaration for `list-foldl' provided, but `list-foldl' has no definition"
+     .
+     4)
+    ("Declaration for `list-andmap' provided, but `list-andmap' has no definition"
+     .
+     4)
+    ("literal data is not allowed;" . 2)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("#???" . 2)
+    ("allowed only around a module body" . 1)
+    ("Unbound type name #%app" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("Unbound type name #%module-begin" . 1)
+    ("must be used in a definition context" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 271)
+    ("bad syntax" . 77)
+    ("not in module body" . 20)
+    ("identifier used out of context" . 20)
+    ("Type variable B must be used with ..." . 20)
+    ("illegal use" . 19)
+    ("unbound identifier in module" . 15)
+    ("expected identifier" . 15)
+    ("bad syntax (multiple types after identifier)" . 15)
+    ("wrong number of parts" . 10)
+    ("Component of case-lambda type was not a function clause" . 10)
+    ("function application is not allowed;" . 8)
+    ("Declaration for `list-map' provided, but `list-map' has no definition"
+     .
+     7)
+    ("expected a `module' declaration" . 5)
+    ("(A)" . 5)
+    ("misuse of compound-unit keyword" . 4)
+    ("Declaration for `link-all' provided, but `link-all' has no definition"
+     .
+     4)
+    ("Declaration for `list-andmap' provided, but `list-andmap' has no definition"
+     .
+     3)
+    ("literal data is not allowed;" . 2)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("#???" . 1)
+    ("must be used in a definition context" . 1))))

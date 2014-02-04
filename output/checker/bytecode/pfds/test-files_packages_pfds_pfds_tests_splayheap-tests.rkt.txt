@@ -1,0 +1,42 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 85)
+    ("bad syntax" . 20)
+    ("not in module body" . 16)
+    ("wrong number of parts" . 12)
+    ("allowed only around a module body" . 9)
+    ("untyped identifier less-than?" . 6)
+    ("illegal use" . 5)
+    ("Declaration for `less-than?' provided, but `less-than?' has no definition"
+     .
+     5)
+    ("unbound identifier in module" . 4)
+    ("Declaration for `str-less-than?' provided, but `str-less-than?' has no definition"
+     .
+     4)
+    ("function application is not allowed;" . 1)
+    ("literal data is not allowed;" . 1)
+    ("identifier used out of context" . 1)
+    ("untyped identifier int-list" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 87)
+    ("bad syntax" . 28)
+    ("not in module body" . 13)
+    ("wrong number of parts" . 12)
+    ("untyped identifier less-than?" . 7)
+    ("illegal use" . 7)
+    ("expected a `module' declaration" . 5)
+    ("unbound identifier in module" . 3)
+    ("allowed only around a module body" . 2)
+    ("type name used out of context" . 2)
+    ("identifier used out of context" . 1)
+    ("Polymorphic function `map' could not be applied to arguments" . 1)
+    ("type mismatch" . 1)
+    ("function application is not allowed;" . 1)
+    ("literal data is not allowed;" . 1)
+    ("Polymorphic function `remove' could not be applied to arguments" . 1)
+    ("untyped identifier gt" . 1)
+    ("Polymorphic function `ormap' could not be applied to arguments" . 1))))

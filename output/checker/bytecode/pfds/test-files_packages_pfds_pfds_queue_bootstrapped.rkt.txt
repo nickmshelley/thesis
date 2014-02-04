@@ -1,0 +1,90 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 235)
+    ("bad syntax" . 57)
+    ("unbound identifier in module" . 41)
+    ("not in module body" . 22)
+    ("identifier used out of context" . 21)
+    ("wrong number of parts" . 14)
+    ("illegal use" . 14)
+    ("function application is not allowed;" . 11)
+    ("expected identifier" . 10)
+    ("Type variable B must be used with ..." . 10)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 5)
+    ("expected a `module' declaration" . 5)
+    ("Declaration for `qmap' provided, but `qmap' has no definition" . 4)
+    ("Declaration for `queue-andmap' provided, but `queue-andmap' has no definition"
+     .
+     4)
+    ("Declaration for `queue->list' provided, but `queue->list' has no definition"
+     .
+     3)
+    ("Declaration for `head+tail' provided, but `head+tail' has no definition"
+     .
+     3)
+    ("literal data is not allowed;" . 2)
+    ("#???" . 2)
+    ("allowed only around a module body" . 1)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("must be used in a definition context" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 260)
+    ("bad syntax" . 46)
+    ("unbound identifier in module" . 41)
+    ("not in module body" . 26)
+    ("wrong number of parts" . 24)
+    ("identifier used out of context" . 21)
+    ("illegal use" . 11)
+    ("syntax error in pattern" . 10)
+    ("'" . 10)
+    ("type name used out of context" . 9)
+    ("function application is not allowed;" . 8)
+    ("(A)" . 5)
+    ("Type variable B must be used with ..." . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("use of a class keyword is not in a class" . 4)
+    ("Declaration for `queue-andmap' provided, but `queue-andmap' has no definition"
+     .
+     4)
+    ("Declaration for `head' provided, but `head' has no definition" . 4)
+    ("untyped identifier empty" . 2)
+    ("#???" . 2)
+    ("must be used in a definition context" . 2)
+    ("#%app does not refer to a structure definition" . 2)
+    ("#%datum does not refer to a structure definition" . 2)
+    ("#%declare does not refer to a structure definition" . 2)
+    ("#%expression does not refer to a structure definition" . 2)
+    ("#%module-begin does not refer to a structure definition" . 2)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("illegal use of `.'" . 1)
+    ("untyped identifier Zero" . 1)
+    ("missing procedure expression;" . 1)
+    ("allowed only around a module body" . 1))))

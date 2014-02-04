@@ -1,0 +1,13 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 37)
+    ("allowed only around a module body" . 10)
+    ("not in module body" . 9)
+    ("wrong number of parts" . 8)
+    ("unexpected `)'" . 5)
+    ("bad syntax" . 4)
+    ("illegal use" . 1)))
+  (truncate
+   (passed . 2)
+   (failed (total . 1) ("allowed only around a module body" . 1))))

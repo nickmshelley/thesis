@@ -1,0 +1,47 @@
+'((remove
+   (passed . 28)
+   (failed
+    (total . 72)
+    ("bad syntax" . 21)
+    ("unbound identifier in module" . 8)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     5)
+    ("missing `)' to close `(' on line 43, found instead `]'; indentation suggests a missing `)' before line 46"
+     .
+     5)
+    ("missing `]' to close `[' on line 69, found instead `)'; indentation suggests a missing `)' before line 73"
+     .
+     5)
+    ("missing `]' to close `[' on line 54, found instead `)'" . 5)
+    ("provided identifier not defined or imported for phase 0" . 4)
+    ("allowed only around a module body" . 3)
+    ("undefined;" . 2)
+    ("not in module body" . 2)
+    ("function application is not allowed;" . 2)
+    ("literal data is not allowed;" . 2)
+    ("arity mismatch;" . 1)
+    ("contract violation" . 1)
+    ("wrong number of parts" . 1)))
+  (truncate
+   (passed . 25)
+   (failed
+    (total . 75)
+    ("bad syntax" . 25)
+    ("unbound identifier in module" . 10)
+    ("missing `)' to close `(' on line 46, found instead `]'" . 5)
+    ("missing `]' to close `[' on line 75, found instead `)'; indentation suggests a missing `]' before line 76"
+     .
+     5)
+    ("missing `]' to close `[' on line 65, found instead `)'; indentation suggests a missing `]' before line 69"
+     .
+     5)
+    ("missing `]' to close `[' on line 43, found instead `)'" . 5)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("not in module body" . 4)
+    ("allowed only around a module body" . 4)
+    ("wrong number of parts" . 3)
+    ("function application is not allowed;" . 2)
+    ("procedure does not accept keyword arguments" . 1)
+    ("contract violation" . 1))))

@@ -1,0 +1,67 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 97)
+    ("bad syntax" . 17)
+    ("bad syntax (multiple types after identifier)" . 15)
+    ("type mismatch" . 11)
+    ("Declaration for `co-roles' provided, but `co-roles' has no definition"
+     .
+     5)
+    ("identifier is not bound to a structure type" . 5)
+    ("Unbound type name #%app" . 5)
+    ("Unbound type name #%datum" . 5)
+    ("Unbound type name #%declare" . 5)
+    ("Unbound type name #%expression" . 5)
+    ("Unbound type name #%module-begin" . 5)
+    ("illegal use" . 4)
+    ("not in module body" . 2)
+    ("wrong number of parts" . 2)
+    ("identifier used out of context" . 2)
+    ("Cannot apply expression of type Boolean, since it is not a function type"
+     .
+     1)
+    ("must be used in a definition context" . 1)
+    ("#???" . 1)
+    ("identifier `#%app' not included in nested require spec" . 1)
+    ("identifier `#%datum' not included in nested require spec" . 1)
+    ("identifier `#%declare' not included in nested require spec" . 1)
+    ("identifier `#%expression' not included in nested require spec" . 1)
+    ("identifier `#%module-begin' not included in nested require spec" . 1)
+    ("Cannot apply expression of type role, since it is not a function type"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 97)
+    ("type mismatch" . 13)
+    ("unbound identifier in module" . 10)
+    ("bad syntax" . 8)
+    ("not a require sub-form" . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("expected a `module' declaration" . 5)
+    ("accessor name not associated with the given structure type" . 5)
+    ("Unbound type name #%app" . 4)
+    ("Unbound type name #%datum" . 4)
+    ("Unbound type name #%declare" . 4)
+    ("Unbound type name #%expression" . 4)
+    ("Unbound type name #%module-begin" . 4)
+    ("not in module body" . 4)
+    ("identifier used out of context" . 4)
+    ("Declaration for `co-orientations' provided, but `co-orientations' has no definition"
+     .
+     4)
+    ("function application is not allowed;" . 3)
+    ("Declaration for `flow-visible?' provided, but `flow-visible?' has no definition"
+     .
+     3)
+    ("wrong number of parts" . 2)
+    ("Cannot apply expression of type role, since it is not a function type"
+     .
+     2)
+    ("illegal use" . 2)
+    ("Cannot apply expression of type Orientation, since it is not a function type"
+     .
+     1)
+    ("literal data is not allowed;" . 1))))

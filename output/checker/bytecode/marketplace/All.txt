@@ -1,0 +1,360 @@
+'((remove
+   (passed . 740)
+   (failed
+    (total . 3992)
+    ("bad syntax" . 813)
+    ("unbound identifier in module" . 623)
+    ("not in module body" . 266)
+    ("allowed only around a module body" . 230)
+    ("wrong number of parts" . 220)
+    ("illegal use" . 200)
+    ("function application is not allowed;" . 112)
+    ("syntax error in pattern" . 110)
+    ("bad syntax (multiple types after identifier)" . 85)
+    ("Illegal clause in endpoint definition" . 76)
+    ("missing ellipsis with pattern variable in template" . 67)
+    ("provided identifier not defined or imported for phase 0" . 59)
+    ("identifier used out of context" . 56)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 53)
+    ("'" . 45)
+    ("literal data is not allowed;" . 41)
+    ("not a provide sub-form" . 40)
+    ("too many ellipses in template" . 36)
+    ("expected a `module' declaration" . 35)
+    ("too many forms in body of All type" . 35)
+    ("Unbound type name #%declare" . 33)
+    ("Unbound type name #%expression" . 33)
+    ("Unbound type name #%module-begin" . 33)
+    ("Unbound type name #%datum" . 32)
+    ("Unbound type name #%app" . 31)
+    ("defaults)" . 30)
+    ("no pattern variables before ellipsis in template" . 30)
+    ("type name used out of context" . 26)
+    ("pattern variable cannot be used outside of a template" . 26)
+    ("bad module path" . 25)
+    ("not a require sub-form" . 25)
+    ("missing procedure expression;" . 23)
+    ("#???" . 22)
+    ("type mismatch" . 22)
+    ("variable not bound in all or patterns" . 20)
+    ("duplicate attribute" . 15)
+    ("expected a `)' to close `('" . 15)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     15)
+    ("(State)" . 15)
+    ("accessor name not associated with the given structure type" . 15)
+    ("identifier `#%app' not included in nested require spec" . 11)
+    ("identifier `#%datum' not included in nested require spec" . 11)
+    ("identifier `#%declare' not included in nested require spec" . 11)
+    ("identifier `#%expression' not included in nested require spec" . 11)
+    ("identifier `#%module-begin' not included in nested require spec" . 11)
+    ("must be used in a definition context" . 11)
+    ("not a procedure;" . 10)
+    ("missing `]' to close preceding `[', found instead `)'" . 10)
+    ("illegal use of syntax" . 10)
+    ("Unbound type name X" . 10)
+    ("identifier is not bound to a structure type" . 10)
+    ("missing `)' to close preceding `(', found instead `]'" . 10)
+    ("attribute bound in defaults but not in pattern" . 10)
+    ("missing `]' to close `[' on line 20, found instead `)'" . 8)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 40"
+     .
+     5)
+    ("not allowed as an expression" . 5)
+    ("unexpected `)'" . 5)
+    ("(ParentState)" . 5)
+    ("(X)" . 5)
+    ("Declaration for `co-roles' provided, but `co-roles' has no definition"
+     .
+     5)
+    ("missing `]' to close `[' on line 47, found instead `)'" . 5)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("invalid module-path form" . 5)
+    ("missing `)' to close `(' on line 50, found instead `]'" . 5)
+    ("Unbound type name ActionTree" . 5)
+    ("Unbound type name transition" . 5)
+    ("missing `]' to close `[' on line 97, found instead `)'; indentation suggests a missing `]' before line 98"
+     .
+     5)
+    ("(NewState)" . 5)
+    ("identifier is not bound to struct type information" . 5)
+    ("expected identifier" . 5)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     5)
+    ("missing `]' to close `[' on line 103, found instead `)'" . 5)
+    ("Declaration for `list-max' provided, but `list-max' has no definition"
+     .
+     4)
+    ("Declaration for `name-process' provided, but `name-process' has no definition"
+     .
+     4)
+    ("Declaration for `transition-accepter' provided, but `transition-accepter' has no definition"
+     .
+     4)
+    ("Declaration for `process-map' provided, but `process-map' has no definition"
+     .
+     4)
+    ("Declaration for `reset-pending-actions' provided, but `reset-pending-actions' has no definition"
+     .
+     4)
+    ("Declaration for `run-ready' provided, but `run-ready' has no definition"
+     .
+     4)
+    ("unrecognized keyword" . 3)
+    ("Illegal use of match-state outside endpoint definition context" . 3)
+    ("Unbound type name SocketManagerState" . 3)
+    ("Declaration for `dispatch-spawn-k' provided, but `dispatch-spawn-k' has no definition"
+     .
+     3)
+    ("missing `]' to close `[' on line 20, found instead `)'; indentation suggests a missing `)' before line 161"
+     .
+     2)
+    ("(super-type TypeParam ...) SubType sub-type sub-type?)" . 2)
+    ("Cannot apply expression of type Boolean, since it is not a function type"
+     .
+     2)
+    ("Illegal use of on-absence outside endpoint definition context" . 2)
+    ("Illegal use of on-message outside endpoint definition context" . 2)
+    ("not allowed in an expression context" . 2)
+    ("missing argument expression after keyword" . 2)
+    ("identifier `foo-#%app' not included in nested require spec" . 1)
+    ("identifier `foo-#%datum' not included in nested require spec" . 1)
+    ("identifier `foo-#%declare' not included in nested require spec" . 1)
+    ("identifier `foo-#%expression' not included in nested require spec" . 1)
+    ("identifier `foo-#%module-begin' not included in nested require spec" . 1)
+    ("Cannot apply expression of type String, since it is not a function type"
+     .
+     1)
+    ("undefined;" . 1)
+    ("Cannot apply expression of type (U Null (Pairof X (Listof X))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `reverse' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type role, since it is not a function type"
+     .
+     1)
+    ("Illegal use of match-conversation outside endpoint definition context"
+     .
+     1)
+    ("0>)) because no further metalevel exists" . 1)
+    ("identifier to remove `#%module-begin' not included in nested provide spec"
+     .
+     1)
+    ("arrow not allowed as an expression" . 1)
+    ("contract violation" . 1)
+    ("Unbound type name role" . 1)
+    ("keyword used as an expression" . 1)
+    ("Unbound type name Action" . 1)
+    ("Cannot apply expression of type driver-state, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type 'udp-driver, since it is not a function type"
+     .
+     1)))
+  (truncate
+   (passed . 726)
+   (failed
+    (total . 4056)
+    ("bad syntax" . 842)
+    ("unbound identifier in module" . 600)
+    ("not in module body" . 253)
+    ("allowed only around a module body" . 218)
+    ("illegal use" . 209)
+    ("wrong number of parts" . 204)
+    ("function application is not allowed;" . 131)
+    ("Illegal clause in endpoint definition" . 112)
+    ("syntax error in pattern" . 109)
+    ("no pattern variables before ellipsis in template" . 103)
+    ("provided identifier not defined or imported for phase 0" . 78)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 69)
+    ("identifier used out of context" . 55)
+    ("expected a `module' declaration" . 55)
+    ("literal data is not allowed;" . 50)
+    ("'" . 40)
+    ("bad syntax (multiple types after identifier)" . 40)
+    ("type name used out of context" . 32)
+    ("bad module path" . 30)
+    ("Unbound type name #%expression" . 30)
+    ("Unbound type name #%declare" . 29)
+    ("Unbound type name #%module-begin" . 29)
+    ("pattern variable cannot be used outside of a template" . 28)
+    ("Unbound type name #%app" . 28)
+    ("Unbound type name #%datum" . 28)
+    ("expected a `)' to close `('" . 25)
+    ("missing procedure expression;" . 22)
+    ("missing `]' to close preceding `[', found instead `)'" . 20)
+    ("missing ellipsis with pattern variable in template" . 20)
+    ("type mismatch" . 20)
+    ("attribute bound in defaults but not in pattern" . 15)
+    ("unexpected `)'" . 15)
+    ("missing `)' to close preceding `(', found instead `]'" . 15)
+    ("invalid module-path form" . 15)
+    ("too many forms in body of All type" . 15)
+    ("variable not bound in all or patterns" . 15)
+    ("illegal use of syntax" . 14)
+    ("no corresponding require" . 12)
+    ("#???" . 11)
+    ("identifier is not bound to struct type information" . 11)
+    ("duplicate attribute" . 10)
+    ("defaults)" . 10)
+    ("Unbound type name X" . 10)
+    ("not a provide sub-form" . 10)
+    ("not a require sub-form" . 10)
+    ("accessor name not associated with the given structure type" . 10)
+    ("(State)" . 10)
+    ("identifier `#%app' not included in nested require spec" . 6)
+    ("identifier `#%datum' not included in nested require spec" . 6)
+    ("identifier `#%declare' not included in nested require spec" . 6)
+    ("identifier `#%expression' not included in nested require spec" . 6)
+    ("identifier `#%module-begin' not included in nested require spec" . 6)
+    ("unbound identifier in the transformer environment;" . 6)
+    ("unexpected term" . 6)
+    ("must be used in a definition context" . 6)
+    ("Polymorphic function `reverse' could not be applied to arguments" . 6)
+    ("identifier is not bound to a structure type" . 6)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     5)
+    ("initial import is not a well-formed module path" . 5)
+    ("Unbound type name State" . 5)
+    ("missing `]' to close `[' on line 41, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 76, found instead `)'; indentation suggests a missing `]' before line 77"
+     .
+     5)
+    ("missing `]' to close `[' on line 98, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 78, found instead `)'; indentation suggests a missing `]' before line 79"
+     .
+     5)
+    ("Declaration for `empty-quasiqueue' provided, but `empty-quasiqueue' has no definition"
+     .
+     5)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("missing `]' to close `[' on line 190, found instead `)'" . 5)
+    ("Unbound type name TrapK" . 5)
+    ("Unbound type name AbsenceEvent" . 5)
+    ("Unbound type name PresenceEvent" . 5)
+    ("Unbound type name transition" . 5)
+    ("Unbound type name Event" . 5)
+    ("Unbound type name Topic" . 5)
+    ("Unbound type name Orientation" . 5)
+    ("Unbound type name message-event" . 5)
+    ("Unbound type name add-endpoint" . 5)
+    ("Unbound type name Role" . 5)
+    ("missing `]' to close `[' on line 49, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 40, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 118, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 84, found instead `)'; indentation suggests a missing `]' before line 86"
+     .
+     5)
+    ("(KilledState)" . 5)
+    ("Error in macro expansion -- insufficient type information to typecheck. please add more type annotations"
+     .
+     5)
+    ("Declaration for `coproc' provided, but `coproc' has no definition" . 5)
+    ("missing `]' to close `[' on line 123, found instead `)'; indentation suggests a missing `]' before line 124"
+     .
+     5)
+    ("missing `]' to close `[' on line 112, found instead `)'" . 5)
+    ("Polymorphic function `add-endpoint-pre-eid' could not be applied to arguments"
+     .
+     5)
+    ("expected `)' to close `(' on line 81, found instead `]'" . 5)
+    ("missing `)' to close `(' on line 278, found instead `]'; indentation suggests a missing `)' before line 279"
+     .
+     5)
+    ("missing `)' to close `(' on line 268, found instead `]'; indentation suggests a missing `)' before line 269"
+     .
+     5)
+    ("Unbound type name ParentState" . 5)
+    ("Declaration for `any-remote' provided, but `any-remote' has no definition"
+     .
+     5)
+    ("not a procedure;" . 4)
+    ("Declaration for `quasiqueue-empty?' provided, but `quasiqueue-empty?' has no definition"
+     .
+     4)
+    ("Declaration for `list->quasiqueue' provided, but `list->quasiqueue' has no definition"
+     .
+     4)
+    ("Declaration for `co-orientations' provided, but `co-orientations' has no definition"
+     .
+     4)
+    ("unrecognized keyword" . 4)
+    ("Declaration for `send-to-process' provided, but `send-to-process' has no definition"
+     .
+     4)
+    ("Declaration for `do-spawn' provided, but `do-spawn' has no definition"
+     .
+     4)
+    ("Declaration for `Process-pid' provided, but `Process-pid' has no definition"
+     .
+     4)
+    ("Declaration for `inject-process' provided, but `inject-process' has no definition"
+     .
+     4)
+    ("too many ellipses in template" . 4)
+    ("Declaration for `next-timer!' provided, but `next-timer!' has no definition"
+     .
+     4)
+    ("Declaration for `udp-driver' provided, but `udp-driver' has no definition"
+     .
+     4)
+    ("Declaration for `run-vm' provided, but `run-vm' has no definition" . 4)
+    ("Declaration for `process-alive?' provided, but `process-alive?' has no definition"
+     .
+     4)
+    ("identifier to remove `#%module-begin' not included in nested provide spec"
+     .
+     3)
+    ("Declaration for `flow-visible?' provided, but `flow-visible?' has no definition"
+     .
+     3)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     3)
+    ("wildcard not allowed as an expression" . 3)
+    ("missing argument expression after keyword" . 3)
+    ("keyword used as an expression" . 3)
+    ("(ParentState)" . 3)
+    ("identifier to remove `#%app' not included in nested provide spec" . 2)
+    ("identifier to remove `#%datum' not included in nested provide spec" . 2)
+    ("identifier to remove `#%declare' not included in nested provide spec"
+     .
+     2)
+    ("identifier to remove `#%expression' not included in nested provide spec"
+     .
+     2)
+    ("Cannot apply expression of type role, since it is not a function type"
+     .
+     2)
+    ("arrow not allowed as an expression" . 1)
+    ("bad syntax;" . 1)
+    ("Cannot apply expression of type Boolean, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Orientation, since it is not a function type"
+     .
+     1)
+    ("identifier already provided (as a different binding)" . 1)
+    ("Illegal use of on-message outside endpoint definition context" . 1)
+    ("not allowed as an expression" . 1)
+    ("Unbound type name MessageEvent" . 1)
+    ("Unbound type name Transition" . 1)
+    ("undefined;" . 1)
+    ("Polymorphic function `process-endpoints' could not be applied to arguments"
+     .
+     1)
+    ("(#%app debug-name pid (e) failure-result enclosed-expr)" . 1)
+    ("(#%datum debug-name pid (e) failure-result enclosed-expr)" . 1)
+    ("this match expander must be used inside match" . 1)
+    ("Polymorphic function `name-endpoint' could not be applied to arguments"
+     .
+     1)
+    ("9 udp-remote-address-repr> (String Nonnegative-Integer)), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type DriverState, since it is not a function type"
+     .
+     1))))

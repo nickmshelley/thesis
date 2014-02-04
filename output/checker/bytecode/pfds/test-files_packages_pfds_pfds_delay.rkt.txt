@@ -1,0 +1,39 @@
+'((remove
+   (passed . 6)
+   (failed
+    (total . 24)
+    ("expected a `module' declaration" . 5)
+    ("bad syntax" . 4)
+    ("type mismatch" . 2)
+    ("unbound identifier in module" . 2)
+    ("Unbound type name #%app" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("Unbound type name #%module-begin" . 1)
+    ("illegal use" . 1)
+    ("Cannot apply expression of type (Boxof A), since it is not a function type"
+     .
+     1)
+    ("not in module body" . 1)
+    ("identifier used out of context" . 1)
+    ("#???" . 1)
+    ("wrong number of parts" . 1)))
+  (truncate
+   (passed . 11)
+   (failed
+    (total . 19)
+    ("Unbound type name A" . 5)
+    ("Cannot apply expression of type (U (Boxof A) (-> (Boxof A))), since it is not a function type"
+     .
+     3)
+    ("unbound identifier in module" . 2)
+    ("not in module body" . 1)
+    ("identifier used out of context" . 1)
+    ("#???" . 1)
+    ("wrong number of parts" . 1)
+    ("Unbound type name #%app" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("Unbound type name #%module-begin" . 1))))

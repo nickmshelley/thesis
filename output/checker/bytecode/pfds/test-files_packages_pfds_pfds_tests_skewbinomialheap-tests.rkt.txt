@@ -1,0 +1,35 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 67)
+    ("bad syntax" . 16)
+    ("not in module body" . 13)
+    ("wrong number of parts" . 9)
+    ("untyped identifier less-than?" . 8)
+    ("Declaration for `less-than?' provided, but `less-than?' has no definition"
+     .
+     5)
+    ("illegal use" . 4)
+    ("allowed only around a module body" . 3)
+    ("unbound identifier in module" . 3)
+    ("Polymorphic function `map' could not be applied to arguments" . 2)
+    ("identifier used out of context" . 1)
+    ("untyped identifier gt" . 1)
+    ("function application is not allowed;" . 1)
+    ("literal data is not allowed;" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 43)
+    ("bad syntax" . 8)
+    ("unbound identifier in module" . 7)
+    ("wrong number of parts" . 6)
+    ("allowed only around a module body" . 5)
+    ("expected identifier" . 5)
+    ("not in module body" . 4)
+    ("illegal use of syntax" . 3)
+    ("untyped identifier lst" . 2)
+    ("illegal use" . 2)
+    ("Polymorphic function `clist->list' could not be applied to arguments"
+     .
+     1))))

@@ -1,0 +1,74 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 422)
+    ("bad syntax" . 124)
+    ("unbound identifier in module" . 45)
+    ("wrong number of parts" . 35)
+    ("illegal use" . 29)
+    ("not in module body" . 29)
+    ("identifier used out of context" . 26)
+    ("(A)" . 25)
+    ("Type variable B must be used with ..." . 15)
+    ("function application is not allowed;" . 12)
+    ("expected identifier" . 10)
+    ("bad syntax (multiple types after identifier)" . 10)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 10)
+    ("must be used in a definition context" . 7)
+    ("literal data is not allowed;" . 6)
+    ("#???" . 5)
+    ("too many forms in body of All type" . 5)
+    ("'" . 5)
+    ("Declaration for `list-length' provided, but `list-length' has no definition"
+     .
+     4)
+    ("Declaration for `list-third' provided, but `list-third' has no definition"
+     .
+     3)
+    ("type name used out of context" . 3)
+    ("allowed only around a module body" . 3)
+    ("Declaration for `tree-drop' provided, but `tree-drop' has no definition"
+     .
+     3)
+    ("no binding for identifier" . 3)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 518)
+    ("bad syntax" . 178)
+    ("unbound identifier in module" . 73)
+    ("illegal use" . 44)
+    ("not in module body" . 42)
+    ("identifier used out of context" . 40)
+    ("(A)" . 30)
+    ("wrong number of parts" . 21)
+    ("bad syntax (multiple types after identifier)" . 20)
+    ("function application is not allowed;" . 15)
+    ("syntax error in pattern" . 10)
+    ("expected identifier" . 10)
+    ("expected 4 but got 3" . 10)
+    ("Type variable B must be used with ..." . 5)
+    ("Declaration for `color' provided, but `color' has no definition" . 4)
+    ("#???" . 3)
+    ("literal data is not allowed;" . 3)
+    ("must be used in a definition context" . 2)
+    ("not allowed as an expression" . 2)
+    ("type name used out of context" . 1)
+    ("#%app does not refer to a structure definition" . 1)
+    ("#%datum does not refer to a structure definition" . 1)
+    ("#%declare does not refer to a structure definition" . 1)
+    ("#%expression does not refer to a structure definition" . 1)
+    ("#%module-begin does not refer to a structure definition" . 1))))

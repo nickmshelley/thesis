@@ -1,0 +1,32 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 40)
+    ("unbound identifier in module" . 16)
+    ("bad syntax" . 8)
+    ("'" . 5)
+    ("function application is not allowed;" . 4)
+    ("illegal use" . 2)
+    ("identifier `#%app' not included in nested require spec" . 1)
+    ("identifier `#%datum' not included in nested require spec" . 1)
+    ("identifier `#%declare' not included in nested require spec" . 1)
+    ("identifier `#%expression' not included in nested require spec" . 1)
+    ("identifier `#%module-begin' not included in nested require spec" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 45)
+    ("bad syntax" . 21)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("illegal use" . 5)
+    ("expected a `module' declaration" . 5)
+    ("Declaration for `send-to-process' provided, but `send-to-process' has no definition"
+     .
+     4)
+    ("must be used in a definition context" . 1)
+    ("Polymorphic function `process-endpoints' could not be applied to arguments"
+     .
+     1)
+    ("not in module body" . 1)
+    ("wrong number of parts" . 1)
+    ("unbound identifier in module" . 1))))

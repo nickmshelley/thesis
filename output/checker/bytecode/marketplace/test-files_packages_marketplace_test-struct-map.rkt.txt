@@ -1,0 +1,26 @@
+'((remove
+   (passed . 6)
+   (failed
+    (total . 19)
+    ("unbound identifier in module" . 6)
+    ("bad syntax" . 4)
+    ("wrong number of parts" . 2)
+    ("allowed only around a module body" . 2)
+    ("not a procedure;" . 1)
+    ("not in module body" . 1)
+    ("unrecognized keyword" . 1)
+    ("function application is not allowed;" . 1)
+    ("illegal use" . 1)))
+  (truncate
+   (passed . 11)
+   (failed
+    (total . 63)
+    ("unbound identifier in module" . 17)
+    ("bad syntax" . 12)
+    ("not in module body" . 6)
+    ("allowed only around a module body" . 6)
+    ("wrong number of parts" . 5)
+    ("function application is not allowed;" . 5)
+    ("literal data is not allowed;" . 5)
+    ("provided identifier not defined or imported for phase 0" . 4)
+    ("illegal use" . 3))))

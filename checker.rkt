@@ -20,7 +20,7 @@
 
 (module+ main
   #;(define methods '(naive nest keywords macros bytecode combined))
-  (define methods '(macros bytecode combined))
+  (define methods '(macros))
   (unless (directory-exists? "output")
     (make-directory "output"))
   (unless (directory-exists? "output/checker")
@@ -35,7 +35,7 @@
   (printf "TESTING WITH ~a~n" method)
   (define percent .1)
   (define dir-base "test-files/packages")
-  (define sub-dirs '("frog" "marketplace" "pfds"))
+  (define sub-dirs '(#;"frog" "marketplace" "pfds"))
   (define top-output-dir (build-path "output/checker" (symbol->string method)))
   (define-values (remove-sum truncate-sum)
     (for/fold ([remove-total-sum (results "All" empty)]
@@ -102,16 +102,17 @@
     (place-channel-put p f))
   (define result-messages (do-all-work-on-places 
                            (list-tail files (length places))
-                           places))
+                           places
+                           empty))
   (printf "GETTING RESULTS~n")
   (map list->results result-messages))
 
 ;; do-all-work-on-places : list-of-place-message list-of-place -> list-of-result-messages
 ;; places should have already received their initial messages
-(define (do-all-work-on-places messages places)
+(define (do-all-work-on-places messages places results-so-far)
   (cond
     [(and (empty? messages) (empty? places))
-     empty]
+     results-so-far]
     [else
      (apply
       sync
@@ -119,14 +120,13 @@
         (handle-evt
          p
          (λ (answer)
-           (cons answer
-                 (cond
-                   [(empty? messages)
-                    (place-channel-put p #f)
-                    (do-all-work-on-places empty (remove p places))]
-                   [else
-                    (place-channel-put p (first messages))
-                    (do-all-work-on-places (rest messages) places)]))))))]))
+           (cond
+             [(empty? messages)
+              (place-channel-put p #f)
+              (do-all-work-on-places empty (remove p places) (cons answer results-so-far))]
+             [else
+              (place-channel-put p (first messages))
+              (do-all-work-on-places (rest messages) places (cons answer results-so-far))])))))]))
 
 (require racket/match)
 (define (make-worker-place)

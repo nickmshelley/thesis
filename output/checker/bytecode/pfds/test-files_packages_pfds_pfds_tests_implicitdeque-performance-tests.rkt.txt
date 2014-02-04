@@ -1,0 +1,16 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 6)
+    ("bad syntax" . 4)
+    ("allowed only around a module body" . 1)
+    ("illegal use" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 8)
+    ("bad syntax" . 4)
+    ("illegal use" . 1)
+    ("not in module body" . 1)
+    ("wrong number of parts" . 1)
+    ("allowed only around a module body" . 1))))

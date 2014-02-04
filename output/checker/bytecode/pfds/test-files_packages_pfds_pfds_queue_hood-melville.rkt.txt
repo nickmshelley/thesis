@@ -1,0 +1,64 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 288)
+    ("bad syntax" . 64)
+    ("unbound identifier in module" . 24)
+    ("not in module body" . 23)
+    ("identifier used out of context" . 22)
+    ("illegal use" . 16)
+    ("wrong number of parts" . 15)
+    ("'" . 15)
+    ("bad syntax (multiple types after identifier)" . 15)
+    ("function application is not allowed;" . 10)
+    ("Type variable B must be used with ..." . 10)
+    ("expected identifier" . 10)
+    ("syntax error in pattern" . 10)
+    ("use of a class keyword is not in a class" . 8)
+    ("(A)" . 5)
+    ("expected a `module' declaration" . 5)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 5)
+    ("Declaration for `qmap' provided, but `qmap' has no definition" . 4)
+    ("Declaration for `queue->list' provided, but `queue->list' has no definition"
+     .
+     4)
+    ("Declaration for `enqueue' provided, but `enqueue' has no definition" . 4)
+    ("Declaration for `build-queue' provided, but `build-queue' has no definition"
+     .
+     3)
+    ("literal data is not allowed;" . 2)
+    ("Reversing does not refer to a structure definition" . 2)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("#???" . 1)
+    ("type name used out of context" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 231)
+    ("bad syntax" . 68)
+    ("unbound identifier in module" . 33)
+    ("not in module body" . 25)
+    ("identifier used out of context" . 23)
+    ("illegal use" . 17)
+    ("wrong number of parts" . 11)
+    ("bad syntax (multiple types after identifier)" . 10)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 10)
+    ("function application is not allowed;" . 8)
+    ("'" . 5)
+    ("Appending does not refer to a structure definition" . 5)
+    ("expected identifier" . 5)
+    ("Type variable B must be used with ..." . 5)
+    ("Declaration for `exec2' provided, but `exec2' has no definition" . 4)
+    ("type name used out of context" . 2))))

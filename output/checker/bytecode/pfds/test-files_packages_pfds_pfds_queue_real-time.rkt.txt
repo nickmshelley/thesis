@@ -1,0 +1,60 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 224)
+    ("bad syntax" . 74)
+    ("unbound identifier in module" . 34)
+    ("Type variable B must be used with ..." . 20)
+    ("illegal use" . 18)
+    ("not in module body" . 15)
+    ("identifier used out of context" . 13)
+    ("wrong number of parts" . 10)
+    ("function application is not allowed;" . 8)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("expected a `module' declaration" . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("(A)" . 5)
+    ("Declaration for `internal-queue' provided, but `internal-queue' has no definition"
+     .
+     4)
+    ("must be used in a definition context" . 2)
+    ("allowed only around a module body" . 1)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 240)
+    ("bad syntax" . 71)
+    ("unbound identifier in module" . 31)
+    ("Type variable B must be used with ..." . 20)
+    ("not in module body" . 19)
+    ("wrong number of parts" . 17)
+    ("identifier used out of context" . 17)
+    ("illegal use" . 17)
+    ("expected identifier" . 10)
+    ("function application is not allowed;" . 6)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("'" . 5)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 5)
+    ("Declaration for `internal-queue' provided, but `internal-queue' has no definition"
+     .
+     4)
+    ("Declaration for `build-queue' provided, but `build-queue' has no definition"
+     .
+     4)
+    ("use of a class keyword is not in a class" . 4)
+    ("must be used in a definition context" . 3)
+    ("#???" . 1)
+    ("allowed only around a module body" . 1))))

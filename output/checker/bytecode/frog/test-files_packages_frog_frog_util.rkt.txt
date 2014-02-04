@@ -1,0 +1,24 @@
+'((remove
+   (passed . 11)
+   (failed
+    (total . 44)
+    ("unbound identifier in module" . 20)
+    ("bad syntax" . 10)
+    ("function application is not allowed;" . 5)
+    ("allowed only around a module body" . 4)
+    ("not in module body" . 3)
+    ("wrong number of parts" . 2)))
+  (truncate
+   (passed . 10)
+   (failed
+    (total . 45)
+    ("unbound identifier in module" . 11)
+    ("bad syntax" . 8)
+    ("expected a `module' declaration" . 5)
+    ("missing ellipsis with pattern variable in template" . 5)
+    ("not in module body" . 3)
+    ("allowed only around a module body" . 3)
+    ("function application is not allowed;" . 3)
+    ("literal data is not allowed;" . 3)
+    ("illegal use" . 2)
+    ("wrong number of parts" . 2))))

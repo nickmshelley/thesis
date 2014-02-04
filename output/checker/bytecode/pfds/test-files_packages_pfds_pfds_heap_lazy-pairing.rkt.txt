@@ -1,0 +1,72 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 280)
+    ("bad syntax" . 89)
+    ("illegal use" . 22)
+    ("not in module body" . 16)
+    ("unbound identifier in module" . 15)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 15)
+    ("bad syntax (multiple types after identifier)" . 15)
+    ("identifier used out of context" . 12)
+    ("wrong number of parts" . 10)
+    ("Type variable B must be used with ..." . 10)
+    ("(A)" . 10)
+    ("expected identifier" . 10)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("expected 3 but got 2" . 5)
+    ("'" . 5)
+    ("bad module path" . 5)
+    ("expected a `)' to close `('" . 5)
+    ("unexpected term" . 5)
+    ("Declaration for `sorted-list' provided, but `sorted-list' has no definition"
+     .
+     4)
+    ("Declaration for `heap' provided, but `heap' has no definition" . 4)
+    ("Declaration for `delete-min/max' provided, but `delete-min/max' has no definition"
+     .
+     4)
+    ("use of a class keyword is not in a class" . 3)
+    ("function application is not allowed;" . 3)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("illegal use of `.'" . 1)
+    ("must be used in a definition context" . 1)
+    ("literal data is not allowed;" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 240)
+    ("bad syntax" . 41)
+    ("unbound identifier in module" . 41)
+    ("bad syntax (multiple types after identifier)" . 25)
+    ("not in module body" . 23)
+    ("identifier used out of context" . 22)
+    ("expected identifier" . 15)
+    ("wrong number of parts" . 15)
+    ("illegal use" . 10)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 10)
+    ("function application is not allowed;" . 9)
+    ("expected a `module' declaration" . 5)
+    ("Type variable B must be used with ..." . 5)
+    ("(A)" . 5)
+    ("Declaration for `delete-min/max' provided, but `delete-min/max' has no definition"
+     .
+     4)
+    ("literal data is not allowed;" . 2)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("illegal use of syntax" . 2)
+    ("#???" . 2)
+    ("must be used in a definition context" . 1)
+    ("allowed only around a module body" . 1))))

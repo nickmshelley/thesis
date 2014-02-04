@@ -1,0 +1,29 @@
+'((remove
+   (passed . 17)
+   (failed
+    (total . 63)
+    ("unbound identifier in module" . 24)
+    ("not in module body" . 7)
+    ("allowed only around a module body" . 7)
+    ("function application is not allowed;" . 6)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("wrong number of parts" . 4)
+    ("bad syntax" . 4)
+    ("provided identifier not defined or imported for phase 0" . 3)
+    ("literal data is not allowed;" . 2)
+    ("illegal use" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 20)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     5)
+    ("'" . 5)
+    ("bad syntax" . 4)
+    ("illegal use" . 1)
+    ("identifier `#%app' not included in nested require spec" . 1)
+    ("identifier `#%datum' not included in nested require spec" . 1)
+    ("identifier `#%declare' not included in nested require spec" . 1)
+    ("identifier `#%expression' not included in nested require spec" . 1)
+    ("identifier `#%module-begin' not included in nested require spec" . 1))))

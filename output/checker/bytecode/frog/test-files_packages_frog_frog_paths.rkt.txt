@@ -1,0 +1,31 @@
+'((remove
+   (passed . 25)
+   (failed
+    (total . 75)
+    ("unbound identifier in module" . 22)
+    ("bad syntax" . 13)
+    ("allowed only around a module body" . 10)
+    ("wrong number of parts" . 8)
+    ("not in module body" . 7)
+    ("literal data is not allowed;" . 5)
+    ("syntax error in pattern" . 5)
+    ("function application is not allowed;" . 3)
+    ("not at module level or top level" . 2)))
+  (truncate
+   (passed . 19)
+   (failed
+    (total . 81)
+    ("unbound identifier in module" . 24)
+    ("bad syntax" . 17)
+    ("allowed only around a module body" . 8)
+    ("not in module body" . 6)
+    ("wrong number of parts" . 6)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     5)
+    ("missing `]' to close `[' on line 59, found instead `)'; indentation suggests a missing `]' before line 60"
+     .
+     5)
+    ("syntax error in pattern" . 5)
+    ("function application is not allowed;" . 3)
+    ("literal data is not allowed;" . 2))))

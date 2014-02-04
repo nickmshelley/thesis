@@ -1,0 +1,88 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 159)
+    ("bad syntax" . 28)
+    ("type mismatch" . 14)
+    ("unbound identifier in module" . 13)
+    ("not in module body" . 11)
+    ("wrong number of parts" . 9)
+    ("identifier used out of context" . 8)
+    ("illegal use" . 6)
+    ("Unbound type name #%app" . 6)
+    ("Unbound type name #%datum" . 6)
+    ("Unbound type name #%declare" . 6)
+    ("Unbound type name #%expression" . 6)
+    ("Unbound type name #%module-begin" . 6)
+    ("Polymorphic function `loop' could not be applied to arguments" . 5)
+    ("expected a `module' declaration" . 5)
+    ("Recursive Type Alias Reference" . 5)
+    ("must be used in a definition context" . 4)
+    ("#???" . 4)
+    ("function application is not allowed;" . 3)
+    ("Polymorphic function `cons' could not be applied to arguments" . 2)
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g256 (U Null (Boxof (U (Pairof A g256) (-> (Pairof A g256))))))) (-> (Pairof A (Rec g262 (U Null (Boxof (U (Pairof A g262) (-> (Pairof A g262)))))))))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `cdr' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (Pairof A (Rec g239 (U Null (Boxof (U (Pairof A g239) (-> (Pairof A g239))))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type A, since it is not a function type" . 1)
+    ("Polymorphic function `stream-car' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (U Negative-Integer Exact-Positive-Integer), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `drop' could not be applied to arguments" . 1)
+    ("Polymorphic function `take' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Pairof A (Rec g264 (U Null (Boxof (U (Pairof A g264) (-> (Pairof A g264))))))) (-> (Pairof A (Rec g270 (U Null (Boxof (U (Pairof A g270) (-> (Pairof A g270))))))))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g451 (U Null (Boxof (U (Pairof A g451) (-> (Pairof A g451))))))) (-> (Pairof A (Rec g457 (U Null (Boxof (U (Pairof A g457) (-> (Pairof A g457)))))))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type 'take, since it is not a function type"
+     .
+     1)
+    ("allowed only around a module body" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 124)
+    ("bad syntax" . 26)
+    ("not in module body" . 7)
+    ("wrong number of parts" . 7)
+    ("Polymorphic function `loop' could not be applied to arguments" . 6)
+    ("illegal use" . 6)
+    ("Unbound type name A" . 6)
+    ("Declaration for `pscar' provided, but `pscar' has no definition" . 5)
+    ("unbound identifier in module" . 5)
+    ("(A)" . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("Unbound type name X" . 5)
+    ("type mismatch" . 4)
+    ("not allowed as an expression" . 4)
+    ("Declaration for `loop' provided, but `loop' has no definition" . 4)
+    ("Declaration for `pscdr' provided, but `pscdr' has no definition" . 3)
+    ("identifier used out of context" . 3)
+    ("function application is not allowed;" . 2)
+    ("Cannot apply expression of type A, since it is not a function type" . 2)
+    ("must be used in a definition context" . 2)
+    ("Unbound type name #%app" . 2)
+    ("Unbound type name #%datum" . 2)
+    ("Unbound type name #%declare" . 2)
+    ("Unbound type name #%expression" . 2)
+    ("Unbound type name #%module-begin" . 2)
+    ("literal data is not allowed;" . 1)
+    ("Cannot apply expression of type 'pstake, since it is not a function type"
+     .
+     1)
+    ("allowed only around a module body" . 1)
+    ("#???" . 1)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     1)
+    ("Cannot apply expression of type (Boxof (U (Boxof (Rec g373 (U Null (Boxof (U (Boxof g373) (-> (Boxof g373)))) (Pairof A g373)))) (-> (Boxof (Rec g379 (U Null (Boxof (U (Boxof g379) (-> (Boxof g379)))) (Pairof A g379))))))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `pstake' could not be applied to arguments" . 1))))

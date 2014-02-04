@@ -1,0 +1,90 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 296)
+    ("bad syntax" . 79)
+    ("unbound identifier in module" . 32)
+    ("Type variable B must be used with ..." . 25)
+    ("not in module body" . 23)
+    ("identifier used out of context" . 20)
+    ("bad syntax (multiple types after identifier)" . 20)
+    ("illegal use" . 19)
+    ("(A)" . 15)
+    ("wrong number of parts" . 12)
+    ("expected a `module' declaration" . 10)
+    ("function application is not allowed;" . 9)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 5)
+    ("'" . 5)
+    ("provided identifier not defined or imported for phase 0" . 3)
+    ("must be used in a definition context" . 3)
+    ("type name used out of context" . 2)
+    ("not allowed as an expression" . 2)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("literal data is not allowed;" . 1)
+    ("Unbound type name #%app" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("Unbound type name #%module-begin" . 1)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 289)
+    ("bad syntax" . 82)
+    ("unbound identifier in module" . 28)
+    ("bad syntax (multiple types after identifier)" . 25)
+    ("illegal use" . 20)
+    ("not in module body" . 18)
+    ("identifier used out of context" . 15)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 10)
+    ("wrong number of parts" . 10)
+    ("(A)" . 10)
+    ("function application is not allowed;" . 8)
+    ("Declaration for `comp' provided, but `comp' has no definition" . 5)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("Type variable B must be used with ..." . 5)
+    ("Declaration for `sorted-list' provided, but `sorted-list' has no definition"
+     .
+     4)
+    ("literal data is not allowed;" . 4)
+    ("Declaration for `fold' provided, but `fold' has no definition" . 4)
+    ("Declaration for `merge' provided, but `merge' has no definition" . 4)
+    ("use of a class keyword is not in a class" . 3)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 3)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     3)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     3)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     3)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     3)
+    ("Unbound type name Heaps" . 3)
+    ("Declaration for `heap-map' provided, but `heap-map' has no definition"
+     .
+     3)
+    ("Declaration for `heap-andmap' provided, but `heap-andmap' has no definition"
+     .
+     3)
+    ("type name used out of context" . 2)
+    ("must be used in a definition context" . 2)
+    ("#???" . 1))))

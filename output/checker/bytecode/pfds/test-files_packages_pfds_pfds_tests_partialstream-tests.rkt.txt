@@ -1,0 +1,54 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 36)
+    ("expected a `module' declaration" . 5)
+    ("bad syntax" . 4)
+    ("type name used out of context" . 4)
+    ("wrong number of parts" . 4)
+    ("not in module body" . 3)
+    ("type mismatch" . 2)
+    ("allowed only around a module body" . 2)
+    ("#???" . 2)
+    ("illegal use" . 1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Boxof (Rec g282 (U Null (Boxof (U (Boxof g282) (-> (Boxof g282)))) (Pairof Integer g282)))) (-> (Boxof (Rec g288 (U Null (Boxof (U (Boxof g288) (-> (Boxof g288)))) (Pairof Integer g288))))))) (Pairof Integer (Rec g294 (U Null (Boxof (U (Boxof g294) (-> (Boxof g294)))) (Pairof Integer g294))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     1)
+    ("identifier used out of context" . 1)
+    ("Unbound type name #%app" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("Unbound type name #%module-begin" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 37)
+    ("expected a `module' declaration" . 5)
+    ("Declaration for `sum' provided, but `sum' has no definition" . 4)
+    ("Unbound type name t" . 4)
+    ("type name used out of context" . 2)
+    ("wrong number of parts" . 2)
+    ("not in module body" . 2)
+    ("allowed only around a module body" . 2)
+    ("Unbound type name #%app" . 2)
+    ("Unbound type name #%datum" . 2)
+    ("Unbound type name #%declare" . 2)
+    ("Unbound type name #%expression" . 2)
+    ("Unbound type name #%module-begin" . 2)
+    ("#???" . 1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Boxof (Rec g295 (U Null (Boxof (U (Boxof g295) (-> (Boxof g295)))) (Pairof Integer g295)))) (-> (Boxof (Rec g301 (U Null (Boxof (U (Boxof g301) (-> (Boxof g301)))) (Pairof Integer g301))))))) (Pairof Integer (Rec g307 (U Null (Boxof (U (Boxof g307) (-> (Boxof g307)))) (Pairof Integer g307))))), since it is not a function type"
+     .
+     1)
+    ("type mismatch" . 1)
+    ("function application is not allowed;" . 1)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     1)
+    ("identifier used out of context" . 1))))

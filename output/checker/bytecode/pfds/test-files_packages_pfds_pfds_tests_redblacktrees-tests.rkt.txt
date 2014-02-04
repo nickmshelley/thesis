@@ -1,0 +1,26 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 37)
+    ("bad syntax" . 12)
+    ("unbound identifier in module" . 5)
+    ("expected a `module' declaration" . 5)
+    ("expected identifier" . 5)
+    ("illegal use" . 3)
+    ("wrong number of parts" . 2)
+    ("allowed only around a module body" . 2)
+    ("not in module body" . 2)
+    ("untyped identifier lst" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 35)
+    ("bad syntax" . 12)
+    ("allowed only around a module body" . 6)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found #"
+     .
+     5)
+    ("not in module body" . 4)
+    ("wrong number of parts" . 4)
+    ("illegal use" . 3)
+    ("untyped identifier lst" . 1))))

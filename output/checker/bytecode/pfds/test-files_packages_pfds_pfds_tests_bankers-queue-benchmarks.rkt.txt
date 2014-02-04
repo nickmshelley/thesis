@@ -1,0 +1,40 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 48)
+    ("bad syntax" . 13)
+    ("not in module body" . 7)
+    ("identifier used out of context" . 7)
+    ("type mismatch" . 5)
+    ("unbound identifier in module" . 4)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     3)
+    ("illegal use" . 2)
+    ("wrong number of parts" . 2)
+    ("#<syntax Queue> ((Rec g453 (U Null (Boxof (U (Boxof g453) (-> (Boxof g453)))) (Pairof Positive-Integer g453))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("#<syntax Queue> ((Rec g530 (U Null (Boxof (U (Boxof g530) (-> (Boxof g530)))) (Pairof Positive-Integer g530))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("#<syntax Queue> ((Rec g275 (U Null (Boxof (U (Boxof g275) (-> (Boxof g275)))) (Pairof Positive-Integer g275))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("#<syntax Queue> ((Rec g759 (U Null (Boxof (U (Boxof g759) (-> (Boxof g759)))) (Pairof Positive-Integer g759))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("function application is not allowed;" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 53)
+    ("bad syntax" . 12)
+    ("not in module body" . 11)
+    ("allowed only around a module body" . 10)
+    ("wrong number of parts" . 8)
+    ("unbound identifier in module" . 5)
+    ("illegal use" . 3)
+    ("untyped identifier lst" . 2)
+    ("type mismatch" . 1)
+    ("Polymorphic function `remove' could not be applied to arguments" . 1))))
