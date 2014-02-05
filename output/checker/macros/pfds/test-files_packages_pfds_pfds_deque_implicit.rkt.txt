@@ -1,0 +1,129 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 491)
+    ("bad syntax" . 141)
+    ("syntax error in pattern" . 60)
+    ("unbound identifier in module" . 38)
+    ("illegal use" . 34)
+    ("not in module body" . 24)
+    ("identifier used out of context" . 22)
+    ("wrong number of parts" . 17)
+    ("(A)" . 15)
+    ("function application is not allowed;" . 13)
+    ("Component of case-lambda type was not a function clause" . 10)
+    ("bad syntax (multiple types after identifier)" . 10)
+    ("expected identifier" . 10)
+    ("#%app does not refer to a structure definition" . 9)
+    ("#%datum does not refer to a structure definition" . 9)
+    ("#%declare does not refer to a structure definition" . 9)
+    ("#%expression does not refer to a structure definition" . 9)
+    ("#%module-begin does not refer to a structure definition" . 9)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 5)
+    ("Type variable B must be used with ..." . 5)
+    ("'" . 5)
+    ("Declaration for `deque-ormap' provided, but `deque-ormap' has no definition"
+     .
+     4)
+    ("use of a class keyword is not in a class top-level" . 4)
+    ("Declaration for `enqueue-front' provided, but `enqueue-front' has no definition"
+     .
+     4)
+    ("Declaration for `head' provided, but `head' has no definition" . 4)
+    ("Declaration for `head+tail' provided, but `head+tail' has no definition"
+     .
+     3)
+    ("#???" . 2)
+    ("literal data is not allowed;" . 2)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("expected a field-specification keyword" . 1)
+    ("type name used out of context" . 1)
+    ("illegal (unparenthesized) use of class keyword" . 1)
+    ("allowed only around a module body" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 431)
+    ("bad syntax" . 99)
+    ("not in module body" . 40)
+    ("identifier used out of context" . 34)
+    ("unbound identifier in module" . 34)
+    ("wrong number of parts" . 25)
+    ("bad syntax (multiple types after identifier)" . 25)
+    ("illegal use" . 24)
+    ("expected identifier" . 15)
+    ("type mismatch" . 12)
+    ("Type variable B must be used with ..." . 10)
+    ("Unbound type name A" . 10)
+    ("Polymorphic function `Deque-lenf' could not be applied to arguments"
+     .
+     10)
+    ("function application is not allowed;" . 7)
+    ("Unbound type name #%datum" . 6)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     6)
+    ("Unbound type name #%declare" . 6)
+    ("Unbound type name #%module-begin" . 6)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("Expected a polymorphic function with ..., but function/annotation had no ..."
+     .
+     5)
+    ("Unbound type name #%app" . 5)
+    ("Unbound type name #%expression" . 5)
+    ("Declaration for `build-deque' provided, but `build-deque' has no definition"
+     .
+     4)
+    ("Declaration for `deque->list' provided, but `deque->list' has no definition"
+     .
+     4)
+    ("Declaration for `head+tail' provided, but `head+tail' has no definition"
+     .
+     4)
+    ("literal data is not allowed;" . 3)
+    ("Declaration for `last+init' provided, but `last+init' has no definition"
+     .
+     3)
+    ("must be used in a definition context" . 3)
+    ("untyped identifier deque-andmap" . 3)
+    ("use of a class keyword is not in a class" . 3)
+    ("#???" . 2)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     2)
+    ("13 Deque> ((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) Integer (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) Integer)), since it is not a function type"
+     .
+     2)
+    ("allowed only around a module body" . 1)
+    ("Cannot apply expression of type Boolean, since it is not a function type"
+     .
+     1)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("13 Deque> ((Rec g6451 (U Null (Boxof (U (Boxof g6451) (-> (Boxof g6451)))) (Pairof A g6451))) Integer (Rec g6457 (U Null (Boxof (U (Boxof g6457) (-> (Boxof g6457)))) (Pairof A g6457))) Integer)), since it is not a function type"
+     .
+     1)
+    ("Bad arguments to polymorphic function in apply" . 1))))

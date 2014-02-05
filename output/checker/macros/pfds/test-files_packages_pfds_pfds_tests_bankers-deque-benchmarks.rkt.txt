@@ -1,0 +1,67 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 51)
+    ("type mismatch" . 9)
+    ("not in module body" . 7)
+    ("unbound identifier in module" . 7)
+    ("identifier used out of context" . 5)
+    ("function application is not allowed;" . 2)
+    ("literal data is not allowed;" . 2)
+    ("Unbound type name #%app" . 2)
+    ("Unbound type name #%datum" . 2)
+    ("Unbound type name #%declare" . 2)
+    ("Unbound type name #%expression" . 2)
+    ("Unbound type name #%module-begin" . 2)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     1)
+    ("#<syntax Deque> ((Rec g986 (U Null (Boxof (U (Boxof g986) (-> (Boxof g986)))) (Pairof Positive-Integer g986))) Integer (Rec g992 (U Null (Boxof (U (Boxof g992) (-> (Boxof g992)))) (Pairof Positive-Integer g992))) Integer)), since it is not a function type"
+     .
+     1)
+    ("use of a class keyword is not in a class top-level" . 1)
+    ("wrong number of parts" . 1)
+    ("bad syntax" . 1)
+    ("#<syntax Deque> ((Rec g726 (U Null (Boxof (U (Boxof g726) (-> (Boxof g726)))) (Pairof Positive-Integer g726))) Integer (Rec g732 (U Null (Boxof (U (Boxof g732) (-> (Boxof g732)))) (Pairof Positive-Integer g732))) Integer)), since it is not a function type"
+     .
+     1)
+    ("#<syntax Deque> ((Rec g466 (U Null (Boxof (U (Boxof g466) (-> (Boxof g466)))) (Pairof Positive-Integer g466))) Integer (Rec g472 (U Null (Boxof (U (Boxof g472) (-> (Boxof g472)))) (Pairof Positive-Integer g472))) Integer)), since it is not a function type"
+     .
+     1)
+    ("#<syntax Deque> ((Rec g795 (U Null (Boxof (U (Boxof g795) (-> (Boxof g795)))) (Pairof Positive-Integer g795))) Integer (Rec g801 (U Null (Boxof (U (Boxof g801) (-> (Boxof g801)))) (Pairof Positive-Integer g801))) Integer)), since it is not a function type"
+     .
+     1)
+    ("#<syntax Deque> ((Rec g848 (U Null (Boxof (U (Boxof g848) (-> (Boxof g848)))) (Pairof Positive-Integer g848))) Integer (Rec g854 (U Null (Boxof (U (Boxof g854) (-> (Boxof g854)))) (Pairof Positive-Integer g854))) Integer)), since it is not a function type"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 46)
+    ("bad syntax" . 11)
+    ("not in module body" . 6)
+    ("wrong number of parts" . 5)
+    ("type mismatch" . 3)
+    ("identifier used out of context" . 3)
+    ("unbound identifier in module" . 2)
+    ("function application is not allowed;" . 2)
+    ("literal data is not allowed;" . 2)
+    ("Cannot apply expression of type Boolean, since it is not a function type"
+     .
+     2)
+    ("#<syntax Deque> ((Rec g344 (U Null (Boxof (U (Boxof g344) (-> (Boxof g344)))) (Pairof Positive-Integer g344))) Integer (Rec g350 (U Null (Boxof (U (Boxof g350) (-> (Boxof g350)))) (Pairof Positive-Integer g350))) Integer)), since it is not a function type"
+     .
+     1)
+    ("illegal use" . 1)
+    ("Unbound type name #%app" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("Unbound type name #%module-begin" . 1)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `build-deque' could not be applied to arguments"
+     .
+     1)
+    ("allowed only around a module body" . 1))))

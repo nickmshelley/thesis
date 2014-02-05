@@ -1,0 +1,19 @@
+'((remove
+   (passed . 21)
+   (failed
+    (total . 24)
+    ("unbound identifier in module" . 16)
+    ("wrong number of parts" . 2)
+    ("allowed only around a module body" . 2)
+    ("function application is not allowed;" . 1)
+    ("literal data is not allowed;" . 1)
+    ("missing procedure expression;" . 1)
+    ("not in module body" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 175)
+    ("The type of vm-processes cannot be converted to a contract" . 168)
+    ("unbound identifier in module" . 5)
+    ("wrong number of parts" . 1)
+    ("allowed only around a module body" . 1))))

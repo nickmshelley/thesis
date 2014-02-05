@@ -1,0 +1,28 @@
+'((remove
+   (passed . 68)
+   (failed
+    (total . 82)
+    ("unbound identifier in module" . 22)
+    ("bad syntax" . 20)
+    ("missing `]' to close preceding `[', found instead `)'" . 10)
+    ("wrong number of parts" . 6)
+    ("allowed only around a module body" . 6)
+    ("collection not found" . 5)
+    ("unexpected `)'" . 5)
+    ("not in module body" . 3)
+    ("function application is not allowed;" . 3)
+    ("literal data is not allowed;" . 2)))
+  (truncate
+   (passed . 25)
+   (failed
+    (total . 50)
+    ("bad syntax" . 18)
+    ("allowed only around a module body" . 5)
+    ("syntax error in pattern" . 5)
+    ("missing `]' to close `[' on line 34, found instead `)'" . 5)
+    ("illegal use" . 4)
+    ("not in module body" . 4)
+    ("too many ellipses in template" . 4)
+    ("missing procedure expression;" . 2)
+    ("wrong number of parts" . 2)
+    ("pattern variable cannot be used outside of a template" . 1))))

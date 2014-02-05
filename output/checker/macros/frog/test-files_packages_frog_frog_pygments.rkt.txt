@@ -1,0 +1,26 @@
+'((remove
+   (passed . 11)
+   (failed
+    (total . 59)
+    ("bad syntax" . 27)
+    ("not a require sub-form" . 5)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("not in module body" . 4)
+    ("wrong number of parts" . 4)
+    ("allowed only around a module body" . 4)
+    ("unbound identifier in module" . 3)
+    ("provided identifier not defined or imported for phase 0" . 3)
+    ("function application is not allowed;" . 2)
+    ("literal data is not allowed;" . 2)))
+  (truncate
+   (passed . 32)
+   (failed
+    (total . 48)
+    ("bad syntax" . 11)
+    ("unbound identifier in module" . 9)
+    ("allowed only around a module body" . 7)
+    ("wrong number of parts" . 6)
+    ("not in module body" . 6)
+    ("missing `)' to close preceding `(', found instead `]'" . 5)
+    ("function application is not allowed;" . 2)
+    ("literal data is not allowed;" . 2))))

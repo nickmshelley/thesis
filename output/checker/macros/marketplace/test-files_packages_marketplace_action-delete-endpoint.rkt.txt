@@ -1,0 +1,42 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 49)
+    ("bad syntax" . 13)
+    ("unbound identifier in module" . 5)
+    ("'" . 5)
+    ("collection not found" . 4)
+    ("wrong number of parts" . 3)
+    ("illegal use" . 3)
+    ("#???" . 2)
+    ("not in module body" . 2)
+    ("identifier used out of context" . 2)
+    ("must be used in a definition context" . 1)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ="
+     .
+     1)
+    ("identifier `#%app' not included in nested require spec" . 1)
+    ("identifier `#%datum' not included in nested require spec" . 1)
+    ("identifier `#%declare' not included in nested require spec" . 1)
+    ("identifier `#%expression' not included in nested require spec" . 1)
+    ("identifier `#%module-begin' not included in nested require spec" . 1)
+    ("allowed only around a module body" . 1)
+    ("function application is not allowed;" . 1)
+    ("bad syntax;" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 49)
+    ("bad syntax" . 14)
+    ("unbound identifier in module" . 12)
+    ("not in module body" . 4)
+    ("illegal use" . 3)
+    ("#???" . 3)
+    ("wrong number of parts" . 3)
+    ("identifier used out of context" . 3)
+    ("illegal use of syntax" . 3)
+    ("must be used in a definition context" . 2)
+    ("(List 'values (List 'process 'State) 'vm) (List (List 'p 'p) (List 'state 'state)) (List (List 'pre-eid (List 'in-hash-keys (List 'process-endpoints 'p)))) (List 'do-delete-endpoint 'pre-eid 'reason 'p 'state))"
+     .
+     1)
+    ("allowed only around a module body" . 1))))

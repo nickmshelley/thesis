@@ -1,0 +1,132 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 368)
+    ("bad syntax" . 108)
+    ("unbound identifier in module" . 34)
+    ("not in module body" . 27)
+    ("illegal use" . 26)
+    ("identifier used out of context" . 22)
+    ("wrong number of parts" . 21)
+    ("Type variable B must be used with ..." . 15)
+    ("Polymorphic function `Heap-trees' could not be applied to arguments"
+     .
+     11)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 10)
+    ("function application is not allowed;" . 8)
+    ("Unbound type name #%app" . 7)
+    ("Unbound type name #%declare" . 7)
+    ("Unbound type name #%expression" . 7)
+    ("Unbound type name #%module-begin" . 7)
+    ("Unbound type name #%datum" . 6)
+    ("(A)" . 5)
+    ("'" . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("misuse of compound-unit keyword" . 4)
+    ("use of a class keyword is not in a class" . 4)
+    ("must be used in a definition context" . 3)
+    ("#???" . 3)
+    ("Duplicate type annotation of (All (A) ((Heap A) -> Boolean)) for empty?, previous was #<procedure>"
+     .
+     3)
+    ("not allowed as an expression" . 2)
+    ("literal data is not allowed;" . 2)
+    ("type mismatch" . 2)
+    ("13 Heap> ((A A -> Boolean) (Listof (Node A)))), since it is not a function type"
+     .
+     2)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     1)
+    ("Wrong number of arguments, expected 1 and got 2" . 1)
+    ("Polymorphic function `inner' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type Boolean, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (Pairof (Node A) (Listof (Node A))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `sorted-list' could not be applied to arguments"
+     .
+     1)
+    ("Cannot apply expression of type (List 'Heap 'A), since it is not a function type"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 359)
+    ("bad syntax" . 88)
+    ("unbound identifier in module" . 40)
+    ("not in module body" . 28)
+    ("identifier used out of context" . 24)
+    ("wrong number of parts" . 21)
+    ("illegal use" . 20)
+    ("(A)" . 15)
+    ("Type variable B must be used with ..." . 15)
+    ("function application is not allowed;" . 13)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 10)
+    ("use of a class keyword is not in a class" . 7)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("Unbound type name #%module-begin" . 5)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("Declaration for `fold' provided, but `fold' has no definition" . 4)
+    ("Declaration for `insert' provided, but `insert' has no definition" . 4)
+    ("Unbound type name #%app" . 4)
+    ("Unbound type name #%datum" . 4)
+    ("Unbound type name #%expression" . 4)
+    ("must be used in a definition context" . 3)
+    ("#???" . 3)
+    ("literal data is not allowed;" . 3)
+    ("Declaration for `find-min/max' provided, but `find-min/max' has no definition"
+     .
+     3)
+    ("Declaration for `build-heap' provided, but `build-heap' has no definition"
+     .
+     3)
+    ("Unbound type name #%declare" . 3)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("13 Heap> ((A A -> Boolean) (Listof (Node A)))), since it is not a function type"
+     .
+     2)
+    ("type mismatch" . 2)
+    ("Polymorphic function `insert' could not be applied to arguments" . 2)
+    ("Polymorphic function `Heap2' could not be applied to arguments" . 2)
+    ("Polymorphic function `Node-trees' could not be applied to arguments" . 1)
+    ("Polymorphic function `car' could not be applied to arguments" . 1)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 1)
+    ("Polymorphic function `sorted-list' could not be applied to arguments"
+     .
+     1)
+    ("Cannot apply expression of type Nonnegative-Integer, since it is not a function type"
+     .
+     1)
+    ("13 Node> (Integer A (Listof (Node A)))), since it is not a function type"
+     .
+     1)
+    ("Wrong number of arguments, expected 1 and got 2" . 1))))

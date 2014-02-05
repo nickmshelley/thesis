@@ -1,0 +1,31 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 141)
+    ("bad syntax" . 68)
+    ("unbound identifier in module" . 18)
+    ("illegal use" . 17)
+    ("not in module body" . 11)
+    ("identifier used out of context" . 11)
+    ("(SNew)" . 5)
+    ("wrong number of parts" . 4)
+    ("Declaration for `notify-route-change-vm' provided, but `notify-route-change-vm' has no definition"
+     .
+     4)
+    ("function application is not allowed;" . 2)
+    ("allowed only around a module body" . 1)))
+  (truncate
+   (passed . 61)
+   (failed
+    (total . 178)
+    ("bad syntax" . 60)
+    ("unbound identifier in module" . 37)
+    ("Illegal clause in endpoint definition" . 20)
+    ("illegal use" . 15)
+    ("function application is not allowed;" . 12)
+    ("syntax error in pattern" . 10)
+    ("not in module body" . 6)
+    ("allowed only around a module body" . 6)
+    ("bad module path" . 5)
+    ("wrong number of parts" . 4)
+    ("literal data is not allowed;" . 3))))

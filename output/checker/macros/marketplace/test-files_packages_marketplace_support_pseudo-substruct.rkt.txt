@@ -1,0 +1,15 @@
+'((remove
+   (passed . 25)
+   (failed
+    (total . 10)
+    ("missing `)' to close preceding `(', found instead `]'" . 5)
+    ("bad module path" . 5)))
+  (truncate
+   (passed . 16)
+   (failed
+    (total . 19)
+    ("no pattern variables before ellipsis in template" . 11)
+    ("unbound identifier in module" . 4)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("#???" . 1)
+    ("wrong number of parts" . 1))))

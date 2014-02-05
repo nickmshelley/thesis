@@ -1,0 +1,51 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 48)
+    ("bad syntax" . 12)
+    ("unbound identifier in module" . 11)
+    ("accessor name not associated with the given structure type" . 5)
+    ("expected a `module' declaration" . 5)
+    ("illegal use" . 3)
+    ("function application is not allowed;" . 2)
+    ("literal data is not allowed;" . 2)
+    ("not in module body" . 1)
+    ("wrong number of parts" . 1)
+    ("identifier used out of context" . 1)
+    ("Unbound type name #%app" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("Unbound type name #%module-begin" . 1)))
+  (truncate
+   (passed . 3)
+   (failed
+    (total . 55)
+    ("bad syntax" . 20)
+    ("Polymorphic function `process-debug-name' could not be applied to arguments"
+     .
+     5)
+    ("illegal use" . 5)
+    ("exn" . 5)
+    ("too many forms in body of All type" . 5)
+    ("function application is not allowed;" . 1)
+    ("literal data is not allowed;" . 1)
+    ("Unbound type name #%app" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("Unbound type name #%module-begin" . 1)
+    ("Cannot apply expression of type String, since it is not a function type"
+     .
+     1)
+    ("#???" . 1)
+    ("allowed only around a module body" . 1)
+    ("Cannot apply expression of type Reason, since it is not a function type"
+     .
+     1)
+    ("Expression should produce 3 values, but produces 1 values of types (List 'reason 'p 'state)"
+     .
+     1)
+    ("not in module body" . 1)
+    ("wrong number of parts" . 1)
+    ("identifier used out of context" . 1))))

@@ -1,0 +1,33 @@
+'((remove
+   (passed . 5)
+   (failed
+    (total . 20)
+    ("Unbound type name State" . 5)
+    ("type mismatch" . 4)
+    ("not in module body" . 2)
+    ("identifier used out of context" . 2)
+    ("Cannot apply expression of type PID, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type vm, since it is not a function type" . 1)
+    ("bad syntax;" . 1)
+    ("bad syntax" . 1)
+    ("Cannot apply expression of type String, since it is not a function type"
+     .
+     1)
+    ("#???" . 1)
+    ("allowed only around a module body" . 1)))
+  (truncate
+   (passed . 1)
+   (failed
+    (total . 24)
+    ("unbound identifier in module" . 9)
+    ("Unbound type name State" . 5)
+    ("illegal use of syntax" . 3)
+    ("function application is not allowed;" . 1)
+    ("literal data is not allowed;" . 1)
+    ("#???" . 1)
+    ("type mismatch" . 1)
+    ("not in module body" . 1)
+    ("wrong number of parts" . 1)
+    ("allowed only around a module body" . 1))))

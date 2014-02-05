@@ -1,0 +1,87 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 588)
+    ("bad syntax" . 195)
+    ("unbound identifier in module" . 87)
+    ("illegal use" . 48)
+    ("not in module body" . 34)
+    ("identifier used out of context" . 33)
+    ("(A)" . 25)
+    ("Type variable B must be used with ..." . 25)
+    ("bad syntax (multiple types after identifier)" . 25)
+    ("wrong number of parts" . 21)
+    ("function application is not allowed;" . 18)
+    ("expected identifier" . 10)
+    ("Declaration for `del-left' provided, but `del-left' has no definition"
+     .
+     5)
+    ("literal data is not allowed;" . 5)
+    ("expected a `module' declaration" . 5)
+    ("#???" . 4)
+    ("Declaration for `balance' provided, but `balance' has no definition" . 4)
+    ("Declaration for `rake-red' provided, but `rake-red' has no definition"
+     .
+     4)
+    ("Declaration for `root' provided, but `root' has no definition" . 3)
+    ("must be used in a definition context" . 3)
+    ("Declaration for `color' provided, but `color' has no definition" . 3)
+    ("provided identifier not defined or imported for phase 0" . 3)
+    ("Declaration for `get-right' provided, but `get-right' has no definition"
+     .
+     3)
+    ("#%app does not refer to a structure definition" . 2)
+    ("#%datum does not refer to a structure definition" . 2)
+    ("#%declare does not refer to a structure definition" . 2)
+    ("#%expression does not refer to a structure definition" . 2)
+    ("#%module-begin does not refer to a structure definition" . 2)
+    ("Unbound type name #%app" . 2)
+    ("Unbound type name #%datum" . 2)
+    ("Unbound type name #%declare" . 2)
+    ("Unbound type name #%expression" . 2)
+    ("Unbound type name #%module-begin" . 2)
+    ("not allowed as an expression" . 2)
+    ("type name used out of context" . 2)
+    ("allowed only around a module body" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 302)
+    ("bad syntax" . 82)
+    ("unbound identifier in module" . 36)
+    ("bad syntax (multiple types after identifier)" . 25)
+    ("illegal use" . 20)
+    ("not in module body" . 16)
+    ("Type variable B must be used with ..." . 15)
+    ("'" . 15)
+    ("(A)" . 15)
+    ("identifier used out of context" . 13)
+    ("wrong number of parts" . 13)
+    ("syntax error in pattern" . 10)
+    ("function application is not allowed;" . 8)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 5)
+    ("#???" . 4)
+    ("Declaration for `enqueue' provided, but `enqueue' has no definition" . 4)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("must be used in a definition context" . 2)
+    ("Unbound type name RotationState" . 1)
+    ("type name used out of context" . 1)
+    ("not in a definition context" . 1)
+    ("not allowed as an expression" . 1)
+    ("#%app does not refer to a structure definition" . 1)
+    ("#%datum does not refer to a structure definition" . 1)
+    ("#%declare does not refer to a structure definition" . 1)
+    ("#%expression does not refer to a structure definition" . 1)
+    ("#%module-begin does not refer to a structure definition" . 1))))

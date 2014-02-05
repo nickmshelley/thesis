@@ -1,0 +1,73 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 65)
+    ("bad syntax" . 8)
+    ("not in module body" . 7)
+    ("wrong number of parts" . 6)
+    ("expected a `module' declaration" . 5)
+    ("allowed only around a module body" . 5)
+    ("Cannot apply expression of type (U Null (List Integer)), since it is not a function type"
+     .
+     4)
+    ("illegal use of syntax" . 3)
+    ("illegal use" . 2)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     2)
+    ("#???" . 2)
+    ("untyped identifier lst" . 2)
+    ("Polymorphic function `append' could not be applied to arguments" . 2)
+    ("Unbound type name #%app" . 2)
+    ("Unbound type name #%datum" . 2)
+    ("Unbound type name #%declare" . 2)
+    ("Unbound type name #%expression" . 2)
+    ("Unbound type name #%module-begin" . 2)
+    ("unbound identifier in module" . 2)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     1)
+    ("untyped identifier lst1" . 1)
+    ("Polymorphic function `clist->list' could not be applied to arguments"
+     .
+     1)
+    ("type mismatch" . 1)
+    ("Cannot apply expression of type Boolean, since it is not a function type"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 69)
+    ("bad syntax" . 16)
+    ("not in module body" . 8)
+    ("allowed only around a module body" . 8)
+    ("wrong number of parts" . 6)
+    ("unbound identifier in module" . 5)
+    ("illegal use" . 4)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     4)
+    ("type mismatch" . 3)
+    ("Polymorphic function `tail' could not be applied to arguments" . 3)
+    ("#???" . 2)
+    ("Polymorphic function `clist->list' could not be applied to arguments"
+     .
+     2)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     2)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `kons-rear' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (U Null (List Integer)), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `append' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (List Any)), since it is not a function type"
+     .
+     1))))

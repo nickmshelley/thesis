@@ -1,0 +1,93 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 165)
+    ("bad syntax" . 32)
+    ("expected identifier" . 30)
+    ("unbound identifier in module" . 14)
+    ("not in module body" . 12)
+    ("wrong number of parts" . 9)
+    ("allowed only around a module body" . 9)
+    ("illegal use" . 8)
+    ("Unbound type name #%app" . 5)
+    ("Unbound type name #%datum" . 5)
+    ("Unbound type name #%declare" . 5)
+    ("Unbound type name #%expression" . 5)
+    ("Unbound type name #%module-begin" . 5)
+    ("function application is not allowed;" . 3)
+    ("Polymorphic function `heap' could not be applied to arguments" . 3)
+    ("Polymorphic function `remove' could not be applied to arguments" . 2)
+    ("type mismatch" . 2)
+    ("#<syntax LeftistHeap> ((Integer Integer -> Boolean) (U Null (Tree Integer)))), since it is not a function type"
+     .
+     2)
+    ("#<syntax LeftistHeap> ((Positive-Byte Positive-Byte -> Boolean) (U Null (Tree Positive-Byte)))), since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `merge' could not be applied to arguments" . 2)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `heap-andmap' could not be applied to arguments"
+     .
+     2)
+    ("Cannot apply expression of type (U Null (Pairof Positive-Byte (Listof Positive-Byte))), since it is not a function type"
+     .
+     1)
+    ("#???" . 1)
+    ("Polymorphic function `sorted-list' could not be applied to arguments"
+     .
+     1)
+    ("Polymorphic function `delete-min/max' could not be applied to arguments"
+     .
+     1)
+    ("Polymorphic function `heap-ormap' could not be applied to arguments" . 1)
+    ("Bad arguments to polymorphic function in apply" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 162)
+    ("unbound identifier in module" . 35)
+    ("not in module body" . 17)
+    ("bad syntax" . 16)
+    ("wrong number of parts" . 15)
+    ("allowed only around a module body" . 10)
+    ("expected identifier" . 10)
+    ("function application is not allowed;" . 6)
+    ("Bad arguments to polymorphic function in apply" . 5)
+    ("illegal use" . 4)
+    ("#<syntax PairingHeap> ((Integer Integer -> Boolean) (U Null (Tree Integer)))), since it is not a function type"
+     .
+     4)
+    ("Polymorphic function `build-list' could not be applied to arguments" . 3)
+    ("type mismatch" . 3)
+    ("identifier used out of context" . 3)
+    ("Polymorphic function `delete-min/max' could not be applied to arguments"
+     .
+     3)
+    ("Unbound type name #%app" . 3)
+    ("Unbound type name #%datum" . 3)
+    ("Unbound type name #%declare" . 3)
+    ("Unbound type name #%expression" . 3)
+    ("Unbound type name #%module-begin" . 3)
+    ("Polymorphic function `filter' could not be applied to arguments" . 2)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     2)
+    ("literal data is not allowed;" . 2)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `sorted-list' could not be applied to arguments"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Pairof Positive-Byte (Listof Positive-Byte))), since it is not a function type"
+     .
+     1)
+    ("#???" . 1)
+    ("#<syntax PairingHeap> ((Nothing Nothing -> Boolean) (U Null (Tree Nothing)))), since it is not a function type"
+     .
+     1))))

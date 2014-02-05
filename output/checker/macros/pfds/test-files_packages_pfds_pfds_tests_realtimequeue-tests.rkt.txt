@@ -1,0 +1,95 @@
+'((remove
+   (passed . 9)
+   (failed
+    (total . 56)
+    ("allowed only around a module body" . 9)
+    ("not in module body" . 8)
+    ("wrong number of parts" . 7)
+    ("unbound identifier in module" . 5)
+    ("bad syntax" . 4)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     3)
+    ("#???" . 3)
+    ("Polymorphic function `head' could not be applied to arguments" . 2)
+    ("Polymorphic function `tail' could not be applied to arguments" . 2)
+    ("type mismatch" . 2)
+    ("Polymorphic function `queue->list' could not be applied to arguments"
+     .
+     2)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     2)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     1)
+    ("#<syntax Queue> ((Rec g1084 (U Null (Boxof (U (Pairof Integer g1084) (-> (Pairof Integer g1084)))))) (Listof Integer) (Rec g1091 (U Null (Boxof (U (Pairof Integer g1091) (-> (Pairof Integer g1091)))))))), since it is not a function type"
+     .
+     1)
+    ("#<syntax Queue> ((Rec g206 (U Null (Boxof (U (Pairof Integer g206) (-> (Pairof Integer g206)))))) (Listof Integer) (Rec g213 (U Null (Boxof (U (Pairof Integer g213) (-> (Pairof Integer g213)))))))), since it is not a function type"
+     .
+     1)
+    ("#<syntax Queue> ((Rec g593 (U Null (Boxof (U (Pairof Integer g593) (-> (Pairof Integer g593)))))) (Listof Integer) (Rec g600 (U Null (Boxof (U (Pairof Integer g600) (-> (Pairof Integer g600)))))))), since it is not a function type"
+     .
+     1)
+    ("illegal use" . 1)
+    ("Polymorphic function `map' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     1)))
+  (truncate
+   (passed . 6)
+   (failed
+    (total . 219)
+    ("bad syntax" . 37)
+    ("unbound identifier in module" . 22)
+    ("Unbound type name K" . 21)
+    ("not in module body" . 12)
+    ("wrong number of parts" . 10)
+    ("identifier used out of context" . 10)
+    ("illegal use" . 9)
+    ("Polymorphic function `Trie-opt' could not be applied to arguments" . 8)
+    ("type mismatch" . 7)
+    ("Unbound type name #%app" . 7)
+    ("Unbound type name #%datum" . 7)
+    ("Unbound type name #%declare" . 7)
+    ("Unbound type name #%expression" . 7)
+    ("Unbound type name #%module-begin" . 7)
+    ("function application is not allowed;" . 5)
+    ("untyped identifier insert" . 5)
+    ("Polymorphic function `make-Trie' could not be applied to arguments" . 5)
+    ("'" . 5)
+    ("22 Trie> ((U Mt (Some V)) (HashTable K (Trie K V)))), since it is not a function type"
+     .
+     3)
+    ("Duplicate type annotation of (All (K V) (-> (Trie K V))) for empty, previous was #<procedure>"
+     .
+     3)
+    ("literal data is not allowed;" . 2)
+    ("#???" . 2)
+    ("Polymorphic function `make-immutable-hash' could not be applied to arguments"
+     .
+     2)
+    ("Cannot apply expression of type (HashTable K (Trie K V)), since it is not a function type"
+     .
+     2)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     2)
+    ("allowed only around a module body" . 2)
+    ("Cannot apply expression of type (U Null (Pairof K (Listof K))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `lookup' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type V, since it is not a function type" . 1)
+    ("Polymorphic function `bind' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (Pairof K (Trie K V)), since it is not a function type"
+     .
+     1)
+    ("must be used in a definition context" . 1)
+    ("20 Some> (V)), since it is not a function type" . 1)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `cons' could not be applied to arguments" . 1)
+    ("Polymorphic function `go-deep' could not be applied to arguments" . 1))))

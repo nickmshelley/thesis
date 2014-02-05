@@ -1,0 +1,16 @@
+'((remove (passed . 5) (failed (total . 5) ("not a provide sub-form" . 5)))
+  (truncate
+   (passed . 5)
+   (failed
+    (total . 5)
+    ("identifier to remove `#%app' not included in nested provide spec" . 1)
+    ("identifier to remove `#%datum' not included in nested provide spec" . 1)
+    ("identifier to remove `#%declare' not included in nested provide spec"
+     .
+     1)
+    ("identifier to remove `#%expression' not included in nested provide spec"
+     .
+     1)
+    ("identifier to remove `#%module-begin' not included in nested provide spec"
+     .
+     1))))

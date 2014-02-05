@@ -1,0 +1,47 @@
+'((remove
+   (passed . 75)
+   (failed
+    (total . 325)
+    ("bad syntax" . 156)
+    ("unbound identifier in module" . 41)
+    ("illegal use" . 39)
+    ("allowed only around a module body" . 23)
+    ("not in module body" . 21)
+    ("function application is not allowed;" . 15)
+    ("wrong number of parts" . 12)
+    ("literal data is not allowed;" . 11)
+    ("provided identifier not defined or imported for phase 0" . 6)
+    ("missing procedure expression;" . 1)))
+  (truncate
+   (passed . 1)
+   (failed
+    (total . 98)
+    ("bad syntax" . 24)
+    ("unbound identifier in module" . 7)
+    ("illegal use" . 6)
+    ("wrong number of parts" . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("not a provide sub-form" . 5)
+    ("Unbound type name State" . 5)
+    ("syntax error in pattern" . 5)
+    ("type mismatch" . 4)
+    ("not in module body" . 4)
+    ("identifier used out of context" . 4)
+    ("Unbound type name #%app" . 3)
+    ("Unbound type name #%datum" . 3)
+    ("Unbound type name #%declare" . 3)
+    ("Unbound type name #%expression" . 3)
+    ("Unbound type name #%module-begin" . 3)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("illegal use of syntax" . 2)
+    ("Cannot apply expression of type (U False Void Null send-message quit delete-endpoint (spawn State) (add-endpoint State) (yield State) (at-meta-level State) (Pairof (Rec g2412 (U False Void Null send-message quit delete-endpoint (spawn State) (add-endpoint State) (yield State) (at-meta-level State) (Pairof g2412 g2412))) (Rec g2422 (U False Void Null send-message quit delete-endpoint (spawn State) (add-endpoint State) (yield State) (at-meta-level State) (Pairof g2422 g2422))))), since it is not a function type"
+     .
+     1)
+    ("function application is not allowed;" . 1)
+    ("#???" . 1)
+    ("Cannot apply expression of type Topic, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Void Null send-message quit delete-endpoint (State -> (transition State)) (spawn State) (add-endpoint State) (yield State) (at-meta-level State)), since it is not a function type"
+     .
+     1))))

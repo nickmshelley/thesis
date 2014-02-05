@@ -1,0 +1,8 @@
+'((remove (passed . 5) (failed (total . 5) ("bad module path" . 5)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 10)
+    ("bad module path" . 5)
+    ("unbound identifier in module" . 4)
+    ("allowed only around a module body" . 1))))

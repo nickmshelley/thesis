@@ -1,0 +1,16 @@
+'((remove
+   (passed . 6)
+   (failed
+    (total . 19)
+    ("syntax error in pattern" . 5)
+    ("bad syntax" . 4)
+    ("unbound identifier in module" . 4)
+    ("allowed only around a module body" . 3)
+    ("not in module body" . 2)
+    ("illegal use" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 15)
+    ("type name used out of context" . 10)
+    ("unbound identifier in module" . 5))))

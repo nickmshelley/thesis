@@ -1,0 +1,41 @@
+'((remove
+   (passed . 9)
+   (failed
+    (total . 41)
+    ("bad syntax" . 5)
+    ("Illegal clause in endpoint definition" . 5)
+    ("(ParentState)" . 5)
+    ("unexpected `)'" . 5)
+    ("not in module body" . 4)
+    ("wrong number of parts" . 4)
+    ("identifier used out of context" . 2)
+    ("missing procedure expression;" . 2)
+    ("allowed only around a module body" . 2)
+    ("Cannot apply expression of type Reason, since it is not a function type"
+     .
+     1)
+    ("illegal use" . 1)
+    ("must be used in a definition context" . 1)
+    ("Unbound type name ParentState" . 1)
+    ("#???" . 1)
+    ("Cannot apply expression of type Void, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `transition8' could not be applied to arguments"
+     .
+     1)))
+  (truncate
+   (passed . 10)
+   (failed
+    (total . 40)
+    ("unbound identifier in module" . 12)
+    ("expected a `)' to close `('" . 5)
+    ("too many forms in body of All type" . 5)
+    ("(ParentState)" . 5)
+    ("Illegal clause in endpoint definition" . 5)
+    ("function application is not allowed;" . 3)
+    ("Unbound type name #%app" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("Unbound type name #%module-begin" . 1))))

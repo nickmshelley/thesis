@@ -1,0 +1,55 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 94)
+    ("bad syntax" . 16)
+    ("type mismatch" . 9)
+    ("unbound identifier in module" . 5)
+    ("provided identifier not defined or imported for phase 0" . 5)
+    ("wrong number of parts" . 5)
+    ("not in module body" . 5)
+    ("expected a `module' declaration" . 5)
+    ("illegal use" . 4)
+    ("Unbound type name #%app" . 4)
+    ("Unbound type name #%datum" . 4)
+    ("Unbound type name #%declare" . 4)
+    ("Unbound type name #%expression" . 4)
+    ("Unbound type name #%module-begin" . 4)
+    ("identifier used out of context" . 4)
+    ("function application is not allowed;" . 3)
+    ("literal data is not allowed;" . 3)
+    ("Declaration for `send-message' provided, but `send-message' has no definition"
+     .
+     3)
+    ("type name used out of context" . 2)
+    ("Cannot apply expression of type PreEID, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Void Null send-message quit delete-endpoint (State -> (transition State)) (spawn State) (add-endpoint State) (yield State) (at-meta-level State)), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U False Void Null send-message quit delete-endpoint (State -> (transition State)) (spawn State) (add-endpoint State) (yield State) (at-meta-level State)), since it is not a function type"
+     .
+     1)
+    ("ActionTree 'State)), since it is not a function type" . 1)
+    ("Cannot apply expression of type Topic, since it is not a function type"
+     .
+     1)))
+  (truncate
+   (passed . 88)
+   (failed
+    (total . 312)
+    ("bad syntax" . 140)
+    ("illegal use" . 35)
+    ("allowed only around a module body" . 28)
+    ("unbound identifier in module" . 28)
+    ("not in module body" . 24)
+    ("wrong number of parts" . 19)
+    ("function application is not allowed;" . 11)
+    ("literal data is not allowed;" . 7)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("not a provide sub-form" . 5)
+    ("bad module path" . 5)
+    ("not allowed as an expression" . 2)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("missing procedure expression;" . 1))))

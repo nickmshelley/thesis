@@ -1,0 +1,14 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 75)
+    ("The type of vm-processes cannot be converted to a contract" . 60)
+    ("expected a `)' to close `('" . 5)
+    ("unexpected `)'" . 5)
+    ("type name used out of context" . 5)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 70)
+    ("The type of vm-processes cannot be converted to a contract" . 65)
+    ("type name used out of context" . 5))))

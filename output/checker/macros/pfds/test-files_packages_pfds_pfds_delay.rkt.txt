@@ -1,0 +1,62 @@
+'((remove
+   (passed . 5)
+   (failed
+    (total . 20)
+    ("(A)" . 5)
+    ("bad syntax" . 4)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("illegal use" . 1)
+    ("unbound identifier in module" . 1)
+    ("wrong number of parts" . 1)
+    ("type name used out of context" . 1)
+    ("Unbound type name #%app" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("Unbound type name #%module-begin" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 298)
+    ("bad syntax" . 75)
+    ("unbound identifier in module" . 44)
+    ("not in module body" . 22)
+    ("bad syntax (multiple types after identifier)" . 20)
+    ("illegal use" . 18)
+    ("wrong number of parts" . 18)
+    ("identifier used out of context" . 17)
+    ("function application is not allowed;" . 11)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 10)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     6)
+    ("(A)" . 5)
+    ("unexpected term" . 5)
+    ("bad module path" . 5)
+    ("'" . 5)
+    ("Type variable B must be used with ..." . 5)
+    ("use of a class keyword is not in a class" . 4)
+    ("type name used out of context" . 4)
+    ("Unbound type name Heaps" . 3)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("must be used in a definition context" . 2)
+    ("illegal use of syntax" . 2)
+    ("#???" . 1)
+    ("literal data is not allowed;" . 1)
+    ("Unbound type name #%app" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("Unbound type name #%module-begin" . 1))))

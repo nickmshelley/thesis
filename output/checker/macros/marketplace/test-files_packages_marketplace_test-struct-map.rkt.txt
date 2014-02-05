@@ -1,0 +1,22 @@
+'((remove
+   (passed . 4)
+   (failed
+    (total . 21)
+    ("unbound identifier in module" . 6)
+    ("expected a `)' to close `('" . 5)
+    ("not a provide sub-form" . 5)
+    ("allowed only around a module body" . 2)
+    ("not in module body" . 1)
+    ("wrong number of parts" . 1)
+    ("function application is not allowed;" . 1)))
+  (truncate
+   (passed . 2)
+   (failed
+    (total . 23)
+    ("unbound identifier in module" . 13)
+    ("bad syntax" . 4)
+    ("function application is not allowed;" . 2)
+    ("not a procedure;" . 1)
+    ("not in module body" . 1)
+    ("allowed only around a module body" . 1)
+    ("illegal use" . 1))))

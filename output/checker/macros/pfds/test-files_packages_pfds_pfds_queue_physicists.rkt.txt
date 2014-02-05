@@ -1,0 +1,68 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 253)
+    ("bad syntax" . 58)
+    ("unbound identifier in module" . 39)
+    ("not in module body" . 25)
+    ("wrong number of parts" . 21)
+    ("identifier used out of context" . 17)
+    ("bad syntax (multiple types after identifier)" . 15)
+    ("illegal use" . 14)
+    ("function application is not allowed;" . 11)
+    ("(A)" . 10)
+    ("Declaration for `head' provided, but `head' has no definition" . 7)
+    ("missing `]' to close `[' on line 111, found instead `)'" . 5)
+    ("unexpected `)'" . 5)
+    ("Declaration for `enqueue' provided, but `enqueue' has no definition" . 4)
+    ("Declaration for `head+tail' provided, but `head+tail' has no definition"
+     .
+     3)
+    ("Unbound type name Promiseof" . 3)
+    ("must be used in a definition context" . 2)
+    ("#???" . 2)
+    ("literal data is not allowed;" . 2)
+    ("type name used out of context" . 2)
+    ("missing procedure expression;" . 2)
+    ("allowed only around a module body" . 1)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 284)
+    ("bad syntax" . 74)
+    ("unbound identifier in module" . 49)
+    ("not in module body" . 21)
+    ("wrong number of parts" . 20)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 20)
+    ("illegal use" . 18)
+    ("Type variable B must be used with ..." . 15)
+    ("identifier used out of context" . 12)
+    ("expected identifier" . 10)
+    ("function application is not allowed;" . 8)
+    ("use of a class keyword is not in a class" . 6)
+    ("unexpected `)'" . 5)
+    ("missing `]' to close `[' on line 107, found instead `)'" . 5)
+    ("Declaration for `enqueue' provided, but `enqueue' has no definition" . 4)
+    ("#???" . 3)
+    ("allowed only around a module body" . 3)
+    ("missing procedure expression;" . 3)
+    ("must be used in a definition context" . 2)
+    ("Unbound type name #%app" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("Unbound type name #%module-begin" . 1)
+    ("literal data is not allowed;" . 1))))

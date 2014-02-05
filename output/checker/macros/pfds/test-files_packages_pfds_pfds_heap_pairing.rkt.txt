@@ -1,0 +1,179 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 438)
+    ("bad syntax" . 120)
+    ("illegal use" . 29)
+    ("Unbound type name #%module-begin" . 23)
+    ("unbound identifier in module" . 23)
+    ("Unbound type name #%datum" . 22)
+    ("Unbound type name #%app" . 21)
+    ("Unbound type name #%declare" . 21)
+    ("Unbound type name #%expression" . 21)
+    ("not in module body" . 16)
+    ("wrong number of parts" . 14)
+    ("identifier used out of context" . 12)
+    ("type mismatch" . 10)
+    ("bad syntax (multiple types after identifier)" . 10)
+    ("Type variable B must be used with ..." . 10)
+    ("function application is not allowed;" . 8)
+    ("untyped identifier heap-andmap" . 5)
+    ("expected identifier" . 5)
+    ("Polymorphic function `PairingHeap-heap' could not be applied to arguments"
+     .
+     5)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 5)
+    ("Cannot apply expression of type Boolean, since it is not a function type"
+     .
+     4)
+    ("must be used in a definition context" . 4)
+    ("Declaration for `insert' provided, but `insert' has no definition" . 4)
+    ("Polymorphic function `Tree-heaps' could not be applied to arguments" . 3)
+    ("#???" . 3)
+    ("Declaration for `sorted-list' provided, but `sorted-list' has no definition"
+     .
+     3)
+    ("Unbound type name IntHeap" . 3)
+    ("literal data is not allowed;" . 2)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Unbound type name A" . 2)
+    ("Polymorphic function `foldl' could not be applied to arguments" . 2)
+    ("Cannot apply expression of type (U Null (Tree A)), since it is not a function type"
+     .
+     2)
+    ("type name used out of context" . 2)
+    ("Polymorphic function `merge-pairs' could not be applied to arguments"
+     .
+     2)
+    ("Bad arguments to function in apply" . 2)
+    ("Polymorphic function `in-merge' could not be applied to arguments" . 1)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     1)
+    ("Polymorphic function `fold' could not be applied to arguments" . 1)
+    ("type mismatch;" . 1)
+    ("13 Tree> (A (Listof (U Null (Tree A))))), since it is not a function type"
+     .
+     1)
+    ("13 PairingHeap> ((A A -> Boolean) (U Null (Tree A)))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Positive-Integer, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (A B ... B -> Boolean), since it is not a function type"
+     .
+     1)
+    ("13 PairingHeap> ((C C -> Boolean) (U Null (Tree C)))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 557)
+    ("bad syntax" . 111)
+    ("unbound identifier in module" . 47)
+    ("bad syntax (multiple types after identifier)" . 30)
+    ("illegal use" . 27)
+    ("Unbound type name #%declare" . 26)
+    ("Unbound type name #%expression" . 26)
+    ("Unbound type name #%app" . 25)
+    ("Unbound type name #%datum" . 25)
+    ("Unbound type name #%module-begin" . 25)
+    ("syntax error in pattern" . 25)
+    ("wrong number of parts" . 18)
+    ("not in module body" . 17)
+    ("identifier used out of context" . 15)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 15)
+    ("type mismatch" . 11)
+    ("Unbound type name A" . 10)
+    ("function application is not allowed;" . 9)
+    ("Declaration for `delete-min/max' provided, but `delete-min/max' has no definition"
+     .
+     7)
+    ("#???" . 6)
+    ("Expected a polymorphic function with ..., but function/annotation had no ..."
+     .
+     5)
+    ("(A)" . 5)
+    ("'" . 5)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("Type variable B must be used with ..." . 5)
+    ("Polymorphic function `Tree-elem' could not be applied to arguments" . 5)
+    ("Cannot apply expression of type A, since it is not a function type" . 3)
+    ("Polymorphic function `make-Tree' could not be applied to arguments" . 3)
+    ("Polymorphic function `cons' could not be applied to arguments" . 3)
+    ("must be used in a definition context" . 3)
+    ("20 Heap> ((A A -> Boolean) (U Mt (Tree A)))), since it is not a function type"
+     .
+     3)
+    ("Polymorphic function `make-Heap' could not be applied to arguments" . 3)
+    ("Wrong number of arguments, expected 2 and got 1" . 2)
+    ("Polymorphic function `Heap-heap' could not be applied to arguments" . 2)
+    ("Duplicate type annotation of (All (A) ((Heap A) -> Boolean)) for empty?, previous was #<procedure>"
+     .
+     2)
+    ("illegal use of syntax" . 2)
+    ("Cannot apply expression of type 'find-min/max, since it is not a function type"
+     .
+     1)
+    ("allowed only around a module body" . 1)
+    ("not in a definition context" . 1)
+    ("Cannot apply expression of type C, since it is not a function type" . 1)
+    ("Polymorphic function `fold' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (U Mt (Tree A)), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `Heap-comparer' could not be applied to arguments"
+     .
+     1)
+    ("Wrong number of arguments, expected 1 and got 2" . 1)
+    ("Polymorphic function `delete-min/max' could not be applied to arguments"
+     .
+     1)
+    ("untyped identifier partition-helper" . 1)
+    ("literal data is not allowed;" . 1)
+    ("Cannot apply expression of type (Pairof (U Mt (Tree A)) (U Mt (Tree A))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `inner' could not be applied to arguments" . 1)
+    ("Polymorphic function `heap-andmap' could not be applied to arguments"
+     .
+     1)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("#%app does not refer to a structure definition" . 1)
+    ("#%datum does not refer to a structure definition" . 1)
+    ("#%declare does not refer to a structure definition" . 1)
+    ("#%expression does not refer to a structure definition" . 1)
+    ("#%module-begin does not refer to a structure definition" . 1)
+    ("Duplicate type annotation of (All (A) ((A -> Boolean) (Heap A) -> (Heap A))) for filter, previous was #<procedure>"
+     .
+     1)
+    ("20 Tree> ((U Mt (Tree A)) A (U Mt (Tree A)))), since it is not a function type"
+     .
+     1))))

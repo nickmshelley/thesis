@@ -1,0 +1,89 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 216)
+    ("bad syntax" . 74)
+    ("unbound identifier in module" . 21)
+    ("illegal use" . 18)
+    ("(A)" . 15)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 15)
+    ("not in module body" . 13)
+    ("identifier used out of context" . 13)
+    ("bad syntax (multiple types after identifier)" . 10)
+    ("expected identifier" . 10)
+    ("wrong number of parts" . 9)
+    ("function application is not allowed;" . 7)
+    ("#???" . 2)
+    ("must be used in a definition context" . 2)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     1)
+    ("allowed only around a module body" . 1)
+    ("literal data is not allowed;" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 474)
+    ("bad syntax" . 145)
+    ("unbound identifier in module" . 45)
+    ("illegal use" . 34)
+    ("not in module body" . 28)
+    ("identifier used out of context" . 25)
+    ("bad syntax (multiple types after identifier)" . 25)
+    ("wrong number of parts" . 21)
+    ("(A)" . 20)
+    ("expected identifier" . 15)
+    ("'" . 15)
+    ("function application is not allowed;" . 14)
+    ("too many forms in body of All type" . 10)
+    ("Type variable B must be used with ..." . 10)
+    ("must be used in a definition context" . 8)
+    ("Declaration for `list-length' provided, but `list-length' has no definition"
+     .
+     8)
+    ("#???" . 7)
+    ("literal data is not allowed;" . 6)
+    ("unexpected term" . 5)
+    ("Expected a polymorphic function with ..., but function/annotation had no ..."
+     .
+     5)
+    ("Declaration for `list-third' provided, but `list-third' has no definition"
+     .
+     4)
+    ("Declaration for `list-ormap' provided, but `list-ormap' has no definition"
+     .
+     3)
+    ("Declaration for `tree-update' provided, but `tree-update' has no definition"
+     .
+     3)
+    ("Used a type variable (#%app) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (#%datum) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%declare) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%expression) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Used a type variable (#%module-begin) not bound with ... as a bound on a ..."
+     .
+     2)
+    ("Unbound type name #%app" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("Unbound type name #%module-begin" . 1)
+    ("allowed only around a module body" . 1)
+    ("Unbound type name RAList" . 1)
+    ("type name used out of context" . 1))))

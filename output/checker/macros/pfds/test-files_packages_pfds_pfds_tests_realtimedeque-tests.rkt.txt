@@ -1,0 +1,27 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 51)
+    ("not in module body" . 10)
+    ("allowed only around a module body" . 9)
+    ("wrong number of parts" . 8)
+    ("bad syntax" . 8)
+    ("expected a `module' declaration" . 5)
+    ("Polymorphic function `map' could not be applied to arguments" . 3)
+    ("type name used out of context" . 3)
+    ("illegal use" . 2)
+    ("type mismatch" . 1)
+    ("untyped identifier lst" . 1)
+    ("Polymorphic function `foldl' could not be applied to arguments" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 47)
+    ("allowed only around a module body" . 14)
+    ("wrong number of parts" . 11)
+    ("not in module body" . 10)
+    ("bad module path" . 5)
+    ("bad syntax" . 4)
+    ("untyped identifier lst" . 1)
+    ("illegal use" . 1)
+    ("type mismatch" . 1))))

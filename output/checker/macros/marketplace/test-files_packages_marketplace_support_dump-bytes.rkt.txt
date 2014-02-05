@@ -1,0 +1,29 @@
+'((remove
+   (passed . 10)
+   (failed
+    (total . 65)
+    ("bad syntax" . 28)
+    ("unbound identifier in module" . 11)
+    ("illegal use" . 7)
+    ("not in module body" . 5)
+    ("allowed only around a module body" . 5)
+    ("wrong number of parts" . 4)
+    ("function application is not allowed;" . 3)
+    ("literal data is not allowed;" . 2)))
+  (truncate
+   (passed . 48)
+   (failed
+    (total . 127)
+    ("bad syntax" . 52)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 13)
+    ("illegal use" . 13)
+    ("not in module body" . 12)
+    ("allowed only around a module body" . 12)
+    ("wrong number of parts" . 10)
+    ("provided identifier not defined or imported for phase 0" . 5)
+    ("missing `)' to close `(' on line 91, found instead `]'; indentation suggests a missing `)' before line 97"
+     .
+     5)
+    ("pattern variable cannot be used outside of a template" . 2)
+    ("function application is not allowed;" . 2)
+    ("literal data is not allowed;" . 1))))

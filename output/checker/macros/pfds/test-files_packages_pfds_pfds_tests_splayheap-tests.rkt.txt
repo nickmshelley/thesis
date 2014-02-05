@@ -1,0 +1,57 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 118)
+    ("bad syntax" . 28)
+    ("wrong number of parts" . 14)
+    ("not in module body" . 13)
+    ("untyped identifier less-than?" . 11)
+    ("illegal use" . 7)
+    ("unbound identifier in module" . 7)
+    ("bad module path" . 5)
+    ("Declaration for `gt' provided, but `gt' has no definition" . 4)
+    ("Declaration for `less-than?' provided, but `less-than?' has no definition"
+     .
+     4)
+    ("Polymorphic function `sorted-list' could not be applied to arguments"
+     .
+     3)
+    ("#???" . 3)
+    ("allowed only around a module body" . 3)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     2)
+    ("Unbound type name #%module-begin" . 2)
+    ("Polymorphic function `insert' could not be applied to arguments" . 2)
+    ("untyped identifier int-list" . 1)
+    ("Wrong number of arguments, expected 2 and got 4" . 1)
+    ("Wrong number of arguments, expected 2 and got 1" . 1)
+    ("Polymorphic function `delete-min/max' could not be applied to arguments"
+     .
+     1)
+    ("untyped identifier gt" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Cannot apply expression of type Negative-Fixnum, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `find-min/max' could not be applied to arguments"
+     .
+     1)
+    ("Unbound type name #%app" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 96)
+    ("bad syntax" . 40)
+    ("wrong number of parts" . 11)
+    ("allowed only around a module body" . 10)
+    ("illegal use" . 10)
+    ("Declaration for `str-less-than?' provided, but `str-less-than?' has no definition"
+     .
+     9)
+    ("not in module body" . 7)
+    ("unbound identifier in module" . 5)
+    ("type name used out of context" . 2)
+    ("function application is not allowed;" . 1)
+    ("type mismatch" . 1))))

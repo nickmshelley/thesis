@@ -1,0 +1,39 @@
+'((remove
+   (passed . 73)
+   (failed
+    (total . 167)
+    ("unbound identifier in module" . 37)
+    ("bad syntax" . 32)
+    ("allowed only around a module body" . 18)
+    ("not in module body" . 17)
+    ("Illegal clause in endpoint definition" . 15)
+    ("wrong number of parts" . 12)
+    ("syntax error in pattern" . 10)
+    ("illegal use" . 8)
+    ("function application is not allowed;" . 7)
+    ("not a provide sub-form" . 5)
+    ("Illegal use of match-state outside endpoint definition context" . 3)
+    ("Illegal use of match-interest-type outside endpoint definition context"
+     .
+     1)
+    ("literal data is not allowed;" . 1)
+    ("missing procedure expression;" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 58)
+    ("unbound identifier in module" . 18)
+    ("bad syntax" . 9)
+    ("identifier is not bound to a structure type" . 6)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("Declaration for `do-spawn' provided, but `do-spawn' has no definition"
+     .
+     4)
+    ("function application is not allowed;" . 3)
+    ("not in module body" . 3)
+    ("illegal use" . 2)
+    ("literal data is not allowed;" . 2)
+    ("wrong number of parts" . 2)
+    ("identifier used out of context" . 2)
+    ("type mismatch" . 1)
+    ("allowed only around a module body" . 1))))

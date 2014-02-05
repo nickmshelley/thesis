@@ -1,0 +1,2 @@
+'((remove (passed . 5) (failed (total . 5) ("not a provide sub-form" . 5)))
+  (truncate (passed . 10) (failed (total . 0))))

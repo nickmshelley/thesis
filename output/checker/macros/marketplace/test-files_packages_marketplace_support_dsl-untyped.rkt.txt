@@ -1,0 +1,6 @@
+'((remove (passed . 15) (failed (total . 0)))
+  (truncate
+   (passed . 10)
+   (failed
+    (total . 5)
+    ("no pattern variables before ellipsis in template" . 5))))

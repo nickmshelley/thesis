@@ -1,0 +1,64 @@
+'((remove
+   (passed . 274)
+   (failed
+    (total . 651)
+    ("unbound identifier in module" . 260)
+    ("bad syntax" . 157)
+    ("not in module body" . 66)
+    ("wrong number of parts" . 49)
+    ("function application is not allowed;" . 25)
+    ("unexpected `)'" . 15)
+    ("missing `]' to close preceding `[', found instead `)'" . 15)
+    ("literal data is not allowed;" . 14)
+    ("expected a `]' to close `['" . 10)
+    ("expected a `)' to close `('" . 5)
+    ("missing `)' to close `(' on line 361, found instead `]'; indentation suggests a missing `)' before line 362"
+     .
+     5)
+    ("syntax error in pattern" . 5)
+    ("missing `)' to close `(' on line 425, found instead `]'; indentation suggests a missing `)' before line 428"
+     .
+     5)
+    ("missing `)' to close `(' on line 419, found instead `]'" . 5)
+    ("not a require sub-form" . 5)
+    ("misuse of unit import and export keyword" . 4)
+    ("contract violation" . 3)
+    ("wildcard not allowed as an expression" . 1)
+    ("No dict? supplied" . 1)
+    ("not allowed as an expression" . 1)))
+  (truncate
+   (passed . 269)
+   (failed
+    (total . 656)
+    ("bad syntax" . 228)
+    ("unbound identifier in module" . 120)
+    ("allowed only around a module body" . 70)
+    ("not in module body" . 60)
+    ("wrong number of parts" . 37)
+    ("function application is not allowed;" . 20)
+    ("unexpected `)'" . 20)
+    ("variable not bound in all or patterns" . 15)
+    ("literal data is not allowed;" . 12)
+    ("syntax error in pattern" . 10)
+    ("expected a `]' to close `['" . 5)
+    ("missing `)' to close `(' on line 425, found instead `]'; indentation suggests a missing `)' before line 429"
+     .
+     5)
+    ("expected a `)' to close `('" . 5)
+    ("missing `)' to close `(' on line 425, found instead `]'; indentation suggests a missing `)' before line 426"
+     .
+     5)
+    ("missing `]' to close `[' on line 448, found instead `)'" . 5)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("unexpected `]'" . 5)
+    ("missing `]' to close `[' on line 363, found instead `)'" . 5)
+    ("missing `)' to close `(' on line 447, found instead `]'; indentation suggests a missing `)' before line 457"
+     .
+     5)
+    ("not a require sub-form" . 5)
+    ("missing `]' to close `[' on line 116, found instead `)'" . 5)
+    ("missing `)' to close `(' on line 360, found instead `]'" . 5)
+    ("wildcard not allowed as an expression" . 1)
+    ("No dict? supplied" . 1)
+    ("arity mismatch;" . 1)
+    ("keyword used as an expression" . 1))))

@@ -1,0 +1,48 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 102)
+    ("bad syntax" . 33)
+    ("not in module body" . 14)
+    ("wrong number of parts" . 12)
+    ("untyped identifier less-than?" . 9)
+    ("illegal use" . 8)
+    ("unbound identifier in module" . 7)
+    ("bad module path" . 5)
+    ("allowed only around a module body" . 4)
+    ("Declaration for `less-than?' provided, but `less-than?' has no definition"
+     .
+     4)
+    ("type name used out of context" . 2)
+    ("must be used in a definition context" . 1)
+    ("function application is not allowed;" . 1)
+    ("#???" . 1)
+    ("Polymorphic function `remove' could not be applied to arguments" . 1)))
+  (truncate
+   (passed . 3)
+   (failed
+    (total . 32)
+    ("Unbound type name t" . 4)
+    ("allowed only around a module body" . 3)
+    ("unbound identifier in module" . 3)
+    ("Unbound type name #%app" . 2)
+    ("Unbound type name #%datum" . 2)
+    ("Unbound type name #%declare" . 2)
+    ("Unbound type name #%expression" . 2)
+    ("Unbound type name #%module-begin" . 2)
+    ("wrong number of parts" . 2)
+    ("not in module body" . 2)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     1)
+    ("#???" . 1)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     1)
+    ("(#%app e t)" . 1)
+    ("(#%datum e t)" . 1)
+    ("identifier used out of context" . 1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Boxof (Rec g282 (U Null (Boxof (U (Boxof g282) (-> (Boxof g282)))) (Pairof Integer g282)))) (-> (Boxof (Rec g288 (U Null (Boxof (U (Boxof g288) (-> (Boxof g288)))) (Pairof Integer g288))))))) (Pairof Integer (Rec g294 (U Null (Boxof (U (Boxof g294) (-> (Boxof g294)))) (Pairof Integer g294))))), since it is not a function type"
+     .
+     1)
+    ("type mismatch" . 1))))

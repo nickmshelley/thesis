@@ -1,0 +1,69 @@
+'((remove
+   (passed . 7)
+   (failed
+    (total . 223)
+    ("bad syntax" . 36)
+    ("unbound identifier in module" . 17)
+    ("Unbound type name #%app" . 14)
+    ("Unbound type name #%datum" . 14)
+    ("Unbound type name #%declare" . 14)
+    ("Unbound type name #%expression" . 14)
+    ("Unbound type name #%module-begin" . 14)
+    ("bad syntax (multiple types after identifier)" . 10)
+    ("not in module body" . 10)
+    ("illegal use" . 9)
+    ("identifier used out of context" . 9)
+    ("type mismatch" . 7)
+    ("not a definition sequence" . 5)
+    ("Unbound type name K" . 5)
+    ("Polymorphic function `Trie-opt' could not be applied to arguments" . 5)
+    ("syntax error in pattern" . 5)
+    ("Polymorphic function `Trie-map' could not be applied to arguments" . 5)
+    ("function application is not allowed;" . 4)
+    ("Declaration for `lookup' provided, but `lookup' has no definition" . 4)
+    ("wrong number of parts" . 4)
+    ("Polymorphic function `make-Trie' could not be applied to arguments" . 3)
+    ("Polymorphic function `hash-ref' could not be applied to arguments" . 2)
+    ("Cannot apply expression of type (Pairof K (Listof K)), since it is not a function type"
+     .
+     2)
+    ("Cannot apply expression of type Boolean, since it is not a function type"
+     .
+     2)
+    ("22 Trie> ((U Mt (Some V)) (HashTable K (Trie K V)))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     1)
+    ("allowed only around a module body" . 1)
+    ("Cannot apply expression of type (U Null (Pairof (Listof K) (Listof (Listof K)))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `local' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (U Null (Pairof V (Listof V))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (HashTable K (Trie K V)), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `bind' could not be applied to arguments" . 1)
+    ("20 Some> (V)), since it is not a function type" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 86)
+    ("bad syntax" . 24)
+    ("not in module body" . 12)
+    ("wrong number of parts" . 12)
+    ("unbound identifier in module" . 8)
+    ("untyped identifier less-than?" . 8)
+    ("illegal use" . 6)
+    ("allowed only around a module body" . 4)
+    ("Declaration for `gt' provided, but `gt' has no definition" . 4)
+    ("function application is not allowed;" . 3)
+    ("missing procedure expression;" . 1)
+    ("untyped identifier gt" . 1)
+    ("#???" . 1)
+    ("Polymorphic function `ormap' could not be applied to arguments" . 1)
+    ("type mismatch" . 1))))

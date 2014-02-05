@@ -1,0 +1,86 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 166)
+    ("bad syntax" . 24)
+    ("unbound identifier in module" . 18)
+    ("not in module body" . 14)
+    ("wrong number of parts" . 11)
+    ("allowed only around a module body" . 9)
+    ("Unbound type name #%app" . 7)
+    ("Unbound type name #%datum" . 7)
+    ("Unbound type name #%declare" . 7)
+    ("Unbound type name #%expression" . 7)
+    ("Unbound type name #%module-begin" . 7)
+    ("illegal use" . 6)
+    ("expected identifier" . 5)
+    ("bad module path" . 5)
+    ("expected a `module' declaration" . 5)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     4)
+    ("identifier used out of context" . 4)
+    ("function application is not allowed;" . 3)
+    ("Bad arguments to polymorphic function in apply" . 3)
+    ("Polymorphic function `heap' could not be applied to arguments" . 2)
+    ("#<syntax PairingHeap> ((Integer Integer -> Boolean) (U Null (IntHeap Integer)))), since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `heap-ormap' could not be applied to arguments" . 2)
+    ("Polymorphic function `remove' could not be applied to arguments" . 2)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     2)
+    ("#<syntax PairingHeap> ((Nothing Nothing -> Boolean) (U Null (IntHeap Nothing)))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `delete-min/max' could not be applied to arguments"
+     .
+     1)
+    ("literal data is not allowed;" . 1)
+    ("Polymorphic function `build-list' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (U Null (Pairof Any (Listof Any))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `sorted-list' could not be applied to arguments"
+     .
+     1)
+    ("#???" . 1)
+    ("Polymorphic function `merge' could not be applied to arguments" . 1)
+    ("#<syntax PairingHeap> ((Positive-Byte Positive-Byte -> Boolean) (U Null (IntHeap Positive-Byte)))), since it is not a function type"
+     .
+     1)
+    ("type mismatch" . 1)))
+  (truncate
+   (passed . 1)
+   (failed
+    (total . 46)
+    ("wrong number of parts" . 7)
+    ("not in module body" . 6)
+    ("allowed only around a module body" . 6)
+    ("unbound identifier in module" . 5)
+    ("bad syntax" . 4)
+    ("#???" . 3)
+    ("Cannot apply expression of type (U Null (IntQue Integer)), since it is not a function type"
+     .
+     2)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `remove' could not be applied to arguments" . 2)
+    ("type mismatch" . 2)
+    ("Polymorphic function `map' could not be applied to arguments" . 1)
+    ("Polymorphic function `qmap' could not be applied to arguments" . 1)
+    ("illegal use" . 1)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Boolean, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `queue->list' could not be applied to arguments"
+     .
+     1)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     1))))

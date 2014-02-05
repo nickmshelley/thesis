@@ -1,0 +1,44 @@
+'((remove
+   (passed . 2)
+   (failed
+    (total . 8)
+    ("not in module body" . 2)
+    ("wrong number of parts" . 2)
+    ("allowed only around a module body" . 2)
+    ("unbound identifier in module" . 1)
+    ("not a procedure;" . 1)))
+  (truncate
+   (passed . 12)
+   (failed
+    (total . 53)
+    ("wrong number of parts" . 8)
+    ("allowed only around a module body" . 8)
+    ("not in module body" . 7)
+    ("#???" . 5)
+    ("bad syntax" . 4)
+    ("Polymorphic function `remove' could not be applied to arguments" . 3)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     3)
+    ("Cannot apply expression of type (U Null (Pairof Positive-Byte (Listof Positive-Byte))), since it is not a function type"
+     .
+     2)
+    ("Cannot apply expression of type (U (Shallow (U Nonpositive-Fixnum Byte)) (Deep (U Nonpositive-Fixnum Byte))), since it is not a function type"
+     .
+     2)
+    ("Cannot apply expression of type (U Null (Pairof (U Nonpositive-Fixnum Byte) (Listof (U Nonpositive-Fixnum Byte)))), since it is not a function type"
+     .
+     2)
+    ("type mismatch" . 2)
+    ("Polymorphic function `tail' could not be applied to arguments" . 2)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `queue->list' could not be applied to arguments"
+     .
+     1)
+    ("Polymorphic function `qmap' could not be applied to arguments" . 1)
+    ("illegal use" . 1)
+    ("Cannot apply expression of type (U (Shallow Positive-Byte) (Deep Positive-Byte)), since it is not a function type"
+     .
+     1))))

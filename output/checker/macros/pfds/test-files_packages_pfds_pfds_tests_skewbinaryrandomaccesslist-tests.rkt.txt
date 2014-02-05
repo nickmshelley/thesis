@@ -1,0 +1,85 @@
+'((remove
+   (passed . 15)
+   (failed
+    (total . 86)
+    ("not in module body" . 12)
+    ("allowed only around a module body" . 12)
+    ("bad syntax" . 12)
+    ("wrong number of parts" . 11)
+    ("#???" . 5)
+    ("Cannot apply expression of type (U Null (Pairof (Pairof Integer (U (Leaf Positive-Byte) (Node Positive-Byte))) (Listof (Pairof Integer (U (Leaf Positive-Byte) (Node Positive-Byte)))))), since it is not a function type"
+     .
+     5)
+    ("not a require sub-form" . 5)
+    ("illegal use" . 3)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     3)
+    ("Polymorphic function `->list' could not be applied to arguments" . 2)
+    ("type mismatch" . 2)
+    ("Polymorphic function `drop' could not be applied to arguments" . 2)
+    ("Polymorphic function `list-set' could not be applied to arguments" . 2)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Pairof (Pairof Integer (U (Leaf Integer) (Node Integer))) (Listof (Pairof Integer (U (Leaf Integer) (Node Integer)))))), since it is not a function type"
+     .
+     1)
+    ("untyped identifier lst" . 1)
+    ("Cannot apply expression of type (U Null (Pairof Positive-Byte (Listof Positive-Byte))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Pairof (Pairof Integer (U (Leaf Positive-Index) (Node Positive-Index))) (Listof (Pairof Integer (U (Leaf Positive-Index) (Node Positive-Index)))))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `remove' could not be applied to arguments" . 1)
+    ("Polymorphic function `head' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Pairof (Pairof Integer (U (Leaf (U Nonpositive-Fixnum Byte)) (Node (U Nonpositive-Fixnum Byte)))) (Listof (Pairof Integer (U (Leaf (U Nonpositive-Fixnum Byte)) (Node (U Nonpositive-Fixnum Byte))))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     1)))
+  (truncate
+   (passed . 7)
+   (failed
+    (total . 92)
+    ("bad syntax" . 16)
+    ("wrong number of parts" . 14)
+    ("allowed only around a module body" . 13)
+    ("not in module body" . 11)
+    ("#???" . 5)
+    ("unbound identifier in module" . 5)
+    ("illegal use" . 4)
+    ("Cannot apply expression of type (U Null (Pairof (Pairof Integer (U (Leaf Positive-Byte) (Node Positive-Byte))) (Listof (Pairof Integer (U (Leaf Positive-Byte) (Node Positive-Byte)))))), since it is not a function type"
+     .
+     4)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     3)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     3)
+    ("Cannot apply expression of type Negative-Fixnum, since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `->list' could not be applied to arguments" . 2)
+    ("missing procedure expression;" . 1)
+    ("Polymorphic function `drop' could not be applied to arguments" . 1)
+    ("Polymorphic function `list-foldr' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (U Null (Pairof (U Nonpositive-Fixnum Byte) (Listof (U Nonpositive-Fixnum Byte)))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `list-foldl' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (U Null (Pairof (Pairof Integer (U (Leaf Nothing) (Node Nothing))) (Listof (Pairof Integer (U (Leaf Nothing) (Node Nothing)))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Boolean, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 1)
+    ("Polymorphic function `tail' could not be applied to arguments" . 1)
+    ("Polymorphic function `remove' could not be applied to arguments" . 1))))

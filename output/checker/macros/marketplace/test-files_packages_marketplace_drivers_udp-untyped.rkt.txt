@@ -1,0 +1,30 @@
+'((remove
+   (passed . 10)
+   (failed
+    (total . 5)
+    ("identifier to remove `#%app' not included in nested provide spec" . 1)
+    ("identifier to remove `#%datum' not included in nested provide spec" . 1)
+    ("identifier to remove `#%declare' not included in nested provide spec"
+     .
+     1)
+    ("identifier to remove `#%expression' not included in nested provide spec"
+     .
+     1)
+    ("identifier to remove `#%module-begin' not included in nested provide spec"
+     .
+     1)))
+  (truncate
+   (passed . 10)
+   (failed
+    (total . 5)
+    ("identifier to remove `#%app' not included in nested provide spec" . 1)
+    ("identifier to remove `#%datum' not included in nested provide spec" . 1)
+    ("identifier to remove `#%declare' not included in nested provide spec"
+     .
+     1)
+    ("identifier to remove `#%expression' not included in nested provide spec"
+     .
+     1)
+    ("identifier to remove `#%module-begin' not included in nested provide spec"
+     .
+     1))))

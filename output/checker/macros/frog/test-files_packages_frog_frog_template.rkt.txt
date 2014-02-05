@@ -1,0 +1,24 @@
+'((remove
+   (passed . 11)
+   (failed
+    (total . 24)
+    ("bad syntax" . 8)
+    ("unbound identifier in module" . 3)
+    ("allowed only around a module body" . 3)
+    ("illegal use" . 2)
+    ("undefined;" . 2)
+    ("not in module body" . 2)
+    ("wrong number of parts" . 2)
+    ("function application is not allowed;" . 1)
+    ("literal data is not allowed;" . 1)))
+  (truncate
+   (passed . 5)
+   (failed
+    (total . 30)
+    ("bad syntax" . 13)
+    ("provided identifier not defined or imported for phase 0" . 6)
+    ("illegal use" . 3)
+    ("allowed only around a module body" . 3)
+    ("not in module body" . 2)
+    ("wrong number of parts" . 2)
+    ("unbound identifier in module" . 1))))

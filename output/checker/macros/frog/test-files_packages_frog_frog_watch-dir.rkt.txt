@@ -1,0 +1,24 @@
+'((remove
+   (passed . 13)
+   (failed
+    (total . 72)
+    ("bad syntax" . 32)
+    ("unbound identifier in module" . 20)
+    ("allowed only around a module body" . 7)
+    ("not in module body" . 5)
+    ("wrong number of parts" . 4)
+    ("function application is not allowed;" . 2)
+    ("literal data is not allowed;" . 1)
+    ("undefined;" . 1)))
+  (truncate
+   (passed . 12)
+   (failed
+    (total . 68)
+    ("bad syntax" . 31)
+    ("unbound identifier in module" . 18)
+    ("allowed only around a module body" . 5)
+    ("bad module path" . 5)
+    ("not in module body" . 4)
+    ("function application is not allowed;" . 2)
+    ("wrong number of parts" . 2)
+    ("literal data is not allowed;" . 1))))

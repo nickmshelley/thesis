@@ -1,0 +1,16 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 5)
+    ("unbound identifier in module" . 2)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("wrong number of parts" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 10)
+    ("bad syntax" . 4)
+    ("unbound identifier in module" . 2)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("wrong number of parts" . 1)
+    ("illegal use" . 1))))

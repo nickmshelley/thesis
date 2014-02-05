@@ -1,0 +1,21 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 5)
+    ("Declaration for `list-max' provided, but `list-max' has no definition"
+     .
+     5)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 25)
+    ("Unbound type name #%app" . 3)
+    ("Unbound type name #%datum" . 3)
+    ("Unbound type name #%declare" . 3)
+    ("Unbound type name #%expression" . 3)
+    ("Unbound type name #%module-begin" . 3)
+    ("identifier `#%app' not included in nested require spec" . 2)
+    ("identifier `#%datum' not included in nested require spec" . 2)
+    ("identifier `#%declare' not included in nested require spec" . 2)
+    ("identifier `#%expression' not included in nested require spec" . 2)
+    ("identifier `#%module-begin' not included in nested require spec" . 2))))

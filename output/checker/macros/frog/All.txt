@@ -1,0 +1,124 @@
+'((remove
+   (passed . 671)
+   (failed
+    (total . 1579)
+    ("bad syntax" . 411)
+    ("unbound identifier in module" . 409)
+    ("not in module body" . 127)
+    ("wrong number of parts" . 113)
+    ("allowed only around a module body" . 88)
+    ("unexpected `)'" . 60)
+    ("function application is not allowed;" . 55)
+    ("missing `]' to close preceding `[', found instead `)'" . 50)
+    ("literal data is not allowed;" . 38)
+    ("syntax error in pattern" . 25)
+    ("illegal use" . 19)
+    ("provided identifier not defined or imported for phase 0" . 12)
+    ("misuse of unit import and export keyword" . 12)
+    ("expected a `)' to close `('" . 10)
+    ("bad module path" . 10)
+    ("not a require sub-form" . 10)
+    ("missing `)' to close preceding `(', found instead `]'" . 10)
+    ("expected a `]' to close `['" . 10)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 7)
+    ("not a provide sub-form" . 5)
+    ("missing `]' to close `[' on line 78, found instead `)'; indentation suggests a missing `]' before line 79"
+     .
+     5)
+    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 96"
+     .
+     5)
+    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 94"
+     .
+     5)
+    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 93"
+     .
+     5)
+    ("missing `]' to close `[' on line 61, found instead `)'; indentation suggests a missing `]' before line 62"
+     .
+     5)
+    ("missing `]' to close `[' on line 60, found instead `)'; indentation suggests a missing `]' before line 61"
+     .
+     5)
+    ("missing `]' to close `[' on line 34, found instead `)'" . 5)
+    ("collection not found" . 5)
+    ("variable not bound in all or patterns" . 5)
+    ("cannot mutate syntax identifier" . 5)
+    ("expected a `module' declaration" . 5)
+    ("illegal use of `.'" . 5)
+    ("missing `)' to close `(' on line 361, found instead `]'; indentation suggests a missing `)' before line 362"
+     .
+     5)
+    ("missing `)' to close `(' on line 425, found instead `]'; indentation suggests a missing `)' before line 428"
+     .
+     5)
+    ("missing `)' to close `(' on line 419, found instead `]'" . 5)
+    ("undefined;" . 4)
+    ("not at module level or top level" . 4)
+    ("misuse of module-path constructor (not within, e.g., `require' or `provide')"
+     .
+     3)
+    ("contract violation" . 3)
+    ("not allowed as an expression" . 2)
+    ("illegal use of syntax" . 2)
+    ("wildcard not allowed as an expression" . 2)
+    ("missing procedure expression;" . 1)
+    ("received value from syntax expander was not syntax" . 1)
+    ("No dict? supplied" . 1)))
+  (truncate
+   (passed . 670)
+   (failed
+    (total . 1579)
+    ("bad syntax" . 483)
+    ("unbound identifier in module" . 292)
+    ("allowed only around a module body" . 143)
+    ("not in module body" . 113)
+    ("wrong number of parts" . 87)
+    ("unexpected `)'" . 60)
+    ("function application is not allowed;" . 56)
+    ("syntax error in pattern" . 45)
+    ("missing `]' to close preceding `[', found instead `)'" . 40)
+    ("literal data is not allowed;" . 35)
+    ("provided identifier not defined or imported for phase 0" . 28)
+    ("illegal use" . 22)
+    ("expected a closing '\"'" . 20)
+    ("expected a `)' to close `('" . 15)
+    ("variable not bound in all or patterns" . 15)
+    ("bad module path" . 10)
+    ("missing `)' to close preceding `(', found instead `]'" . 10)
+    ("misuse of unit import and export keyword" . 7)
+    ("missing `]' to close `[' on line 76, found instead `)'; indentation suggests a missing `]' before line 77"
+     .
+     5)
+    ("missing `]' to close `[' on line 34, found instead `)'" . 5)
+    ("unbalanced `|'" . 5)
+    ("missing `]' to close `[' on line 176, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 174, found instead `)'" . 5)
+    ("expected a `]' to close `['" . 5)
+    ("missing `)' to close `(' on line 425, found instead `]'; indentation suggests a missing `)' before line 429"
+     .
+     5)
+    ("missing `)' to close `(' on line 425, found instead `]'; indentation suggests a missing `)' before line 426"
+     .
+     5)
+    ("missing `]' to close `[' on line 448, found instead `)'" . 5)
+    ("unexpected `]'" . 5)
+    ("missing `]' to close `[' on line 363, found instead `)'" . 5)
+    ("missing `)' to close `(' on line 447, found instead `]'; indentation suggests a missing `)' before line 457"
+     .
+     5)
+    ("not a require sub-form" . 5)
+    ("missing `]' to close `[' on line 116, found instead `)'" . 5)
+    ("missing `)' to close `(' on line 360, found instead `]'" . 5)
+    ("too many ellipses in template" . 4)
+    ("missing procedure expression;" . 3)
+    ("not a procedure;" . 3)
+    ("not at module level or top level" . 2)
+    ("wildcard not allowed as an expression" . 2)
+    ("arity mismatch;" . 2)
+    ("contract violation" . 2)
+    ("identifier used out of context" . 1)
+    ("undefined;" . 1)
+    ("pattern variable cannot be used outside of a template" . 1)
+    ("No dict? supplied" . 1)
+    ("keyword used as an expression" . 1))))

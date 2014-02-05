@@ -1,0 +1,101 @@
+'((remove
+   (passed . 9)
+   (failed
+    (total . 176)
+    ("bad syntax" . 29)
+    ("(A)" . 15)
+    ("Unbound type name A" . 15)
+    ("unbound identifier in module" . 12)
+    ("Recursive Type Alias Reference" . 10)
+    ("illegal use" . 7)
+    ("Unbound type name #%app" . 7)
+    ("Unbound type name #%datum" . 7)
+    ("Unbound type name #%declare" . 7)
+    ("Unbound type name #%expression" . 7)
+    ("Unbound type name #%module-begin" . 7)
+    ("not in module body" . 6)
+    ("identifier used out of context" . 5)
+    ("Declaration for `loop' provided, but `loop' has no definition" . 5)
+    ("Declaration for `empty-stream?' provided, but `empty-stream?' has no definition"
+     .
+     5)
+    ("Declaration for `stream-reverse' provided, but `stream-reverse' has no definition"
+     .
+     4)
+    ("Declaration for `stream-cdr' provided, but `stream-cdr' has no definition"
+     .
+     4)
+    ("Cannot apply expression of type (U (Pairof A (Rec g244 (U Null (Boxof (U (Pairof A g244) (-> (Pairof A g244))))))) (-> (Pairof A (Rec g250 (U Null (Boxof (U (Pairof A g250) (-> (Pairof A g250))))))))), since it is not a function type"
+     .
+     3)
+    ("provided identifier not defined or imported for phase 0" . 3)
+    ("Cannot apply expression of type (U (Pairof A (Rec g257 (U Null (Boxof (U (Pairof A g257) (-> (Pairof A g257))))))) (-> (Pairof A (Rec g263 (U Null (Boxof (U (Pairof A g263) (-> (Pairof A g263))))))))), since it is not a function type"
+     .
+     3)
+    ("wrong number of parts" . 2)
+    ("type name used out of context" . 2)
+    ("function application is not allowed;" . 2)
+    ("must be used in a definition context" . 1)
+    ("#???" . 1)
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g546 (U Null (Boxof (U (Pairof A g546) (-> (Pairof A g546))))))) (-> (Pairof A (Rec g552 (U Null (Boxof (U (Pairof A g552) (-> (Pairof A g552)))))))))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `box' could not be applied to arguments" . 1)
+    ("Polymorphic function `car' could not be applied to arguments" . 1)
+    ("type mismatch" . 1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Pairof A (Rec g500 (U Null (Boxof (U (Pairof A g500) (-> (Pairof A g500))))))) (-> (Pairof A (Rec g506 (U Null (Boxof (U (Pairof A g506) (-> (Pairof A g506))))))))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Negative-Integer Exact-Positive-Integer), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `drop' could not be applied to arguments" . 1)))
+  (truncate
+   (passed . 22)
+   (failed
+    (total . 163)
+    ("bad syntax" . 22)
+    ("Polymorphic function `stream-car' could not be applied to arguments"
+     .
+     10)
+    ("Polymorphic function `box' could not be applied to arguments" . 8)
+    ("unbound identifier in module" . 8)
+    ("Unbound type name #%app" . 7)
+    ("Unbound type name #%datum" . 7)
+    ("Unbound type name #%declare" . 7)
+    ("Unbound type name #%expression" . 7)
+    ("Unbound type name #%module-begin" . 7)
+    ("Polymorphic function `loop' could not be applied to arguments" . 7)
+    ("not in module body" . 7)
+    ("wrong number of parts" . 7)
+    ("illegal use" . 5)
+    ("Recursive Type Alias Reference" . 5)
+    ("function application is not allowed;" . 5)
+    ("identifier used out of context" . 5)
+    ("Unbound type name A" . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("Declaration for `loop' provided, but `loop' has no definition" . 4)
+    ("type name used out of context" . 3)
+    ("type mismatch" . 3)
+    ("Declaration for `stream-cdr' provided, but `stream-cdr' has no definition"
+     .
+     3)
+    ("Duplicate type annotation of (All (A) (Integer (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))))) for drop, previous was #<procedure>"
+     .
+     3)
+    ("must be used in a definition context" . 2)
+    ("#???" . 2)
+    ("Cannot apply expression of type Boolean, since it is not a function type"
+     .
+     2)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("literal data is not allowed;" . 2)
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g270 (U Null (Boxof (U (Pairof A g270) (-> (Pairof A g270))))))) (-> (Pairof A (Rec g276 (U Null (Boxof (U (Pairof A g276) (-> (Pairof A g276)))))))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (Pairof A (Listof A)), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Pairof A (Rec g264 (U Null (Boxof (U (Pairof A g264) (-> (Pairof A g264))))))) (-> (Pairof A (Rec g270 (U Null (Boxof (U (Pairof A g270) (-> (Pairof A g270))))))))))), since it is not a function type"
+     .
+     1))))

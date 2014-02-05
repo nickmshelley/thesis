@@ -161,7 +161,7 @@
       (when file
         (define res
           (cond
-            [(equal? file "test-files/packages/marketplace/support/gui.rkt")
+            [(equal? (path->string file) "test-files/packages/marketplace/support/gui.rkt")
              (results (path->string file) (list (word-results (word "" -1) 0 empty)))]
             [else 
              (check-file file file-mod-f completion-f percent place-number)]))

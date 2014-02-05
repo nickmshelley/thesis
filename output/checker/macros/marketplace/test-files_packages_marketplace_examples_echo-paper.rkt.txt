@@ -1,0 +1,20 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 25)
+    ("type name used out of context" . 15)
+    ("Illegal clause in endpoint definition" . 10)))
+  (truncate
+   (passed . 41)
+   (failed
+    (total . 54)
+    ("not a require sub-form" . 10)
+    ("bad syntax" . 8)
+    ("not in module body" . 7)
+    ("allowed only around a module body" . 7)
+    ("missing ellipsis with pattern variable in template" . 5)
+    ("no pattern variables before ellipsis in template" . 5)
+    ("wrong number of parts" . 4)
+    ("identifier already provided (as a different binding)" . 4)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 2)
+    ("illegal use" . 2))))

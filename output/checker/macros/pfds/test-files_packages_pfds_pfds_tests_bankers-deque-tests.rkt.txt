@@ -1,0 +1,50 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 63)
+    ("not in module body" . 12)
+    ("unbound identifier in module" . 7)
+    ("allowed only around a module body" . 6)
+    ("wrong number of parts" . 6)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     5)
+    ("collection not found" . 5)
+    ("bad module path" . 5)
+    ("type name used out of context" . 5)
+    ("Polymorphic function `map' could not be applied to arguments" . 2)
+    ("#<syntax Deque> ((Rec g1058 (U Null (Boxof (U (Boxof g1058) (-> (Boxof g1058)))) (Pairof Positive-Byte g1058))) Integer (Rec g1064 (U Null (Boxof (U (Boxof g1064) (-> (Boxof g1064)))) (Pairof Positive-Byte g1064))) Integer)), since it is not a function type"
+     .
+     1)
+    ("Unbound type name #%module-begin" . 1)
+    ("#<syntax Deque> ((Rec g2855 (U Null (Boxof (U (Boxof g2855) (-> (Boxof g2855)))) (Pairof Fixnum g2855))) Integer (Rec g2861 (U Null (Boxof (U (Boxof g2861) (-> (Boxof g2861)))) (Pairof Fixnum g2861))) Integer)), since it is not a function type"
+     .
+     1)
+    ("#???" . 1)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `enqueue-front' could not be applied to arguments"
+     .
+     1)
+    ("untyped identifier lst" . 1)
+    ("Polymorphic function `head' could not be applied to arguments" . 1)
+    ("Polymorphic function `tail' could not be applied to arguments" . 1)
+    ("#<syntax Deque> ((Rec g1484 (U Null (Boxof (U (Boxof g1484) (-> (Boxof g1484)))) (Pairof Nothing g1484))) Integer (Rec g1490 (U Null (Boxof (U (Boxof g1490) (-> (Boxof g1490)))) (Pairof Nothing g1490))) Integer)), since it is not a function type"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 93)
+    ("bad syntax" . 32)
+    ("wrong number of parts" . 13)
+    ("not in module body" . 11)
+    ("unbound identifier in module" . 9)
+    ("illegal use" . 8)
+    ("allowed only around a module body" . 7)
+    ("expected identifier" . 5)
+    ("untyped identifier less-than?" . 5)
+    ("function application is not allowed;" . 1)
+    ("literal data is not allowed;" . 1)
+    ("missing procedure expression;" . 1))))

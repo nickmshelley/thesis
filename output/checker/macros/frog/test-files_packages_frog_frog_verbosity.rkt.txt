@@ -1,0 +1,22 @@
+'((remove
+   (passed . 7)
+   (failed
+    (total . 18)
+    ("provided identifier not defined or imported for phase 0" . 4)
+    ("bad syntax" . 4)
+    ("allowed only around a module body" . 3)
+    ("wrong number of parts" . 2)
+    ("missing procedure expression;" . 1)
+    ("received value from syntax expander was not syntax" . 1)
+    ("not in module body" . 1)
+    ("undefined;" . 1)
+    ("illegal use" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 25)
+    ("provided identifier not defined or imported for phase 0" . 12)
+    ("bad syntax" . 8)
+    ("allowed only around a module body" . 2)
+    ("illegal use" . 2)
+    ("identifier used out of context" . 1))))

@@ -1,0 +1,15 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 60)
+    ("type name used out of context" . 40)
+    ("unbound identifier in module" . 15)
+    ("missing `)' to close preceding `(', found instead `]'" . 5)))
+  (truncate
+   (passed . 10)
+   (failed
+    (total . 55)
+    ("type name used out of context" . 35)
+    ("unbound identifier in module" . 10)
+    ("missing `]' to close `[' on line 24, found instead `)'" . 5)
+    ("syntax error in pattern" . 5))))

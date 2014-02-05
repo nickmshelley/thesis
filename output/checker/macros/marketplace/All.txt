@@ -1,0 +1,480 @@
+'((remove
+   (passed . 921)
+   (failed
+    (total . 4345)
+    ("bad syntax" . 777)
+    ("unbound identifier in module" . 555)
+    ("not in module body" . 250)
+    ("The type of vm-processes cannot be converted to a contract" . 230)
+    ("wrong number of parts" . 223)
+    ("illegal use" . 190)
+    ("allowed only around a module body" . 183)
+    ("type name used out of context" . 171)
+    ("syntax error in pattern" . 126)
+    ("Illegal clause in endpoint definition" . 119)
+    ("function application is not allowed;" . 100)
+    ("expected a `module' declaration" . 80)
+    ("provided identifier not defined or imported for phase 0" . 67)
+    ("identifier used out of context" . 67)
+    ("no pattern variables before ellipsis in template" . 65)
+    ("bad syntax (multiple types after identifier)" . 60)
+    ("attribute bound in defaults but not in pattern" . 55)
+    ("'" . 55)
+    ("too many ellipses in template" . 44)
+    ("literal data is not allowed;" . 42)
+    ("missing ellipsis with pattern variable in template" . 40)
+    ("Unbound type name #%datum" . 36)
+    ("Unbound type name #%declare" . 36)
+    ("Unbound type name #%expression" . 36)
+    ("Unbound type name #%module-begin" . 36)
+    ("bad module path" . 35)
+    ("Unbound type name #%app" . 35)
+    ("pattern variable cannot be used outside of a template" . 34)
+    ("not a provide sub-form" . 30)
+    ("type mismatch" . 30)
+    ("missing procedure expression;" . 28)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 24)
+    ("unexpected `)'" . 20)
+    ("expected a `)' to close `('" . 15)
+    ("#???" . 14)
+    ("collection not found" . 12)
+    ("this match expander must be used inside match" . 12)
+    ("must be used in a definition context" . 11)
+    ("keyword used as an expression" . 11)
+    ("missing `)' to close preceding `(', found instead `]'" . 10)
+    ("too many forms in body of All type" . 10)
+    ("not a require sub-form" . 10)
+    ("missing `]' to close `[' on line 23, found instead `)'; indentation suggests a missing `)' before line 47"
+     .
+     10)
+    ("variable not bound in all or patterns" . 10)
+    ("(State)" . 10)
+    ("missing argument expression after keyword" . 9)
+    ("unrecognized keyword" . 9)
+    ("illegal use of syntax" . 7)
+    ("identifier is not bound to a structure type" . 7)
+    ("Unbound type name ParentState" . 6)
+    ("Unbound type name process-spec" . 6)
+    ("missing `)' to close `(' on line 91, found instead `]'; indentation suggests a missing `)' before line 97"
+     .
+     5)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("(ParentState)" . 5)
+    ("defaults)" . 5)
+    ("missing `]' to close `[' on line 78, found instead `)'; indentation suggests a missing `]' before line 79"
+     .
+     5)
+    ("Unbound type name Action" . 5)
+    ("Unbound type name CoTransition" . 5)
+    ("Unbound type name Result" . 5)
+    ("Unbound type name State" . 5)
+    ("Unbound type name X" . 5)
+    ("identifier `#%app' not included in nested require spec" . 5)
+    ("identifier `#%datum' not included in nested require spec" . 5)
+    ("identifier `#%declare' not included in nested require spec" . 5)
+    ("identifier `#%expression' not included in nested require spec" . 5)
+    ("identifier `#%module-begin' not included in nested require spec" . 5)
+    ("Error in macro expansion -- insufficient type information to typecheck. please add more type annotations"
+     .
+     5)
+    ("Declaration for `list-max' provided, but `list-max' has no definition"
+     .
+     5)
+    ("missing `]' to close `[' on line 60, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 97, found instead `)'; indentation suggests a missing `]' before line 98"
+     .
+     5)
+    ("missing `]' to close `[' on line 118, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 78, found instead `)'" . 5)
+    ("duplicate attribute" . 5)
+    ("identifier is already imported" . 5)
+    ("missing `)' to close `(' on line 83, found instead `]'; indentation suggests a missing `)' before line 84"
+     .
+     5)
+    ("missing `)' to close `(' on line 85, found instead `]'; indentation suggests a missing `)' before line 86"
+     .
+     5)
+    ("missing `]' to close `[' on line 123, found instead `)'; indentation suggests a missing `]' before line 124"
+     .
+     5)
+    ("expected `)' to close `(' on line 81, found instead `]'" . 5)
+    ("Illegal use of match-state outside endpoint definition context" . 5)
+    ("(SNew)" . 5)
+    ("Polymorphic function `process-debug-name' could not be applied to arguments"
+     .
+     5)
+    ("accessor name not associated with the given structure type" . 5)
+    ("missing `]' to close `[' on line 23, found instead `)'; indentation suggests a missing `]' before line 24"
+     .
+     5)
+    ("wildcard not allowed as an expression" . 4)
+    ("Declaration for `quasiqueue-append' provided, but `quasiqueue-append' has no definition"
+     .
+     4)
+    ("Declaration for `empty-quasiqueue' provided, but `empty-quasiqueue' has no definition"
+     .
+     4)
+    ("Declaration for `roles-equal?' provided, but `roles-equal?' has no definition"
+     .
+     4)
+    ("Declaration for `refine-role' provided, but `refine-role' has no definition"
+     .
+     4)
+    ("no corresponding require" . 4)
+    ("Declaration for `Process-pid' provided, but `Process-pid' has no definition"
+     .
+     4)
+    ("Declaration for `process-map' provided, but `process-map' has no definition"
+     .
+     4)
+    ("unbound identifier in the transformer environment;" . 4)
+    ("too few ellipses for pattern variable in template" . 4)
+    ("Declaration for `notify-route-change-vm' provided, but `notify-route-change-vm' has no definition"
+     .
+     4)
+    ("Declaration for `do-send-message' provided, but `do-send-message' has no definition"
+     .
+     4)
+    ("Declaration for `log-quit' provided, but `log-quit' has no definition"
+     .
+     4)
+    ("Declaration for `timer-relay' provided, but `timer-relay' has no definition"
+     .
+     4)
+    ("Unbound type name *" . 4)
+    ("Declaration for `wrap-trapk' provided, but `wrap-trapk' has no definition"
+     .
+     4)
+    ("Cannot apply expression of type Void, since it is not a function type"
+     .
+     3)
+    ("Polymorphic function `transition8' could not be applied to arguments"
+     .
+     3)
+    ("Declaration for `send-message' provided, but `send-message' has no definition"
+     .
+     3)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ="
+     .
+     3)
+    ("not a procedure;" . 2)
+    ("bad syntax;" . 2)
+    ("Cannot apply expression of type String, since it is not a function type"
+     .
+     2)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     2)
+    ("No function domains matched in function application" . 2)
+    ("Polymorphic function `name-process' could not be applied to arguments"
+     .
+     2)
+    ("Cannot apply expression of type Boolean, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Reason, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type PreEID, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Void Null send-message quit delete-endpoint (State -> (transition State)) (spawn State) (add-endpoint State) (yield State) (at-meta-level State)), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U False Void Null send-message quit delete-endpoint (State -> (transition State)) (spawn State) (add-endpoint State) (yield State) (at-meta-level State)), since it is not a function type"
+     .
+     1)
+    ("ActionTree 'State)), since it is not a function type" . 1)
+    ("Cannot apply expression of type Topic, since it is not a function type"
+     .
+     1)
+    ("Unbound type name #%appything" . 1)
+    ("Unbound type name #%datumything" . 1)
+    ("Unbound type name #%declareything" . 1)
+    ("Unbound type name #%expressionything" . 1)
+    ("Unbound type name #%module-beginything" . 1)
+    ("Unbound type name ActionTree" . 1)
+    ("Unbound type name add-endpoint" . 1)
+    ("Unbound type name quit" . 1)
+    ("Unbound type name absence-event" . 1)
+    ("Cannot apply expression of type PID, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type vm, since it is not a function type" . 1)
+    ("Polymorphic function `reverse' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type role, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Orientation, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type InterestType, since it is not a function type"
+     .
+     1)
+    ("identifier is not bound to struct type information" . 1)
+    ("not allowed in an expression context" . 1)
+    ("identifier already provided (as a different binding)" . 1)
+    ("identifier to remove `#%app' not included in nested provide spec" . 1)
+    ("identifier to remove `#%datum' not included in nested provide spec" . 1)
+    ("identifier to remove `#%declare' not included in nested provide spec"
+     .
+     1)
+    ("identifier to remove `#%expression' not included in nested provide spec"
+     .
+     1)
+    ("identifier to remove `#%module-begin' not included in nested provide spec"
+     .
+     1)
+    ("Cannot apply expression of type (List 'sync (List 'if 'is-blocking? 'never-evt (List 'wrap-evt 'always-evt (List 'lambda (List 'dummy) (List 'inst 'values 'vm)))) 'active-events), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (List 'endpoint-fold (List 'Listof 'Evt)), since it is not a function type"
+     .
+     1)
+    ("#<syntax endpoint> (eid role (EndpointEvent -> (State -> (transition State))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (List 'event-relay Symbol Evt), since it is not a function type"
+     .
+     1)
+    ("Illegal use of match-interest-type outside endpoint definition context"
+     .
+     1)
+    ("Polymorphic function `run-ready' could not be applied to arguments" . 1)
+    ("not allowed as an expression" . 1)
+    ("Illegal use of on-message outside endpoint definition context" . 1)
+    ("#<syntax process> (Any PID KilledState (Listof (Pairof Integer (PID -> (KilledState -> (transition KilledState))))) (HashTable PreEID (endpoint KilledState)) (HashTable PreEID (endpoint KilledState)) (Listof (U send-message quit delete-endpoint (spawn KilledState) (add-endpoint KilledState) (yield KilledState) (at-meta-level KilledState))))), since it is not a function type"
+     .
+     1)))
+  (truncate
+   (passed . 881)
+   (failed
+    (total . 4400)
+    ("bad syntax" . 850)
+    ("unbound identifier in module" . 624)
+    ("The type of vm-processes cannot be converted to a contract" . 233)
+    ("not in module body" . 228)
+    ("illegal use" . 206)
+    ("wrong number of parts" . 199)
+    ("allowed only around a module body" . 186)
+    ("type name used out of context" . 145)
+    ("function application is not allowed;" . 116)
+    ("Illegal clause in endpoint definition" . 108)
+    ("syntax error in pattern" . 89)
+    ("no pattern variables before ellipsis in template" . 86)
+    ("provided identifier not defined or imported for phase 0" . 66)
+    ("identifier used out of context" . 61)
+    ("bad syntax (multiple types after identifier)" . 50)
+    ("bad module path" . 45)
+    ("literal data is not allowed;" . 44)
+    ("Unbound type name #%declare" . 43)
+    ("Unbound type name #%expression" . 43)
+    ("Unbound type name #%module-begin" . 43)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 43)
+    ("Unbound type name #%app" . 42)
+    ("Unbound type name #%datum" . 42)
+    ("not a provide sub-form" . 35)
+    ("'" . 35)
+    ("missing ellipsis with pattern variable in template" . 35)
+    ("variable not bound in all or patterns" . 35)
+    ("too many ellipses in template" . 31)
+    ("too many forms in body of All type" . 30)
+    ("attribute bound in defaults but not in pattern" . 30)
+    ("pattern variable cannot be used outside of a template" . 29)
+    ("not a require sub-form" . 25)
+    ("Unbound type name State" . 25)
+    ("missing procedure expression;" . 21)
+    ("#???" . 20)
+    ("illegal use of syntax" . 19)
+    ("type mismatch" . 17)
+    ("missing `]' to close preceding `[', found instead `)'" . 15)
+    ("this match expander must be used inside match" . 15)
+    ("wildcard not allowed as an expression" . 14)
+    ("identifier is not bound to a structure type" . 11)
+    ("expected a `)' to close `('" . 10)
+    ("(ParentState)" . 10)
+    ("too few ellipses for pattern variable in template" . 10)
+    ("must be used in a definition context" . 10)
+    ("(X)" . 10)
+    ("missing `)' to close preceding `(', found instead `]'" . 10)
+    ("Declaration for `event-relay' provided, but `event-relay' has no definition"
+     .
+     9)
+    ("identifier `#%app' not included in nested require spec" . 6)
+    ("identifier `#%datum' not included in nested require spec" . 6)
+    ("identifier `#%declare' not included in nested require spec" . 6)
+    ("identifier `#%expression' not included in nested require spec" . 6)
+    ("identifier `#%module-begin' not included in nested require spec" . 6)
+    ("Unbound type name role" . 6)
+    ("missing `)' to close `(' on line 91, found instead `]'; indentation suggests a missing `)' before line 97"
+     .
+     5)
+    ("duplicate attribute" . 5)
+    ("missing argument expression after keyword" . 5)
+    ("unrecognized keyword" . 5)
+    ("keyword used as an expression" . 5)
+    ("Unbound type name transition" . 5)
+    ("missing `]' to close `[' on line 182, found instead `)'" . 5)
+    ("expected `)' to close `(' on line 74, found instead `]'" . 5)
+    ("Unbound type name X" . 5)
+    ("unexpected term" . 5)
+    ("missing `]' to close `[' on line 84, found instead `)'; indentation suggests a missing `]' before line 86"
+     .
+     5)
+    ("missing `]' to close `[' on line 60, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 40, found instead `)'" . 5)
+    ("identifier is not bound to struct type information" . 5)
+    ("Declaration for `coproc' provided, but `coproc' has no definition" . 5)
+    ("(State)" . 5)
+    ("missing `]' to close `[' on line 24, found instead `)'" . 5)
+    ("Polymorphic function `process-pid' could not be applied to arguments"
+     .
+     5)
+    ("Declaration for `evt-handler' provided, but `evt-handler' has no definition"
+     .
+     5)
+    ("missing `)' to close `(' on line 87, found instead `]'; indentation suggests a missing `)' before line 88"
+     .
+     5)
+    ("missing `]' to close `[' on line 123, found instead `)'; indentation suggests a missing `]' before line 124"
+     .
+     5)
+    ("Unbound type name ParentState" . 5)
+    ("(SNew)" . 5)
+    ("missing `)' to close `(' on line 202, found instead `]'; indentation suggests a missing `)' before line 204"
+     .
+     5)
+    ("Polymorphic function `process-debug-name' could not be applied to arguments"
+     .
+     5)
+    ("exn" . 5)
+    ("not allowed as an expression" . 4)
+    ("no corresponding require" . 4)
+    ("unbound identifier in the transformer environment;" . 4)
+    ("undefined;" . 4)
+    ("Declaration for `quasiqueue-append' provided, but `quasiqueue-append' has no definition"
+     .
+     4)
+    ("Declaration for `co-orientations' provided, but `co-orientations' has no definition"
+     .
+     4)
+    ("identifier already provided (as a different binding)" . 4)
+    ("Declaration for `name-process' provided, but `name-process' has no definition"
+     .
+     4)
+    ("Declaration for `do-spawn' provided, but `do-spawn' has no definition"
+     .
+     4)
+    ("Declaration for `do-send-message' provided, but `do-send-message' has no definition"
+     .
+     4)
+    ("Declaration for `send-to-process' provided, but `send-to-process' has no definition"
+     .
+     4)
+    ("Declaration for `bind-socket!' provided, but `bind-socket!' has no definition"
+     .
+     4)
+    ("Declaration for `udp-driver' provided, but `udp-driver' has no definition"
+     .
+     4)
+    ("Unbound type name RelayState" . 4)
+    ("Declaration for `timer-evt' provided, but `timer-evt' has no definition"
+     .
+     4)
+    ("Declaration for `run-vm' provided, but `run-vm' has no definition" . 4)
+    ("Declaration for `process-alive?' provided, but `process-alive?' has no definition"
+     .
+     4)
+    ("not a procedure;" . 3)
+    ("Declaration for `inject-process' provided, but `inject-process' has no definition"
+     .
+     3)
+    ("Declaration for `valid-port-number?' provided, but `valid-port-number?' has no definition"
+     .
+     3)
+    ("untyped identifier udp-socket-manager" . 3)
+    ("Cannot apply expression of type Any, since it is not a function type"
+     .
+     2)
+    ("(from require-spec pre-content ...)" . 2)
+    ("Cannot apply expression of type Orientation, since it is not a function type"
+     .
+     2)
+    ("Cannot apply expression of type role, since it is not a function type"
+     .
+     2)
+    ("Error in macro expansion -- insufficient type information to typecheck. please add more type annotations"
+     .
+     2)
+    ("identifier to remove `#%app' not included in nested provide spec" . 2)
+    ("identifier to remove `#%datum' not included in nested provide spec" . 2)
+    ("identifier to remove `#%declare' not included in nested provide spec"
+     .
+     2)
+    ("identifier to remove `#%expression' not included in nested provide spec"
+     .
+     2)
+    ("identifier to remove `#%module-begin' not included in nested provide spec"
+     .
+     2)
+    ("Illegal use of match-state outside endpoint definition context" . 2)
+    ("Polymorphic function `cons' could not be applied to arguments" . 2)
+    ("untyped identifier struct-map2" . 1)
+    ("Cannot apply expression of type (U False Void Null send-message quit delete-endpoint (spawn State) (add-endpoint State) (yield State) (at-meta-level State) (Pairof (Rec g2412 (U False Void Null send-message quit delete-endpoint (spawn State) (add-endpoint State) (yield State) (at-meta-level State) (Pairof g2412 g2412))) (Rec g2422 (U False Void Null send-message quit delete-endpoint (spawn State) (add-endpoint State) (yield State) (at-meta-level State) (Pairof g2422 g2422))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Topic, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Void Null send-message quit delete-endpoint (State -> (transition State)) (spawn State) (add-endpoint State) (yield State) (at-meta-level State)), since it is not a function type"
+     .
+     1)
+    ("Unbound type name EndpointEvent" . 1)
+    ("Unbound type name at-meta-level" . 1)
+    ("Unbound type name InterruptK" . 1)
+    ("Unbound type name quit" . 1)
+    ("Unbound type name Topic" . 1)
+    ("Wrong number of arguments, expected 1 and got 0" . 1)
+    ("Cannot apply expression of type Void, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `add-endpoint10' could not be applied to arguments"
+     .
+     1)
+    ("Illegal use of on-message outside endpoint definition context" . 1)
+    ("bad syntax;" . 1)
+    ("Cannot apply expression of type String, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Reason, since it is not a function type"
+     .
+     1)
+    ("Expression should produce 3 values, but produces 1 values of types (List 'reason 'p 'state)"
+     .
+     1)
+    ("(List 'values (List 'process 'State) 'vm) (List (List 'p 'p) (List 'state 'state)) (List (List 'pre-eid (List 'in-hash-keys (List 'process-endpoints 'p)))) (List 'do-delete-endpoint 'pre-eid 'reason 'p 'state))"
+     .
+     1)
+    ("Declaration for `#%app' provided, but `#%app' is defined in another module"
+     .
+     1)
+    ("Declaration for `#%datum' provided, but `#%datum' is defined in another module"
+     .
+     1)
+    ("Declaration for `#%declare' provided, but `#%declare' is defined in another module"
+     .
+     1)
+    ("Declaration for `#%expression' provided, but `#%expression' is defined in another module"
+     .
+     1)
+    ("Declaration for `#%module-begin' provided, but `#%module-begin' is defined in another module"
+     .
+     1)
+    ("untyped identifier make-timer-heap" . 1)
+    ("9 timer-expired-repr> (Any Real)), since it is not a function type" . 1)
+    ("Cannot apply expression of type Boolean, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type pending-timer, since it is not a function type"
+     .
+     1))))

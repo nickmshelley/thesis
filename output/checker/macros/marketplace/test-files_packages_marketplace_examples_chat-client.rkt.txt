@@ -1,0 +1,17 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 65)
+    ("type name used out of context" . 35)
+    ("unbound identifier in module" . 10)
+    ("Illegal clause in endpoint definition" . 10)
+    ("syntax error in pattern" . 5)
+    ("expected a `module' declaration" . 5)))
+  (truncate
+   (passed . 2)
+   (failed
+    (total . 60)
+    ("type name used out of context" . 25)
+    ("unbound identifier in module" . 25)
+    ("Illegal clause in endpoint definition" . 5)
+    ("syntax error in pattern" . 5))))

@@ -1,0 +1,24 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 55)
+    ("not in module body" . 17)
+    ("allowed only around a module body" . 16)
+    ("wrong number of parts" . 11)
+    ("expected a `module' declaration" . 5)
+    ("bad syntax" . 4)
+    ("illegal use" . 1)
+    ("untyped identifier lst" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 53)
+    ("bad syntax" . 16)
+    ("not in module body" . 12)
+    ("allowed only around a module body" . 11)
+    ("wrong number of parts" . 6)
+    ("illegal use" . 4)
+    ("untyped identifier lst" . 1)
+    ("Polymorphic function `foldr' could not be applied to arguments" . 1)
+    ("Polymorphic function `map' could not be applied to arguments" . 1)
+    ("type mismatch" . 1))))

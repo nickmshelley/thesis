@@ -1,0 +1,53 @@
+'((remove
+   (passed . 6)
+   (failed
+    (total . 39)
+    ("unbound identifier in module" . 7)
+    ("unexpected `)'" . 5)
+    ("not in module body" . 4)
+    ("wrong number of parts" . 4)
+    ("bad syntax" . 4)
+    ("identifier used out of context" . 3)
+    ("function application is not allowed;" . 2)
+    ("type name used out of context" . 2)
+    ("Polymorphic function `transition8' could not be applied to arguments"
+     .
+     2)
+    ("Cannot apply expression of type (List 'event-relay Symbol Evt), since it is not a function type"
+     .
+     1)
+    ("type mismatch" . 1)
+    ("Cannot apply expression of type String, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Void, since it is not a function type"
+     .
+     1)
+    ("illegal use" . 1)
+    ("literal data is not allowed;" . 1)))
+  (truncate
+   (passed . 3)
+   (failed
+    (total . 42)
+    ("Declaration for `event-relay' provided, but `event-relay' has no definition"
+     .
+     9)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("Illegal clause in endpoint definition" . 5)
+    ("Unbound type name ParentState" . 5)
+    ("bad syntax" . 4)
+    ("not in module body" . 2)
+    ("unbound identifier in module" . 1)
+    ("illegal use" . 1)
+    ("Unbound type name #%app" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("Unbound type name #%module-begin" . 1)
+    ("Cannot apply expression of type Any, since it is not a function type"
+     .
+     1)
+    ("identifier used out of context" . 1)
+    ("missing procedure expression;" . 1)
+    ("wrong number of parts" . 1)
+    ("allowed only around a module body" . 1))))

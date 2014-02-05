@@ -1,0 +1,15 @@
+'((remove
+   (passed . 4)
+   (failed
+    (total . 6)
+    ("provided identifier not defined or imported for phase 0" . 4)
+    ("literal data is not allowed;" . 2)))
+  (truncate
+   (passed . 2)
+   (failed
+    (total . 8)
+    ("wrong number of parts" . 2)
+    ("allowed only around a module body" . 2)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("undefined;" . 1)
+    ("unbound identifier in module" . 1))))

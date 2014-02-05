@@ -1,0 +1,72 @@
+'((remove
+   (passed . 6)
+   (failed
+    (total . 45)
+    ("allowed only around a module body" . 11)
+    ("not in module body" . 10)
+    ("wrong number of parts" . 8)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     3)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `tail' could not be applied to arguments" . 1)
+    ("#<syntax Queue> ((Rec g622 (U Null (Boxof (U (Boxof g622) (-> (Boxof g622)))) (Pairof Positive-Byte g622))) Integer (Listof Positive-Byte) Integer)), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `qmap' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type Negative-Fixnum, since it is not a function type"
+     .
+     1)
+    ("#<syntax Queue> ((Rec g314 (U Null (Boxof (U (Boxof g314) (-> (Boxof g314)))) (Pairof One g314))) Integer (Listof One) Integer)), since it is not a function type"
+     .
+     1)
+    ("#<syntax Queue> ((Rec g1276 (U Null (Boxof (U (Boxof g1276) (-> (Boxof g1276)))) (Pairof Positive-Byte g1276))) Integer (Listof Positive-Byte) Integer)), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     1)
+    ("type mismatch" . 1)
+    ("Polymorphic function `queue->list' could not be applied to arguments"
+     .
+     1)
+    ("Cannot apply expression of type Nonnegative-Integer, since it is not a function type"
+     .
+     1)
+    ("#???" . 1)
+    ("Polymorphic function `filter' could not be applied to arguments" . 1)))
+  (truncate
+   (passed . 2)
+   (failed
+    (total . 44)
+    ("not in module body" . 7)
+    ("wrong number of parts" . 7)
+    ("allowed only around a module body" . 6)
+    ("type name used out of context" . 6)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     3)
+    ("#???" . 2)
+    ("type mismatch" . 2)
+    ("Polymorphic function `head' could not be applied to arguments" . 2)
+    ("#<syntax Queue> ((Rec g2128 (U Null (Boxof (U (Boxof g2128) (-> (Boxof g2128)))) (Pairof Fixnum g2128))) Integer (Listof Fixnum) Integer)), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `map' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (U Null (Pairof (U Nonpositive-Fixnum Byte) (Listof (U Nonpositive-Fixnum Byte)))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `fold' could not be applied to arguments" . 1)
+    ("Polymorphic function `queue->list' could not be applied to arguments"
+     .
+     1)
+    ("#<syntax Queue> ((Rec g1640 (U Null (Boxof (U (Boxof g1640) (-> (Boxof g1640)))) (Pairof Integer g1640))) Integer (Listof Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("missing procedure expression;" . 1)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `qmap' could not be applied to arguments" . 1))))

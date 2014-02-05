@@ -1,0 +1,48 @@
+'((remove
+   (passed . 26)
+   (failed
+    (total . 69)
+    ("bad syntax" . 28)
+    ("missing `]' to close `[' on line 23, found instead `)'; indentation suggests a missing `)' before line 47"
+     .
+     10)
+    ("illegal use" . 7)
+    ("not a require sub-form" . 5)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 4)
+    ("not in module body" . 4)
+    ("allowed only around a module body" . 4)
+    ("wrong number of parts" . 2)
+    ("not allowed in an expression context" . 1)
+    ("function application is not allowed;" . 1)
+    ("literal data is not allowed;" . 1)
+    ("identifier already provided (as a different binding)" . 1)
+    ("missing procedure expression;" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 117)
+    ("bad syntax" . 37)
+    ("unbound identifier in module" . 15)
+    ("bad syntax (multiple types after identifier)" . 10)
+    ("illegal use" . 9)
+    ("'" . 5)
+    ("function application is not allowed;" . 5)
+    ("identifier is not bound to struct type information" . 5)
+    ("Declaration for `coproc' provided, but `coproc' has no definition" . 5)
+    ("(State)" . 5)
+    ("wrong number of parts" . 4)
+    ("not in module body" . 3)
+    ("Declaration for `inject-process' provided, but `inject-process' has no definition"
+     .
+     3)
+    ("identifier used out of context" . 2)
+    ("Error in macro expansion -- insufficient type information to typecheck. please add more type annotations"
+     .
+     2)
+    ("literal data is not allowed;" . 1)
+    ("#???" . 1)
+    ("allowed only around a module body" . 1)
+    ("missing argument expression after keyword" . 1)
+    ("unrecognized keyword" . 1)
+    ("keyword used as an expression" . 1)
+    ("must be used in a definition context" . 1))))

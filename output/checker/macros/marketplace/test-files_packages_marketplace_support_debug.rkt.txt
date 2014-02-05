@@ -1,0 +1,30 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 175)
+    ("The type of vm-processes cannot be converted to a contract" . 170)
+    ("expected a `module' declaration" . 5)))
+  (truncate
+   (passed . 7)
+   (failed
+    (total . 73)
+    ("unbound identifier in module" . 10)
+    ("bad syntax" . 10)
+    ("(X)" . 10)
+    ("Unbound type name X" . 5)
+    ("too many forms in body of All type" . 5)
+    ("Declaration for `quasiqueue-append' provided, but `quasiqueue-append' has no definition"
+     .
+     4)
+    ("wrong number of parts" . 3)
+    ("Unbound type name #%app" . 3)
+    ("Unbound type name #%datum" . 3)
+    ("Unbound type name #%declare" . 3)
+    ("Unbound type name #%expression" . 3)
+    ("Unbound type name #%module-begin" . 3)
+    ("function application is not allowed;" . 2)
+    ("must be used in a definition context" . 2)
+    ("#???" . 2)
+    ("illegal use" . 2)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("type name used out of context" . 1))))

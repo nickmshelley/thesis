@@ -1,0 +1,2 @@
+'((remove (passed . 5) (failed (total . 0)))
+  (truncate (passed . 0) (failed (total . 0))))

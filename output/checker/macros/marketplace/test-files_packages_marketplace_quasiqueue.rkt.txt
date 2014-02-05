@@ -1,0 +1,62 @@
+'((remove
+   (passed . 5)
+   (failed
+    (total . 80)
+    ("unbound identifier in module" . 13)
+    ("too many forms in body of All type" . 10)
+    ("bad syntax (multiple types after identifier)" . 10)
+    ("Unbound type name X" . 5)
+    ("expected a `)' to close `('" . 5)
+    ("wrong number of parts" . 4)
+    ("Declaration for `quasiqueue-append' provided, but `quasiqueue-append' has no definition"
+     .
+     4)
+    ("Declaration for `empty-quasiqueue' provided, but `empty-quasiqueue' has no definition"
+     .
+     4)
+    ("function application is not allowed;" . 2)
+    ("Unbound type name #%app" . 2)
+    ("Unbound type name #%datum" . 2)
+    ("Unbound type name #%declare" . 2)
+    ("Unbound type name #%expression" . 2)
+    ("Unbound type name #%module-begin" . 2)
+    ("must be used in a definition context" . 2)
+    ("bad syntax" . 2)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     2)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("Polymorphic function `reverse' could not be applied to arguments" . 1)
+    ("#???" . 1)
+    ("type mismatch" . 1)
+    ("not in module body" . 1)
+    ("type name used out of context" . 1)))
+  (truncate
+   (passed . 4)
+   (failed
+    (total . 101)
+    ("unbound identifier in module" . 23)
+    ("type mismatch" . 8)
+    ("Unbound type name #%app" . 5)
+    ("Unbound type name #%datum" . 5)
+    ("Unbound type name #%declare" . 5)
+    ("Unbound type name #%expression" . 5)
+    ("Unbound type name #%module-begin" . 5)
+    ("not in module body" . 5)
+    ("identifier used out of context" . 5)
+    ("unexpected term" . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("bad module path" . 5)
+    ("wrong number of parts" . 4)
+    ("Declaration for `co-orientations' provided, but `co-orientations' has no definition"
+     .
+     4)
+    ("bad syntax" . 4)
+    ("function application is not allowed;" . 3)
+    ("Cannot apply expression of type Orientation, since it is not a function type"
+     .
+     2)
+    ("Cannot apply expression of type role, since it is not a function type"
+     .
+     2)
+    ("illegal use" . 1))))

@@ -1,0 +1,81 @@
+'((remove
+   (passed . 1)
+   (failed
+    (total . 46)
+    ("wrong number of parts" . 8)
+    ("allowed only around a module body" . 8)
+    ("not in module body" . 7)
+    ("collection not found" . 5)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     3)
+    ("#???" . 3)
+    ("type mismatch" . 3)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     2)
+    ("Cannot apply expression of type (U Null (IntQue Integer)), since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `queue->list' could not be applied to arguments"
+     .
+     2)
+    ("Polymorphic function `head' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `map' could not be applied to arguments" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 158)
+    ("bad syntax" . 28)
+    ("expected identifier" . 20)
+    ("unbound identifier in module" . 20)
+    ("not in module body" . 13)
+    ("wrong number of parts" . 12)
+    ("illegal use" . 7)
+    ("allowed only around a module body" . 6)
+    ("#???" . 4)
+    ("#<syntax PairingHeap> ((Integer Integer -> Boolean) (U Null (IntHeap Integer)))), since it is not a function type"
+     .
+     3)
+    ("Bad arguments to polymorphic function in apply" . 3)
+    ("identifier used out of context" . 3)
+    ("Unbound type name #%app" . 3)
+    ("Unbound type name #%datum" . 3)
+    ("Unbound type name #%declare" . 3)
+    ("Unbound type name #%expression" . 3)
+    ("Unbound type name #%module-begin" . 3)
+    ("#<syntax PairingHeap> ((Positive-Byte Positive-Byte -> Boolean) (U Null (IntHeap Positive-Byte)))), since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `remove' could not be applied to arguments" . 2)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `build-list' could not be applied to arguments" . 2)
+    ("Polymorphic function `delete-min/max' could not be applied to arguments"
+     .
+     2)
+    ("function application is not allowed;" . 2)
+    ("Polymorphic function `heap' could not be applied to arguments" . 2)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     2)
+    ("literal data is not allowed;" . 1)
+    ("type mismatch" . 1)
+    ("Polymorphic function `insert' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Pairof Positive-Byte (Listof Positive-Byte))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Boolean, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `ormap' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type Nonnegative-Integer, since it is not a function type"
+     .
+     1))))

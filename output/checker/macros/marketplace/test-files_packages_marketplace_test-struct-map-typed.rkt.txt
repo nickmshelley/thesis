@@ -1,0 +1,28 @@
+'((remove
+   (passed . 1)
+   (failed
+    (total . 19)
+    ("expected a `module' declaration" . 10)
+    ("unbound identifier in module" . 4)
+    ("wrong number of parts" . 2)
+    ("Cannot apply expression of type Boolean, since it is not a function type"
+     .
+     1)
+    ("not in module body" . 1)
+    ("identifier used out of context" . 1)))
+  (truncate
+   (passed . 1)
+   (failed
+    (total . 14)
+    ("unbound identifier in module" . 4)
+    ("wrong number of parts" . 2)
+    ("Unbound type name #%app" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("Unbound type name #%module-begin" . 1)
+    ("Cannot apply expression of type Any, since it is not a function type"
+     .
+     1)
+    ("#???" . 1)
+    ("untyped identifier struct-map2" . 1))))

@@ -1,0 +1,64 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 48)
+    ("bad syntax" . 12)
+    ("not in module body" . 7)
+    ("wrong number of parts" . 5)
+    ("identifier used out of context" . 4)
+    ("allowed only around a module body" . 3)
+    ("illegal use" . 3)
+    ("Cannot apply expression of type Positive-Integer, since it is not a function type"
+     .
+     2)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     2)
+    ("unbound identifier in module" . 2)
+    ("expected single value, got multiple (or zero) values" . 1)
+    ("#<syntax Queue> ((Rec g275 (U Null (Boxof (U (Boxof g275) (-> (Boxof g275)))) (Pairof Positive-Integer g275))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `tail' could not be applied to arguments" . 1)
+    ("Polymorphic function `build-queue' could not be applied to arguments"
+     .
+     1)
+    ("type mismatch" . 1)
+    ("#???" . 1)
+    ("#<syntax Queue> ((Rec g311 (U Null (Boxof (U (Boxof g311) (-> (Boxof g311)))) (Pairof Positive-Integer g311))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("No function domains matched in function application" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 50)
+    ("unbound identifier in module" . 9)
+    ("bad syntax" . 8)
+    ("not in module body" . 5)
+    ("identifier used out of context" . 4)
+    ("type mismatch" . 3)
+    ("wrong number of parts" . 3)
+    ("function application is not allowed;" . 2)
+    ("illegal use" . 2)
+    ("Cannot apply expression of type Positive-Integer, since it is not a function type"
+     .
+     2)
+    ("literal data is not allowed;" . 1)
+    ("allowed only around a module body" . 1)
+    ("Unbound type name #%app" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("Unbound type name #%module-begin" . 1)
+    ("#<syntax Queue> ((Rec g311 (U Null (Boxof (U (Boxof g311) (-> (Boxof g311)))) (Pairof Positive-Integer g311))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("No function domains matched in function application" . 1)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     1)
+    ("#???" . 1)
+    ("#<syntax Queue> ((Rec g382 (U Null (Boxof (U (Boxof g382) (-> (Boxof g382)))) (Pairof Positive-Integer g382))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1))))

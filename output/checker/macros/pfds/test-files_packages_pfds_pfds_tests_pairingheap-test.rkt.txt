@@ -1,0 +1,96 @@
+'((remove
+   (passed . 1)
+   (failed
+    (total . 162)
+    ("expected identifier" . 30)
+    ("bad syntax" . 20)
+    ("wrong number of parts" . 16)
+    ("not in module body" . 15)
+    ("unbound identifier in module" . 12)
+    ("allowed only around a module body" . 11)
+    ("illegal use" . 5)
+    ("collection not found" . 5)
+    ("#???" . 4)
+    ("type mismatch" . 3)
+    ("Bad arguments to polymorphic function in apply" . 3)
+    ("Polymorphic function `remove' could not be applied to arguments" . 3)
+    ("function application is not allowed;" . 2)
+    ("Polymorphic function `heap-map' could not be applied to arguments" . 2)
+    ("Unbound type name #%app" . 2)
+    ("Unbound type name #%datum" . 2)
+    ("Unbound type name #%declare" . 2)
+    ("Unbound type name #%expression" . 2)
+    ("Unbound type name #%module-begin" . 2)
+    ("Polymorphic function `heap-andmap' could not be applied to arguments"
+     .
+     2)
+    ("Cannot apply expression of type Boolean, since it is not a function type"
+     .
+     2)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     2)
+    ("#<syntax PairingHeap> ((Integer Integer -> Boolean) (U Null (Tree Integer)))), since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `heap' could not be applied to arguments" . 1)
+    ("Polymorphic function `sorted-list' could not be applied to arguments"
+     .
+     1)
+    ("Polymorphic function `build-list' could not be applied to arguments" . 1)
+    ("#<syntax PairingHeap> ((Positive-Index Positive-Index -> Boolean) (U Null (Tree Positive-Index)))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `map' could not be applied to arguments" . 1)
+    ("Polymorphic function `andmap' could not be applied to arguments" . 1)
+    ("#<syntax PairingHeap> ((Nothing Nothing -> Boolean) (U Null (Tree Nothing)))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Pairof Positive-Byte (Listof Positive-Byte))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     1)
+    ("identifier used out of context" . 1)
+    ("Polymorphic function `ormap' could not be applied to arguments" . 1)
+    ("Polymorphic function `delete-min/max' could not be applied to arguments"
+     .
+     1)
+    ("#<syntax PairingHeap> ((Positive-Byte Positive-Byte -> Boolean) (U Null (Tree Positive-Byte)))), since it is not a function type"
+     .
+     1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 164)
+    ("bad syntax" . 44)
+    ("expected identifier" . 35)
+    ("unbound identifier in module" . 24)
+    ("illegal use" . 11)
+    ("not in module body" . 8)
+    ("wrong number of parts" . 7)
+    ("Bad arguments to polymorphic function in apply" . 4)
+    ("Unbound type name #%app" . 3)
+    ("Unbound type name #%datum" . 3)
+    ("Unbound type name #%declare" . 3)
+    ("Unbound type name #%expression" . 3)
+    ("Unbound type name #%module-begin" . 3)
+    ("allowed only around a module body" . 3)
+    ("function application is not allowed;" . 2)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     2)
+    ("identifier used out of context" . 2)
+    ("Polymorphic function `build-list' could not be applied to arguments" . 2)
+    ("Polymorphic function `heap' could not be applied to arguments" . 1)
+    ("Polymorphic function `merge' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     1)
+    ("#<syntax LeftistHeap> ((Integer Integer -> Boolean) (U Null (Tree Integer)))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `sorted-list' could not be applied to arguments"
+     .
+     1))))

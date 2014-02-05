@@ -1,0 +1,78 @@
+'((remove
+   (passed . 9)
+   (failed
+    (total . 56)
+    ("allowed only around a module body" . 10)
+    ("not in module body" . 9)
+    ("unexpected `)'" . 5)
+    ("wrong number of parts" . 5)
+    ("Polymorphic function `head' could not be applied to arguments" . 4)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     3)
+    ("type name used out of context" . 3)
+    ("#???" . 2)
+    ("#<syntax Queue> ((Listof Integer) (Boxof (U (Listof Integer) (-> (Listof Integer)))) Integer (Listof Integer) Integer)), since it is not a function type"
+     .
+     2)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name #%app" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("Unbound type name #%module-begin" . 1)
+    ("Polymorphic function `enqueue' could not be applied to arguments" . 1)
+    ("#<syntax Queue> ((Listof Any) (Boxof (U (Listof Any) (-> (Listof Any)))) Integer (Listof Any) Integer)), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (List One), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Pairof (U (List Positive-Byte) (List Positive-Byte Positive-Byte) (List One) (List Positive-Byte Positive-Byte Positive-Byte)) (Listof (U (List Positive-Byte) (List Positive-Byte Positive-Byte) (List One) (List Positive-Byte Positive-Byte Positive-Byte))))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `fold' could not be applied to arguments" . 1)))
+  (truncate
+   (passed . 7)
+   (failed
+    (total . 58)
+    ("allowed only around a module body" . 12)
+    ("not in module body" . 11)
+    ("wrong number of parts" . 9)
+    ("Polymorphic function `queue->list' could not be applied to arguments"
+     .
+     4)
+    ("Polymorphic function `tail' could not be applied to arguments" . 4)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     3)
+    ("type mismatch" . 2)
+    ("#???" . 2)
+    ("#<syntax Queue> ((Listof Integer) (Boxof (U (Listof Integer) (-> (Listof Integer)))) Integer (Listof Integer) Integer)), since it is not a function type"
+     .
+     2)
+    ("Cannot apply expression of type (List One), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `fold' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Boolean, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     1)
+    ("missing procedure expression;" . 1)
+    ("Polymorphic function `qmap' could not be applied to arguments" . 1)
+    ("Polymorphic function `remove' could not be applied to arguments" . 1))))

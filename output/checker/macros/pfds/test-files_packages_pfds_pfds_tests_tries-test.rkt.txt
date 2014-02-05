@@ -1,0 +1,56 @@
+'((remove
+   (passed . 5)
+   (failed
+    (total . 55)
+    ("wrong number of parts" . 10)
+    ("allowed only around a module body" . 10)
+    ("not in module body" . 8)
+    ("bad module path" . 5)
+    ("bad syntax" . 4)
+    ("type mismatch" . 3)
+    ("Polymorphic function `tries' could not be applied to arguments" . 3)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     2)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     2)
+    ("#???" . 2)
+    ("Cannot apply expression of type (List One Positive-Byte Positive-Byte Positive-Byte), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `bind' could not be applied to arguments" . 1)
+    ("illegal use" . 1)
+    ("Cannot apply expression of type String, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (List One Positive-Byte Positive-Byte Positive-Byte Positive-Byte), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `lookup' could not be applied to arguments" . 1)))
+  (truncate
+   (passed . 7)
+   (failed
+    (total . 53)
+    ("not in module body" . 11)
+    ("allowed only around a module body" . 11)
+    ("wrong number of parts" . 10)
+    ("bad syntax" . 4)
+    ("Cannot apply expression of type String, since it is not a function type"
+     .
+     3)
+    ("Cannot apply expression of type (U Null (Pairof Char (Listof Char))), since it is not a function type"
+     .
+     3)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `lookup' could not be applied to arguments" . 2)
+    ("type mismatch" . 2)
+    ("illegal use" . 1)
+    ("Polymorphic function `trie' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (List One Positive-Byte Positive-Byte Positive-Byte), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `bind' could not be applied to arguments" . 1)
+    ("Polymorphic function `tries' could not be applied to arguments" . 1))))

@@ -1,0 +1,21 @@
+'((remove
+   (passed . 13)
+   (failed
+    (total . 12)
+    ("function application is not allowed;" . 3)
+    ("literal data is not allowed;" . 3)
+    ("allowed only around a module body" . 2)
+    ("illegal use of syntax" . 2)
+    ("unbound identifier in module" . 1)
+    ("wrong number of parts" . 1)))
+  (truncate
+   (passed . 12)
+   (failed
+    (total . 13)
+    ("allowed only around a module body" . 3)
+    ("unbound identifier in module" . 2)
+    ("wrong number of parts" . 2)
+    ("function application is not allowed;" . 2)
+    ("literal data is not allowed;" . 2)
+    ("not a procedure;" . 1)
+    ("not in module body" . 1))))

@@ -1,0 +1,34 @@
+'((remove
+   (passed . 50)
+   (failed
+    (total . 45)
+    ("missing `)' to close preceding `(', found instead `]'" . 10)
+    ("unbound identifier in module" . 8)
+    ("missing `]' to close `[' on line 78, found instead `)'; indentation suggests a missing `]' before line 79"
+     .
+     5)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("bad syntax" . 5)
+    ("not in module body" . 4)
+    ("allowed only around a module body" . 4)
+    ("function application is not allowed;" . 2)
+    ("literal data is not allowed;" . 1)
+    ("wrong number of parts" . 1)))
+  (truncate
+   (passed . 30)
+   (failed
+    (total . 70)
+    ("bad syntax" . 20)
+    ("unbound identifier in module" . 16)
+    ("missing `)' to close preceding `(', found instead `]'" . 5)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("syntax error in pattern" . 5)
+    ("missing `]' to close `[' on line 76, found instead `)'; indentation suggests a missing `]' before line 77"
+     .
+     5)
+    ("not in module body" . 3)
+    ("wrong number of parts" . 3)
+    ("allowed only around a module body" . 3)
+    ("literal data is not allowed;" . 2)
+    ("function application is not allowed;" . 2)
+    ("wildcard not allowed as an expression" . 1))))

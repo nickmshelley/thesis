@@ -1,0 +1,12 @@
+'((remove
+   (passed . 0)
+   (failed
+    (total . 10)
+    ("missing ellipsis with pattern variable in template" . 5)
+    ("no pattern variables before ellipsis in template" . 5)))
+  (truncate
+   (passed . 7)
+   (failed
+    (total . 3)
+    ("(from require-spec pre-content ...)" . 2)
+    ("allowed only around a module body" . 1))))

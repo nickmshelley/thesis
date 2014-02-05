@@ -1,0 +1,63 @@
+'((remove
+   (passed . 2)
+   (failed
+    (total . 38)
+    ("Polymorphic function `pscar' could not be applied to arguments" . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
+    ("type mismatch" . 4)
+    ("not in module body" . 3)
+    ("type name used out of context" . 2)
+    ("wrong number of parts" . 2)
+    ("Unbound type name #%app" . 2)
+    ("Unbound type name #%datum" . 2)
+    ("Unbound type name #%declare" . 2)
+    ("Unbound type name #%expression" . 2)
+    ("Unbound type name #%module-begin" . 2)
+    ("identifier used out of context" . 2)
+    ("#???" . 1)
+    ("Cannot apply expression of type Boolean, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Boxof (Rec g304 (U Null (Boxof (U (Boxof g304) (-> (Boxof g304)))) (Pairof Integer g304)))) (-> (Boxof (Rec g310 (U Null (Boxof (U (Boxof g310) (-> (Boxof g310)))) (Pairof Integer g310))))))) (Pairof Integer (Rec g316 (U Null (Boxof (U (Boxof g316) (-> (Boxof g316)))) (Pairof Integer g316))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (List One Positive-Byte Positive-Byte), since it is not a function type"
+     .
+     1)
+    ("allowed only around a module body" . 1)))
+  (truncate
+   (passed . 8)
+   (failed
+    (total . 57)
+    ("not in module body" . 9)
+    ("allowed only around a module body" . 9)
+    ("bad syntax" . 8)
+    ("wrong number of parts" . 7)
+    ("Polymorphic function `queue->list' could not be applied to arguments"
+     .
+     3)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     3)
+    ("type mismatch" . 3)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     2)
+    ("#???" . 2)
+    ("illegal use" . 2)
+    ("Polymorphic function `tail' could not be applied to arguments" . 2)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `qmap' could not be applied to arguments" . 1)
+    ("#<syntax Queue> ((Rec g290 (U Null (Boxof (U (Pairof Integer g290) (-> (Pairof Integer g290)))))) (Listof Integer) (Rec g297 (U Null (Boxof (U (Pairof Integer g297) (-> (Pairof Integer g297)))))))), since it is not a function type"
+     .
+     1)
+    ("#<syntax Queue> ((Rec g567 (U Null (Boxof (U (Pairof Integer g567) (-> (Pairof Integer g567)))))) (Listof Integer) (Rec g574 (U Null (Boxof (U (Pairof Integer g574) (-> (Pairof Integer g574)))))))), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `remove' could not be applied to arguments" . 1)
+    ("Polymorphic function `map' could not be applied to arguments" . 1)
+    ("#<syntax Queue> ((Rec g1133 (U Null (Boxof (U (Pairof Integer g1133) (-> (Pairof Integer g1133)))))) (Listof Integer) (Rec g1140 (U Null (Boxof (U (Pairof Integer g1140) (-> (Pairof Integer g1140)))))))), since it is not a function type"
+     .
+     1))))

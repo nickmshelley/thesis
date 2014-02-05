@@ -1,0 +1,6 @@
+'((remove
+   (passed . 0)
+   (failed (total . 5) ("unbound identifier in module" . 5)))
+  (truncate
+   (passed . 4)
+   (failed (total . 1) ("literal data is not allowed;" . 1))))

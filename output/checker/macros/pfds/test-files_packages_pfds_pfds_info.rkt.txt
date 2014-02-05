@@ -1,0 +1,9 @@
+'((remove
+   (passed . 6)
+   (failed
+    (total . 14)
+    ("expected a closing '\"'" . 5)
+    ("not a well-formed definition" . 5)
+    ("function application is not allowed;" . 2)
+    ("literal data is not allowed;" . 2)))
+  (truncate (passed . 15) (failed (total . 0))))

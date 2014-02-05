@@ -1,0 +1,31 @@
+'((remove
+   (passed . 1)
+   (failed
+    (total . 24)
+    ("expected a `module' declaration" . 5)
+    ("no corresponding require" . 4)
+    ("collection not found" . 4)
+    ("illegal use of syntax" . 3)
+    ("#???" . 1)
+    ("allowed only around a module body" . 1)
+    ("Unbound type name #%app" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("Unbound type name #%module-begin" . 1)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ="
+     .
+     1)))
+  (truncate
+   (passed . 1)
+   (failed
+    (total . 9)
+    ("Unbound type name #%app" . 1)
+    ("Unbound type name #%datum" . 1)
+    ("Unbound type name #%declare" . 1)
+    ("Unbound type name #%expression" . 1)
+    ("Unbound type name #%module-begin" . 1)
+    ("Wrong number of arguments, expected 1 and got 0" . 1)
+    ("#???" . 1)
+    ("undefined;" . 1)
+    ("unbound identifier in module" . 1))))

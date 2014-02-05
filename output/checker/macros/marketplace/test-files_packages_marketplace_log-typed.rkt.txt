@@ -1,0 +1,12 @@
+'((remove
+   (passed . 10)
+   (failed
+    (total . 5)
+    ("unbound identifier in module" . 2)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("wrong number of parts" . 1)))
+  (truncate
+   (passed . 15)
+   (failed
+    (total . 5)
+    ("no pattern variables before ellipsis in template" . 5))))
