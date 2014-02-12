@@ -1,3 +1,0 @@
-(list
- (cons 'remove (rankings "All" '(193 165 167 197 144) 3680 445))
- (cons 'truncate (rankings "All" '(246 256 200 230 202) 2875 982)))

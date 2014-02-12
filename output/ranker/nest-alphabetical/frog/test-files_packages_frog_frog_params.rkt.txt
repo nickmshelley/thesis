@@ -1,7 +1,0 @@
-(list
- (cons
-  'remove
-  (rankings "test-files/packages/frog/frog/params.rkt" '(0 0 0 0 0) 4 1))
- (cons
-  'truncate
-  (rankings "test-files/packages/frog/frog/params.rkt" '(0 0 3 1 0) 0 1)))
