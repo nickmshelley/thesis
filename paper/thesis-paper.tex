@@ -429,31 +429,21 @@ This method allows auto-completers to test how top completion results fail for d
 
 To verify the rigor and correctness of the testing framework, we ran it against several large real-world Racket packages. Frog is a static website generator, mainly used for generating and updating blogs. Marketplace is a network-aware programming language that handles many problems inherent with distributed programming. Pfds is an implementation of many purely functional data structures written in Typed-Racket.
 
-\section{Textual Heuristics}
+\section{Method Descriptions}
+
+\subsection{Textual Heuristics}
 
 Textual heuristics uses source code tokenization to determine which completions to suggest. Suggestions are prioritized based on proximity.
 
-\subsection{Method Implementation}
-
-This implementation is fairly straightforward. We just separate based on the language's defined delimiters by processing the whole text file with the following regular expression: \scheme{[^\s()[]",'`#|\;]+}
+The implementation is fairly straightforward. We just separate based on the language's defined delimiters by processing the whole text file with the following regular expression: \scheme{[^\s()[]",'`#|\;]+}
 
 The resulting strings and positions are combined into the word struct. When the completer is invoked at a specific position, these results are prioritized based on the following sort order:
 
 \scheme{s(w1, w2) = |(w1 position) - (completer position)| < |(w2 position) - (completer position)|}
 
-\subsection{Ranker Results}
-
-This method had a high percentage of
-
-\subsection{Checker Results}
-
-Stuff
-
-\section{Structural Heuristics}
+\subsection{Structural Heuristics}
 
 The structure of the language can give good hints about how to filter and prioritize completion suggestions. The two ways we did this for Racket are by nesting level and by keywords and position.
-
-\subsection{Method Implementation}
 
 For nesting level, we took each word returned by the textual heuristics method and attached nesting level information to it. We did this by starting at the beginning of the file and keeping track of how many parentheses and brackets had passed. The nesting level was incremented for each opening parenthesis or bracket and decremented for each closing.
 
@@ -461,75 +451,49 @@ This nesting information was then used to prioritize results. Suggestions were o
 
 For language keywords, a regular expression was used to find all function names based on the \scheme{define} and \scheme{let} keywords. We then determined whether the position of the completer invocation was in function application position. In Racket this is a simple check: if the position is directly after an opening parenthesis, it is in function application position. If this was the case, all function names we found previously were prioritized ahead of all other tokens.
 
-\subsection{Ranker Results}
-
-Stuff
-
-\subsection{Checker Results}
-
-Stuff
-
-\section{Macro Heuristics}
+\subsection{Macro Heuristics}
 
 As we've discussed, macros can do arbitrary things to the source code. However, many macros come as part of the language, so we can take advantage of the knowledge of what to expect.
 
 Because auto-completers are focused on identifiers more than functionality, it makes sense to limit macro heuristics to macros that introduce new identifiers. In Racket, the most common of these are \scheme{#lang}, \scheme{require}, and \scheme{define-struct}.
 
-\subsection{Method Implementation}
-
 The implementation makes use of Racket namespaces and dynamic evaluation. For both \scheme{#lang} and \scheme{require}, we find macros of this kind using a regular expression and then \scheme{dynamic-require} them into a new empty namespace. The resulting list of mapped symbols in that namespace is the list of identifiers introduced by those macros.
 
 With structs, we again find uses by processing the file with a regular expression. However, because there is no pre-defined form for dynamically creating structs, it is necessary to \scheme{eval} the resulting forms in a new namespace. Again, the resulting identifiers are queried from the namespace and added to the previous list.
 
-\subsection{Ranker Results}
-
-Stuff
-
-\subsection{Checker Results}
-
-Stuff
-
-\section{Macro Analysis}
+\subsection{Macro Analysis}
 
 The only sure way to know what identifiers are available in the presence of the problems listed above is to fully expand and link the program. The downside to this is that the source has to be compilable for this to work. The upside is that the information gained is the most accurate.
 
 Because getting any results requires the file to compile without errors, we did not use the truncate source alteration method for any of these tests.
 
-\subsection{Method Implementation}
-
 Racket source files can be expanded and compiled to byte code with \scheme{zo-parse}. The result of this process is .zo file that contains all the information needed to run the program.
 
 The two pieces of information we used for the completer were required identifiers and top level (or global) identifiers. These are tokens that could most likely be used at any point in the program.
 
-\subsection{Ranker Results}
-
-Stuff
-
-\subsection{Checker Results}
-
-Stuff
-
-\section{Combined}
+\subsection{Combined}
 
 We hypothesized that a select combination of all the above methods would give the best results. Because all of the methods could just be called one after the other, the real problem was deciding how to order them.
 
-\subsection{Method Implementation}
+We found the best results by putting nesting structural heuristics results first, then just appending the results of macro analysis in alphabetical order.
 
-We found the best results by putting text heuristics results first, ordered by functions (if the token is in function application position), then by proximity. We then just appended the results of macro heuristics in alphabetical order.
+\section{Ranker Results}
 
-\subsection{Ranker Results}
+Looking at the methods individually, the textual methods did a much better job than the macro methods at not only including expected tokens in the list of results, but also prioritizing them well. Even though macro heuristics and analysis suggested many of the correct tokens, almost none of the results were in the top five positions. This is mainly because textural heuristics are done on the source code, making different ordering algorithms easy to experiment with and use. On the other hand, macro heuristics and analysis are more meta by nature, not lending themselves to obvious sorting algorithms, leaving alphabetical the main alternative.
 
-Stuff
+Among the textual methods, sorting by nesting level was by far the most effective. Of the tokens that correctly made it into the list of results, nearly 45% of them were ranked in the top five, as opposed to less than 25% for the other two textual methods.
 
-\subsection{Checker Results}
+Of the macro methods, macro analysis did roughly 25% better than macro heuristics. This makes sense as macro analysis is actually compiling the code to get fully expanded macros as well as all external dependencies. However, the fact that macro heuristics did so well in comparison makes it a good fallback for when the code is in an uncompilable state.
 
-Stuff
+It is also interesting to note that truncating the text (as opposed to simply removing the token) adversely affected the textual methods as expected, but the macro methods were barely affected at all.
+
+Since macro analysis did better in the macro camp and nesting level did better in the textual camp, we decided to combine the two. Nesting level did much better at ordering, so those results were ordered first, with macro analysis results appended. The results were that the results showing up in the top five spots stayed about the same, whereas the results that didn't show up at all were decreased by about 75%. This shows that the results provided by the two methods were significantly non-overlapping.
+
+\section{Checker Results}
 
 \chapter{Conclusions}
 
 Stuff
-
-\nocite{testentry}
 
 \bibliographystyle{plainnat}
 \bibliography{bib}
