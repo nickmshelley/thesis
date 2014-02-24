@@ -120,7 +120,7 @@
   (flatten
    (append
     (regexp-match* #px"\\(define[\\s]\\(([^\\s\\)]+)" text-string #:match-select cdr)
-    (regexp-match* #px"\\(let[\\s](\\S+)" text-string #:match-select cdr))))
+    (regexp-match* #px"\\(let[\\s]+([^(]+)[\\s]+\\([\\S]+\\)" text-string #:match-select cdr))))
 (module+ test
-  (check-equal? (get-functions "(define (all b) c) (let good (d) e) (define (boys) f) (let go () g) (define bad h)")
+  (check-equal? (get-functions "(define (all b) c) (let good (d) e) (define (boys) f) (let go () g) (define bad h) (let ([x 5]) x)")
                 (list "all" "boys" "good" "go")))

@@ -16,6 +16,7 @@
           (list 'bytecode 1425 15301)
           (list 'combined 2496 11131)))
   (display-checker remove-results "Remove")
+  (display-checker-percent (percent-results remove-results) "Remove Percent")
   (define truncate-results
     (list (list 'proximity 2228 11758)
           (list 'nest 2309 11573)
@@ -23,7 +24,15 @@
           (list 'macros 1667 16840)
           (list 'bytecode 1487 15109)
           (list 'combined 2246 11904)))
-  (display-checker truncate-results "Truncate"))
+  (display-checker truncate-results "Truncate")
+  (display-checker-percent (percent-results truncate-results) "Truncate Percent"))
+
+(define (percent-results results)
+  (for/list ([l (in-list results)])
+    (list (first l)
+          (* 100
+             (/ (second l)
+                (+ (second l) (third l)))))))
 
 (define (produce-ranker-graphs)
   (define remove-results
@@ -62,8 +71,25 @@
       #:skip skip #:x-min i #:y-min .1 #:label label #:color color #:line-color color))
    (format "/Users/heather/Nick/thesis/thesis/output/synthesis/checker/~a.png" name)
    #:title name
-   #:x-label "Rank"
+   #:x-label " "
    #:y-label "Amount"
+   #:height 800
+   #:width 1800))
+
+(define (display-checker-percent results name)
+  (plot-file
+   (for/list ([res (in-list results)]
+              [i (in-range (length results))])
+     (define label (symbol->string (first res)))
+     (define percent (second res))
+     (define color (add1 i))
+     (discrete-histogram
+      (append (list (vector (string->symbol "Percent passed") percent)))
+      #:x-min i #:label label #:color color #:line-color color))
+   (format "/Users/heather/Nick/thesis/thesis/output/synthesis/checker/~a.png" name)
+   #:title name
+   #:x-label " "
+   #:y-label "Percent"
    #:height 800
    #:width 1800))
 

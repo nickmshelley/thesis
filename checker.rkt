@@ -20,7 +20,7 @@
 
 (module+ main
   #;(define methods '(naive nest keywords macros bytecode combined))
-  (define methods '(macros))
+  (define methods '(keywords))
   (unless (directory-exists? "output")
     (make-directory "output"))
   (unless (directory-exists? "output/checker")
@@ -227,7 +227,7 @@
       (or success? error-string)))
   (define-values (passed messages) (partition boolean? res))
   #;(for-each (λ (message)
-                (when (> (length (string-split message "cannot open module file")) 1)
+                (when (> (length (string-split message "to close preceding")) 1)
                   (printf "MESSAGE:~n~a~n" message)))
               messages)
   (word-results word (length passed) messages))
