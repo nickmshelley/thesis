@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/pfds/pfds/tests/bankers-deque-tests.rkt"
-   '(0 2 0 0 0)
-   14
-   1))
+   '(0 0 0 0 0)
+   15
+   2))
  (cons
   'truncate
   (rankings
    "test-files/packages/pfds/pfds/tests/bankers-deque-tests.rkt"
-   '(0 0 0 0 0)
-   13
+   '(0 0 0 0 1)
+   12
    4)))

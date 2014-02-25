@@ -1,58 +1,35 @@
 '((remove
    (passed . 0)
    (failed
-    (total . 15)
-    ("unbound identifier in module" . 7)
-    ("insufficient type information to typecheck. please add more type annotations"
-     .
-     1)
-    ("not allowed in an expression context" . 1)
-    ("Declaration for `State' provided, but `State' has no definition" . 1)
-    ("bad sequence binding clause" . 1)
-    ("expected 1 and got 2" . 1)
-    ("bad syntax" . 1)
-    ("not allowed as an expression" . 1)
-    ("Expected a function of type (Orientation -> ((process State) vm -> (values (U False (process State)) vm))), but got a function with the wrong arity"
-     .
-     1)))
-  (truncate
-   (passed . 0)
-   (failed
-    (total . 125)
-    ("unbound identifier in module" . 55)
-    ("expected a `)' to close `('" . 13)
-    ("type name used out of context" . 5)
-    ("not a require sub-form" . 5)
-    ("must be used in a definition context" . 5)
-    ("Declaration for `notify-route-change-self' provided, but `notify-route-change-self' has no definition"
-     .
-     4)
-    ("Declaration for `notify-route-change-vm' provided, but `notify-route-change-vm' has no definition"
-     .
-     4)
-    ("(State)" . 4)
+    (total . 32)
+    ("unbound identifier in module" . 14)
+    ("not allowed as an expression" . 6)
+    ("expected a `module' declaration" . 5)
     ("bad syntax (multiple types after identifier)" . 4)
-    ("(SNew)" . 4)
-    ("duplicate argument identifier" . 3)
-    ("variable used twice in pattern" . 3)
-    ("not allowed as an expression" . 2)
     ("bad syntax" . 2)
-    ("bad syntax;" . 2)
-    ("duplicate type variable" . 1)
-    ("(send-to-user p (e) failure-result enclosed-expr)" . 1)
-    ("not allowed in an expression context" . 1)
-    ("missing `)' to close `(' on line 103, found instead `]'; indentation suggests a missing `)' before line 104"
-     .
-     1)
-    ("missing `)' to close `(' on line 104, found instead `]'; indentation suggests a missing `)' before line 107"
-     .
-     1)
-    ("(send-to-user* debug-name pid (e) failure-result enclosed-expr)" . 1)
-    ("expected annotated-formals" . 1)
-    ("missing `)' to close `(' on line 77, found instead `]'; indentation suggests a missing `)' before line 80"
-     .
-     1)
-    ("bad syntax (multiple expressions after identifier)" . 1)
-    ("missing `)' to close `(' on line 104, found instead `]'; indentation suggests a missing `)' before line 106"
-     .
-     1))))
+    ("missing type" . 1)))
+  (truncate
+   (passed . 183)
+   (failed
+    (total . 202)
+    ("unbound identifier in module" . 103)
+    ("Illegal clause in endpoint definition" . 29)
+    ("syntax error in pattern" . 16)
+    ("not a provide sub-form" . 9)
+    ("bad syntax" . 7)
+    ("missing `]' to close `[' on line 274, found instead `)'" . 5)
+    ("missing argument expression after keyword" . 5)
+    ("not a require sub-form" . 5)
+    ("(subscriber topic clause ...)" . 4)
+    ("identifier is not bound to struct type information" . 4)
+    ("Illegal use of on-absence outside endpoint definition context" . 3)
+    ("duplicate argument identifier" . 3)
+    ("multiple bindings of `local-hostname' in the same clause" . 1)
+    ("Illegal use of on-message outside endpoint definition context" . 1)
+    ("(observe-publishers topic clause ...)" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("this match expander must be used inside match" . 1)
+    ("illegal use of syntax" . 1)
+    ("type name used out of context" . 1)
+    ("bad syntax (no expressions for procedure body)" . 1)
+    ("Illegal use of match-state outside endpoint definition context" . 1))))

@@ -1,7 +1,2 @@
-'((remove
-   (passed . 0)
-   (failed
-    (total . 3)
-    ("cannot open module file" . 2)
-    ("unbound identifier in module" . 1)))
+'((remove (passed . 3) (failed (total . 0)))
   (truncate (passed . 0) (failed (total . 0))))

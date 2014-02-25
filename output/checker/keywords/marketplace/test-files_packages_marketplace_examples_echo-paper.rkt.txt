@@ -1,17 +1,35 @@
 '((remove
-   (passed . 0)
-   (failed
-    (total . 16)
-    ("unbound identifier in module" . 5)
-    ("expected a `module' declaration" . 5)
-    ("Illegal clause in endpoint definition" . 5)
-    ("wildcard not allowed as an expression" . 1)))
-  (truncate
    (passed . 2)
    (failed
-    (total . 8)
-    ("wildcard not allowed as an expression" . 2)
-    ("Illegal use of on-message outside endpoint definition context" . 2)
-    ("unbound identifier in module" . 2)
+    (total . 15)
+    ("Illegal clause in endpoint definition" . 5)
+    ("collection not found" . 4)
     ("(subscriber topic clause ...)" . 1)
-    ("arity mismatch;" . 1))))
+    ("(publisher topic clause ...)" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("not allowed in an expression context" . 1)
+    ("bad syntax" . 1)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ?"
+     .
+     1)))
+  (truncate
+   (passed . 55)
+   (failed
+    (total . 40)
+    ("missing `]' to close `[' on line 23, found instead `)'; indentation suggests a missing `)' before line 47"
+     .
+     10)
+    ("not allowed in an expression context" . 5)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 5)
+    ("not a provide sub-form" . 4)
+    ("no binding for identifier" . 3)
+    ("identifier already provided (as a different binding)" . 3)
+    ("duplicate argument identifier" . 3)
+    ("unbound identifier in module (in the transformer environment, which does not include the macro definition that is visible to run-time expressions)"
+     .
+     2)
+    ("pattern variable cannot be used outside of a template" . 1)
+    ("bad syntax;" . 1)
+    ("bad syntax" . 1)
+    ("allowed only around a module body" . 1)
+    ("duplicate definition for identifier" . 1))))

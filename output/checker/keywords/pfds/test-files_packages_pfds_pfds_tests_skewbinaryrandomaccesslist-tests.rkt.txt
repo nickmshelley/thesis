@@ -1,21 +1,62 @@
 '((remove
-   (passed . 0)
+   (passed . 2)
    (failed
-    (total . 19)
-    ("found a test that is not at the top level" . 8)
-    ("unbound identifier in module" . 6)
-    ("collection not found" . 3)
-    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found"
+    (total . 100)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
      .
-     1)
-    ("type name used out of context" . 1)))
+     37)
+    ("unbound identifier in module" . 13)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     7)
+    ("found a test that is not at the top level" . 7)
+    ("expected identifier" . 5)
+    ("Polymorphic function `->list' could not be applied to arguments" . 4)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 4)
+    ("Polymorphic function `list-set' could not be applied to arguments" . 3)
+    ("Bad arguments to polymorphic function in apply" . 3)
+    ("identifier is already imported" . 2)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     2)
+    ("collection not found" . 2)
+    ("Polymorphic function `list-map' could not be applied to arguments" . 2)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `list-length' could not be applied to arguments"
+     .
+     2)
+    ("bad syntax" . 1)
+    ("Polymorphic function `list-foldl' could not be applied to arguments" . 1)
+    ("" . 1)
+    ("bad module path" . 1)
+    ("Polymorphic function `filter' could not be applied to arguments" . 1)))
   (truncate
    (passed . 0)
    (failed
-    (total . 24)
-    ("unbound identifier in module" . 10)
-    ("found a test that is not at the top level" . 8)
-    ("collection not found" . 2)
-    ("cannot open module file" . 2)
-    ("pfds/queue/implicit" . 1)
-    ("bad syntax" . 1))))
+    (total . 97)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     35)
+    ("unbound identifier in module" . 19)
+    ("found a test that is not at the top level" . 9)
+    ("Cannot apply expression of type Negative-Fixnum, since it is not a function type"
+     .
+     7)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     5)
+    ("Polymorphic function `remove' could not be applied to arguments" . 4)
+    ("Polymorphic function `->list' could not be applied to arguments" . 4)
+    ("Polymorphic function `list-length' could not be applied to arguments"
+     .
+     4)
+    ("Polymorphic function `cons' could not be applied to arguments" . 2)
+    ("Polymorphic function `list-foldl' could not be applied to arguments" . 2)
+    ("Polymorphic function `list-ref' could not be applied to arguments" . 1)
+    ("Polymorphic function `drop' could not be applied to arguments" . 1)
+    ("Wrong number of arguments, expected 1 and got 2" . 1)
+    ("Polymorphic function `tail' could not be applied to arguments" . 1)
+    ("type name used out of context" . 1)
+    ("must be used in a definition context" . 1))))

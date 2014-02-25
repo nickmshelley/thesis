@@ -1,15 +1,19 @@
 '((remove
-   (passed . 2)
+   (passed . 0)
    (failed
-    (total . 13)
-    ("identifier already provided (as a different binding)" . 8)
+    (total . 15)
+    ("identifier already provided (as a different binding)" . 5)
     ("not a provide sub-form" . 4)
+    ("illegal use of syntax" . 2)
+    ("unbound identifier in module" . 2)
+    ("not a require sub-form" . 1)
     ("bad syntax for provide sub-form" . 1)))
   (truncate
    (passed . 5)
    (failed
     (total . 10)
-    ("identifier already provided (as a different binding)" . 9)
+    ("unbound identifier in module" . 5)
+    ("identifier already provided (as a different binding)" . 4)
     ("identifier to remove `udp.rkt' not included in nested provide spec"
      .
      1))))

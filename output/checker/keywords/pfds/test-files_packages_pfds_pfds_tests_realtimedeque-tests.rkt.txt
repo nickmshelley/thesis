@@ -1,18 +1,41 @@
 '((remove
    (passed . 0)
    (failed
-    (total . 25)
-    ("type name used out of context" . 8)
-    ("found a test that is not at the top level" . 6)
-    ("expected a `module' declaration" . 5)
-    ("unbound identifier in module" . 4)
-    ("(empty A)" . 2)))
+    (total . 21)
+    ("unbound identifier in module" . 7)
+    ("found a test that is not at the top level" . 7)
+    ("bad syntax" . 3)
+    ("type name used out of context" . 3)
+    ("(empty A)" . 1)))
   (truncate
    (passed . 0)
    (failed
-    (total . 26)
-    ("found a test that is not at the top level" . 16)
-    ("unbound identifier in module" . 7)
-    ("not allowed in an expression context" . 1)
-    ("not at module level or top level" . 1)
-    ("type name used out of context" . 1))))
+    (total . 47)
+    ("unbound identifier in module" . 13)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     10)
+    ("Cannot apply expression of type Negative-Fixnum, since it is not a function type"
+     .
+     5)
+    ("found a test that is not at the top level" . 4)
+    ("Polymorphic function `filter' could not be applied to arguments" . 4)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     2)
+    ("#<syntax Shallow> ((U Zero (One Nothing)))), since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 1)
+    ("Polymorphic function `tail' could not be applied to arguments" . 1)
+    ("Polymorphic function `queue->list' could not be applied to arguments"
+     .
+     1)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `head' could not be applied to arguments" . 1)
+    ("not an identifier, identifier with default, or keyword" . 1)
+    ("Polymorphic function `build-list' could not be applied to arguments"
+     .
+     1))))

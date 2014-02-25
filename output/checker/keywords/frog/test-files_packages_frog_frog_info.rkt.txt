@@ -1,4 +1,2 @@
-'((remove (passed . 5) (failed (total . 0)))
-  (truncate
-   (passed . 1)
-   (failed (total . 4) ("not a well-formed definition" . 4))))
+'((remove (passed . 0) (failed (total . 5) ("collection not found" . 5)))
+  (truncate (passed . 0) (failed (total . 1) ("collection not found" . 1))))

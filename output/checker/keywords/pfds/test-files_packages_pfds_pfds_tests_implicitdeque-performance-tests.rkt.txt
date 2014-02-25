@@ -1,47 +1,13 @@
 '((remove
    (passed . 0)
    (failed
-    (total . 7)
-    ("unbound identifier in module" . 3)
-    ("contract violation" . 3)
-    ("bad syntax" . 1)))
+    (total . 10)
+    ("unbound identifier in module" . 6)
+    ("collection not found" . 3)
+    ("cannot open module file" . 1)))
   (truncate
    (passed . 0)
    (failed
-    (total . 68)
-    ("found a test that is not at the top level" . 12)
-    ("Bad arguments to polymorphic function in apply" . 10)
-    ("unbound identifier in module" . 9)
-    ("Polymorphic function `stream->list' could not be applied to arguments"
-     .
-     7)
-    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
-     .
-     5)
-    ("Cannot apply expression of type Null, since it is not a function type"
-     .
-     3)
-    ("Cannot apply expression of type One, since it is not a function type"
-     .
-     3)
-    ("Polymorphic function `append' could not be applied to arguments" . 3)
-    ("Polymorphic function `take' could not be applied to arguments" . 2)
-    ("" . 2)
-    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
-     .
-     1)
-    ("Polymorphic function `cdr' could not be applied to arguments" . 1)
-    ("collection not found" . 1)
-    ("cannot open module file" . 1)
-    ("Polymorphic function `drop' could not be applied to arguments" . 1)
-    ("Polymorphic function `stream-car' could not be applied to arguments" . 1)
-    ("Cannot apply expression of type Zero, since it is not a function type"
-     .
-     1)
-    ("Polymorphic function `stream-cdr' could not be applied to arguments" . 1)
-    ("type name used out of context" . 1)
-    ("no expression after a sequence of internal definitions" . 1)
-    ("Cannot apply expression of type Integer, since it is not a function type"
-     .
-     1)
-    ("expected annotated-formals" . 1))))
+    (total . 10)
+    ("unbound identifier in module" . 5)
+    ("contract violation" . 5))))

@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/marketplace/support/spy.rkt"
-   '(0 0 0 0 1)
-   4
-   5))
+   '(0 0 0 1 0)
+   2
+   7))
  (cons
   'truncate
   (rankings
    "test-files/packages/marketplace/support/spy.rkt"
    '(1 0 0 0 0)
-   3
-   6)))
+   1
+   8)))

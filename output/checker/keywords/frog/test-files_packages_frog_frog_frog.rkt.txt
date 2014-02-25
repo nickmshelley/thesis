@@ -1,166 +1,82 @@
 '((remove
-   (passed . 461)
+   (passed . 498)
    (failed
-    (total . 463)
-    ("unbound identifier in module" . 194)
-    ("missing `]' to close preceding `[', found instead `)'" . 72)
-    ("bad syntax" . 22)
-    ("unexpected `)'" . 16)
-    ("expected a `)' to close `('" . 15)
-    ("duplicate definition for identifier" . 12)
-    ("wildcard not allowed as an expression" . 9)
-    ("syntax error in pattern" . 8)
-    ("not allowed as an expression" . 8)
-    ("unexpected `]'" . 6)
+    (total . 427)
+    ("unbound identifier in module" . 254)
+    ("wildcard not allowed as an expression" . 21)
+    ("unexpected `)'" . 20)
+    ("not allowed as an expression" . 16)
+    ("bad syntax" . 15)
+    ("syntax error in pattern" . 15)
+    ("expected a `)' to close `('" . 10)
+    ("missing `]' to close preceding `[', found instead `)'" . 10)
+    ("duplicate definition for identifier" . 10)
+    ("duplicate argument identifier" . 8)
+    ("not allowed in an expression context" . 7)
+    ("duplicate binding name" . 6)
+    ("missing `)' to close `(' on line 425, found instead `]'; indentation suggests a missing `)' before line 428"
+     .
+     5)
+    ("variable not bound in all or patterns" . 5)
+    ("missing `)' to close `(' on line 592, found instead `]'; indentation suggests a missing `)' before line 593"
+     .
+     5)
+    ("missing `)' to close `(' on line 425, found instead `]'; indentation suggests a missing `)' before line 426"
+     .
+     5)
+    ("missing `)' to close `(' on line 425, found instead `]'; indentation suggests a missing `)' before line 430"
+     .
+     5)
+    ("incorrect use of ... in pattern" . 3)
+    ("misuse of unit import and export keyword" . 3)
+    ("misuse of unit import keyword" . 1)
+    ("misuse of module-path constructor (not within, e.g., `require' or `provide')"
+     .
+     1)
+    ("not in a definition context" . 1)
+    ("contract violation" . 1)))
+  (truncate
+   (passed . 561)
+   (failed
+    (total . 364)
+    ("unbound identifier in module" . 214)
+    ("bad syntax" . 25)
+    ("duplicate definition for identifier" . 15)
+    ("missing `]' to close preceding `[', found instead `)'" . 10)
+    ("not allowed in an expression context" . 8)
     ("duplicate argument identifier" . 6)
+    ("expected `)' to close `(' on line 192, found instead `]'" . 5)
+    ("missing `)' to close `(' on line 425, found instead `]'; indentation suggests a missing `)' before line 431"
+     .
+     5)
+    ("missing `]' to close `[' on line 425, found instead `)'" . 5)
+    ("expected a `)' to close `('" . 5)
     ("missing `)' to close `(' on line 700, found instead `]'; indentation suggests a missing `)' before line 701"
      .
      5)
-    ("expected `)' to close `(' on line 324, found instead `]'" . 5)
-    ("variable not bound in all or patterns" . 5)
+    ("expected `)' to close `(' on line 201, found instead `]'" . 5)
+    ("missing `)' to close `(' on line 361, found instead `]'; indentation suggests a missing `)' before line 362"
+     .
+     5)
+    ("syntax error in pattern" . 5)
+    ("unexpected `)'" . 5)
     ("missing `]' to close `[' on line 116, found instead `)'" . 5)
-    ("expected a `]' to close `['" . 5)
-    ("expected `)' to close `(' on line 192, found instead `]'" . 5)
-    ("missing `)' to close `(' on line 425, found instead `]'; indentation suggests a missing `)' before line 432"
+    ("missing `]' to close `[' on line 360, found instead `)'" . 5)
+    ("missing `)' to close `(' on line 447, found instead `]'; indentation suggests a missing `)' before line 457"
      .
      5)
-    ("missing `)' to close `(' on line 433, found instead `]'" . 5)
-    ("missing `)' to close `(' on line 425, found instead `]'; indentation suggests a missing `)' before line 427"
-     .
-     5)
-    ("duplicate binding name" . 4)
-    ("not allowed in an expression context" . 4)
-    ("arity mismatch;" . 4)
-    ("collection not found" . 2)
-    ("misuse of unit import and export keyword" . 2)
-    ("missing `]' to close `[' on line 102, found instead `)'; indentation suggests a missing `)' before line 103"
-     .
-     1)
-    ("allowed only in a module body" . 1)
-    ("bad module path" . 1)
-    ("missing `]' to close `[' on line 342, found instead `)'" . 1)
-    ("missing `]' to close `[' on line 675, found instead `)'; indentation suggests a missing `)' before line 676"
-     .
-     1)
-    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 249"
-     .
-     1)
-    ("missing `]' to close `[' on line 54, found instead `)'; indentation suggests a missing `]' before line 55"
-     .
-     1)
-    ("missing `]' to close `[' on line 171, found instead `)'; indentation suggests a missing `]' before line 172"
-     .
-     1)
-    ("ellipses not allowed as an expression" . 1)
-    ("contract violation" . 1)
-    ("missing `]' to close `[' on line 409, found instead `)'; indentation suggests a missing `]' before line 410"
-     .
-     1)
-    ("identifier `net/uri-codec' not included in nested require spec" . 1)
-    ("identifier `only-in' not included in nested require spec" . 1)
-    ("identifier `xml' not included in nested require spec" . 1)
-    ("identifier `net/url' not included in nested require spec" . 1)
-    ("missing `]' to close `[' on line 384, found instead `)'; indentation suggests a missing `]' before line 385"
-     .
-     1)
-    ("missing `]' to close `[' on line 394, found instead `)'; indentation suggests a missing `]' before line 395"
-     .
-     1)
-    ("missing `]' to close `[' on line 186, found instead `)'" . 1)
-    ("missing `]' to close `[' on line 334, found instead `)'; indentation suggests a missing `)' before line 335"
-     .
-     1)
-    ("missing `]' to close `[' on line 713, found instead `)'" . 1)
-    ("missing `]' to close `[' on line 382, found instead `)'; indentation suggests a missing `]' before line 383"
-     .
-     1)
-    ("missing `]' to close `[' on line 323, found instead `)'; indentation suggests a missing `]' before line 324"
-     .
-     1)
-    ("unexpected `}'" . 1)
-    ("missing `]' to close `[' on line 565, found instead `)'; indentation suggests a missing `]' before line 566"
-     .
-     1)
-    ("duplicate identifier as sequence binding" . 1)
-    ("missing `]' to close `[' on line 146, found instead `)'; indentation suggests a missing `]' before line 147"
-     .
-     1)
-    ("misuse of module-path constructor (not within, e.g., `require' or `provide')"
-     .
-     1)
-    ("missing `]' to close `[' on line 777, found instead `)'; indentation suggests a missing `]' before line 779"
-     .
-     1)
-    ("missing `]' to close `[' on line 371, found instead `)'" . 1)
-    ("missing `]' to close `[' on line 210, found instead `)'; indentation suggests a missing `]' before line 218"
-     .
-     1)
-    ("missing `]' to close `[' on line 93, found instead `)'; indentation suggests a missing `)' before line 94"
-     .
-     1)
-    ("missing `]' to close `[' on line 253, found instead `)'" . 1)
-    ("missing `]' to close `[' on line 511, found instead `)'; indentation suggests a missing `]' before line 512"
-     .
-     1)
-    ("missing `]' to close `[' on line 362, found instead `)'; indentation suggests a missing `]' before line 363"
-     .
-     1)))
-  (truncate
-   (passed . 490)
-   (failed
-    (total . 434)
-    ("unbound identifier in module" . 212)
-    ("missing `]' to close preceding `[', found instead `)'" . 44)
-    ("bad syntax" . 24)
-    ("duplicate definition for identifier" . 21)
-    ("unexpected `)'" . 20)
-    ("syntax error in pattern" . 19)
-    ("expected a `)' to close `('" . 10)
-    ("not allowed as an expression" . 7)
-    ("misuse of unit import and export keyword" . 6)
-    ("expected `)' to close `(' on line 247, found instead `]'" . 5)
-    ("not allowed in an expression context" . 5)
-    ("missing `)' to close `(' on line 425, found instead `]'; indentation suggests a missing `)' before line 432"
-     .
-     5)
-    ("variable not bound in all or patterns" . 5)
-    ("missing `)' to close `(' on line 433, found instead `]'" . 5)
-    ("expected `)' to close `(' on line 323, found instead `]'" . 5)
     ("missing `]' to close `[' on line 448, found instead `)'" . 5)
-    ("wildcard not allowed as an expression" . 4)
     ("not a require sub-form" . 4)
-    ("ellipses not allowed as an expression" . 3)
-    ("contract violation" . 3)
-    ("incorrect use of ... in pattern" . 2)
-    ("duplicate binding name" . 2)
-    ("duplicate argument identifier" . 2)
-    ("identifier is already imported" . 1)
-    ("missing `]' to close `[' on line 671, found instead `)'" . 1)
+    ("wildcard not allowed as an expression" . 3)
+    ("variable not bound in all or patterns" . 3)
+    ("incorrect use of ... in pattern" . 3)
     ("misuse of module-path constructor (not within, e.g., `require' or `provide')"
      .
-     1)
-    ("missing `}' to close `{' on line 174, found instead `)'; indentation suggests a missing `}' before line 176"
-     .
-     1)
-    ("missing `]' to close `[' on line 567, found instead `)'; indentation suggests a missing `]' before line 568"
-     .
-     1)
-    ("missing `]' to close `[' on line 584, found instead `)'" . 1)
-    ("missing `]' to close `[' on line 637, found instead `)'" . 1)
-    ("bad syntax for require sub-form" . 1)
-    ("missing `]' to close `[' on line 562, found instead `)'; indentation suggests a missing `]' before line 563"
-     .
-     1)
-    ("missing `]' to close `[' on line 621, found instead `)'" . 1)
-    ("missing `]' to close `[' on line 611, found instead `)'; indentation suggests a missing `]' before line 612"
-     .
-     1)
-    ("unbound identifier;" . 1)
-    ("missing `}' to close `{' on line 174, found instead `)'; indentation suggests a missing `}' before line 178"
-     .
-     1)
-    ("missing `]' to close `[' on line 524, found instead `)'" . 1)
-    ("no expression after a sequence of internal definitions" . 1)
-    ("missing `}' to close preceding `{', found instead `)'; indentation suggests a missing `}' before line 222"
+     2)
+    ("not in a definition context" . 2)
+    ("ellipses not allowed as an expression" . 1)
+    ("not allowed as an expression" . 1)
+    ("duplicate binding name" . 1)
+    ("missing `}' to close `{' on line 221, found instead `)'; indentation suggests a missing `}' before line 224"
      .
      1))))

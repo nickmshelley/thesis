@@ -1,6 +1,10 @@
-'((remove (passed . 10) (failed (total . 0)))
+'((remove (passed . 5) (failed (total . 5) ("not a provide sub-form" . 5)))
   (truncate
-   (passed . 8)
+   (passed . 18)
    (failed
-    (total . 2)
-    ("identifier already provided (as a different binding)" . 2))))
+    (total . 38)
+    ("unbound identifier in module" . 17)
+    ("syntax error in pattern" . 13)
+    ("Illegal use of on-message outside endpoint definition context" . 4)
+    ("wildcard not allowed as an expression" . 3)
+    ("Illegal use of on-absence outside endpoint definition context" . 1))))

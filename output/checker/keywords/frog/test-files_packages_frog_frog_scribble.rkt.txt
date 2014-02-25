@@ -1,35 +1,27 @@
 '((remove
-   (passed . 45)
+   (passed . 43)
    (failed
-    (total . 55)
-    ("unbound identifier in module" . 16)
-    ("missing `)' to close preceding `(', found instead `]'" . 15)
-    ("missing `]' to close `[' on line 78, found instead `)'; indentation suggests a missing `]' before line 79"
-     .
-     5)
-    ("missing `]' to close `[' on line 77, found instead `)'; indentation suggests a missing `]' before line 78"
-     .
-     5)
-    ("syntax error in pattern" . 5)
+    (total . 57)
+    ("unbound identifier in module" . 30)
+    ("missing `]' to close preceding `[', found instead `)'" . 10)
+    ("expected `)' to close `(' on line 62, found instead `]'" . 5)
     ("procedure does not accept keyword arguments" . 3)
-    ("duplicate binding name" . 2)
-    ("ellipses not allowed as an expression" . 1)
-    ("incorrect use of ... in pattern" . 1)
-    ("illegal use of `.'" . 1)
-    ("wildcard not allowed as an expression" . 1)))
-  (truncate
-   (passed . 32)
-   (failed
-    (total . 65)
-    ("unbound identifier in module" . 39)
-    ("missing `)' to close preceding `(', found instead `]'" . 5)
-    ("missing `]' to close `[' on line 69, found instead `)'; indentation suggests a missing `)' before line 73"
-     .
-     5)
-    ("wildcard not allowed as an expression" . 4)
-    ("ellipses not allowed as an expression" . 3)
     ("unbound identifier;" . 2)
     ("duplicate argument identifier" . 2)
-    ("non-list pattern inside unquote-splicing" . 2)
-    ("incorrect use of ... in pattern" . 2)
-    ("not a provide sub-form" . 1))))
+    ("duplicate argument name" . 1)
+    ("illegal use of `.'" . 1)
+    ("unexpected `)'" . 1)
+    ("bad syntax" . 1)
+    ("wildcard not allowed as an expression" . 1)))
+  (truncate
+   (passed . 54)
+   (failed
+    (total . 76)
+    ("unbound identifier in module" . 52)
+    ("missing `]' to close preceding `[', found instead `)'" . 10)
+    ("missing `]' to close `[' on line 35, found instead `)'" . 5)
+    ("unbound identifier;" . 3)
+    ("incorrect use of ... in pattern" . 3)
+    ("non-list pattern inside unquote-splicing" . 1)
+    ("illegal use of `.'" . 1)
+    ("ellipses not allowed as an expression" . 1))))

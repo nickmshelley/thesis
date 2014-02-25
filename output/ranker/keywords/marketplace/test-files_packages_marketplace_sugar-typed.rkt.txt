@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/marketplace/sugar-typed.rkt"
-   '(0 0 2 3 1)
+   '(0 1 1 2 4)
    22
-   7))
+   5))
  (cons
   'truncate
   (rankings
    "test-files/packages/marketplace/sugar-typed.rkt"
-   '(0 2 2 2 2)
-   19
-   8)))
+   '(0 1 1 1 1)
+   20
+   11)))

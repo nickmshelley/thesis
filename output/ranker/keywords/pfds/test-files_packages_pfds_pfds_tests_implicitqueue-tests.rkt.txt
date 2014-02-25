@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/pfds/pfds/tests/implicitqueue-tests.rkt"
-   '(0 0 0 1 0)
-   11
+   '(0 0 0 0 0)
+   12
    1))
  (cons
   'truncate
   (rankings
    "test-files/packages/pfds/pfds/tests/implicitqueue-tests.rkt"
-   '(0 0 0 3 0)
-   5
-   5)))
+   '(0 0 0 0 2)
+   9
+   2)))

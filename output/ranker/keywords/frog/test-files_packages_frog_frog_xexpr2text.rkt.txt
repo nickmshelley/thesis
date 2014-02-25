@@ -1,11 +1,7 @@
 (list
  (cons
   'remove
-  (rankings "test-files/packages/frog/frog/xexpr2text.rkt" '(1 0 2 0 0) 23 4))
+  (rankings "test-files/packages/frog/frog/xexpr2text.rkt" '(0 0 1 0 2) 22 5))
  (cons
   'truncate
-  (rankings
-   "test-files/packages/frog/frog/xexpr2text.rkt"
-   '(0 2 0 1 2)
-   13
-   12)))
+  (rankings "test-files/packages/frog/frog/xexpr2text.rkt" '(0 1 1 2 1) 8 17)))

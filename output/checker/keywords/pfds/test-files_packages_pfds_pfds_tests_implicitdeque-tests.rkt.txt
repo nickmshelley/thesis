@@ -1,15 +1,67 @@
 '((remove
    (passed . 0)
    (failed
-    (total . 25)
-    ("unbound identifier in module" . 13)
-    ("found a test that is not at the top level" . 8)
-    ("bad syntax" . 3)
-    ("not an identifier, identifier with default, or keyword" . 1)))
+    (total . 14)
+    ("found a test that is not at the top level" . 9)
+    ("unbound identifier in module" . 3)
+    ("apply requires a final list argument, given only a function argument of type (Listof Any)"
+     .
+     1)
+    ("bad syntax" . 1)))
   (truncate
    (passed . 0)
    (failed
-    (total . 14)
-    ("found a test that is not at the top level" . 12)
-    ("unbound identifier in module" . 1)
-    ("collection not found" . 1))))
+    (total . 156)
+    ("unbound identifier in module" . 39)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     12)
+    ("expected identifier" . 11)
+    ("Bad arguments to polymorphic function in apply" . 9)
+    ("type name used out of context" . 8)
+    ("found a test that is not at the top level" . 8)
+    ("must be used in a definition context" . 6)
+    ("Unbound type name" . 5)
+    ("Unbound type name λ" . 5)
+    ("Polymorphic function `filter' could not be applied to arguments" . 5)
+    ("Unbound type name a" . 4)
+    ("type mismatch" . 4)
+    ("Unbound type name b" . 3)
+    ("bad syntax" . 3)
+    ("Wrong number of arguments, expected 1 and got 7" . 3)
+    ("Polymorphic function `sorted-list' could not be applied to arguments"
+     .
+     3)
+    ("Polymorphic function `delete-min/max' could not be applied to arguments"
+     .
+     2)
+    ("" . 2)
+    ("Polymorphic function `build-list' could not be applied to arguments" . 2)
+    ("not an identifier, identifier with default, or keyword" . 2)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     2)
+    ("Wrong number of arguments, expected at least 2 and got 0" . 1)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     1)
+    ("collection not found" . 1)
+    ("pfds/heap/leftist" . 1)
+    ("cannot open module file" . 1)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Positive-Index, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `cons' could not be applied to arguments" . 1)
+    ("duplicate argument name" . 1)
+    ("Unbound type name x" . 1)
+    ("Unbound type name build-list" . 1)
+    ("Polymorphic function `remove' could not be applied to arguments" . 1)
+    ("bad argument sequence" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("expected annotated-formals" . 1)
+    ("Unbound type name heap" . 1)
+    ("Unbound type name apply" . 1)
+    ("Polymorphic function `merge' could not be applied to arguments" . 1))))

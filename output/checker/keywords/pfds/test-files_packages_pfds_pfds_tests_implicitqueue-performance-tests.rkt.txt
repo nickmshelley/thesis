@@ -1,9 +1,14 @@
 '((remove
    (passed . 0)
-   (failed (total . 2) ("unbound identifier in module" . 2)))
-  (truncate
-   (passed . 1)
    (failed
-    (total . 4)
-    ("not a procedure;" . 2)
-    ("unbound identifier in module" . 2))))
+    (total . 5)
+    ("collection not found" . 3)
+    ("cannot open module file" . 1)
+    ("unbound identifier in module" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 5)
+    ("contract violation" . 3)
+    ("bad syntax" . 1)
+    ("unbound identifier in module" . 1))))

@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/marketplace/drivers/event-relay.rkt"
-   '(1 0 0 1 0)
-   3
-   4))
+   '(1 0 0 0 0)
+   7
+   1))
  (cons
   'truncate
   (rankings
    "test-files/packages/marketplace/drivers/event-relay.rkt"
-   '(0 0 0 1 0)
-   1
-   7)))
+   '(0 1 0 1 0)
+   2
+   5)))

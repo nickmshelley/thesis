@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/pfds/pfds/queue/physicists.rkt"
-   '(0 2 5 8 5)
-   75
-   4))
+   '(2 0 5 5 7)
+   72
+   8))
  (cons
   'truncate
   (rankings
    "test-files/packages/pfds/pfds/queue/physicists.rkt"
-   '(0 4 4 6 2)
-   72
-   11)))
+   '(2 4 3 6 5)
+   64
+   15)))

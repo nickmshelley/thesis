@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/marketplace/support/gui.rkt"
-   '(3 1 0 2 1)
-   85
-   11))
+   '(1 1 2 0 2)
+   84
+   13))
  (cons
   'truncate
   (rankings
    "test-files/packages/marketplace/support/gui.rkt"
-   '(1 2 3 2 5)
-   54
-   36)))
+   '(2 0 2 9 5)
+   53
+   32)))

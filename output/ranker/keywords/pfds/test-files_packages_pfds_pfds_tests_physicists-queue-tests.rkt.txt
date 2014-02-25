@@ -10,6 +10,6 @@
   'truncate
   (rankings
    "test-files/packages/pfds/pfds/tests/physicists-queue-tests.rkt"
-   '(0 0 0 0 0)
-   10
-   3)))
+   '(0 0 0 1 1)
+   7
+   4)))

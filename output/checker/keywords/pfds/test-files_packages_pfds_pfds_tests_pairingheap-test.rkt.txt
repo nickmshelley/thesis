@@ -1,22 +1,101 @@
 '((remove
    (passed . 0)
    (failed
-    (total . 106)
-    ("unbound identifier in module" . 48)
-    ("expected identifier" . 28)
-    ("type name used out of context" . 6)
-    ("duplicate argument name" . 6)
-    ("must be used in a definition context" . 4)
-    ("expected annotated-formals" . 3)
+    (total . 161)
+    ("unbound identifier in module" . 27)
+    ("expected identifier" . 16)
+    ("type name used out of context" . 12)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     11)
+    ("Polymorphic function `heap' could not be applied to arguments" . 10)
+    ("must be used in a definition context" . 8)
+    ("type mismatch" . 7)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     6)
+    ("Polymorphic function `remove' could not be applied to arguments" . 5)
+    ("no expression after a sequence of internal definitions" . 4)
+    ("bad syntax" . 4)
+    ("Unbound type name" . 4)
+    ("Unbound type name λ" . 4)
     ("found a test that is not at the top level" . 3)
-    ("no expression after a sequence of internal definitions" . 2)
-    ("not an identifier, identifier with default, or keyword" . 2)
-    ("bad argument sequence" . 2)
-    ("'" . 1)
-    ("bad syntax" . 1)))
+    ("Bad arguments to polymorphic function in apply" . 3)
+    ("Polymorphic function `sorted-list' could not be applied to arguments"
+     .
+     3)
+    ("Polymorphic function `build-list' could not be applied to arguments" . 3)
+    ("Polymorphic function `delete-min/max' could not be applied to arguments"
+     .
+     3)
+    ("Unbound type name b" . 3)
+    ("Unbound type name a" . 3)
+    ("Polymorphic function `heap-ormap' could not be applied to arguments" . 3)
+    ("duplicate argument name" . 2)
+    ("Wrong number of arguments, expected 1 and got 2" . 2)
+    ("expected annotated-formals" . 2)
+    ("collection not found" . 2)
+    ("'" . 2)
+    ("not an identifier, identifier with default, or keyword" . 1)
+    ("Polymorphic function `merge' could not be applied to arguments" . 1)
+    ("Unbound type name x" . 1)
+    ("Unbound type name +" . 1)
+    ("Polymorphic function `filter' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     1)
+    ("cannot open module file" . 1)
+    ("Polymorphic function `append' could not be applied to arguments" . 1)
+    ("" . 1)))
   (truncate
    (passed . 0)
    (failed
-    (total . 14)
+    (total . 156)
+    ("unbound identifier in module" . 44)
     ("found a test that is not at the top level" . 11)
-    ("unbound identifier in module" . 3))))
+    ("expected identifier" . 11)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     9)
+    ("Polymorphic function `heap' could not be applied to arguments" . 8)
+    ("Unbound type name" . 7)
+    ("type name used out of context" . 7)
+    ("Unbound type name λ" . 6)
+    ("must be used in a definition context" . 5)
+    ("duplicate argument name" . 3)
+    ("Polymorphic function `build-list' could not be applied to arguments" . 3)
+    ("Unbound type name build-list" . 3)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     3)
+    ("expected annotated-formals" . 3)
+    ("Unbound type name a" . 3)
+    ("Polymorphic function `delete-min/max' could not be applied to arguments"
+     .
+     3)
+    ("Polymorphic function `sorted-list' could not be applied to arguments"
+     .
+     3)
+    ("Polymorphic function `heap-andmap' could not be applied to arguments"
+     .
+     3)
+    ("no expression after a sequence of internal definitions" . 2)
+    ("type mismatch" . 2)
+    ("Unbound type name heap" . 2)
+    ("Polymorphic function `heap-ormap' could not be applied to arguments" . 2)
+    ("Unbound type name x" . 2)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `fold' could not be applied to arguments" . 1)
+    ("Unbound type name apply" . 1)
+    ("Unbound type name find-min/max" . 1)
+    ("Polymorphic function `merge' could not be applied to arguments" . 1)
+    ("Wrong number of arguments, expected 1 and got 7" . 1)
+    ("Polymorphic function `remove' could not be applied to arguments" . 1)
+    ("Wrong number of arguments, expected at least 2 and got 0" . 1)
+    ("Unbound type name b" . 1)
+    ("Cannot apply expression of type Positive-Index, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `insert' could not be applied to arguments" . 1))))

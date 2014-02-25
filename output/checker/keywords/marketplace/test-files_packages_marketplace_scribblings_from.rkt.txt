@@ -1,13 +1,13 @@
 '((remove
-   (passed . 0)
+   (passed . 8)
    (failed
-    (total . 10)
-    ("collection not found" . 4)
-    ("too many ellipses in template" . 3)
-    ("variable used twice in pattern" . 2)
-    ("bad module path" . 1)))
+    (total . 2)
+    ("variable used twice in pattern" . 1)
+    ("misplaced ellipsis in pattern (follows other ellipsis)" . 1)))
   (truncate
-   (passed . 5)
+   (passed . 3)
    (failed
-    (total . 5)
-    ("missing ellipsis with pattern variable in template" . 5))))
+    (total . 7)
+    ("collection not found" . 4)
+    ("missing ellipsis with pattern variable in template" . 2)
+    ("bad module path" . 1))))

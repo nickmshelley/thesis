@@ -1,136 +1,91 @@
 '((remove
    (passed . 0)
    (failed
-    (total . 488)
-    ("missing `]' to close preceding `[', found instead `)'" . 265)
-    ("unbound identifier in module" . 44)
-    ("Type variable B must be used with ..." . 24)
-    ("bad syntax" . 20)
+    (total . 299)
+    ("unbound identifier in module" . 84)
+    ("must be used in a definition context" . 26)
+    ("duplicate definition for identifier" . 20)
+    ("Type variable B must be used with ..." . 19)
     ("bad syntax (multiple types after identifier)" . 16)
-    ("expected identifier" . 6)
-    ("duplicate definition for identifier" . 5)
-    ("missing `]' to close `[' on line 252, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 72, found instead `)'; indentation suggests a missing `]' before line 73"
+    ("expected identifier" . 16)
+    ("bad syntax" . 15)
+    ("not allowed as an expression" . 15)
+    ("duplicate argument identifier" . 14)
+    ("type name used out of context" . 6)
+    ("Declaration for `A' provided, but `A' has no definition" . 5)
+    ("Declaration for `list-tenth' provided, but `list-tenth' has no definition"
      .
      5)
-    ("missing `]' to close `[' on line 83, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 185, found instead `)'; indentation suggests a missing `]' before line 186"
-     .
-     5)
-    ("unexpected term" . 5)
-    ("missing `]' to close `[' on line 326, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 284, found instead `)'; indentation suggests a missing `]' before line 285"
-     .
-     5)
-    ("missing `]' to close `[' on line 201, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 145, found instead `)'; indentation suggests a missing `]' before line 146"
-     .
-     5)
-    ("missing `]' to close `[' on line 228, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 231, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 363, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 127, found instead `)'" . 5)
-    ("identifier already provided (as a different binding)" . 4)
-    ("Declaration for `list-map' provided, but `list-map' has no definition"
-     .
-     4)
-    ("Used a type variable (B) not bound with ... as a bound on a ..." . 4)
-    ("Declaration for `list-ormap' provided, but `list-ormap' has no definition"
-     .
-     3)
-    ("duplicate type variable declaration" . 3)
-    ("Declaration for `A' provided, but `A' has no definition" . 3)
-    ("Declaration for `list-andmap' provided, but `list-andmap' has no definition"
-     .
-     3)
-    ("duplicate identifier" . 2)
+    ("not a require sub-form" . 5)
+    ("'" . 5)
     ("Declaration for `local-reverse' provided, but `local-reverse' has no definition"
      .
-     2)
-    ("must be used in a definition context" . 2)
-    ("Declaration for `function' provided, but `function' has no definition"
+     5)
+    ("(A)" . 5)
+    ("Declaration for `list-map' provided, but `list-map' has no definition"
      .
-     2)
-    ("Declaration for `list-length' provided, but `list-length' has no definition"
+     5)
+    ("Declaration for `list-eighth' provided, but `list-eighth' has no definition"
      .
-     1)
-    ("type name used out of context" . 1)
-    ("Declaration for `ls' provided, but `ls' has no definition" . 1)
-    ("duplicate type variable or index" . 1)
-    ("not allowed as an expression" . 1)
-    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+     5)
+    ("Declaration for `tail' provided, but `tail' has no definition" . 5)
+    ("duplicate identifier" . 4)
+    ("Component of case-lambda type was not a function clause" . 3)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 2)
     ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
      .
-     1)
+     2)
+    ("duplicate type variable declaration" . 2)
+    ("Unbound type name ->list" . 1)
+    ("Unbound type name build-list" . 1)
+    ("Unbound type name cons" . 1)
+    ("Unbound type name drop" . 1)
+    ("Unbound type name drop-help" . 1)
     ("Used a type variable (List) not bound with ... as a bound on a ..." . 1)
-    ("Declaration for `C' provided, but `C' has no definition" . 1)
-    ("no binding for identifier" . 1)
-    ("duplicate field identifier" . 1)))
+    ("identifier already provided (as a different binding)" . 1)
+    ("Declaration for `function' provided, but `function' has no definition"
+     .
+     1)
+    ("Declaration for `ls' provided, but `ls' has no definition" . 1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)))
   (truncate
    (passed . 0)
    (failed
-    (total . 345)
-    ("missing `]' to close preceding `[', found instead `)'" . 135)
-    ("unbound identifier in module" . 67)
-    ("bad syntax" . 14)
-    ("Type variable B must be used with ..." . 11)
-    ("bad syntax (multiple types after identifier)" . 8)
+    (total . 283)
+    ("unbound identifier in module" . 118)
+    ("must be used in a definition context" . 24)
+    ("(A)" . 20)
+    ("bad syntax" . 19)
+    ("bad syntax (multiple types after identifier)" . 12)
+    ("Type variable B must be used with ..." . 12)
+    ("syntax error in pattern" . 10)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 8)
     ("duplicate argument identifier" . 6)
-    ("(A)" . 6)
-    ("duplicate definition for identifier" . 6)
-    ("collection not found" . 5)
-    ("missing `]' to close `[' on line 205, found instead `)'; indentation suggests a missing `]' before line 206"
+    ("Declaration for `get-left' provided, but `get-left' has no definition"
      .
      5)
-    ("missing `]' to close `[' on line 241, found instead `)'; indentation suggests a missing `]' before line 242"
+    ("Declaration for `root' provided, but `root' has no definition" . 5)
+    ("Declaration for `delete-root' provided, but `delete-root' has no definition"
      .
      5)
-    ("missing `]' to close `[' on line 247, found instead `)'" . 5)
-    ("must be used in a definition context" . 5)
-    ("missing `]' to close `[' on line 234, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 210, found instead `)'; indentation suggests a missing `)' before line 211"
-     .
-     5)
-    ("missing `]' to close `[' on line 192, found instead `)'; indentation suggests a missing `]' before line 193"
-     .
-     4)
-    ("missing `]' to close `[' on line 167, found instead `)'; indentation suggests a missing `]' before line 168"
-     .
-     4)
-    ("missing `]' to close `[' on line 159, found instead `)'; indentation suggests a missing `]' before line 163"
-     .
-     4)
-    ("missing `]' to close `[' on line 157, found instead `)'; indentation suggests a missing `)' before line 158"
-     .
-     4)
-    ("identifier already provided (as a different binding)" . 3)
-    ("use of a class keyword is not in a class" . 3)
-    ("not a provide sub-form" . 3)
-    ("Used a type variable (B) not bound with ... as a bound on a ..." . 3)
-    ("bad syntax (missing expression after identifier)" . 2)
-    ("Error in macro expansion -- Recursive Type Alias Reference" . 2)
-    ("missing `]' to close `[' on line 84, found instead `)'; indentation suggests a missing `]' before line 85"
-     .
-     2)
-    ("duplicate type variable or index" . 2)
-    ("syntax error in pattern" . 1)
-    ("Declaration for `tree' provided, but `tree' has no definition" . 1)
-    ("Declaration for `the' provided, but `the' has no definition" . 1)
-    ("Declaration for `of' provided, but `of' has no definition" . 1)
-    ("type name used out of context" . 1)
-    ("expected `)' to close preceding `(', found instead `}'" . 1)
-    ("missing `}' to close preceding `{', found instead `)'" . 1)
+    ("expected 4 but got 3" . 5)
+    ("duplicate definition for identifier" . 3)
+    ("duplicate type variable or index" . 3)
+    ("duplicate type variable declaration" . 3)
+    ("not allowed as an expression" . 3)
+    ("Declaration for `tre' provided, but `tre' has no definition" . 3)
+    ("use of a class keyword is not in a class" . 2)
+    ("Declaration for `tree' provided, but `tree' has no definition" . 2)
+    ("not allowed in an expression context" . 2)
+    ("provided identifier not defined or imported for phase 0" . 2)
     ("duplicate field identifier" . 1)
     ("ellipses not allowed as an expression" . 1)
-    ("Declaration for `ins-all' provided, but `ins-all' has no definition" . 1)
-    ("Declaration for `rank' provided, but `rank' has no definition" . 1)
-    ("not allowed in an expression context" . 1)
-    ("duplicate argument name" . 1)
-    ("not a require sub-form" . 1)
-    ("unexpected `)'" . 1)
-    ("duplicate type variable declaration" . 1)
     ("Declaration for `func' provided, but `func' has no definition" . 1)
-    ("Declaration for `accum' provided, but `accum' has no definition" . 1)
-    ("not allowed as an expression" . 1)
-    ("Declaration for `Checks' provided, but `Checks' has no definition" . 1)
-    ("duplicate type variable" . 1))))
+    ("Declaration for `key' provided, but `key' has no definition" . 1)
+    ("duplicate argument name" . 1)
+    ("Declaration for `is' provided, but `is' has no definition" . 1)
+    ("struct does not refer to a structure definition" . 1)
+    ("x does not refer to a structure definition" . 1)
+    ("a does not refer to a structure definition" . 1)
+    ("red does not refer to a structure definition" . 1)
+    ("type name used out of context" . 1))))

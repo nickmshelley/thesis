@@ -1,7 +1,7 @@
 (list
  (cons
   'remove
-  (rankings "test-files/packages/pfds/pfds/trie.rkt" '(0 0 2 3 1) 39 1))
+  (rankings "test-files/packages/pfds/pfds/trie.rkt" '(0 3 1 0 3) 37 2))
  (cons
   'truncate
-  (rankings "test-files/packages/pfds/pfds/trie.rkt" '(0 2 4 1 0) 30 9)))
+  (rankings "test-files/packages/pfds/pfds/trie.rkt" '(0 3 4 0 1) 30 8)))

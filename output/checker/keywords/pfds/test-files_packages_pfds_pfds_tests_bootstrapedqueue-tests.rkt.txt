@@ -1,19 +1,58 @@
 '((remove
    (passed . 0)
    (failed
-    (total . 9)
-    ("found a test that is not at the top level" . 7)
-    ("unbound identifier in module" . 2)))
+    (total . 48)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     9)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     8)
+    ("unbound identifier in module" . 5)
+    ("Polymorphic function `fold' could not be applied to arguments" . 5)
+    ("Cannot apply expression of type Negative-Fixnum, since it is not a function type"
+     .
+     4)
+    ("found a test that is not at the top level" . 4)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     3)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 2)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `head' could not be applied to arguments" . 2)
+    ("Polymorphic function `enqueue' could not be applied to arguments" . 1)
+    ("Polymorphic function `tail' could not be applied to arguments" . 1)
+    ("Polymorphic function `qmap' could not be applied to arguments" . 1)
+    ("type mismatch" . 1)))
   (truncate
    (passed . 0)
    (failed
-    (total . 33)
-    ("unbound identifier in module" . 15)
-    ("found a test that is not at the top level" . 8)
-    ("identifier is already imported" . 3)
-    ("type name used out of context" . 2)
-    ("not at module level or top level" . 1)
-    ("bad syntax" . 1)
-    ("not allowed in an expression context" . 1)
-    ("must be used in a definition context" . 1)
-    ("expected identifier" . 1))))
+    (total . 50)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     12)
+    ("found a test that is not at the top level" . 10)
+    ("Cannot apply expression of type Negative-Fixnum, since it is not a function type"
+     .
+     5)
+    ("Polymorphic function `queue->list' could not be applied to arguments"
+     .
+     4)
+    ("Polymorphic function `filter' could not be applied to arguments" . 4)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     3)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     3)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     3)
+    ("Polymorphic function `enqueue' could not be applied to arguments" . 1)
+    ("unbound identifier in module" . 1)
+    ("Polymorphic function `fold' could not be applied to arguments" . 1)
+    ("Polymorphic function `qmap' could not be applied to arguments" . 1)
+    ("Polymorphic function `tail' could not be applied to arguments" . 1)
+    ("Polymorphic function `head' could not be applied to arguments" . 1))))

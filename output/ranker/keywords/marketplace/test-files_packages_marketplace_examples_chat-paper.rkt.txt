@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/marketplace/examples/chat-paper.rkt"
-   '(0 0 0 3 0)
-   10
-   2))
+   '(1 0 0 0 1)
+   8
+   5))
  (cons
   'truncate
   (rankings
    "test-files/packages/marketplace/examples/chat-paper.rkt"
-   '(0 0 2 0 0)
+   '(0 2 1 2 0)
    5
-   8)))
+   5)))

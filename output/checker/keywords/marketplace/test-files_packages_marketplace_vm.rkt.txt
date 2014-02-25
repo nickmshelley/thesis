@@ -1,35 +1,35 @@
 '((remove
    (passed . 0)
    (failed
-    (total . 133)
-    ("unbound identifier in module" . 52)
-    ("'" . 17)
-    ("missing procedure expression;" . 15)
-    ("must be used in a definition context" . 13)
+    (total . 89)
+    ("unbound identifier in module" . 22)
+    ("'" . 10)
+    ("missing argument expression after keyword" . 6)
     ("type name used out of context" . 5)
-    ("expected a `module' declaration" . 5)
     ("bad syntax (multiple types after identifier)" . 5)
-    ("too many forms in body of All type" . 5)
+    ("Declaration for `process-map' provided, but `process-map' has no definition"
+     .
+     5)
+    ("Declaration for `coproc' provided, but `coproc' has no definition" . 5)
+    ("(State)" . 5)
     ("bad syntax" . 4)
-    ("duplicate argument identifier" . 4)
-    ("duplicate definition for identifier" . 3)
+    ("illegal use of syntax" . 4)
+    ("too many forms in body of All type" . 4)
+    ("Error in macro expansion -- insufficient type information to typecheck. please add more type annotations"
+     .
+     2)
     ("provided identifier not defined or imported for phase 0" . 2)
-    ("insufficient type information to typecheck. please add more type annotations"
-     .
-     1)
-    ("bad syntax (not an identifier for procedure name, and not a nested procedure form)"
-     .
-     1)
-    ("Declaration for `extract-process' provided, but `extract-process' has no definition"
-     .
-     1)))
+    ("duplicate definition for identifier" . 2)
+    ("identifier is not bound to struct type information" . 2)
+    ("Declaration for `A' provided, but `A' has no definition" . 1)
+    ("Declaration for `p' provided, but `p' has no definition" . 1)
+    ("Declaration for `f' provided, but `f' has no definition" . 1)
+    ("must be used in a definition context" . 1)
+    ("Declaration for `wp' provided, but `wp' has no definition" . 1)
+    ("Declaration for `State' provided, but `State' has no definition" . 1)))
   (truncate
    (passed . 0)
    (failed
-    (total . 19)
-    ("unbound identifier in module" . 6)
-    ("expected a `)' to close `('" . 5)
-    ("type name used out of context" . 5)
-    ("must be used in a definition context" . 1)
-    ("State topic clause ...)" . 1)
-    ("bad syntax" . 1))))
+    (total . 80)
+    ("The type of vm-processes cannot be converted to a contract" . 76)
+    ("duplicate argument identifier" . 4))))

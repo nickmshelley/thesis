@@ -1,87 +1,73 @@
 '((remove
-   (passed . 1)
+   (passed . 5)
    (failed
-    (total . 29)
-    ("missing `]' to close preceding `[', found instead `)'" . 6)
-    ("expected a `module' declaration" . 5)
-    ("(A)" . 3)
-    ("type name used out of context" . 3)
-    ("Unbound type name define" . 2)
-    ("Unbound type name force" . 2)
-    ("bad syntax" . 1)
-    ("Polymorphic function `unbox' could not be applied to arguments" . 1)
-    ("(A A)" . 1)
-    ("(Promiseof A)" . 1)
-    ("Unbound type name b" . 1)
-    ("Cannot apply expression of type Procedure, since it is not a function type"
+    (total . 25)
+    ("unbound identifier in module" . 7)
+    ("bad syntax" . 3)
+    ("Polymorphic function `unbox' could not be applied to arguments" . 3)
+    ("Polymorphic function `set-box!' could not be applied to arguments" . 1)
+    ("Unbound type name U" . 1)
+    ("Unbound type name All" . 1)
+    ("Polymorphic function `force' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (Boxof A), since it is not a function type"
      .
      1)
     ("Cannot apply expression of type (Boxof (U (Boxof A) (-> (Boxof A)))), since it is not a function type"
      .
      1)
-    ("unbound identifier in module" . 1)))
+    ("Wrong number of arguments, expected 0 and got 1" . 1)
+    ("Unbound type name force" . 1)
+    ("(A)" . 1)
+    ("Unbound type name define-syntax-rule" . 1)
+    ("Unbound type name delay" . 1)
+    ("Cannot apply expression of type (U (Boxof A) (-> (Boxof A))), since it is not a function type"
+     .
+     1)))
   (truncate
    (passed . 0)
    (failed
-    (total . 374)
-    ("missing `]' to close preceding `[', found instead `)'" . 160)
-    ("unbound identifier in module" . 66)
-    ("bad syntax" . 19)
-    ("bad syntax (multiple types after identifier)" . 18)
-    ("Type variable B must be used with ..." . 10)
-    ("must be used in a definition context" . 7)
-    ("(A)" . 6)
-    ("expected identifier" . 5)
-    ("missing `]' to close `[' on line 252, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 226, found instead `)'; indentation suggests a missing `]' before line 227"
-     .
-     5)
-    ("missing `]' to close `[' on line 206, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 258, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 204, found instead `)'; indentation suggests a missing `]' before line 205"
-     .
-     5)
-    ("missing `]' to close `[' on line 200, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 173, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 104, found instead `)'; indentation suggests a missing `)' before line 105"
-     .
-     4)
-    ("duplicate type variable declaration" . 4)
-    ("syntax error in pattern" . 4)
-    ("Declaration for `phelp-lft' provided, but `phelp-lft' has no definition"
-     .
-     3)
-    ("duplicate argument identifier" . 3)
+    (total . 161)
+    ("unbound identifier in module" . 38)
+    ("bad syntax" . 21)
+    ("duplicate definition for identifier" . 12)
+    ("must be used in a definition context" . 10)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 10)
+    ("Type variable B must be used with ..." . 7)
+    ("(A)" . 7)
     ("Declaration for `heap-andmap' provided, but `heap-andmap' has no definition"
      .
-     3)
-    ("Declaration for `insert' provided, but `insert' has no definition" . 3)
-    ("missing `]' to close `[' on line 52, found instead `)'; indentation suggests a missing `]' before line 53"
+     5)
+    ("Declaration for `build-heap' provided, but `build-heap' has no definition"
+     .
+     5)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("expected identifier" . 5)
+    ("duplicate identifier" . 4)
+    ("Unbound type name A" . 3)
+    ("duplicate type variable" . 3)
+    ("duplicate type variable or index" . 3)
+    ("Unbound type name" . 2)
+    ("Polymorphic function `LeftistHeap-heap' could not be applied to arguments"
      .
      2)
-    ("duplicate identifier" . 2)
-    ("missing `]' to close `[' on line 61, found instead `)'" . 2)
-    ("use of a class keyword is not in a class" . 2)
-    ("missing `]' to close `[' on line 75, found instead `)'; indentation suggests a missing `]' before line 76"
-     .
-     2)
-    ("expected 2 and got 1" . 1)
-    ("Declaration for `r' provided, but `r' has no definition" . 1)
-    ("Declaration for `e' provided, but `e' has no definition" . 1)
-    ("Declaration for `pair' provided, but `pair' has no definition" . 1)
-    ("unexpected `)'" . 1)
-    ("expected 1 and got 2" . 1)
-    ("Structure type constructor Tree applied to non-regular arguments (IntHeap)"
-     .
-     1)
-    ("Structure type constructor Tree applied to non-regular arguments (Tree)"
+    ("not allowed as an expression" . 1)
+    ("Unbound type name heap" . 1)
+    ("Polymorphic function `in-merge' could not be applied to arguments" . 1)
+    ("Declaration for `insert' provided, but `insert' has no definition" . 1)
+    ("Unbound type name Boolean" . 1)
+    ("identifier already provided (as a different binding)" . 1)
+    ("collection not found" . 1)
+    ("(Null (Tree A))" . 1)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 1)
+    ("Unbound type name define-type" . 1)
+    ("Unbound type name right" . 1)
+    ("duplicate field identifier" . 1)
+    ("Declaration for `constructor' provided, but `constructor' has no definition"
      .
      1)
-    ("struct does not refer to a structure definition" . 1)
-    ("empty does not refer to a structure definition" . 1)
-    ("tree does not refer to a structure definition" . 1)
-    ("cons does not refer to a structure definition" . 1)
-    ("expected 0 but got 3" . 1)
-    ("Declaration for `phelp-rgt' provided, but `phelp-rgt' has no definition"
-     .
-     1))))
+    ("Declaration for `lheap' provided, but `lheap' has no definition" . 1)
+    ("Declaration for `common' provided, but `common' has no definition" . 1)
+    ("Declaration for `more' provided, but `more' has no definition" . 1)
+    ("Declaration for `the' provided, but `the' has no definition" . 1)
+    ("type name used out of context" . 1)
+    ("duplicate argument identifier" . 1))))

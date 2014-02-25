@@ -1,14 +1,42 @@
 '((remove
    (passed . 0)
    (failed
-    (total . 16)
-    ("found a test that is not at the top level" . 6)
+    (total . 53)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     13)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     7)
+    ("Polymorphic function `queue->list' could not be applied to arguments"
+     .
+     5)
     ("unbound identifier in module" . 5)
-    ("expected a `module' declaration" . 5)))
+    ("found a test that is not at the top level" . 4)
+    ("Wrong number of arguments, expected 1 and got 2" . 2)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     2)
+    ("type mismatch" . 2)
+    ("#<syntax Shallow> ((U Zero (One Nothing)))), since it is not a function type"
+     .
+     2)
+    ("Cannot apply expression of type Negative-Fixnum, since it is not a function type"
+     .
+     2)
+    ("bad syntax" . 1)
+    ("queue> #<pr...)" . 1)
+    ("Polymorphic function `head' could not be applied to arguments" . 1)
+    ("Polymorphic function `enqueue' could not be applied to arguments" . 1)
+    ("Polymorphic function `build-list' could not be applied to arguments" . 1)
+    ("not an identifier, identifier with default, or keyword" . 1)
+    ("Polymorphic function `qmap' could not be applied to arguments" . 1)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 1)
+    ("negative?> #<Deep>))" . 1)))
   (truncate
    (passed . 0)
    (failed
-    (total . 18)
-    ("found a test that is not at the top level" . 12)
-    ("unbound identifier in module" . 5)
+    (total . 11)
+    ("found a test that is not at the top level" . 9)
+    ("unbound identifier in module" . 1)
     ("type name used out of context" . 1))))

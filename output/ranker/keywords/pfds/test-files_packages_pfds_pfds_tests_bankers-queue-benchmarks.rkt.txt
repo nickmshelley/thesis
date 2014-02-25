@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/pfds/pfds/tests/bankers-queue-benchmarks.rkt"
-   '(0 1 0 1 1)
-   8
-   0))
+   '(0 0 0 1 0)
+   9
+   1))
  (cons
   'truncate
   (rankings
    "test-files/packages/pfds/pfds/tests/bankers-queue-benchmarks.rkt"
    '(0 0 1 0 0)
-   6
-   4)))
+   8
+   2)))

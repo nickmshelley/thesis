@@ -1,20 +1,29 @@
 '((remove
-   (passed . 45)
+   (passed . 41)
    (failed
-    (total . 35)
-    ("unbound identifier in module" . 28)
-    ("bad module path" . 2)
-    ("collection not found" . 2)
-    ("not allowed as an expression" . 2)
+    (total . 39)
+    ("unbound identifier in module" . 24)
+    ("missing `)' to close preceding `(', found instead `]'" . 5)
+    ("expected a `module' declaration" . 5)
+    ("undefined;" . 3)
+    ("not allowed in an expression context" . 1)
     ("bad syntax" . 1)))
   (truncate
-   (passed . 32)
+   (passed . 47)
    (failed
-    (total . 48)
-    ("unbound identifier in module" . 24)
-    ("syntax error in pattern" . 10)
-    ("not allowed as an expression" . 5)
-    ("not a require sub-form" . 5)
+    (total . 51)
+    ("unbound identifier in module" . 22)
+    ("missing `]' to close preceding `[', found instead `)'" . 10)
+    ("missing `]' to close `[' on line 76, found instead `)'; indentation suggests a missing `]' before line 77"
+     .
+     5)
+    ("missing `)' to close `(' on line 46, found instead `]'; indentation suggests a missing `)' before line 51"
+     .
+     5)
+    ("not allowed in an expression context" . 2)
     ("bad syntax" . 2)
-    ("duplicate argument identifier" . 1)
-    ("use of 'any' outside the range of an arrow contract" . 1))))
+    ("bad sequence binding clause" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("incorrect use of ... in pattern" . 1)
+    ("collection not found" . 1)
+    ("cannot open module file" . 1))))

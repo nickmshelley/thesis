@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/pfds/pfds/tests/bootstrapedqueue-tests.rkt"
-   '(0 0 0 1 0)
-   9
-   1))
+   '(0 0 0 0 1)
+   8
+   2))
  (cons
   'truncate
   (rankings
    "test-files/packages/pfds/pfds/tests/bootstrapedqueue-tests.rkt"
-   '(0 0 0 1 0)
-   6
-   4)))
+   '(0 0 0 0 1)
+   7
+   3)))

@@ -1,1106 +1,976 @@
 '((remove
-   (passed . 1036)
+   (passed . 1471)
    (failed
-    (total . 4134)
-    ("unbound identifier in module" . 1035)
-    ("The type of vm-processes cannot be converted to a contract" . 528)
-    ("expected a `)' to close `('" . 355)
-    ("bad syntax" . 132)
-    ("missing `)' to close preceding `(', found instead `]'" . 128)
-    ("missing `]' to close preceding `[', found instead `)'" . 82)
-    ("syntax error in pattern" . 76)
-    ("unbound identifier in module (in phase 1, transformer environment)" . 71)
-    ("type name used out of context" . 64)
-    ("missing ellipsis with pattern variable in template" . 62)
-    ("duplicate definition for identifier" . 60)
-    ("expected a `module' declaration" . 60)
-    ("must be used in a definition context" . 59)
-    ("Illegal clause in endpoint definition" . 59)
-    ("provided identifier not defined or imported for phase 0" . 52)
-    ("no pattern variables before ellipsis in template" . 50)
-    ("duplicate argument identifier" . 49)
-    ("collection not found" . 48)
-    ("pattern variable cannot be used outside of a template" . 45)
-    ("'" . 44)
-    ("bad syntax (multiple types after identifier)" . 37)
-    ("missing procedure expression;" . 34)
-    ("not allowed in an expression context" . 32)
-    ("too many forms in body of All type" . 29)
-    ("type mismatch" . 28)
-    ("variable used twice in pattern" . 26)
-    ("illegal use of syntax" . 22)
-    ("variable not bound in all or patterns" . 21)
-    ("missing argument expression after keyword" . 20)
-    ("wildcard not allowed as an expression" . 18)
-    ("not allowed as an expression" . 18)
-    ("identifier is not bound to struct type information" . 16)
+    (total . 3514)
+    ("unbound identifier in module" . 995)
+    ("The type of vm-processes cannot be converted to a contract" . 220)
+    ("syntax error in pattern" . 129)
+    ("bad syntax" . 123)
+    ("expected a `)' to close `('" . 94)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 90)
+    ("type name used out of context" . 84)
+    ("Illegal clause in endpoint definition" . 81)
+    ("type mismatch" . 81)
+    ("pattern variable cannot be used outside of a template" . 69)
+    ("missing ellipsis with pattern variable in template" . 65)
+    ("duplicate definition for identifier" . 61)
+    ("duplicate argument identifier" . 57)
+    ("bad syntax (multiple types after identifier)" . 56)
+    ("'" . 47)
+    ("variable used twice in pattern" . 45)
+    ("missing argument expression after keyword" . 44)
+    ("not allowed as an expression" . 33)
+    ("expected a `module' declaration" . 30)
+    ("must be used in a definition context" . 30)
+    ("provided identifier not defined or imported for phase 0" . 27)
+    ("missing `)' to close preceding `(', found instead `]'" . 27)
+    ("illegal use of syntax" . 27)
+    ("wildcard not allowed as an expression" . 26)
+    ("collection not found" . 25)
+    ("variable not bound in all or patterns" . 24)
+    ("no pattern variables before ellipsis in template" . 23)
+    ("too many ellipses in template" . 23)
+    ("unexpected `)'" . 21)
+    ("not a provide sub-form" . 20)
+    ("not allowed in an expression context" . 19)
+    ("defaults)" . 16)
+    ("not a require sub-form" . 16)
     ("undefined;" . 16)
-    ("(State)" . 16)
-    ("too many ellipses in template" . 15)
-    ("defaults)" . 15)
+    ("missing `]' to close preceding `[', found instead `)'" . 15)
     ("duplicate identifier" . 14)
-    ("attribute bound in defaults but not in pattern" . 13)
-    ("identifier is not bound to a structure type" . 10)
-    ("not a provide sub-form" . 9)
+    ("duplicate attribute" . 13)
+    ("misplaced ellipsis in pattern (follows other ellipsis)" . 13)
+    ("(State)" . 12)
+    ("not defined as syntax class" . 11)
+    ("identifier is not bound to a structure type" . 11)
+    ("unexpected term" . 10)
+    ("Illegal use of on-absence outside endpoint definition context" . 10)
+    ("Unbound type name" . 10)
+    ("Unbound type name State" . 10)
+    ("identifier is already imported" . 10)
+    ("Unbound type name X" . 10)
+    ("attribute bound in defaults but not in pattern" . 9)
     ("Illegal use of match-state outside endpoint definition context" . 9)
-    ("not a require sub-form" . 9)
-    ("identifier already provided (as a different binding)" . 9)
-    ("missing `]' to close `[' on line 20, found instead `)'" . 9)
-    ("Unbound type name" . 8)
-    ("bad module path" . 8)
-    ("(subscriber topic clause ...)" . 8)
+    ("Unbound type name define" . 8)
+    ("Polymorphic function `cons' could not be applied to arguments" . 8)
+    ("Wrong number of arguments, expected 2 and got 1" . 8)
+    ("Wrong number of arguments, expected 1 and got 2" . 8)
+    ("identifier is not bound to struct type information" . 8)
+    ("misplaced ellipsis in template" . 7)
+    ("duplicate binding name" . 7)
     ("insufficient type information to typecheck. please add more type annotations"
      .
-     8)
-    ("ellipses not allowed as an expression" . 8)
+     7)
     ("unbound identifier in module (in the transformer environment, which does not include the run-time definition)"
      .
-     8)
-    ("not defined as syntax class" . 8)
-    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ."
+     7)
+    ("Declaration for `udp-driver' provided, but `udp-driver' has no definition"
      .
      7)
-    ("Error in macro expansion -- Recursive Type Alias Reference" . 7)
-    ("Illegal use of on-absence outside endpoint definition context" . 7)
-    ("missing `)' to close `(' on line 169, found instead `]'; indentation suggests a missing `)' before line 170"
+    ("keyword used out of context" . 6)
+    ("Unbound type name define-type" . 6)
+    ("ellipses not allowed as an expression" . 6)
+    ("Error in macro expansion -- insufficient type information to typecheck. please add more type annotations"
      .
      6)
-    ("duplicate field identifier" . 6)
-    ("identifier is already imported" . 6)
-    ("unexpected `)'" . 6)
+    ("(subscriber topic clause ...)" . 6)
     ("(publisher topic clause ...)" . 6)
-    ("misplaced ellipsis in template" . 6)
-    ("duplicate attribute" . 6)
-    ("missing `)' to close `(' on line 188, found instead `]'" . 5)
-    ("missing `)' to close `(' on line 202, found instead `]'; indentation suggests a missing `)' before line 203"
+    ("Polymorphic function `extract-ground-event-subscriptions' could not be applied to arguments"
+     .
+     6)
+    ("Polymorphic function `log-quit' could not be applied to arguments" . 6)
+    ("duplicate argument name" . 5)
+    ("missing `)' to close `(' on line 91, found instead `]'; indentation suggests a missing `)' before line 97"
      .
      5)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 101"
+    ("missing `]' to close `[' on line 78, found instead `)'; indentation suggests a missing `]' before line 79"
      .
      5)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 207"
-     .
-     5)
-    ("Wrong number of arguments, expected 2 and got 1" . 5)
-    ("missing `)' to close `(' on line 272, found instead `]'; indentation suggests a missing `)' before line 273"
-     .
-     5)
-    ("missing `)' to close `(' on line 216, found instead `]'; indentation suggests a missing `)' before line 217"
-     .
-     5)
-    ("bad form" . 5)
-    ("expected `)' to close `(' on line 81, found instead `]'" . 5)
-    ("duplicate clause binding name" . 5)
-    ("Declaration for `log-quit' provided, but `log-quit' has no definition"
-     .
-     5)
-    ("missing `)' to close `(' on line 85, found instead `]'; indentation suggests a missing `)' before line 86"
-     .
-     5)
-    ("missing `]' to close `[' on line 103, found instead `)'; indentation suggests a missing `]' before line 104"
-     .
-     5)
-    ("accessor name not associated with the given structure type" . 5)
-    ("Declaration for `orientations-intersect?' provided, but `orientations-intersect?' has no definition"
-     .
-     5)
-    ("Declaration for `co-roles' provided, but `co-roles' has no definition"
-     .
-     5)
+    ("Recursive Type Alias Reference" . 5)
     ("Component of case-lambda type was not a function clause" . 5)
-    ("missing `]' to close `[' on line 23, found instead `)'; indentation suggests a missing `)' before line 47"
+    ("Polymorphic function `transition8' could not be applied to arguments"
      .
      5)
+    ("missing `]' to close `[' on line 190, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 182, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 114, found instead `)'; indentation suggests a missing `]' before line 115"
+     .
+     5)
+    ("expected `)' to close `(' on line 74, found instead `]'" . 5)
+    ("(X)" . 5)
     ("Declaration for `quasiqueue->list' provided, but `quasiqueue->list' has no definition"
      .
      5)
-    ("missing `]' to close `[' on line 50, found instead `)'" . 5)
-    ("not a procedure;" . 5)
-    ("Illegal use of on-presence outside endpoint definition context" . 4)
-    ("Declaration for `any-remote' provided, but `any-remote' has no definition"
+    ("Illegal use of on-message outside endpoint definition context" . 5)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ;"
      .
-     4)
-    ("Declaration for `bind-socket!' provided, but `bind-socket!' has no definition"
+     5)
+    ("missing `]' to close `[' on line 27, found instead `)'" . 5)
+    ("identifier already provided (as a different binding)" . 5)
+    ("Declaration for `process-map' provided, but `process-map' has no definition"
      .
-     4)
-    ("Unbound type name define" . 4)
-    ("duplicate binding name" . 4)
-    ("Declaration for `delete-all-endpoints' provided, but `delete-all-endpoints' has no definition"
+     5)
+    ("Declaration for `coproc' provided, but `coproc' has no definition" . 5)
+    ("missing `]' to close `[' on line 196, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 103, found instead `)'" . 5)
+    ("missing `)' to close `(' on line 85, found instead `]'; indentation suggests a missing `)' before line 86"
      .
-     4)
-    ("Declaration for `name-endpoint' provided, but `name-endpoint' has no definition"
+     5)
+    ("duplicate clause binding name" . 5)
+    ("exn" . 5)
+    ("Declaration for `timer-evt' provided, but `timer-evt' has no definition"
      .
-     4)
-    ("too few ellipses for pattern variable in template" . 4)
-    ("Declaration for `action-tree->quasiqueue' provided, but `action-tree->quasiqueue' has no definition"
-     .
-     4)
-    ("(SNew)" . 4)
-    ("Declaration for `notify-route-change-self' provided, but `notify-route-change-self' has no definition"
-     .
-     4)
-    ("Declaration for `notify-route-change-vm' provided, but `notify-route-change-vm' has no definition"
-     .
-     4)
-    ("misplaced ellipsis in pattern (follows other ellipsis)" . 4)
-    ("Unbound type name define-type" . 4)
-    ("Unbound type name State" . 4)
-    ("Polymorphic function `foldr' could not be applied to arguments" . 4)
-    ("Recursive Type Alias Reference" . 3)
-    ("invalid module-path form" . 3)
+     5)
     ("Declaration for `timer-driver' provided, but `timer-driver' has no definition"
      .
-     3)
-    ("State topic clause ...)" . 3)
-    ("expected identifier" . 3)
-    ("missing `]' to close `[' on line 93, found instead `)'" . 3)
-    ("missing `)' to close `(' on line 26, found instead `]'; indentation suggests a missing `)' before line 27"
+     5)
+    ("bad module path" . 4)
+    ("No function domains matched in function application" . 4)
+    ("terms left over after keyword options" . 4)
+    ("duplicate field identifier" . 4)
+    ("Polymorphic function `sequence-actions' could not be applied to arguments"
+     .
+     4)
+    ("bad form" . 4)
+    ("missing procedure expression;" . 4)
+    ("too many forms in body of All type" . 4)
+    ("Declaration for `evt-handler' provided, but `evt-handler' has no definition"
+     .
+     4)
+    ("Polymorphic function `event-relay' could not be applied to arguments"
+     .
+     4)
+    ("State topic clause ...)" . 4)
+    ("Declaration for `transition-accepter' provided, but `transition-accepter' has no definition"
+     .
+     4)
+    ("Declaration for `notify-route-change-process' provided, but `notify-route-change-process' has no definition"
+     .
+     4)
+    ("Polymorphic function `delete-all-endpoints' could not be applied to arguments"
+     .
+     4)
+    ("pending-timer" . 4)
+    ("missing `)' to close `(' on line 100, found instead `]'; indentation suggests a missing `)' before line 107"
+     .
+     4)
+    ("Declaration for `wrap-trapk' provided, but `wrap-trapk' has no definition"
+     .
+     4)
+    ("Declaration for `dispatch-spawn-k' provided, but `dispatch-spawn-k' has no definition"
+     .
+     4)
+    ("Cannot apply expression of type Any, since it is not a function type"
      .
      3)
-    ("transparent" . 3)
+    ("Unbound type name Event" . 3)
+    ("Unbound type name U" . 3)
+    ("Unbound type name CoTransition" . 3)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 3)
+    ("Unbound type name *" . 3)
+    ("Declaration for `State' provided, but `State' has no definition" . 3)
+    ("too few ellipses for pattern variable in template" . 3)
+    ("Declaration for `list-max' provided, but `list-max' has no definition"
+     .
+     3)
     ("cannot open module file" . 3)
-    ("missing `)' to close `(' on line 286, found instead `]'; indentation suggests a missing `)' before line 287"
+    ("unbound identifier in the transformer environment;" . 3)
+    ("this match expander must be used inside match" . 3)
+    ("not a procedure;" . 2)
+    ("identifier `opaque' not included in nested require spec" . 2)
+    ("bad syntax (missing binding pairs or body)" . 2)
+    ("Unbound type name struct" . 2)
+    ("Unbound type name message" . 2)
+    ("Unbound type name sequence-actions" . 2)
+    ("Wrong number of arguments, expected 1 and got 3" . 2)
+    ("arity mismatch;" . 2)
+    ("Cannot apply expression of type PID, since it is not a function type"
      .
-     3)
-    ("missing `)' to close `(' on line 153, found instead `]'; indentation suggests a missing `)' before line 154"
+     2)
+    ("Polymorphic function `empty-quasiqueue' could not be applied to arguments"
      .
-     3)
-    ("missing `)' to close `(' on line 170, found instead `]'; indentation suggests a missing `)' before line 171"
+     2)
+    ("bad ~literal pattern" . 2)
+    ("expected identifier" . 2)
+    ("Declaration for `p' provided, but `p' has no definition" . 2)
+    ("missing `)' to close `(' on line 63, found instead `]'; indentation suggests a missing `)' before line 65"
      .
-     3)
-    ("missing `)' to close `(' on line 157, found instead `]'; indentation suggests a missing `)' before line 158"
+     2)
+    ("Wrong number of arguments, expected 1 and got 0" . 2)
+    ("Cannot apply expression of type Evt, since it is not a function type"
      .
-     3)
-    ("arity mismatch;" . 3)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 23"
+     2)
+    ("Cannot apply expression of type vm, since it is not a function type" . 2)
+    ("Unbound type name p" . 2)
+    ("Unbound type name state" . 2)
+    ("Illegal use of match-conversation outside endpoint definition context"
      .
-     3)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 92"
+     2)
+    ("Cannot apply expression of type Symbol, since it is not a function type"
      .
-     3)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 130"
+     2)
+    ("(observe-subscribers topic clause ...)" . 2)
+    ("Wrong number of arguments, expected 0 and got 1" . 2)
+    ("Polymorphic function `do-quit' could not be applied to arguments" . 2)
+    ("Polymorphic function `endpoint-id' could not be applied to arguments"
      .
-     3)
-    ("identifier `struct-copy' not included in nested require spec" . 2)
-    ("identifier `PR13149' not included in nested require spec" . 2)
-    ("identifier `tr-struct-copy.rkt' not included in nested require spec" . 2)
-    ("identifier `workaround' not included in nested require spec" . 2)
-    ("identifier `rename-in' not included in nested require spec" . 2)
-    ("missing `)' to close `(' on line 160, found instead `]'; indentation suggests a missing `)' before line 161"
+     2)
+    ("Declaration for `one.' provided, but `one.' has no definition" . 2)
+    ("missing `)' to close `(' on line 129, found instead `]'; indentation suggests a missing `)' before line 130"
+     .
+     2)
+    ("missing `)' to close `(' on line 133, found instead `]'; indentation suggests a missing `)' before line 134"
+     .
+     2)
+    ("missing `)' to close `(' on line 76, found instead `]'; indentation suggests a missing `)' before line 82"
      .
      2)
     ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 182"
      .
      2)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 202"
+    ("missing `)' to close `(' on line 214, found instead `]'; indentation suggests a missing `)' before line 215"
      .
      2)
-    ("missing `)' to close `(' on line 213, found instead `]'" . 2)
-    ("Unbound type name fire-timers!" . 2)
-    ("Unbound type name install-timer!" . 2)
-    ("Unbound type name make-timer-heap" . 2)
-    ("Wrong number of arguments, expected 3 and got 1" . 2)
-    ("Wrong number of arguments, expected 0 and got 1" . 2)
-    ("Illegal use of on-message outside endpoint definition context" . 2)
-    ("this match expander must be used inside match" . 2)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 172"
+    ("missing `)' to close `(' on line 68, found instead `]'; indentation suggests a missing `)' before line 69"
      .
      2)
-    ("missing `)' to close `(' on line 208, found instead `]'; indentation suggests a missing `)' before line 209"
+    ("missing `)' to close `(' on line 137, found instead `]'; indentation suggests a missing `)' before line 138"
      .
      2)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 220"
-     .
-     2)
-    ("missing `)' to close `(' on line 238, found instead `]'; indentation suggests a missing `)' before line 239"
-     .
-     2)
-    ("missing `)' to close `(' on line 145, found instead `]'; indentation suggests a missing `)' before line 146"
-     .
-     2)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 122"
-     .
-     2)
-    ("missing `)' to close `(' on line 127, found instead `]'; indentation suggests a missing `)' before line 128"
-     .
-     2)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 149"
-     .
-     2)
-    ("missing `)' to close `(' on line 146, found instead `]'; indentation suggests a missing `)' before line 147"
-     .
-     2)
-    ("multiple bindings of `remote-hostname' in the same clause" . 2)
-    ("Error in macro expansion -- insufficient type information to typecheck. please add more type annotations"
-     .
-     2)
-    ("Declaration for `SNew' provided, but `SNew' has no definition" . 2)
-    ("missing `)' to close `(' on line 21, found instead `]'; indentation suggests a missing `)' before line 25"
-     .
-     2)
-    ("bad syntax (not an identifier for procedure name, and not a nested procedure form)"
-     .
-     2)
-    ("Illegal use of match-conversation outside endpoint definition context"
-     .
-     2)
-    ("missing `)' to close `(' on line 62, found instead `]'; indentation suggests a missing `)' before line 63"
-     .
-     2)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 44"
-     .
-     2)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 53"
-     .
-     2)
-    ("terms left over after keyword options" . 2)
-    ("head pattern not allowed here" . 2)
-    ("Unbound type name reason" . 2)
-    ("Unbound type name Existential" . 2)
-    ("Unbound type name quantification" . 2)
-    ("identifier `opaque' not included in nested require spec" . 2)
-    ("at least one specification is required" . 2)
-    ("Wrong number of arguments, expected 1 and got 2" . 2)
-    ("Unbound type name co-orientations" . 2)
-    ("missing `)' to close `(' on line 63, found instead `]'; indentation suggests a missing `)' before line 65"
-     .
-     2)
-    ("expected `]' to close preceding `[', found instead `}'" . 2)
-    ("Polymorphic function `append' could not be applied to arguments" . 2)
-    ("Unbound type name empty-quasiqueue" . 2)
-    ("Unbound type name list->quasiqueue" . 2)
-    ("Unbound type name loop" . 2)
-    ("Unbound type name quasiqueue" . 2)
-    ("Unbound type name quasiqueue->cons-tree" . 2)
-    ("Polymorphic function `empty-quasiqueue' could not be applied to arguments"
-     .
-     2)
-    ("Polymorphic function `quasiqueue' could not be applied to arguments" . 2)
-    ("Polymorphic function `quasiqueue->cons-tree' could not be applied to arguments"
-     .
-     2)
-    ("Unbound type name ground?" . 2)
-    ("identifier `pi' not included in nested require spec" . 2)
-    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
-     .
-     2)
-    ("Cannot apply expression of type Positive-Index, since it is not a function type"
-     .
-     2)
-    ("missing `]' to close `[' on line 21, found instead `)'; indentation suggests a missing `]' before line 23"
-     .
-     2)
-    ("missing `)' to close `(' on line 53, found instead `]'; indentation suggests a missing `)' before line 157"
-     .
-     2)
-    ("missing `]' to close `[' on line 156, found instead `)'; indentation suggests a missing `)' before line 157"
-     .
-     2)
-    ("missing `)' to close `(' on line 57, found instead `]'" . 2)
-    ("missing `)' to close `(' on line 53, found instead `]'; indentation suggests a missing `)' before line 163"
-     .
-     2)
-    ("missing `]' to close `[' on line 161, found instead `)'" . 2)
-    ("missing `)' to close `(' on line 53, found instead `]'; indentation suggests a missing `)' before line 161"
-     .
-     2)
-    ("missing `]' to close `[' on line 160, found instead `)'; indentation suggests a missing `]' before line 161"
+    ("missing `)' to close `(' on line 47, found instead `]'; indentation suggests a missing `)' before line 49"
      .
      2)
     ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 75"
      .
      2)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 109"
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 100"
      .
      2)
-    ("missing `]' to close `[' on line 40, found instead `)'" . 2)
-    ("missing `]' to close `[' on line 91, found instead `)'; indentation suggests a missing `]' before line 92"
-     .
-     2)
-    ("missing `)' to close `(' on line 53, found instead `]'; indentation suggests a missing `)' before line 155"
-     .
-     2)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 95"
-     .
-     2)
-    ("missing `]' to close `[' on line 94, found instead `)'; indentation suggests a missing `]' before line 95"
-     .
-     2)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 98"
-     .
-     2)
-    ("(unwrap-process State Result (p wp) body ...)" . 1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 206"
+    ("not at module level" . 1)
+    ("identifier `typed/racket/base' not included in nested require spec" . 1)
+    ("Wrong number of arguments, expected 2 and got 3" . 1)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
      .
      1)
-    ("Declaration for `back.' provided, but `back.' has no definition" . 1)
-    ("Declaration for `ParentState' provided, but `ParentState' has no definition"
-     .
-     1)
-    ("Wrong number of type arguments to polymorphic type (All (State) (State (Rec g21448 (U False Void Null (spawn State) (add-endpoint State) send-message quit delete-endpoint (yield State) (at-meta-level State) (Pairof g21448 g21448))) * -> (transition State)))"
-     .
-     1)
-    ("Unbound type name at-meta-level" . 1)
-    ("Unbound type name label" . 1)
-    ("Unbound type name next-counter" . 1)
-    ("Wrong number of arguments, expected 2 and got 0" . 1)
-    ("Wrong number of arguments, expected 3 and got 0" . 1)
-    ("Unbound type name tivetive" . 1)
-    ("Unbound type name Utive" . 1)
-    ("Unbound type name absolutetive" . 1)
-    ("Unbound type name TimerKindtive" . 1)
-    ("Unbound type name Thetive" . 1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 134"
-     .
-     1)
-    ("missing `)' to close `(' on line 220, found instead `]'; indentation suggests a missing `)' before line 221"
-     .
-     1)
-    ("Unbound type name set-add" . 1)
-    ("Expected a function of type (UDP-Socket -> (-> Void)), but got a function with the wrong arity"
-     .
-     1)
-    ("duplicate declared identifier" . 1)
-    ("(observe-publishers topic clause ...)" . 1)
-    ("(transition/no-state action ...)" . 1)
-    ("missing `]' to close `[' on line 168, found instead `)'; indentation suggests a missing `]' before line 169"
-     .
-     1)
-    ("missing `]' to close `[' on line 48, found instead `)'; indentation suggests a missing `]' before line 49"
-     .
-     1)
-    ("missing `]' to close `[' on line 153, found instead `)'; indentation suggests a missing `]' before line 154"
-     .
-     1)
-    ("missing `]' to close `[' on line 107, found instead `)'; indentation suggests a missing `]' before line 108"
-     .
-     1)
-    ("multiple bindings of `local-hostname' in the same clause" . 1)
-    ("multiple bindings of `remote-port' in the same clause" . 1)
-    ("bad syntax (clause is not a test-value pair)" . 1)
     ("not an identifier, identifier with default, or keyword" . 1)
-    ("missing `}' to close `{' on line 43, found instead `)'; indentation suggests a missing `)' before line 44"
+    ("Cannot apply expression of type Positive-Index, since it is not a function type"
      .
      1)
-    ("missing `]' to close `[' on line 51, found instead `)'; indentation suggests a missing `]' before line 52"
+    ("' not included in nested require spec" . 1)
+    ("identifier `foo-Integer' not included in nested require spec" . 1)
+    ("identifier `foo-foo' not included in nested require spec" . 1)
+    ("struct' not included in nested require spec" . 1)
+    ("Unbound type name require/typed" . 1)
+    ("Unbound type name struct-map" . 1)
+    ("Unbound type name test-struct-map.rkt" . 1)
+    ("multiple bindings of `accessors' in the same clause" . 1)
+    ("multiple bindings of `construct' in the same clause" . 1)
+    ("multiple bindings of `parent' in the same clause" . 1)
+    ("bad syntax (missing expression after identifier)" . 1)
+    ("bad syntax (clause is not a test-value pair)" . 1)
+    ("expected an identifier for the structure type name" . 1)
+    ("Polymorphic function `generic-spy' could not be applied to arguments"
      .
      1)
-    ("multiple bindings of `local-port' in the same clause" . 1)
-    ("(observe-subscribers topic clause ...)" . 1)
-    ("missing `]' to close `[' on line 96, found instead `)'; indentation suggests a missing `]' before line 98"
+    ("empty form not allowed" . 1)
+    ("Cannot apply expression of type Orientation, since it is not a function type"
      .
      1)
-    ("missing `]' to close `[' on line 132, found instead `)'; indentation suggests a missing `]' before line 133"
+    ("Wrong number of type arguments to polymorphic type (All (g152) ((transition g152) -> Result))"
      .
      1)
-    ("missing `]' to close `[' on line 78, found instead `)'; indentation suggests a missing `]' before line 79"
+    ("Unbound type name transition" . 1)
+    ("child" . 1)
+    ("Unbound type name void" . 1)
+    ("identifier `main.rkt' not included in nested require spec" . 1)
+    ("illegal use of `.'" . 1)
+    ("Unbound type name isherisher" . 1)
+    ("Unbound type name Uisher" . 1)
+    ("Unbound type name subscriberisher" . 1)
+    ("Unbound type name Orientationisher" . 1)
+    ("isher" . 1)
+    ("Unbound type name body" . 1)
+    ("Unbound type name f" . 1)
+    ("Unbound type name =" . 1)
+    ("Unbound type name suicide" . 1)
+    ("Unbound type name Cheesy." . 1)
+    ("transparent" . 1)
+    ("duplicate type variable" . 1)
+    ("Unbound type name cribercriber" . 1)
+    ("Unbound type name publishercriber" . 1)
+    ("criber" . 1)
+    ("Unbound type name Ucriber" . 1)
+    ("Unbound type name rolecriber" . 1)
+    ("27 presence-event>" . 1)
+    ("26 absence-event>" . 1)
+    ("(presence-event absence-event message-event)" . 1)
+    ("Unbound type name ythingything" . 1)
+    ("Unbound type name observerything" . 1)
+    ("Unbound type name define-typeything" . 1)
+    ("Unbound type name participantything" . 1)
+    ("Unbound type name Handlerything" . 1)
+    ("Unbound type name reason" . 1)
+    ("Unbound type name pre-eid" . 1)
+    ("identifier `PreEID' not included in nested require spec" . 1)
+    ("identifier `s' not included in nested require spec" . 1)
+    ("expected `]' to close preceding `[', found instead `}'" . 1)
+    ("(Transition (transition State))" . 1)
+    ("(State (transition State))" . 1)
+    ("(ActionTree (transition State))" . 1)
+    ("Unbound type name case->" . 1)
+    ("Unbound type name delete-endpoint" . 1)
+    ("Unbound type name quit" . 1)
+    ("Unbound type name send-feedback" . 1)
+    ("Unbound type name send-message" . 1)
+    ("Polymorphic function `make-nested-vm' could not be applied to arguments"
      .
      1)
-    ("Illegal use of match-interest-type outside endpoint definition context"
+    ("contract violation" . 1)
+    ("no matching clause for \"MARKETPLACE_LOG\"" . 1)
+    ("Unbound type name provide" . 1)
+    ("Unbound type name all-from-out" . 1)
+    ("Unbound type name ground?" . 1)
+    ("Unbound type name quasiqueue" . 1)
+    ("' is defined in another module" . 1)
+    ("Declaration for `All' provided, but `All' is defined in another module"
      .
      1)
-    ("role" . 1)
-    ("missing `)' to close `(' on line 159, found instead `]'; indentation suggests a missing `)' before line 161"
+    ("Declaration for `X' provided, but `X' has no definition" . 1)
+    ("Declaration for `QuasiQueue' provided, but `QuasiQueue' is defined in another module"
      .
      1)
-    ("missing `)' to close `(' on line 220, found instead `]'; indentation suggests a missing `)' before line 225"
+    ("Duplicate type annotation of (All (X) ((Listof X) -> Boolean)) for empty-quasiqueue, previous was (All (X) (-> (Listof X)))"
      .
      1)
-    ("missing `)' to close `(' on line 195, found instead `]'; indentation suggests a missing `)' before line 196"
+    ("Recursive types are not allowed directly inside their definition" . 1)
+    ("Unbound type name empty-quasiqueue" . 1)
+    ("Polymorphic function `list->quasiqueue' could not be applied to arguments"
      .
      1)
-    ("missing `)' to close `(' on line 187, found instead `]'; indentation suggests a missing `)' before line 188"
+    ("Polymorphic function `quasiqueue' could not be applied to arguments" . 1)
+    ("Polymorphic function `quasiqueue->cons-tree' could not be applied to arguments"
      .
      1)
-    ("bad syntax;" . 1)
-    ("Declaration for `State' provided, but `State' has no definition" . 1)
-    ("bad sequence binding clause" . 1)
-    ("expected 1 and got 2" . 1)
-    ("Expected a function of type (Orientation -> ((process State) vm -> (values (U False (process State)) vm))), but got a function with the wrong arity"
+    ("Polymorphic function `quasiqueue->list' could not be applied to arguments"
      .
      1)
-    ("(send-to-user* debug-name pid (e) failure-result enclosed-expr)" . 1)
-    ("Expected a function of type (process-spec (U False (PID -> (OldState -> (transition OldState)))) (process OldState) -> (vm -> (values (U False (process OldState)) vm))), but got a function with the wrong arity"
+    ("typed/racket/base" . 1)
+    ("phase)" . 1)
+    ("head pattern not allowed here" . 1)
+    ("identifier `require' not included in nested require spec" . 1)
+    ("identifier `sugar-values.rkt' not included in nested require spec" . 1)
+    ("Declaration for `co-orientation' provided, but `co-orientation' has no definition"
      .
      1)
-    ("missing `)' to close `(' on line 21, found instead `]'; indentation suggests a missing `)' before line 27"
+    ("(Topic Topic Topic)" . 1)
+    ("Unbound type name freshen" . 1)
+    ("Unbound type name mgu-canonical" . 1)
+    ("Unbound type name specialization?" . 1)
+    ("Declaration for `publisher' provided, but `publisher' has no definition"
      .
      1)
-    ("Declaration for `SOld' provided, but `SOld' has no definition" . 1)
-    ("Declaration for `pn' provided, but `pn' has no definition" . 1)
-    ("Declaration for `p' provided, but `p' has no definition" . 1)
-    ("missing `)' to close `(' on line 104, found instead `]'; indentation suggests a missing `)' before line 106"
+    ("identifier `->' not included in nested require spec" . 1)
+    ("identifier `Symbol' not included in nested require spec" . 1)
+    ("identifier `case->' not included in nested require spec" . 1)
+    ("Unbound type name co-orientations" . 1)
+    ("Expected a function of type (-> (role -> Boolean)), but got a function with the wrong arity"
      .
      1)
-    ("missing `)' to close `(' on line 76, found instead `]'; indentation suggests a missing `)' before line 77"
+    ("Unbound type name flow-visible?" . 1)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ?"
      .
      1)
-    ("Declaration for `extract-process' provided, but `extract-process' has no definition"
+    ("misplaced ellipsis in pattern" . 1)
+    ("allowed only around a module body" . 1)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ."
      .
      1)
-    ("missing `)' to close `(' on line 64, found instead `]'; indentation suggests a missing `)' before line 71"
+    ("bad syntax for provide sub-form" . 1)
+    ("Declaration for `A' provided, but `A' has no definition" . 1)
+    ("Declaration for `f' provided, but `f' has no definition" . 1)
+    ("Declaration for `wp' provided, but `wp' has no definition" . 1)
+    ("Unbound type name run-ground-vm" . 1)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 43"
      .
      1)
-    ("missing `)' to close `(' on line 63, found instead `]'; indentation suggests a missing `)' before line 71"
+    ("Cannot apply expression of type Boolean, since it is not a function type"
      .
      1)
-    ("missing `)' to close `(' on line 41, found instead `]'; indentation suggests a missing `)' before line 42"
+    ("missing `)' to close `(' on line 42, found instead `]'; indentation suggests a missing `)' before line 49"
      .
      1)
-    ("missing `)' to close `(' on line 40, found instead `]'; indentation suggests a missing `)' before line 42"
+    ("bad syntax (missing name or binding pairs)" . 1)
+    ("Expected a function of type (-> (-> (vm -> vm))), but got a function with the wrong arity"
+     .
+     1)
+    ("Unbound type name evt-handler" . 1)
+    ("missing `)' to close `(' on line 42, found instead `]'" . 1)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 44"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Pairof Evt (Listof Evt))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type True, since it is not a function type"
+     .
+     1)
+    ("missing `)' to close `(' on line 63, found instead `]'; indentation suggests a missing `)' before line 64"
      .
      1)
     ("missing `)' to close `(' on line 42, found instead `]'; indentation suggests a missing `)' before line 53"
      .
      1)
-    ("missing `)' to close `(' on line 45, found instead `]'; indentation suggests a missing `)' before line 46"
+    ("Unbound type name evt" . 1)
+    ("Unbound type name if" . 1)
+    ("missing `)' to close `(' on line 40, found instead `]'; indentation suggests a missing `)' before line 42"
      .
      1)
-    ("missing `)' to close `(' on line 174, found instead `]'; indentation suggests a missing `)' before line 178"
+    ("Cannot instantiate non-polymorphic type ((HashTable PID Process) PID -> vm)"
      .
      1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 124"
+    ("Cannot instantiate non-polymorphic type Any" . 1)
+    ("Cannot instantiate non-polymorphic type (Listof Evt)" . 1)
+    ("Unbound type name wp" . 1)
+    ("Unbound type name let-values" . 1)
+    ("Unbound type name unwrap-process" . 1)
+    ("Unbound type name extract-ground-event-subscriptions" . 1)
+    ("Unbound type name endpoint-fold" . 1)
+    ("Unbound type name inst" . 1)
+    ("Unbound type name ?" . 1)
+    ("Cannot apply expression of type Topic, since it is not a function type"
      .
      1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 128"
-     .
-     1)
-    ("missing `)' to close `(' on line 206, found instead `]'; indentation suggests a missing `)' before line 209"
-     .
-     1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 193"
-     .
-     1)
-    ("Unbound type name k" . 1)
-    ("identifier `provide' not included in nested require spec" . 1)
-    ("identifier `all-defined-out' not included in nested require spec" . 1)
-    ("Unbound type name state" . 1)
-    ("Unbound type name actions" . 1)
-    ("Unbound type name U" . 1)
-    ("identifier `PreEID' not included in nested require spec" . 1)
-    ("identifier `s' not included in nested require spec" . 1)
-    ("(InterruptK (State -> (transition State)))" . 1)
-    ("(Event (State -> (transition State)))" . 1)
-    ("(State (State -> (transition State)))" . 1)
-    ("Unbound type name Action" . 1)
-    ("bad syntax for provide sub-form" . 1)
-    ("Expected a function of type (role -> (-> (U False Topic))), but got a function with the wrong arity"
-     .
-     1)
-    ("Expected a function of type (-> (role -> (U False Topic))), but got a function with the wrong arity"
-     .
-     1)
-    ("Expected a function of type (-> (-> (Listof Orientation))), but got a function with the wrong arity"
-     .
-     1)
-    ("typed/racket/base" . 1)
-    ("missing `)' to close `(' on line 25, found instead `]'; indentation suggests a missing `)' before line 33"
-     .
-     1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 26"
-     .
-     1)
-    ("missing `)' to close `(' on line 49, found instead `]'; indentation suggests a missing `)' before line 52"
-     .
-     1)
-    ("missing `)' to close `(' on line 25, found instead `]'; indentation suggests a missing `)' before line 29"
-     .
-     1)
-    ("missing `)' to close `(' on line 52, found instead `]'" . 1)
-    (", or @" . 1)
-    ("unexpected `}'" . 1)
-    ("not at module level or top level" . 1)
-    ("identifier `object?' not included in nested require spec" . 1)
-    ("arrow not allowed as an expression" . 1)
-    ("Unbound type name quasiqueue-append" . 1)
-    ("Polymorphic function `list->quasiqueue' could not be applied to arguments"
-     .
-     1)
-    ("Declaration for `empty-quasiqueue' provided, but `empty-quasiqueue' has no definition"
-     .
-     1)
-    ("Unbound type name quasiqueue-append-list" . 1)
-    ("Unbound type name WARNING" . 1)
-    ("Unbound type name duplicated" . 1)
-    ("Unbound type name marketplace-root-logger" . 1)
-    ("Unbound type name in" . 1)
-    ("Unbound type name log-untyped.rkt" . 1)
-    ("identifier `Logger' not included in nested require spec" . 1)
-    ("' not included in nested require spec" . 1)
-    ("identifier `duplicated' not included in nested require spec" . 1)
-    ("identifier `log-untyped.rkt' not included in nested require spec" . 1)
-    ("identifier `in' not included in nested require spec" . 1)
-    ("keyword used out of context" . 1)
-    ("identifier `require' not included in nested require spec" . 1)
-    ("identifier `sugar-values.rkt' not included in nested require spec" . 1)
-    ("identifier `sugar-endpoints-untyped.rkt' not included in nested require spec"
-     .
-     1)
-    ("Unbound type name non-wild?" . 1)
-    ("Unbound type name provide" . 1)
-    ("Unbound type name all-from-out" . 1)
-    ("illegal use of `.'" . 1)
-    ("missing `)' to close `(' on line 33, found instead `]'; indentation suggests a missing `)' before line 36"
-     .
-     1)
-    ("expected a clause with a pattern and a result" . 1)
-    ("missing `)' to close `(' on line 33, found instead `]'; indentation suggests a missing `)' before line 35"
-     .
-     1)
-    ("missing `)' to close `(' on line 37, found instead `]'; indentation suggests a missing `)' before line 38"
-     .
-     1)
-    ("Polymorphic function `make-nested-vm' could not be applied to arguments"
-     .
-     1)
-    ("Illegal use of match-orientation outside endpoint definition context"
-     .
-     1)
+    ("Unbound type name name-endpoint" . 1)
+    ("Unbound type name at-meta-level" . 1)
+    ("Unbound type name event-relay" . 1)
+    ("Unbound type name flush-output" . 1)
+    ("Unbound type name self-id" . 1)
     ("pid" . 1)
     ("no expression after a sequence of internal definitions" . 1)
-    ("Unbound type name require/typed" . 1)
-    ("Unbound type name test-struct-map.rkt" . 1)
-    ("Unbound type name struct-map" . 1)
-    ("duplicate argument name" . 1)
-    ("missing `)' to close `(' on line 21, found instead `]'; indentation suggests a missing `)' before line 159"
+    ("Illegal use of match-interest-type outside endpoint definition context"
      .
      1)
-    ("missing `)' to close `(' on line 54, found instead `]'" . 1)
-    ("missing `)' to close `(' on line 21, found instead `]'; indentation suggests a missing `)' before line 163"
+    ("not an identifier for structure type" . 1)
+    ("(observe-publishers topic clause ...)" . 1)
+    ("multiple bindings of `remote-port' in the same clause" . 1)
+    ("multiple bindings of `local-port' in the same clause" . 1)
+    ("multiple bindings of `local-hostname' in the same clause" . 1)
+    ("missing type" . 1)
+    ("missing `)' to close `(' on line 104, found instead `]'" . 1)
+    ("missing `)' to close `(' on line 77, found instead `]'; indentation suggests a missing `)' before line 80"
      .
      1)
-    ("missing `)' to close `(' on line 21, found instead `]'; indentation suggests a missing `)' before line 161"
+    ("arrow not allowed as an expression" . 1)
+    ("(unwrap-process State Result (p wp) body ...)" . 1)
+    ("missing `)' to close `(' on line 104, found instead `]'; indentation suggests a missing `)' before line 107"
      .
      1)
-    ("missing `)' to close `(' on line 73, found instead `]'; indentation suggests a missing `)' before line 75"
+    ("Unbound type name do-quit" . 1)
+    ("Unbound type name log-quit" . 1)
+    ("Unbound type name exn->string" . 1)
+    ("Cannot apply expression of type exn, since it is not a function type"
      .
      1)
-    ("missing `)' to close `(' on line 105, found instead `]'; indentation suggests a missing `)' before line 109"
+    ("((process State))" . 1)
+    ("(process)" . 1)
+    ("missing an \"else\" expression" . 1)
+    ("Polymorphic function `process-pid' could not be applied to arguments"
      .
      1)
-    ("missing `)' to close `(' on line 91, found instead `]'" . 1)
-    ("missing `)' to close `(' on line 39, found instead `]'" . 1)
-    ("missing `)' to close `(' on line 21, found instead `]'; indentation suggests a missing `)' before line 155"
+    ("Declaration for `state' provided, but `state' has no definition" . 1)
+    ("Illegal use of on-presence outside endpoint definition context" . 1)
+    ("Wrong number of arguments, expected 2 and got 0" . 1)
+    ("Wrong number of arguments, expected 3 and got 0" . 1)
+    ("Could not infer types for applying polymorphic function `timer-driver'"
      .
      1)
-    ("missing `)' to close `(' on line 91, found instead `]'; indentation suggests a missing `)' before line 95"
+    ("Wrong number of arguments, expected 3 and got 1" . 1)
+    ("Polymorphic function `timer-driver' could not be applied to arguments"
      .
      1)
-    ("missing `)' to close `(' on line 91, found instead `]'; indentation suggests a missing `)' before line 98"
+    ("Expected a function of type (-> (-> Evt)), but got a function with the wrong arity"
      .
      1)
-    ("missing `]' to close `[' on line 20, found instead `)'; indentation suggests a missing `)' before line 161"
+    ("Unbound type name timer-evt" . 1)
+    ("Declaration for `in' provided, but `in' has no definition" . 1)
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 206"
      .
      1)
-    ("expected simple-clause; expected struct-clause; or expected opaque-clause"
+    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 207"
      .
-     1)
-    ("result arity mismatch;" . 1)))
+     1)))
   (truncate
-   (passed . 1226)
+   (passed . 1618)
    (failed
-    (total . 3743)
-    ("unbound identifier in module" . 1051)
-    ("The type of vm-processes cannot be converted to a contract" . 522)
-    ("expected a `)' to close `('" . 156)
-    ("bad syntax" . 133)
-    ("duplicate definition for identifier" . 92)
-    ("unbound identifier in module (in phase 1, transformer environment)" . 87)
-    ("syntax error in pattern" . 71)
-    ("type name used out of context" . 70)
-    ("missing `)' to close preceding `(', found instead `]'" . 63)
-    ("bad syntax (multiple types after identifier)" . 56)
-    ("no pattern variables before ellipsis in template" . 56)
-    ("missing `]' to close preceding `[', found instead `)'" . 55)
-    ("Illegal clause in endpoint definition" . 51)
-    ("duplicate argument identifier" . 38)
+    (total . 3329)
+    ("unbound identifier in module" . 925)
+    ("The type of vm-processes cannot be converted to a contract" . 245)
+    ("bad syntax" . 135)
+    ("Illegal clause in endpoint definition" . 99)
+    ("duplicate definition for identifier" . 91)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 90)
+    ("bad syntax (multiple types after identifier)" . 77)
+    ("syntax error in pattern" . 77)
+    ("type name used out of context" . 69)
+    ("pattern variable cannot be used outside of a template" . 64)
+    ("no pattern variables before ellipsis in template" . 54)
+    ("missing ellipsis with pattern variable in template" . 52)
+    ("type mismatch" . 52)
+    ("provided identifier not defined or imported for phase 0" . 51)
+    ("duplicate argument identifier" . 49)
+    ("expected a `)' to close `('" . 40)
     ("variable used twice in pattern" . 37)
-    ("pattern variable cannot be used outside of a template" . 37)
-    ("not a require sub-form" . 35)
-    ("must be used in a definition context" . 34)
-    ("type mismatch" . 34)
-    ("collection not found" . 32)
-    ("not allowed in an expression context" . 31)
-    ("missing procedure expression;" . 30)
-    ("missing ellipsis with pattern variable in template" . 29)
-    ("too many ellipses in template" . 28)
+    ("wildcard not allowed as an expression" . 36)
+    ("not allowed in an expression context" . 34)
+    ("'" . 33)
+    ("not a provide sub-form" . 32)
+    ("collection not found" . 30)
+    ("must be used in a definition context" . 27)
     ("missing argument expression after keyword" . 26)
-    ("wildcard not allowed as an expression" . 26)
-    ("provided identifier not defined or imported for phase 0" . 26)
-    ("not a provide sub-form" . 23)
-    ("too many forms in body of All type" . 19)
-    ("not allowed as an expression" . 17)
-    ("not defined as syntax class" . 17)
-    ("(State)" . 16)
-    ("illegal use of syntax" . 15)
-    ("(X)" . 15)
-    ("'" . 14)
-    ("variable not bound in all or patterns" . 14)
+    ("duplicate attribute" . 21)
+    ("(State)" . 17)
+    ("too many ellipses in template" . 15)
+    ("Unbound type name X" . 15)
+    ("Unbound type name" . 14)
+    ("missing procedure expression;" . 14)
+    ("too many forms in body of All type" . 14)
+    ("not defined as syntax class" . 13)
+    ("identifier already provided (as a different binding)" . 13)
     ("identifier is already imported" . 13)
-    ("identifier is not bound to struct type information" . 13)
-    ("Illegal use of on-absence outside endpoint definition context" . 11)
-    ("identifier already provided (as a different binding)" . 11)
-    ("missing `)' to close `(' on line 193, found instead `]'; indentation suggests a missing `)' before line 194"
+    ("duplicate binding name" . 12)
+    ("unexpected `)'" . 12)
+    ("ellipses not allowed as an expression" . 12)
+    ("(subscriber topic clause ...)" . 12)
+    ("misplaced ellipsis in template" . 11)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     11)
+    ("not a require sub-form" . 10)
+    ("(X)" . 10)
+    ("missing `]' to close `[' on line 23, found instead `)'; indentation suggests a missing `)' before line 47"
      .
      10)
-    ("Unbound type name" . 10)
-    ("(publisher topic clause ...)" . 10)
-    ("defaults)" . 10)
-    ("duplicate declared identifier" . 9)
-    ("misplaced ellipsis in template" . 9)
-    ("duplicate field identifier" . 8)
-    ("Illegal use of on-message outside endpoint definition context" . 8)
-    ("unexpected `)'" . 8)
-    ("ellipses not allowed as an expression" . 8)
-    ("Illegal use of match-state outside endpoint definition context" . 7)
-    ("duplicate argument name" . 7)
-    ("(subscriber topic clause ...)" . 7)
-    ("arity mismatch;" . 6)
-    ("missing `]' to close `[' on line 217, found instead `)'" . 6)
+    ("Illegal use of on-absence outside endpoint definition context" . 10)
+    ("identifier is not bound to struct type information" . 10)
+    ("variable not bound in all or patterns" . 10)
+    ("Illegal use of match-state outside endpoint definition context" . 10)
+    ("illegal use of syntax" . 9)
+    ("Illegal use of on-presence outside endpoint definition context" . 9)
+    ("Unbound type name define-type" . 8)
     ("unbound identifier in module (in the transformer environment, which does not include the run-time definition)"
      .
-     6)
-    ("Declaration for `send-to-process' provided, but `send-to-process' has no definition"
-     .
-     6)
+     8)
+    ("Unbound type name require/typed" . 7)
+    ("Wrong number of arguments, expected 1 and got 2" . 7)
+    ("undefined;" . 7)
+    ("Unbound type name All" . 7)
+    ("misplaced ellipsis in pattern (follows other ellipsis)" . 7)
+    ("Illegal use of on-message outside endpoint definition context" . 7)
+    ("not a procedure;" . 6)
+    ("Recursive Type Alias Reference" . 6)
+    ("expected identifier" . 6)
+    ("Component of case-lambda type was not a function clause" . 6)
     ("attribute bound in defaults but not in pattern" . 6)
-    ("duplicate attribute" . 6)
-    ("Unbound type name define-type" . 6)
-    ("duplicate identifier" . 6)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 187"
+    ("Polymorphic function `mkProcess' could not be applied to arguments" . 6)
+    ("missing `)' to close preceding `(', found instead `]'" . 6)
+    ("unexpected term" . 5)
+    ("missing `]' to close `[' on line 20, found instead `)'" . 5)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("missing `]' to close `[' on line 76, found instead `)'; indentation suggests a missing `]' before line 77"
      .
      5)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 196"
+    ("not allowed as an expression" . 5)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 5)
+    ("Unbound type name U" . 5)
+    ("expected `)' to close `(' on line 74, found instead `]'" . 5)
+    ("Polymorphic function `cons' could not be applied to arguments" . 5)
+    ("Declaration for `quasiqueue->cons-tree' provided, but `quasiqueue->cons-tree' has no definition"
      .
      5)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 189"
-     .
-     5)
-    ("missing `)' to close `(' on line 203, found instead `]'; indentation suggests a missing `)' before line 204"
-     .
-     5)
-    ("Illegal use of on-presence outside endpoint definition context" . 5)
-    ("cannot open module file" . 5)
-    ("undefined;" . 5)
-    ("Illegal use of match-conversation outside endpoint definition context"
-     .
-     5)
-    ("misplaced ellipsis in pattern (follows other ellipsis)" . 5)
-    ("missing `]' to close `[' on line 204, found instead `)'" . 5)
-    ("exn" . 5)
+    ("Wrong number of arguments, expected 2 and got 1" . 5)
     ("accessor name not associated with the given structure type" . 5)
-    ("identifier is not bound to a structure type" . 5)
-    ("Declaration for `endpoint-fold' provided, but `endpoint-fold' has no definition"
+    ("missing `]' to close `[' on line 95, found instead `)'; indentation suggests a missing `]' before line 96"
      .
      5)
     ("missing `]' to close `[' on line 60, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 103, found instead `)'; indentation suggests a missing `]' before line 104"
+    ("Declaration for `always-false' provided, but `always-false' has no definition"
      .
      5)
-    ("missing `]' to close `[' on line 86, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 88, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 97, found instead `)'; indentation suggests a missing `]' before line 98"
+    ("Polymorphic function `process-pid' could not be applied to arguments"
      .
      5)
-    ("missing `]' to close `[' on line 94, found instead `)'" . 5)
-    ("Error in macro expansion -- Recursive Type Alias Reference" . 5)
-    ("missing `]' to close `[' on line 23, found instead `)'; indentation suggests a missing `)' before line 47"
+    ("Illegal use of match-conversation outside endpoint definition context"
      .
      5)
-    ("missing `]' to close `[' on line 41, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 50, found instead `)'" . 5)
-    ("Unbound type name X" . 5)
-    ("missing `)' to close `(' on line 156, found instead `]'" . 5)
-    ("missing `)' to close `(' on line 100, found instead `]'" . 4)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 182"
+    ("missing `]' to close `[' on line 274, found instead `)'" . 5)
+    ("Declaration for `send-to-process' provided, but `send-to-process' has no definition"
+     .
+     5)
+    ("Polymorphic function `process-debug-name' could not be applied to arguments"
+     .
+     5)
+    ("cannot open module file" . 4)
+    ("bad syntax (missing binding pairs or body)" . 4)
+    ("unbound identifier in the transformer environment;" . 4)
+    ("bad module path" . 4)
+    ("Unbound type name CoTransition" . 4)
+    ("duplicate field identifier" . 4)
+    ("Unbound type name Event" . 4)
+    ("misplaced ellipsis in pattern" . 4)
+    ("too few ellipses for pattern variable in template" . 4)
+    ("Cannot apply expression of type (U (State -> (transition State)) (at-meta-level State)), since it is not a function type"
      .
      4)
-    ("missing an \"else\" expression" . 4)
-    ("missing `]' to close `[' on line 217, found instead `)'; indentation suggests a missing `)' before line 222"
+    ("Declaration for `make-nested-vm' provided, but `make-nested-vm' has no definition"
+     .
+     4)
+    ("Unbound type name typed/racket/base" . 4)
+    ("Declaration for `name-process' provided, but `name-process' has no definition"
+     .
+     4)
+    ("Error in macro expansion -- insufficient type information to typecheck. please add more type annotations"
      .
      4)
     ("Declaration for `notify-route-change-self' provided, but `notify-route-change-self' has no definition"
      .
      4)
-    ("Declaration for `notify-route-change-vm' provided, but `notify-route-change-vm' has no definition"
+    ("Declaration for `transition-accepter' provided, but `transition-accepter' has no definition"
      .
      4)
-    ("(SNew)" . 4)
-    ("Declaration for `coproc' provided, but `coproc' has no definition" . 4)
-    ("Unbound type name Orientation" . 4)
-    ("Unbound type name process-spec" . 4)
-    ("Wrong number of arguments, expected 1 and got 2" . 4)
-    ("Declaration for `quasiqueue-empty?' provided, but `quasiqueue-empty?' has no definition"
+    ("Cannot instantiate non-polymorphic type (U False Process)" . 4)
+    ("Declaration for `udp-driver' provided, but `udp-driver' has no definition"
      .
      4)
-    ("contract violation" . 4)
-    ("missing `)' to close `(' on line 49, found instead `]'" . 3)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 206"
+    ("arity mismatch;" . 3)
+    ("Cannot apply expression of type Reason, since it is not a function type"
      .
      3)
-    ("Polymorphic function `set-remove' could not be applied to arguments" . 3)
-    ("this match expander must be used inside match" . 3)
-    ("use of a class keyword is not in a class" . 3)
-    ("not an identifier, identifier with default, or keyword for procedure argument"
-     .
-     3)
-    ("(observe-subscribers/everything topic clause ...)" . 3)
-    ("(observe-publishers topic clause ...)" . 3)
-    ("unexpected term" . 3)
-    ("bad syntax;" . 3)
-    ("Declaration for `evt-handler' provided, but `evt-handler' has no definition"
-     .
-     3)
+    ("Unbound type name ParentState" . 3)
     ("terms left over after keyword options" . 3)
-    ("Wrong number of arguments, expected 2 and got 1" . 3)
-    ("Polymorphic function `memq' could not be applied to arguments" . 3)
-    ("Declaration for `co-roles' provided, but `co-roles' has no definition"
-     .
-     3)
-    ("missing `)' to close `(' on line 288, found instead `]'; indentation suggests a missing `)' before line 289"
-     .
-     3)
-    ("missing `)' to close `(' on line 217, found instead `]'; indentation suggests a missing `)' before line 218"
+    ("identifier `require' not included in nested require spec" . 3)
+    ("arrow not allowed as an expression" . 3)
+    ("Unbound type name inst" . 3)
+    ("Unbound type name delete-endpoint" . 3)
+    ("Unbound type name send-feedback" . 3)
+    ("Unbound type name send-message" . 3)
+    ("expected `)' to close preceding `(', found instead `}'" . 3)
+    ("Unbound type name sequence-actions" . 3)
+    ("Unbound type name quit" . 3)
+    ("Wrong number of arguments, expected 1 and got 3" . 3)
+    ("unbound identifier in module (in the transformer environment, which does not include the macro definition that is visible to run-time expressions)"
      .
      3)
     ("head pattern not allowed here" . 3)
-    ("missing `]' to close `[' on line 141, found instead `)'; indentation suggests a missing `]' before line 142"
+    ("bad syntax;" . 3)
+    ("no binding for identifier" . 3)
+    ("expected 1 and got 2" . 3)
+    ("Wrong number of arguments, expected 1 and got 0" . 3)
+    ("Cannot apply expression of type vm, since it is not a function type" . 3)
+    ("(publisher topic clause ...)" . 3)
+    ("duplicate identifier" . 3)
+    ("Declaration for `next-timer!' provided, but `next-timer!' has no definition"
      .
      3)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 207"
+    ("Declaration for `fire-timers!' provided, but `fire-timers!' has no definition"
+     .
+     3)
+    ("Unbound type name struct-map" . 2)
+    ("Unbound type name struct-map.rkt" . 2)
+    ("not an identifier, identifier with default, or keyword for procedure argument"
      .
      2)
-    ("missing `)' to close `(' on line 53, found instead `]'; indentation suggests a missing `)' before line 54"
-     .
-     2)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 67"
-     .
-     2)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 100"
-     .
-     2)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 56"
-     .
-     2)
-    ("missing `)' to close `(' on line 55, found instead `]'; indentation suggests a missing `)' before line 58"
-     .
-     2)
-    ("Declaration for `valid-port-number?' provided, but `valid-port-number?' has no definition"
-     .
-     2)
-    ("expected identifier" . 2)
-    ("invalid module-path form" . 2)
-    ("Unbound type name wild" . 2)
-    ("Polymorphic function `hash-set' could not be applied to arguments" . 2)
-    ("Unbound type name active-timers" . 2)
-    ("Unbound type name next-counter" . 2)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 214"
-     .
-     2)
-    ("missing `)' to close `(' on line 213, found instead `]'" . 2)
-    ("method name is not an identifier" . 2)
-    ("missing `)' to close `(' on line 248, found instead `]'; indentation suggests a missing `)' before line 249"
-     .
-     2)
-    ("bad module path" . 2)
-    ("(observe-subscribers topic clause ...)" . 2)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 220"
-     .
-     2)
-    ("expected a clause with a pattern and a result" . 2)
-    ("pid" . 2)
-    ("Declaration for `workaround' provided, but `workaround' has no definition"
-     .
-     2)
+    ("literal is not an identifier" . 2)
+    ("bad syntax (clause is not a test-value pair)" . 2)
+    ("bad sequence binding clause" . 2)
+    ("bad syntax (missing body)" . 2)
+    ("(ParentState)" . 2)
+    ("bad syntax (no expressions for procedure body)" . 2)
+    ("not in a definition context" . 2)
+    ("Unbound type name State" . 2)
+    ("duplicate type variable" . 2)
+    ("no expression after a sequence of internal definitions" . 2)
     ("bad form" . 2)
-    ("(send-to-user* debug-name pid (e) failure-result enclosed-expr)" . 2)
-    ("Declaration for `transition-accepter' provided, but `transition-accepter' has no definition"
+    ("Unbound type name state" . 2)
+    ("Unbound type name transition" . 2)
+    ("Unbound type name case->" . 2)
+    ("Unbound type name quasiqueue-empty?" . 2)
+    ("Polymorphic function `empty-quasiqueue' could not be applied to arguments"
      .
      2)
-    ("()" . 2)
-    ("missing `)' to close `(' on line 63, found instead `]'; indentation suggests a missing `)' before line 71"
+    ("Polymorphic function `quasiqueue' could not be applied to arguments" . 2)
+    ("(CT CT)" . 2)
+    ("Recursive types are not allowed directly inside their definition" . 2)
+    ("Cannot apply expression of type role, since it is not a function type"
      .
      2)
-    ("missing `)' to close `(' on line 63, found instead `]'; indentation suggests a missing `)' before line 64"
+    ("Declaration for `roles-equal?' provided, but `roles-equal?' has no definition"
      .
      2)
-    ("pattern keyword not allowed here" . 2)
-    ("unbound identifier in the transformer environment;" . 2)
-    ("Unbound type name All" . 2)
-    ("Recursive Type Alias Reference" . 2)
-    ("Unbound type name ActionTree" . 2)
-    ("Unbound type name freshen" . 2)
-    ("Unbound type name mgu-canonical" . 2)
-    ("Wrong number of arguments, expected 1 and got 4" . 2)
-    ("Wrong number of arguments, expected 2 and got 4" . 2)
-    ("unbound identifier in module (in the transformer environment, which does not include the macro definition that is visible to run-time expressions)"
-     .
-     2)
-    ("missing `)' to close `(' on line 158, found instead `]'; indentation suggests a missing `)' before line 160"
-     .
-     2)
-    ("missing `)' to close `(' on line 154, found instead `]'; indentation suggests a missing `)' before line 155"
+    ("Declaration for `refine-role' provided, but `refine-role' has no definition"
      .
      2)
     ("expected at least one pattern" . 2)
-    ("illegal use of `.'" . 2)
-    ("Cannot apply expression of type Positive-Index, since it is not a function type"
+    ("Declaration for `make-vm' provided, but `make-vm' has no definition" . 2)
+    ("Declaration for `State' provided, but `State' has no definition" . 2)
+    ("identifier `tr-struct-copy.rkt' not included in nested require spec" . 2)
+    ("identifier `rename-in' not included in nested require spec" . 2)
+    ("Unbound type name sync" . 2)
+    ("Unbound type name support/event.rkt" . 2)
+    ("identifier is not bound to a structure type" . 2)
+    ("Polymorphic function `action-tree->quasiqueue' could not be applied to arguments"
      .
      2)
-    ("missing `)' to close `(' on line 53, found instead `]'; indentation suggests a missing `)' before line 163"
+    ("Declaration for `do-quit' provided, but `do-quit' has no definition" . 2)
+    ("Polymorphic function `do-quit' could not be applied to arguments" . 2)
+    ("Polymorphic function `log-quit' could not be applied to arguments" . 2)
+    ("missing `)' to close `(' on line 205, found instead `]'; indentation suggests a missing `)' before line 211"
      .
      2)
-    ("missing `]' to close `[' on line 161, found instead `)'" . 2)
-    ("missing `)' to close `(' on line 53, found instead `]'; indentation suggests a missing `)' before line 156"
-     .
-     2)
-    ("missing `]' to close `[' on line 66, found instead `)'; indentation suggests a missing `]' before line 67"
-     .
-     2)
-    ("missing `)' to close `(' on line 53, found instead `]'; indentation suggests a missing `)' before line 160"
-     .
-     2)
-    ("missing `]' to close `[' on line 159, found instead `)'; indentation suggests a missing `]' before line 160"
-     .
-     2)
-    ("Declaration for `processes' provided, but `processes' has no definition"
+    ("illegal use of `.'" . 1)
+    ("bad syntax (not an identifier and expression for a binding)" . 1)
+    ("expected an identifier for the structure type name" . 1)
+    ("Declaration for `generic-spy' provided, but `generic-spy' has no definition"
      .
      1)
-    ("Declaration for `p' provided, but `p' has no definition" . 1)
-    ("Declaration for `pid' provided, but `pid' has no definition" . 1)
-    ("expected 3 but got 2" . 1)
-    ("expected more terms starting with expression" . 1)
-    ("Declaration for `handle-presence' provided, but `handle-presence' has no definition"
+    ("Polymorphic function `name-process' could not be applied to arguments"
      .
      1)
-    ("(super-type TypeParam ...) SubType sub-type sub-type?)" . 1)
-    ("Unbound type name pseudo-substruct" . 1)
-    ("Unbound type name udp-packet?" . 1)
-    ("Unbound type name udp-packet" . 1)
-    ("Wrong number of arguments, expected 2 and got 0" . 1)
-    ("Could not infer types for applying polymorphic function `udp-driver'"
+    ("Polymorphic function `generic-spy' could not be applied to arguments"
      .
      1)
-    ("Cannot apply expression of type UdpLocalAddress, since it is not a function type"
+    ("No function domains matched in function application" . 1)
+    ("Cannot apply expression of type InterestType, since it is not a function type"
      .
      1)
-    ("Cannot apply expression of type Zero, since it is not a function type"
+    ("Declaration for `../sugar-typed.rkt' provided, but `../sugar-typed.rkt' has no definition"
      .
      1)
-    ("Unbound type name bind-socket!" . 1)
-    ("Unbound type name local-addr" . 1)
-    ("Unbound type name active-handles" . 1)
-    ("missing `)' to close `(' on line 179, found instead `]'; indentation suggests a missing `)' before line 180"
+    ("pid" . 1)
+    ("identifier `main.rkt' not included in nested require spec" . 1)
+    ("identifier `except-in' not included in nested require spec" . 1)
+    ("' not included in nested require spec" . 1)
+    ("identifier `prefix-in' not included in nested require spec" . 1)
+    ("32 quit>" . 1)
+    ("34 send-message>" . 1)
+    ("34 delete-endpoint>" . 1)
+    ("Declaration for `Quit' provided, but `Quit' has no definition" . 1)
+    ("Unbound type name pre-eid" . 1)
+    ("transparent" . 1)
+    ("((U (add-endpoint State) delete-endpoint send-message (spawn State) quit) (yield State) (at-meta-level State))"
      .
      1)
-    ("expected 3 and got 2" . 1)
-    ("Unbound type name install-timer!" . 1)
-    ("Unbound type name timer-expired-pattern" . 1)
-    ("Unbound type name make-timer-heap" . 1)
-    ("Unbound type name current-inexact-milliseconds" . 1)
-    ("Unbound type name _" . 1)
-    ("Wrong number of type arguments to polymorphic type (All (State) (State (Rec g21448 (U False Void Null (spawn State) (add-endpoint State) send-message quit delete-endpoint (yield State) (at-meta-level State) (Pairof g21448 g21448))) * -> (transition State)))"
+    ("29 quit>" . 1)
+    ("18 quit>" . 1)
+    ("Unbound type name participantrver" . 1)
+    ("Unbound type name Urver" . 1)
+    ("Unbound type name InterestTyperver" . 1)
+    ("Unbound type name define-typerver" . 1)
+    ("Unbound type name Cheesy.rver" . 1)
+    ("Unbound type name publishercriber" . 1)
+    ("Unbound type name Ucriber" . 1)
+    ("Unbound type name Orientationcriber" . 1)
+    ("Unbound type name define-typecriber" . 1)
+    ("Unbound type name conversationcriber" . 1)
+    ("Unbound type name conversation" . 1)
+    ("Unbound type name the" . 1)
+    ("Unbound type name to" . 1)
+    ("Unbound type name Reason" . 1)
+    ("Polymorphic function `sequence-actions' could not be applied to arguments"
      .
      1)
-    ("Unbound type name label" . 1)
-    ("Unbound type name hash-set" . 1)
-    ("identifier `Void' not included in nested require spec" . 1)
-    ("identifier `->' not included in nested require spec" . 1)
-    ("Wrong number of arguments, expected 3 and got 2" . 1)
-    ("Wrong number of arguments, expected 0 and got 2" . 1)
-    ("cannot mutate syntax identifier" . 1)
-    ("not an identifier" . 1)
-    ("cannot set! a contract/out variable" . 1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 204"
-     .
-     1)
-    ("missing `)' to close `(' on line 211, found instead `]'; indentation suggests a missing `)' before line 212"
-     .
-     1)
-    ("bad syntax (no expressions for procedure body)" . 1)
-    ("multiple bindings of `local-port' in the same clause" . 1)
-    ("multiple bindings of `local-hostname' in the same clause" . 1)
-    ("insufficient type information to typecheck. please add more type annotations"
-     .
-     1)
-    ("missing `]' to close `[' on line 127, found instead `)'" . 1)
-    ("missing `]' to close `[' on line 122, found instead `)'; indentation suggests a missing `]' before line 123"
-     .
-     1)
-    ("role" . 1)
-    ("Declaration for `PR13149' provided, but `PR13149' has no definition" . 1)
-    ("missing `)' to close `(' on line 196, found instead `]'; indentation suggests a missing `)' before line 200"
-     .
-     1)
-    ("typed/racket/base" . 1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 156"
-     .
-     1)
-    ("Declaration for `name-endpoint' provided, but `name-endpoint' has no definition"
-     .
-     1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 167"
-     .
-     1)
-    ("Cannot apply expression of type PreEID, since it is not a function type"
-     .
-     1)
-    ("missing `)' to close `(' on line 148, found instead `]'; indentation suggests a missing `)' before line 150"
-     .
-     1)
-    ("duplicate type variable" . 1)
-    ("(send-to-user p (e) failure-result enclosed-expr)" . 1)
-    ("missing `)' to close `(' on line 103, found instead `]'; indentation suggests a missing `)' before line 104"
-     .
-     1)
-    ("missing `)' to close `(' on line 104, found instead `]'; indentation suggests a missing `)' before line 107"
-     .
-     1)
-    ("expected annotated-formals" . 1)
-    ("missing `)' to close `(' on line 77, found instead `]'; indentation suggests a missing `)' before line 80"
-     .
-     1)
-    ("bad syntax (multiple expressions after identifier)" . 1)
-    ("missing `)' to close `(' on line 104, found instead `]'; indentation suggests a missing `)' before line 106"
-     .
-     1)
-    ("bad syntax (clause is not a test-value pair)" . 1)
-    ("expected at least one expression on the right-hand side" . 1)
-    ("missing `)' to close `(' on line 74, found instead `]'; indentation suggests a missing `)' before line 75"
-     .
-     1)
+    ("Unbound type name cons" . 1)
+    ("Unbound type name loop" . 1)
+    ("quit" . 1)
+    ("Unbound type name f" . 1)
+    ("Unbound type name ann" . 1)
+    ("(State (transition State))" . 1)
+    ("(ActionTree (transition State))" . 1)
+    ("(Transition (transition State))" . 1)
+    ("Unbound type name subscriber" . 1)
+    ("Unbound type name actions" . 1)
     ("missing `)' to close `(' on line 78, found instead `]'; indentation suggests a missing `)' before line 79"
      .
      1)
-    ("Declaration for `primordial' provided, but `primordial' has no definition"
-     .
-     1)
-    ("expected 0, given 2" . 1)
-    ("State topic clause ...)" . 1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 54"
-     .
-     1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 53"
-     .
-     1)
-    ("missing `)' to close `(' on line 64, found instead `]'; indentation suggests a missing `)' before line 71"
-     .
-     1)
-    ("missing `)' to close `(' on line 61, found instead `]'; indentation suggests a missing `)' before line 62"
-     .
-     1)
-    ("missing `)' to close `(' on line 64, found instead `]'; indentation suggests a missing `)' before line 65"
-     .
-     1)
-    ("misplaced ellipsis in pattern" . 1)
-    ("missing `)' to close `(' on line 187, found instead `]'; indentation suggests a missing `)' before line 193"
-     .
-     1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 148"
-     .
-     1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 164"
-     .
-     1)
-    ("missing `)' to close `(' on line 116, found instead `]'; indentation suggests a missing `)' before line 117"
-     .
-     1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 128"
-     .
-     1)
-    ("transparent" . 1)
-    ("34 send-message>" . 1)
-    ("34 delete-endpoint>" . 1)
-    ("Unbound type name message" . 1)
-    ("35 process-spec>" . 1)
-    ("26 U>" . 1)
-    ("omit-define-syntaxes" . 1)
-    ("Unbound type name k" . 1)
-    ("Unbound type name boot" . 1)
-    ("Unbound type name reason" . 1)
-    ("Unbound type name pre-eid" . 1)
-    ("Unbound type name transition" . 1)
-    ("identifier to remove `udp.rkt' not included in nested provide spec" . 1)
-    ("(Topic Topic)" . 1)
-    ("(Symbol Topic)" . 1)
-    ("(Topic Topic Boolean)" . 1)
-    ("Unbound type name specialization?" . 1)
-    ("Cannot apply expression of type role, since it is not a function type"
-     .
-     1)
-    ("missing `)' to close `(' on line 25, found instead `]'; indentation suggests a missing `)' before line 28"
-     .
-     1)
-    ("bad syntax (not an identifier)" . 1)
-    ("missing `)' to close `(' on line 25, found instead `]'; indentation suggests a missing `)' before line 33"
-     .
-     1)
-    ("missing `)' to close `(' on line 25, found instead `]'; indentation suggests a missing `)' before line 47"
-     .
-     1)
-    ("not in a module-definition context" . 1)
-    ("missing `)' to close `(' on line 52, found instead `]'" . 1)
-    ("missing `)' to close `(' on line 63, found instead `]'; indentation suggests a missing `)' before line 66"
-     .
-     1)
-    ("missing `)' to close `(' on line 63, found instead `]'; indentation suggests a missing `)' before line 65"
-     .
-     1)
-    ("missing `)' to close `(' on line 135, found instead `]'; indentation suggests a missing `)' before line 136"
-     .
-     1)
-    ("duplicate binding name" . 1)
-    ("expected `)' to close preceding `(', found instead `}'" . 1)
-    ("(transition/no-state action ...)" . 1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 12"
-     .
-     1)
+    ("identifier `opaque' not included in nested require spec" . 1)
+    ("identifier `unify.rkt' not included in nested require spec" . 1)
+    ("identifier `require/typed' not included in nested require spec" . 1)
+    ("function type has two cases of arity 0" . 1)
+    ("Unbound type name wild" . 1)
     ("Unbound type name wild?" . 1)
-    ("((-> Wild) (Symbol -> Wild))" . 1)
-    ("Unbound type name opaque" . 1)
-    ("Unbound type name unify.rkt" . 1)
-    ("Unbound type name list-max" . 1)
-    ("Unbound type name provide" . 1)
-    ("Unbound type name typed/racket/base" . 1)
+    ("identifier `Boolean' not included in nested require spec" . 1)
+    ("identifier `->' not included in nested require spec" . 1)
+    ("identifier `Any' not included in nested require spec" . 1)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     1)
+    ("bad syntax (multiple expressions after identifier)" . 1)
+    ("Unbound type name marketplace-root-logger" . 1)
+    ("Unbound type name log-untyped.rkt" . 1)
     ("Unbound type name lang" . 1)
-    ("Polymorphic function `empty-quasiqueue' could not be applied to arguments"
+    ("Polymorphic function `append' could not be applied to arguments" . 1)
+    ("Declaration for `q' provided, but `q' has no definition" . 1)
+    ("Declaration for `xs' provided, but `xs' has no definition" . 1)
+    ("Duplicate type annotation of (All (X) ((Listof X) (Listof X) -> (Listof X))) for reverse, previous was #<procedure>"
+     .
+     1)
+    ("Duplicate type annotation of (All (X) ((Listof X) (Listof X) -> (Listof X))) for append, previous was #<procedure>"
      .
      1)
     ("Polymorphic function `list->quasiqueue' could not be applied to arguments"
      .
      1)
-    ("Wrong number of arguments, expected 2 and got 3" . 1)
-    ("Polymorphic function `quasiqueue' could not be applied to arguments" . 1)
     ("Polymorphic function `quasiqueue->cons-tree' could not be applied to arguments"
      .
      1)
-    ("Unbound type name U" . 1)
-    ("Recursive types are not allowed directly inside their definition" . 1)
-    ("Unbound type name Rec" . 1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 16"
+    ("Polymorphic function `quasiqueue->list' could not be applied to arguments"
      .
      1)
-    ("Polymorphic function `spawn13' could not be applied to arguments" . 1)
-    ("process-spec" . 1)
-    ("Illegal use of match-reason outside endpoint definition context" . 1)
-    ("(Any Any)" . 1)
-    ("Unbound type name struct-map" . 1)
-    ("Unbound type name struct-map.rkt" . 1)
-    ("Unbound type name require/typed" . 1)
-    ("Unbound type name typed/rackunit" . 1)
-    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+    ("Polymorphic function `quasiqueue-append' could not be applied to arguments"
      .
      1)
-    ("No struct-map property or mapper for #f" . 1)
-    ("missing `)' to close `(' on line 21, found instead `]'; indentation suggests a missing `)' before line 163"
+    ("Unbound type name empty-quasiqueue" . 1)
+    ("Unbound type name quasiqueue" . 1)
+    ("Unbound type name quasiqueue-append" . 1)
+    ("Unbound type name quasiqueue-append-list" . 1)
+    ("Unbound type name refine-role" . 1)
+    ("Unbound type name orientations-intersect?" . 1)
+    ("Unbound type name ta" . 1)
+    ("Unbound type name role-topic" . 1)
+    ("Unbound type name co-orientation" . 1)
+    ("Unbound type name for/list" . 1)
+    ("Unbound type name r" . 1)
+    ("Unbound type name co-roles" . 1)
+    ("Unbound type name roles-equal?" . 1)
+    ("Unbound type name new-topic" . 1)
+    ("Unbound type name topic" . 1)
+    ("defaults)" . 1)
+    ("allowed only around a module body" . 1)
+    ("expected 1 but got 3" . 1)
+    ("Declaration for `p' provided, but `p' has no definition" . 1)
+    ("Declaration for `k' provided, but `k' has no definition" . 1)
+    ("Declaration for `---------------------------------------------------------------------------' provided, but `---------------------------------------------------------------------------' has no definition"
      .
      1)
-    ("bad syntax (not an identifier and expression for a binding)" . 1)
-    ("multiple bindings of `pred' in the same clause" . 1)
-    ("multiple bindings of `construct' in the same clause" . 1)
-    ("missing `]' to close `[' on line 25, found instead `)'; indentation suggests a missing `]' before line 26"
+    ("Declaration for `coproc' provided, but `coproc' has no definition" . 1)
+    ("Declaration for `Result' provided, but `Result' has no definition" . 1)
+    ("Declaration for `wp' provided, but `wp' has no definition" . 1)
+    ("Declaration for `process-map' provided, but `process-map' has no definition"
      .
      1)
-    ("missing `)' to close `(' on line 21, found instead `]'; indentation suggests a missing `)' before line 160"
+    ("expected 3 but got 2" . 1)
+    ("identifier to remove `udp.rkt' not included in nested provide spec" . 1)
+    ("Unbound type name evt-handler" . 1)
+    ("Unbound type name participant" . 1)
+    ("Unbound type name _" . 1)
+    ("Unbound type name evt" . 1)
+    ("identifier `action-send-message.rkt' not included in nested require spec"
+     .
+     1)
+    ("identifier `actions.rkt' not included in nested require spec" . 1)
+    ("Unbound type name endpoint-fold" . 1)
+    ("Unbound type name active-events" . 1)
+    ("Unbound type name define" . 1)
+    ("Wrong number of arguments, expected 3 and got 1" . 1)
+    ("#<syntax endpoint> (eid role (EndpointEvent -> (State -> (transition State))))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name require" . 1)
+    ("Unbound type name always-evt" . 1)
+    ("Unbound type name never-evt" . 1)
+    ("Unbound type name ->" . 1)
+    ("Unbound type name run-ground-vm" . 1)
+    ("Unbound type name provide" . 1)
+    ("Expected a function of type (-> (-> Void)), but got a function with the wrong arity"
+     .
+     1)
+    ("(rename \"tr-struct-copy.rkt\" ..." . 1)
+    ("Polymorphic function `extract-ground-event-subscriptions' could not be applied to arguments"
+     .
+     1)
+    ("missing `)' to close `(' on line 63, found instead `]'; indentation suggests a missing `)' before line 71"
+     .
+     1)
+    ("typed/racket/base" . 1)
+    ("Declaration for `state' provided, but `state' has no definition" . 1)
+    ("Declaration for `interruptk' provided, but `interruptk' has no definition"
+     .
+     1)
+    ("Declaration for `loop' provided, but `loop' has no definition" . 1)
+    ("Declaration for `active-events' provided, but `active-events' has no definition"
+     .
+     1)
+    ("Bad arguments to function in apply" . 1)
+    ("expected 2 but got 3" . 1)
+    ("Unbound type name event-relay" . 1)
+    ("Unbound type name ../support/event.rkt" . 1)
+    ("Polymorphic function `event-relay' could not be applied to arguments"
+     .
+     1)
+    ("Cannot apply expression of type Evt, since it is not a function type"
+     .
+     1)
+    ("(observe-subscribers/everything topic clause ...)" . 1)
+    ("missing `)' to close `(' on line 103, found instead `]'; indentation suggests a missing `)' before line 104"
+     .
+     1)
+    ("duplicate clause binding name" . 1)
+    ("(send-to-user* debug-name pid (e) failure-result enclosed-expr)" . 1)
+    ("Expected a function of type (process-spec (U False (PID -> (OldState -> (transition OldState)))) (process OldState) Any -> (-> (values (U False (process OldState)) vm))), but got a function with the wrong arity"
+     .
+     1)
+    ("missing an \"else\" expression" . 1)
+    ("Declaration for `starting' provided, but `starting' has no definition"
+     .
+     1)
+    ("Declaration for `~a' provided, but `~a' has no definition" . 1)
+    ("multiple bindings of `local-hostname' in the same clause" . 1)
+    ("(observe-publishers topic clause ...)" . 1)
+    ("this match expander must be used inside match" . 1)
+    ("Unbound type name exn->string" . 1)
+    ("Unbound type name web-server/private/util" . 1)
+    ("Unbound type name List" . 1)
+    ("#<syntax process> (Any PID State (Listof (Pairof Integer (PID -> (State -> (transition State))))) (HashTable PreEID (endpoint State)) (HashTable PreEID (endpoint State)) (Listof (U send-message quit delete-endpoint (spawn State) (add-endpoint State) (yield State) (at-meta-level State))))), since it is not a function type"
+     .
+     1)
+    ("identifier `process.rkt' not included in nested require spec" . 1)
+    ("identifier `vm.rkt' not included in nested require spec" . 1)
+    ("vm" . 1)
+    ("State topic clause ...)" . 1)
+    ("Declaration for `address' provided, but `address' has no definition" . 1)
+    ("Declaration for `remote' provided, but `remote' has no definition" . 1)
+    ("Declaration for `any' provided, but `any' has no definition" . 1)
+    ("Declaration for `represents' provided, but `represents' has no definition"
+     .
+     1)
+    ("(super-type TypeParam ...) SubType sub-type sub-type?)" . 1)
+    ("Declaration for `timer-driver' provided, but `timer-driver' has no definition"
+     .
+     1)
+    ("Wrong number of type arguments to polymorphic type (All (State) (State (Rec g21448 (U False Void Null (spawn State) (add-endpoint State) send-message quit delete-endpoint (yield State) (at-meta-level State) (Pairof g21448 g21448))) * -> (transition State)))"
+     .
+     1)
+    ("Unbound type name heap" . 1)
+    ("Unbound type name struct" . 1)
+    ("Unbound type name timers." . 1)
+    ("(Real Evt)" . 1)
+    ("Unbound type name alarm-evt" . 1)
+    ("(Void Evt)" . 1)
+    ("Wrong number of arguments, expected 0 and got 1" . 1)
+    ("Cannot apply expression of type Heap, since it is not a function type"
+     .
+     1)
+    ("cannot generate contract for non-function polymorphic type" . 1)
+    ("Unbound type name pseudo-substruct" . 1)
+    ("Unbound type name set-timer?" . 1)
+    ("Wrong number of arguments, expected 2 and got 0" . 1)
+    ("Could not infer types for applying polymorphic function `timer-driver'"
+     .
+     1)
+    ("expected 1 but got 2" . 1)
+    ("expected a clause with a pattern and a result" . 1)
+    ("Declaration for `workaround' provided, but `workaround' has no definition"
+     .
+     1)
+    ("Declaration for `PR13149' provided, but `PR13149' has no definition"
      .
      1))))

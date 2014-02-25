@@ -1,44 +1,27 @@
 '((remove
-   (passed . 32)
+   (passed . 60)
    (failed
-    (total . 68)
-    ("unbound identifier in module" . 22)
-    ("missing `]' to close preceding `[', found instead `)'" . 13)
-    ("syntax error in pattern" . 8)
-    ("duplicate definition for identifier" . 8)
-    ("wildcard not allowed as an expression" . 4)
-    ("undefined;" . 4)
-    ("illegal use of syntax" . 4)
-    ("missing `]' to close `[' on line 50, found instead `)'; indentation suggests a missing `]' before line 51"
-     .
-     1)
-    ("missing `]' to close `[' on line 55, found instead `)'; indentation suggests a missing `]' before line 56"
-     .
-     1)
-    ("missing `]' to close `[' on line 81, found instead `)'; indentation suggests a missing `]' before line 82"
-     .
-     1)
-    ("missing `]' to close `[' on line 76, found instead `)'" . 1)
-    ("missing `]' to close `[' on line 83, found instead `)'; indentation suggests a missing `]' before line 84"
-     .
-     1)))
-  (truncate
-   (passed . 40)
-   (failed
-    (total . 60)
-    ("unbound identifier in module" . 33)
-    ("missing `]' to close preceding `[', found instead `)'" . 6)
-    ("missing `]' to close `[' on line 62, found instead `)'; indentation suggests a missing `]' before line 63"
-     .
-     5)
-    ("collection not found" . 5)
-    ("expected even number of items for dictionary" . 2)
-    ("duplicate argument identifier" . 2)
+    (total . 40)
+    ("unbound identifier in module" . 15)
+    ("syntax error in pattern" . 10)
+    ("duplicate definition for identifier" . 5)
     ("arity mismatch;" . 2)
-    ("no expression after a sequence of internal definitions" . 1)
-    ("wildcard not allowed as an expression" . 1)
+    ("contract violation" . 2)
+    ("bad syntax" . 1)
     ("illegal use of `.'" . 1)
-    ("not used in definition context" . 1)
-    ("missing `]' to close `[' on line 42, found instead `)'; indentation suggests a missing `]' before line 43"
-     .
-     1))))
+    ("broke its contract" . 1)
+    ("identifier is already imported" . 1)
+    ("duplicate identifier" . 1)
+    ("wildcard not allowed as an expression" . 1)))
+  (truncate
+   (passed . 73)
+   (failed
+    (total . 72)
+    ("unbound identifier in module" . 49)
+    ("syntax error in pattern" . 5)
+    ("variable not bound in all or patterns" . 5)
+    ("expected a `)' to close `('" . 5)
+    ("unexpected `)'" . 5)
+    ("duplicate argument identifier" . 1)
+    ("bad module path" . 1)
+    ("duplicate binding name" . 1))))

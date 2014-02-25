@@ -1,116 +1,157 @@
 '((remove
    (passed . 0)
    (failed
-    (total . 402)
-    ("missing `]' to close preceding `[', found instead `)'" . 206)
-    ("unbound identifier in module" . 49)
-    ("bad syntax" . 23)
-    ("Type variable B must be used with ..." . 14)
+    (total . 275)
+    ("unbound identifier in module" . 96)
+    ("bad syntax" . 26)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     8)
+    ("Type variable B must be used with ..." . 8)
+    ("Polymorphic function `delete-min/max' could not be applied to arguments"
+     .
+     8)
+    ("must be used in a definition context" . 7)
     ("duplicate argument identifier" . 7)
-    ("missing `]' to close `[' on line 249, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 176, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 116, found instead `)'" . 5)
-    ("identifier already provided (as a different binding)" . 5)
-    ("missing `]' to close `[' on line 3, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 287, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 165, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 42, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 219, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 171, found instead `)'" . 5)
-    ("expected identifier" . 5)
-    ("missing `]' to close `[' on line 95, found instead `)'; indentation suggests a missing `]' before line 96"
+    ("Polymorphic function `Heap2' could not be applied to arguments" . 6)
+    ("Declaration for `delete-min/max' provided, but `delete-min/max' has no definition"
      .
      5)
+    ("'" . 5)
+    ("duplicate definition for identifier" . 5)
+    ("Bad arguments to polymorphic function in apply" . 5)
+    ("type mismatch" . 5)
+    ("Unbound type name A" . 5)
+    ("Unbound type name find-min/max" . 4)
     ("bad syntax (multiple types after identifier)" . 4)
-    ("duplicate type variable declaration" . 3)
-    ("Component of case-lambda type was not a function clause" . 3)
-    ("Declaration for `heap-map' provided, but `heap-map' has no definition"
+    ("Polymorphic function `build-heap' could not be applied to arguments" . 4)
+    ("Polymorphic function `filter' could not be applied to arguments" . 4)
+    ("Declaration for `A' provided, but `A' has no definition" . 3)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 3)
+    ("Polymorphic function `find-min/max' could not be applied to arguments"
      .
      3)
-    ("type name used out of context" . 2)
-    ("duplicate type variable or index" . 2)
-    ("Declaration for `A' provided, but `A' has no definition" . 2)
-    ("Used a type variable (...) not bound with ... as a bound on a ..." . 2)
-    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 82"
-     .
-     2)
-    ("Bad arguments to polymorphic function in apply" . 2)
+    ("Unbound type name build-heap" . 3)
+    ("Unbound type name delete-min/max" . 3)
+    ("Unbound type name empty?" . 3)
+    ("Unbound type name filter" . 3)
+    ("Polymorphic function `Heap-trees' could not be applied to arguments" . 3)
+    ("Unbound type name C" . 3)
+    ("untyped identifier map-multiple" . 3)
     ("Polymorphic function `Heap-comparer' could not be applied to arguments"
      .
-     2)
-    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 10"
-     .
-     2)
-    ("must be used in a definition context" . 1)
-    ("(link node1 node2 func)" . 1)
+     3)
+    ("bad syntax (not an identifier)" . 2)
+    ("duplicate identifier" . 2)
+    ("not allowed as an expression" . 2)
+    ("Unbound type name ..." . 2)
+    ("Unbound type name *" . 2)
+    ("Polymorphic function `foldl' could not be applied to arguments" . 2)
+    ("duplicate type variable or index" . 2)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (Heap) not bound with ... as a bound on a ..." . 1)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
     ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
      .
      1)
-    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
-    ("Declaration for `get-min' provided, but `get-min' has no definition" . 1)
-    ("duplicate definition for identifier" . 1)
-    ("duplicate identifier" . 1)
-    ("Polymorphic function `inner' could not be applied to arguments" . 1)
-    ("Unbound type name All" . 1)
-    ("Unbound type name" . 1)
     ("ellipses not allowed as an expression" . 1)
-    ("Unbound type name define" . 1)
-    ("Used a type variable (Heap) not bound with ... as a bound on a ..." . 1)
-    ("Used a type variable (C) not bound with ... as a bound on a ..." . 1)))
+    ("missing an \"else\" expression" . 1)
+    ("(link node1 node2 func)" . 1)
+    ("Unbound type name case-lambda" . 1)
+    ("Unbound type name func" . 1)
+    ("Unbound type name empty" . 1)
+    ("Unbound type name inst" . 1)
+    ("Unbound type name lst" . 1)
+    ("type name used out of context" . 1)
+    ("use of a class keyword is not in a class" . 1)
+    ("13 Heap> ((A A -> Boolean) (Listof (Node A)))), since it is not a function type"
+     .
+     1)
+    ("Declaration for `common' provided, but `common' has no definition" . 1)))
   (truncate
    (passed . 0)
    (failed
-    (total . 374)
-    ("missing `]' to close preceding `[', found instead `)'" . 201)
-    ("unbound identifier in module" . 29)
-    ("bad syntax" . 19)
-    ("Type variable B must be used with ..." . 13)
-    ("bad syntax (multiple types after identifier)" . 8)
-    ("missing `]' to close `[' on line 250, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 114, found instead `)'; indentation suggests a missing `)' before line 115"
+    (total . 276)
+    ("unbound identifier in module" . 76)
+    ("Type variable B must be used with ..." . 21)
+    ("bad syntax" . 13)
+    ("(A)" . 10)
+    ("Unbound type name A" . 10)
+    ("must be used in a definition context" . 9)
+    ("Polymorphic function `find-min/max' could not be applied to arguments"
+     .
+     9)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 8)
+    ("Declaration for `heap-ormap' provided, but `heap-ormap' has no definition"
      .
      5)
-    ("missing `]' to close `[' on line 116, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 266, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 108, found instead `)'; indentation suggests a missing `]' before line 109"
-     .
-     5)
-    ("missing `]' to close `[' on line 249, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 263, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 84, found instead `)'" . 5)
-    ("Polymorphic function `inner' could not be applied to arguments" . 5)
-    ("missing `]' to close `[' on line 70, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 217, found instead `)'; indentation suggests a missing `)' before line 218"
-     .
-     5)
-    ("missing `]' to close `[' on line 52, found instead `)'" . 4)
-    ("'" . 4)
-    ("Declaration for `heap-andmap' provided, but `heap-andmap' has no definition"
-     .
-     4)
+    ("Unbound type name" . 5)
     ("Polymorphic function `delete-min/max' could not be applied to arguments"
      .
-     4)
-    ("duplicate argument identifier" . 3)
-    ("duplicate type variable" . 3)
-    ("identifier already provided (as a different binding)" . 3)
-    ("type name used out of context" . 3)
-    ("duplicate identifier" . 2)
-    ("Used a type variable (B) not bound with ... as a bound on a ..." . 2)
-    ("duplicate type variable declaration" . 2)
-    ("type mismatch" . 2)
+     5)
+    ("Polymorphic function `Heap2' could not be applied to arguments" . 5)
+    ("Declaration for `sorted-list' provided, but `sorted-list' has no definition"
+     .
+     5)
+    ("not allowed as an expression" . 5)
+    ("duplicate identifier" . 4)
+    ("Polymorphic function `ins-tree' could not be applied to arguments" . 4)
+    ("Unbound type name All" . 4)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 4)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("duplicate definition for identifier" . 4)
+    ("Polymorphic function `Node-rank' could not be applied to arguments" . 4)
+    ("Declaration for `ins-tree' provided, but `ins-tree' has no definition"
+     .
+     3)
+    ("type mismatch" . 3)
+    ("Polymorphic function `filter' could not be applied to arguments" . 3)
+    ("bad syntax (missing binding pairs or body)" . 2)
+    ("type name used out of context" . 2)
+    ("duplicate type variable" . 2)
+    ("Unbound type name delete-min/max" . 2)
+    ("Unbound type name empty?" . 2)
+    ("Unbound type name filter" . 2)
+    ("Unbound type name find-min/max" . 2)
+    ("variable used twice in pattern" . 2)
+    ("Polymorphic function `insert' could not be applied to arguments" . 2)
+    ("Bad arguments to polymorphic function in apply" . 2)
+    ("Unbound type name ..." . 2)
+    ("Polymorphic function `build-heap' could not be applied to arguments" . 2)
+    ("Polymorphic function `sorted-list' could not be applied to arguments"
+     .
+     2)
+    ("((Node A))" . 2)
+    ("bad syntax;" . 1)
+    ("Declaration for `constructor' provided, but `constructor' has no definition"
+     .
+     1)
     ("duplicate argument name" . 1)
+    ("ellipses not allowed as an expression" . 1)
+    ("duplicate argument identifier" . 1)
+    ("duplicate type variable or index" . 1)
     ("Declaration for `the' provided, but `the' has no definition" . 1)
     ("Declaration for `into' provided, but `into' has no definition" . 1)
     ("Declaration for `element' provided, but `element' has no definition" . 1)
-    ("use of a class keyword is not in a class" . 1)
-    ("not allowed as an expression" . 1)
-    ("(link node1 node2 func)" . 1)
-    ("Declaration for `get-min' provided, but `get-min' has no definition" . 1)
-    ("Unbound type name" . 1)
-    ("Unbound type name ..." . 1)
-    ("Polymorphic function `empty?' could not be applied to arguments" . 1)
-    ("Polymorphic function `ins-tree' could not be applied to arguments" . 1)
-    ("13 Node> (Integer A (Listof (Node A)))), since it is not a function type"
+    ("duplicate type variable declaration" . 1)
+    ("Declaration for `function' provided, but `function' has no definition"
      .
-     1))))
+     1)
+    ("Declaration for `to' provided, but `to' has no definition" . 1)
+    ("Unbound type name build-heap" . 1)
+    ("13 Heap> ((A A -> Boolean) (Listof (Node A)))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name get-min" . 1)
+    ("Polymorphic function `inner' could not be applied to arguments" . 1)
+    ("Unbound type name inner" . 1)
+    ("Polymorphic function `get-min' could not be applied to arguments" . 1)
+    ("Duplicate type annotation of (All (A) ((A -> Boolean) (Heap A) -> (Heap A))) for filter, previous was #<procedure>"
+     .
+     1)
+    ("(C C Boolean)" . 1)
+    ("Unbound type name case-lambda" . 1)
+    ("(C A Boolean)" . 1)
+    ("Polymorphic function `Node-val' could not be applied to arguments" . 1)
+    ("Unbound type name trees" . 1)
+    ("Unbound type name val" . 1))))

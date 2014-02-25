@@ -1,52 +1,61 @@
 '((remove
-   (passed . 0)
+   (passed . 2)
    (failed
-    (total . 36)
-    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+    (total . 37)
+    ("type mismatch" . 7)
+    ("(Integer)" . 7)
+    ("type name used out of context" . 6)
+    ("unbound identifier in module" . 3)
+    ("Unbound type name sum" . 3)
+    ("Cannot apply expression of type (U Null (Boxof (U (Boxof (Rec g189 (U Null (Boxof (U (Boxof g189) (-> (Boxof g189)))) (Pairof Integer g189)))) (-> (Boxof (Rec g195 (U Null (Boxof (U (Boxof g195) (-> (Boxof g195)))) (Pairof Integer g195))))))) (Pairof Integer (Rec g201 (U Null (Boxof (U (Boxof g201) (-> (Boxof g201)))) (Pairof Integer g201))))), since it is not a function type"
      .
-     5)
-    ("unbound identifier in module" . 4)
-    ("Wrong number of arguments, expected 1 and got 3" . 4)
-    ("Polymorphic function `box' could not be applied to arguments" . 4)
-    ("collection not found" . 3)
+     1)
+    ("bad syntax;" . 1)
     ("Cannot apply expression of type Zero, since it is not a function type"
      .
-     2)
-    ("Polymorphic function `reverse' could not be applied to arguments" . 2)
-    ("bad module path" . 2)
-    ("Cannot apply expression of type (U Null (Boxof (U (Boxof (Rec g218 (U Null (Boxof (U (Boxof g218) (-> (Boxof g218)))) (Pairof Integer g218)))) (-> (Boxof (Rec g224 (U Null (Boxof (U (Boxof g224) (-> (Boxof g224)))) (Pairof Integer g224))))))) (Pairof Integer (Rec g230 (U Null (Boxof (U (Boxof g230) (-> (Boxof g230)))) (Pairof Integer g230))))), since it is not a function type"
-     .
      1)
-    ("no expression after a sequence of internal definitions" . 1)
-    ("Wrong number of arguments, expected 1 and got 2" . 1)
-    ("Polymorphic function `pscar' could not be applied to arguments" . 1)
-    ("Cannot apply expression of type (U (Boxof (U (Boxof (Rec g260 (U Null (Boxof (U (Boxof g260) (-> (Boxof g260)))) (Pairof Integer g260)))) (-> (Boxof (Rec g266 (U Null (Boxof (U (Boxof g266) (-> (Boxof g266)))) (Pairof Integer g266))))))) (Pairof Integer (Rec g272 (U Null (Boxof (U (Boxof g272) (-> (Boxof g272)))) (Pairof Integer g272))))), since it is not a function type"
-     .
-     1)
-    ("Polymorphic function `pscdr' could not be applied to arguments" . 1)
-    ("Cannot apply expression of type One, since it is not a function type"
-     .
-     1)
-    ("type name used out of context" . 1)
-    ("(check-type e t)" . 1)
-    ("bad syntax" . 1)))
-  (truncate
-   (passed . 0)
-   (failed
-    (total . 38)
-    ("type name used out of context" . 16)
-    ("unbound identifier in module" . 7)
-    ("type mismatch" . 2)
-    ("(check-type e t)" . 2)
-    ("identifier is already imported" . 2)
     ("'" . 1)
-    ("Polymorphic function `psappend' could not be applied to arguments" . 1)
-    ("No function domains matched in function application" . 1)
-    ("Wrong number of arguments, expected 1 and got 3" . 1)
     ("Polymorphic function `reverse' could not be applied to arguments" . 1)
     ("duplicate definition for identifier" . 1)
+    ("identifier is already imported" . 1)
+    ("Unbound type name check-equal?" . 1)
     ("bad syntax" . 1)
-    ("Wrong number of arguments, expected 1 and got 2" . 1)
+    ("Unbound type name define" . 1)
+    ("Unbound type name" . 1)))
+  (truncate
+   (passed . 1)
+   (failed
+    (total . 37)
+    ("unbound identifier in module" . 6)
+    ("type name used out of context" . 4)
+    ("type mismatch" . 4)
+    ("identifier is already imported" . 2)
+    ("Wrong number of arguments, expected 1 and got 3" . 1)
+    ("Polymorphic function `reverse' could not be applied to arguments" . 1)
+    ("unexpected term" . 1)
+    ("(delay e)" . 1)
+    ("Unbound type name" . 1)
+    ("Unbound type name sum" . 1)
+    ("Unbound type name typed/rackunit" . 1)
+    ("Unbound type name require" . 1)
+    ("collection not found" . 1)
+    ("(check-type e t)" . 1)
     ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     1)
+    ("duplicate definition for identifier" . 1)
+    ("bad syntax;" . 1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Boxof (Rec g189 (U Null (Boxof (U (Boxof g189) (-> (Boxof g189)))) (Pairof Integer g189)))) (-> (Boxof (Rec g195 (U Null (Boxof (U (Boxof g195) (-> (Boxof g195)))) (Pairof Integer g195))))))) (Pairof Integer (Rec g201 (U Null (Boxof (U (Boxof g201) (-> (Boxof g201)))) (Pairof Integer g201))))), since it is not a function type"
+     .
+     1)
+    ("not allowed in an expression context" . 1)
+    ("Unbound type name list" . 1)
+    ("Unbound type name ann" . 1)
+    ("Unbound type name check-equal?" . 1)
+    ("Unbound type name check-type" . 1)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U (Boxof (U (Boxof (Rec g194 (U Null (Boxof (U (Boxof g194) (-> (Boxof g194)))) (Pairof Integer g194)))) (-> (Boxof (Rec g200 (U Null (Boxof (U (Boxof g200) (-> (Boxof g200)))) (Pairof Integer g200))))))) (Pairof Integer (Rec g206 (U Null (Boxof (U (Boxof g206) (-> (Boxof g206)))) (Pairof Integer g206))))), since it is not a function type"
      .
      1))))

@@ -1,158 +1,75 @@
 '((remove
    (passed . 0)
    (failed
-    (total . 440)
-    ("missing `]' to close preceding `[', found instead `)'" . 210)
-    ("unbound identifier in module" . 39)
-    ("bad syntax" . 23)
-    ("Type variable B must be used with ..." . 16)
-    ("duplicate type variable declaration" . 9)
-    ("missing `]' to close `[' on line 154, found instead `)'" . 5)
-    ("unexpected term" . 5)
-    ("missing `]' to close `[' on line 386, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 11, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 144, found instead `)'; indentation suggests a missing `]' before line 145"
-     .
-     5)
-    ("missing `]' to close `[' on line 288, found instead `)'; indentation suggests a missing `]' before line 289"
-     .
-     5)
-    ("missing `]' to close `[' on line 293, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 224, found instead `)'; indentation suggests a missing `]' before line 225"
-     .
-     5)
-    ("missing `]' to close `[' on line 367, found instead `)'" . 5)
-    ("duplicate argument identifier" . 5)
-    ("missing `]' to close `[' on line 391, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 169, found instead `)'; indentation suggests a missing `)' before line 170"
-     .
-     5)
-    ("expected identifier" . 5)
-    ("missing `]' to close `[' on line 307, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 40, found instead `)'; indentation suggests a missing `]' before line 41"
-     .
-     5)
-    ("missing `]' to close `[' on line 61, found instead `)'; indentation suggests a missing `]' before line 62"
-     .
-     5)
-    ("missing `]' to close `[' on line 286, found instead `)'; indentation suggests a missing `]' before line 287"
-     .
-     5)
-    ("missing `]' to close `[' on line 209, found instead `)'; indentation suggests a missing `]' before line 210"
-     .
-     5)
-    ("missing `]' to close `[' on line 190, found instead `)'; indentation suggests a missing `]' before line 191"
-     .
-     5)
+    (total . 223)
+    ("unbound identifier in module" . 74)
+    ("must be used in a definition context" . 27)
+    ("Type variable B must be used with ..." . 22)
+    ("bad syntax" . 21)
+    ("duplicate definition for identifier" . 15)
+    ("(A)" . 10)
+    ("bad syntax (multiple types after identifier)" . 8)
+    ("duplicate type variable declaration" . 5)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 5)
     ("too many forms in body of All type" . 5)
-    ("missing `]' to close `[' on line 229, found instead `)'" . 5)
-    ("Used a type variable (...) not bound with ... as a bound on a ..." . 4)
-    ("duplicate type variable" . 4)
-    ("must be used in a definition context" . 3)
-    ("Used a type variable (C) not bound with ... as a bound on a ..." . 3)
-    ("Declaration for `A' provided, but `A' has no definition" . 3)
-    ("Component of case-lambda type was not a function clause" . 3)
-    ("identifier already provided (as a different binding)" . 3)
-    ("(empty A)" . 2)
-    ("Used a type variable (A) not bound with ... as a bound on a ..." . 2)
-    ("Used a type variable (B) not bound with ... as a bound on a ..." . 2)
-    ("Used a type variable (Deque) not bound with ... as a bound on a ..." . 1)
-    ("Used a type variable (define) not bound with ... as a bound on a ..."
+    ("duplicate type variable or index" . 4)
+    ("'" . 4)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 3)
+    ("Declaration for `deque-ormap' provided, but `deque-ormap' has no definition"
      .
-     1)
-    ("Declaration for `strem' provided, but `strem' has no definition" . 1)
-    ("(stream-cons x stream)" . 1)
+     3)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 2)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 2)
+    ("duplicate identifier" . 2)
+    ("duplicate argument name" . 2)
+    ("(empty A)" . 2)
     ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
      .
      1)
+    ("Used a type variable (Deque) not bound with ... as a bound on a ..." . 1)
+    ("(stream-cons x stream)" . 1)
+    ("no binding for identifier" . 1)
+    ("use of a class keyword is not in a class" . 1)
+    ("Declaration for `A' provided, but `A' has no definition" . 1)
     ("Declaration for `constructor' provided, but `constructor' has no definition"
      .
-     1)
-    ("duplicate field identifier" . 1)
-    ("Declaration for `queue' provided, but `queue' has no definition" . 1)
-    ("Declaration for `the' provided, but `the' has no definition" . 1)))
+     1)))
   (truncate
    (passed . 0)
    (failed
-    (total . 345)
-    ("missing `]' to close preceding `[', found instead `)'" . 107)
-    ("unbound identifier in module" . 36)
-    ("Type variable B must be used with ..." . 25)
-    ("bad syntax" . 18)
-    ("bad syntax (multiple types after identifier)" . 16)
-    ("Polymorphic function `inner' could not be applied to arguments" . 7)
-    ("must be used in a definition context" . 6)
-    ("missing `]' to close `[' on line 292, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 326, found instead `)'" . 5)
-    ("Component of case-lambda type was not a function clause" . 5)
-    ("missing `]' to close `[' on line 310, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 295, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 305, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 294, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 340, found instead `)'; indentation suggests a missing `]' before line 341"
+    (total . 208)
+    ("unbound identifier in module" . 81)
+    ("bad syntax" . 19)
+    ("must be used in a definition context" . 17)
+    ("Type variable B must be used with ..." . 17)
+    ("(A)" . 15)
+    ("duplicate argument identifier" . 8)
+    ("Declaration for `deque->list' provided, but `deque->list' has no definition"
      .
      5)
-    ("missing `]' to close `[' on line 331, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 322, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 270, found instead `)'" . 4)
-    ("duplicate definition for identifier" . 4)
-    ("missing `]' to close `[' on line 271, found instead `)'" . 4)
-    ("Polymorphic function `empty?' could not be applied to arguments" . 4)
-    ("Polymorphic function `Deque-front' could not be applied to arguments"
-     .
-     4)
-    ("(empty A)" . 3)
-    ("missing `]' to close `[' on line 161, found instead `)'" . 3)
-    ("missing `]' to close `[' on line 102, found instead `)'" . 3)
-    ("missing `]' to close `[' on line 207, found instead `)'; indentation suggests a missing `]' before line 208"
-     .
-     3)
-    ("Declaration for `dqfoldl' provided, but `dqfoldl' has no definition" . 3)
-    ("missing `]' to close `[' on line 135, found instead `)'" . 3)
-    ("missing `]' to close `[' on line 89, found instead `)'" . 2)
-    ("Declaration for `the' provided, but `the' has no definition" . 2)
-    ("" . 2)
-    ("Duplicate type annotation of (All (A C B ...) (case-> ((C A -> C) C (Deque A) -> C) ((C A B ... B -> C) C (Deque A) (Deque B) ... B -> C))) for foldr, previous was #<procedure>"
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("too many forms in body of All type" . 5)
+    ("expected identifier" . 4)
+    ("type name used out of context" . 4)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 3)
+    ("duplicate definition for identifier" . 3)
+    ("duplicate type variable or index" . 2)
+    ("duplicate type variable" . 2)
+    ("(empty A)" . 2)
+    ("not allowed in an expression context" . 2)
+    ("bad syntax (not an identifier)" . 2)
+    ("Declaration for `rotate-rev' provided, but `rotate-rev' has no definition"
      .
      2)
-    ("Polymorphic function `enqueue' could not be applied to arguments" . 2)
-    ("bad syntax (not an identifier)" . 1)
-    ("(A)" . 1)
-    ("(delay e)" . 1)
-    ("not allowed as an expression" . 1)
-    ("Declaration for `ques' provided, but `ques' has no definition" . 1)
-    ("Declaration for `que' provided, but `que' has no definition" . 1)
-    ("not allowed in an expression context" . 1)
-    ("Declaration for `queue' provided, but `queue' has no definition" . 1)
-    ("Declaration for `given' provided, but `given' has no definition" . 1)
-    ("Declaration for `of' provided, but `of' has no definition" . 1)
-    ("Declaration for `end' provided, but `end' has no definition" . 1)
-    ("Declaration for `rear' provided, but `rear' has no definition" . 1)
-    ("Declaration for `at' provided, but `at' has no definition" . 1)
+    ("Declaration for `dqfoldl' provided, but `dqfoldl' has no definition" . 1)
+    ("Declaration for `function' provided, but `function' has no definition"
+     .
+     1)
+    ("Declaration for `to' provided, but `to' has no definition" . 1)
+    ("Declaration for `accum' provided, but `accum' has no definition" . 1)
+    ("Declaration for `rer' provided, but `rer' has no definition" . 1)
     ("duplicate field identifier" . 1)
-    ("type name used out of context" . 1)
-    ("Polymorphic function `Deque-rear' could not be applied to arguments" . 1)
-    ("duplicate type variable" . 1)
-    ("Declaration for `nsub1' provided, but `nsub1' has no definition" . 1)
-    ("Declaration for `loop' provided, but `loop' has no definition" . 1)
-    ("Declaration for `func' provided, but `func' has no definition" . 1)
-    ("Polymorphic function `maintainR' could not be applied to arguments" . 1)
-    ("Cannot apply expression of type (C A B ... B -> C), since it is not a function type"
-     .
-     1)
-    ("Polymorphic function `deque->list' could not be applied to arguments"
-     .
-     1)
-    ("Polymorphic function `cons' could not be applied to arguments" . 1)
-    ("Unbound type name All" . 1)
-    ("Unbound type name" . 1)
-    ("Unbound type name enqueue-front" . 1)
-    ("Polymorphic function `enqueue-front' could not be applied to arguments"
-     .
-     1)
-    ("Polymorphic function `internal-deque' could not be applied to arguments"
-     .
-     1)
-    ("Polymorphic function `maintainF' could not be applied to arguments" . 1)
-    ("Unbound type name empty?" . 1)
-    ("Unbound type name enqueue" . 1))))
+    ("Cannot infer bound for ... type" . 1)
+    ("collection not found" . 1)
+    ("unexpected `)'" . 1)
+    ("duplicate type variable declaration" . 1))))

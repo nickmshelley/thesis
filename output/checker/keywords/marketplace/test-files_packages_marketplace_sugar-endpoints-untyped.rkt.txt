@@ -1,48 +1,76 @@
 '((remove
-   (passed . 116)
+   (passed . 93)
    (failed
-    (total . 124)
-    ("no pattern variables before ellipsis in template" . 18)
-    ("pattern variable cannot be used outside of a template" . 17)
+    (total . 147)
+    ("missing ellipsis with pattern variable in template" . 32)
     ("unbound identifier in module (in phase 1, transformer environment)" . 16)
-    ("variable used twice in pattern" . 13)
-    ("missing ellipsis with pattern variable in template" . 13)
-    ("missing `)' to close preceding `(', found instead `]'" . 9)
+    ("no pattern variables before ellipsis in template" . 13)
+    ("unbound identifier in module" . 12)
+    ("variable used twice in pattern" . 10)
+    ("pattern variable cannot be used outside of a template" . 10)
+    ("too many ellipses in template" . 6)
+    ("missing `]' to close `[' on line 190, found instead `)'" . 5)
     ("unbound identifier in module (in the transformer environment, which does not include the run-time definition)"
      .
-     7)
-    ("expected a `)' to close `('" . 5)
-    ("missing procedure expression;" . 4)
-    ("provided identifier not defined or imported for phase 0" . 4)
-    ("too many ellipses in template" . 3)
-    ("ellipses not allowed as an expression" . 3)
+     5)
+    ("missing `]' to close `[' on line 182, found instead `)'" . 5)
+    ("missing `]' to close `[' on line 114, found instead `)'; indentation suggests a missing `]' before line 115"
+     .
+     5)
+    ("expected `)' to close `(' on line 74, found instead `]'" . 5)
+    ("wildcard not allowed as an expression" . 5)
+    ("missing `)' to close preceding `(', found instead `]'" . 5)
     ("misplaced ellipsis in pattern (follows other ellipsis)" . 2)
-    ("bad form" . 2)
-    ("missing `)' to close `(' on line 174, found instead `]'; indentation suggests a missing `)' before line 178"
-     .
-     1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 124"
-     .
-     1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 128"
-     .
-     1)
+    ("misplaced ellipsis in template" . 2)
+    ("bad syntax" . 2)
+    ("duplicate argument identifier" . 1)
+    ("syntax error in pattern" . 1)
     ("not allowed in an expression context" . 1)
-    ("missing `)' to close `(' on line 206, found instead `]'; indentation suggests a missing `)' before line 209"
+    ("too few ellipses for pattern variable in template" . 1)
+    ("ellipses not allowed as an expression" . 1)
+    ("bad form" . 1)
+    ("illegal use of syntax" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 86)
+    ("type mismatch" . 13)
+    ("unbound identifier in module" . 5)
+    ("Component of case-lambda type was not a function clause" . 5)
+    ("Cannot apply expression of type (U (State -> (transition State)) (at-meta-level State)), since it is not a function type"
+     .
+     4)
+    ("Polymorphic function `cons' could not be applied to arguments" . 4)
+    ("must be used in a definition context" . 3)
+    ("Unbound type name delete-endpoint" . 3)
+    ("Unbound type name send-feedback" . 3)
+    ("Unbound type name send-message" . 3)
+    ("identifier already provided (as a different binding)" . 3)
+    ("Unbound type name All" . 3)
+    ("Unbound type name sequence-actions" . 3)
+    ("bad syntax" . 3)
+    ("Unbound type name quit" . 3)
+    ("illegal use of syntax" . 2)
+    ("Unbound type name inst" . 2)
+    ("Unbound type name state" . 2)
+    ("Unbound type name" . 2)
+    ("Unbound type name U" . 2)
+    ("Unbound type name case->" . 2)
+    ("Polymorphic function `sequence-actions' could not be applied to arguments"
      .
      1)
-    ("bad syntax" . 1)
-    ("illegal use of syntax" . 1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 193"
-     .
-     1)))
-  (truncate
-   (passed . 17)
-   (failed
-    (total . 39)
-    ("unbound identifier in module" . 23)
-    ("Illegal clause in endpoint definition" . 10)
-    ("duplicate argument identifier" . 2)
-    ("(publisher topic clause ...)" . 2)
-    ("wildcard not allowed as an expression" . 1)
-    ("(observe-publishers topic clause ...)" . 1))))
+    ("collection not found" . 1)
+    ("Unbound type name cons" . 1)
+    ("Unbound type name loop" . 1)
+    ("Unbound type name transition" . 1)
+    ("quit" . 1)
+    ("Unbound type name f" . 1)
+    ("Unbound type name ann" . 1)
+    ("expected `)' to close preceding `(', found instead `}'" . 1)
+    ("(State (transition State))" . 1)
+    ("(ActionTree (transition State))" . 1)
+    ("(Transition (transition State))" . 1)
+    ("Unbound type name subscriber" . 1)
+    ("Unbound type name actions" . 1)
+    ("unexpected `)'" . 1)
+    ("provided identifier not defined or imported for phase 0" . 1))))

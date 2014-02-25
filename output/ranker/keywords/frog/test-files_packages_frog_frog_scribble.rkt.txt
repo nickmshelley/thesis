@@ -1,7 +1,7 @@
 (list
  (cons
   'remove
-  (rankings "test-files/packages/frog/frog/scribble.rkt" '(1 0 0 3 1) 9 6))
+  (rankings "test-files/packages/frog/frog/scribble.rkt" '(0 0 0 3 0) 9 8))
  (cons
   'truncate
-  (rankings "test-files/packages/frog/frog/scribble.rkt" '(0 0 1 1 1) 4 13)))
+  (rankings "test-files/packages/frog/frog/scribble.rkt" '(1 1 1 1 2) 4 10)))

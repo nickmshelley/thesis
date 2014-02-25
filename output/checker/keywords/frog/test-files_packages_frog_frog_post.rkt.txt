@@ -1,11 +1,17 @@
 '((remove
-   (passed . 0)
+   (passed . 4)
    (failed
-    (total . 10)
-    ("not a provide sub-form" . 5)
-    ("identifier is not bound to struct type information" . 5)))
+    (total . 6)
+    ("identifier is not bound to struct type information" . 5)
+    ("duplicate field identifier" . 1)))
   (truncate
-   (passed . 5)
+   (passed . 15)
    (failed
-    (total . 5)
-    ("identifier is not bound to struct type information" . 5))))
+    (total . 35)
+    ("unbound identifier in module" . 24)
+    ("duplicate argument identifier" . 5)
+    ("expected `)' to close preceding `(', found instead `}'" . 2)
+    ("unexpected `}'" . 1)
+    ("bad syntax" . 1)
+    ("not allowed in an expression context" . 1)
+    ("ellipses not allowed as an expression" . 1))))

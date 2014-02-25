@@ -1,113 +1,95 @@
 '((remove
    (passed . 0)
    (failed
-    (total . 390)
-    ("missing `]' to close preceding `[', found instead `)'" . 180)
-    ("unbound identifier in module" . 47)
+    (total . 215)
+    ("unbound identifier in module" . 73)
     ("bad syntax" . 22)
-    ("Type variable B must be used with ..." . 15)
-    ("bad syntax (multiple types after identifier)" . 12)
-    ("variable used twice in pattern" . 6)
-    ("Used a type variable (B) not bound with ... as a bound on a ..." . 6)
-    ("missing `]' to close `[' on line 48, found instead `)'; indentation suggests a missing `]' before line 49"
-     .
-     5)
-    ("missing `]' to close `[' on line 109, found instead `)'; indentation suggests a missing `]' before line 110"
-     .
-     5)
-    ("too many forms in body of All type" . 5)
-    ("missing `]' to close `[' on line 205, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 76, found instead `)'; indentation suggests a missing `]' before line 77"
-     .
-     5)
-    ("missing `]' to close `[' on line 137, found instead `)'; indentation suggests a missing `)' before line 138"
-     .
-     5)
-    ("missing `]' to close `[' on line 221, found instead `)'; indentation suggests a missing `]' before line 222"
-     .
-     5)
-    ("missing `]' to close `[' on line 3, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 277, found instead `)'; indentation suggests a missing `]' before line 278"
-     .
-     5)
-    ("missing `]' to close `[' on line 320, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 151, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 301, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 266, found instead `)'; indentation suggests a missing `)' before line 267"
-     .
-     5)
-    ("missing `]' to close `[' on line 224, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 8, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 314, found instead `)'" . 4)
-    ("duplicate argument identifier" . 3)
-    ("(xor l r)" . 2)
-    ("not allowed as an expression" . 2)
-    ("Declaration for `A' provided, but `A' has no definition" . 2)
-    ("duplicate type variable or index" . 2)
-    ("must be used in a definition context" . 2)
-    ("duplicate type variable" . 2)
-    ("(rotate val1 prio1 val2 prio2 t1 t2 t3)" . 1)
-    ("missing `]' to close `[' on line 314, found instead `)'; indentation suggests a missing `)' before line 315"
-     .
-     1)
-    ("Declaration for `treap.' provided, but `treap.' has no definition" . 1)
-    ("Declaration for `the' provided, but `the' has no definition" . 1)
-    ("Used a type variable (...) not bound with ... as a bound on a ..." . 1)
-    ("Used a type variable (C) not bound with ... as a bound on a ..." . 1)
-    ("Used a type variable (A) not bound with ... as a bound on a ..." . 1)
-    ("type name used out of context" . 1)))
-  (truncate
-   (passed . 0)
-   (failed
-    (total . 373)
-    ("missing `]' to close preceding `[', found instead `)'" . 161)
-    ("unbound identifier in module" . 65)
-    ("Type variable B must be used with ..." . 22)
-    ("bad syntax (multiple types after identifier)" . 17)
-    ("too many forms in body of All type" . 15)
-    ("bad syntax" . 14)
-    ("missing `]' to close `[' on line 257, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 242, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 265, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 251, found instead `)'" . 5)
+    ("bad syntax (multiple types after identifier)" . 16)
+    ("(A)" . 10)
+    ("Type variable B must be used with ..." . 9)
+    ("duplicate argument identifier" . 8)
+    ("must be used in a definition context" . 6)
+    ("'" . 5)
+    ("Declaration for `delete' provided, but `delete' has no definition" . 5)
+    ("variable used twice in pattern" . 5)
+    ("illegal use of syntax" . 5)
+    ("Unbound type name A" . 5)
+    ("Declaration for `root' provided, but `root' has no definition" . 5)
+    ("expected identifier" . 5)
+    ("duplicate definition for identifier" . 5)
+    ("Declaration for `A' provided, but `A' has no definition" . 4)
     ("Component of case-lambda type was not a function clause" . 4)
-    ("duplicate definition for identifier" . 4)
-    ("missing `]' to close `[' on line 160, found instead `)'; indentation suggests a missing `]' before line 161"
-     .
-     4)
-    ("missing `]' to close `[' on line 207, found instead `)'; indentation suggests a missing `]' before line 208"
-     .
-     4)
-    ("missing `]' to close `[' on line 163, found instead `)'" . 4)
-    ("Declaration for `list-foldr' provided, but `list-foldr' has no definition"
-     .
-     4)
-    ("missing `]' to close `[' on line 201, found instead `)'; indentation suggests a missing `]' before line 202"
-     .
-     4)
-    ("(A)" . 4)
+    ("duplicate type variable declaration" . 3)
+    ("not allowed as an expression" . 2)
     ("Used a type variable (...) not bound with ... as a bound on a ..." . 2)
-    ("Used a type variable (List) not bound with ... as a bound on a ..." . 2)
     ("Used a type variable (A) not bound with ... as a bound on a ..." . 2)
     ("duplicate identifier" . 2)
-    ("must be used in a definition context" . 2)
-    ("expected identifier" . 2)
-    ("Declaration for `ls' provided, but `ls' has no definition" . 2)
-    ("provided identifier not defined or imported for phase 0" . 2)
+    ("duplicate field identifier" . 2)
+    ("Declaration for `to' provided, but `to' has no definition" . 1)
     ("Used a type variable (C) not bound with ... as a bound on a ..." . 1)
-    ("duplicate argument identifier" . 1)
-    ("duplicate argument name" . 1)
-    ("duplicate field identifier" . 1)
-    ("Declaration for `loop' provided, but `loop' has no definition" . 1)
-    ("missing `]' to close `[' on line 52, found instead `)'" . 1)
-    ("Declaration for `vreverse-helper' provided, but `vreverse-helper' has no definition"
+    ("Expected a polymorphic function without ..., but given function/annotation had ..."
      .
      1)
+    ("Declaration for `C' provided, but `C' has no definition" . 1)
+    ("Declaration for `treap.' provided, but `treap.' has no definition" . 1)
+    ("duplicate argument name" . 1)
+    ("(xor l r)" . 1)
+    ("duplicate type variable" . 1)
     ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
      .
      1)
+    ("(rotate val1 prio1 val2 prio2 t1 t2 t3)" . 1)))
+  (truncate
+   (passed . 0)
+   (failed
+    (total . 270)
+    ("unbound identifier in module" . 79)
+    ("must be used in a definition context" . 30)
+    ("bad syntax" . 20)
+    ("bad syntax (multiple types after identifier)" . 20)
+    ("Type variable B must be used with ..." . 15)
+    ("duplicate definition for identifier" . 12)
+    ("(A)" . 11)
+    ("expected identifier" . 7)
+    ("not allowed as an expression" . 6)
+    ("identifier already provided (as a different binding)" . 6)
+    ("duplicate type variable declaration" . 6)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 5)
+    ("too many forms in body of All type" . 5)
+    ("Declaration for `list-fifth' provided, but `list-fifth' has no definition"
+     .
+     5)
     ("Declaration for `function' provided, but `function' has no definition"
      .
+     4)
+    ("Declaration for `to' provided, but `to' has no definition" . 4)
+    ("type name used out of context" . 4)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 3)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 3)
+    ("Declaration for `list-map' provided, but `list-map' has no definition"
+     .
+     3)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 2)
+    ("Declaration for `ls' provided, but `ls' has no definition" . 2)
+    ("Expected a polymorphic function with ..., but function/annotation had no ..."
+     .
+     2)
+    ("Declaration for `index' provided, but `index' has no definition" . 1)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
      1)
-    ("Declaration for `to' provided, but `to' has no definition" . 1)
-    ("not allowed in an expression context" . 1))))
+    ("no expression after a sequence of internal definitions" . 1)
+    ("duplicate field identifier" . 1)
+    ("Used a type variable (List) not bound with ... as a bound on a ..." . 1)
+    ("Unbound type name" . 1)
+    ("Unbound type name elems" . 1)
+    ("Unbound type name prevbase" . 1)
+    ("collection not found" . 1)
+    ("Declaration for `vreverse-helper' provided, but `vreverse-helper' has no definition"
+     .
+     1)
+    ("duplicate identifier" . 1)
+    ("Declaration for `Similar' provided, but `Similar' has no definition" . 1)
+    ("Unbound type name Block" . 1)
+    ("'" . 1))))

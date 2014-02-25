@@ -1,1536 +1,1369 @@
 '((remove
-   (passed . 23)
+   (passed . 99)
    (failed
-    (total . 9342)
-    ("missing `]' to close preceding `[', found instead `)'" . 3967)
-    ("unbound identifier in module" . 1214)
-    ("bad syntax" . 430)
-    ("Type variable B must be used with ..." . 368)
-    ("bad syntax (multiple types after identifier)" . 265)
-    ("expected identifier" . 145)
-    ("type name used out of context" . 124)
-    ("found a test that is not at the top level" . 117)
-    ("must be used in a definition context" . 108)
-    ("duplicate argument identifier" . 106)
-    ("expected a `module' declaration" . 70)
-    ("Declaration for `A' provided, but `A' has no definition" . 64)
-    ("duplicate type variable declaration" . 57)
-    ("Used a type variable (B) not bound with ... as a bound on a ..." . 55)
-    ("identifier already provided (as a different binding)" . 52)
-    ("'" . 49)
-    ("collection not found" . 48)
+    (total . 7158)
+    ("unbound identifier in module" . 1763)
+    ("bad syntax" . 433)
+    ("must be used in a definition context" . 368)
+    ("Type variable B must be used with ..." . 318)
+    ("duplicate definition for identifier" . 229)
+    ("bad syntax (multiple types after identifier)" . 229)
+    ("(A)" . 226)
     ("Cannot apply expression of type Positive-Byte, since it is not a function type"
      .
-     47)
-    ("syntax error in pattern" . 42)
-    ("duplicate type variable or index" . 39)
-    ("unexpected term" . 36)
-    ("type mismatch" . 32)
-    ("Used a type variable (...) not bound with ... as a bound on a ..." . 31)
-    ("duplicate type variable" . 29)
-    ("duplicate definition for identifier" . 27)
-    ("too many forms in body of All type" . 25)
-    ("(A)" . 24)
-    ("Used a type variable (A) not bound with ... as a bound on a ..." . 22)
-    ("not allowed as an expression" . 22)
-    ("struct does not refer to a structure definition" . 18)
-    ("Used a type variable (C) not bound with ... as a bound on a ..." . 18)
-    ("use of a class keyword is not in a class" . 18)
-    ("Component of case-lambda type was not a function clause" . 18)
-    ("unexpected `)'" . 16)
-    ("duplicate argument name" . 16)
-    ("missing `]' to close `[' on line 229, found instead `)'" . 15)
-    ("Bad arguments to polymorphic function in apply" . 15)
-    ("missing `]' to close `[' on line 169, found instead `)'" . 14)
-    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
-     .
-     13)
-    ("duplicate identifier" . 13)
-    ("Declaration for `the' provided, but `the' has no definition" . 11)
-    ("Polymorphic function `loop' could not be applied to arguments" . 11)
+     200)
+    ("expected identifier" . 181)
+    ("duplicate argument identifier" . 133)
+    ("found a test that is not at the top level" . 117)
+    ("type name used out of context" . 117)
+    ("type mismatch" . 98)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 92)
+    ("'" . 73)
+    ("duplicate type variable declaration" . 68)
+    ("expected a `module' declaration" . 60)
+    ("Declaration for `A' provided, but `A' has no definition" . 60)
     ("Cannot apply expression of type One, since it is not a function type"
      .
-     11)
-    ("missing `]' to close `[' on line 281, found instead `)'; indentation suggests a missing `]' before line 282"
+     59)
+    ("syntax error in pattern" . 55)
+    ("Unbound type name A" . 53)
+    ("Component of case-lambda type was not a function clause" . 52)
+    ("not allowed as an expression" . 50)
+    ("use of a class keyword is not in a class" . 41)
+    ("Bad arguments to polymorphic function in apply" . 38)
+    ("collection not found" . 38)
+    ("identifier already provided (as a different binding)" . 38)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 33)
+    ("Polymorphic function `heap' could not be applied to arguments" . 33)
+    ("Unbound type name" . 31)
+    ("unexpected term" . 27)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 26)
+    ("struct does not refer to a structure definition" . 25)
+    ("duplicate type variable or index" . 25)
+    ("duplicate identifier" . 23)
+    ("Polymorphic function `fold' could not be applied to arguments" . 22)
+    ("Polymorphic function `filter' could not be applied to arguments" . 20)
+    ("Unbound type name empty?" . 20)
+    ("duplicate argument name" . 19)
+    ("duplicate type variable" . 19)
+    ("Declaration for `queue' provided, but `queue' has no definition" . 19)
+    ("Polymorphic function `loop' could not be applied to arguments" . 18)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 18)
+    ("Cannot apply expression of type Zero, since it is not a function type"
      .
-     10)
-    ("missing `]' to close `[' on line 160, found instead `)'; indentation suggests a missing `]' before line 161"
+     17)
+    ("Unbound type name define" . 16)
+    ("Polymorphic function `delete-min/max' could not be applied to arguments"
      .
-     10)
-    ("missing `]' to close `[' on line 249, found instead `)'" . 10)
-    ("missing `]' to close `[' on line 3, found instead `)'" . 10)
-    ("missing `]' to close `[' on line 287, found instead `)'" . 10)
-    ("missing `]' to close `[' on line 95, found instead `)'; indentation suggests a missing `]' before line 96"
+     16)
+    ("insufficient type information to typecheck. please add more type annotations"
      .
-     10)
-    ("missing `]' to close `[' on line 311, found instead `)'" . 10)
-    ("missing `]' to close `[' on line 41, found instead `)'; indentation suggests a missing `]' before line 42"
+     16)
+    ("Unbound type name empty" . 15)
+    ("Cannot apply expression of type Negative-Fixnum, since it is not a function type"
      .
-     10)
-    ("missing `]' to close `[' on line 54, found instead `)'; indentation suggests a missing `]' before line 55"
+     15)
+    ("Cannot apply expression of type Integer, since it is not a function type"
      .
-     10)
-    ("missing `]' to close `[' on line 250, found instead `)'" . 10)
-    ("missing `]' to close `[' on line 326, found instead `)'" . 10)
+     15)
+    ("Polymorphic function `build-deque-front' could not be applied to arguments"
+     .
+     15)
+    ("Unbound type name filter" . 15)
+    ("Declaration for `enqueue' provided, but `enqueue' has no definition"
+     .
+     15)
+    ("expected 4 but got 3" . 15)
+    ("Unbound type name find-min/max" . 15)
+    ("" . 14)
+    ("Polymorphic function `go-deep' could not be applied to arguments" . 14)
+    ("Polymorphic function `tail' could not be applied to arguments" . 14)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 14)
+    ("Wrong number of arguments, expected 1 and got 2" . 13)
+    ("Polymorphic function `build' could not be applied to arguments" . 13)
+    ("Unbound type name All" . 13)
+    ("(empty A)" . 13)
+    ("Polymorphic function `build-deque' could not be applied to arguments"
+     .
+     13)
+    ("Unbound type name λ" . 12)
+    ("Polymorphic function `cdr' could not be applied to arguments" . 12)
+    ("Declaration for `str-less-than?' provided, but `str-less-than?' has no definition"
+     .
+     12)
+    ("Polymorphic function `queue->list' could not be applied to arguments"
+     .
+     12)
+    ("Polymorphic function `cons' could not be applied to arguments" . 12)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     12)
     ("Declaration for `function' provided, but `function' has no definition"
      .
-     10)
-    ("missing `]' to close `[' on line 266, found instead `)'" . 10)
-    ("missing `]' to close `[' on line 60, found instead `)'; indentation suggests a missing `]' before line 61"
+     12)
+    ("Polymorphic function `force' could not be applied to arguments" . 12)
+    ("Expected a polymorphic function with ..., but function/annotation had no ..."
      .
-     10)
-    ("missing `]' to close `[' on line 45, found instead `)'" . 10)
-    ("missing `]' to close `[' on line 92, found instead `)'; indentation suggests a missing `]' before line 93"
+     12)
+    ("Cannot apply expression of type Null, since it is not a function type"
      .
-     10)
-    ("missing `]' to close `[' on line 221, found instead `)'; indentation suggests a missing `]' before line 222"
-     .
-     10)
-    ("Polymorphic function `drop' could not be applied to arguments" . 10)
-    ("expected a `)' to close `('" . 10)
-    ("missing `]' to close `[' on line 221, found instead `)'" . 9)
-    ("missing `]' to close `[' on line 293, found instead `)'" . 8)
-    ("missing `]' to close `[' on line 161, found instead `)'" . 8)
-    ("missing `]' to close `[' on line 246, found instead `)'" . 8)
-    ("missing `]' to close `[' on line 254, found instead `)'" . 8)
-    ("missing `]' to close `[' on line 82, found instead `)'" . 8)
-    ("missing `]' to close `[' on line 234, found instead `)'" . 8)
-    ("(empty A)" . 8)
-    ("missing `]' to close `[' on line 196, found instead `)'" . 8)
-    ("missing `]' to close `[' on line 219, found instead `)'" . 8)
-    ("missing `]' to close `[' on line 201, found instead `)'" . 8)
-    ("missing `]' to close `[' on line 228, found instead `)'" . 8)
-    ("missing `]' to close `[' on line 224, found instead `)'" . 8)
-    ("Declaration for `qmap' provided, but `qmap' has no definition" . 8)
-    ("Declaration for `gt' provided, but `gt' has no definition" . 8)
-    ("expected annotated-formals" . 8)
-    ("no expression after a sequence of internal definitions" . 8)
-    ("Polymorphic function `stream->list' could not be applied to arguments"
-     .
-     8)
-    ("m does not refer to a structure definition" . 7)
-    ("provided identifier not defined or imported for phase 0" . 7)
-    ("missing `]' to close `[' on line 131, found instead `)'" . 7)
-    ("Unbound type name define" . 7)
+     11)
     ("Declaration for `queue-ormap' provided, but `queue-ormap' has no definition"
      .
-     7)
+     11)
+    ("not in a definition context" . 11)
+    ("expected a field-specification keyword" . 11)
+    ("Unbound type name build-heap" . 11)
+    ("Unbound type name delete-min/max" . 11)
+    ("Polymorphic function `build-list' could not be applied to arguments"
+     .
+     10)
+    ("Unbound type name build" . 10)
+    ("Polymorphic function `qmap' could not be applied to arguments" . 10)
+    ("Polymorphic function `car' could not be applied to arguments" . 10)
+    ("Declaration for `head' provided, but `head' has no definition" . 10)
     ("Declaration for `queue-andmap' provided, but `queue-andmap' has no definition"
      .
-     7)
-    ("missing `]' to close `[' on line 65, found instead `)'; indentation suggests a missing `]' before line 66"
+     10)
+    ("Declaration for `delete-min/max' provided, but `delete-min/max' has no definition"
+     .
+     10)
+    ("Declaration for `heap-andmap' provided, but `heap-andmap' has no definition"
+     .
+     10)
+    ("no expression after a sequence of internal definitions" . 9)
+    ("Polymorphic function `redblacktree' could not be applied to arguments"
+     .
+     9)
+    ("Unbound type name bind" . 9)
+    ("Unbound type name get-vals" . 9)
+    ("Unbound type name go-deep" . 9)
+    ("Polymorphic function `enqueue' could not be applied to arguments" . 9)
+    ("Polymorphic function `head' could not be applied to arguments" . 9)
+    ("variable used twice in pattern" . 9)
+    ("illegal use of syntax" . 9)
+    ("duplicate field identifier" . 9)
+    ("Declaration for `fold' provided, but `fold' has no definition" . 9)
+    ("Polymorphic function `map' could not be applied to arguments" . 8)
+    ("expected annotated-formals" . 8)
+    ("Polymorphic function `remove' could not be applied to arguments" . 8)
+    ("provided identifier not defined or imported for phase 0" . 8)
+    ("missing procedure expression;" . 8)
+    ("Declaration for `list-andmap' provided, but `list-andmap' has no definition"
+     .
+     8)
+    ("Unbound type name C" . 8)
+    ("bad module path" . 7)
+    ("Polymorphic function `insert' could not be applied to arguments" . 7)
+    ("Wrong number of arguments, expected 2 and got 1" . 7)
+    ("(Integer)" . 7)
+    ("Polymorphic function `sorted-list' could not be applied to arguments"
      .
      7)
-    ("Wrong number of arguments, expected 1 and got 2" . 7)
-    ("f does not refer to a structure definition" . 6)
-    ("missing `]' to close `[' on line 43, found instead `)'; indentation suggests a missing `]' before line 44"
+    ("Unbound type name b" . 7)
+    ("Unbound type name a" . 7)
+    ("Polymorphic function `drop' could not be applied to arguments" . 7)
+    ("Polymorphic function `set-box!' could not be applied to arguments" . 7)
+    ("Polymorphic function `psappend' could not be applied to arguments" . 7)
+    ("Polymorphic function `psdrop' could not be applied to arguments" . 7)
+    ("elem does not refer to a structure definition" . 7)
+    ("Polymorphic function `deque->list' could not be applied to arguments"
+     .
+     7)
+    ("Polymorphic function `stream->list' could not be applied to arguments"
      .
      6)
-    ("duplicate field identifier" . 6)
-    ("" . 6)
-    ("missing `]' to close `[' on line 68, found instead `)'; indentation suggests a missing `]' before line 69"
-     .
-     6)
-    ("bad module path" . 6)
-    ("variable used twice in pattern" . 6)
-    ("Polymorphic function `psdrop' could not be applied to arguments" . 6)
-    ("not a require sub-form" . 6)
+    ("Unbound type name x" . 6)
     ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
      .
      6)
-    ("Polymorphic function `lookup' could not be applied to arguments" . 6)
-    ("s does not refer to a structure definition" . 5)
-    ("missing `]' to close `[' on line 154, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 386, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 11, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 144, found instead `)'; indentation suggests a missing `]' before line 145"
+    ("identifier is already imported" . 6)
+    ("Polymorphic function `bind' could not be applied to arguments" . 6)
+    ("Polymorphic function `empty' could not be applied to arguments" . 6)
+    ("Polymorphic function `get-vals' could not be applied to arguments" . 6)
+    ("Polymorphic function `Trie-map' could not be applied to arguments" . 6)
+    ("Polymorphic function `empty-stream?' could not be applied to arguments"
+     .
+     6)
+    ("que does not refer to a structure definition" . 6)
+    ("not a well-formed definition" . 6)
+    ("Polymorphic function `pscar' could not be applied to arguments" . 6)
+    ("Polymorphic function `build-heap' could not be applied to arguments" . 6)
+    ("Polymorphic function `find-min/max' could not be applied to arguments"
+     .
+     6)
+    ("Declaration for `merge' provided, but `merge' has no definition" . 6)
+    ("Polymorphic function `Heap2' could not be applied to arguments" . 6)
+    ("f does not refer to a structure definition" . 6)
+    ("expected 1 but got 0" . 6)
+    ("Polymorphic function `->list' could not be applied to arguments" . 5)
+    ("Unbound type name K" . 5)
+    ("Declaration for `gt' provided, but `gt' has no definition" . 5)
+    ("unexpected `)'" . 5)
+    ("Polymorphic function `merge' could not be applied to arguments" . 5)
+    ("Polymorphic function `heap-ormap' could not be applied to arguments" . 5)
+    ("Polymorphic function `clist->list' could not be applied to arguments"
      .
      5)
-    ("missing `]' to close `[' on line 288, found instead `)'; indentation suggests a missing `]' before line 289"
+    ("Polymorphic function `deque-map' could not be applied to arguments" . 5)
+    ("Polymorphic function `stream-car' could not be applied to arguments" . 5)
+    ("(stream-cons x stream)" . 5)
+    ("Declaration for `empty-stream?' provided, but `empty-stream?' has no definition"
      .
      5)
-    ("missing `]' to close `[' on line 224, found instead `)'; indentation suggests a missing `]' before line 225"
+    ("Recursive Type Alias Reference" . 5)
+    ("Declaration for `delete' provided, but `delete' has no definition" . 5)
+    ("Declaration for `C' provided, but `C' has no definition" . 5)
+    ("Declaration for `root' provided, but `root' has no definition" . 5)
+    ("Declaration for `list-foldr' provided, but `list-foldr' has no definition"
      .
      5)
-    ("missing `]' to close `[' on line 367, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 391, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 169, found instead `)'; indentation suggests a missing `)' before line 170"
+    ("Declaration for `list-seventh' provided, but `list-seventh' has no definition"
      .
      5)
-    ("missing `]' to close `[' on line 307, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 40, found instead `)'; indentation suggests a missing `]' before line 41"
+    ("Declaration for `qmap' provided, but `qmap' has no definition" . 5)
+    ("Declaration for `list->queue' provided, but `list->queue' has no definition"
      .
      5)
-    ("missing `]' to close `[' on line 61, found instead `)'; indentation suggests a missing `]' before line 62"
+    ("expected 0 but got 1" . 5)
+    ("expected a `)' to close `('" . 5)
+    ("Declaration for `psappend' provided, but `psappend' has no definition"
      .
      5)
-    ("missing `]' to close `[' on line 286, found instead `)'; indentation suggests a missing `]' before line 287"
+    ("Declaration for `tu-help' provided, but `tu-help' has no definition" . 5)
+    ("Declaration for `list-tenth' provided, but `list-tenth' has no definition"
      .
      5)
-    ("missing `]' to close `[' on line 209, found instead `)'; indentation suggests a missing `]' before line 210"
-     .
-     5)
-    ("missing `]' to close `[' on line 190, found instead `)'; indentation suggests a missing `]' before line 191"
-     .
-     5)
-    ("missing `]' to close `[' on line 338, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 144, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 45, found instead `)'; indentation suggests a missing `)' before line 46"
-     .
-     5)
-    ("missing `]' to close `[' on line 83, found instead `)'; indentation suggests a missing `]' before line 84"
-     .
-     5)
-    ("missing `]' to close `[' on line 269, found instead `)'; indentation suggests a missing `]' before line 270"
-     .
-     5)
-    ("missing `]' to close `[' on line 9, found instead `)'" . 5)
-    ("Unbound type name" . 5)
-    ("missing `]' to close `[' on line 396, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 377, found instead `)'; indentation suggests a missing `]' before line 378"
-     .
-     5)
-    ("missing `]' to close `[' on line 391, found instead `)'; indentation suggests a missing `]' before line 392"
-     .
-     5)
-    ("missing `]' to close `[' on line 378, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 248, found instead `)'; indentation suggests a missing `]' before line 249"
-     .
-     5)
-    ("missing `]' to close `[' on line 74, found instead `)'; indentation suggests a missing `]' before line 75"
-     .
-     5)
-    ("missing `]' to close `[' on line 178, found instead `)'; indentation suggests a missing `]' before line 179"
-     .
-     5)
-    ("missing `]' to close `[' on line 80, found instead `)'; indentation suggests a missing `]' before line 81"
-     .
-     5)
-    ("missing `]' to close `[' on line 303, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 223, found instead `)'; indentation suggests a missing `]' before line 224"
-     .
-     5)
-    ("missing `]' to close `[' on line 159, found instead `)'; indentation suggests a missing `)' before line 160"
-     .
-     5)
-    ("missing `]' to close `[' on line 176, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 116, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 165, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 42, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 171, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 328, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 87, found instead `)'; indentation suggests a missing `]' before line 88"
-     .
-     5)
-    ("missing `]' to close `[' on line 183, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 43, found instead `)'; indentation suggests a missing `)' before line 44"
-     .
-     5)
-    ("missing `]' to close `[' on line 172, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 208, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 182, found instead `)'; indentation suggests a missing `]' before line 183"
-     .
-     5)
-    ("missing `]' to close `[' on line 104, found instead `)'; indentation suggests a missing `)' before line 105"
-     .
-     5)
-    ("missing `]' to close `[' on line 213, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 58, found instead `)'; indentation suggests a missing `]' before line 59"
-     .
-     5)
-    ("missing `]' to close `[' on line 193, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 259, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 265, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 126, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 194, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 88, found instead `)'; indentation suggests a missing `)' before line 89"
-     .
-     5)
-    ("missing `]' to close `[' on line 252, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 72, found instead `)'; indentation suggests a missing `]' before line 73"
-     .
-     5)
-    ("missing `]' to close `[' on line 83, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 185, found instead `)'; indentation suggests a missing `]' before line 186"
-     .
-     5)
-    ("missing `]' to close `[' on line 284, found instead `)'; indentation suggests a missing `]' before line 285"
-     .
-     5)
-    ("missing `]' to close `[' on line 145, found instead `)'; indentation suggests a missing `]' before line 146"
-     .
-     5)
-    ("missing `]' to close `[' on line 231, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 363, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 127, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 217, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 48, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 136, found instead `)'; indentation suggests a missing `]' before line 137"
-     .
-     5)
-    ("missing `]' to close `[' on line 150, found instead `)'; indentation suggests a missing `]' before line 151"
-     .
-     5)
-    ("missing `]' to close `[' on line 251, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 192, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 54, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 133, found instead `)'; indentation suggests a missing `]' before line 134"
-     .
-     5)
-    ("missing `]' to close `[' on line 105, found instead `)'; indentation suggests a missing `]' before line 106"
-     .
-     5)
-    ("missing `]' to close `[' on line 132, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 244, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 203, found instead `)'; indentation suggests a missing `]' before line 204"
-     .
-     5)
-    ("missing `]' to close `[' on line 218, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 147, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 53, found instead `)'; indentation suggests a missing `]' before line 54"
-     .
-     5)
-    ("missing `]' to close `[' on line 123, found instead `)'; indentation suggests a missing `]' before line 124"
-     .
-     5)
-    ("missing `]' to close `[' on line 113, found instead `)'; indentation suggests a missing `]' before line 114"
-     .
-     5)
-    ("missing `]' to close `[' on line 353, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 262, found instead `)'; indentation suggests a missing `]' before line 263"
-     .
-     5)
-    ("missing `]' to close `[' on line 91, found instead `)'; indentation suggests a missing `]' before line 92"
-     .
-     5)
-    ("missing `]' to close `[' on line 69, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 236, found instead `)'; indentation suggests a missing `]' before line 237"
-     .
-     5)
-    ("missing `]' to close `[' on line 237, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 148, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 220, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 31, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 99, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 258, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 29, found instead `)'; indentation suggests a missing `]' before line 30"
-     .
-     5)
-    ("missing `]' to close `[' on line 268, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 70, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 88, found instead `)'; indentation suggests a missing `]' before line 89"
-     .
-     5)
-    ("missing `]' to close `[' on line 199, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 26, found instead `)'; indentation suggests a missing `]' before line 27"
-     .
-     5)
-    ("missing `]' to close `[' on line 167, found instead `)'; indentation suggests a missing `)' before line 168"
-     .
-     5)
-    ("missing `]' to close `[' on line 28, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 93, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 63, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 48, found instead `)'; indentation suggests a missing `]' before line 49"
-     .
-     5)
-    ("missing `]' to close `[' on line 109, found instead `)'; indentation suggests a missing `]' before line 110"
-     .
-     5)
-    ("missing `]' to close `[' on line 205, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 76, found instead `)'; indentation suggests a missing `]' before line 77"
-     .
-     5)
-    ("missing `]' to close `[' on line 137, found instead `)'; indentation suggests a missing `)' before line 138"
-     .
-     5)
-    ("missing `]' to close `[' on line 277, found instead `)'; indentation suggests a missing `]' before line 278"
-     .
-     5)
-    ("missing `]' to close `[' on line 320, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 151, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 301, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 266, found instead `)'; indentation suggests a missing `)' before line 267"
-     .
-     5)
-    ("missing `]' to close `[' on line 8, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 115, found instead `)'; indentation suggests a missing `]' before line 116"
-     .
-     5)
-    ("missing `]' to close `[' on line 207, found instead `)'; indentation suggests a missing `]' before line 208"
-     .
-     5)
-    ("missing `]' to close `[' on line 239, found instead `)'; indentation suggests a missing `]' before line 240"
-     .
-     5)
-    ("missing `]' to close `[' on line 100, found instead `)'; indentation suggests a missing `]' before line 101"
-     .
-     5)
-    ("missing `]' to close `[' on line 173, found instead `)'; indentation suggests a missing `]' before line 174"
-     .
-     5)
-    ("Polymorphic function `force' could not be applied to arguments" . 5)
-    ("Polymorphic function `psappend' could not be applied to arguments" . 5)
-    ("expected a closing '\"'" . 5)
-    ("bad argument sequence" . 5)
-    ("not an identifier, identifier with default, or keyword" . 5)
-    ("Cannot apply expression of type Zero, since it is not a function type"
-     .
-     5)
-    ("expected 1 but got 3" . 4)
-    ("Declaration for `dqfoldl' provided, but `dqfoldl' has no definition" . 4)
-    ("a does not refer to a structure definition" . 4)
-    ("(stream-cons x stream)" . 4)
-    ("Declaration for `list-map' provided, but `list-map' has no definition"
-     .
-     4)
-    ("Declaration for `C' provided, but `C' has no definition" . 4)
-    ("missing `]' to close `[' on line 17, found instead `)'" . 4)
-    ("missing `]' to close `[' on line 64, found instead `)'" . 4)
-    ("missing `]' to close `[' on line 163, found instead `)'" . 4)
-    ("missing `]' to close `[' on line 188, found instead `)'" . 4)
-    ("missing `]' to close `[' on line 256, found instead `)'; indentation suggests a missing `]' before line 257"
-     .
-     4)
-    ("missing `]' to close `[' on line 202, found instead `)'" . 4)
-    ("missing `]' to close `[' on line 222, found instead `)'" . 4)
-    ("missing `]' to close `[' on line 206, found instead `)'; indentation suggests a missing `]' before line 207"
-     .
-     4)
-    ("missing `]' to close `[' on line 45, found instead `)'; indentation suggests a missing `]' before line 46"
-     .
-     4)
-    ("missing `]' to close `[' on line 18, found instead `)'" . 4)
-    ("missing `]' to close `[' on line 195, found instead `)'" . 4)
-    ("missing `]' to close `[' on line 314, found instead `)'" . 4)
-    ("Unbound type name Promiseof" . 4)
-    ("Unbound type name loop" . 4)
-    ("Unbound type name psappend" . 4)
-    ("Unbound type name psdrop" . 4)
-    ("Polymorphic function `set-box!' could not be applied to arguments" . 4)
-    ("missing `]' to close `[' on line 34, found instead `)'" . 4)
-    ("missing `]' to close `[' on line 19, found instead `)'; indentation suggests a missing `]' before line 20"
-     .
-     4)
-    ("missing `]' to close `[' on line 78, found instead `)'; indentation suggests a missing `]' before line 79"
-     .
-     4)
-    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ."
-     .
-     4)
-    ("not a definition sequence" . 4)
-    ("Wrong number of arguments, expected 1 and got 3" . 4)
-    ("Polymorphic function `box' could not be applied to arguments" . 4)
-    ("Three does not refer to a structure definition" . 3)
-    ("_ does not refer to a structure definition" . 3)
-    ("expected 0 but got 1" . 3)
-    ("missing `]' to close `[' on line 302, found instead `)'" . 3)
-    ("b does not refer to a structure definition" . 3)
-    ("missing `]' to close `[' on line 279, found instead `)'; indentation suggests a missing `]' before line 280"
-     .
-     3)
-    ("missing `]' to close `[' on line 177, found instead `)'; indentation suggests a missing `]' before line 178"
-     .
-     3)
-    ("missing `]' to close `[' on line 163, found instead `)'; indentation suggests a missing `]' before line 164"
-     .
-     3)
-    ("r does not refer to a structure definition" . 3)
-    ("missing `]' to close `[' on line 67, found instead `)'; indentation suggests a missing `]' before line 68"
-     .
-     3)
-    ("missing `]' to close `[' on line 168, found instead `)'" . 3)
-    ("missing `]' to close `[' on line 252, found instead `)'; indentation suggests a missing `]' before line 253"
-     .
-     3)
-    ("missing `]' to close `[' on line 262, found instead `)'" . 3)
-    ("missing `]' to close `[' on line 260, found instead `)'" . 3)
-    ("missing `]' to close `[' on line 190, found instead `)'" . 3)
-    ("no binding for identifier" . 3)
-    ("Declaration for `constructor' provided, but `constructor' has no definition"
-     .
-     3)
-    ("Polymorphic function `pscdr' could not be applied to arguments" . 3)
-    ("Declaration for `func' provided, but `func' has no definition" . 3)
-    ("Declaration for `heap-map' provided, but `heap-map' has no definition"
-     .
-     3)
-    ("Used a type variable (Heap) not bound with ... as a bound on a ..." . 3)
-    ("Declaration for `list-ormap' provided, but `list-ormap' has no definition"
-     .
-     3)
-    ("Used a type variable (List) not bound with ... as a bound on a ..." . 3)
-    ("Declaration for `list-andmap' provided, but `list-andmap' has no definition"
-     .
-     3)
-    ("Structure type constructor Tree applied to non-regular arguments (IntHeap)"
-     .
-     3)
-    ("Declaration for `B' provided, but `B' has no definition" . 3)
-    ("Declaration for `heap-andmap' provided, but `heap-andmap' has no definition"
-     .
-     3)
-    ("Deep does not refer to a structure definition" . 3)
-    ("one does not refer to a structure definition" . 3)
-    ("missing `]' to close `[' on line 210, found instead `)'" . 3)
-    ("missing `]' to close `[' on line 171, found instead `)'; indentation suggests a missing `]' before line 172"
-     .
-     3)
-    ("missing `]' to close `[' on line 238, found instead `)'" . 3)
-    ("missing `]' to close `[' on line 212, found instead `)'" . 3)
-    ("missing `]' to close `[' on line 225, found instead `)'" . 3)
-    ("missing `]' to close `[' on line 158, found instead `)'" . 3)
-    ("missing `]' to close `[' on line 157, found instead `)'; indentation suggests a missing `]' before line 158"
-     .
-     3)
-    ("Unbound type name pscar" . 3)
-    ("Unbound type name pscdr" . 3)
-    ("Polymorphic function `pstake' could not be applied to arguments" . 3)
-    ("Declaration for `str-less-than?' provided, but `str-less-than?' has no definition"
-     .
-     3)
-    ("not allowed in an expression context" . 3)
-    ("No function domains matched in function application" . 3)
-    ("missing `]' to close `[' on line 55, found instead `)'; indentation suggests a missing `]' before line 56"
-     .
-     3)
-    ("missing `]' to close `[' on line 103, found instead `)'; indentation suggests a missing `]' before line 105"
-     .
-     3)
-    ("missing `]' to close `[' on line 84, found instead `)'; indentation suggests a missing `]' before line 86"
-     .
-     3)
-    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 45"
-     .
-     3)
-    ("contract violation" . 3)
-    ("missing `]' to close `[' on line 296, found instead `)'; indentation suggests a missing `]' before line 297"
-     .
-     2)
-    ("Used a type variable (Deque) not bound with ... as a bound on a ..." . 2)
-    ("missing `]' to close `[' on line 80, found instead `)'; indentation suggests a missing `)' before line 81"
-     .
-     2)
-    ("Declaration for `ques' provided, but `ques' has no definition" . 2)
-    ("t does not refer to a structure definition" . 2)
-    ("expected 2 but got 1" . 2)
-    ("Declaration for `enqueue-front' provided, but `enqueue-front' has no definition"
-     .
-     2)
-    ("elem does not refer to a structure definition" . 2)
-    ("error does not refer to a structure definition" . 2)
-    ("expected 3 but got 0" . 2)
-    ("expected 0 but got 3" . 2)
-    ("expected 1 but got 2" . 2)
-    ("Declaration for `head' provided, but `head' has no definition" . 2)
-    ("Used a type variable (define) not bound with ... as a bound on a ..."
-     .
-     2)
-    ("ellipses not allowed as an expression" . 2)
-    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 82"
-     .
-     2)
-    ("Unbound type name All" . 2)
-    ("Polymorphic function `Heap-comparer' could not be applied to arguments"
-     .
-     2)
-    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 10"
-     .
-     2)
-    ("illegal use of `.'" . 2)
-    ("Declaration for `common' provided, but `common' has no definition" . 2)
+    ("not a require sub-form" . 5)
     ("Declaration for `local-reverse' provided, but `local-reverse' has no definition"
      .
-     2)
-    ("Declaration for `ls' provided, but `ls' has no definition" . 2)
-    ("wildcard not allowed as an expression" . 2)
+     5)
+    ("Declaration for `list-map' provided, but `list-map' has no definition"
+     .
+     5)
+    ("Declaration for `list-eighth' provided, but `list-eighth' has no definition"
+     .
+     5)
+    ("Declaration for `tail' provided, but `tail' has no definition" . 5)
+    ("Declaration for `elem' provided, but `elem' has no definition" . 5)
+    ("Declaration for `del-left' provided, but `del-left' has no definition"
+     .
+     5)
+    ("Declaration for `internal-queue' provided, but `internal-queue' has no definition"
+     .
+     5)
+    ("Declaration for `phelp-rgt' provided, but `phelp-rgt' has no definition"
+     .
+     5)
+    ("Duplicate type annotation of (All (A) ((Heap A) -> Boolean)) for empty?, previous was #<procedure>"
+     .
+     5)
+    ("a does not refer to a structure definition" . 5)
+    ("empty does not refer to a structure definition" . 5)
+    ("Declaration for `build-heap' provided, but `build-heap' has no definition"
+     .
+     5)
+    ("Declaration for `sorted-list' provided, but `sorted-list' has no definition"
+     .
+     5)
+    ("Unbound type name case-lambda" . 5)
+    ("Unbound type name func" . 5)
+    ("too many forms in body of All type" . 5)
+    ("Declaration for `link-all' provided, but `link-all' has no definition"
+     .
+     5)
+    ("Declaration for `deque->list' provided, but `deque->list' has no definition"
+     .
+     5)
+    ("Declaration for `deque->rev-list' provided, but `deque->rev-list' has no definition"
+     .
+     5)
+    ("Declaration for `deque' provided, but `deque' has no definition" . 5)
+    ("Declaration for `deque-map' provided, but `deque-map' has no definition"
+     .
+     5)
+    ("Polymorphic function `trie' could not be applied to arguments" . 4)
+    ("Unbound type name check-expect" . 4)
+    ("Polymorphic function `list-set' could not be applied to arguments" . 4)
+    ("Polymorphic function `list-length' could not be applied to arguments"
+     .
+     4)
+    ("not an identifier, identifier with default, or keyword" . 4)
+    ("#<syntax Queue> (Integer (Listof Nothing) (U Null (Reversing Nothing) (Appending Nothing) (Done Nothing)) Integer (Listof Nothing))), since it is not a function type"
+     .
+     4)
+    ("No function domains matched in function application" . 4)
+    ("match does not refer to a structure definition" . 4)
+    ("Declaration for `B' provided, but `B' has no definition" . 4)
+    ("Polymorphic function `pstake' could not be applied to arguments" . 4)
+    ("Unbound type name Promiseof" . 4)
+    ("b does not refer to a structure definition" . 4)
+    ("Unbound type name deque" . 4)
+    ("Declaration for `comp' provided, but `comp' has no definition" . 4)
+    ("error does not refer to a structure definition" . 4)
+    ("s does not refer to a structure definition" . 4)
+    ("m does not refer to a structure definition" . 4)
+    ("Polymorphic function `deque' could not be applied to arguments" . 4)
+    ("Polymorphic function `lookup' could not be applied to arguments" . 3)
+    ("Wrong number of arguments, expected 1 and got 4" . 3)
+    ("not allowed in an expression context" . 3)
+    ("Polymorphic function `Trie-opt' could not be applied to arguments" . 3)
+    ("Polymorphic function `make-Trie' could not be applied to arguments" . 3)
+    ("Unbound type name sum" . 3)
+    ("cannot open module file" . 3)
+    ("Unbound type name +" . 3)
+    ("apply requires a final list argument, given only a function argument of type (PairingHeap Integer)"
+     .
+     3)
+    ("Cannot apply expression of type Positive-Index, since it is not a function type"
+     .
+     3)
+    ("Polymorphic function `heap-map' could not be applied to arguments" . 3)
+    ("bad syntax (not an identifier)" . 3)
+    ("Cannot apply expression of type Nonnegative-Integer, since it is not a function type"
+     .
+     3)
+    ("undefined;" . 3)
+    ("Duplicate type annotation of (All (A) (Integer (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))))) for take, previous was #<procedure>"
+     .
+     3)
+    ("Unbound type name build-list" . 3)
     ("not an identifier, identifier with default, or keyword for procedure argument"
      .
+     3)
+    ("Declaration for `lst' provided, but `lst' has no definition" . 3)
+    ("no binding for identifier" . 3)
+    ("expected 3 but got 0" . 3)
+    ("Polymorphic function `ormap' could not be applied to arguments" . 3)
+    ("untyped identifier fold" . 3)
+    ("Bad arguments to function in apply" . 3)
+    ("Polymorphic function `LeftistHeap-heap' could not be applied to arguments"
+     .
+     3)
+    ("Polymorphic function `unbox' could not be applied to arguments" . 3)
+    ("Declaration for `common' provided, but `common' has no definition" . 3)
+    ("ellipses not allowed as an expression" . 3)
+    ("Polymorphic function `Heap-trees' could not be applied to arguments" . 3)
+    ("untyped identifier map-multiple" . 3)
+    ("Polymorphic function `Heap-comparer' could not be applied to arguments"
+     .
+     3)
+    ("Declaration for `deque-ormap' provided, but `deque-ormap' has no definition"
+     .
+     3)
+    ("expected 2 but got 1" . 3)
+    ("_ does not refer to a structure definition" . 3)
+    ("r does not refer to a structure definition" . 3)
+    ("Unbound type name deque->list" . 3)
+    ("Polymorphic function `Deque-lenr' could not be applied to arguments" . 3)
+    ("Wrong number of arguments, expected 1 and got 5" . 2)
+    ("Polymorphic function `tries' could not be applied to arguments" . 2)
+    ("Polymorphic function `stream-append' could not be applied to arguments"
+     .
      2)
-    ("Declaration for `que' provided, but `que' has no definition" . 2)
-    ("Unbound type name force" . 2)
-    ("One does not refer to a structure definition" . 2)
-    ("(force promise)" . 2)
-    ("(xor l r)" . 2)
-    ("Polymorphic function `pscar' could not be applied to arguments" . 2)
-    ("Polymorphic function `car' could not be applied to arguments" . 2)
-    ("Polymorphic function `cdr' could not be applied to arguments" . 2)
-    ("Cannot apply expression of type Nonnegative-Integer, since it is not a function type"
+    ("untyped identifier lst1" . 2)
+    ("Wrong number of arguments, expected at least 2 and got 1" . 2)
+    ("Polymorphic function `list-map' could not be applied to arguments" . 2)
+    ("Declaration for `K' provided, but `K' has no definition" . 2)
+    ("Declaration for `V' provided, but `V' has no definition" . 2)
+    ("Polymorphic function `Some-elem' could not be applied to arguments" . 2)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found"
+     .
+     2)
+    ("Unbound type name t" . 2)
+    ("Unbound type name queue" . 2)
+    ("Unbound type name enqueue" . 2)
+    ("#<syntax Shallow> ((U Zero (One Nothing)))), since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `heap-andmap' could not be applied to arguments"
+     .
+     2)
+    ("Polymorphic function `kons' could not be applied to arguments" . 2)
+    ("Polymorphic function `build-queue' could not be applied to arguments"
      .
      2)
     ("#<syntax Queue> ((Rec g530 (U Null (Boxof (U (Boxof g530) (-> (Boxof g530)))) (Pairof Positive-Integer g530))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
      .
      2)
-    ("Unbound type name q" . 2)
-    ("Polymorphic function `build-deque' could not be applied to arguments"
+    ("Polymorphic function `init' could not be applied to arguments" . 2)
+    ("arity mismatch;" . 2)
+    ("Polymorphic function `box' could not be applied to arguments" . 2)
+    ("Unbound type name drop" . 2)
+    ("Declaration for `to' provided, but `to' has no definition" . 2)
+    ("Expected a polymorphic function without ..., but given function/annotation had ..."
      .
      2)
-    ("Polymorphic function `take' could not be applied to arguments" . 2)
-    ("apply requires a final list argument, given only a function argument of type (Listof Integer)"
+    ("Polymorphic function `Base1' could not be applied to arguments" . 2)
+    ("Declaration for `ls' provided, but `ls' has no definition" . 2)
+    ("Used a type variable (List) not bound with ... as a bound on a ..." . 2)
+    ("duplicate definition" . 2)
+    ("Unbound type name psdrop" . 2)
+    ("Polymorphic function `pscdr' could not be applied to arguments" . 2)
+    ("(delay e)" . 2)
+    ("Polymorphic function `Queue4' could not be applied to arguments" . 2)
+    ("Declaration for `tl-help' provided, but `tl-help' has no definition" . 2)
+    ("Used a type variable (define) not bound with ... as a bound on a ..."
      .
      2)
-    ("Polymorphic function `tries' could not be applied to arguments" . 2)
-    ("Polymorphic function `bind' could not be applied to arguments" . 2)
-    ("Polymorphic function `reverse' could not be applied to arguments" . 2)
-    ("fi does not refer to a structure definition" . 1)
-    ("missing `]' to close `[' on line 80, found instead `)'; indentation suggests a missing `]' before line 83"
+    ("wildcard not allowed as an expression" . 2)
+    ("untyped identifier heap-andmap" . 2)
+    ("Polymorphic function `link' could not be applied to arguments" . 2)
+    ("Unbound type name comp" . 2)
+    ("Unbound type name base" . 2)
+    ("Unbound type name heap" . 2)
+    ("Polymorphic function `PairingHeap-heap' could not be applied to arguments"
+     .
+     2)
+    ("Unbound type name ..." . 2)
+    ("Unbound type name *" . 2)
+    ("Polymorphic function `foldl' could not be applied to arguments" . 2)
+    ("expected 1 but got 2" . 2)
+    ("expected 3 but got 2" . 2)
+    ("Declaration for `the' provided, but `the' has no definition" . 2)
+    ("t does not refer to a structure definition" . 2)
+    ("given does not refer to a structure definition" . 2)
+    ("Polymorphic function `internal-deque' could not be applied to arguments"
+     .
+     2)
+    ("Unbound type name build-deque" . 2)
+    ("Unbound type name build-deque-front" . 2)
+    ("Wrong number of arguments, expected 1 and got 0" . 1)
+    ("Unbound type name test" . 1)
+    ("apply requires a final list argument, given only a function argument of type (Rec g312 (U Null (Boxof (U (Pairof Integer g312) (-> (Pairof Integer g312))))))"
      .
      1)
-    ("Declaration for `to' provided, but `to' has no definition" . 1)
-    ("que does not refer to a structure definition" . 1)
-    ("match does not refer to a structure definition" . 1)
-    ("Declaration for `strem' provided, but `strem' has no definition" . 1)
-    ("Declaration for `queue' provided, but `queue' has no definition" . 1)
-    ("Unbound type name ..." . 1)
-    ("Unbound type name n" . 1)
-    ("Polymorphic function `head' could not be applied to arguments" . 1)
-    ("Declaration for `lenr' provided, but `lenr' has no definition" . 1)
-    ("Polymorphic function `Deque-rear' could not be applied to arguments" . 1)
+    ("untyped identifier lst2" . 1)
+    ("Polymorphic function `stream-cdr' could not be applied to arguments" . 1)
+    ("Polymorphic function `stream-reverse' could not be applied to arguments"
+     .
+     1)
+    ("not enough elements to take" . 1)
+    ("Polymorphic function `take' could not be applied to arguments" . 1)
+    ("identifier `vreverse' not included in nested require spec" . 1)
+    ("identifier `vmap' not included in nested require spec" . 1)
+    ("identifier `size' not included in nested require spec" . 1)
+    ("Polymorphic function `root' could not be applied to arguments" . 1)
+    ("Cannot instantiate non-polymorphic type (Listof Integer)" . 1)
+    ("Polymorphic function `sort7' could not be applied to arguments" . 1)
+    ("Polymorphic function `delete-root' could not be applied to arguments"
+     .
+     1)
+    ("Polymorphic function `list-foldl' could not be applied to arguments" . 1)
+    ("Structure type constructor Trie applied to non-regular arguments (K K)"
+     .
+     1)
+    ("Structure type constructor Trie applied to non-regular arguments (K Trie)"
+     .
+     1)
+    ("Unbound type name opt" . 1)
+    ("(Trie (Trie K Integer))" . 1)
+    ("(K (Trie K Integer))" . 1)
+    ("(Integer (Trie K Integer))" . 1)
+    ("(Listof (Trie K Integer))" . 1)
+    ("Declaration for `fst' provided, but `fst' has no definition" . 1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Boxof (Rec g189 (U Null (Boxof (U (Boxof g189) (-> (Boxof g189)))) (Pairof Integer g189)))) (-> (Boxof (Rec g195 (U Null (Boxof (U (Boxof g195) (-> (Boxof g195)))) (Pairof Integer g195))))))) (Pairof Integer (Rec g201 (U Null (Boxof (U (Boxof g201) (-> (Boxof g201)))) (Pairof Integer g201))))), since it is not a function type"
+     .
+     1)
+    ("bad syntax;" . 1)
+    ("Polymorphic function `reverse' could not be applied to arguments" . 1)
+    ("Unbound type name check-equal?" . 1)
+    ("apply requires a final list argument, given only a function argument of type (Heap Integer)"
+     .
+     1)
+    ("Polymorphic function `list->queue' could not be applied to arguments"
+     .
+     1)
+    ("queue> #<pr...)" . 1)
+    ("negative?> #<Deep>))" . 1)
+    ("Polymorphic function `append' could not be applied to arguments" . 1)
+    ("bad argument sequence" . 1)
+    ("Unbound type name <=" . 1)
+    ("Wrong number of arguments, expected 1 and got 7" . 1)
+    ("apply requires a final list argument, given only a function argument of type (Listof Any)"
+     .
+     1)
+    ("Unbound type name ann" . 1)
+    ("Polymorphic function `kons-rear' could not be applied to arguments" . 1)
+    ("build-list' could not be applied to arguments" . 1)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ."
+     .
+     1)
+    ("#<syntax Queue> ((Rec g311 (U Null (Boxof (U (Boxof g311) (-> (Boxof g311)))) (Pairof Positive-Integer g311))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("#<syntax Queue> ((Rec g830 (U Null (Boxof (U (Boxof g830) (-> (Boxof g830)))) (Pairof Positive-Integer g830))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("#<syntax Queue> ((Rec g606 (U Null (Boxof (U (Boxof g606) (-> (Boxof g606)))) (Pairof Positive-Integer g606))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+     .
+     1)
+    ("#<syntax Deque> ((Rec g848 (U Null (Boxof (U (Boxof g848) (-> (Boxof g848)))) (Pairof Positive-Integer g848))) Integer (Rec g854 (U Null (Boxof (U (Boxof g854) (-> (Boxof g854)))) (Pairof Positive-Integer g854))) Integer)), since it is not a function type"
+     .
+     1)
+    ("bad syntax (missing binding pairs or body)" . 1)
+    ("Unbound type name q" . 1)
+    ("Unbound type name if" . 1)
+    ("#<syntax Deque> ((Rec g413 (U Null (Boxof (U (Boxof g413) (-> (Boxof g413)))) (Pairof Positive-Integer g413))) Integer (Rec g419 (U Null (Boxof (U (Boxof g419) (-> (Boxof g419)))) (Pairof Positive-Integer g419))) Integer)), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U Null (Pairof Any (Listof Any))), since it is not a function type"
+     .
+     1)
+    ("Declaration for `xs' provided, but `xs' has no definition" . 1)
+    ("Declaration for `loop' provided, but `loop' has no definition" . 1)
+    ("Unbound type name empty-stream" . 1)
+    ("Unbound type name null" . 1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Pairof A (Rec g444 (U Null (Boxof (U (Pairof A g444) (-> (Pairof A g444))))))) (-> (Pairof A (Rec g450 (U Null (Boxof (U (Pairof A g450) (-> (Pairof A g450))))))))))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name stream->list" . 1)
+    ("Cannot apply expression of type (U (Pairof A (Rec g244 (U Null (Boxof (U (Pairof A g244) (-> (Pairof A g244))))))) (-> (Pairof A (Rec g250 (U Null (Boxof (U (Pairof A g250) (-> (Pairof A g250))))))))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type (U (Pairof A (Rec g257 (U Null (Boxof (U (Pairof A g257) (-> (Pairof A g257))))))) (-> (Pairof A (Rec g263 (U Null (Boxof (U (Pairof A g263) (-> (Pairof A g263))))))))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name empty-stream?" . 1)
+    ("Unbound type name inner" . 1)
+    ("Unbound type name loop" . 1)
+    ("Declaration for `treap.' provided, but `treap.' has no definition" . 1)
+    ("(xor l r)" . 1)
+    ("(rotate val1 prio1 val2 prio2 t1 t2 t3)" . 1)
+    ("Unbound type name define-type" . 1)
+    ("Unbound type name elems" . 1)
+    ("Unbound type name first" . 1)
+    ("Unbound type name get" . 1)
+    ("Unbound type name get-helper" . 1)
+    ("Used a type variable (Queue) not bound with ... as a bound on a ..." . 1)
+    ("Declaration for `rtq' provided, but `rtq' has no definition" . 1)
+    ("(check-pref-inv pref front lenf rear lenr)" . 1)
+    ("Unbound type name psappend" . 1)
+    ("((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) PartialStreamof (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))))"
+     .
+     1)
+    ("((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) A (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))))"
+     .
+     1)
+    ("((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) Integer (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))))"
+     .
+     1)
+    ("Unbound type name num" . 1)
+    ("Declaration for `rear' provided, but `rear' has no definition" . 1)
+    ("Unbound type name state" . 1)
     ("Unbound type name lenr" . 1)
-    ("Declaration for `tre' provided, but `tre' has no definition" . 1)
-    ("red does not refer to a structure definition" . 1)
-    ("y does not refer to a structure definition" . 1)
+    ("cnt does not refer to a structure definition" . 1)
+    ("cons does not refer to a structure definition" . 1)
     ("x does not refer to a structure definition" . 1)
-    ("Declaration for `right' provided, but `right' has no definition" . 1)
-    ("Declaration for `x' provided, but `x' has no definition" . 1)
-    ("(link node1 node2 func)" . 1)
-    ("Declaration for `get-min' provided, but `get-min' has no definition" . 1)
-    ("Polymorphic function `inner' could not be applied to arguments" . 1)
-    ("missing `}' to close preceding `{', found instead `)'" . 1)
-    ("Declaration for `errors' provided, but `errors' has no definition" . 1)
-    (", or @" . 1)
-    ("unbound identifier;" . 1)
-    ("Declaration for `lst' provided, but `lst' has no definition" . 1)
-    ("Declaration for `list-length' provided, but `list-length' has no definition"
+    ("first does not refer to a structure definition" . 1)
+    ("missing argument expression after keyword" . 1)
+    ("Unbound type name ->list" . 1)
+    ("Unbound type name cons" . 1)
+    ("Unbound type name drop-help" . 1)
+    ("Used a type variable (RBTree) not bound with ... as a bound on a ..."
      .
      1)
-    ("Declaration for `heaps.' provided, but `heaps.' has no definition" . 1)
-    ("Declaration for `two' provided, but `two' has no definition" . 1)
-    ("func does not refer to a structure definition" . 1)
+    ("Declaration for `tree' provided, but `tree' has no definition" . 1)
+    ("Unbound type name build-queue" . 1)
+    ("Unbound type name head" . 1)
+    ("make-Heap does not refer to a structure definition" . 1)
+    ("((U Mt (Tree A)) (A A -> Boolean) Pairof (Pairof (U Mt (Tree A)) (U Mt (Tree A))))"
+     .
+     1)
+    ("((U Mt (Tree A)) (A A -> Boolean) IntHeap (Pairof (U Mt (Tree A)) (U Mt (Tree A))))"
+     .
+     1)
+    ("((U Mt (Tree A)) (A A -> Boolean) Boolean (Pairof (U Mt (Tree A)) (U Mt (Tree A))))"
+     .
+     1)
+    ("((U Mt (Tree A)) (A A -> Boolean) A (Pairof (U Mt (Tree A)) (U Mt (Tree A))))"
+     .
+     1)
     ("el does not refer to a structure definition" . 1)
-    ("missing `]' to close `[' on line 17, found instead `)'; indentation suggests a missing `)' before line 18"
+    ("find-min/max does not refer to a structure definition" . 1)
+    ("Duplicate type annotation of (All (A C B ...) (case-> ((C A -> C) C (PairingHeap A) -> C) ((C A B ... B -> C) C (PairingHeap A) (PairingHeap B) ... B -> C))) for foldl, previous was #<procedure>"
      .
      1)
-    ("Structure type constructor Tree applied to non-regular arguments (Listof)"
+    ("Cannot apply expression of type (List (PairingHeap B) ... B), since it is not a function type"
      .
      1)
-    ("Declaration for `state' provided, but `state' has no definition" . 1)
-    ("Polymorphic function `unbox' could not be applied to arguments" . 1)
-    ("(A A)" . 1)
-    ("(Promiseof A)" . 1)
-    ("Unbound type name b" . 1)
-    ("Cannot apply expression of type Procedure, since it is not a function type"
+    ("Polymorphic function `new-apply-proc' could not be applied to arguments"
+     .
+     1)
+    ("13 PairingHeap> ((A A -> Boolean) (U Null (IntHeap A)))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name heap-andmap" . 1)
+    ("Unbound type name pcase-lambda" . 1)
+    ("(A A Boolean)" . 1)
+    ("(A PHeap Boolean)" . 1)
+    ("Polymorphic function `merge-help' could not be applied to arguments" . 1)
+    ("Polymorphic function `PairingHeap2' could not be applied to arguments"
+     .
+     1)
+    ("Polymorphic function `inner' could not be applied to arguments" . 1)
+    ("Unbound type name elem" . 1)
+    ("((PairingHeap A) (PairingHeap A) PairingHeap (PairingHeap A))" . 1)
+    ("((PairingHeap A) (PairingHeap A) A (PairingHeap A))" . 1)
+    ("Declaration for `comparer' provided, but `comparer' has no definition"
+     .
+     1)
+    ("Duplicate type annotation of (All (A) ((LeftistHeap A) -> Boolean)) for empty, previous was Null"
+     .
+     1)
+    ("Structure type constructor Tree applied to non-regular arguments (IntHeap)"
+     .
+     1)
+    ("Unbound type name left" . 1)
+    ("((LeftistHeap A) LeftistHeap (LeftistHeap A))" . 1)
+    ("Unbound type name U" . 1)
+    ("Cannot apply expression of type (Boxof A), since it is not a function type"
      .
      1)
     ("Cannot apply expression of type (Boxof (U (Boxof A) (-> (Boxof A)))), since it is not a function type"
      .
      1)
-    ("Structure type constructor Deep applied to non-regular arguments (Queue)"
-     .
-     1)
-    ("Structure type constructor Deep applied to non-regular arguments (Pairof)"
-     .
-     1)
-    ("expected 3 but got 1" . 1)
-    ("two does not refer to a structure definition" . 1)
-    ("expected 3 but got 2" . 1)
-    ("Error in macro expansion -- Recursive Type Alias Reference" . 1)
-    ("empty does not refer to a structure definition" . 1)
-    ("Declaration for `deqs' provided, but `deqs' has no definition" . 1)
-    ("(internal-queue pref front lenf rear lenr)" . 1)
-    ("Used a type variable (Queue) not bound with ... as a bound on a ..." . 1)
-    ("Declaration for `element' provided, but `element' has no definition" . 1)
-    ("Declaration for `internal-queue' provided, but `internal-queue' has no definition"
-     .
-     1)
-    ("Declaration for `rtq' provided, but `rtq' has no definition" . 1)
-    ("(rotate val1 prio1 val2 prio2 t1 t2 t3)" . 1)
-    ("missing `]' to close `[' on line 314, found instead `)'; indentation suggests a missing `)' before line 315"
-     .
-     1)
-    ("Declaration for `treap.' provided, but `treap.' has no definition" . 1)
-    ("Declaration for `lists' provided, but `lists' has no definition" . 1)
-    ("Declaration for `loop' provided, but `loop' has no definition" . 1)
-    ("Declaration for `vlst' provided, but `vlst' has no definition" . 1)
-    ("Cannot apply expression of type (U Null (Boxof (U (Boxof (Rec g444 (U Null (Boxof (U (Boxof g444) (-> (Boxof g444)))) (Pairof A g444)))) (-> (Boxof (Rec g450 (U Null (Boxof (U (Boxof g450) (-> (Boxof g450)))) (Pairof A g450))))))) (Pairof A (Rec g456 (U Null (Boxof (U (Boxof g456) (-> (Boxof g456)))) (Pairof A g456))))), since it is not a function type"
-     .
-     1)
-    ("Cannot apply expression of type (U Null (Boxof (U (Boxof (Rec g425 (U Null (Boxof (U (Boxof g425) (-> (Boxof g425)))) (Pairof A g425)))) (-> (Boxof (Rec g431 (U Null (Boxof (U (Boxof g431) (-> (Boxof g431)))) (Pairof A g431))))))) (Pairof A (Rec g437 (U Null (Boxof (U (Boxof g437) (-> (Boxof g437)))) (Pairof A g437))))), since it is not a function type"
-     .
-     1)
-    ("(delay e)" . 1)
-    ("Unbound type name num" . 1)
-    ("Unbound type name l1" . 1)
-    ("Polymorphic function `stream-append' could not be applied to arguments"
-     .
-     1)
-    ("Declaration for `stream-car' provided, but `stream-car' has no definition"
-     .
-     1)
-    ("Unbound type name drop" . 1)
-    ("Declaration for `stream2' provided, but `stream2' has no definition" . 1)
-    ("duplicate definition" . 1)
-    ("undefined;" . 1)
-    ("Cannot apply expression of type Integer, since it is not a function type"
-     .
-     1)
-    ("missing an \"else\" expression" . 1)
-    ("#<syntax Queue> ((Rec g901 (U Null (Boxof (U (Boxof g901) (-> (Boxof g901)))) (Pairof Positive-Integer g901))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
-     .
-     1)
-    ("(Positive-Integer)" . 1)
-    ("Polymorphic function `tail' could not be applied to arguments" . 1)
-    ("bad syntax (not an identifier)" . 1)
-    ("missing `]' to close `[' on line 62, found instead `)'; indentation suggests a missing `]' before line 63"
-     .
-     1)
-    ("#<syntax Deque> ((Rec g535 (U Null (Boxof (U (Boxof g535) (-> (Boxof g535)))) (Pairof Positive-Integer g535))) Integer (Rec g541 (U Null (Boxof (U (Boxof g541) (-> (Boxof g541)))) (Pairof Positive-Integer g541))) Integer)), since it is not a function type"
-     .
-     1)
-    ("Polymorphic function `last' could not be applied to arguments" . 1)
-    ("bad syntax (missing binding pairs or body)" . 1)
-    ("Unbound type name if" . 1)
-    ("Unbound type name empty?" . 1)
-    ("#<syntax Deque> ((Rec g176 (U Null (Boxof (U (Boxof g176) (-> (Boxof g176)))) (Pairof Positive-Integer g176))) Integer (Rec g182 (U Null (Boxof (U (Boxof g182) (-> (Boxof g182)))) (Pairof Positive-Integer g182))) Integer)), since it is not a function type"
-     .
-     1)
-    ("bad syntax;" . 1)
-    ("missing `]' to close `[' on line 44, found instead `)'" . 1)
-    ("scribble/manual" . 1)
-    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found"
-     .
-     1)
-    ("apply requires a final list argument, given only a function argument of type (Rec g416 (U Null (Boxof (U (Pairof Integer g416) (-> (Pairof Integer g416))))))"
-     .
-     1)
-    ("Cannot apply expression of type Null, since it is not a function type"
-     .
-     1)
-    ("Polymorphic function `stream-cdr' could not be applied to arguments" . 1)
-    ("Polymorphic function `empty-stream?' could not be applied to arguments"
-     .
-     1)
-    ("identifier `size' not included in nested require spec" . 1)
-    ("identifier `vreverse' not included in nested require spec" . 1)
-    ("identifier `vfoldr' not included in nested require spec" . 1)
-    ("Cannot apply expression of type (U Null (Boxof (U (Boxof (Rec g218 (U Null (Boxof (U (Boxof g218) (-> (Boxof g218)))) (Pairof Integer g218)))) (-> (Boxof (Rec g224 (U Null (Boxof (U (Boxof g224) (-> (Boxof g224)))) (Pairof Integer g224))))))) (Pairof Integer (Rec g230 (U Null (Boxof (U (Boxof g230) (-> (Boxof g230)))) (Pairof Integer g230))))), since it is not a function type"
-     .
-     1)
-    ("Cannot apply expression of type (U (Boxof (U (Boxof (Rec g260 (U Null (Boxof (U (Boxof g260) (-> (Boxof g260)))) (Pairof Integer g260)))) (-> (Boxof (Rec g266 (U Null (Boxof (U (Boxof g266) (-> (Boxof g266)))) (Pairof Integer g266))))))) (Pairof Integer (Rec g272 (U Null (Boxof (U (Boxof g272) (-> (Boxof g272)))) (Pairof Integer g272))))), since it is not a function type"
-     .
-     1)
-    ("(check-type e t)" . 1)))
-  (truncate
-   (passed . 25)
-   (failed
-    (total . 8212)
-    ("missing `]' to close preceding `[', found instead `)'" . 2592)
-    ("unbound identifier in module" . 1366)
-    ("bad syntax" . 404)
-    ("bad syntax (multiple types after identifier)" . 289)
-    ("Type variable B must be used with ..." . 264)
-    ("found a test that is not at the top level" . 210)
-    ("type name used out of context" . 198)
-    ("must be used in a definition context" . 145)
-    ("(A)" . 126)
-    ("expected identifier" . 109)
-    ("duplicate definition for identifier" . 107)
-    ("syntax error in pattern" . 88)
-    ("duplicate argument identifier" . 60)
-    ("'" . 57)
-    ("Used a type variable (B) not bound with ... as a bound on a ..." . 53)
-    ("duplicate type variable declaration" . 41)
-    ("too many forms in body of All type" . 35)
-    ("use of a class keyword is not in a class" . 34)
-    ("Component of case-lambda type was not a function clause" . 31)
-    ("not allowed in an expression context" . 31)
-    ("provided identifier not defined or imported for phase 0" . 28)
-    ("type mismatch" . 28)
-    ("identifier already provided (as a different binding)" . 26)
-    ("collection not found" . 26)
-    ("Unbound type name A" . 25)
-    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
-     .
-     23)
-    ("duplicate identifier" . 22)
-    ("Used a type variable (...) not bound with ... as a bound on a ..." . 21)
-    ("Used a type variable (A) not bound with ... as a bound on a ..." . 21)
-    ("not allowed as an expression" . 20)
-    ("struct does not refer to a structure definition" . 18)
-    ("duplicate type variable" . 17)
-    ("Error in macro expansion -- Recursive Type Alias Reference" . 17)
-    ("duplicate type variable or index" . 16)
-    ("unexpected term" . 16)
-    ("duplicate field identifier" . 15)
-    ("Declaration for `the' provided, but `the' has no definition" . 15)
-    ("missing `]' to close `[' on line 326, found instead `)'" . 15)
-    ("missing `]' to close `[' on line 218, found instead `)'" . 15)
-    ("missing `]' to close `[' on line 251, found instead `)'" . 15)
-    ("Declaration for `to' provided, but `to' has no definition" . 13)
-    ("Used a type variable (C) not bound with ... as a bound on a ..." . 13)
-    ("(empty A)" . 13)
-    ("Unbound type name" . 13)
-    ("Declaration for `function' provided, but `function' has no definition"
-     .
-     12)
-    ("Polymorphic function `inner' could not be applied to arguments" . 12)
-    ("missing `]' to close `[' on line 207, found instead `)'; indentation suggests a missing `]' before line 208"
-     .
-     11)
-    ("not a require sub-form" . 11)
-    ("not a provide sub-form" . 11)
-    ("no expression after a sequence of internal definitions" . 11)
-    ("Polymorphic function `car' could not be applied to arguments" . 11)
-    ("duplicate argument name" . 10)
-    ("missing `]' to close `[' on line 331, found instead `)'" . 10)
-    ("missing `]' to close `[' on line 146, found instead `)'" . 10)
-    ("missing `]' to close `[' on line 148, found instead `)'" . 10)
-    ("missing `]' to close `[' on line 255, found instead `)'" . 10)
-    ("Bad arguments to polymorphic function in apply" . 10)
-    ("expected a `)' to close `('" . 10)
-    ("ellipses not allowed as an expression" . 9)
-    ("Unbound type name All" . 9)
-    ("missing `]' to close `[' on line 282, found instead `)'" . 9)
-    ("missing `]' to close `[' on line 257, found instead `)'" . 9)
-    ("missing `]' to close `[' on line 207, found instead `)'" . 9)
-    ("Declaration for `fold' provided, but `fold' has no definition" . 9)
-    ("unexpected `)'" . 8)
-    ("empty does not refer to a structure definition" . 8)
-    ("Declaration for `of' provided, but `of' has no definition" . 8)
-    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
-     .
-     8)
-    ("missing `]' to close `[' on line 278, found instead `)'" . 8)
-    ("missing `]' to close `[' on line 116, found instead `)'" . 8)
-    ("missing `]' to close `[' on line 91, found instead `)'" . 8)
-    ("missing `]' to close `[' on line 217, found instead `)'" . 8)
-    ("missing `]' to close `[' on line 204, found instead `)'" . 8)
-    ("Polymorphic function `loop' could not be applied to arguments" . 8)
-    ("Polymorphic function `cdr' could not be applied to arguments" . 8)
-    ("Declaration for `tail' provided, but `tail' has no definition" . 7)
-    ("missing `]' to close `[' on line 271, found instead `)'" . 7)
-    ("Declaration for `root' provided, but `root' has no definition" . 7)
-    ("Declaration for `heap-andmap' provided, but `heap-andmap' has no definition"
-     .
-     7)
-    ("missing `]' to close `[' on line 70, found instead `)'" . 7)
-    ("missing `]' to close `[' on line 202, found instead `)'" . 7)
-    ("Declaration for `less-than?' provided, but `less-than?' has no definition"
-     .
-     7)
-    ("Polymorphic function `stream->list' could not be applied to arguments"
-     .
-     7)
-    ("is does not refer to a structure definition" . 6)
-    ("missing `]' to close `[' on line 261, found instead `)'" . 6)
-    ("Polymorphic function `empty?' could not be applied to arguments" . 6)
-    ("Declaration for `func' provided, but `func' has no definition" . 6)
-    ("missing `]' to close `[' on line 190, found instead `)'" . 6)
-    ("missing `]' to close `[' on line 84, found instead `)'" . 6)
-    ("Declaration for `heap-map' provided, but `heap-map' has no definition"
-     .
-     6)
-    ("Declaration for `queue-ormap' provided, but `queue-ormap' has no definition"
-     .
-     6)
-    ("variable used twice in pattern" . 6)
-    ("Polymorphic function `force' could not be applied to arguments" . 6)
-    ("Unbound type name loop" . 6)
-    ("not at module level or top level" . 6)
-    ("expected annotated-formals" . 6)
-    ("identifier is already imported" . 6)
-    ("Cannot apply expression of type One, since it is not a function type"
-     .
-     6)
-    ("Declaration for `common' provided, but `common' has no definition" . 5)
-    ("Declaration for `more' provided, but `more' has no definition" . 5)
-    ("expected a field-specification keyword" . 5)
-    ("missing `]' to close `[' on line 344, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 373, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 361, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 349, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 292, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 310, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 295, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 305, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 294, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 340, found instead `)'; indentation suggests a missing `]' before line 341"
-     .
-     5)
-    ("missing `]' to close `[' on line 322, found instead `)'" . 5)
-    ("misuse of compound-unit keyword" . 5)
-    ("missing `]' to close `[' on line 250, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 114, found instead `)'; indentation suggests a missing `)' before line 115"
-     .
-     5)
-    ("missing `]' to close `[' on line 52, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 266, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 108, found instead `)'; indentation suggests a missing `]' before line 109"
-     .
-     5)
-    ("missing `]' to close `[' on line 249, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 263, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 217, found instead `)'; indentation suggests a missing `)' before line 218"
-     .
-     5)
-    ("missing `]' to close `[' on line 224, found instead `)'; indentation suggests a missing `]' before line 225"
-     .
-     5)
-    ("missing `]' to close `[' on line 213, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 192, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 196, found instead `)'; indentation suggests a missing `]' before line 197"
-     .
-     5)
-    ("missing `]' to close `[' on line 100, found instead `)'; indentation suggests a missing `]' before line 101"
-     .
-     5)
-    ("missing `]' to close `[' on line 220, found instead `)'; indentation suggests a missing `]' before line 221"
-     .
-     5)
-    ("Declaration for `head' provided, but `head' has no definition" . 5)
-    ("missing `]' to close `[' on line 365, found instead `)'; indentation suggests a missing `]' before line 366"
-     .
-     5)
-    ("missing `]' to close `[' on line 269, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 205, found instead `)'; indentation suggests a missing `]' before line 206"
-     .
-     5)
-    ("missing `]' to close `[' on line 241, found instead `)'; indentation suggests a missing `]' before line 242"
-     .
-     5)
-    ("missing `]' to close `[' on line 247, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 234, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 210, found instead `)'; indentation suggests a missing `)' before line 211"
-     .
-     5)
-    ("Declaration for `ls' provided, but `ls' has no definition" . 5)
-    ("missing `]' to close `[' on line 193, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 320, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 347, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 310, found instead `)'; indentation suggests a missing `]' before line 311"
-     .
-     5)
-    ("missing `]' to close `[' on line 211, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 177, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 273, found instead `)'; indentation suggests a missing `)' before line 274"
-     .
-     5)
-    ("missing `]' to close `[' on line 181, found instead `)'" . 5)
-    ("Used a type variable (Heap) not bound with ... as a bound on a ..." . 5)
-    ("missing `]' to close `[' on line 172, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 245, found instead `)'" . 5)
-    ("missing `)' to close preceding `(', found instead `]'" . 5)
-    ("Declaration for `internal-queue' provided, but `internal-queue' has no definition"
-     .
-     5)
-    ("Polymorphic function `set-box!' could not be applied to arguments" . 5)
-    ("missing `]' to close `[' on line 252, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 226, found instead `)'; indentation suggests a missing `]' before line 227"
-     .
-     5)
-    ("missing `]' to close `[' on line 206, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 258, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 204, found instead `)'; indentation suggests a missing `]' before line 205"
-     .
-     5)
-    ("missing `]' to close `[' on line 200, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 173, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 154, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 243, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 80, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 246, found instead `)'; indentation suggests a missing `]' before line 247"
-     .
-     5)
-    ("missing `]' to close `[' on line 231, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 227, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 239, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 242, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 265, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 316, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 313, found instead `)'" . 5)
-    ("missing `]' to close `[' on line 301, found instead `)'" . 5)
-    ("Polymorphic function `empty-stream?' could not be applied to arguments"
-     .
-     5)
-    ("cannot open module file" . 5)
-    ("Declaration for `dqfoldl' provided, but `dqfoldl' has no definition" . 4)
-    ("Declaration for `deque' provided, but `deque' has no definition" . 4)
-    ("elem does not refer to a structure definition" . 4)
-    ("m does not refer to a structure definition" . 4)
-    ("match does not refer to a structure definition" . 4)
-    ("deque does not refer to a structure definition" . 4)
-    ("given does not refer to a structure definition" . 4)
-    ("missing `]' to close `[' on line 303, found instead `)'" . 4)
-    ("Declaration for `lst' provided, but `lst' has no definition" . 4)
-    ("missing `]' to close `[' on line 300, found instead `)'; indentation suggests a missing `]' before line 301"
-     .
-     4)
-    ("Expected a polymorphic function with ..., but function/annotation had no ..."
-     .
-     4)
-    ("bad syntax (not an identifier)" . 4)
-    ("missing `]' to close `[' on line 270, found instead `)'" . 4)
-    ("" . 4)
-    ("Polymorphic function `Deque-front' could not be applied to arguments"
-     .
-     4)
-    ("Declaration for `kons' provided, but `kons' has no definition" . 4)
-    ("Polymorphic function `append' could not be applied to arguments" . 4)
-    ("Unbound type name U" . 4)
-    ("missing `]' to close `[' on line 333, found instead `)'; indentation suggests a missing `]' before line 334"
-     .
-     4)
-    ("missing `]' to close `[' on line 323, found instead `)'; indentation suggests a missing `]' before line 324"
-     .
-     4)
-    ("missing `]' to close `[' on line 378, found instead `)'" . 4)
-    ("missing `]' to close `[' on line 358, found instead `)'" . 4)
-    ("Declaration for `element' provided, but `element' has no definition" . 4)
-    ("Polymorphic function `delete-min/max' could not be applied to arguments"
-     .
-     4)
-    ("Declaration for `delete-min/max' provided, but `delete-min/max' has no definition"
-     .
-     4)
-    ("missing `]' to close `[' on line 88, found instead `)'; indentation suggests a missing `)' before line 89"
-     .
-     4)
-    ("missing `]' to close `[' on line 192, found instead `)'; indentation suggests a missing `]' before line 193"
-     .
-     4)
-    ("missing `]' to close `[' on line 167, found instead `)'; indentation suggests a missing `]' before line 168"
-     .
-     4)
-    ("missing `]' to close `[' on line 159, found instead `)'; indentation suggests a missing `]' before line 163"
-     .
-     4)
-    ("missing `]' to close `[' on line 157, found instead `)'; indentation suggests a missing `)' before line 158"
-     .
-     4)
-    ("Declaration for `tree-lookup' provided, but `tree-lookup' has no definition"
-     .
-     4)
-    ("missing `]' to close `[' on line 114, found instead `)'; indentation suggests a missing `]' before line 115"
-     .
-     4)
-    ("Declaration for `heap' provided, but `heap' has no definition" . 4)
-    ("missing `]' to close `[' on line 108, found instead `)'" . 4)
-    ("missing `]' to close `[' on line 162, found instead `)'; indentation suggests a missing `]' before line 163"
-     .
-     4)
-    ("missing `]' to close `[' on line 176, found instead `)'" . 4)
-    ("missing `]' to close `[' on line 196, found instead `)'" . 4)
-    ("missing `]' to close `[' on line 241, found instead `)'" . 4)
-    ("Declaration for `queue-andmap' provided, but `queue-andmap' has no definition"
-     .
-     4)
+    ("Wrong number of arguments, expected 0 and got 1" . 1)
+    ("Unbound type name force" . 1)
+    ("Unbound type name define-syntax-rule" . 1)
+    ("Unbound type name delay" . 1)
     ("Cannot apply expression of type (U (Boxof A) (-> (Boxof A))), since it is not a function type"
      .
-     4)
-    ("missing `]' to close `[' on line 104, found instead `)'; indentation suggests a missing `)' before line 105"
+     1)
+    ("Declaration for `helper.' provided, but `helper.' has no definition" . 1)
+    ("missing `}' to close preceding `{', found instead `)'" . 1)
+    ("Declaration for `fun' provided, but `fun' has no definition" . 1)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 1)
+    ("Declaration for `insert' provided, but `insert' has no definition" . 1)
+    ("Used a type variable (Heap) not bound with ... as a bound on a ..." . 1)
+    ("missing an \"else\" expression" . 1)
+    ("(link node1 node2 func)" . 1)
+    ("Unbound type name inst" . 1)
+    ("Unbound type name lst" . 1)
+    ("13 Heap> ((A A -> Boolean) (Listof (Node A)))), since it is not a function type"
      .
-     4)
-    ("missing `]' to close `[' on line 215, found instead `)'" . 4)
-    ("missing `]' to close `[' on line 223, found instead `)'" . 4)
-    ("missing `]' to close `[' on line 112, found instead `)'; indentation suggests a missing `]' before line 113"
-     .
-     4)
-    ("missing `]' to close `[' on line 189, found instead `)'" . 4)
-    ("missing `]' to close `[' on line 165, found instead `)'" . 4)
-    ("missing `]' to close `[' on line 187, found instead `)'" . 4)
-    ("missing `]' to close `[' on line 160, found instead `)'; indentation suggests a missing `]' before line 161"
-     .
-     4)
-    ("missing `]' to close `[' on line 163, found instead `)'" . 4)
-    ("Declaration for `list-foldr' provided, but `list-foldr' has no definition"
-     .
-     4)
-    ("missing `]' to close `[' on line 201, found instead `)'; indentation suggests a missing `]' before line 202"
-     .
-     4)
-    ("missing `]' to close `[' on line 103, found instead `)'" . 4)
-    ("missing `]' to close `[' on line 118, found instead `)'" . 4)
-    ("Cannot apply expression of type Null, since it is not a function type"
-     .
-     4)
-    ("Polymorphic function `psappend' could not be applied to arguments" . 4)
-    ("Polymorphic function `drop' could not be applied to arguments" . 4)
-    ("Polymorphic function `stream-cdr' could not be applied to arguments" . 4)
-    ("not a well-formed definition" . 4)
-    ("Declaration for `lookup' provided, but `lookup' has no definition" . 4)
-    ("Polymorphic function `build-deque' could not be applied to arguments"
-     .
-     4)
-    ("No function domains matched in function application" . 4)
-    ("Wrong number of arguments, expected 1 and got 2" . 4)
-    ("Polymorphic function `lookup' could not be applied to arguments" . 4)
-    ("que does not refer to a structure definition" . 3)
-    ("missing `]' to close `[' on line 323, found instead `)'" . 3)
-    ("a does not refer to a structure definition" . 3)
-    ("expected 3 but got 1" . 3)
-    ("Declaration for `Similar' provided, but `Similar' has no definition" . 3)
-    ("missing `]' to close `[' on line 308, found instead `)'; indentation suggests a missing `]' before line 309"
-     .
-     3)
-    ("missing `]' to close `[' on line 302, found instead `)'" . 3)
-    ("expected 1 but got 2" . 3)
-    ("bad syntax (no expressions for procedure body)" . 3)
-    ("missing `]' to close `[' on line 89, found instead `)'" . 3)
-    ("missing `]' to close `[' on line 161, found instead `)'" . 3)
-    ("missing `]' to close `[' on line 102, found instead `)'" . 3)
-    ("Declaration for `loop' provided, but `loop' has no definition" . 3)
-    ("missing `]' to close `[' on line 135, found instead `)'" . 3)
-    ("Used a type variable (CatenableList) not bound with ... as a bound on a ..."
-     .
-     3)
-    ("missing `]' to close `[' on line 243, found instead `)'; indentation suggests a missing `]' before line 244"
-     .
-     3)
-    ("bad syntax;" . 3)
-    ("missing `]' to close `[' on line 244, found instead `)'" . 3)
-    ("bad module path" . 3)
-    ("bad syntax (missing binding pairs or body)" . 3)
-    ("Used a type variable (List) not bound with ... as a bound on a ..." . 3)
-    ("bad syntax (missing expression after identifier)" . 3)
-    ("missing `]' to close `[' on line 127, found instead `)'" . 3)
-    ("missing `]' to close `[' on line 62, found instead `)'" . 3)
-    ("missing `]' to close `[' on line 124, found instead `)'; indentation suggests a missing `]' before line 125"
-     .
-     3)
-    ("missing `]' to close `[' on line 132, found instead `)'" . 3)
-    ("missing `]' to close `[' on line 104, found instead `)'; indentation suggests a missing `]' before line 105"
-     .
-     3)
-    ("missing `]' to close `[' on line 108, found instead `)'; indentation suggests a missing `)' before line 109"
-     .
-     3)
-    ("missing `]' to close `[' on line 106, found instead `)'" . 3)
-    ("missing `]' to close `[' on line 226, found instead `)'" . 3)
-    ("missing `]' to close `[' on line 229, found instead `)'; indentation suggests a missing `]' before line 230"
-     .
-     3)
-    ("missing `]' to close `[' on line 227, found instead `)'; indentation suggests a missing `]' before line 228"
-     .
-     3)
-    ("illegal use of syntax" . 3)
-    ("Used a type variable (Queue) not bound with ... as a bound on a ..." . 3)
-    ("Declaration for `phelp-lft' provided, but `phelp-lft' has no definition"
-     .
-     3)
-    ("Declaration for `insert' provided, but `insert' has no definition" . 3)
-    ("missing `]' to close `[' on line 205, found instead `)'" . 3)
-    ("bad syntax (multiple expressions after identifier)" . 3)
-    ("missing `]' to close `[' on line 109, found instead `)'" . 3)
-    ("missing `]' to close `[' on line 130, found instead `)'" . 3)
-    ("missing `]' to close `[' on line 182, found instead `)'; indentation suggests a missing `]' before line 183"
-     .
-     3)
-    ("missing `]' to close `[' on line 127, found instead `)'; indentation suggests a missing `]' before line 128"
-     .
-     3)
-    ("missing procedure expression;" . 3)
-    ("missing `]' to close `[' on line 102, found instead `)'; indentation suggests a missing `]' before line 103"
-     .
-     3)
-    ("missing `]' to close `[' on line 120, found instead `)'; indentation suggests a missing `)' before line 121"
-     .
-     3)
-    ("missing `]' to close `[' on line 137, found instead `)'; indentation suggests a missing `)' before line 138"
-     .
-     3)
-    ("Unbound type name empty-stream?" . 3)
-    ("Polymorphic function `stream-car' could not be applied to arguments" . 3)
-    ("missing `]' to close `[' on line 97, found instead `)'; indentation suggests a missing `]' before line 98"
-     .
-     3)
-    ("not a procedure;" . 3)
-    ("not an identifier, identifier with default, or keyword" . 3)
-    ("missing `]' to close `[' on line 103, found instead `)'; indentation suggests a missing `]' before line 105"
-     .
-     3)
-    ("missing `]' to close `[' on line 59, found instead `)'; indentation suggests a missing `]' before line 60"
-     .
-     3)
-    ("Cannot apply expression of type Nonnegative-Integer, since it is not a function type"
-     .
-     3)
-    ("Polymorphic function `build-queue' could not be applied to arguments"
-     .
-     3)
-    ("Wrong number of arguments, expected 1 and got 4" . 3)
-    ("Polymorphic function `map' could not be applied to arguments" . 3)
-    ("f does not refer to a structure definition" . 2)
-    ("expected 1 but got 0" . 2)
-    ("missing `]' to close `[' on line 279, found instead `)'; indentation suggests a missing `]' before line 280"
-     .
-     2)
-    ("expected 3 but got 2" . 2)
-    ("Declaration for `last+init' provided, but `last+init' has no definition"
-     .
-     2)
-    ("Declaration for `queue' provided, but `queue' has no definition" . 2)
-    ("Declaration for `rear' provided, but `rear' has no definition" . 2)
+     1)
+    ("Used a type variable (Deque) not bound with ... as a bound on a ..." . 1)
     ("Declaration for `constructor' provided, but `constructor' has no definition"
      .
-     2)
-    ("Declaration for `A' provided, but `A' has no definition" . 2)
-    ("(stream-cons x stream)" . 2)
-    ("(delay e)" . 2)
-    ("Declaration for `que' provided, but `que' has no definition" . 2)
-    ("Declaration for `given' provided, but `given' has no definition" . 2)
-    ("Duplicate type annotation of (All (A C B ...) (case-> ((C A -> C) C (Deque A) -> C) ((C A B ... B -> C) C (Deque A) (Deque B) ... B -> C))) for foldr, previous was #<procedure>"
-     .
-     2)
-    ("Polymorphic function `enqueue' could not be applied to arguments" . 2)
-    ("no binding for identifier" . 2)
-    ("missing `]' to close `[' on line 121, found instead `)'" . 2)
-    ("missing `]' to close `[' on line 142, found instead `)'" . 2)
-    ("missing `]' to close `[' on line 88, found instead `)'" . 2)
-    ("missing `]' to close `[' on line 160, found instead `)'" . 2)
-    ("missing `]' to close `[' on line 234, found instead `)'; indentation suggests a missing `]' before line 235"
-     .
-     2)
-    ("missing `]' to close `[' on line 214, found instead `)'" . 2)
-    ("Declaration for `Helpers' provided, but `Helpers' has no definition" . 2)
-    ("Declaration for `rank' provided, but `rank' has no definition" . 2)
-    ("missing `]' to close `[' on line 84, found instead `)'; indentation suggests a missing `]' before line 85"
-     .
-     2)
-    ("Declaration for `accum' provided, but `accum' has no definition" . 2)
-    ("Declaration for `ralist' provided, but `ralist' has no definition" . 2)
-    ("Declaration for `list-map' provided, but `list-map' has no definition"
-     .
-     2)
-    ("Declaration for `a' provided, but `a' has no definition" . 2)
-    ("Declaration for `make-lheap' provided, but `make-lheap' has no definition"
-     .
-     2)
-    ("missing `]' to close `[' on line 88, found instead `)'; indentation suggests a missing `]' before line 89"
-     .
-     2)
-    ("missing `]' to close `[' on line 77, found instead `)'; indentation suggests a missing `]' before line 78"
-     .
-     2)
-    ("missing an \"else\" expression" . 2)
-    ("define does not refer to a structure definition" . 2)
-    ("Declaration for `bsq' provided, but `bsq' has no definition" . 2)
-    ("Duplicate type annotation of (All (A) ((Boxof (U (Boxof A) (-> (Boxof A)))) -> A)) for force, previous was #<procedure>"
-     .
-     2)
-    ("missing `]' to close `[' on line 52, found instead `)'; indentation suggests a missing `]' before line 53"
-     .
-     2)
-    ("missing `]' to close `[' on line 61, found instead `)'" . 2)
-    ("expected 2 and got 1" . 2)
-    ("Declaration for `pair' provided, but `pair' has no definition" . 2)
-    ("missing `]' to close `[' on line 75, found instead `)'; indentation suggests a missing `]' before line 76"
-     .
-     2)
-    ("missing `]' to close `[' on line 188, found instead `)'" . 2)
-    ("queue does not refer to a structure definition" . 2)
-    ("missing `]' to close `[' on line 157, found instead `)'; indentation suggests a missing `]' before line 158"
-     .
-     2)
-    ("missing `]' to close `[' on line 68, found instead `)'; indentation suggests a missing `)' before line 69"
-     .
-     2)
-    ("(check-pref-inv pref front lenf rear lenr)" . 2)
-    ("Used a type variable (Treap) not bound with ... as a bound on a ..." . 2)
-    ("(xor l r)" . 2)
-    ("missing `]' to close `[' on line 54, found instead `)'; indentation suggests a missing `]' before line 55"
-     .
-     2)
-    ("Unbound type name Rec" . 2)
-    ("Declaration for `pscdr' provided, but `pscdr' has no definition" . 2)
-    ("Polymorphic function `pstake' could not be applied to arguments" . 2)
-    ("Declaration for `trie' provided, but `trie' has no definition" . 2)
-    ("Cannot apply expression of type Zero, since it is not a function type"
-     .
-     2)
-    ("Unbound type name let" . 2)
-    ("Unbound type name time" . 2)
-    ("Unbound type name add1" . 2)
-    ("Polymorphic function `Deque1' could not be applied to arguments" . 2)
-    ("Unbound type name q" . 2)
-    ("(Positive-Integer)" . 2)
-    ("Cannot apply expression of type Integer, since it is not a function type"
-     .
-     2)
-    ("Polymorphic function `take' could not be applied to arguments" . 2)
-    ("(check-type e t)" . 2)
-    ("expected an identifier for the structure type name" . 1)
-    ("missing `]' to close `[' on line 258, found instead `)'; indentation suggests a missing `]' before line 259"
+     1)
+    ("Declaration for `helper' provided, but `helper' has no definition" . 1)
+    ("Declaration for `lists' provided, but `lists' has no definition" . 1)
+    ("Unbound type name append" . 1)
+    ("Unbound type name append-inner" . 1)
+    ("Unbound type name clist" . 1)
+    ("Unbound type name clist->list" . 1)
+    ("Used a type variable (CatenableList) not bound with ... as a bound on a ..."
      .
      1)
     ("expected 1 but got 3" . 1)
     ("last does not refer to a structure definition" . 1)
-    ("missing `]' to close `[' on line 282, found instead `)'; indentation suggests a missing `)' before line 283"
+    ("Declaration for `deqs' provided, but `deqs' has no definition" . 1)
+    ("Declaration for `que' provided, but `que' has no definition" . 1)
+    ("tail does not refer to a structure definition" . 1)
+    ("expected 3 but got 1" . 1)
+    ("Structure type constructor Deep applied to non-regular arguments (Deep)"
      .
      1)
-    ("missing `]' to close `[' on line 282, found instead `)'; indentation suggests a missing `]' before line 284"
+    ("Structure type constructor Deep applied to non-regular arguments (Shallow)"
      .
      1)
-    ("s does not refer to a structure definition" . 1)
-    ("expected 2 but got 3" . 1)
-    ("b does not refer to a structure definition" . 1)
-    ("missing `]' to close `[' on line 153, found instead `)'" . 1)
-    ("r does not refer to a structure definition" . 1)
-    ("bad syntax (missing body)" . 1)
-    ("expected 0 but got 1" . 1)
-    ("missing `]' to close `[' on line 185, found instead `)'; indentation suggests a missing `]' before line 186"
+    ("Declaration for `lenf' provided, but `lenf' has no definition" . 1)
+    ("Cannot apply expression of type (List (Deque B) ... B), since it is not a function type"
      .
      1)
-    ("Declaration for `Check' provided, but `Check' has no definition" . 1)
-    ("fi does not refer to a structure definition" . 1)
-    ("Declaration for `rtdq' provided, but `rtdq' has no definition" . 1)
-    ("invalid pattern" . 1)
-    ("Declaration for `strem' provided, but `strem' has no definition" . 1)
-    ("Declaration for `ques' provided, but `ques' has no definition" . 1)
-    ("Declaration for `end' provided, but `end' has no definition" . 1)
-    ("Declaration for `at' provided, but `at' has no definition" . 1)
-    ("Polymorphic function `Deque-rear' could not be applied to arguments" . 1)
-    ("Declaration for `nsub1' provided, but `nsub1' has no definition" . 1)
-    ("Polymorphic function `maintainR' could not be applied to arguments" . 1)
-    ("Cannot apply expression of type (C A B ... B -> C), since it is not a function type"
+    ("13 Deque> ((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) Integer (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) Integer)), since it is not a function type"
      .
      1)
+    ("Cannot apply expression of type (A B ... B -> Boolean), since it is not a function type"
+     .
+     1)
+    ("Unbound type name enqueue-front" . 1)
+    ("Unbound type name internal-deque" . 1)
+    ("Unbound type name rear" . 1)
+    ("Unbound type name null?" . 1)
+    ("Unbound type name Deque-front" . 1)))
+  (truncate
+   (passed . 107)
+   (failed
+    (total . 6904)
+    ("unbound identifier in module" . 1871)
+    ("bad syntax" . 471)
+    ("must be used in a definition context" . 344)
+    ("Type variable B must be used with ..." . 326)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     205)
+    ("found a test that is not at the top level" . 205)
+    ("(A)" . 199)
+    ("type name used out of context" . 184)
+    ("bad syntax (multiple types after identifier)" . 184)
+    ("expected identifier" . 177)
+    ("duplicate definition for identifier" . 164)
+    ("Used a type variable (B) not bound with ... as a bound on a ..." . 152)
+    ("syntax error in pattern" . 101)
+    ("type mismatch" . 65)
+    ("duplicate argument identifier" . 61)
+    ("Bad arguments to polymorphic function in apply" . 49)
+    ("duplicate type variable declaration" . 49)
+    ("Unbound type name" . 48)
+    ("identifier already provided (as a different binding)" . 44)
+    ("not allowed as an expression" . 43)
+    ("Unbound type name A" . 40)
+    ("not allowed in an expression context" . 38)
+    ("duplicate type variable" . 37)
+    ("'" . 37)
+    ("use of a class keyword is not in a class" . 35)
+    ("Component of case-lambda type was not a function clause" . 32)
+    ("duplicate type variable or index" . 30)
+    ("provided identifier not defined or imported for phase 0" . 27)
+    ("too many forms in body of All type" . 25)
+    ("duplicate identifier" . 23)
+    ("Cannot apply expression of type Negative-Fixnum, since it is not a function type"
+     .
+     23)
+    ("Polymorphic function `filter' could not be applied to arguments" . 23)
+    ("duplicate argument name" . 23)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     22)
+    ("struct does not refer to a structure definition" . 22)
+    ("Polymorphic function `delete-min/max' could not be applied to arguments"
+     .
+     21)
+    ("Used a type variable (...) not bound with ... as a bound on a ..." . 18)
+    ("Used a type variable (A) not bound with ... as a bound on a ..." . 18)
+    ("Declaration for `to' provided, but `to' has no definition" . 18)
+    ("not a well-formed definition" . 18)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     17)
+    ("Unbound type name All" . 17)
+    ("Polymorphic function `queue->list' could not be applied to arguments"
+     .
+     17)
+    ("Declaration for `function' provided, but `function' has no definition"
+     .
+     16)
+    ("collection not found" . 15)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 15)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     15)
+    ("Unbound type name empty?" . 14)
+    ("Declaration for `heap-andmap' provided, but `heap-andmap' has no definition"
+     .
+     14)
+    ("Polymorphic function `remove' could not be applied to arguments" . 13)
+    ("Unbound type name λ" . 13)
+    ("Polymorphic function `find-min/max' could not be applied to arguments"
+     .
+     13)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 12)
+    ("Polymorphic function `insert' could not be applied to arguments" . 12)
+    ("duplicate field identifier" . 12)
+    ("Declaration for `queue-ormap' provided, but `queue-ormap' has no definition"
+     .
+     12)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     11)
+    ("bad syntax;" . 11)
+    ("Polymorphic function `sorted-list' could not be applied to arguments"
+     .
+     11)
+    ("Polymorphic function `car' could not be applied to arguments" . 11)
+    ("Polymorphic function `set-box!' could not be applied to arguments" . 11)
+    ("Used a type variable (C) not bound with ... as a bound on a ..." . 11)
+    ("missing procedure expression;" . 10)
+    ("Declaration for `head+tail' provided, but `head+tail' has no definition"
+     .
+     10)
+    ("Declaration for `heap-map' provided, but `heap-map' has no definition"
+     .
+     10)
+    ("" . 9)
+    ("no expression after a sequence of internal definitions" . 9)
+    ("Polymorphic function `head' could not be applied to arguments" . 9)
+    ("unexpected `)'" . 9)
+    ("Cannot apply expression of type Integer, since it is not a function type"
+     .
+     9)
+    ("Polymorphic function `heap' could not be applied to arguments" . 9)
+    ("Unbound type name a" . 9)
+    ("Unbound type name heap" . 9)
+    ("Declaration for `queue-andmap' provided, but `queue-andmap' has no definition"
+     .
+     9)
+    ("Declaration for `heap-ormap' provided, but `heap-ormap' has no definition"
+     .
+     9)
+    ("Polymorphic function `lookup' could not be applied to arguments" . 8)
+    ("Polymorphic function `cons' could not be applied to arguments" . 8)
+    ("Polymorphic function `Trie-map' could not be applied to arguments" . 8)
+    ("unexpected term" . 8)
+    ("contract violation" . 8)
+    ("variable used twice in pattern" . 8)
+    ("Declaration for `the' provided, but `the' has no definition" . 8)
+    ("Declaration for `enqueue' provided, but `enqueue' has no definition" . 8)
+    ("Declaration for `fold' provided, but `fold' has no definition" . 8)
+    ("Polymorphic function `map' could not be applied to arguments" . 7)
+    ("Polymorphic function `tail' could not be applied to arguments" . 7)
+    ("Unbound type name empty" . 7)
+    ("(empty A)" . 7)
+    ("Unbound type name find-min/max" . 7)
+    ("Unbound type name delete-min/max" . 7)
+    ("Used a type variable (Boolean) not bound with ... as a bound on a ..."
+     .
+     7)
+    ("Declaration for `list-map' provided, but `list-map' has no definition"
+     .
+     7)
+    ("Used a type variable (Queue) not bound with ... as a bound on a ..." . 7)
+    ("ellipses not allowed as an expression" . 7)
+    ("Unbound type name define-type" . 7)
+    ("wildcard not allowed as an expression" . 7)
+    ("Polymorphic function `force' could not be applied to arguments" . 7)
+    ("elem does not refer to a structure definition" . 7)
+    ("Declaration for `insert' provided, but `insert' has no definition" . 7)
+    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
+     .
+     6)
+    ("Polymorphic function `make-Trie' could not be applied to arguments" . 6)
+    ("Polymorphic function `go-deep' could not be applied to arguments" . 6)
+    ("Polymorphic function `empty' could not be applied to arguments" . 6)
+    ("Polymorphic function `enqueue' could not be applied to arguments" . 6)
+    ("Polymorphic function `build-list' could not be applied to arguments" . 6)
+    ("expected annotated-formals" . 6)
+    ("bad syntax (not an identifier)" . 6)
+    ("Polymorphic function `build-deque' could not be applied to arguments"
+     .
+     6)
+    ("Polymorphic function `loop' could not be applied to arguments" . 6)
+    ("Declaration for `ls' provided, but `ls' has no definition" . 6)
+    ("Declaration for `internal-queue' provided, but `internal-queue' has no definition"
+     .
+     6)
+    ("Unbound type name X" . 6)
+    ("Declaration for `sorted-list' provided, but `sorted-list' has no definition"
+     .
+     6)
+    ("Unbound type name ..." . 6)
+    ("type mismatch;" . 6)
+    ("Declaration for `dqfoldl' provided, but `dqfoldl' has no definition" . 6)
+    ("Polymorphic function `bind' could not be applied to arguments" . 5)
+    ("not a require sub-form" . 5)
+    ("Polymorphic function `->list' could not be applied to arguments" . 5)
+    ("Polymorphic function `list-length' could not be applied to arguments"
+     .
+     5)
+    ("Polymorphic function `get-vals' could not be applied to arguments" . 5)
+    ("Polymorphic function `build' could not be applied to arguments" . 5)
+    ("Polymorphic function `Some-elem' could not be applied to arguments" . 5)
+    ("Polymorphic function `hash-set' could not be applied to arguments" . 5)
+    ("Declaration for `tries' provided, but `tries' has no definition" . 5)
+    ("not at module level or top level" . 5)
+    ("Polymorphic function `append' could not be applied to arguments" . 5)
+    ("No function domains matched in function application" . 5)
+    ("Declaration for `stream-reverse' provided, but `stream-reverse' has no definition"
+     .
+     5)
+    ("Unbound type name U" . 5)
+    ("Polymorphic function `empty-stream?' could not be applied to arguments"
+     .
+     5)
+    ("Cannot apply expression of type (U (Pairof A (Rec g257 (U Null (Boxof (U (Pairof A g257) (-> (Pairof A g257))))))) (-> (Pairof A (Rec g263 (U Null (Boxof (U (Pairof A g263) (-> (Pairof A g263))))))))), since it is not a function type"
+     .
+     5)
+    ("Polymorphic function `cdr' could not be applied to arguments" . 5)
+    ("Declaration for `loop' provided, but `loop' has no definition" . 5)
+    ("Expected a polymorphic function with ..., but function/annotation had no ..."
+     .
+     5)
+    ("Declaration for `list-fifth' provided, but `list-fifth' has no definition"
+     .
+     5)
+    ("Declaration for `treap-map' provided, but `treap-map' has no definition"
+     .
+     5)
+    ("Declaration for `helper' provided, but `helper' has no definition" . 5)
+    ("not a provide sub-form" . 5)
+    ("Declaration for `list->queue' provided, but `list->queue' has no definition"
+     .
+     5)
+    ("Declaration for `get-left' provided, but `get-left' has no definition"
+     .
+     5)
+    ("Declaration for `root' provided, but `root' has no definition" . 5)
+    ("Declaration for `delete-root' provided, but `delete-root' has no definition"
+     .
+     5)
+    ("a does not refer to a structure definition" . 5)
+    ("expected 4 but got 3" . 5)
+    ("Unbound type name filter" . 5)
+    ("Polymorphic function `unbox' could not be applied to arguments" . 5)
+    ("Declaration for `build-heap' provided, but `build-heap' has no definition"
+     .
+     5)
+    ("missing `]' to close `[' on line 89, found instead `)'; indentation suggests a missing `]' before line 90"
+     .
+     5)
+    ("Unbound type name case-lambda" . 5)
+    ("Polymorphic function `Heap2' could not be applied to arguments" . 5)
+    ("Declaration for `deque->list' provided, but `deque->list' has no definition"
+     .
+     5)
+    ("Declaration for `list-foldl' provided, but `list-foldl' has no definition"
+     .
+     5)
+    ("Declaration for `list-andmap' provided, but `list-andmap' has no definition"
+     .
+     5)
+    ("m does not refer to a structure definition" . 5)
+    ("Declaration for `deque-map' provided, but `deque-map' has no definition"
+     .
+     5)
+    ("use of a class keyword is not in a class top-level" . 5)
+    ("Polymorphic function `hash-ref' could not be applied to arguments" . 4)
+    ("Unbound type name V" . 4)
+    ("Declaration for `gt' provided, but `gt' has no definition" . 4)
+    ("Unbound type name build-list" . 4)
+    ("Wrong number of arguments, expected 1 and got 7" . 4)
+    ("Unbound type name b" . 4)
+    ("Cannot apply expression of type Positive-Index, since it is not a function type"
+     .
+     4)
+    ("Polymorphic function `foldr' could not be applied to arguments" . 4)
+    ("Declaration for `Similar' provided, but `Similar' has no definition" . 4)
+    ("expected 3 but got 2" . 4)
+    ("expected 1 but got 3" . 4)
+    ("second does not refer to a structure definition" . 4)
+    ("Declaration for `head' provided, but `head' has no definition" . 4)
+    ("Polymorphic function `PairingHeap-heap' could not be applied to arguments"
+     .
+     4)
+    ("Polymorphic function `build-heap' could not be applied to arguments" . 4)
+    ("Polymorphic function `link' could not be applied to arguments" . 4)
+    ("Polymorphic function `ins-tree' could not be applied to arguments" . 4)
+    ("Polymorphic function `Node-rank' could not be applied to arguments" . 4)
+    ("Declaration for `append-inner' provided, but `append-inner' has no definition"
+     .
+     4)
+    ("Polymorphic function `init' could not be applied to arguments" . 4)
+    ("s does not refer to a structure definition" . 4)
+    ("Wrong number of arguments, expected 1 and got 3" . 3)
+    ("Polymorphic function `stream->list' could not be applied to arguments"
+     .
+     3)
+    ("Polymorphic function `redblacktree' could not be applied to arguments"
+     .
+     3)
+    ("Polymorphic function `drop' could not be applied to arguments" . 3)
+    ("Unbound type name require" . 3)
+    ("identifier is already imported" . 3)
+    ("Polymorphic function `qmap' could not be applied to arguments" . 3)
+    ("Unbound type name check-expect" . 3)
+    ("Wrong number of arguments, expected 1 and got 9" . 3)
+    ("Unbound type name enqueue" . 3)
+    ("not an identifier, identifier with default, or keyword" . 3)
+    ("cannot open module file" . 3)
+    ("Polymorphic function `fold' could not be applied to arguments" . 3)
+    ("Unbound type name apply" . 3)
+    ("Unbound type name x" . 3)
+    ("Polymorphic function `heap-andmap' could not be applied to arguments"
+     .
+     3)
+    ("Unbound type name loop" . 3)
+    ("Polymorphic function `stream-append' could not be applied to arguments"
+     .
+     3)
+    ("Polymorphic function `stream-car' could not be applied to arguments" . 3)
+    ("empty does not refer to a structure definition" . 3)
+    ("expected 1 but got 2" . 3)
+    ("Declaration for `lst' provided, but `lst' has no definition" . 3)
+    ("untyped identifier pscdr" . 3)
+    ("match does not refer to a structure definition" . 3)
+    ("Declaration for `tre' provided, but `tre' has no definition" . 3)
+    ("b does not refer to a structure definition" . 3)
+    ("Declaration for `of' provided, but `of' has no definition" . 3)
+    ("Declaration for `element' provided, but `element' has no definition" . 3)
+    ("bad syntax (missing binding pairs or body)" . 3)
+    ("Used a type variable (Heap) not bound with ... as a bound on a ..." . 3)
+    ("Cannot infer bound for ... type" . 3)
+    ("Declaration for `ins-tree' provided, but `ins-tree' has no definition"
+     .
+     3)
     ("Polymorphic function `deque->list' could not be applied to arguments"
      .
-     1)
-    ("Polymorphic function `cons' could not be applied to arguments" . 1)
-    ("Unbound type name enqueue-front" . 1)
+     3)
+    ("Cannot apply expression of type (All (A C) Error), since it is not a function type"
+     .
+     3)
     ("Polymorphic function `enqueue-front' could not be applied to arguments"
      .
-     1)
+     3)
+    ("r does not refer to a structure definition" . 3)
+    ("Three does not refer to a structure definition" . 3)
+    ("One does not refer to a structure definition" . 3)
+    ("Wrong number of arguments, expected 1 and got 2" . 2)
+    ("Polymorphic function `trie' could not be applied to arguments" . 2)
+    ("apply requires a final list argument, given only a function argument of type (Listof Integer)"
+     .
+     2)
+    ("Polymorphic function `list-foldl' could not be applied to arguments" . 2)
+    ("(K)" . 2)
+    ("Unbound type name bind" . 2)
+    ("Unbound type name build" . 2)
+    ("Unbound type name lookup" . 2)
+    ("22 Trie> ((U Mt (Some V)) (HashTable K (Trie K V)))), since it is not a function type"
+     .
+     2)
+    ("(K V)" . 2)
+    ("Unbound type name typed/test-engine/scheme-tests" . 2)
+    ("#<syntax Shallow> ((U Zero (One Nothing)))), since it is not a function type"
+     .
+     2)
+    ("#<syntax Queue> (Integer (Listof Nothing) (U Null (Reversing Nothing) (Appending Nothing) (Done Nothing)) Integer (Listof Nothing))), since it is not a function type"
+     .
+     2)
+    ("Polymorphic function `merge' could not be applied to arguments" . 2)
+    ("Polymorphic function `heap-ormap' could not be applied to arguments" . 2)
+    ("Wrong number of arguments, expected at least 2 and got 0" . 2)
+    ("bad module path" . 2)
+    ("Polymorphic function `build-queue' could not be applied to arguments"
+     .
+     2)
+    ("bad syntax (not an identifier and expression for a binding)" . 2)
+    ("bad syntax (multiple expressions after identifier)" . 2)
+    ("Polymorphic function `box' could not be applied to arguments" . 2)
+    ("Unbound type name stream-car" . 2)
+    ("Polymorphic function `stream-cdr' could not be applied to arguments" . 2)
+    ("untyped identifier stream-eager imported from module <private/stream-cons.rkt>"
+     .
+     2)
+    ("Unbound type name empty-stream?" . 2)
+    ("Polymorphic function `Node-elem' could not be applied to arguments" . 2)
+    ("Declaration for `func' provided, but `func' has no definition" . 2)
+    ("(force promise)" . 2)
+    ("Declaration for `into' provided, but `into' has no definition" . 2)
+    ("(check-pref-inv pref front lenf rear lenr)" . 2)
+    ("Declaration for `queues' provided, but `queues' has no definition" . 2)
+    ("expected 2 and got 1" . 2)
+    ("parent struct type not defined" . 2)
+    ("duplicate definition" . 2)
+    ("Unbound type name psappend" . 2)
+    ("Unbound type name pscar" . 2)
+    ("Unbound type name pscdr" . 2)
+    ("Unbound type name pstake" . 2)
+    ("Recursive Type Alias Reference" . 2)
+    ("Declaration for `pscar' provided, but `pscar' has no definition" . 2)
+    ("Declaration for `check' provided, but `check' has no definition" . 2)
+    ("cons does not refer to a structure definition" . 2)
+    ("x does not refer to a structure definition" . 2)
+    ("cons' could not be applied to arguments" . 2)
+    ("Declaration for `tree' provided, but `tree' has no definition" . 2)
+    ("Declaration for `is' provided, but `is' has no definition" . 2)
+    ("Declaration for `given' provided, but `given' has no definition" . 2)
+    ("Unbound type name trees" . 2)
+    ("Declaration for `constructor' provided, but `constructor' has no definition"
+     .
+     2)
+    ("Declaration for `common' provided, but `common' has no definition" . 2)
+    ("Declaration for `more' provided, but `more' has no definition" . 2)
+    ("Polymorphic function `LeftistHeap-heap' could not be applied to arguments"
+     .
+     2)
+    ("Declaration for `A' provided, but `A' has no definition" . 2)
+    ("Unbound type name func" . 2)
+    ("Unbound type name build-heap" . 2)
+    ("Polymorphic function `IntHeap1' could not be applied to arguments" . 2)
+    ("Polymorphic function `map-single' could not be applied to arguments" . 2)
+    ("((Node A))" . 2)
+    ("Declaration for `rotate-rev' provided, but `rotate-rev' has no definition"
+     .
+     2)
+    ("Declaration for `link-all' provided, but `link-all' has no definition"
+     .
+     2)
+    ("Polymorphic function `Deque-lenf' could not be applied to arguments" . 2)
+    ("Unbound type name build-deque" . 2)
+    ("Unbound type name build-deque-front" . 2)
+    ("Unbound type name deque" . 2)
+    ("Unbound type name deque->list" . 2)
     ("Polymorphic function `internal-deque' could not be applied to arguments"
      .
-     1)
-    ("Polymorphic function `maintainF' could not be applied to arguments" . 1)
-    ("Unbound type name empty?" . 1)
-    ("Unbound type name enqueue" . 1)
-    ("missing `]' to close `[' on line 57, found instead `)'; indentation suggests a missing `]' before line 58"
+     2)
+    ("Unbound type name enqueue-front" . 2)
+    ("fi does not refer to a structure definition" . 2)
+    ("que does not refer to a structure definition" . 2)
+    ("_ does not refer to a structure definition" . 2)
+    ("expected 2 but got 3" . 2)
+    ("Used a type variable (Deque) not bound with ... as a bound on a ..." . 2)
+    ("Declaration for `enqueue-front' provided, but `enqueue-front' has no definition"
+     .
+     2)
+    ("Wrong number of arguments, expected 1 and got 4" . 1)
+    ("apply requires a final list argument, given only a function argument of type (Rec g385 (U Null (Boxof (U (Pairof Integer g385) (-> (Pairof Integer g385))))))"
      .
      1)
-    ("Declaration for `cat2' provided, but `cat2' has no definition" . 1)
-    ("Unbound type name define-type" . 1)
-    ("Declaration for `cat' provided, but `cat' has no definition" . 1)
-    ("missing `]' to close `[' on line 63, found instead `)'; indentation suggests a missing `]' before line 64"
+    ("Polymorphic function `stream-reverse' could not be applied to arguments"
      .
      1)
-    ("Recursive Type Alias Reference" . 1)
-    ("x does not refer to a structure definition" . 1)
-    ("black does not refer to a structure definition" . 1)
-    ("missing `]' to close `[' on line 104, found instead `)'" . 1)
-    ("Used a type variable (RBTree) not bound with ... as a bound on a ..."
+    ("expected more terms starting with identifier" . 1)
+    ("Polymorphic function `root' could not be applied to arguments" . 1)
+    ("Wrong number of arguments, expected at least 2 and got 1" . 1)
+    ("bad syntax (not a datum sequence)" . 1)
+    ("Polymorphic function `member?' could not be applied to arguments" . 1)
+    ("Polymorphic function `list-ref' could not be applied to arguments" . 1)
+    ("Structure type constructor Trie applied to non-regular arguments (Trie V)"
      .
      1)
-    ("Structure type constructor RBNode applied to non-regular arguments (Tree)"
+    ("Structure type constructor Trie applied to non-regular arguments (HashTable V)"
      .
      1)
-    ("Declaration for `into' provided, but `into' has no definition" . 1)
-    ("(link node1 node2 func)" . 1)
-    ("Declaration for `get-min' provided, but `get-min' has no definition" . 1)
-    ("Unbound type name ..." . 1)
-    ("Polymorphic function `ins-tree' could not be applied to arguments" . 1)
-    ("13 Node> (Integer A (Listof (Node A)))), since it is not a function type"
+    ("Unbound type name map" . 1)
+    ("Could not infer types for applying polymorphic function `empty'" . 1)
+    ("Declaration for `does' provided, but `does' has no definition" . 1)
+    ("Declaration for `one' provided, but `one' has no definition" . 1)
+    ("Declaration for `previous' provided, but `previous' has no definition"
      .
      1)
-    ("Declaration for `newsize' provided, but `newsize' has no definition" . 1)
-    ("Declaration for `racket' provided, but `racket' has no definition" . 1)
-    ("Declaration for `lists' provided, but `lists' has no definition" . 1)
-    ("Declaration for `rst' provided, but `rst' has no definition" . 1)
-    ("Declaration for `tree' provided, but `tree' has no definition" . 1)
-    ("expected `)' to close preceding `(', found instead `}'" . 1)
-    ("missing `}' to close preceding `{', found instead `)'" . 1)
-    ("Declaration for `ins-all' provided, but `ins-all' has no definition" . 1)
-    ("Declaration for `Checks' provided, but `Checks' has no definition" . 1)
-    ("Structure type constructor Node applied to non-regular arguments (Tree)"
+    ("Declaration for `as' provided, but `as' has no definition" . 1)
+    ("Unbound type name define-type-alias" . 1)
+    ("Unbound type name scheme/match" . 1)
+    ("Unbound type name opt" . 1)
+    ("Unbound type name get-vals" . 1)
+    ("Cannot apply expression of type (U Null (Pairof K (Listof K))), since it is not a function type"
      .
      1)
-    ("missing `]' to close `[' on line 74, found instead `)'; indentation suggests a missing `]' before line 75"
+    ("((Listof K))" . 1)
+    ("Polymorphic function `Trie-opt' could not be applied to arguments" . 1)
+    ("((Listof K) K (Trie K V))" . 1)
+    ("((Listof K) Listof (Trie K V))" . 1)
+    ("((Listof K) V (Trie K V))" . 1)
+    ("Wrong number of arguments, expected 2 and got 3" . 1)
+    ("Declaration for `b' provided, but `b' has no definition" . 1)
+    ("Declaration for `a' provided, but `a' has no definition" . 1)
+    ("Polymorphic function `reverse' could not be applied to arguments" . 1)
+    ("(delay e)" . 1)
+    ("Unbound type name sum" . 1)
+    ("Unbound type name typed/rackunit" . 1)
+    ("(check-type e t)" . 1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Boxof (Rec g189 (U Null (Boxof (U (Boxof g189) (-> (Boxof g189)))) (Pairof Integer g189)))) (-> (Boxof (Rec g195 (U Null (Boxof (U (Boxof g195) (-> (Boxof g195)))) (Pairof Integer g195))))))) (Pairof Integer (Rec g201 (U Null (Boxof (U (Boxof g201) (-> (Boxof g201)))) (Pairof Integer g201))))), since it is not a function type"
      .
      1)
-    ("Declaration for `pos' provided, but `pos' has no definition" . 1)
-    ("Declaration for `tu-help' provided, but `tu-help' has no definition" . 1)
-    ("Declaration for `tl-help' provided, but `tl-help' has no definition" . 1)
-    ("missing `]' to close `[' on line 46, found instead `)'; indentation suggests a missing `]' before line 47"
+    ("Unbound type name list" . 1)
+    ("Unbound type name ann" . 1)
+    ("Unbound type name check-equal?" . 1)
+    ("Unbound type name check-type" . 1)
+    ("Cannot apply expression of type (U (Boxof (U (Boxof (Rec g194 (U Null (Boxof (U (Boxof g194) (-> (Boxof g194)))) (Pairof Integer g194)))) (-> (Boxof (Rec g200 (U Null (Boxof (U (Boxof g200) (-> (Boxof g200)))) (Pairof Integer g200))))))) (Pairof Integer (Rec g206 (U Null (Boxof (U (Boxof g206) (-> (Boxof g206)))) (Pairof Integer g206))))), since it is not a function type"
      .
      1)
-    ("Declaration for `sorted' provided, but `sorted' has no definition" . 1)
-    ("Declaration for `Returns' provided, but `Returns' has no definition" . 1)
-    ("Declaration for `h1' provided, but `h1' has no definition" . 1)
-    ("Declaration for `h2' provided, but `h2' has no definition" . 1)
-    ("missing `]' to close `[' on line 50, found instead `)'; indentation suggests a missing `]' before line 51"
+    ("given queue is empty" . 1)
+    ("Unbound type name queue->list" . 1)
+    ("apply requires a final list argument, given only a function argument of type (Queue Positive-Index)"
      .
      1)
-    ("state does not refer to a structure definition" . 1)
-    ("exec does not refer to a structure definition" . 1)
-    ("Declaration for `state' provided, but `state' has no definition" . 1)
-    ("Declaration for `x' provided, but `x' has no definition" . 1)
-    ("missing `]' to close `[' on line 92, found instead `)'; indentation suggests a missing `]' before line 93"
+    ("pfds/heap/leftist" . 1)
+    ("bad argument sequence" . 1)
+    ("Polymorphic function `apply' could not be applied to arguments" . 1)
+    ("untyped identifier lst1" . 1)
+    ("bad syntax (not a sequence of identifier--expression bindings)" . 1)
+    ("Wrong number of arguments, expected 2 and got 1" . 1)
+    ("Cannot apply expression of type Nonnegative-Integer, since it is not a function type"
      .
      1)
-    ("missing `]' to close `[' on line 65, found instead `)'" . 1)
-    ("Declaration for `check' provided, but `check' has no definition" . 1)
-    ("Declaration for `Invarient' provided, but `Invarient' has no definition"
+    ("#<syntax Queue> ((Rec g382 (U Null (Boxof (U (Boxof g382) (-> (Boxof g382)))) (Pairof Positive-Integer g382))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
      .
      1)
-    ("Declaration for `invarients' provided, but `invarients' has no definition"
+    ("#<syntax Deque> ((Rec g397 (U Null (Boxof (U (Boxof g397) (-> (Boxof g397)))) (Pairof Positive-Integer g397))) Integer (Rec g403 (U Null (Boxof (U (Boxof g403) (-> (Boxof g403)))) (Pairof Positive-Integer g403))) Integer)), since it is not a function type"
      .
      1)
-    ("Declaration for `Maintains' provided, but `Maintains' has no definition"
+    ("Polymorphic function `Deque1' could not be applied to arguments" . 1)
+    ("#<syntax Deque> ((Rec g986 (U Null (Boxof (U (Boxof g986) (-> (Boxof g986)))) (Pairof Positive-Integer g986))) Integer (Rec g992 (U Null (Boxof (U (Boxof g992) (-> (Boxof g992)))) (Pairof Positive-Integer g992))) Integer)), since it is not a function type"
      .
      1)
-    ("Declaration for `queues' provided, but `queues' has no definition" . 1)
-    ("Unbound type name ->" . 1)
-    ("missing `]' to close `[' on line 21, found instead `)'" . 1)
-    ("Declaration for `r' provided, but `r' has no definition" . 1)
-    ("Declaration for `e' provided, but `e' has no definition" . 1)
-    ("expected 1 and got 2" . 1)
-    ("Structure type constructor Tree applied to non-regular arguments (IntHeap)"
+    ("Unbound type name q" . 1)
+    ("#<syntax Deque> ((Rec g466 (U Null (Boxof (U (Boxof g466) (-> (Boxof g466)))) (Pairof Positive-Integer g466))) Integer (Rec g472 (U Null (Boxof (U (Boxof g472) (-> (Boxof g472)))) (Pairof Positive-Integer g472))) Integer)), since it is not a function type"
      .
      1)
-    ("Structure type constructor Tree applied to non-regular arguments (Tree)"
+    ("#<syntax Deque> ((Rec g795 (U Null (Boxof (U (Boxof g795) (-> (Boxof g795)))) (Pairof Positive-Integer g795))) Integer (Rec g801 (U Null (Boxof (U (Boxof g801) (-> (Boxof g801)))) (Pairof Positive-Integer g801))) Integer)), since it is not a function type"
      .
      1)
-    ("tree does not refer to a structure definition" . 1)
-    ("cons does not refer to a structure definition" . 1)
-    ("expected 0 but got 3" . 1)
-    ("Declaration for `phelp-rgt' provided, but `phelp-rgt' has no definition"
+    ("apply requires a final list argument, given only a function argument of type (U Null (Root Positive-Index))"
      .
      1)
-    ("head does not refer to a structure definition" . 1)
-    ("missing `]' to close `[' on line 105, found instead `)'" . 1)
-    ("missing `]' to close `[' on line 123, found instead `)'" . 1)
-    ("missing `]' to close `[' on line 72, found instead `)'" . 1)
-    ("missing `]' to close `[' on line 156, found instead `)'; indentation suggests a missing `]' before line 157"
+    ("Declaration for `typed/test-engine/scheme-tests' provided, but `typed/test-engine/scheme-tests' has no definition"
      .
      1)
-    ("missing `]' to close `[' on line 85, found instead `)'; indentation suggests a missing `]' before line 86"
+    ("Declaration for `pfds/heap/bootstrapped' provided, but `pfds/heap/bootstrapped' has no definition"
      .
      1)
-    ("missing `]' to close `[' on line 81, found instead `)'" . 1)
-    ("missing `]' to close `[' on line 49, found instead `)'; indentation suggests a missing `]' before line 50"
+    ("Declaration for `typed-scheme' provided, but `typed-scheme' has no definition"
      .
      1)
-    ("illegal use of `.'" . 1)
-    ("Declaration for `deqs' provided, but `deqs' has no definition" . 1)
-    ("Declaration for `deq' provided, but `deq' has no definition" . 1)
-    ("missing `]' to close `[' on line 28, found instead `)'" . 1)
-    ("Declaration for `vreverse-helper' provided, but `vreverse-helper' has no definition"
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g451 (U Null (Boxof (U (Pairof A g451) (-> (Pairof A g451))))))) (-> (Pairof A (Rec g457 (U Null (Boxof (U (Pairof A g457) (-> (Pairof A g457)))))))))), since it is not a function type"
      .
      1)
-    ("(rotate val1 prio1 val2 prio2 t1 t2 t3)" . 1)
-    ("Declaration for `treaps' provided, but `treaps' has no definition" . 1)
-    ("missing `]' to close `[' on line 120, found instead `)'; indentation suggests a missing `]' before line 123"
+    ("Cannot apply expression of type (U Null (Boxof (U (Pairof A (Rec g251 (U Null (Boxof (U (Pairof A g251) (-> (Pairof A g251))))))) (-> (Pairof A (Rec g257 (U Null (Boxof (U (Pairof A g257) (-> (Pairof A g257))))))))))), since it is not a function type"
      .
      1)
-    ("Declaration for `treap.' provided, but `treap.' has no definition" . 1)
-    ("Declaration for `from' provided, but `from' has no definition" . 1)
-    ("Declaration for `function.' provided, but `function.' has no definition"
+    ("Unbound type name stream-reverse" . 1)
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g563 (U Null (Boxof (U (Pairof A g563) (-> (Pairof A g563))))))) (-> (Pairof A (Rec g569 (U Null (Boxof (U (Pairof A g569) (-> (Pairof A g569)))))))))), since it is not a function type"
      .
      1)
-    ("Declaration for `in' provided, but `in' has no definition" . 1)
-    ("missing `]' to close `[' on line 137, found instead `)'; indentation suggests a missing `]' before line 139"
-     .
-     1)
-    ("Cannot apply expression of type (Pairof A (Rec g201 (U Null (Boxof (U (Boxof g201) (-> (Boxof g201)))) (Pairof A g201)))), since it is not a function type"
-     .
-     1)
-    ("Declaration for `num' provided, but `num' has no definition" . 1)
-    ("Duplicate type annotation of (All (A) ((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) -> (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))))) for psdrop, previous was (All (A) (Integer (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) -> (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X))))))))"
-     .
-     1)
-    ("Unbound type name pscar" . 1)
-    ("Unbound type name pscdr" . 1)
-    ("Polymorphic function `pscar' could not be applied to arguments" . 1)
-    ("Polymorphic function `pscdr' could not be applied to arguments" . 1)
-    ("Duplicate type annotation of (All (A) ((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) -> (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))))) for pscdr, previous was (All (A) ((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) -> (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X))))))))"
-     .
-     1)
-    ("Recursive types are not allowed directly inside their definition" . 1)
-    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g470 (U Null (Boxof (U (Pairof A g470) (-> (Pairof A g470))))))) (-> (Pairof A (Rec g476 (U Null (Boxof (U (Pairof A g476) (-> (Pairof A g476)))))))))), since it is not a function type"
-     .
-     1)
-    ("Unbound type name stream-car" . 1)
-    ("Polymorphic function `box' could not be applied to arguments" . 1)
-    ("Cannot apply expression of type (Pairof A (Rec g239 (U Null (Boxof (U (Pairof A g239) (-> (Pairof A g239))))))), since it is not a function type"
-     .
-     1)
-    ("Declaration for `xs' provided, but `xs' has no definition" . 1)
-    ("Duplicate type annotation of (All (A) ((Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> (Listof A))) for cdr, previous was #<procedure>"
-     .
-     1)
-    ("Duplicate type annotation of (All (A) ((Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> (Listof A))) for car, previous was #<procedure>"
-     .
-     1)
-    ("Polymorphic function `stream-append' could not be applied to arguments"
+    ("Cannot apply expression of type (Boxof (U (Pairof A (Rec g506 (U Null (Boxof (U (Pairof A g506) (-> (Pairof A g506))))))) (-> (Pairof A (Rec g512 (U Null (Boxof (U (Pairof A g512) (-> (Pairof A g512)))))))))), since it is not a function type"
      .
      1)
     ("(A (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))))"
      .
      1)
-    ("(Listof (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))))"
+    ("(Stream (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))))"
      .
      1)
-    ("(A Boolean)" . 1)
-    ("(Stream Boolean)" . 1)
+    ("Unbound type name stream-cdr" . 1)
+    ("Unbound type name null" . 1)
+    ("Cannot apply expression of type (U Null (Boxof (U (Pairof A (Rec g444 (U Null (Boxof (U (Pairof A g444) (-> (Pairof A g444))))))) (-> (Pairof A (Rec g450 (U Null (Boxof (U (Pairof A g450) (-> (Pairof A g450))))))))))), since it is not a function type"
+     .
+     1)
     ("Unbound type name stream" . 1)
-    ("Duplicate type annotation of (All (A) (Integer (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))))) for stream, previous was (All (A) (A * -> (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream))))))))"
+    ("Unbound type name empty-stream" . 1)
+    ("bad syntax (missing name or binding pairs)" . 1)
+    ("Declaration for `index' provided, but `index' has no definition" . 1)
+    ("Used a type variable (List) not bound with ... as a bound on a ..." . 1)
+    ("Unbound type name elems" . 1)
+    ("Unbound type name prevbase" . 1)
+    ("Declaration for `vreverse-helper' provided, but `vreverse-helper' has no definition"
      .
      1)
-    ("Duplicate type annotation of (All (A) (Integer (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))))) for stream-cdr, previous was (All (A) ((Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream))))))))"
+    ("Unbound type name Block" . 1)
+    ("not a definition sequence" . 1)
+    ("Unbound type name tree" . 1)
+    ("Declaration for `delete' provided, but `delete' has no definition" . 1)
+    ("Declaration for `treaps' provided, but `treaps' has no definition" . 1)
+    ("Expected 1 type variables, but given 2" . 1)
+    ("Declaration for `ques' provided, but `ques' has no definition" . 1)
+    ("Declaration for `que' provided, but `que' has no definition" . 1)
+    ("Declaration for `item' provided, but `item' has no definition" . 1)
+    ("(check-len-inv pref front lenf rear lenr)" . 1)
+    ("(define-syntax-rule promise)" . 1)
+    ("(internal-queue pref front lenf rear lenr)" . 1)
+    ("Polymorphic function `Deep5' could not be applied to arguments" . 1)
+    ("one does not refer to a structure definition" . 1)
+    ("Declaration for `num' provided, but `num' has no definition" . 1)
+    ("Duplicate type annotation of (All (A) ((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) -> (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))))) for psdrop, previous was (All (A) (Integer (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) -> (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X))))))))"
      .
      1)
-    ("Duplicate type annotation of (All (A) (Integer (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))))) for stream->list, previous was (All (A) ((Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> (Listof A)))"
+    ("Unbound type name psreverse" . 1)
+    ("Unbound type name lst" . 1)
+    ("Duplicate type annotation of (All (A) ((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) -> (Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))))) for pscar, previous was (All (A) ((Rec X (U Null (Pairof A X) (Boxof (U (Boxof X) (-> (Boxof X)))))) -> A))"
      .
      1)
-    ("Duplicate type annotation of (All (A) (Integer (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))))) for stream-car, previous was (All (A) ((Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> A))"
+    ("Polymorphic function `psappend' could not be applied to arguments" . 1)
+    ("Polymorphic function `psdrop' could not be applied to arguments" . 1)
+    ("Polymorphic function `pstake' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type (Boxof (U (Boxof (Rec g210 (U Null (Boxof (U (Boxof g210) (-> (Boxof g210)))) (Pairof A g210)))) (-> (Boxof (Rec g216 (U Null (Boxof (U (Boxof g216) (-> (Boxof g216)))) (Pairof A g216))))))), since it is not a function type"
      .
      1)
-    ("Declaration for `p' provided, but `p' has no definition" . 1)
-    ("Duplicate type annotation of (All (A) ((Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))) -> (Rec Stream (U Null (Boxof (U (Pairof A Stream) (-> (Pairof A Stream)))))))) for car, previous was #<procedure>"
+    ("((Promise (Listof A)))" . 1)
+    ("Unbound type name fold" . 1)
+    ("Unbound type name ormap" . 1)
+    ("state does not refer to a structure definition" . 1)
+    ("invalidate does not refer to a structure definition" . 1)
+    ("define does not refer to a structure definition" . 1)
+    ("fourth does not refer to a structure definition" . 1)
+    ("y does not refer to a structure definition" . 1)
+    ("missing an \"else\" expression" . 1)
+    ("Declaration for `pos' provided, but `pos' has no definition" . 1)
+    ("Declaration for `ralist' provided, but `ralist' has no definition" . 1)
+    ("Declaration for `key' provided, but `key' has no definition" . 1)
+    ("red does not refer to a structure definition" . 1)
+    ("Declaration for `lenr' provided, but `lenr' has no definition" . 1)
+    ("Declaration for `lenf' provided, but `lenf' has no definition" . 1)
+    ("Declaration for `invariant' provided, but `invariant' has no definition"
      .
      1)
-    ("Declaration for `b' provided, but `b' has no definition" . 1)
-    ("undefined;" . 1)
-    ("Declaration for `V' provided, but `V' has no definition" . 1)
-    ("Declaration for `K' provided, but `K' has no definition" . 1)
-    ("Declaration for `fst' provided, but `fst' has no definition" . 1)
-    ("missing `]' to close `[' on line 25, found instead `)'" . 1)
-    ("#<syntax Deque> ((Rec g771 (U Null (Boxof (U (Boxof g771) (-> (Boxof g771)))) (Pairof Positive-Integer g771))) Integer (Rec g777 (U Null (Boxof (U (Boxof g777) (-> (Boxof g777)))) (Pairof Positive-Integer g777))) Integer)), since it is not a function type"
+    ("func does not refer to a structure definition" . 1)
+    ("make-Heap does not refer to a structure definition" . 1)
+    ("Polymorphic function `partition' could not be applied to arguments" . 1)
+    ("Type variable Boolean must be used with ..." . 1)
+    ("Declaration for `heaps' provided, but `heaps' has no definition" . 1)
+    ("Declaration for `two' provided, but `two' has no definition" . 1)
+    ("Declaration for `Merges' provided, but `Merges' has no definition" . 1)
+    ("Declaration for `helper.' provided, but `helper.' has no definition" . 1)
+    ("Declaration for `same' provided, but `same' has no definition" . 1)
+    ("Declaration for `use' provided, but `use' has no definition" . 1)
+    ("Declaration for `fun' provided, but `fun' has no definition" . 1)
+    ("Declaration for `tres2' provided, but `tres2' has no definition" . 1)
+    ("Declaration for `tres1' provided, but `tres1' has no definition" . 1)
+    ("Polymorphic function `make-Heap' could not be applied to arguments" . 1)
+    ("((Boxof A))" . 1)
+    ("Polymorphic function `in-merge' could not be applied to arguments" . 1)
+    ("Unbound type name Boolean" . 1)
+    ("(Null (Tree A))" . 1)
+    ("Unbound type name right" . 1)
+    ("Declaration for `lheap' provided, but `lheap' has no definition" . 1)
+    ("Duplicate type annotation of (All (A) ((PairingHeap A) -> (Listof A))) for first, previous was #<procedure>"
      .
      1)
-    ("#<syntax Deque> ((Rec g962 (U Null (Boxof (U (Boxof g962) (-> (Boxof g962)))) (Pairof Positive-Integer g962))) Integer (Rec g968 (U Null (Boxof (U (Boxof g968) (-> (Boxof g968)))) (Pairof Positive-Integer g968))) Integer)), since it is not a function type"
+    ("13 PairingHeap> ((A A -> Boolean) (U Null (IntHeap A)))), since it is not a function type"
      .
      1)
-    ("#<syntax Deque> ((Rec g344 (U Null (Boxof (U (Boxof g344) (-> (Boxof g344)))) (Pairof Positive-Integer g344))) Integer (Rec g350 (U Null (Boxof (U (Boxof g350) (-> (Boxof g350)))) (Pairof Positive-Integer g350))) Integer)), since it is not a function type"
+    ("Unbound type name comp" . 1)
+    ("Unbound type name merge" . 1)
+    ("Polymorphic function `first' could not be applied to arguments" . 1)
+    ("Polymorphic function `IntHeap-elem' could not be applied to arguments"
      .
      1)
-    ("Polymorphic function `head' could not be applied to arguments" . 1)
-    ("bad syntax (not a sequence of identifier--expression bindings)" . 1)
-    ("#<syntax Deque> ((Rec g389 (U Null (Boxof (U (Boxof g389) (-> (Boxof g389)))) (Pairof Positive-Integer g389))) Integer (Rec g395 (U Null (Boxof (U (Boxof g395) (-> (Boxof g395)))) (Pairof Positive-Integer g395))) Integer)), since it is not a function type"
+    ("Polymorphic function `merge-help' could not be applied to arguments" . 1)
+    ("Declaration for `comp' provided, but `comp' has no definition" . 1)
+    ("13 Heap> ((A A -> Boolean) (Listof (Node A)))), since it is not a function type"
      .
      1)
-    ("bad syntax (not an identifier and expression for a binding)" . 1)
-    ("Wrong number of arguments, expected at least 2 and got 1" . 1)
-    ("#<syntax Queue> ((Rec g688 (U Null (Boxof (U (Boxof g688) (-> (Boxof g688)))) (Pairof Positive-Integer g688))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+    ("Unbound type name get-min" . 1)
+    ("Polymorphic function `inner' could not be applied to arguments" . 1)
+    ("Unbound type name inner" . 1)
+    ("Polymorphic function `get-min' could not be applied to arguments" . 1)
+    ("Duplicate type annotation of (All (A) ((A -> Boolean) (Heap A) -> (Heap A))) for filter, previous was #<procedure>"
      .
      1)
-    ("#<syntax Queue> ((Rec g453 (U Null (Boxof (U (Boxof g453) (-> (Boxof g453)))) (Pairof Positive-Integer g453))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
+    ("(C C Boolean)" . 1)
+    ("(C A Boolean)" . 1)
+    ("Polymorphic function `Node-val' could not be applied to arguments" . 1)
+    ("Unbound type name val" . 1)
+    ("Declaration for `accum' provided, but `accum' has no definition" . 1)
+    ("Declaration for `rer' provided, but `rer' has no definition" . 1)
+    ("Unbound type name tail" . 1)
+    ("Unbound type name lenr" . 1)
+    ("Unbound type name rear" . 1)
+    ("Polymorphic function `maintainF' could not be applied to arguments" . 1)
+    ("Unbound type name base" . 1)
+    ("Unbound type name ->" . 1)
+    ("Unbound type name queue" . 1)
+    ("Unbound type name internal-deque" . 1)
+    ("Unbound type name maintainF" . 1)
+    ("Unbound type name head" . 1)
+    ("Unbound type name init" . 1)
+    ("Unbound type name n" . 1)
+    ("Polymorphic function `deque' could not be applied to arguments" . 1)
+    ("Polymorphic function `build-deque-front' could not be applied to arguments"
      .
      1)
-    ("pfds/treap" . 1)
-    ("pfds/queue/implicit" . 1)
-    ("identifier `vfoldl' not included in nested require spec" . 1)
-    ("identifier `vfoldr' not included in nested require spec" . 1)
-    ("identifier `size' not included in nested require spec" . 1)
-    ("Declaration for `vlst' provided, but `vlst' has no definition" . 1)
-    ("Cannot apply expression of type (U Null (Pairof Integer (Listof Integer))), since it is not a function type"
-     .
-     1)
-    ("Polymorphic function `bind' could not be applied to arguments" . 1)
-    ("Polymorphic function `tries' could not be applied to arguments" . 1)
-    ("Polymorphic function `trie' could not be applied to arguments" . 1)
-    ("Wrong number of arguments, expected 1 and got 3" . 1)
-    ("Polymorphic function `reverse' could not be applied to arguments" . 1))))
+    ("Unbound type name inst" . 1)
+    ("Unbound type name define-syntax-rule" . 1)
+    ("f does not refer to a structure definition" . 1)
+    ("expected 2 but got 1" . 1)
+    ("expected 1 but got 0" . 1)
+    ("last does not refer to a structure definition" . 1)
+    ("expected 0 but got 1" . 1)
+    ("first does not refer to a structure definition" . 1)
+    ("cdrm does not refer to a structure definition" . 1)
+    ("t does not refer to a structure definition" . 1)
+    ("(Zero (One A) (Two A) (Three A))" . 1)
+    ("Unbound type name third" . 1)
+    ("is does not refer to a structure definition" . 1)
+    ("deque does not refer to a structure definition" . 1)
+    ("expected 0 but got 2" . 1)
+    ("Declaration for `front' provided, but `front' has no definition" . 1)
+    ("enqueue-front does not refer to a structure definition" . 1)
+    ("expected an identifier for the structure type name" . 1))))

@@ -1,7 +1,7 @@
 (list
  (cons
   'remove
-  (rankings "test-files/packages/marketplace/types.rkt" '(0 0 3 0 2) 16 7))
+  (rankings "test-files/packages/marketplace/types.rkt" '(0 1 1 2 4) 15 5))
  (cons
   'truncate
-  (rankings "test-files/packages/marketplace/types.rkt" '(0 2 3 2 0) 12 9)))
+  (rankings "test-files/packages/marketplace/types.rkt" '(0 2 3 1 0) 15 7)))

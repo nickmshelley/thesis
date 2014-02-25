@@ -1,24 +1,17 @@
 '((remove
-   (passed . 15)
+   (passed . 13)
    (failed
-    (total . 10)
-    ("unbound identifier in module" . 5)
+    (total . 12)
+    ("Illegal clause in endpoint definition" . 6)
+    ("collection not found" . 2)
     ("bad syntax" . 1)
-    ("Illegal use of on-absence outside endpoint definition context" . 1)
-    ("Illegal use of match-conversation outside endpoint definition context"
-     .
-     1)
-    ("(subscriber topic clause ...)" . 1)
-    ("(publisher topic clause ...)" . 1)))
+    ("unbound identifier in module" . 1)
+    ("bad module path" . 1)
+    ("cannot open module file" . 1)))
   (truncate
-   (passed . 12)
+   (passed . 16)
    (failed
-    (total . 13)
-    ("Illegal clause in endpoint definition" . 4)
-    ("Illegal use of match-conversation outside endpoint definition context"
-     .
-     3)
-    ("unbound identifier in module" . 2)
-    ("wildcard not allowed as an expression" . 2)
-    ("(publisher topic clause ...)" . 1)
-    ("(transition/no-state action ...)" . 1))))
+    (total . 9)
+    ("Illegal clause in endpoint definition" . 7)
+    ("unbound identifier in module" . 1)
+    ("(subscriber topic clause ...)" . 1))))

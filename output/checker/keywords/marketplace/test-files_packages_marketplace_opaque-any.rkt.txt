@@ -1,8 +1,13 @@
-'((remove (passed . 10) (failed (total . 0)))
-  (truncate
-   (passed . 0)
+'((remove
+   (passed . 3)
    (failed
     (total . 7)
-    ("unbound identifier in module" . 3)
+    ("provided identifier not defined or imported for phase 0" . 4)
     ("duplicate definition for identifier" . 2)
-    ("provided identifier not defined or imported for phase 0" . 2))))
+    ("unbound identifier in module" . 1)))
+  (truncate
+   (passed . 5)
+   (failed
+    (total . 5)
+    ("provided identifier not defined or imported for phase 0" . 3)
+    ("duplicate definition for identifier" . 2))))

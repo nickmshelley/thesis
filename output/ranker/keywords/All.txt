@@ -1,3 +1,3 @@
 (list
- (cons 'remove (rankings "All" '(56 80 153 286 196) 3817 403))
- (cons 'truncate (rankings "All" '(48 250 268 238 189) 2990 1008)))
+ (cons 'remove (rankings "All" '(48 79 190 260 249) 3767 398))
+ (cons 'truncate (rankings "All" '(68 271 241 261 216) 2965 969)))

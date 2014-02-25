@@ -1,30 +1,43 @@
 '((remove
    (passed . 0)
    (failed
-    (total . 50)
-    ("unbound identifier in module" . 17)
-    ("expected a `)' to close `('" . 16)
-    ("must be used in a definition context" . 5)
-    ("type name used out of context" . 4)
-    ("(send-to-user* debug-name pid (e) failure-result enclosed-expr)" . 1)
-    ("Expected a function of type (process-spec (U False (PID -> (OldState -> (transition OldState)))) (process OldState) -> (vm -> (values (U False (process OldState)) vm))), but got a function with the wrong arity"
+    (total . 45)
+    ("unbound identifier in module" . 14)
+    ("expected a `)' to close `('" . 6)
+    ("type name used out of context" . 5)
+    ("identifier is not bound to a structure type" . 5)
+    ("syntax error in pattern" . 4)
+    ("bad syntax" . 4)
+    ("Declaration for `transition-accepter' provided, but `transition-accepter' has no definition"
      .
-     1)
-    ("syntax error in pattern" . 1)
-    ("identifier `struct-copy' not included in nested require spec" . 1)
-    ("identifier `PR13149' not included in nested require spec" . 1)
-    ("identifier `tr-struct-copy.rkt' not included in nested require spec" . 1)
-    ("identifier `workaround' not included in nested require spec" . 1)
-    ("identifier `rename-in' not included in nested require spec" . 1)))
+     4)
+    ("not an identifier for structure type" . 1)
+    ("provided identifier not defined or imported for phase 0" . 1)
+    ("must be used in a definition context" . 1)))
   (truncate
    (passed . 0)
    (failed
-    (total . 23)
-    ("unbound identifier in module" . 10)
-    ("Declaration for `send-to-process' provided, but `send-to-process' has no definition"
+    (total . 130)
+    ("unbound identifier in module" . 76)
+    ("expected a `)' to close `('" . 13)
+    ("duplicate argument identifier" . 9)
+    ("bad syntax" . 7)
+    ("too many forms in body of All type" . 4)
+    ("Declaration for `notify-route-change-self' provided, but `notify-route-change-self' has no definition"
      .
-     6)
-    ("bad syntax (multiple types after identifier)" . 4)
-    ("bad syntax" . 1)
-    ("bad syntax (clause is not a test-value pair)" . 1)
-    ("not allowed as an expression" . 1))))
+     4)
+    ("duplicate definition for identifier" . 3)
+    ("type name used out of context" . 2)
+    ("variable used twice in pattern" . 2)
+    ("not allowed in an expression context" . 1)
+    ("missing `)' to close `(' on line 103, found instead `]'; indentation suggests a missing `)' before line 104"
+     .
+     1)
+    ("must be used in a definition context" . 1)
+    ("provided identifier not defined or imported for phase 0" . 1)
+    ("duplicate identifier" . 1)
+    ("expected `)' to close preceding `(', found instead `}'" . 1)
+    ("expected identifier" . 1)
+    ("'" . 1)
+    ("duplicate clause binding name" . 1)
+    ("duplicate type variable" . 1))))

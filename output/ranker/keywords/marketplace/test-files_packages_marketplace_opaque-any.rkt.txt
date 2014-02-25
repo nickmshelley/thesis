@@ -6,6 +6,6 @@
   'truncate
   (rankings
    "test-files/packages/marketplace/opaque-any.rkt"
-   '(0 0 0 1 1)
-   0
+   '(0 0 0 1 0)
+   1
    0)))

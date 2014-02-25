@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/pfds/pfds/tests/lazypairingheap-test.rkt"
-   '(0 0 1 1 7)
-   24
+   '(1 2 1 1 1)
+   27
    2))
  (cons
   'truncate
   (rankings
    "test-files/packages/pfds/pfds/tests/lazypairingheap-test.rkt"
-   '(0 0 2 0 3)
-   25
-   5)))
+   '(2 0 4 2 5)
+   18
+   4)))

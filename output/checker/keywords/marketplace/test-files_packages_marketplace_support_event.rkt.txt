@@ -1,19 +1,12 @@
 '((remove
-   (passed . 3)
-   (failed
-    (total . 7)
-    ("type name used out of context" . 2)
-    ("unbound identifier in module" . 2)
-    ("provided identifier not defined or imported for phase 0" . 2)
-    ("expected simple-clause; expected struct-clause; or expected opaque-clause"
-     .
-     1)))
-  (truncate
    (passed . 1)
    (failed
-    (total . 24)
-    ("unbound identifier in module" . 17)
-    ("contract violation" . 4)
-    ("bad syntax" . 1)
-    ("duplicate field identifier" . 1)
-    ("duplicate argument name" . 1))))
+    (total . 9)
+    ("unexpected term" . 5)
+    ("duplicate definition for identifier" . 1)
+    ("not at module level" . 1)
+    ("identifier `opaque' not included in nested require spec" . 1)
+    ("identifier `typed/racket/base' not included in nested require spec"
+     .
+     1)))
+  (truncate (passed . 0) (failed (total . 3) ("unexpected term" . 3))))

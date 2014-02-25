@@ -1,65 +1,38 @@
 '((remove
-   (passed . 101)
+   (passed . 112)
    (failed
-    (total . 139)
-    ("unbound identifier in module" . 60)
-    ("missing `]' to close preceding `[', found instead `)'" . 19)
-    ("syntax error in pattern" . 13)
-    ("bad syntax" . 6)
-    ("undefined;" . 6)
-    ("Illegal clause in endpoint definition" . 4)
-    ("missing argument expression after keyword" . 4)
-    ("collection not found" . 3)
+    (total . 128)
+    ("unbound identifier in module" . 65)
+    ("Illegal clause in endpoint definition" . 15)
+    ("duplicate argument identifier" . 8)
+    ("Illegal use of match-state outside endpoint definition context" . 6)
+    ("identifier is not bound to struct type information" . 6)
+    ("syntax error in pattern" . 6)
+    ("not a require sub-form" . 5)
+    ("not allowed in an expression context" . 4)
     ("duplicate definition for identifier" . 3)
-    ("duplicate field identifier" . 2)
-    ("illegal use of syntax" . 2)
-    ("not allowed in an expression context" . 2)
-    ("(subscriber topic clause ...)" . 2)
-    ("bad module path" . 1)
-    ("identifier is already imported" . 1)
-    ("missing `]' to close `[' on line 51, found instead `)'; indentation suggests a missing `]' before line 52"
-     .
-     1)
+    ("undefined;" . 3)
+    ("collection not found" . 3)
     ("Illegal use of on-absence outside endpoint definition context" . 1)
-    ("multiple bindings of `remote-hostname' in the same clause" . 1)
-    ("multiple bindings of `local-port' in the same clause" . 1)
-    ("(observe-subscribers topic clause ...)" . 1)
-    ("Illegal use of match-state outside endpoint definition context" . 1)
-    ("missing `]' to close `[' on line 96, found instead `)'; indentation suggests a missing `]' before line 98"
-     .
-     1)
-    ("missing `]' to close `[' on line 132, found instead `)'; indentation suggests a missing `]' before line 133"
-     .
-     1)
-    ("missing `]' to close `[' on line 78, found instead `)'; indentation suggests a missing `]' before line 79"
-     .
-     1)
-    ("duplicate argument identifier" . 1)
     ("Illegal use of match-interest-type outside endpoint definition context"
      .
-     1)))
-  (truncate
-   (passed . 123)
-   (failed
-    (total . 117)
-    ("unbound identifier in module" . 62)
-    ("missing `]' to close preceding `[', found instead `)'" . 10)
-    ("Illegal clause in endpoint definition" . 8)
-    ("bad syntax" . 6)
-    ("duplicate definition for identifier" . 5)
-    ("syntax error in pattern" . 4)
-    ("identifier is not bound to struct type information" . 4)
-    ("missing procedure expression;" . 4)
-    ("duplicate argument identifier" . 2)
-    ("missing argument expression after keyword" . 2)
-    ("Illegal use of match-state outside endpoint definition context" . 2)
-    ("missing `]' to close `[' on line 127, found instead `)'" . 1)
-    ("identifier is already imported" . 1)
-    ("(publisher topic clause ...)" . 1)
-    ("not allowed in an expression context" . 1)
-    ("missing `]' to close `[' on line 122, found instead `)'; indentation suggests a missing `]' before line 123"
-     .
      1)
-    ("(observe-subscribers topic clause ...)" . 1)
-    ("Illegal use of on-presence outside endpoint definition context" . 1)
-    ("wildcard not allowed as an expression" . 1))))
+    ("bad module path" . 1)
+    ("(observe-subscribers topic clause ...)" . 1)))
+  (truncate
+   (passed . 143)
+   (failed
+    (total . 97)
+    ("unbound identifier in module" . 46)
+    ("Illegal clause in endpoint definition" . 21)
+    ("bad syntax" . 6)
+    ("syntax error in pattern" . 6)
+    ("collection not found" . 4)
+    ("missing argument expression after keyword" . 4)
+    ("Illegal use of on-presence outside endpoint definition context" . 2)
+    ("wildcard not allowed as an expression" . 2)
+    ("not allowed in an expression context" . 2)
+    ("bad module path" . 1)
+    ("(observe-subscribers/everything topic clause ...)" . 1)
+    ("unexpected term" . 1)
+    ("Illegal use of on-absence outside endpoint definition context" . 1))))

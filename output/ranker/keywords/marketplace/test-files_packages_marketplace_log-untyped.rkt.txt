@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/marketplace/log-untyped.rkt"
-   '(0 0 1 0 0)
-   6
+   '(0 0 0 0 0)
+   7
    2))
  (cons
   'truncate
   (rankings
    "test-files/packages/marketplace/log-untyped.rkt"
-   '(0 0 1 0 0)
-   4
-   4)))
+   '(0 0 0 0 0)
+   0
+   9)))

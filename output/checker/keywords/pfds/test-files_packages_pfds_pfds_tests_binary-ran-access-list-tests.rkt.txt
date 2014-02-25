@@ -1,19 +1,56 @@
 '((remove
    (passed . 0)
    (failed
-    (total . 13)
-    ("not a require sub-form" . 5)
+    (total . 46)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     14)
+    ("expected a `module' declaration" . 5)
     ("found a test that is not at the top level" . 5)
-    ("unbound identifier in module" . 3)))
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     4)
+    ("unbound identifier in module" . 4)
+    ("Polymorphic function `filter' could not be applied to arguments" . 3)
+    ("Polymorphic function `list-length' could not be applied to arguments"
+     .
+     2)
+    ("Polymorphic function `tail' could not be applied to arguments" . 1)
+    ("not an identifier, identifier with default, or keyword" . 1)
+    ("Cannot apply expression of type (U Null (Pairof Any (Listof Any))), since it is not a function type"
+     .
+     1)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `head' could not be applied to arguments" . 1)
+    ("Polymorphic function `->list' could not be applied to arguments" . 1)
+    ("Polymorphic function `list-set' could not be applied to arguments" . 1)
+    ("Polymorphic function `remove' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type Negative-Fixnum, since it is not a function type"
+     .
+     1)))
   (truncate
    (passed . 0)
    (failed
-    (total . 88)
-    ("unbound identifier in module" . 46)
-    ("expected identifier" . 16)
-    ("found a test that is not at the top level" . 8)
-    ("type name used out of context" . 7)
-    ("must be used in a definition context" . 7)
-    ("bad syntax" . 2)
-    ("not an identifier, identifier with default, or keyword" . 1)
-    ("duplicate argument name" . 1))))
+    (total . 34)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     11)
+    ("found a test that is not at the top level" . 11)
+    ("Cannot apply expression of type Negative-Fixnum, since it is not a function type"
+     .
+     3)
+    ("unbound identifier in module" . 3)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     1)
+    ("apply requires a final list argument, given only a function argument of type (U Null (Root Positive-Index))"
+     .
+     1)
+    ("Polymorphic function `list-length' could not be applied to arguments"
+     .
+     1)
+    ("bad syntax" . 1)
+    ("Polymorphic function `->list' could not be applied to arguments" . 1)
+    ("not at module level or top level" . 1))))

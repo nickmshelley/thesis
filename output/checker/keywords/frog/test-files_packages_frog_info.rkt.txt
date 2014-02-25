@@ -1,11 +1,12 @@
 '((remove
-   (passed . 1)
-   (failed
-    (total . 9)
-    ("expected a `module' declaration" . 5)
-    ("duplicate definition" . 2)
-    ("unbound identifier in module" . 1)
-    ("not a well-formed definition" . 1)))
-  (truncate
    (passed . 0)
-   (failed (total . 2) ("not a well-formed definition" . 2))))
+   (failed
+    (total . 10)
+    ("not a well-formed definition" . 5)
+    ("collection not found" . 4)
+    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ."
+     .
+     1)))
+  (truncate
+   (passed . 6)
+   (failed (total . 4) ("not a well-formed definition" . 4))))

@@ -1,49 +1,55 @@
 '((remove
-   (passed . 0)
+   (passed . 7)
    (failed
-    (total . 27)
-    ("unbound identifier in module" . 9)
-    ("expected a `)' to close `('" . 5)
+    (total . 38)
+    ("unexpected `)'" . 5)
+    ("unbound identifier in module" . 5)
     ("'" . 4)
-    ("type name used out of context" . 4)
-    ("bad syntax (multiple types after identifier)" . 4)
+    ("Polymorphic function `event-relay' could not be applied to arguments"
+     .
+     4)
+    ("type name used out of context" . 3)
     ("Illegal use of match-conversation outside endpoint definition context"
      .
-     1)))
+     2)
+    ("Unbound type name ?" . 1)
+    ("Cannot apply expression of type Topic, since it is not a function type"
+     .
+     1)
+    ("Illegal use of on-absence outside endpoint definition context" . 1)
+    ("type mismatch" . 1)
+    ("Polymorphic function `transition8' could not be applied to arguments"
+     .
+     1)
+    ("State topic clause ...)" . 1)
+    ("Unbound type name name-endpoint" . 1)
+    ("Unbound type name at-meta-level" . 1)
+    ("Unbound type name event-relay" . 1)
+    ("Unbound type name flush-output" . 1)
+    ("Unbound type name self-id" . 1)
+    ("Cannot apply expression of type Symbol, since it is not a function type"
+     .
+     1)
+    ("pid" . 1)
+    ("no expression after a sequence of internal definitions" . 1)
+    ("expected identifier" . 1)))
   (truncate
-   (passed . 0)
+   (passed . 10)
    (failed
-    (total . 55)
-    ("unbound identifier in module" . 26)
-    ("bad syntax (multiple types after identifier)" . 4)
-    ("bad syntax" . 4)
-    ("syntax error in pattern" . 4)
-    ("Declaration for `evt-handler' provided, but `evt-handler' has no definition"
-     .
-     3)
-    ("missing `)' to close `(' on line 63, found instead `]'; indentation suggests a missing `)' before line 71"
-     .
-     2)
-    ("missing `)' to close `(' on line 63, found instead `]'; indentation suggests a missing `)' before line 64"
-     .
-     2)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 54"
+    (total . 24)
+    ("type name used out of context" . 6)
+    ("unbound identifier in module" . 4)
+    ("'" . 4)
+    ("bad syntax" . 2)
+    ("Unbound type name" . 1)
+    ("Unbound type name event-relay" . 1)
+    ("Unbound type name ../support/event.rkt" . 1)
+    ("Polymorphic function `event-relay' could not be applied to arguments"
      .
      1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 53"
+    ("Illegal use of on-presence outside endpoint definition context" . 1)
+    ("wildcard not allowed as an expression" . 1)
+    ("Cannot apply expression of type Evt, since it is not a function type"
      .
      1)
-    ("expected a `)' to close `('" . 1)
-    ("duplicate definition for identifier" . 1)
-    ("identifier is already imported" . 1)
-    ("not allowed in an expression context" . 1)
-    ("missing `)' to close `(' on line 64, found instead `]'; indentation suggests a missing `)' before line 71"
-     .
-     1)
-    ("missing `)' to close `(' on line 61, found instead `]'; indentation suggests a missing `)' before line 62"
-     .
-     1)
-    ("missing `)' to close `(' on line 49, found instead `]'" . 1)
-    ("missing `)' to close `(' on line 64, found instead `]'; indentation suggests a missing `)' before line 65"
-     .
-     1))))
+    ("Wrong number of arguments, expected 1 and got 3" . 1))))

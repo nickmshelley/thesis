@@ -1,58 +1,40 @@
 '((remove
    (passed . 0)
    (failed
-    (total . 139)
-    ("unbound identifier in module" . 52)
-    ("expected a `)' to close `('" . 16)
-    ("too many forms in body of All type" . 9)
-    ("duplicate argument identifier" . 7)
-    ("expected a `module' declaration" . 5)
-    ("Declaration for `action-tree->quasiqueue' provided, but `action-tree->quasiqueue' has no definition"
+    (total . 83)
+    ("unbound identifier in module" . 19)
+    ("expected a `)' to close `('" . 15)
+    ("type name used out of context" . 11)
+    ("bad syntax" . 9)
+    ("duplicate argument identifier" . 6)
+    ("missing `)' to close preceding `(', found instead `]'" . 6)
+    ("Declaration for `notify-route-change-process' provided, but `notify-route-change-process' has no definition"
      .
      4)
-    ("(SNew)" . 4)
-    ("not allowed as an expression" . 4)
-    ("Declaration for `notify-route-change-self' provided, but `notify-route-change-self' has no definition"
-     .
-     4)
-    ("bad syntax (multiple types after identifier)" . 4)
-    ("Declaration for `notify-route-change-vm' provided, but `notify-route-change-vm' has no definition"
-     .
-     4)
-    ("bad syntax" . 3)
-    ("variable used twice in pattern" . 3)
-    ("Error in macro expansion -- insufficient type information to typecheck. please add more type annotations"
-     .
-     2)
-    ("Declaration for `SNew' provided, but `SNew' has no definition" . 2)
-    ("not allowed in an expression context" . 2)
+    ("not allowed as an expression" . 3)
     ("must be used in a definition context" . 2)
-    ("type name used out of context" . 2)
-    ("missing `)' to close `(' on line 21, found instead `]'; indentation suggests a missing `)' before line 25"
-     .
-     2)
-    ("missing `)' to close preceding `(', found instead `]'" . 1)
-    ("missing `)' to close `(' on line 21, found instead `]'; indentation suggests a missing `)' before line 27"
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("missing `)' to close `(' on line 104, found instead `]'" . 1)
+    ("missing `)' to close `(' on line 77, found instead `]'; indentation suggests a missing `)' before line 80"
      .
      1)
-    ("Declaration for `SOld' provided, but `SOld' has no definition" . 1)
-    ("Declaration for `pn' provided, but `pn' has no definition" . 1)
-    ("Declaration for `p' provided, but `p' has no definition" . 1)
-    ("missing `)' to close `(' on line 104, found instead `]'; indentation suggests a missing `)' before line 106"
+    ("arrow not allowed as an expression" . 1)
+    ("syntax error in pattern" . 1)
+    ("(unwrap-process State Result (p wp) body ...)" . 1)
+    ("missing `)' to close `(' on line 104, found instead `]'; indentation suggests a missing `)' before line 107"
      .
-     1)
-    ("duplicate binding name" . 1)
-    ("'" . 1)))
+     1)))
   (truncate
-   (passed . 17)
+   (passed . 0)
    (failed
-    (total . 61)
-    ("unbound identifier in module" . 34)
-    ("syntax error in pattern" . 10)
-    ("missing `)' to close preceding `(', found instead `]'" . 5)
-    ("bad syntax" . 4)
-    ("wildcard not allowed as an expression" . 3)
-    ("(subscriber topic clause ...)" . 2)
-    ("Illegal clause in endpoint definition" . 1)
-    ("duplicate argument identifier" . 1)
-    ("expected at least one expression on the right-hand side" . 1))))
+    (total . 25)
+    ("unbound identifier in module" . 11)
+    ("Declaration for `send-to-process' provided, but `send-to-process' has no definition"
+     .
+     5)
+    ("must be used in a definition context" . 5)
+    ("bad syntax" . 2)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     1)
+    ("not allowed in an expression context" . 1))))

@@ -1,74 +1,28 @@
 '((remove
-   (passed . 53)
+   (passed . 54)
    (failed
-    (total . 42)
-    ("unbound identifier in module (in phase 1, transformer environment)" . 9)
-    ("missing procedure expression;" . 8)
-    ("missing `]' to close `[' on line 23, found instead `)'; indentation suggests a missing `)' before line 47"
-     .
-     5)
-    ("bad syntax" . 4)
-    ("unbound identifier in module" . 3)
-    ("missing `)' to close `(' on line 63, found instead `]'; indentation suggests a missing `)' before line 65"
-     .
-     2)
-    ("missing `)' to close `(' on line 25, found instead `]'; indentation suggests a missing `)' before line 33"
-     .
-     1)
-    ("expected a `)' to close `('" . 1)
-    ("ellipses not allowed as an expression" . 1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 26"
-     .
-     1)
-    ("bad syntax (not an identifier for procedure name, and not a nested procedure form)"
-     .
-     1)
+    (total . 41)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 14)
+    ("pattern variable cannot be used outside of a template" . 6)
+    ("unbound identifier in module" . 5)
+    ("variable used twice in pattern" . 3)
+    ("collection not found" . 2)
+    ("not allowed in an expression context" . 2)
+    ("misplaced ellipsis in pattern" . 1)
+    ("unbound identifier in the transformer environment;" . 1)
+    ("cannot open module file" . 1)
     ("duplicate binding name" . 1)
-    ("provided identifier not defined or imported for phase 0" . 1)
-    ("missing `)' to close `(' on line 49, found instead `]'; indentation suggests a missing `)' before line 52"
-     .
-     1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 53"
-     .
-     1)
-    ("missing `)' to close `(' on line 25, found instead `]'; indentation suggests a missing `)' before line 29"
-     .
-     1)
-    ("missing `)' to close `(' on line 52, found instead `]'" . 1)))
-  (truncate
-   (passed . 44)
-   (failed
-    (total . 50)
-    ("unbound identifier in module (in phase 1, transformer environment)" . 13)
-    ("missing procedure expression;" . 7)
-    ("unbound identifier in module" . 6)
-    ("missing `]' to close `[' on line 23, found instead `)'; indentation suggests a missing `)' before line 47"
-     .
-     5)
-    ("pattern variable cannot be used outside of a template" . 3)
-    ("bad syntax" . 3)
-    ("unbound identifier in module (in the transformer environment, which does not include the macro definition that is visible to run-time expressions)"
-     .
-     1)
-    ("missing `)' to close `(' on line 25, found instead `]'; indentation suggests a missing `)' before line 28"
-     .
-     1)
-    ("bad syntax (not an identifier)" . 1)
-    ("not a require sub-form" . 1)
-    ("bad syntax;" . 1)
-    ("missing `)' to close `(' on line 25, found instead `]'; indentation suggests a missing `)' before line 33"
-     .
-     1)
+    ("undefined;" . 1)
+    ("bad syntax" . 1)
+    ("too many ellipses in template" . 1)
     ("illegal use of syntax" . 1)
-    ("missing `)' to close `(' on line 25, found instead `]'; indentation suggests a missing `)' before line 47"
-     .
-     1)
-    ("not in a module-definition context" . 1)
-    ("missing `)' to close `(' on line 52, found instead `]'" . 1)
-    ("missing `)' to close preceding `(', found instead `]'" . 1)
-    ("missing `)' to close `(' on line 63, found instead `]'; indentation suggests a missing `)' before line 66"
-     .
-     1)
-    ("missing `)' to close `(' on line 63, found instead `]'; indentation suggests a missing `)' before line 65"
-     .
-     1))))
+    ("allowed only around a module body" . 1)))
+  (truncate
+   (passed . 1)
+   (failed
+    (total . 15)
+    ("unbound identifier in module" . 6)
+    ("Illegal clause in endpoint definition" . 5)
+    ("syntax error in pattern" . 2)
+    ("expected 1 but got 3" . 1)
+    ("Illegal use of on-absence outside endpoint definition context" . 1))))

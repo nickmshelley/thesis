@@ -1,64 +1,76 @@
 '((remove
-   (passed . 0)
+   (passed . 18)
    (failed
-    (total . 75)
-    ("type mismatch" . 20)
-    ("accessor name not associated with the given structure type" . 5)
-    ("duplicate definition for identifier" . 5)
-    ("Declaration for `orientations-intersect?' provided, but `orientations-intersect?' has no definition"
-     .
-     5)
-    ("Declaration for `co-roles' provided, but `co-roles' has no definition"
-     .
-     5)
+    (total . 87)
+    ("type mismatch" . 30)
+    ("unbound identifier in module" . 7)
+    ("Wrong number of arguments, expected 2 and got 1" . 6)
     ("must be used in a definition context" . 5)
-    ("Component of case-lambda type was not a function clause" . 5)
-    ("Unbound type name" . 3)
-    ("bad syntax" . 3)
-    ("Wrong number of arguments, expected 2 and got 1" . 3)
-    ("unbound identifier in module" . 3)
-    ("Wrong number of arguments, expected 1 and got 2" . 2)
-    ("Unbound type name co-orientations" . 2)
-    ("bad module path" . 2)
-    ("Expected a function of type (role -> (-> (U False Topic))), but got a function with the wrong arity"
-     .
-     1)
-    ("Expected a function of type (-> (role -> (U False Topic))), but got a function with the wrong arity"
-     .
-     1)
-    ("Expected a function of type (-> (-> (Listof Orientation))), but got a function with the wrong arity"
-     .
-     1)
-    ("Unbound type name define" . 1)
-    ("collection not found" . 1)
-    ("typed/racket/base" . 1)
-    ("cannot open module file" . 1)))
-  (truncate
-   (passed . 0)
-   (failed
-    (total . 82)
-    ("type mismatch" . 20)
-    ("bad syntax (multiple types after identifier)" . 15)
-    ("unbound identifier in module" . 15)
+    ("illegal use of syntax" . 5)
+    ("bad syntax (multiple types after identifier)" . 5)
     ("Wrong number of arguments, expected 1 and got 2" . 4)
-    ("Wrong number of arguments, expected 2 and got 1" . 3)
-    ("Polymorphic function `memq' could not be applied to arguments" . 3)
-    ("Declaration for `co-roles' provided, but `co-roles' has no definition"
+    ("bad syntax" . 4)
+    ("Error in macro expansion -- insufficient type information to typecheck. please add more type annotations"
      .
-     3)
-    ("Unbound type name freshen" . 2)
-    ("Unbound type name mgu-canonical" . 2)
-    ("bad syntax" . 2)
-    ("Wrong number of arguments, expected 1 and got 4" . 2)
-    ("Wrong number of arguments, expected 2 and got 4" . 2)
-    ("(Topic Topic)" . 1)
-    ("(Symbol Topic)" . 1)
-    ("(Topic Topic Boolean)" . 1)
-    ("Unbound type name specialization?" . 1)
+     4)
     ("duplicate argument identifier" . 1)
-    ("provided identifier not defined or imported for phase 0" . 1)
-    ("duplicate definition for identifier" . 1)
-    ("identifier is already imported" . 1)
-    ("Cannot apply expression of type role, since it is not a function type"
+    ("Declaration for `co-orientation' provided, but `co-orientation' has no definition"
      .
-     1))))
+     1)
+    ("(Topic Topic Topic)" . 1)
+    ("Unbound type name freshen" . 1)
+    ("Unbound type name mgu-canonical" . 1)
+    ("Unbound type name specialization?" . 1)
+    ("Declaration for `publisher' provided, but `publisher' has no definition"
+     .
+     1)
+    ("identifier is already imported" . 1)
+    ("identifier `->' not included in nested require spec" . 1)
+    ("identifier `Symbol' not included in nested require spec" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("identifier `case->' not included in nested require spec" . 1)
+    ("Unbound type name define" . 1)
+    ("Unbound type name co-orientations" . 1)
+    ("Unbound type name" . 1)
+    ("Expected a function of type (-> (role -> Boolean)), but got a function with the wrong arity"
+     .
+     1)
+    ("Unbound type name flow-visible?" . 1)))
+  (truncate
+   (passed . 75)
+   (failed
+    (total . 100)
+    ("duplicate attribute" . 14)
+    ("unbound identifier in module" . 9)
+    ("not defined as syntax class" . 7)
+    ("missing ellipsis with pattern variable in template" . 6)
+    ("attribute bound in defaults but not in pattern" . 6)
+    ("missing `]' to close `[' on line 95, found instead `)'; indentation suggests a missing `]' before line 96"
+     .
+     5)
+    ("too many ellipses in template" . 5)
+    ("missing `]' to close `[' on line 60, found instead `)'" . 5)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 4)
+    ("bad syntax" . 4)
+    ("Declaration for `name-process' provided, but `name-process' has no definition"
+     .
+     4)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("undefined;" . 4)
+    ("head pattern not allowed here" . 3)
+    ("provided identifier not defined or imported for phase 0" . 3)
+    ("expected identifier" . 2)
+    ("not allowed in an expression context" . 2)
+    ("expected at least one pattern" . 2)
+    ("collection not found" . 2)
+    ("defaults)" . 1)
+    ("no pattern variables before ellipsis in template" . 1)
+    ("unbound identifier in module (in the transformer environment, which does not include the macro definition that is visible to run-time expressions)"
+     .
+     1)
+    ("variable used twice in pattern" . 1)
+    ("ellipses not allowed as an expression" . 1)
+    ("identifier is already imported" . 1)
+    ("unbound identifier in the transformer environment;" . 1)
+    ("cannot open module file" . 1)
+    ("terms left over after keyword options" . 1))))

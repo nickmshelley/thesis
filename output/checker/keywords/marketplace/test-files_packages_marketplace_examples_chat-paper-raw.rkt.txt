@@ -1,26 +1,40 @@
 '((remove
-   (passed . 10)
+   (passed . 12)
    (failed
-    (total . 84)
-    ("unbound identifier in module" . 66)
+    (total . 90)
+    ("unbound identifier in module" . 64)
     ("missing `)' to close `(' on line 85, found instead `]'; indentation suggests a missing `)' before line 86"
      .
      5)
     ("expected a `)' to close `('" . 5)
     ("syntax error in pattern" . 5)
-    ("bad syntax" . 1)
-    ("(publisher topic clause ...)" . 1)
-    ("duplicate argument identifier" . 1)))
+    ("(publisher topic clause ...)" . 3)
+    ("identifier is already imported" . 3)
+    ("duplicate definition for identifier" . 2)
+    ("duplicate argument identifier" . 2)
+    ("bad syntax" . 1)))
   (truncate
-   (passed . 0)
+   (passed . 119)
    (failed
-    (total . 163)
-    ("The type of vm-processes cannot be converted to a contract" . 158)
-    ("expected a `)' to close `('" . 2)
-    ("missing `)' to close `(' on line 74, found instead `]'; indentation suggests a missing `)' before line 75"
+    (total . 152)
+    ("no pattern variables before ellipsis in template" . 30)
+    ("pattern variable cannot be used outside of a template" . 19)
+    ("missing ellipsis with pattern variable in template" . 18)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 17)
+    ("variable used twice in pattern" . 16)
+    ("missing procedure expression;" . 9)
+    ("ellipses not allowed as an expression" . 7)
+    ("unbound identifier in module (in the transformer environment, which does not include the run-time definition)"
      .
-     1)
-    ("missing `)' to close preceding `(', found instead `]'" . 1)
-    ("missing `)' to close `(' on line 78, found instead `]'; indentation suggests a missing `)' before line 79"
-     .
-     1))))
+     6)
+    ("too many ellipses in template" . 5)
+    ("misplaced ellipsis in pattern (follows other ellipsis)" . 5)
+    ("wildcard not allowed as an expression" . 5)
+    ("provided identifier not defined or imported for phase 0" . 5)
+    ("misplaced ellipsis in template" . 4)
+    ("collection not found" . 1)
+    ("bad form" . 1)
+    ("misplaced ellipsis in pattern" . 1)
+    ("duplicate argument identifier" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("bad syntax" . 1))))

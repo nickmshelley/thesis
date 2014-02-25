@@ -1,7 +1,7 @@
 (list
  (cons
   'remove
-  (rankings "test-files/packages/frog/frog/watch-dir.rkt" '(0 0 0 0 0) 13 4))
+  (rankings "test-files/packages/frog/frog/watch-dir.rkt" '(0 0 0 2 0) 9 6))
  (cons
   'truncate
-  (rankings "test-files/packages/frog/frog/watch-dir.rkt" '(0 0 0 0 1) 11 5)))
+  (rankings "test-files/packages/frog/frog/watch-dir.rkt" '(1 0 1 0 0) 10 5)))

@@ -1,13 +1,10 @@
 '((remove
-   (passed . 3)
-   (failed
-    (total . 7)
-    ("duplicate definition for identifier" . 3)
-    ("unbound identifier in module" . 3)
-    ("illegal use of syntax" . 1)))
+   (passed . 0)
+   (failed (total . 10) ("duplicate definition for identifier" . 10)))
   (truncate
    (passed . 1)
    (failed
-    (total . 7)
-    ("duplicate definition for identifier" . 4)
-    ("not a require sub-form" . 3))))
+    (total . 8)
+    ("duplicate definition for identifier" . 5)
+    ("unbound identifier in module" . 2)
+    ("illegal use of syntax" . 1))))

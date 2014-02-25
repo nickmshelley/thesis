@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/marketplace/action-delete-endpoint.rkt"
-   '(0 0 1 1 0)
-   12
+   '(0 0 1 1 2)
+   10
    3))
  (cons
   'truncate
   (rankings
    "test-files/packages/marketplace/action-delete-endpoint.rkt"
-   '(0 1 0 0 0)
-   11
-   5)))
+   '(0 0 1 0 2)
+   8
+   6)))

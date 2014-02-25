@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/marketplace/sugar-endpoints-typed.rkt"
-   '(0 3 2 0 0)
-   40
-   10))
+   '(0 0 3 1 0)
+   38
+   13))
  (cons
   'truncate
   (rankings
    "test-files/packages/marketplace/sugar-endpoints-typed.rkt"
-   '(0 0 3 2 2)
-   34
+   '(3 4 2 1 4)
+   27
    14)))

@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/marketplace/drivers/tcp-bare.rkt"
-   '(0 0 0 3 1)
-   37
-   7))
+   '(2 0 0 4 2)
+   30
+   10))
  (cons
   'truncate
   (rankings
    "test-files/packages/marketplace/drivers/tcp-bare.rkt"
-   '(1 2 0 3 1)
-   26
+   '(1 1 2 0 0)
+   29
    15)))

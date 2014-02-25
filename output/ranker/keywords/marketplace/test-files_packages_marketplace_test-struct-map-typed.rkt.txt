@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/marketplace/test-struct-map-typed.rkt"
-   '(0 0 1 2 0)
-   1
-   0))
+   '(0 0 0 0 1)
+   0
+   3))
  (cons
   'truncate
   (rankings
    "test-files/packages/marketplace/test-struct-map-typed.rkt"
-   '(0 1 2 0 0)
+   '(0 1 0 0 0)
    0
-   1)))
+   3)))

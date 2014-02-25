@@ -4,14 +4,14 @@
 (struct rankings (filename ranked unranked missed) #:transparent)
 
 (module+ main
-  #;(produce-ranker-graphs)
+  (produce-ranker-graphs)
   (produce-checker-graphs))
 
 (define (produce-checker-graphs)
   (define remove-results
     (list (list 'proximity 2294 11789)
           (list 'nest 2399 11263)
-          (list 'keywords 2108 14751)
+          (list 'keywords 2685 11882)
           (list 'macros 1701 16867)
           (list 'bytecode 1425 15301)
           (list 'combined 2496 11131)))
@@ -20,7 +20,7 @@
   (define truncate-results
     (list (list 'proximity 2228 11758)
           (list 'nest 2309 11573)
-          (list 'keywords 2324 13168)
+          (list 'keywords 2947 11290)
           (list 'macros 1667 16840)
           (list 'bytecode 1487 15109)
           (list 'combined 2246 11904)))
@@ -38,7 +38,7 @@
   (define remove-results
     (list (cons 'proximity (rankings "All" '(88 131 244 392 284) 3448 404))
           (cons 'nest (rankings "All" '(144 593 463 482 325) 2566 418))
-          (cons 'keywords (rankings "All" '(56 80 153 286 196) 3817 403))
+          (cons 'keywords (rankings "All" '(48 79 190 260 249) 3767 398))
           (cons 'macros (rankings "All" '(0 0 0 0 0) 2283 2706))
           (cons 'bytecode (rankings "All" '(1 0 0 0 10) 2823 2157))
           (cons 'combined (rankings "All" '(133 586 478 454 295) 2943 102))))
@@ -48,7 +48,7 @@
   (define truncate-results
     (list (cons 'proximity (rankings "All" '(83 282 272 279 206) 2837 1032))
           (cons 'nest (rankings "All" '(182 576 401 303 267) 2273 989))
-          (cons 'keywords (rankings "All" '(48 250 268 238 189) 2990 1008))
+          (cons 'keywords (rankings "All" '(68 271 241 261 216) 2965 969))
           (cons 'macros (rankings "All" '(0 0 0 0 0) 2288 2701))
           (cons 'bytecode (rankings "All" '(1 0 1 0 9) 2838 2142))
           (cons 'combined (rankings "All" '(167 623 337 331 311) 2906 316))))

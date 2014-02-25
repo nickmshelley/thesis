@@ -1,27 +1,18 @@
 '((remove
-   (passed . 8)
-   (failed
-    (total . 41)
-    ("unbound identifier in module" . 19)
-    ("syntax error in pattern" . 7)
-    ("Illegal clause in endpoint definition" . 5)
-    ("expected a `module' declaration" . 5)
-    ("expected a `)' to close `('" . 3)
-    ("missing `)' to close `(' on line 45, found instead `]'; indentation suggests a missing `)' before line 46"
-     .
-     1)
-    ("missing `)' to close `(' on line 26, found instead `]'; indentation suggests a missing `)' before line 27"
-     .
-     1)))
-  (truncate
-   (passed . 12)
+   (passed . 11)
    (failed
     (total . 37)
-    ("unbound identifier in module" . 17)
-    ("Illegal clause in endpoint definition" . 7)
-    ("expected a `)' to close `('" . 4)
-    ("Illegal use of on-absence outside endpoint definition context" . 4)
-    ("wildcard not allowed as an expression" . 2)
-    ("unexpected term" . 1)
-    ("(publisher topic clause ...)" . 1)
-    ("missing `)' to close preceding `(', found instead `]'" . 1))))
+    ("unbound identifier in module" . 13)
+    ("syntax error in pattern" . 8)
+    ("Illegal clause in endpoint definition" . 6)
+    ("expected a `module' declaration" . 5)
+    ("Illegal use of on-absence outside endpoint definition context" . 2)
+    ("wildcard not allowed as an expression" . 1)
+    ("Illegal use of on-message outside endpoint definition context" . 1)
+    ("(subscriber topic clause ...)" . 1)))
+  (truncate
+   (passed . 2)
+   (failed
+    (total . 8)
+    ("not a provide sub-form" . 5)
+    ("identifier already provided (as a different binding)" . 3))))

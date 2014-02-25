@@ -1,20 +1,49 @@
 '((remove
    (passed . 0)
    (failed
-    (total . 15)
+    (total . 23)
+    ("type name used out of context" . 5)
     ("expected a `module' declaration" . 5)
-    ("bad syntax (multiple types after identifier)" . 4)
-    ("found a test that is not at the top level" . 3)
-    ("unexpected term" . 3)))
+    ("found a test that is not at the top level" . 4)
+    ("bad syntax" . 4)
+    ("unexpected term" . 2)
+    ("unbound identifier in module" . 2)
+    ("apply requires a final list argument, given only a function argument of type (Heap Integer)"
+     .
+     1)))
   (truncate
-   (passed . 0)
+   (passed . 3)
    (failed
-    (total . 40)
-    ("type name used out of context" . 13)
-    ("found a test that is not at the top level" . 12)
-    ("bad syntax" . 6)
-    ("unbound identifier in module" . 5)
+    (total . 52)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     12)
+    ("found a test that is not at the top level" . 8)
+    ("unbound identifier in module" . 6)
+    ("Polymorphic function `queue->list' could not be applied to arguments"
+     .
+     5)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     3)
+    ("Polymorphic function `qmap' could not be applied to arguments" . 2)
+    ("type name used out of context" . 1)
+    ("(empty A)" . 1)
+    ("Polymorphic function `enqueue' could not be applied to arguments" . 1)
+    ("Polymorphic function `head' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     1)
+    ("given queue is empty" . 1)
+    ("Polymorphic function `tail' could not be applied to arguments" . 1)
+    ("Bad arguments to polymorphic function in apply" . 1)
+    ("" . 1)
+    ("Unbound type name empty" . 1)
+    ("Unbound type name empty?" . 1)
+    ("Unbound type name check-expect" . 1)
+    ("Unbound type name typed/test-engine/scheme-tests" . 1)
+    ("Unbound type name require" . 1)
     ("collection not found" . 1)
-    ("pfds/treap" . 1)
-    ("cannot open module file" . 1)
-    ("no expression after a sequence of internal definitions" . 1))))
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     1))))

@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/pfds/pfds/tests/implicitdeque-tests.rkt"
-   '(0 1 0 1 0)
-   15
-   2))
+   '(0 1 1 0 2)
+   14
+   1))
  (cons
   'truncate
   (rankings
    "test-files/packages/pfds/pfds/tests/implicitdeque-tests.rkt"
-   '(0 0 0 1 1)
-   13
-   4)))
+   '(0 0 0 2 0)
+   12
+   5)))

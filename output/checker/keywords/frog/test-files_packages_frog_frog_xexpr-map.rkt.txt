@@ -1,44 +1,32 @@
 '((remove
-   (passed . 45)
+   (passed . 42)
    (failed
-    (total . 85)
-    ("unbound identifier in module" . 40)
-    ("syntax error in pattern" . 10)
+    (total . 88)
+    ("unbound identifier in module" . 45)
     ("missing `]' to close preceding `[', found instead `)'" . 5)
-    ("unexpected `)'" . 5)
-    ("missing `]' to close `[' on line 94, found instead `)'; indentation suggests a missing `]' before line 95"
+    ("syntax error in pattern" . 5)
+    ("missing `]' to close `[' on line 64, found instead `)'; indentation suggests a missing `)' before line 65"
      .
      5)
     ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 96"
      .
      5)
-    ("incorrect use of ... in pattern" . 4)
-    ("unbound identifier;" . 4)
-    ("wildcard not allowed as an expression" . 2)
-    ("ellipses not allowed as an expression" . 2)
-    ("non-list pattern inside unquote-splicing" . 2)
+    ("missing `)' to close preceding `(', found instead `]'" . 5)
+    ("unexpected `)'" . 5)
+    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 94"
+     .
+     5)
+    ("ellipses not allowed as an expression" . 3)
+    ("duplicate argument name" . 2)
+    ("incorrect use of ... in pattern" . 2)
     ("collection not found" . 1)))
   (truncate
-   (passed . 20)
+   (passed . 35)
    (failed
-    (total . 79)
-    ("unbound identifier in module" . 54)
-    ("collection not found" . 5)
-    ("not allowed in an expression context" . 3)
-    ("missing `]' to close preceding `[', found instead `)'" . 3)
-    ("provided identifier not defined or imported for phase 0" . 2)
-    ("missing `]' to close `[' on line 57, found instead `)'; indentation suggests a missing `]' before line 58"
-     .
-     2)
-    ("duplicate argument identifier" . 1)
-    ("identifier is already imported" . 1)
+    (total . 40)
+    ("unbound identifier in module" . 32)
+    ("provided identifier not defined or imported for phase 0" . 3)
+    ("bad syntax" . 2)
+    ("not allowed in an expression context" . 1)
     ("duplicate definition for identifier" . 1)
-    ("not allowed as an expression" . 1)
-    ("bad syntax" . 1)
-    ("missing `]' to close `[' on line 44, found instead `)'; indentation suggests a missing `]' before line 45"
-     .
-     1)
-    ("bad syntax (missing name or binding pairs)" . 1)
-    ("undefined;" . 1)
-    ("contract violation" . 1)
-    ("arity mismatch;" . 1))))
+    ("wildcard not allowed as an expression" . 1))))

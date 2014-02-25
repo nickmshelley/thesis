@@ -10,6 +10,6 @@
   'truncate
   (rankings
    "test-files/packages/marketplace/support/event.rkt"
-   '(0 1 0 0 0)
+   '(0 0 0 0 0)
    0
-   1)))
+   2)))

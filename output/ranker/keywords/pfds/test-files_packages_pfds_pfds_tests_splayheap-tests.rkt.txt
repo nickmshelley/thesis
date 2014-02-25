@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/pfds/pfds/tests/splayheap-tests.rkt"
-   '(0 0 0 2 1)
+   '(0 0 1 1 0)
    25
-   1))
+   2))
  (cons
   'truncate
   (rankings
    "test-files/packages/pfds/pfds/tests/splayheap-tests.rkt"
    '(0 2 1 0 0)
-   19
-   7)))
+   17
+   9)))

@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/marketplace/examples/echo-plain.rkt"
-   '(1 0 0 0 0)
-   4
-   0))
+   '(0 0 0 0 0)
+   3
+   2))
  (cons
   'truncate
   (rankings
    "test-files/packages/marketplace/examples/echo-plain.rkt"
-   '(0 0 0 1 1)
-   1
+   '(0 0 0 0 1)
+   2
    2)))

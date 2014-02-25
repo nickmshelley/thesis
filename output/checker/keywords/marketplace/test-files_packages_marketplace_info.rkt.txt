@@ -1,22 +1,52 @@
-'((remove
-   (passed . 0)
-   (failed
-    (total . 5)
-    ("collection not found" . 4)
-    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ."
-     .
-     1)))
+'((remove (passed . 5) (failed (total . 0)))
   (truncate
-   (passed . 0)
+   (passed . 11)
    (failed
-    (total . 20)
-    ("not a provide sub-form" . 5)
-    ("unbound identifier in module" . 4)
-    ("type name used out of context" . 3)
-    ("illegal use of syntax" . 2)
-    ("provided identifier not defined or imported for phase 0" . 1)
-    ("Unbound type name wild" . 1)
-    ("Unbound type name wild?" . 1)
-    ("((-> Wild) (Symbol -> Wild))" . 1)
-    ("Unbound type name opaque" . 1)
-    ("Unbound type name unify.rkt" . 1))))
+    (total . 74)
+    ("Unbound type name X" . 15)
+    ("(X)" . 10)
+    ("duplicate definition for identifier" . 5)
+    ("Declaration for `quasiqueue->cons-tree' provided, but `quasiqueue->cons-tree' has no definition"
+     .
+     5)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("type name used out of context" . 4)
+    ("Unbound type name quasiqueue-empty?" . 2)
+    ("unbound identifier in module" . 2)
+    ("Polymorphic function `empty-quasiqueue' could not be applied to arguments"
+     .
+     2)
+    ("Polymorphic function `quasiqueue' could not be applied to arguments" . 2)
+    ("(CT CT)" . 2)
+    ("Recursive types are not allowed directly inside their definition" . 2)
+    ("Unbound type name All" . 1)
+    ("Unbound type name" . 1)
+    ("Polymorphic function `append' could not be applied to arguments" . 1)
+    ("Declaration for `q' provided, but `q' has no definition" . 1)
+    ("Declaration for `xs' provided, but `xs' has no definition" . 1)
+    ("Duplicate type annotation of (All (X) ((Listof X) (Listof X) -> (Listof X))) for reverse, previous was #<procedure>"
+     .
+     1)
+    ("Duplicate type annotation of (All (X) ((Listof X) (Listof X) -> (Listof X))) for append, previous was #<procedure>"
+     .
+     1)
+    ("type mismatch" . 1)
+    ("bad syntax" . 1)
+    ("expected `)' to close preceding `(', found instead `}'" . 1)
+    ("Polymorphic function `list->quasiqueue' could not be applied to arguments"
+     .
+     1)
+    ("Polymorphic function `quasiqueue->cons-tree' could not be applied to arguments"
+     .
+     1)
+    ("Polymorphic function `quasiqueue->list' could not be applied to arguments"
+     .
+     1)
+    ("Polymorphic function `quasiqueue-append' could not be applied to arguments"
+     .
+     1)
+    ("Error in macro expansion -- Recursive Type Alias Reference" . 1)
+    ("Unbound type name empty-quasiqueue" . 1)
+    ("Unbound type name quasiqueue" . 1)
+    ("Unbound type name quasiqueue-append" . 1)
+    ("Unbound type name quasiqueue-append-list" . 1))))

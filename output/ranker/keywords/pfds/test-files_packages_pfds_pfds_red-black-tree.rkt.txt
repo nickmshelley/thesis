@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/pfds/pfds/red-black-tree.rkt"
-   '(2 3 2 11 9)
-   139
+   '(1 3 8 11 8)
+   135
    6))
  (cons
   'truncate
   (rankings
    "test-files/packages/pfds/pfds/red-black-tree.rkt"
-   '(1 9 17 4 8)
-   115
-   18)))
+   '(2 11 9 11 3)
+   120
+   16)))

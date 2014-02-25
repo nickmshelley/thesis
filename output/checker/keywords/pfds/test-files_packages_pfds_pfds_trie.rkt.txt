@@ -1,57 +1,58 @@
 '((remove
-   (passed . 0)
+   (passed . 19)
    (failed
-    (total . 110)
-    ("missing `]' to close preceding `[', found instead `)'" . 48)
-    ("unbound identifier in module" . 28)
-    ("duplicate argument identifier" . 6)
-    ("bad syntax" . 5)
-    ("must be used in a definition context" . 4)
-    ("not a definition sequence" . 4)
-    ("missing `]' to close `[' on line 55, found instead `)'; indentation suggests a missing `]' before line 56"
+    (total . 211)
+    ("unbound identifier in module" . 36)
+    ("duplicate definition for identifier" . 15)
+    ("Polymorphic function `go-deep' could not be applied to arguments" . 14)
+    ("Polymorphic function `build' could not be applied to arguments" . 13)
+    ("bad syntax" . 12)
+    ("Unbound type name build" . 10)
+    ("Unbound type name empty" . 10)
+    ("Unbound type name bind" . 9)
+    ("Unbound type name get-vals" . 9)
+    ("Unbound type name go-deep" . 9)
+    ("Polymorphic function `bind' could not be applied to arguments" . 6)
+    ("Polymorphic function `empty' could not be applied to arguments" . 6)
+    ("Polymorphic function `get-vals' could not be applied to arguments" . 6)
+    ("Polymorphic function `insert' could not be applied to arguments" . 6)
+    ("Polymorphic function `Trie-map' could not be applied to arguments" . 6)
+    ("Polymorphic function `cdr' could not be applied to arguments" . 5)
+    ("Unbound type name K" . 5)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("Polymorphic function `Trie-opt' could not be applied to arguments" . 3)
+    ("Unbound type name" . 3)
+    ("Polymorphic function `make-Trie' could not be applied to arguments" . 3)
+    ("Declaration for `K' provided, but `K' has no definition" . 2)
+    ("Declaration for `V' provided, but `V' has no definition" . 2)
+    ("duplicate argument identifier" . 2)
+    ("Unbound type name All" . 2)
+    ("Polymorphic function `Some-elem' could not be applied to arguments" . 2)
+    ("Unbound type name define" . 2)
+    ("Structure type constructor Trie applied to non-regular arguments (K K)"
      .
-     3)
-    ("missing `]' to close `[' on line 103, found instead `)'; indentation suggests a missing `]' before line 105"
+     1)
+    ("Structure type constructor Trie applied to non-regular arguments (K Trie)"
      .
-     3)
-    ("missing `]' to close `[' on line 84, found instead `)'; indentation suggests a missing `]' before line 86"
-     .
-     3)
-    ("missing `]' to close preceding `[', found instead `)'; indentation suggests a missing `)' before line 45"
-     .
-     3)
-    ("missing `]' to close `[' on line 65, found instead `)'; indentation suggests a missing `]' before line 66"
-     .
-     3)))
+     1)
+    ("Unbound type name opt" . 1)
+    ("type mismatch" . 1)
+    ("(Trie (Trie K Integer))" . 1)
+    ("(K (Trie K Integer))" . 1)
+    ("(Integer (Trie K Integer))" . 1)
+    ("(Listof (Trie K Integer))" . 1)
+    ("Declaration for `fst' provided, but `fst' has no definition" . 1)))
   (truncate
    (passed . 0)
    (failed
-    (total . 46)
-    ("unbound identifier in module" . 8)
-    ("missing `]' to close preceding `[', found instead `)'" . 7)
-    ("type mismatch" . 7)
-    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
-     .
-     4)
-    ("No function domains matched in function application" . 3)
-    ("Cannot apply expression of type Nonnegative-Integer, since it is not a function type"
-     .
-     3)
-    ("Polymorphic function `build-queue' could not be applied to arguments"
-     .
-     3)
-    ("bad syntax (not an identifier)" . 2)
-    ("Wrong number of arguments, expected 1 and got 2" . 2)
-    ("Cannot apply expression of type Integer, since it is not a function type"
+    (total . 48)
+    ("type name used out of context" . 15)
+    ("unbound identifier in module" . 13)
+    ("found a test that is not at the top level" . 12)
+    ("bad syntax" . 3)
+    ("not allowed in an expression context" . 2)
+    ("expected identifier" . 1)
+    ("apply requires a final list argument, given only a function argument of type (Listof Integer)"
      .
      1)
-    ("Wrong number of arguments, expected at least 2 and got 1" . 1)
-    ("bad syntax;" . 1)
-    ("#<syntax Queue> ((Rec g688 (U Null (Boxof (U (Boxof g688) (-> (Boxof g688)))) (Pairof Positive-Integer g688))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
-     .
-     1)
-    ("type name used out of context" . 1)
-    ("bad syntax" . 1)
-    ("#<syntax Queue> ((Rec g453 (U Null (Boxof (U (Boxof g453) (-> (Boxof g453)))) (Pairof Positive-Integer g453))) Integer (Listof Positive-Integer) Integer)), since it is not a function type"
-     .
-     1))))
+    ("no expression after a sequence of internal definitions" . 1))))

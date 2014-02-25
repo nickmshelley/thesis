@@ -1,54 +1,66 @@
 '((remove
-   (passed . 0)
+   (passed . 3)
    (failed
-    (total . 52)
-    ("unbound identifier in module" . 19)
+    (total . 89)
+    ("type mismatch" . 18)
+    ("bad syntax (multiple types after identifier)" . 8)
+    ("unbound identifier in module" . 7)
+    ("Component of case-lambda type was not a function clause" . 5)
     ("type name used out of context" . 5)
-    ("(State)" . 5)
-    ("must be used in a definition context" . 4)
-    ("bad syntax" . 4)
-    ("illegal use of syntax" . 4)
-    ("expected `]' to close preceding `[', found instead `}'" . 2)
-    ("collection not found" . 2)
-    ("bad module path" . 2)
-    ("identifier already provided (as a different binding)" . 1)
-    (", or @" . 1)
-    ("unexpected `}'" . 1)
-    ("duplicate argument identifier" . 1)
-    ("not allowed in an expression context" . 1)))
+    ("syntax error in pattern" . 5)
+    ("Polymorphic function `sequence-actions' could not be applied to arguments"
+     .
+     4)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     4)
+    ("Polymorphic function `transition8' could not be applied to arguments"
+     .
+     4)
+    ("Polymorphic function `cons' could not be applied to arguments" . 4)
+    ("No function domains matched in function application" . 3)
+    ("Unbound type name *" . 2)
+    ("bad syntax" . 2)
+    ("Unbound type name define" . 2)
+    ("Unbound type name sequence-actions" . 2)
+    ("provided identifier not defined or imported for phase 0" . 2)
+    ("expected `]' to close preceding `[', found instead `}'" . 1)
+    ("(Transition (transition State))" . 1)
+    ("(State (transition State))" . 1)
+    ("(ActionTree (transition State))" . 1)
+    ("Unbound type name U" . 1)
+    ("Unbound type name case->" . 1)
+    ("Declaration for `State' provided, but `State' has no definition" . 1)
+    ("Wrong number of arguments, expected 1 and got 3" . 1)
+    ("Unbound type name delete-endpoint" . 1)
+    ("Unbound type name quit" . 1)
+    ("Unbound type name send-feedback" . 1)
+    ("Unbound type name send-message" . 1)))
   (truncate
-   (passed . 181)
+   (passed . 92)
    (failed
-    (total . 219)
-    ("unbound identifier in module" . 95)
-    ("expected a `)' to close `('" . 38)
-    ("bad syntax" . 17)
-    ("missing `)' to close preceding `(', found instead `]'" . 16)
-    ("duplicate definition for identifier" . 7)
-    ("not a require sub-form" . 6)
-    ("not allowed as an expression" . 5)
-    ("not a provide sub-form" . 5)
-    ("missing `]' to close preceding `[', found instead `)'" . 5)
-    ("collection not found" . 4)
-    ("missing `)' to close `(' on line 288, found instead `]'; indentation suggests a missing `)' before line 289"
-     .
-     3)
-    ("missing `)' to close `(' on line 217, found instead `]'; indentation suggests a missing `)' before line 218"
-     .
-     3)
-    ("missing `)' to close `(' on line 158, found instead `]'; indentation suggests a missing `)' before line 160"
-     .
-     2)
-    ("duplicate argument identifier" . 2)
-    ("illegal use of syntax" . 2)
-    ("missing `)' to close `(' on line 154, found instead `]'; indentation suggests a missing `)' before line 155"
+    (total . 148)
+    ("pattern variable cannot be used outside of a template" . 27)
+    ("wildcard not allowed as an expression" . 18)
+    ("missing ellipsis with pattern variable in template" . 18)
+    ("no pattern variables before ellipsis in template" . 15)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 13)
+    ("variable used twice in pattern" . 9)
+    ("provided identifier not defined or imported for phase 0" . 9)
+    ("expected `)' to close `(' on line 74, found instead `]'" . 5)
+    ("unbound identifier in module" . 4)
+    ("misplaced ellipsis in template" . 4)
+    ("ellipses not allowed as an expression" . 4)
+    ("too few ellipses for pattern variable in template" . 4)
+    ("misplaced ellipsis in pattern" . 3)
+    ("duplicate argument identifier" . 3)
+    ("too many ellipses in template" . 2)
+    ("bad syntax" . 2)
+    ("misplaced ellipsis in pattern (follows other ellipsis)" . 2)
+    ("unbound identifier in module (in the transformer environment, which does not include the run-time definition)"
      .
      2)
-    ("duplicate argument name" . 2)
-    ("wildcard not allowed as an expression" . 1)
-    ("not allowed in an expression context" . 1)
-    ("missing `)' to close `(' on line 135, found instead `]'; indentation suggests a missing `)' before line 136"
-     .
-     1)
-    ("bad module path" . 1)
-    ("duplicate binding name" . 1))))
+    ("no expression after a sequence of internal definitions" . 1)
+    ("illegal use of syntax" . 1)
+    ("duplicate definition for identifier" . 1)
+    ("bad form" . 1))))

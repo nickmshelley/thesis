@@ -1,17 +1,55 @@
 '((remove
    (passed . 0)
    (failed
-    (total . 19)
-    ("found a test that is not at the top level" . 8)
-    ("unbound identifier in module" . 6)
-    ("expected a `module' declaration" . 5)))
+    (total . 52)
+    ("unbound identifier in module" . 10)
+    ("Polymorphic function `redblacktree' could not be applied to arguments"
+     .
+     9)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     6)
+    ("expected a `module' declaration" . 5)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     4)
+    ("found a test that is not at the top level" . 3)
+    ("type mismatch" . 2)
+    ("Wrong number of arguments, expected at least 2 and got 1" . 1)
+    ("Polymorphic function `root' could not be applied to arguments" . 1)
+    ("Unbound type name" . 1)
+    ("Unbound type name x" . 1)
+    ("Unbound type name λ" . 1)
+    ("Unbound type name check-expect" . 1)
+    ("Polymorphic function `build-list' could not be applied to arguments" . 1)
+    ("Cannot instantiate non-polymorphic type (Listof Integer)" . 1)
+    ("Polymorphic function `sort7' could not be applied to arguments" . 1)
+    ("type name used out of context" . 1)
+    ("expected identifier" . 1)
+    ("Polymorphic function `delete-root' could not be applied to arguments"
+     .
+     1)
+    ("Cannot apply expression of type Null, since it is not a function type"
+     .
+     1)))
   (truncate
    (passed . 0)
    (failed
-    (total . 25)
-    ("expected a `)' to close `('" . 10)
+    (total . 50)
+    ("unbound identifier in module" . 22)
+    ("Cannot apply expression of type Positive-Byte, since it is not a function type"
+     .
+     12)
     ("found a test that is not at the top level" . 6)
-    ("unbound identifier in module" . 6)
-    ("not at module level or top level" . 1)
-    ("collection not found" . 1)
-    ("type name used out of context" . 1))))
+    ("Polymorphic function `redblacktree' could not be applied to arguments"
+     .
+     3)
+    ("Polymorphic function `root' could not be applied to arguments" . 1)
+    ("Cannot apply expression of type One, since it is not a function type"
+     .
+     1)
+    ("Wrong number of arguments, expected at least 2 and got 1" . 1)
+    ("bad syntax (not a datum sequence)" . 1)
+    ("expected identifier" . 1)
+    ("Polymorphic function `member?' could not be applied to arguments" . 1)
+    ("not allowed in an expression context" . 1))))

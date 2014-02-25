@@ -1,32 +1,39 @@
 '((remove
    (passed . 0)
    (failed
-    (total . 21)
-    ("unbound identifier in module" . 7)
-    ("bad syntax" . 5)
-    ("collection not found" . 3)
+    (total . 30)
+    ("unbound identifier in module" . 13)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("illegal use of syntax" . 3)
+    ("Polymorphic function `endpoint-id' could not be applied to arguments"
+     .
+     2)
+    ("bad syntax" . 2)
+    ("Unbound type name State" . 1)
+    ("not allowed in an expression context" . 1)
     ("insufficient type information to typecheck. please add more type annotations"
      .
-     2)
-    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ."
-     .
-     2)
-    ("not allowed in an expression context" . 1)
-    ("role" . 1)))
+     1)
+    ("Declaration for `State' provided, but `State' has no definition" . 1)
+    ("Declaration for `state' provided, but `state' has no definition" . 1)
+    ("Declaration for `p' provided, but `p' has no definition" . 1)))
   (truncate
    (passed . 0)
    (failed
-    (total . 23)
-    ("unbound identifier in module" . 9)
+    (total . 37)
+    ("unbound identifier in module" . 10)
+    ("missing procedure expression;" . 5)
     ("too many forms in body of All type" . 5)
-    ("must be used in a definition context" . 3)
-    ("not allowed in an expression context" . 1)
-    ("role" . 1)
+    ("bad syntax (multiple types after identifier)" . 4)
+    ("expected 1 and got 2" . 2)
+    ("insufficient type information to typecheck. please add more type annotations"
+     .
+     2)
+    ("not allowed in an expression context" . 2)
+    ("identifier `tr-struct-copy.rkt' not included in nested require spec" . 1)
+    ("identifier `rename-in' not included in nested require spec" . 1)
+    ("identifier `require' not included in nested require spec" . 1)
+    ("identifier `process.rkt' not included in nested require spec" . 1)
+    ("identifier `vm.rkt' not included in nested require spec" . 1)
     ("bad syntax" . 1)
-    ("collection not found" . 1)
-    ("Declaration for `workaround' provided, but `workaround' has no definition"
-     .
-     1)
-    ("Declaration for `PR13149' provided, but `PR13149' has no definition"
-     .
-     1))))
+    ("vm" . 1))))

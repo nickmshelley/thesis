@@ -13,7 +13,7 @@
 
 (module+ main
   #;(define methods '(naive nest keywords macros bytecode combined))
-  (define methods '(combined))
+  (define methods '(keywords))
   (unless (directory-exists? "output")
     (make-directory "output"))
   (unless (directory-exists? "output/ranker")
@@ -151,7 +151,8 @@
   (define name (string-replace (rankings-filename remove) "/" "_"))
   (define prefix (format "~a/~a" output-dir name))
   (with-output-to-file (format "~a.txt" prefix)
-    (λ () (pretty-print `((remove . ,remove) (truncate . ,truncate)))))
+    (λ () (pretty-print `((remove . ,remove) (truncate . ,truncate))))
+    #:exists 'replace)
   (plot-file 
    (list (discrete-histogram
           (append (ranked->vectors (rankings-ranked remove))

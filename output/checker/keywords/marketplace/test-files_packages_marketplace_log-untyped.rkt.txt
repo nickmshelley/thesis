@@ -1,35 +1,29 @@
 '((remove
-   (passed . 20)
+   (passed . 11)
    (failed
-    (total . 25)
-    ("unbound identifier in module" . 6)
-    ("syntax error in pattern" . 4)
+    (total . 34)
+    ("unbound identifier in module" . 23)
     ("missing procedure expression;" . 3)
     ("variable used twice in pattern" . 2)
-    ("missing `)' to close `(' on line 33, found instead `]'; indentation suggests a missing `)' before line 36"
-     .
-     1)
-    ("expected a clause with a pattern and a result" . 1)
-    ("missing `)' to close preceding `(', found instead `]'" . 1)
-    ("expected a `)' to close `('" . 1)
-    ("undefined;" . 1)
     ("misplaced ellipsis in pattern (follows other ellipsis)" . 1)
-    ("missing ellipsis with pattern variable in template" . 1)
-    ("no pattern variables before ellipsis in template" . 1)
-    ("missing `)' to close `(' on line 33, found instead `]'; indentation suggests a missing `)' before line 35"
-     .
-     1)
-    ("missing `)' to close `(' on line 37, found instead `]'; indentation suggests a missing `)' before line 38"
-     .
-     1)))
+    ("bad syntax" . 1)
+    ("identifier is already imported" . 1)
+    ("ellipses not allowed as an expression" . 1)
+    ("contract violation" . 1)
+    ("no matching clause for \"MARKETPLACE_LOG\"" . 1)))
   (truncate
-   (passed . 23)
+   (passed . 3)
    (failed
-    (total . 19)
-    ("unbound identifier in module" . 12)
-    ("variable used twice in pattern" . 3)
-    ("too many ellipses in template" . 2)
-    ("not allowed in an expression context" . 1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 16"
-     .
-     1))))
+    (total . 22)
+    ("unbound identifier in module" . 8)
+    ("duplicate definition for identifier" . 4)
+    ("identifier `opaque' not included in nested require spec" . 1)
+    ("identifier `unify.rkt' not included in nested require spec" . 1)
+    ("identifier `require/typed' not included in nested require spec" . 1)
+    ("function type has two cases of arity 0" . 1)
+    ("Component of case-lambda type was not a function clause" . 1)
+    ("Unbound type name wild" . 1)
+    ("Unbound type name wild?" . 1)
+    ("identifier `Boolean' not included in nested require spec" . 1)
+    ("identifier `->' not included in nested require spec" . 1)
+    ("identifier `Any' not included in nested require spec" . 1))))

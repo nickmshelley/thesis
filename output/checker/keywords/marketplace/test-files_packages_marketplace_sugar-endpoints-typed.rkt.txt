@@ -1,102 +1,107 @@
 '((remove
-   (passed . 3)
+   (passed . 122)
    (failed
-    (total . 169)
-    ("pattern variable cannot be used outside of a template" . 26)
-    ("missing ellipsis with pattern variable in template" . 21)
-    ("no pattern variables before ellipsis in template" . 19)
-    ("expected a `)' to close `('" . 14)
-    ("unbound identifier in module (in phase 1, transformer environment)" . 13)
-    ("not allowed in an expression context" . 8)
-    ("duplicate argument identifier" . 7)
-    ("provided identifier not defined or imported for phase 0" . 6)
+    (total . 153)
+    ("pattern variable cannot be used outside of a template" . 36)
+    ("missing ellipsis with pattern variable in template" . 23)
+    ("variable used twice in pattern" . 15)
+    ("unbound identifier in module (in phase 1, transformer environment)" . 9)
+    ("duplicate argument identifier" . 8)
+    ("misplaced ellipsis in pattern (follows other ellipsis)" . 5)
     ("unbound identifier in module" . 5)
-    ("expected `)' to close `(' on line 81, found instead `]'" . 5)
-    ("not a require sub-form" . 4)
-    ("missing `)' to close preceding `(', found instead `]'" . 4)
-    ("Declaration for `name-endpoint' provided, but `name-endpoint' has no definition"
-     .
-     4)
-    ("too many ellipses in template" . 4)
-    ("too few ellipses for pattern variable in template" . 4)
-    ("missing procedure expression;" . 4)
+    ("missing `]' to close `[' on line 196, found instead `)'" . 5)
+    ("missing `]' to close preceding `[', found instead `)'" . 5)
+    ("not allowed in an expression context" . 5)
+    ("missing `]' to close `[' on line 103, found instead `)'" . 5)
+    ("bad syntax" . 4)
+    ("ellipses not allowed as an expression" . 4)
+    ("collection not found" . 3)
+    ("too many ellipses in template" . 3)
+    ("provided identifier not defined or imported for phase 0" . 3)
     ("bad form" . 3)
-    ("ellipses not allowed as an expression" . 3)
-    ("misplaced ellipsis in template" . 2)
-    ("variable used twice in pattern" . 2)
-    ("bad syntax" . 1)
-    ("wildcard not allowed as an expression" . 1)
-    ("syntax error in pattern" . 1)
-    ("missing `)' to close `(' on line 159, found instead `]'; indentation suggests a missing `)' before line 161"
-     .
-     1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 207"
-     .
-     1)
     ("unbound identifier in module (in the transformer environment, which does not include the run-time definition)"
      .
-     1)
-    ("missing `)' to close `(' on line 220, found instead `]'; indentation suggests a missing `)' before line 225"
-     .
-     1)
-    ("missing `)' to close `(' on line 169, found instead `]'; indentation suggests a missing `)' before line 170"
-     .
-     1)
-    ("missing `)' to close `(' on line 195, found instead `]'; indentation suggests a missing `)' before line 196"
-     .
-     1)
-    ("illegal use of syntax" . 1)
-    ("missing `)' to close `(' on line 187, found instead `]'; indentation suggests a missing `)' before line 188"
-     .
-     1)))
+     2)
+    ("no pattern variables before ellipsis in template" . 2)
+    ("unbound identifier in the transformer environment;" . 2)
+    ("illegal use of syntax" . 2)
+    ("too few ellipses for pattern variable in template" . 2)
+    ("type name used out of context" . 1)
+    ("misplaced ellipsis in template" . 1)))
   (truncate
    (passed . 4)
    (failed
-    (total . 146)
-    ("unbound identifier in module (in phase 1, transformer environment)" . 22)
-    ("no pattern variables before ellipsis in template" . 14)
-    ("variable used twice in pattern" . 13)
-    ("pattern variable cannot be used outside of a template" . 11)
-    ("missing ellipsis with pattern variable in template" . 9)
-    ("too many ellipses in template" . 8)
-    ("missing `)' to close preceding `(', found instead `]'" . 7)
-    ("missing `]' to close `[' on line 217, found instead `)'" . 6)
-    ("unbound identifier in module (in the transformer environment, which does not include the run-time definition)"
-     .
-     5)
-    ("unbound identifier in module" . 5)
-    ("missing `]' to close `[' on line 204, found instead `)'" . 5)
-    ("expected a `)' to close `('" . 4)
-    ("misplaced ellipsis in pattern (follows other ellipsis)" . 4)
-    ("missing `]' to close `[' on line 217, found instead `)'; indentation suggests a missing `)' before line 222"
-     .
-     4)
-    ("type name used out of context" . 4)
-    ("duplicate argument identifier" . 3)
-    ("misplaced ellipsis in template" . 3)
-    ("not a require sub-form" . 3)
+    (total . 94)
+    ("unbound identifier in module" . 15)
+    ("type mismatch" . 8)
+    ("Polymorphic function `mkProcess' could not be applied to arguments" . 6)
+    ("type name used out of context" . 6)
+    ("Unbound type name" . 3)
+    ("Unbound type name All" . 2)
+    ("Unbound type name sync" . 2)
+    ("Unbound type name typed/racket/base" . 2)
+    ("Unbound type name require/typed" . 2)
+    ("Unbound type name support/event.rkt" . 2)
     ("bad syntax" . 2)
-    ("collection not found" . 2)
-    ("ellipses not allowed as an expression" . 2)
-    ("illegal use of syntax" . 1)
-    ("missing `)' to close `(' on line 196, found instead `]'; indentation suggests a missing `)' before line 200"
+    ("not allowed in an expression context" . 2)
+    ("Polymorphic function `action-tree->quasiqueue' could not be applied to arguments"
+     .
+     2)
+    ("Wrong number of arguments, expected 1 and got 0" . 1)
+    ("Unbound type name evt-handler" . 1)
+    ("Unbound type name participant" . 1)
+    ("Unbound type name _" . 1)
+    ("Unbound type name evt" . 1)
+    ("identifier `tr-struct-copy.rkt' not included in nested require spec" . 1)
+    ("identifier `rename-in' not included in nested require spec" . 1)
+    ("identifier `require' not included in nested require spec" . 1)
+    ("identifier `action-send-message.rkt' not included in nested require spec"
      .
      1)
+    ("identifier `actions.rkt' not included in nested require spec" . 1)
+    ("Unbound type name endpoint-fold" . 1)
+    ("Unbound type name inst" . 1)
+    ("Unbound type name active-events" . 1)
+    ("Unbound type name define" . 1)
+    ("Polymorphic function `cons' could not be applied to arguments" . 1)
+    ("Wrong number of arguments, expected 3 and got 1" . 1)
+    ("#<syntax endpoint> (eid role (EndpointEvent -> (State -> (transition State))))), since it is not a function type"
+     .
+     1)
+    ("Unbound type name require" . 1)
+    ("Unbound type name always-evt" . 1)
+    ("Unbound type name never-evt" . 1)
+    ("Unbound type name ->" . 1)
+    ("Unbound type name run-ground-vm" . 1)
+    ("Unbound type name provide" . 1)
+    ("Expected a function of type (-> (-> Void)), but got a function with the wrong arity"
+     .
+     1)
+    ("(rename \"tr-struct-copy.rkt\" ..." . 1)
+    ("identifier is not bound to a structure type" . 1)
+    ("Wrong number of arguments, expected 1 and got 3" . 1)
+    ("Cannot apply expression of type vm, since it is not a function type" . 1)
+    ("Polymorphic function `extract-ground-event-subscriptions' could not be applied to arguments"
+     .
+     1)
+    ("missing `)' to close `(' on line 63, found instead `]'; indentation suggests a missing `)' before line 71"
+     .
+     1)
+    ("collection not found" . 1)
     ("typed/racket/base" . 1)
     ("cannot open module file" . 1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 156"
+    ("Polymorphic function `process-pid' could not be applied to arguments"
      .
      1)
-    ("Declaration for `name-endpoint' provided, but `name-endpoint' has no definition"
+    ("Declaration for `state' provided, but `state' has no definition" . 1)
+    ("Declaration for `interruptk' provided, but `interruptk' has no definition"
      .
      1)
-    ("bad form" . 1)
-    ("missing `)' to close preceding `(', found instead `]'; indentation suggests a missing `)' before line 167"
+    ("Declaration for `loop' provided, but `loop' has no definition" . 1)
+    ("Declaration for `active-events' provided, but `active-events' has no definition"
      .
      1)
-    ("Cannot apply expression of type PreEID, since it is not a function type"
+    ("insufficient type information to typecheck. please add more type annotations"
      .
      1)
-    ("missing `)' to close `(' on line 148, found instead `]'; indentation suggests a missing `)' before line 150"
-     .
-     1))))
+    ("Bad arguments to function in apply" . 1))))

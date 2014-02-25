@@ -1,4 +1,9 @@
 '((remove
-   (passed . 5)
-   (failed (total . 5) ("expected a `module' declaration" . 5)))
-  (truncate (passed . 0) (failed (total . 0))))
+   (passed . 1)
+   (failed
+    (total . 9)
+    ("expected a `module' declaration" . 5)
+    ("not a well-formed definition" . 4)))
+  (truncate
+   (passed . 1)
+   (failed (total . 8) ("not a well-formed definition" . 8))))

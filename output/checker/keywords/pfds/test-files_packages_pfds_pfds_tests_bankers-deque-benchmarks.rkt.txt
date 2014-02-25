@@ -1,50 +1,64 @@
 '((remove
    (passed . 0)
    (failed
-    (total . 51)
-    ("expected a `module' declaration" . 10)
-    ("unbound identifier in module" . 7)
-    ("bad syntax" . 5)
-    ("collection not found" . 4)
-    ("missing `]' to close preceding `[', found instead `)'" . 4)
-    ("Polymorphic function `build-deque' could not be applied to arguments"
-     .
-     2)
+    (total . 45)
+    ("unbound identifier in module" . 12)
+    ("unexpected term" . 8)
+    ("Polymorphic function `empty?' could not be applied to arguments" . 4)
+    ("type mismatch" . 3)
     ("Cannot apply expression of type Positive-Byte, since it is not a function type"
      .
      2)
-    ("expected only alphanumeric, `-', `+', `_', or `/' characters for `#lang', found ."
+    ("Polymorphic function `build-deque-front' could not be applied to arguments"
+     .
+     2)
+    ("Polymorphic function `tail' could not be applied to arguments" . 2)
+    ("Polymorphic function `init' could not be applied to arguments" . 2)
+    ("Wrong number of arguments, expected 1 and got 2" . 1)
+    ("#<syntax Deque> ((Rec g848 (U Null (Boxof (U (Boxof g848) (-> (Boxof g848)))) (Pairof Positive-Integer g848))) Integer (Rec g854 (U Null (Boxof (U (Boxof g854) (-> (Boxof g854)))) (Pairof Positive-Integer g854))) Integer)), since it is not a function type"
      .
      1)
-    ("missing `]' to close `[' on line 62, found instead `)'; indentation suggests a missing `]' before line 63"
+    ("Cannot apply expression of type Zero, since it is not a function type"
      .
      1)
-    ("no expression after a sequence of internal definitions" . 1)
-    ("type name used out of context" . 1)
-    ("#<syntax Deque> ((Rec g535 (U Null (Boxof (U (Boxof g535) (-> (Boxof g535)))) (Pairof Positive-Integer g535))) Integer (Rec g541 (U Null (Boxof (U (Boxof g541) (-> (Boxof g541)))) (Pairof Positive-Integer g541))) Integer)), since it is not a function type"
-     .
-     1)
-    ("type mismatch" . 1)
-    ("Polymorphic function `last' could not be applied to arguments" . 1)
     ("bad syntax (missing binding pairs or body)" . 1)
     ("Unbound type name q" . 1)
     ("Unbound type name" . 1)
     ("Unbound type name if" . 1)
     ("Unbound type name empty?" . 1)
-    ("#<syntax Deque> ((Rec g176 (U Null (Boxof (U (Boxof g176) (-> (Boxof g176)))) (Pairof Positive-Integer g176))) Integer (Rec g182 (U Null (Boxof (U (Boxof g182) (-> (Boxof g182)))) (Pairof Positive-Integer g182))) Integer)), since it is not a function type"
+    ("#<syntax Deque> ((Rec g413 (U Null (Boxof (U (Boxof g413) (-> (Boxof g413)))) (Pairof Positive-Integer g413))) Integer (Rec g419 (U Null (Boxof (U (Boxof g419) (-> (Boxof g419)))) (Pairof Positive-Integer g419))) Integer)), since it is not a function type"
      .
      1)
-    ("bad syntax;" . 1)
-    ("Cannot apply expression of type Zero, since it is not a function type"
-     .
-     1)
-    ("Wrong number of arguments, expected 1 and got 2" . 1)
-    ("missing `]' to close `[' on line 44, found instead `)'" . 1)))
+    ("bad syntax" . 1)))
   (truncate
    (passed . 0)
    (failed
-    (total . 14)
-    ("type name used out of context" . 6)
-    ("found a test that is not at the top level" . 5)
-    ("(empty A)" . 2)
-    ("unbound identifier in module" . 1))))
+    (total . 44)
+    ("unbound identifier in module" . 9)
+    ("type mismatch" . 7)
+    ("bad syntax" . 7)
+    ("Polymorphic function `build-deque' could not be applied to arguments"
+     .
+     4)
+    ("type name used out of context" . 3)
+    ("bad syntax;" . 2)
+    ("must be used in a definition context" . 2)
+    ("Cannot apply expression of type Zero, since it is not a function type"
+     .
+     2)
+    ("#<syntax Deque> ((Rec g397 (U Null (Boxof (U (Boxof g397) (-> (Boxof g397)))) (Pairof Positive-Integer g397))) Integer (Rec g403 (U Null (Boxof (U (Boxof g403) (-> (Boxof g403)))) (Pairof Positive-Integer g403))) Integer)), since it is not a function type"
+     .
+     1)
+    ("Polymorphic function `Deque1' could not be applied to arguments" . 1)
+    ("#<syntax Deque> ((Rec g986 (U Null (Boxof (U (Boxof g986) (-> (Boxof g986)))) (Pairof Positive-Integer g986))) Integer (Rec g992 (U Null (Boxof (U (Boxof g992) (-> (Boxof g992)))) (Pairof Positive-Integer g992))) Integer)), since it is not a function type"
+     .
+     1)
+    ("Unbound type name" . 1)
+    ("Unbound type name q" . 1)
+    ("Unbound type name loop" . 1)
+    ("#<syntax Deque> ((Rec g466 (U Null (Boxof (U (Boxof g466) (-> (Boxof g466)))) (Pairof Positive-Integer g466))) Integer (Rec g472 (U Null (Boxof (U (Boxof g472) (-> (Boxof g472)))) (Pairof Positive-Integer g472))) Integer)), since it is not a function type"
+     .
+     1)
+    ("#<syntax Deque> ((Rec g795 (U Null (Boxof (U (Boxof g795) (-> (Boxof g795)))) (Pairof Positive-Integer g795))) Integer (Rec g801 (U Null (Boxof (U (Boxof g801) (-> (Boxof g801)))) (Pairof Positive-Integer g801))) Integer)), since it is not a function type"
+     .
+     1))))

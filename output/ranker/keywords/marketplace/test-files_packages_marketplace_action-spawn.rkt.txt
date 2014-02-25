@@ -3,13 +3,13 @@
   'remove
   (rankings
    "test-files/packages/marketplace/action-spawn.rkt"
-   '(0 1 0 2 1)
-   9
-   2))
+   '(0 0 0 1 1)
+   10
+   3))
  (cons
   'truncate
   (rankings
    "test-files/packages/marketplace/action-spawn.rkt"
-   '(0 1 0 0 0)
-   6
-   8)))
+   '(0 2 0 0 0)
+   9
+   4)))
