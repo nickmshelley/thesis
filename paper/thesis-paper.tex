@@ -491,6 +491,16 @@ Since macro analysis did better in the macro camp and nesting level did better i
 
 \section{Checker Results}
 
+Because the checker checks the first five results for success or failure, it is expected that the success rate of the checker would to a certain degree follow the success rate of the ranker. Therefore, it is not surprising that the textual methods had a higher success rate than the macro methods.
+
+It is interesting to note that, among the textual methods, the function keywords approach led to the least failures. This makes sense because it is not unlikely to have multiple functions that take the same number and type of arguments, thus allowing the program to run without crashing (although likely with incorrect end results).
+
+The type of the top occurring error for each method is also instructive. For the textual methods, the top occurring error by far is using unbound identifiers. This makes sense because the completer is using every token in the file to present completion results, and many of them will not be bound at all or will be bound in a local context. The function keywords approach had the least percentage of unbound identifier failures (28% as opposed to 32% and 34%), which makes sense because functions are often defined at the top level, making them available anywhere in the module.
+
+For the macro methods, the top occurring errors were syntax errors, which happened about twice as much as unbound identifier errors. This is instructive and expected because the point of the macro methods is to bring in globally available identifiers from external sources such as ones provided by the language itself or by imported modules, so incorrect use of them is most likely to be syntax related.
+
+The results didn't show much difference between removing tokens and truncating the file as far as failures go. The one interesting thing to note is that the success percentage actually went up by truncating text for the function keywords method. This could mean that because the truncated file had fewer functions to choose from, the likelihood that one of them would match the calling function signature would be higher. However, it also suggests that functions are generally used after the definition, so truncating later functions tends to prune the number of incorrect functions.
+
 \chapter{Conclusions}
 
 Stuff
