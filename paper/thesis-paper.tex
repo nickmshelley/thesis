@@ -1,5 +1,6 @@
 \documentclass[ms,electronic,twosidetoc,letterpaper,chaptercenter,parttop,lol,lof,lot]{byumsphd}
 \usepackage{slatex}
+\usepackage{graphicx}
 % Author: Chris Monson
 %
 % This document is in the public domain
@@ -479,6 +480,22 @@ We found the best results by putting nesting structural heuristics results first
 
 \section{Ranker Results}
 
+\begin{figure}[h]
+\centering
+\hrule
+\includegraphics[width=1.0\textwidth]{../output/synthesis/ranker/Remove-combined.png}
+\caption{Ranking results. Ranked refers to completions in the top five positions. Missed means they weren't in the results at all.}
+\label{ranker-combined}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\hrule
+\includegraphics[width=1.0\textwidth]{../output/synthesis/ranker/Remove-uber-combined.png}
+\caption{Pass/fail ranking results}
+\label{ranker-uber-combined}
+\end{figure}
+
 Looking at the methods individually, the textual methods did a much better job than the macro methods at not only including expected tokens in the list of results, but also prioritizing them well. Even though macro heuristics and analysis suggested many of the correct tokens, almost none of the results were in the top five positions. This is mainly because textural heuristics are done on the source code, making different ordering algorithms easy to experiment with and use. On the other hand, macro heuristics and analysis are more meta by nature, not lending themselves to obvious sorting algorithms, leaving alphabetical the main alternative.
 
 Among the textual methods, sorting by nesting level was by far the most effective. Of the tokens that correctly made it into the list of results, nearly 45% of them were ranked in the top five, as opposed to less than 25% for the other two textual methods.
@@ -490,6 +507,22 @@ It is also interesting to note that truncating the text (as opposed to simply re
 Since macro analysis did better in the macro camp and nesting level did better in the textual camp, we decided to combine the two. Nesting level did much better at ordering, so those results were ordered first, with macro analysis results appended. The results were that the results showing up in the top five spots stayed about the same, whereas the results that didn't show up at all were decreased by about 75%. This shows that the results provided by the two methods were significantly non-overlapping.
 
 \section{Checker Results}
+
+\begin{figure}[h]
+\centering
+\hrule
+\includegraphics[width=1.0\textwidth]{../output/synthesis/checker/Remove-Percent.png}
+\caption{Results of checker using the token removal source alteration method.}
+\label{checker-remove-percent}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\hrule
+\includegraphics[width=1.0\textwidth]{../output/synthesis/checker/Truncate-Percent.png}
+\caption{Results of checker using the file truncate source alteration method.}
+\label{checker-truncate-percent}
+\end{figure}
 
 Because the checker checks the first five results for success or failure, it is expected that the success rate of the checker would to a certain degree follow the success rate of the ranker. Therefore, it is not surprising that the textual methods had a higher success rate than the macro methods.
 

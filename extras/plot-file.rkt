@@ -1,6 +1,9 @@
 #lang racket
 (require plot)
 
+(define GRAPH-HEIGHT 400)
+(define GRAPH-WIDTH 800)
+
 (struct rankings (filename ranked unranked missed) #:transparent)
 
 (module+ main
@@ -16,7 +19,7 @@
           (list 'bytecode 1425 15301)
           (list 'combined 2496 11131)))
   (display-checker remove-results "Remove")
-  (display-checker-percent (percent-results remove-results) "Remove Percent")
+  (display-checker-percent (percent-results remove-results) "Remove-Percent")
   (define truncate-results
     (list (list 'proximity 2228 11758)
           (list 'nest 2309 11573)
@@ -25,7 +28,7 @@
           (list 'bytecode 1487 15109)
           (list 'combined 2246 11904)))
   (display-checker truncate-results "Truncate")
-  (display-checker-percent (percent-results truncate-results) "Truncate Percent"))
+  (display-checker-percent (percent-results truncate-results) "Truncate-Percent"))
 
 (define (percent-results results)
   (for/list ([l (in-list results)])
@@ -70,11 +73,11 @@
               (list (vector 'Failed failed)))
       #:skip skip #:x-min i #:y-min .1 #:label label #:color color #:line-color color))
    (format "/Users/heather/Nick/thesis/thesis/output/synthesis/checker/~a.png" name)
-   #:title name
+   #:title " "
    #:x-label " "
    #:y-label "Amount"
-   #:height 800
-   #:width 1800))
+   #:height GRAPH-HEIGHT
+   #:width GRAPH-WIDTH))
 
 (define (display-checker-percent results name)
   (plot-file
@@ -84,14 +87,14 @@
      (define percent (second res))
      (define color (add1 i))
      (discrete-histogram
-      (append (list (vector (string->symbol "Percent passed") percent)))
+      (append (list (vector (string->symbol "Method") percent)))
       #:x-min i #:label label #:color color #:line-color color))
    (format "/Users/heather/Nick/thesis/thesis/output/synthesis/checker/~a.png" name)
-   #:title name
+   #:title " "
    #:x-label " "
    #:y-label "Percent"
-   #:height 800
-   #:width 1800))
+   #:height GRAPH-HEIGHT
+   #:width GRAPH-WIDTH))
 
 (define (display-rankings results name)
   (define skip (+ 3 (length results)))
@@ -107,11 +110,11 @@
               (list (vector 'Missed (rankings-missed current-rankings))))
       #:skip skip #:x-min i #:y-min .1 #:label label #:color color #:line-color color))
    (format "/Users/heather/Nick/thesis/thesis/output/synthesis/ranker/~a.png" name)
-   #:title name
-   #:x-label "Rank"
+   #:title " "
+   #:x-label " "
    #:y-label "Amount"
-   #:height 800
-   #:width 1800))
+   #:height GRAPH-HEIGHT
+   #:width GRAPH-WIDTH))
 
 (define (display-combined results name)
   (define skip (+ 3 (length results)))
@@ -127,11 +130,11 @@
             (vector 'Missed (rankings-missed current-rankings)))
       #:skip skip #:x-min i #:y-min .1 #:label label #:color color #:line-color color))
    (format "/Users/heather/Nick/thesis/thesis/output/synthesis/ranker/~a.png" name)
-   #:title name
-   #:x-label "Rank"
+   #:title " "
+   #:x-label " "
    #:y-label "Amount"
-   #:height 800
-   #:width 1800))
+   #:height GRAPH-HEIGHT
+   #:width GRAPH-WIDTH))
 
 (define (display-uber-combined results name)
   (define skip (+ 3 (length results)))
@@ -147,11 +150,11 @@
             (vector 'Missed (rankings-missed current-rankings)))
       #:skip skip #:x-min i #:y-min .1 #:label label #:color color #:line-color color))
    (format "/Users/heather/Nick/thesis/thesis/output/synthesis/ranker/~a.png" name)
-   #:title name
-   #:x-label "Rank"
+   #:title " "
+   #:x-label " "
    #:y-label "Amount"
-   #:height 800
-   #:width 1800))
+   #:height GRAPH-HEIGHT
+   #:width GRAPH-WIDTH))
 
 (define (display-checked results name)
   (define skip (+ 3 (length results)))
@@ -167,11 +170,11 @@
               (list (vector 'Missed (rankings-missed current-rankings))))
       #:skip skip #:x-min i #:y-min .1 #:label label #:color color #:line-color color))
    (format "/Users/heather/Nick/thesis/thesis/output/synthesis/ranker/~a.png" name)
-   #:title name
-   #:x-label "Rank"
+   #:title " "
+   #:x-label " "
    #:y-label "Amount"
-   #:height 800
-   #:width 1800))
+   #:height GRAPH-HEIGHT
+   #:width GRAPH-WIDTH))
 
 ; ranked->vectors : list-of-number -> list-of #(number number)
 (define (ranked->vectors ranked)
