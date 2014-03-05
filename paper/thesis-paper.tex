@@ -503,7 +503,17 @@ The results didn't show much difference between removing tokens and truncating t
 
 \chapter{Conclusions}
 
-Stuff
+There is little to no formal testing of auto-completion systems in the literature. Without testing frameworks such as the one implemented in this thesis, knowing how well the completer performs and what improvements will give the best results is hard at best, requiring user studies or user feedback from actual users. To show the value a testing framework can provide, we ran different completion methods against the testing framework and compared the results to our initial hypotheses about the relative value of the methods.
+
+Our initial guess was that textural heuristics would be the least useful, and that structural heuristics and macro heuristics/analysis would be equally better than textual heuristics. By analyzing the results of the testing framework, we realize that macro heuristics/analysis is significantly worse than the textual methods, and that textual heuristics only performed slightly worse than structural heuristics. This data can help lead to the important conclusion that most tokens used are already somewhere else in the same source file. This conclusion can then lead to more informed decisions about how best to improve the completer and its results.
+
+Although macro heuristics/analysis performed significantly worse on their own than textual methods, we were correct in assuming that combining the two methods would give better results. Analyzing the data from the testing framework also helped reveal the fact that, although macro methods didn't do extremely well on their own, the subset of completions they provide is significantly non-overlapping to the subset of completions the textual methods provide. By combining the best of both categories, the number of tokens that simply didn't appear in the completion list was reduced by a significant 75%.
+
+Data from checking completions for errors can also be valuable in catching bugs and making informed decisions. For instance, when analyzing the data from the testing framework, we noticed that the top occurring error for the function keyword method didn't really make sense. The ensuing investigation led to the discovery and fixing of a bug in the regular expression used to find function names in the \scheme{let} form.
+
+Comparing the results of the ranking part of the test framework to the error checking part can also lead to making informed decisions based on the priorities of the completer. For instance, while the nesting method performed better at ranking results, the function keyword method did better at not suggesting failing results. Different priorities can lead to different informed decisions about where to invest resources.
+
+In general, we found that the data provided by a testing framework is valuable data that can lead to making more informed decisions about the direction of the completion system. Although user testing and resulting feedback is very valuable, having an automated testing framework can be invaluable in making early informed decisions that can save time and money.
 
 \bibliographystyle{plainnat}
 \bibliography{bib}
