@@ -1,99 +1,6 @@
 \documentclass[ms,electronic,twosidetoc,letterpaper,chaptercenter,parttop,lol,lof,lot]{byumsphd}
 \usepackage{slatex}
 \usepackage{graphicx}
-% Author: Chris Monson
-%
-% This document is in the public domain
-%
-% Options for this class include the following (* indicates default):
-%
-%   phd (*) -- produce a dissertation
-%   ms -- produce a thesis
-%
-%   electronic -- default official university option, overrides the following:
-%                 - equalmargins
-%
-%   hardcopy -- overrides the following:
-%                 - no equalmargins
-%                 - twoside
-%
-%   letterpaper -- ignored, but helpful for the Makefile that I use
-%
-%   10pt -- 10 point font size
-%   11pt -- 11 point font size
-%   12pt (*) -- 12 point font size
-%
-%   lof -- produce a list of figures in the preamble (off)
-%   lot -- produce a list of tables in the preamble (off)
-%   lol -- produce a list of listings in the preamble (off)
-%
-%   layout -- show layout lines on the pages, helps with overfull boxes (off)
-%   grid -- show a half-inch grid on every page, helps with printing (off)
-%   separator -- print an extra instruction page between preamble and body (off)
-%
-%   twoside (*) -- two-sided output (margins alternate for odd and even pages,
-%     blank pages inserted to ensure that chapters begin on the right side of a
-%     bound copy, etc.)
-%   oneside -- one-sided output (margins are the same on all pages)
-%   equalmargins -- make all margins equal - ugly for binding, but compliant
-%
-%   twosidetoc - start two-sided margins at the TOC instead of the body.  This
-%     is sometimes (oddly) required, but be aware that it will make the page
-%     numbering seem screwy, e.g., the first four full sheets of paper will
-%     have number i-iv (not shown, though), and the next sheets will each have
-%     two numbers, one for each side.  I suspect that most people don't look at
-%     the roman numerals anyway, but it is a weird requirement.
-%
-%   openright (*) -- force new chapters to start on an odd page
-%   openany -- don't use this, it's ugly
-%
-%   prettyheadings -- make the section/chapter headings look nice
-%   compliantheadings (*) -- make them look ugly, but compliant with standards
-%
-%   chaptercenter -- center the chapter headings horizontally
-%   chapterleft (*) -- place chapter headings on the left
-%
-%   partmiddle -- Part headers are centered vertically, no other text on page
-%   parttop (*) -- Part headers at top of page, other text expected
-%
-%   duplexprinter -- Ensures that the two-sided portion starts on the right
-%     side when printing.  This is not for use in submission, since the best
-%     thing to do there is to print everything out one-sided, then take it down
-%     to the copy store to have them do the rest.  It does help to save trees
-%     when you are printing out copies just to look at them and fiddle with
-%     things.
-%
-%
-% EXAMPLES:
-%
-% The rest is up to you.  To fiddle with margins, use the \settextwidth and
-% \setbindingoffset macros, described below.  I suggest that you
-% \settextwidth{6.0in} for better-looking output (otherwise you'll get 3/4-inch
-% margins after binding, which is sort of weird).  This will depend on the
-% opinions of the various dean/coordinator folks, though, so be sure to ask
-% them before embarking on a major formatting task.
-
-% The following command fixes my particular printer, which starts 0.03 inches
-% too low, shifting the whole page down by that amount.  This shifts the
-% document content up so that it comes out right when printed.
-%
-% Discovering this sort of behavior is best done by specifying the ``grid''
-% option in the class parameters above.  It prints a 1/2 inch grid on every
-% page.  You can then use a ruler to determine exactly what the printer is
-% doing.
-%
-% Uncomment to shift content up (accounting for printer problems)
-%\setlength{\voffset}{-.03in}
-
-% Here we set things up for invisible hyperlinks in the document.  This makes
-% the electronic version clickable without changing the way that the document
-% prints.  It's useful, but optional.
-%
-% NOTE: "driverfallback=ps2pdf" chooses ps2pdf in the case of LaTeX and pdftex
-% in the case of pdflatex. If you use my LaTeX makefile (at
-% http://latex-makefile.googlecode.com/) then pdftex is the default There are
-% many other benefits to using the makefile, too.  This option is not always
-% available, so use with care.
 \usepackage[
     bookmarks=true,
     bookmarksnumbered=true,
@@ -104,60 +11,15 @@
     plainpages=false,
     ]{hyperref}
 
-% To fiddle with the margin settings use the below.  DO NOT change stuff
-% directly (like setting \textwidth) - it will break subtle things and you'll
-% be tearing your hair out.
-%
-% For example, if you want 1.5in equal margins, or 2in and 1in margins when
-% printing, add the following below:
-%
-%\setbindingoffset{1.0in}
-%\settextwidth{5.5in}
-%
-% When equalmargins is specified in the class options, the margins will be
-% equal at 1.5in each: (8.5 - 5.5) / 2.  When equalmargins is not specified,
-% the inner margin will be 2.0 and the outer margin will be 1.0: inner = (8.5 -
-% 5.5 - 1.0) / 2 + 1.0 (the 1.0 is the binding offset).
-%
-% The idea is this: you determine how much space the text is going to take up,
-% whether for an electronic document (equalmargins) or not.  You don't want the
-% layout shifting around between printed and electronic documents.
-%
-% So, you specify the text width.  Then, if there is a binding offset (when
-% binding your thesis, the binding takes up space - usually 0.5 inches), that
-% reduces the visual space on the final printed copy.  So, the *effective*
-% margins are calculated by reducing the page size by the binding offset, then
-% computing the remaining space and dividing by two.  Adding back in the
-% binding offset gives the inner margin.  The outer margin is just what's left.
-%
-% All of this is done using the geometry package, which should be manipulated
-% directly at your peril.  It's best just to use the above macros to manipulate
-% your margins.
-%
-% That said, using the geometry macro to set top and bottom margins, or
-% anything else vertical, is perfectly safe and encouraged, e.g.,
-%
-%\geometry{top=2.0in,bottom=2.0in}
-%
-% Just don't fiddle with horizontal margins this way.  You have been warned.
-
-% This makes hyperlinks point to the tops of figures, not their captions
 \usepackage[all]{hypcap}
-
-% These packages allow the bibliography to be sorted alphabetically and allow references to more than one paper to be sorted and compressed (i.e. instead of [5,2,4,6] you get [2,4-6])
 \usepackage[numbers,sort&compress]{natbib}
 \usepackage{hypernat}
 
-% Because I use these things in more than one place, I created new commands for
-% them.  I did not use \providecommand because I absolutely want LaTeX to error
-% out if these already exist.
 \newcommand{\Title}{Autocompletion for the Rest of Us}
 \newcommand{\Author}{Nick Shelley}
 \newcommand{\GraduationMonth}{August}
 \newcommand{\GraduationYear}{2014}
 
-% Set up the internal PDF information so that it becomes part of the document
-% metadata.  The pdfinfo command will display this.
 \hypersetup{%
     pdftitle=\Title,%
     pdfauthor=\Author,%
@@ -166,8 +28,6 @@
     pdfkeywords={BYU, thesis, dissertation, LaTeX},%
 }
 
-% Rewrite the itemize, description, and enumerate environments to have more
-% reasonable spacing:
 \newcommand{\ItemSep}{\itemsep 0pt}
 \let\oldenum=\enumerate
 \renewcommand{\enumerate}{\oldenum \ItemSep}
@@ -176,7 +36,6 @@
 \let\olddesc=\description
 \renewcommand{\description}{\olddesc \ItemSep}
 
-% Important settings for the byumsphd class.
 \title{\Title}
 \author{\Author}
 
@@ -189,7 +48,7 @@
 \yearcopyrighted{\GraduationYear}
 
 \documentabstract{%
-Code completion systems act both as a way to decrease typing and as a way to increase awareness. The former is typically done by completing known variable or function names, while the latter is done by providing a list of possible completions or by providing documentation. Static type information makes these goals possible and feasible for qualifying languages, so most work in this area is focused on improving the order of results or trimming less-valuable results. It follows that almost all validation techniques for this work have focused on proving how well a completion system can put a desired result at the top of the list. However, because of the lack of static type information in dynamically-typed languages, achieving the aforementioned goals is much harder, and many of the completion suggestions may even result in compile-time or runtime crashes. Unfortunately, of the work done on creating completers for these languages, little validation work has been done, making it hard to determine what improvements can be made. This thesis will provide two validation techniques that will provide information both on how well completion suggestions are ordered and also which completion suggestions result in errors. This information will be used to guide the development and evolution of a completion system for the Racket programming language.
+Code completion systems act both as a way to decrease typing and as a way to easily access documentation, both implicit and explicit. The former is typically done by completing known variable or function names, while the latter is done by providing a list of possible completions or by providing convenient views of or access to documentation. Because static type information makes these goals possible and feasible for qualifying languages, many improvements to completion systems are focused on improving the order of results or trimming less-valuable results. It follows that almost all validation techniques for this work have focused on proving how well a completion system can put a desired result at the top of the list. However, because of the lack of static type information in dynamically-typed languages, achieving the aforementioned goals is much harder, and many of the completion suggestions may even result in compile-time or runtime crashes. Unfortunately, of the work done on creating completers for these languages, little validation work has been done, making it hard to determine what improvements can be made. This thesis will provide two validation techniques that will provide information both on how well completion suggestions are ordered and also which completion suggestions result in errors. This information will be used to guide the development and evolution of a completion system for the Racket programming language.
 }
 
 \documentkeywords{%
@@ -233,11 +92,13 @@ Code completion systems act both as a way to decrease typing and as a way to inc
 
 \chapter{Introduction}
 
-The main purpose of autocompletion is to improve programmer productivity. This has mainly been accomplished in two ways. The first way is to reduce typing by predicting which token(s) should be inserted at a given position, sometimes replacing the partially-typed token. Incidentally, this also encourages more descriptive variable names since longer names can be completed automatically. The second way is to provide convenient documentation to the programmer. For example, a list of currently valid (i.e. in scope, correctly typed, etc.) substitutions may be provided given the current cursor position. Also, a function's signature and purpose can be displayed next to the typed function name. This project will focus on the first way of completing textual tokens rather than providing convenient documentation.
+\paragraph{Thesis Statement} For auto-completers for languages like Racket, structural heuristics and macro heuristics perform better than textural heuristics, and when combined perform better than either alone. Macro heuristics perform almost equivalent to macro analyses, and structural heuristic performance varies depending on editing mode.
 
-Autocompletion for statically-typed languages is relatively simple to do naively. Since type information is available statically, it is easy to avoid suggesting tokens that will result in compile or runtime errors. Because static type information makes it possible to suggest completions with high assurance of being valid, research and work has focused mainly on presenting these valid results in a way that is more useful to the programmer. For instance, instead of giving all valid results in alphabetical order, results can be omitted or promoted closer to the top of the list based on context, type, or analysis of previous code. Therefore, validation systems have mainly focused on how well a desired token makes it in the top N suggestions.
+\paragraph{} The main purpose of autocompletion is to improve programmer productivity. This has mainly been accomplished in two ways. The first way is to reduce typing by predicting which token(s) should be inserted at a given position, sometimes replacing the partially-typed token. Incidentally, this also encourages more descriptive variable names since longer names can be completed automatically. The second way is to provide convenient documentation to the programmer. For example, a list of currently valid (i.e. in scope, correctly typed, etc.) substitutions may be provided given the current cursor position. Also, a function's signature and purpose can be displayed next to the typed function name. This thesis focuses on the first way of completing textual tokens rather than providing convenient documentation.
 
-However, because type information is not known statically in other languages, it is possible and easy to suggest tokens that may result in runtime errors and others that may not even compile. Other features that make autocompletion hard for certain languages include first-class functions and powerful macro systems. I will now discuss the challenges these features pose in detail.
+Static type information makes it relatively simple for completions systems for such languages to filter out invalid results. However, because type information is not known statically in other languages, it is possible and easy to suggest tokens that may result in runtime errors and others that may not even compile. Because static type information makes it possible to suggest completions with high assurance of being valid, research and work on completers for such languages have focused mainly on presenting these valid results in a way that is more useful to the programmer. For instance, instead of giving all valid results in alphabetical order, results can be omitted or promoted closer to the top of the list based on context, type, or analysis of previous code. Therefore, validation systems have mainly focused on how well a desired token makes it in the top N suggestions.
+
+Other features that make autocompletion hard for certain languages include first-class functions and powerful macro systems. I will now discuss the challenges these features pose in detail.
 
 % set up slatex stuff
 \setkeyword{racket require for-syntax provide}
@@ -246,9 +107,9 @@ However, because type information is not known statically in other languages, it
 
 Dynamically typed languages do the majority of their type checking at run-time as opposed to compile-time. In dynamic typing, values have types but variables do not. A variable can thus refer to any value of any type at any time.
 
-Because a variable's type can change at any time in the program, the type information can't be used to filter which variables can appear in which contexts. For example, consider the incomplete programs in Figure~\ref{fig:dynamic-type}. Should an auto-completer give the parameter \scheme{a} as an option to fill the hole in \texttt{dynamic-parameter.rkt}?  With the call \scheme{(add2 5)}, the program would have a meaningful result. However, with the call \scheme{(add2 #t)}, there would be a run-time error. Since the auto-completer can't know what types of values the parameter \scheme{a} will be at run-time, it cannot know whether it is correct to include it in the auto-complete list.
+Because a variable's type can change at any time in the program, the type information can't be used to filter which variables can appear in which contexts. For example, consider the incomplete programs in Figure~\ref{fig:dynamic-type}. Should an auto-completer give the parameter \scheme{a} as an option to fill the hole in \texttt{dynamic-parameter.rkt}?  With the call \scheme{(add2 5)}, the program would have a meaningful result. However, with the call \scheme{(add2 #t)}, there would be a run-time error. Since the auto-completer can't know at compile-time what types of values the parameter \scheme{a} can possibly hold, it cannot know whether it is correct to include it in the auto-complete list.
 
-As another example, consider the two holes in \texttt{dynamic-return-value.rkt}. The auto-completer needs to make a decision about whether or not to include \scheme{num} in the list of suggestions. If \scheme{num} filled the first hole, the number \scheme{10} would be inserted and the result of the program would be \scheme{15}. However, if \scheme{num} filled the second hole, the string \scheme{"hi"} would be inserted and a run-time error would occur. Although it is easy for us as humans to look at these two function calls and know what they will return, it is hard for a computer to do so without running the program first. We can also imagine more complicated functions which would be hard for both humans and computers to analyze. Since the auto-completer can't even know what type a function will return, it cannot know whether it is correct to include the result of a function in the auto-complete list.
+As another example, consider the two holes in \texttt{dynamic-return-value.rkt}. The auto-completer needs to make a decision about whether or not to include \scheme{num} in the list of suggestions. If \scheme{num} filled the first hole, the number \scheme{10} would be inserted and the result of the program would be \scheme{15}. However, if \scheme{num} filled the second hole, the string \scheme{"hi"} would be inserted and a run-time error would occur. Although it is easy for us as humans to look at these two function calls and know what they will return, it is hard for a computer to do so without running the program first. We can also imagine more complicated functions which would be hard for both humans and computers to analyze. Since the auto-completer can't statically know what type a function will return, it cannot know whether it is correct to include the result of a function in the auto-complete list.
 
 \begin{figure*}[t]
 \hrule
@@ -288,7 +149,7 @@ As another example, consider the two holes in \texttt{dynamic-return-value.rkt}.
 
 \section{First-class Functions}
 
-First-class functions allow functions to be passed around as values. Coupled with the dynamic typing problem, first-class functions make it impossible to know which bindings are functions and which aren't. Ideally, if an auto-completer is invoked where it makes sense to call a function (such as after an opening parenthesis), only functions should appear in the list of suggestions. However, because we can't know which bindings are functions, we must consider all bindings. For example, the program \texttt{function-parameter.rkt} in Figure~\ref{fig:first-class-functions} contains two holes, one where a boolean should go, and another where a function should go. Because passing \scheme{+} to \scheme{fun} is just as valid as passing \scheme{#t} or \scheme{3}, we can't know if it is correct to include the parameter \scheme{f} in either of those holes.
+First-class functions means functions can be passed around as values. Coupled with the dynamic typing problem, first-class functions make it impossible to know which bindings are functions and which aren't. Ideally, if an auto-completer is invoked where it makes sense to call a function (such as after an opening parenthesis), only functions should appear in the list of suggestions. However, because we can't know which bindings are functions, we must consider all bindings. For example, the program \texttt{function-parameter.rkt} in Figure~\ref{fig:first-class-functions} contains two holes, one where a boolean should go, and another where a function should go. Because passing \scheme{+} to \scheme{fun} is just as valid as passing \scheme{#t} or \scheme{3}, we can't know if it is correct to include the parameter \scheme{f} in either of those holes.
 
 Even if we could know or assume that a function is being called, we cannot know which function a variable is bound to. This makes bringing up information about the function, such as a parameter list, impossible. For example, the program \texttt{function-return.rkt} in the same figure contains two holes. In the first instance we would want the auto-completer to bring up the possible parameters to the \scheme{+} function that will be returned, which are \scheme{z ...}. In the second instance we would want the auto-completer to bring up \scheme{make-vector}'s possible parameters, which are \scheme{size [v]}. However, because we don't know what function will be returned, we cannot bring up the correct parameters. 
 
@@ -328,7 +189,7 @@ Even if we could know or assume that a function is being called, we cannot know 
 
 \section{Powerful Macro System}
 
-Racket macros are essentially an API to add compiler extensions. All macros compile down to a small set of core language features, potentially going through intermediate transformations when other macros are used in macro definitions. Most of the features available in \scheme{#lang racket} are macro definitions. For example, the \scheme{and} and \scheme{or} constructs are actually macros that compile to the core \scheme{let} and \scheme{if} constructs. Macros such as \scheme{or} can be used to define other macros, which can be used to define yet more macros. A program is said to be fully expanded when all macros have been recursively transformed until only core language constructs remain.
+Racket macros are essentially an API to add compiler extensions. All macros compile down to a small set of core language features, potentially going through intermediate transformations when other macros are used in macro definitions. Most of the features available in Racket are macro definitions. For example, the \scheme{and} and \scheme{or} constructs are actually macros that compile to the core \scheme{let} and \scheme{if} constructs. Macros such as \scheme{or} can be used to define other macros, which can be used to define yet more macros. A program is said to be fully expanded when all macros have been recursively transformed until only core language constructs remain.
 
 Syntax objects are an important part of the Racket macro system. Syntax objects basically wrap source code with lexical and location information. For example, a syntax object for the symbol \scheme{x} could have lexical information describing which bindings are visible to \scheme{x}.
 
@@ -336,9 +197,7 @@ Racket macros are transformers that take a syntax object and return a syntax obj
 
 Figure~\ref{fig:macros} shows macros that can cause problems for an auto-completer. In \texttt{binding.rkt}, the \scheme{not-define} macro introduces a binding for the variable \scheme{x}, breaking its promise not to define anything. It does this by extracting the value from the syntax object passed in and creating a new syntax object that defines \scheme{x} as this value. However, by examining the program, an auto-completer has no indication that \scheme{x} has been defined anywhere. In particular, at the hole in the \scheme{+} application in \texttt{binding.rkt}, the auto-completer is not aware that \scheme{x} is an available binding.
 
-In \texttt{context.rkt}, \scheme{x} is bound to \scheme{5} within the \scheme{let}. By examining the source code, an auto-completer could give \scheme{x} as an option at the hole within the \scheme{let}. However, in this case the addition expression is passed to the \scheme{f} macro. This macro essentially replaces the context of the expression passed in with the context of \scheme{anchor}. Since \scheme{anchor} was defined at the top-level, the expression returned from \scheme{f} will only have access to top-level bindings. This can cause two problems. As we see in \texttt{context.rkt}, \scheme{x} is bound to \scheme{#f} at the top level, so filling the hole with \scheme{x} would cause run-time error to occur. Even an auto-completer that was smart enough to get around the dynamic typing problem by only including bindings of the correct type would be fooled by this scenario. Thus the first problem is essentially a complication of the dynamic typing problem. However, if we remove the definition of \scheme{x} at the top-level, then there would be no binding for \scheme{x} available to the expression, which would cause a compile-time error.
-
-A possible work-around for macro-related problems could be to fully expand the program before invoking the auto-completer. However, it is currently impossible to expand incomplete programs. Some possible ways around this problem could be to judiciously choose points in the program at which to attempt expansion or to reduce the current program to a complete expandable program. My project will help to show how useful these approximations will be.
+In \texttt{context.rkt}, \scheme{x} is bound to \scheme{5} within the \scheme{let}. By examining the source code, an auto-completer could give \scheme{x} as an option at the hole within the \scheme{let}. However, in this case the addition expression is passed to the \scheme{f} macro. This macro essentially replaces the context of the expression passed in with the context of \scheme{anchor}. Since \scheme{anchor} was defined at the top-level, the expression returned from \scheme{f} will only have access to top-level bindings. This can cause two problems. As we see in \texttt{context.rkt}, \scheme{x} is bound to \scheme{#f} at the top level, so filling the hole with \scheme{x} would cause a run-time error to occur. Even an auto-completer that was smart enough to get around the dynamic typing problem by only including bindings of the correct type would be fooled by this scenario. Thus the first problem is essentially a complication of the dynamic typing problem. However, if we remove the definition of \scheme{x} at the top-level, then there would be no binding for \scheme{x} available to the expression, which would cause a compile-time error.
 
 \begin{figure*}[t]
 \hrule
@@ -392,11 +251,11 @@ A possible work-around for macro-related problems could be to fully expand the p
 
 Some commercial and research completion systems have been implemented for dynamically-typed languages such as PHP and JavaScript \cite{Mapping, Semantic, Vs.php, JScript}. These systems use knowledge about the structure of the language to complete common constructs such as functions, objects, and variables. Dynamic information is either ignored or else semantic analysis and type inference is used to statically determine as much information as possible. None of these systems provide or document any sort of testing or validation framework.
 
-For traditional completion systems, many possible improvements have been explored over the traditional alphabetical sorting of all possible suggestions. \cite{Jungloid} uses intimate knowledge about the Java type system, library and API functions, example code, and the current context of the program to suggest ways to get from one type to another type through intermediate steps. \cite{BCC} sorts by Java type starting with methods provided from the declared type and then up the type hierarchy until the base Object class. It also allows for custom filters to be specified by the programmer. \cite{Abbreviated} takes abbreviated input instead of prefixes and uses a hidden markov model to determine what was meant. For example, the expression "ch.opn(n)" would turn into "chooser.showOpenDialog(null)." \cite{History} tracks all changes to the codebase and prioritizes suggestions based on how recently methods and objects have been changed. \cite{Examples} uses existing code (such as the Eclipse code base) as training data to implement three different completion systems. The first orders suggestions based on how frequently they are used. The second uses limited context information to create association rules that govern suggestion order. For instance, one rule might be that after objects are created, suggest setters on those objects. The third gathers context and uses a modification of the k-nearest-neighbor algorithm to order suggestions based on the nearest snippets found in the training data.
+For traditional completion systems, many possible improvements have been explored over the traditional alphabetical sorting of all possible suggestions. The jungloid mining approach\cite{Jungloid} uses intimate knowledge about the Java type system, library and API functions, example code, and the current context of the program to suggest ways to get from one type to another type through intermediate steps. Bcc\cite{BCC} sorts by Java type starting with methods provided from the declared type and then up the type hierarchy until the base Object class. It also allows for custom filters to be specified by the programmer. The abbreviated input approach\cite{Abbreviated} takes abbreviated input instead of prefixes and uses a hidden Markov model to determine what was meant. For example, the expression "ch.opn(n)" would turn into "chooser.showOpenDialog(null)." The program history approach\cite{History} tracks all changes to the codebase and prioritizes suggestions based on how recently methods and objects have been changed. The examples approach\cite{Examples} uses existing code (such as the Eclipse code base) as training data to implement three different completion systems. The first orders suggestions based on how frequently they are used. The second uses limited context information to create association rules that govern suggestion order. For instance, one rule might be that after objects are created, suggest setters on those objects. The third gathers context and uses a modification of the k-nearest-neighbor algorithm to order suggestions based on the nearest snippets found in the training data.
 
-Most validation techniques ran their systems on modified existing code and ranked the results in some way. \cite{Abbreviated} ran their system on 3000 lines of code from 6 open source projects that were turned into acronym-like abbreviations. They measured how many lines could be completed and how many of those were in the top-N (i.e. top-1 or top-5) suggested completions. \cite{Towards} ran their completion system at every Swing method in several open source projects. They ranked how high in the suggestions list the actual method appeared and added all rankings together to get an overall ranking for the system. \cite{History} ran their completion system between every recorded change operation (defined as a change in the AST) on a project of theirs called SpyWare. They then recorded what percentage of actual methods were in the top-N suggestions. Lastly, \cite{Examples} used the Eclipse code base and randomly split the code into 90\% training data and 10\% test data. They then took out half of the Swing method calls in the test data and ran their completion system in each hole. They measured recall, which is how often a used method was in the suggestion list, and precision, which is what fraction of suggested methods were actually used. They then combined these two measures into an F1-measure to give an overall grade to a system.
+Most validation techniques ran their systems on modified existing code and ranked the results in some way. The authors of the abbreviated input paper\cite{Abbreviated} ran their system on 3000 lines of code from 6 open source projects that were turned into acronym-like abbreviations. They measured how many lines could be completed and how many of those were in the top-N (i.e. top-1 or top-5) suggested completions. Hou and Pletcher\cite{Towards} ran their completion system at every Swing method in several open source projects. They ranked how high in the suggestions list the actual method appeared and added all rankings together to get an overall ranking for the system. The program history paper\cite{History} ran their completion system between every recorded change operation (defined as a change in the AST) on a project of theirs called SpyWare. They then recorded what percentage of actual methods were in the top-N suggestions. Lastly, the examples paper\cite{Examples} used the Eclipse code base and randomly split the code into 90\% training data and 10\% test data. They then took out half of the Swing method calls in the test data and ran their completion system in each hole. They measured recall, which is how often a used method was in the suggestion list, and precision, which is what fraction of suggested methods were actually used. They then combined these two measures into an F1-measure to give an overall grade to a system.
 
-The lack of testing done on dynamic auto-completers helped me realize the need for a system that does what my second validation method will do. The testing done on most static auto-completers inspired the first validation method of random testing on existing code. The metrics they used are all similar and will help me define my metrics in a way that works best for this project. Lastly, although a lot of improvements were type-system specific, some could be used as ideas for completion approximation methods in my thesis.
+The lack of testing done on dynamic auto-completers helped emphasize the need for a validation system for such languages. The testing done on most static auto-completers inspired the use of random testing on existing code. The metrics they used are all similar and helped define metrics in a way that works best for such validation systems. Lastly, although a lot of improvements were type-system specific, some methods inspired ideas for completion approximation methods implemented as part of this thesis.
 
 \chapter{Implementation}
 
@@ -404,7 +263,7 @@ There are two major metrics to be considered when testing code completion. The f
 
 \section{Foundation}
 
-There are two main ways to tell whether code completion meets users' needs. One is to do user studies or get feedback from users, while another is to measure completion results against existing code. This testing framework takes the second approach.
+There are two main ways to tell whether code completion meets users' needs. One is to do user studies or get feedback from users, while another is to measure completion results against existing code. Both are valuable and provide useful, although often different, information. The methods and value of the first approach are well known and beyond the scope of this work. Because so little has been done in the literature for dynamically-typed languages, this testing framework takes the second approach.
 
 In order to test against existing source, the source file must be tokenized. One way to do this is just to delimit on whitespace. However, since it is uncommon for data such as numbers and strings to use code completion, we decided to use the language grammar to only test valid identifiers.
 
