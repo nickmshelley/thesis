@@ -182,7 +182,7 @@ Since the auto-completer can't statically know what type a function will return,
 
 \section{First-class Functions}
 
-First-class functions means functions can be passed around as values.
+Support for first-class functions means functions can be passed around as values.
 Coupled with the dynamic typing problem, first-class functions make it impossible to know which bindings are functions and which aren't.
 Ideally, if an auto-completer is invoked where it makes sense to call a function (such as after an opening parenthesis), only functions should appear in the list of suggestions.
 However, because we can't know which bindings are functions, we must consider all bindings.
