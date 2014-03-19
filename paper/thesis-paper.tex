@@ -24,7 +24,8 @@
     pdftitle=\Title,%
     pdfauthor=\Author,%
     pdfsubject={Masters Thesis, BYU CS Department: %
-                Degree Granted \GraduationMonth~\GraduationYear, Document Created \today},%
+                Degree Granted \GraduationMonth~\GraduationYear, Document Created
+\today},%
     pdfkeywords={BYU, thesis, dissertation, LaTeX},%
 }
 
@@ -48,7 +49,23 @@
 \yearcopyrighted{\GraduationYear}
 
 \documentabstract{%
-Code completion systems act both as a way to decrease typing and as a way to easily access documentation, both implicit and explicit. The former is typically done by completing known variable or function names, while the latter is done by providing a list of possible completions or by providing convenient views of or access to documentation. Because static type information makes these goals possible and feasible for qualifying languages, many improvements to completion systems are focused on improving the order of results or trimming less-valuable results. It follows that almost all validation techniques for this work have focused on proving how well a completion system can put a desired result at the top of the list. However, because of the lack of static type information in dynamically-typed languages, achieving the aforementioned goals is much harder, and many of the completion suggestions may even result in compile-time or runtime crashes. Unfortunately, of the work done on creating completers for these languages, little validation work has been done, making it hard to determine what improvements can be made. This thesis will provide two validation techniques that will provide information both on how well completion suggestions are ordered and also which completion suggestions result in errors. This information will be used to guide the development and evolution of a completion system for the Racket programming language.
+Code completion systems act both as a way to decrease typing and as a way to easily access
+documentation, both implicit and explicit. The former is typically done by completing
+known variable or function names, while the latter is done by providing a list of possible
+completions or by providing convenient views of or access to documentation. Because static
+type information makes these goals possible and feasible for qualifying languages, many
+improvements to completion systems are focused on improving the order of results or
+trimming less-valuable results. It follows that almost all validation techniques for this
+work have focused on proving how well a completion system can put a desired result at the
+top of the list. However, because of the lack of static type information in
+dynamically-typed languages, achieving the aforementioned goals is much harder, and many
+of the completion suggestions may even result in compile-time or runtime crashes.
+Unfortunately, of the work done on creating completers for these languages, little
+validation work has been done, making it hard to determine what improvements can be made.
+This thesis will provide two validation techniques that will provide information both on
+how well completion suggestions are ordered and also which completion suggestions result
+in errors. This information will be used to guide the development and evolution of a
+completion system for the Racket programming language.
 }
 
 \documentkeywords{%
@@ -92,24 +109,68 @@ Code completion systems act both as a way to decrease typing and as a way to eas
 
 \chapter{Introduction}
 
-\paragraph{Thesis Statement} For auto-completers for languages like Racket, structural heuristics and macro heuristics perform better than textural heuristics, and when combined perform better than either alone. Macro heuristics perform almost equivalent to macro analyses, and structural heuristic performance varies depending on editing mode.
+\paragraph{Thesis Statement} For auto-completers for languages like Racket, structural
+heuristics and macro heuristics perform better than textural heuristics, and when combined
+perform better than either alone. Macro heuristics perform almost equivalent to macro
+analyses, and structural heuristic performance varies depending on editing mode.
 
-\paragraph{} The main purpose of autocompletion is to improve programmer productivity. This has mainly been accomplished in two ways. The first way is to reduce typing by predicting which token(s) should be inserted at a given position, sometimes replacing the partially-typed token. Incidentally, this also encourages more descriptive variable names since longer names can be completed automatically. The second way is to provide convenient documentation to the programmer. For example, a list of currently valid (i.e. in scope, correctly typed, etc.) substitutions may be provided given the current cursor position. Also, a function's signature and purpose can be displayed next to the typed function name. This thesis focuses on the first way of completing textual tokens rather than providing convenient documentation.
+\paragraph{} The main purpose of autocompletion is to improve programmer productivity.
+This has mainly been accomplished in two ways. The first way is to reduce typing by
+predicting which token(s) should be inserted at a given position, sometimes replacing the
+partially-typed token. Incidentally, this also encourages more descriptive variable names
+since longer names can be completed automatically. The second way is to provide convenient
+documentation to the programmer. For example, a list of currently valid (i.e. in scope,
+correctly typed, etc.) substitutions may be provided given the current cursor position.
+Also, a function's signature and purpose can be displayed next to the typed function name.
+This thesis focuses on the first way of completing textual tokens rather than providing
+convenient documentation.
 
-Static type information makes it relatively simple for completions systems for such languages to filter out invalid results. However, because type information is not known statically in other languages, it is possible and easy to suggest tokens that may result in runtime errors and others that may not even compile. Because static type information makes it possible to suggest completions with high assurance of being valid, research and work on completers for such languages have focused mainly on presenting these valid results in a way that is more useful to the programmer. For instance, instead of giving all valid results in alphabetical order, results can be omitted or promoted closer to the top of the list based on context, type, or analysis of previous code. Therefore, validation systems have mainly focused on how well a desired token makes it in the top N suggestions.
+Static type information makes it relatively simple for completions systems for such
+languages to filter out invalid results. However, because type information is not known
+statically in other languages, it is possible and easy to suggest tokens that may result
+in runtime errors and others that may not even compile. Because static type information
+makes it possible to suggest completions with high assurance of being valid, research and
+work on completers for such languages have focused mainly on presenting these valid
+results in a way that is more useful to the programmer. For instance, instead of giving
+all valid results in alphabetical order, results can be omitted or promoted closer to the
+top of the list based on context, type, or analysis of previous code. Therefore,
+validation systems have mainly focused on how well a desired token makes it in the top N
+suggestions.
 
-Other features that make autocompletion hard for certain languages include first-class functions and powerful macro systems. I will now discuss the challenges these features pose in detail.
+Other features that make autocompletion hard for certain languages include first-class
+functions and powerful macro systems. I will now discuss the challenges these features
+pose in detail.
 
 % set up slatex stuff
 \setkeyword{racket require for-syntax provide}
 
 \section{Dynamic Typing}
 
-Dynamically typed languages do the majority of their type checking at run-time as opposed to compile-time. In dynamic typing, values have types but variables do not. A variable can thus refer to any value of any type at any time.
+Dynamically typed languages do the majority of their type checking at run-time as opposed
+to compile-time. In dynamic typing, values have types but variables do not. A variable can
+thus refer to any value of any type at any time.
 
-Because a variable's type can change at any time in the program, the type information can't be used to filter which variables can appear in which contexts. For example, consider the incomplete programs in Figure~\ref{fig:dynamic-type}. Should an auto-completer give the parameter \scheme{a} as an option to fill the hole in \texttt{dynamic-parameter.rkt}?  With the call \scheme{(add2 5)}, the program would have a meaningful result. However, with the call \scheme{(add2 #t)}, there would be a run-time error. Since the auto-completer can't know at compile-time what types of values the parameter \scheme{a} can possibly hold, it cannot know whether it is correct to include it in the auto-complete list.
+Because a variable's type can change at any time in the program, the type information
+can't be used to filter which variables can appear in which contexts. For example,
+consider the incomplete programs in Figure~\ref{fig:dynamic-type}. Should an
+auto-completer give the parameter \scheme{a} as an option to fill the hole in
+\texttt{dynamic-parameter.rkt}?  With the call \scheme{(add2 5)}, the program would have a
+meaningful result. However, with the call \scheme{(add2 #t)}, there would be a run-time
+error. Since the auto-completer can't know at compile-time what types of values the
+parameter \scheme{a} can possibly hold, it cannot know whether it is correct to include it
+in the auto-complete list.
 
-As another example, consider the two holes in \texttt{dynamic-return-value.rkt}. The auto-completer needs to make a decision about whether or not to include \scheme{num} in the list of suggestions. If \scheme{num} filled the first hole, the number \scheme{10} would be inserted and the result of the program would be \scheme{15}. However, if \scheme{num} filled the second hole, the string \scheme{"hi"} would be inserted and a run-time error would occur. Although it is easy for us as humans to look at these two function calls and know what they will return, it is hard for a computer to do so without running the program first. We can also imagine more complicated functions which would be hard for both humans and computers to analyze. Since the auto-completer can't statically know what type a function will return, it cannot know whether it is correct to include the result of a function in the auto-complete list.
+As another example, consider the two holes in \texttt{dynamic-return-value.rkt}. The
+auto-completer needs to make a decision about whether or not to include \scheme{num} in
+the list of suggestions. If \scheme{num} filled the first hole, the number \scheme{10}
+would be inserted and the result of the program would be \scheme{15}. However, if
+\scheme{num} filled the second hole, the string \scheme{"hi"} would be inserted and a
+run-time error would occur. Although it is easy for us as humans to look at these two
+function calls and know what they will return, it is hard for a computer to do so without
+running the program first. We can also imagine more complicated functions which would be
+hard for both humans and computers to analyze. Since the auto-completer can't statically
+know what type a function will return, it cannot know whether it is correct to include the
+result of a function in the auto-complete list.
 
 \begin{figure*}[t]
 \hrule
@@ -149,9 +210,27 @@ As another example, consider the two holes in \texttt{dynamic-return-value.rkt}.
 
 \section{First-class Functions}
 
-First-class functions means functions can be passed around as values. Coupled with the dynamic typing problem, first-class functions make it impossible to know which bindings are functions and which aren't. Ideally, if an auto-completer is invoked where it makes sense to call a function (such as after an opening parenthesis), only functions should appear in the list of suggestions. However, because we can't know which bindings are functions, we must consider all bindings. For example, the program \texttt{function-parameter.rkt} in Figure~\ref{fig:first-class-functions} contains two holes, one where a boolean should go, and another where a function should go. Because passing \scheme{+} to \scheme{fun} is just as valid as passing \scheme{#t} or \scheme{3}, we can't know if it is correct to include the parameter \scheme{f} in either of those holes.
+First-class functions means functions can be passed around as values. Coupled with the
+dynamic typing problem, first-class functions make it impossible to know which bindings
+are functions and which aren't. Ideally, if an auto-completer is invoked where it makes
+sense to call a function (such as after an opening parenthesis), only functions should
+appear in the list of suggestions. However, because we can't know which bindings are
+functions, we must consider all bindings. For example, the program
+\texttt{function-parameter.rkt} in Figure~\ref{fig:first-class-functions} contains two
+holes, one where a boolean should go, and another where a function should go. Because
+passing \scheme{+} to \scheme{fun} is just as valid as passing \scheme{#t} or \scheme{3},
+we can't know if it is correct to include the parameter \scheme{f} in either of those
+holes.
 
-Even if we could know or assume that a function is being called, we cannot know which function a variable is bound to. This makes bringing up information about the function, such as a parameter list, impossible. For example, the program \texttt{function-return.rkt} in the same figure contains two holes. In the first instance we would want the auto-completer to bring up the possible parameters to the \scheme{+} function that will be returned, which are \scheme{z ...}. In the second instance we would want the auto-completer to bring up \scheme{make-vector}'s possible parameters, which are \scheme{size [v]}. However, because we don't know what function will be returned, we cannot bring up the correct parameters. 
+Even if we could know or assume that a function is being called, we cannot know which
+function a variable is bound to. This makes bringing up information about the function,
+such as a parameter list, impossible. For example, the program
+\texttt{function-return.rkt} in the same figure contains two holes. In the first instance
+we would want the auto-completer to bring up the possible parameters to the \scheme{+}
+function that will be returned, which are \scheme{z ...}. In the second instance we would
+want the auto-completer to bring up \scheme{make-vector}'s possible parameters, which are
+\scheme{size [v]}. However, because we don't know what function will be returned, we
+cannot bring up the correct parameters. 
 
 \begin{figure*}[t]
 \hrule
@@ -189,15 +268,49 @@ Even if we could know or assume that a function is being called, we cannot know 
 
 \section{Powerful Macro System}
 
-Racket macros are essentially an API to add compiler extensions. All macros compile down to a small set of core language features, potentially going through intermediate transformations when other macros are used in macro definitions. Most of the features available in Racket are macro definitions. For example, the \scheme{and} and \scheme{or} constructs are actually macros that compile to the core \scheme{let} and \scheme{if} constructs. Macros such as \scheme{or} can be used to define other macros, which can be used to define yet more macros. A program is said to be fully expanded when all macros have been recursively transformed until only core language constructs remain.
+Racket macros are essentially an API to add compiler extensions. All macros compile down
+to a small set of core language features, potentially going through intermediate
+transformations when other macros are used in macro definitions. Most of the features
+available in Racket are macro definitions. For example, the \scheme{and} and \scheme{or}
+constructs are actually macros that compile to the core \scheme{let} and \scheme{if}
+constructs. Macros such as \scheme{or} can be used to define other macros, which can be
+used to define yet more macros. A program is said to be fully expanded when all macros
+have been recursively transformed until only core language constructs remain.
 
-Syntax objects are an important part of the Racket macro system. Syntax objects basically wrap source code with lexical and location information. For example, a syntax object for the symbol \scheme{x} could have lexical information describing which bindings are visible to \scheme{x}.
+Syntax objects are an important part of the Racket macro system. Syntax objects basically
+wrap source code with lexical and location information. For example, a syntax object for
+the symbol \scheme{x} could have lexical information describing which bindings are visible
+to \scheme{x}.
 
-Racket macros are transformers that take a syntax object and return a syntax object, or in other words, they take source code and return source code. The syntax object returned can do anything it wants with the syntax object passed in, or it could ignore its input and return an arbitrary syntax object. In other words, Racket macros can do arbitrary things to the program.
+Racket macros are transformers that take a syntax object and return a syntax object, or in
+other words, they take source code and return source code. The syntax object returned can
+do anything it wants with the syntax object passed in, or it could ignore its input and
+return an arbitrary syntax object. In other words, Racket macros can do arbitrary things
+to the program.
 
-Figure~\ref{fig:macros} shows macros that can cause problems for an auto-completer. In \texttt{binding.rkt}, the \scheme{not-define} macro introduces a binding for the variable \scheme{x}, breaking its promise not to define anything. It does this by extracting the value from the syntax object passed in and creating a new syntax object that defines \scheme{x} as this value. However, by examining the program, an auto-completer has no indication that \scheme{x} has been defined anywhere. In particular, at the hole in the \scheme{+} application in \texttt{binding.rkt}, the auto-completer is not aware that \scheme{x} is an available binding.
+Figure~\ref{fig:macros} shows macros that can cause problems for an auto-completer. In
+\texttt{binding.rkt}, the \scheme{not-define} macro introduces a binding for the variable
+\scheme{x}, breaking its promise not to define anything. It does this by extracting the
+value from the syntax object passed in and creating a new syntax object that defines
+\scheme{x} as this value. However, by examining the program, an auto-completer has no
+indication that \scheme{x} has been defined anywhere. In particular, at the hole in the
+\scheme{+} application in \texttt{binding.rkt}, the auto-completer is not aware that
+\scheme{x} is an available binding.
 
-In \texttt{context.rkt}, \scheme{x} is bound to \scheme{5} within the \scheme{let}. By examining the source code, an auto-completer could give \scheme{x} as an option at the hole within the \scheme{let}. However, in this case the addition expression is passed to the \scheme{f} macro. This macro essentially replaces the context of the expression passed in with the context of \scheme{anchor}. Since \scheme{anchor} was defined at the top-level, the expression returned from \scheme{f} will only have access to top-level bindings. This can cause two problems. As we see in \texttt{context.rkt}, \scheme{x} is bound to \scheme{#f} at the top level, so filling the hole with \scheme{x} would cause a run-time error to occur. Even an auto-completer that was smart enough to get around the dynamic typing problem by only including bindings of the correct type would be fooled by this scenario. Thus the first problem is essentially a complication of the dynamic typing problem. However, if we remove the definition of \scheme{x} at the top-level, then there would be no binding for \scheme{x} available to the expression, which would cause a compile-time error.
+In \texttt{context.rkt}, \scheme{x} is bound to \scheme{5} within the \scheme{let}. By
+examining the source code, an auto-completer could give \scheme{x} as an option at the
+hole within the \scheme{let}. However, in this case the addition expression is passed to
+the \scheme{f} macro. This macro essentially replaces the context of the expression passed
+in with the context of \scheme{anchor}. Since \scheme{anchor} was defined at the
+top-level, the expression returned from \scheme{f} will only have access to top-level
+bindings. This can cause two problems. As we see in \texttt{context.rkt}, \scheme{x} is
+bound to \scheme{#f} at the top level, so filling the hole with \scheme{x} would cause a
+run-time error to occur. Even an auto-completer that was smart enough to get around the
+dynamic typing problem by only including bindings of the correct type would be fooled by
+this scenario. Thus the first problem is essentially a complication of the dynamic typing
+problem. However, if we remove the definition of \scheme{x} at the top-level, then there
+would be no binding for \scheme{x} available to the expression, which would cause a
+compile-time error.
 
 \begin{figure*}[t]
 \hrule
@@ -245,97 +358,223 @@ In \texttt{context.rkt}, \scheme{x} is bound to \scheme{5} within the \scheme{le
 \caption{Problems with Macros} \label{fig:macros}
 \end{figure*}
 
-\paragraph{} As shown, these language features make it especially hard to implement completion systems for such languages. Because of this, work in this area has focused on providing suggestions in a similar way to static completers. Because validation efforts for such completers are minimum, improvements to such systems relies on user complaints, and implementing new systems correctly is hard at best.
+\paragraph{} As shown, these language features make it especially hard to implement
+completion systems for such languages. Because of this, work in this area has focused on
+providing suggestions in a similar way to static completers. Because validation efforts
+for such completers are minimum, improvements to such systems relies on user complaints,
+and implementing new systems correctly is hard at best.
 
 \chapter{Related Work}
 
-Some commercial and research completion systems have been implemented for dynamically-typed languages such as PHP and JavaScript \cite{Mapping, Semantic, Vs.php, JScript}. These systems use knowledge about the structure of the language to complete common constructs such as functions, objects, and variables. Dynamic information is either ignored or else semantic analysis and type inference is used to statically determine as much information as possible. None of these systems provide or document any sort of testing or validation framework.
+Some commercial and research completion systems have been implemented for
+dynamically-typed languages such as PHP and JavaScript \cite{Mapping, Semantic, Vs.php,
+JScript}. These systems use knowledge about the structure of the language to complete
+common constructs such as functions, objects, and variables. Dynamic information is either
+ignored or else semantic analysis and type inference is used to statically determine as
+much information as possible. None of these systems provide or document any sort of
+testing or validation framework.
 
-For traditional completion systems, many possible improvements have been explored over the traditional alphabetical sorting of all possible suggestions. The jungloid mining approach~\cite{Jungloid} uses intimate knowledge about the Java type system, library and API functions, example code, and the current context of the program to suggest ways to get from one type to another type through intermediate steps. Bcc~\cite{BCC} sorts by Java type starting with methods provided from the declared type and then up the type hierarchy until the base Object class. It also allows for custom filters to be specified by the programmer. The abbreviated input approach\cite{Abbreviated} takes abbreviated input instead of prefixes and uses a hidden Markov model to determine what was meant. For example, the expression \texttt{ch.opn(n)} would turn into \texttt{chooser.showOpenDialog(null)}. The program history approach~\cite{History} tracks all changes to the codebase and prioritizes suggestions based on how recently methods and objects have been changed. The examples approach~\cite{Examples} uses existing code (such as the Eclipse code base) as training data to implement three different completion systems. The first orders suggestions based on how frequently they are used. The second uses limited context information to create association rules that govern suggestion order. For instance, one rule might be that after objects are created, suggest setters on those objects. The third gathers context and uses a modification of the k-nearest-neighbor algorithm to order suggestions based on the nearest snippets found in the training data.
+For traditional completion systems, many possible improvements have been explored over the
+traditional alphabetical sorting of all possible suggestions. The jungloid mining
+approach~\cite{Jungloid} uses intimate knowledge about the Java type system, library and
+API functions, example code, and the current context of the program to suggest ways to get
+from one type to another type through intermediate steps. Bcc~\cite{BCC} sorts by Java
+type starting with methods provided from the declared type and then up the type hierarchy
+until the base Object class. It also allows for custom filters to be specified by the
+programmer. The abbreviated input approach\cite{Abbreviated} takes abbreviated input
+instead of prefixes and uses a hidden Markov model to determine what was meant. For
+example, the expression \texttt{ch.opn(n)} would turn into
+\texttt{chooser.showOpenDialog(null)}. The program history approach~\cite{History} tracks
+all changes to the codebase and prioritizes suggestions based on how recently methods and
+objects have been changed. The examples approach~\cite{Examples} uses existing code (such
+as the Eclipse code base) as training data to implement three different completion
+systems. The first orders suggestions based on how frequently they are used. The second
+uses limited context information to create association rules that govern suggestion order.
+For instance, one rule might be that after objects are created, suggest setters on those
+objects. The third gathers context and uses a modification of the k-nearest-neighbor
+algorithm to order suggestions based on the nearest snippets found in the training data.
 
-Most validation techniques ran their systems on modified existing code and ranked the results in some way. The authors of the abbreviated input paper~\cite{Abbreviated} ran their system on 3000 lines of code from 6 open source projects that were turned into acronym-like abbreviations. They measured how many lines could be completed and how many of those were in the top-N (i.e. top-1 or top-5) suggested completions. Hou and Pletcher~\cite{Towards} ran their completion system at every Swing method in several open source projects. They ranked how high in the suggestions list the actual method appeared and added all rankings together to get an overall ranking for the system. The program history paper~\cite{History} ran their completion system between every recorded change operation (defined as a change in the AST) on a project of theirs called SpyWare. They then recorded what percentage of actual methods were in the top-N suggestions. Lastly, the examples paper~\cite{Examples} used the Eclipse code base and randomly split the code into 90\% training data and 10\% test data. They then took out half of the Swing method calls in the test data and ran their completion system in each hole. They measured recall, which is how often a used method was in the suggestion list, and precision, which is what fraction of suggested methods were actually used. They then combined these two measures into an F1-measure to give an overall grade to a system.
+Most validation techniques ran their systems on modified existing code and ranked the
+results in some way. The authors of the abbreviated input paper~\cite{Abbreviated} ran
+their system on 3000 lines of code from 6 open source projects that were turned into
+acronym-like abbreviations. They measured how many lines could be completed and how many
+of those were in the top-N (i.e. top-1 or top-5) suggested completions. Hou and
+Pletcher~\cite{Towards} ran their completion system at every Swing method in several open
+source projects. They ranked how high in the suggestions list the actual method appeared
+and added all rankings together to get an overall ranking for the system. The program
+history paper~\cite{History} ran their completion system between every recorded change
+operation (defined as a change in the AST) on a project of theirs called SpyWare. They
+then recorded what percentage of actual methods were in the top-N suggestions. Lastly, the
+examples paper~\cite{Examples} used the Eclipse code base and randomly split the code into
+90\% training data and 10\% test data. They then took out half of the Swing method calls
+in the test data and ran their completion system in each hole. They measured recall, which
+is how often a used method was in the suggestion list, and precision, which is what
+fraction of suggested methods were actually used. They then combined these two measures
+into an F1-measure to give an overall grade to a system.
 
-The lack of testing done on dynamic auto-completers helped emphasize the need for a validation system for such languages. The testing done on most static auto-completers inspired the use of random testing on existing code. The metrics they used are all similar and helped define metrics in a way that works best for such validation systems. Lastly, although a lot of improvements were type-system specific, some methods inspired ideas for completion approximation methods implemented as part of this thesis.
+The lack of testing done on dynamic auto-completers helped emphasize the need for a
+validation system for such languages. The testing done on most static auto-completers
+inspired the use of random testing on existing code. The metrics they used are all similar
+and helped define metrics in a way that works best for such validation systems. Lastly,
+although a lot of improvements were type-system specific, some methods inspired ideas for
+completion approximation methods implemented as part of this thesis.
 
 \chapter{Implementation}
 
-There are two major metrics to be considered when testing code completion. The first is how well a completer can get expected results near the top of the list. The second is how well a completer can keep failing results out of the list. I wrote a separate testing framework for each of these metrics, both of which use common base functionality.
+There are two major metrics to be considered when testing code completion. The first is
+how well a completer can get expected results near the top of the list. The second is how
+well a completer can keep failing results out of the list. I wrote a separate testing
+framework for each of these metrics, both of which use common base functionality.
 
 \section{Foundation}
 
-There are two main ways to tell whether code completion meets users' needs. One is to do user studies or get feedback from users, while another is to measure completion results against existing code. Both are valuable and provide useful, although often different, information. The methods and value of the first approach are well known and beyond the scope of this work. Because so little has been done in the literature for dynamically-typed languages, this testing framework takes the second approach.
+There are two main ways to tell whether code completion meets users' needs. One is to do
+user studies or get feedback from users, while another is to measure completion results
+against existing code. Both are valuable and provide useful, although often different,
+information. The methods and value of the first approach are well known and beyond the
+scope of this work. Because so little has been done in the literature for
+dynamically-typed languages, this testing framework takes the second approach.
 
-In order to test against existing source, the source file must be tokenized. One way to do this is just to delimit on whitespace. However, since it is uncommon for data such as numbers and strings to use code completion, we decided to use the language grammar to only test valid identifiers.
+In order to test against existing source, the source file must be tokenized. One way to do
+this is just to delimit on whitespace. However, since it is uncommon for data such as
+numbers and strings to use code completion, we decided to use the language grammar to only
+test valid identifiers.
 
-I used Racket's built-in reader to tokenize existing Racket source. I take the results of the reader and store each identifier along with source location in a word structure. This identifier+location structure is what is used in all of the testing.
+I used Racket's built-in reader to tokenize existing Racket source. I take the results of
+the reader and store each identifier along with source location in a word structure. This
+identifier+location structure is what is used in all of the testing.
 
-Since testing every token of every source file can take a very long time when the amount of source code is large, we used randomized testing to save time while still collecting representative data. To do this, I collect all of the identifiers from a file as described above and then randomly choose a percentage of those tokens to test against.
+Since testing every token of every source file can take a very long time when the amount
+of source code is large, we used randomized testing to save time while still collecting
+representative data. To do this, I collect all of the identifiers from a file as described
+above and then randomly choose a percentage of those tokens to test against.
 
-When an identifier from the original source is tested, the source file can be modified in several ways. We chose two simple ways to modify the source. The first way is to simply remove the token from the source file, which represents modifying or maintaining existing source code. The second way is to truncate the source file from the chosen identifier, which represents writing new source code.
+When an identifier from the original source is tested, the source file can be modified in
+several ways. We chose two simple ways to modify the source. The first way is to simply
+remove the token from the source file, which represents modifying or maintaining existing
+source code. The second way is to truncate the source file from the chosen identifier,
+which represents writing new source code.
 
 \section{Ranker}
 
-For a given token in a source file, the ranker will modify the file at that position, either by removing or truncating as described above, and then invoke an auto-completer to get a list of completion results. It then compares the list of results to the original token, which represents the programmer's intent. If the original token is found in the first five results, its rank is recorded. It is also noted whether the original token is found later in the list or not at all.
+For a given token in a source file, the ranker will modify the file at that position,
+either by removing or truncating as described above, and then invoke an auto-completer to
+get a list of completion results. It then compares the list of results to the original
+token, which represents the programmer's intent. If the original token is found in the
+first five results, its rank is recorded. It is also noted whether the original token is
+found later in the list or not at all.
 
-This method of testing completion results allows changes affecting the number and location of results to be checked quantifiably and consistently.
+This method of testing completion results allows changes affecting the number and location
+of results to be checked quantifiably and consistently.
 
 \section{Checker}
 
-Similar to the ranker, the checker asks an auto-completer for a list of completions from a modified source file. However, instead of checking against the original token, the original token is replaced by one of the completion results, and the resulting program is compiled and run. If the program runs to completion, the completion results is recorded as a success. If the program fails to compile or terminates for any reason, the type of error is recorded.
+Similar to the ranker, the checker asks an auto-completer for a list of completions from a
+modified source file. However, instead of checking against the original token, the
+original token is replaced by one of the completion results, and the resulting program is
+compiled and run. If the program runs to completion, the completion results is recorded as
+a success. If the program fails to compile or terminates for any reason, the type of error
+is recorded.
 
-This method allows auto-completers to test how top completion results fail for different methods of completion. With this information, targeted changes can help reduce certain types of failures.
+This method allows auto-completers to test how top completion results fail for different
+methods of completion. With this information, targeted changes can help reduce certain
+types of failures.
 
 \chapter{Verification}
 
-To verify the rigor and correctness of the testing framework, we ran it against several large real-world Racket packages. Frog is a static website generator, mainly used for generating and updating blogs. Marketplace is a network-aware programming language that handles many problems inherent with distributed programming. Pfds is an implementation of many purely functional data structures written in Typed-Racket.
+To verify the rigor and correctness of the testing framework, we ran it against several
+large real-world Racket packages. Frog is a static website generator, mainly used for
+generating and updating blogs. Marketplace is a network-aware programming language that
+handles many problems inherent with distributed programming. Pfds is an implementation of
+many purely functional data structures written in Typed-Racket.
 
 \section{Method Descriptions}
 
 \subsection{Textual Heuristics}
 
-Textual heuristics uses source code tokenization to determine which completions to suggest. Suggestions are prioritized based on proximity.
+Textual heuristics uses source code tokenization to determine which completions to
+suggest. Suggestions are prioritized based on proximity.
 
-The implementation is fairly straightforward. We just separate based on the language's defined delimiters by processing the whole text file with the following regular expression: \scheme{[^\s()[]",'`#|\;]+}
+The implementation is fairly straightforward. We just separate based on the language's
+defined delimiters by processing the whole text file with the following regular
+expression: \scheme{[^\s()[]",'`#|\;]+}
 
-The resulting strings and positions are combined into the word struct. When the completer is invoked at a specific position, these results are prioritized based on the following sort order:
+The resulting strings and positions are combined into the word struct. When the completer
+is invoked at a specific position, these results are prioritized based on the following
+sort order:
 
-\scheme{s(w1, w2) = |(w1 position) - (completer position)| < |(w2 position) - (completer position)|}
+\scheme{s(w1, w2) = |(w1 position) - (completer position)| < |(w2 position) - (completer
+position)|}
 
 \subsection{Structural Heuristics}
 
-The structure of the language can give good hints about how to filter and prioritize completion suggestions. The two ways we did this for Racket are by nesting level and by keywords and position.
+The structure of the language can give good hints about how to filter and prioritize
+completion suggestions. The two ways we did this for Racket are by nesting level and by
+keywords and position.
 
-For nesting level, we took each word returned by the textual heuristics method and attached nesting level information to it. We did this by starting at the beginning of the file and keeping track of how many parentheses and brackets had passed. The nesting level was incremented for each opening parenthesis or bracket and decremented for each closing.
+For nesting level, we took each word returned by the textual heuristics method and
+attached nesting level information to it. We did this by starting at the beginning of the
+file and keeping track of how many parentheses and brackets had passed. The nesting level
+was incremented for each opening parenthesis or bracket and decremented for each closing.
 
-This nesting information was then used to prioritize results. Suggestions were ordered based on the difference in nesting level between the current position at completion invocation and each suggestion.
+This nesting information was then used to prioritize results. Suggestions were ordered
+based on the difference in nesting level between the current position at completion
+invocation and each suggestion.
 
-For language keywords, a regular expression was used to find all function names based on the \scheme{define} and \scheme{let} keywords. We then determined whether the position of the completer invocation was in function application position. In Racket this is a simple check: if the position is directly after an opening parenthesis, it is in function application position. If this was the case, all function names we found previously were prioritized ahead of all other tokens.
+For language keywords, a regular expression was used to find all function names based on
+the \scheme{define} and \scheme{let} keywords. We then determined whether the position of
+the completer invocation was in function application position. In Racket this is a simple
+check: if the position is directly after an opening parenthesis, it is in function
+application position. If this was the case, all function names we found previously were
+prioritized ahead of all other tokens.
 
 \subsection{Macro Heuristics}
 
-As we've discussed, macros can do arbitrary things to the source code. However, many macros come as part of the language, so we can take advantage of the knowledge of what to expect.
+As we've discussed, macros can do arbitrary things to the source code. However, many
+macros come as part of the language, so we can take advantage of the knowledge of what to
+expect.
 
-Because auto-completers are focused on identifiers more than functionality, it makes sense to limit macro heuristics to macros that introduce new identifiers. In Racket, the most common of these are \scheme{#lang}, \scheme{require}, and \scheme{define-struct}.
+Because auto-completers are focused on identifiers more than functionality, it makes sense
+to limit macro heuristics to macros that introduce new identifiers. In Racket, the most
+common of these are \scheme{#lang}, \scheme{require}, and \scheme{define-struct}.
 
-The implementation makes use of Racket namespaces and dynamic evaluation. For both \scheme{#lang} and \scheme{require}, we find macros of this kind using a regular expression and then \scheme{dynamic-require} them into a new empty namespace. The resulting list of mapped symbols in that namespace is the list of identifiers introduced by those macros.
+The implementation makes use of Racket namespaces and dynamic evaluation. For both
+\scheme{#lang} and \scheme{require}, we find macros of this kind using a regular
+expression and then \scheme{dynamic-require} them into a new empty namespace. The
+resulting list of mapped symbols in that namespace is the list of identifiers introduced
+by those macros.
 
-With structs, we again find uses by processing the file with a regular expression. However, because there is no pre-defined form for dynamically creating structs, it is necessary to \scheme{eval} the resulting forms in a new namespace. Again, the resulting identifiers are queried from the namespace and added to the previous list.
+With structs, we again find uses by processing the file with a regular expression.
+However, because there is no pre-defined form for dynamically creating structs, it is
+necessary to \scheme{eval} the resulting forms in a new namespace. Again, the resulting
+identifiers are queried from the namespace and added to the previous list.
 
 \subsection{Macro Analysis}
 
-The only sure way to know what identifiers are available in the presence of the problems listed above is to fully expand and link the program. The downside to this is that the source has to be compilable for this to work. The upside is that the information gained is the most accurate.
+The only sure way to know what identifiers are available in the presence of the problems
+listed above is to fully expand and link the program. The downside to this is that the
+source has to be compilable for this to work. The upside is that the information gained is
+the most accurate.
 
-Because getting any results requires the file to compile without errors, we did not use the truncate source alteration method for any of these tests.
+Because getting any results requires the file to compile without errors, we did not use
+the truncate source alteration method for any of these tests.
 
-Racket source files can be expanded and compiled to byte code with \scheme{zo-parse}. The result of this process is .zo file that contains all the information needed to run the program.
+Racket source files can be expanded and compiled to byte code with \scheme{zo-parse}. The
+result of this process is .zo file that contains all the information needed to run the
+program.
 
-The two pieces of information we used for the completer were required identifiers and top level (or global) identifiers. These are tokens that could most likely be used at any point in the program.
+The two pieces of information we used for the completer were required identifiers and top
+level (or global) identifiers. These are tokens that could most likely be used at any
+point in the program.
 
 \subsection{Combined}
 
-We hypothesized that a select combination of all the above methods would give the best results. Because all of the methods could just be called one after the other, the real problem was deciding how to order them.
+We hypothesized that a select combination of all the above methods would give the best
+results. Because all of the methods could just be called one after the other, the real
+problem was deciding how to order them.
 
-We found the best results by putting nesting structural heuristics results first, then just appending the results of macro analysis in alphabetical order.
+We found the best results by putting nesting structural heuristics results first, then
+just appending the results of macro analysis in alphabetical order.
 
 \section{Ranker Results}
 
@@ -343,7 +582,8 @@ We found the best results by putting nesting structural heuristics results first
 \centering
 \hrule
 \includegraphics[width=1.0\textwidth]{../output/synthesis/ranker/Remove-combined.png}
-\caption{Ranking results. Ranked refers to completions in the top five positions. Missed means they weren't in the results at all.}
+\caption{Ranking results. Ranked refers to completions in the top five positions. Missed
+means they weren't in the results at all.}
 \label{ranker-combined}
 \end{figure}
 
@@ -355,15 +595,34 @@ We found the best results by putting nesting structural heuristics results first
 \label{ranker-uber-combined}
 \end{figure}
 
-Looking at the methods individually, the textual methods did a much better job than the macro methods at not only including expected tokens in the list of results, but also prioritizing them well. Even though macro heuristics and analysis suggested many of the correct tokens, almost none of the results were in the top five positions. This is mainly because textural heuristics are done on the source code, making different ordering algorithms easy to experiment with and use. On the other hand, macro heuristics and analysis are more meta by nature, not lending themselves to obvious sorting algorithms, leaving alphabetical the main alternative.
+Looking at the methods individually, the textual methods did a much better job than the
+macro methods at not only including expected tokens in the list of results, but also
+prioritizing them well. Even though macro heuristics and analysis suggested many of the
+correct tokens, almost none of the results were in the top five positions. This is mainly
+because textural heuristics are done on the source code, making different ordering
+algorithms easy to experiment with and use. On the other hand, macro heuristics and
+analysis are more meta by nature, not lending themselves to obvious sorting algorithms,
+leaving alphabetical the main alternative.
 
-Among the textual methods, sorting by nesting level was by far the most effective. Of the tokens that correctly made it into the list of results, nearly 45% of them were ranked in the top five, as opposed to less than 25% for the other two textual methods.
+Among the textual methods, sorting by nesting level was by far the most effective. Of the
+tokens that correctly made it into the list of results, nearly 45% of them were ranked in
+the top five, as opposed to less than 25% for the other two textual methods.
 
-Of the macro methods, macro analysis did roughly 25% better than macro heuristics. This makes sense as macro analysis is actually compiling the code to get fully expanded macros as well as all external dependencies. However, the fact that macro heuristics did so well in comparison makes it a good fallback for when the code is in an uncompilable state.
+Of the macro methods, macro analysis did roughly 25% better than macro heuristics. This
+makes sense as macro analysis is actually compiling the code to get fully expanded macros
+as well as all external dependencies. However, the fact that macro heuristics did so well
+in comparison makes it a good fallback for when the code is in an uncompilable state.
 
-It is also interesting to note that truncating the text (as opposed to simply removing the token) adversely affected the textual methods as expected, but the macro methods were barely affected at all.
+It is also interesting to note that truncating the text (as opposed to simply removing the
+token) adversely affected the textual methods as expected, but the macro methods were
+barely affected at all.
 
-Since macro analysis did better in the macro camp and nesting level did better in the textual camp, we decided to combine the two. Nesting level did much better at ordering, so those results were ordered first, with macro analysis results appended. The results were that the results showing up in the top five spots stayed about the same, whereas the results that didn't show up at all were decreased by about 75%. This shows that the results provided by the two methods were significantly non-overlapping.
+Since macro analysis did better in the macro camp and nesting level did better in the
+textual camp, we decided to combine the two. Nesting level did much better at ordering, so
+those results were ordered first, with macro analysis results appended. The results were
+that the results showing up in the top five spots stayed about the same, whereas the
+results that didn't show up at all were decreased by about 75%. This shows that the
+results provided by the two methods were significantly non-overlapping.
 
 \section{Checker Results}
 
@@ -383,29 +642,82 @@ Since macro analysis did better in the macro camp and nesting level did better i
 \label{checker-truncate-percent}
 \end{figure}
 
-Because the checker checks the first five results for success or failure, it is expected that the success rate of the checker would to a certain degree follow the success rate of the ranker. Therefore, it is not surprising that the textual methods had a higher success rate than the macro methods.
+Because the checker checks the first five results for success or failure, it is expected
+that the success rate of the checker would to a certain degree follow the success rate of
+the ranker. Therefore, it is not surprising that the textual methods had a higher success
+rate than the macro methods.
 
-It is interesting to note that, among the textual methods, the function keywords approach led to the least failures. This makes sense because it is not unlikely to have multiple functions that take the same number and type of arguments, thus allowing the program to run without crashing (although likely with incorrect end results).
+It is interesting to note that, among the textual methods, the function keywords approach
+led to the least failures. This makes sense because it is not unlikely to have multiple
+functions that take the same number and type of arguments, thus allowing the program to
+run without crashing (although likely with incorrect end results).
 
-The type of the top occurring error for each method is also instructive. For the textual methods, the top occurring error by far is using unbound identifiers. This makes sense because the completer is using every token in the file to present completion results, and many of them will not be bound at all or will be bound in a local context. The function keywords approach had the least percentage of unbound identifier failures (28% as opposed to 32% and 34%), which makes sense because functions are often defined at the top level, making them available anywhere in the module.
+The type of the top occurring error for each method is also instructive. For the textual
+methods, the top occurring error by far is using unbound identifiers. This makes sense
+because the completer is using every token in the file to present completion results, and
+many of them will not be bound at all or will be bound in a local context. The function
+keywords approach had the least percentage of unbound identifier failures (28% as opposed
+to 32% and 34%), which makes sense because functions are often defined at the top level,
+making them available anywhere in the module.
 
-For the macro methods, the top occurring errors were syntax errors, which happened about twice as much as unbound identifier errors. This is instructive and expected because the point of the macro methods is to bring in globally available identifiers from external sources such as ones provided by the language itself or by imported modules, so incorrect use of them is most likely to be syntax related.
+For the macro methods, the top occurring errors were syntax errors, which happened about
+twice as much as unbound identifier errors. This is instructive and expected because the
+point of the macro methods is to bring in globally available identifiers from external
+sources such as ones provided by the language itself or by imported modules, so incorrect
+use of them is most likely to be syntax related.
 
-The results didn't show much difference between removing tokens and truncating the file as far as failures go. The one interesting thing to note is that the success percentage actually went up by truncating text for the function keywords method. This could mean that because the truncated file had fewer functions to choose from, the likelihood that one of them would match the calling function signature would be higher. However, it also suggests that functions are generally used after the definition, so truncating later functions tends to prune the number of incorrect functions.
+The results didn't show much difference between removing tokens and truncating the file as
+far as failures go. The one interesting thing to note is that the success percentage
+actually went up by truncating text for the function keywords method. This could mean that
+because the truncated file had fewer functions to choose from, the likelihood that one of
+them would match the calling function signature would be higher. However, it also suggests
+that functions are generally used after the definition, so truncating later functions
+tends to prune the number of incorrect functions.
 
 \chapter{Conclusions}
 
-There is little to no formal testing of auto-completion systems in the literature. Without testing frameworks such as the one implemented in this thesis, knowing how well the completer performs and what improvements will give the best results is hard at best, requiring user studies or user feedback from actual users. To show the value a testing framework can provide, we ran different completion methods against the testing framework and compared the results to our initial hypotheses about the relative value of the methods.
+There is little to no formal testing of auto-completion systems in the literature. Without
+testing frameworks such as the one implemented in this thesis, knowing how well the
+completer performs and what improvements will give the best results is hard at best,
+requiring user studies or user feedback from actual users. To show the value a testing
+framework can provide, we ran different completion methods against the testing framework
+and compared the results to our initial hypotheses about the relative value of the
+methods.
 
-Our initial guess was that textural heuristics would be the least useful, and that structural heuristics and macro heuristics/analysis would be equally better than textual heuristics. By analyzing the results of the testing framework, we realize that macro heuristics/analysis is significantly worse than the textual methods, and that textual heuristics only performed slightly worse than structural heuristics. This data can help lead to the important conclusion that most tokens used are already somewhere else in the same source file. This conclusion can then lead to more informed decisions about how best to improve the completer and its results.
+Our initial guess was that textural heuristics would be the least useful, and that
+structural heuristics and macro heuristics/analysis would be equally better than textual
+heuristics. By analyzing the results of the testing framework, we realize that macro
+heuristics/analysis is significantly worse than the textual methods, and that textual
+heuristics only performed slightly worse than structural heuristics. This data can help
+lead to the important conclusion that most tokens used are already somewhere else in the
+same source file. This conclusion can then lead to more informed decisions about how best
+to improve the completer and its results.
 
-Although macro heuristics/analysis performed significantly worse on their own than textual methods, we were correct in assuming that combining the two methods would give better results. Analyzing the data from the testing framework also helped reveal the fact that, although macro methods didn't do extremely well on their own, the subset of completions they provide is significantly non-overlapping to the subset of completions the textual methods provide. By combining the best of both categories, the number of tokens that simply didn't appear in the completion list was reduced by a significant 75%.
+Although macro heuristics/analysis performed significantly worse on their own than textual
+methods, we were correct in assuming that combining the two methods would give better
+results. Analyzing the data from the testing framework also helped reveal the fact that,
+although macro methods didn't do extremely well on their own, the subset of completions
+they provide is significantly non-overlapping to the subset of completions the textual
+methods provide. By combining the best of both categories, the number of tokens that
+simply didn't appear in the completion list was reduced by a significant 75%.
 
-Data from checking completions for errors can also be valuable in catching bugs and making informed decisions. For instance, when analyzing the data from the testing framework, we noticed that the top occurring error for the function keyword method didn't really make sense. The ensuing investigation led to the discovery and fixing of a bug in the regular expression used to find function names in the \scheme{let} form.
+Data from checking completions for errors can also be valuable in catching bugs and making
+informed decisions. For instance, when analyzing the data from the testing framework, we
+noticed that the top occurring error for the function keyword method didn't really make
+sense. The ensuing investigation led to the discovery and fixing of a bug in the regular
+expression used to find function names in the \scheme{let} form.
 
-Comparing the results of the ranking part of the test framework to the error checking part can also lead to making informed decisions based on the priorities of the completer. For instance, while the nesting method performed better at ranking results, the function keyword method did better at not suggesting failing results. Different priorities can lead to different informed decisions about where to invest resources.
+Comparing the results of the ranking part of the test framework to the error checking part
+can also lead to making informed decisions based on the priorities of the completer. For
+instance, while the nesting method performed better at ranking results, the function
+keyword method did better at not suggesting failing results. Different priorities can lead
+to different informed decisions about where to invest resources.
 
-In general, we found that the data provided by a testing framework is valuable data that can lead to making more informed decisions about the direction of the completion system. Although user testing and resulting feedback is very valuable, having an automated testing framework can be invaluable in making early informed decisions that can save time and money.
+In general, we found that the data provided by a testing framework is valuable data that
+can lead to making more informed decisions about the direction of the completion system.
+Although user testing and resulting feedback is very valuable, having an automated testing
+framework can be invaluable in making early informed decisions that can save time and
+money.
 
 \bibliographystyle{plainnat}
 \bibliography{bib}
