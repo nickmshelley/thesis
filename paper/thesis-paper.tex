@@ -99,7 +99,7 @@ This information will be used to guide the development and evolution of a comple
 
 \chapter{Introduction}
 
-\paragraph{Thesis Statement} For auto-completers for languages like Racket, structural heuristics and macro heuristics perform better than textural heuristics, and when combined perform better than either alone.
+\paragraph{Thesis Statement} For auto-completers for languages like Racket, textual and structural heuristics perform better than macro heuristics and analyses, and when combined perform better than either alone.
 Macro heuristics perform almost equivalent to macro analyses, and structural heuristic performance varies depending on editing mode.
 
 \paragraph{} The main purpose of autocompletion is to improve programmer productivity.
@@ -353,49 +353,59 @@ Lastly, although a lot of improvements were type-system specific, some methods i
 
 \chapter{Implementation}
 
-There are two major metrics to be considered when testing code completion.
-The first is how well a completer can get expected results near the top of the list.
-The second is how well a completer can keep failing results out of the list.
-I wrote a separate testing framework for each of these metrics, both of which use common base functionality.
+Very little formal testing has been done in the area of code completion for languages like Racket, leaving a need for formal testing in this area.
+There are several viable solutions to the testing problem.
+One set of methods includes performing user studies or collecting user feedback from using the product.
+Another set of methods includes using existing source code as a baseline for correct completer results.
+This set could include seeing where existing source tokens are ordered in a list of potential completer results as well as checking whether completer results cause a program to fail.
 
-\section{Foundation}
+We implement the latter set of methods for several reasons.
+First, methods involving user testing or feedback require products to be in a workable state, making continuous testing feedback more difficult.
+Second, these methods are more costly and time consuming than the latter methods.
+Last, much more is known in the literature about the first set of methods, whereas little has been done to show how automated testing can help completers for languages such as Racket.
 
-There are two main ways to tell whether code completion meets users' needs.
-One is to do user studies or get feedback from users, while another is to measure completion results against existing code.
-Both are valuable and provide useful, although often different, information.
-The methods and value of the first approach are well known and beyond the scope of this work.
-Because so little has been done in the literature for dynamically-typed languages, this testing framework takes the second approach.
+\section{Existing Source}
 
 In order to test against existing source, the source file must be tokenized.
 One way to do this is just to delimit on whitespace.
-However, since it is uncommon for data such as numbers and strings to use code completion, we decided to use the language grammar to only test valid identifiers.
+However, since it is uncommon for data such as numbers and strings to use code completion, we use the language grammar to only test valid identifiers.
 
-I used Racket's built-in reader to tokenize existing Racket source.
-I take the results of the reader and store each identifier along with source location in a word structure.
-This identifier+location structure is what is used in all of the testing.
+Since testing every token of every source file can take a very long time when the amount of source code is large, we use randomized testing to save time while still collecting representative data.
+To do this, we collect all of the tokens from a file, excluding data such as strings and numbers. 
+We then randomly choose a percentage of those tokens to test against.
 
-Since testing every token of every source file can take a very long time when the amount of source code is large, we used randomized testing to save time while still collecting representative data.
-To do this, I collect all of the identifiers from a file as described above and then randomly choose a percentage of those tokens to test against.
+There are many ways a source file can be modified.
+One way is to create a new source file and begin filling it with code.
+Another is to take an existing source file and either add more source or modify the existing source.
+In order to use existing source as test data, the original source must be modified to remove one or more tokens at which point the completer will be run.
+We choose two simple ways to modify the source.
+The first way is to truncate the source file from the chosen identifier, which represents writing new source code.
+The second way is to simply remove the token from the source file, which represents modifying or maintaining existing source code.
 
-When an identifier from the original source is tested, the source file can be modified in several ways.
-We chose two simple ways to modify the source.
-The first way is to simply remove the token from the source file, which represents modifying or maintaining existing source code.
-The second way is to truncate the source file from the chosen identifier, which represents writing new source code.
+\section{Testing Framework}
 
-\section{Ranker}
+There are two main ways that existing source can be used to verify completion results.
+The first is to check the occurrence and rank of existing source tokens.
+This requires the assumption that the programmer wrote what they intended.
+The second is to check that completion suggestions do not break the program.
+This requires the assumption that existing source can be compiled and run without errors.
+We implement both methods of verification in our automated testing framework.
+
+\subsection*{Ranker}
 
 For a given token in a source file, the ranker will modify the file at that position, either by removing or truncating as described above, and then invoke an auto-completer to get a list of completion results.
 It then compares the list of results to the original token, which represents the programmer's intent.
-If the original token is found in the first five results, its rank is recorded.
+If the original token is found in the first n results (a configurable number), its rank is recorded.
 It is also noted whether the original token is found later in the list or not at all.
+For the sake of time and simplicity, we choose n to be 5.
 
 This method of testing completion results allows changes affecting the number and location of results to be checked quantifiably and consistently.
 
-\section{Checker}
+\subsection*{Checker}
 
 Similar to the ranker, the checker asks an auto-completer for a list of completions from a modified source file.
 However, instead of checking against the original token, the original token is replaced by one of the completion results, and the resulting program is compiled and run.
-If the program runs to completion, the completion results is recorded as a success.
+If the program runs to completion, the completion result is recorded as a success.
 If the program fails to compile or terminates for any reason, the type of error is recorded.
 
 This method allows auto-completers to test how top completion results fail for different methods of completion.
