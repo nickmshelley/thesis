@@ -362,7 +362,7 @@ This set could include seeing where existing source tokens are ordered in a list
 We implement the latter set of methods for several reasons.
 First, methods involving user testing or feedback require products to be in a workable state, making continuous testing feedback more difficult.
 Second, these methods are more costly and time consuming than the latter methods.
-Last, much more is known in the literature about the first set of methods, whereas little has been done to show how automated testing can help completers for languages such as Racket.
+Last, much more is known in the literature about the first set of methods, whereas little has been done to show how automated testing can help completers for languages such as Racket, thus making our work more of a contribution to the field.
 
 \section{Existing Source}
 
@@ -377,9 +377,12 @@ We then randomly choose a percentage of those tokens to test against.
 There are many ways a source file can be modified.
 One way is to create a new source file and begin filling it with code.
 Another is to take an existing source file and either add more source or modify the existing source.
+We predicted that the second case is easier to complete against because there was more information.
+We weren't surprised to find that this was true.
 In order to use existing source as test data, the original source must be modified to remove one or more tokens at which point the completer will be run.
 We choose two simple ways to modify the source.
-The first way is to truncate the source file from the chosen identifier, which represents writing new source code.
+The first way is to truncate the source file after the chosen identifier.
+This represents writing new source code because if the file were being written from scratch, there would be nothing after the token.
 The second way is to simply remove the token from the source file, which represents modifying or maintaining existing source code.
 
 \section{Testing Framework}
@@ -395,9 +398,9 @@ We implement both methods of verification in our automated testing framework.
 
 For a given token in a source file, the ranker will modify the file at that position, either by removing or truncating as described above, and then invoke an auto-completer to get a list of completion results.
 It then compares the list of results to the original token, which represents the programmer's intent.
-If the original token is found in the first n results (a configurable number), its rank is recorded.
+If the original token is found in the first $n$ results (a configurable number), its rank is recorded.
 It is also noted whether the original token is found later in the list or not at all.
-For the sake of time and simplicity, we choose n to be 5.
+In the graphs and data presented, $n = 5$.
 
 This method of testing completion results allows changes affecting the number and location of results to be checked quantifiably and consistently.
 
