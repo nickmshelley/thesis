@@ -434,7 +434,12 @@ The second category attempts to solve or mitigate the problems presented to comp
 
 \subsection{Textual Heuristics}
 
+One obvious source of potential completion options if from the source file itself.
+We estimate that many correct completions can be pulled from the source file because much of programming is about naming pieces of code for convenient use.
+
 Textual heuristics uses source code tokenization of individual source files to determine which completions to suggest.
+A language-agnostic approach could suggest completions simply by separating on whitespace.
+We choose to improve results by using limited information about the language.
 This method uses the language specification to ensure that only valid tokens are suggested and to filter data such as strings and numbers.
 Suggestions are prioritized based on proximity.
 
@@ -449,19 +454,25 @@ When the completer is invoked at a specific position, these results are prioriti
 \subsection{Structural Heuristics}
 
 The structure of the language can give good hints about how to filter and prioritize completion suggestions.
-The two ways we do this for Racket are by nesting level and by keywords and position.
+For instance, most languages have the concept of scope, where identifiers are only valid in a certain context.
+The syntax and keywords used to define and name pieces of code can also be instructive.
+We use Racket's syntax to sort completions by nesting level and by keywords and position.
 
-For nesting level, we took each word returned by the textual heuristics method and attached nesting level information to it.
-We did this by starting at the beginning of the file and keeping track of how many parentheses and brackets had passed.
-The nesting level was incremented for each opening parenthesis or bracket and decremented for each closing.
+In Racket, new scope is always introduced by an opening parenthesis, bracket, or brace.
+Using this knowledge, we can take each word returned by the textual heuristics method and attach nesting level information to it.
+We do this by starting at the beginning of the file and keeping track of how many parentheses and brackets have passed.
+The nesting level is incremented for each opening parenthesis or bracket and decremented for each closing.
 
-This nesting information was then used to prioritize results.
-Suggestions were ordered based on the difference in nesting level between the current position at completion invocation and each suggestion.
+This nesting information is then used to prioritize results.
+Suggestions are ordered based on the difference in nesting level between the current position at completion invocation and each suggestion.
 
-For language keywords, a regular expression was used to find all function names based on the \scheme{define} and \scheme{let} keywords.
-We then determined whether the position of the completer invocation was in function application position.
-In Racket this is a simple check: if the position is directly after an opening parenthesis, it is in function application position.
-If this was the case, all function names we found previously were prioritized ahead of all other tokens.
+Two common ways to define a function in Racket are with the form \scheme{(define (function-name args ...) body)} and with the form \scheme{(let function-name ([id init-expr] ...) body)}.
+The way to apply a function in Racket to a set of arguments is by following an opening parenthesis with the function name and its arguments, as in \scheme{(function-name args ...)}.
+This information can be used to prioritize certain completions above others, depending on file position.
+
+For language keywords, a regular expression is used to find all function names based on the \scheme{define} and \scheme{let} keywords.
+We then determine whether the position of the completer invocation was in function application position by checking if the position is directly after an opening parenthesis.
+If this is the case, all function names found with the keyword regular expression are prioritized ahead of all other tokens.
 
 \subsection{Macro Heuristics}
 
@@ -471,34 +482,36 @@ However, many macros come as part of the language, so we can take advantage of t
 Because auto-completers are focused on identifiers more than functionality, it makes sense to limit macro heuristics to macros that introduce new identifiers.
 In Racket, the most common of these are \scheme{#lang}, \scheme{require}, and \scheme{define-struct}.
 
-The implementation makes use of Racket namespaces and dynamic evaluation.
-For both \scheme{#lang} and \scheme{require}, we find macros of this kind using a regular expression and then \scheme{dynamic-require} them into a new empty namespace.
-The resulting list of mapped symbols in that namespace is the list of identifiers introduced by those macros.
+One potential way to accomplish this is to create and maintain a list of identifiers introduced by common modules.
+Besides being hard to gather and maintain, this approach is also not useful for collecting identifiers of private modules.
 
-With structs, we again find uses by processing the file with a regular expression.
-However, because there is no pre-defined form for dynamically creating structs, it is necessary to \scheme{eval} the resulting forms in a new namespace.
-Again, the resulting identifiers are queried from the namespace and added to the previous list.
+A better approach is to use introspection to determine what values are available at runtime.
+We do this by collecting instances of the above mentioned forms from the source file and then effectively running them in a sub-program.
+We can then query which identifiers are available to this sub-program and add those to the list of potential completions.
+
+Racket namespaces and dynamic evaluation make this relatively simple to do.
+After collecting instances of the above forms from the source code with a regular expression, we can dynamically run the resulting code to introduce the corresponding identifiers into our program.
+By using a new namespace, we can be certain that the current sub-program runtime identifiers are not interfering with the desired results.
 
 \subsection{Macro Analysis}
 
-The only sure way to know what identifiers are available in the presence of the problems listed above is to fully expand and link the program.
+The power of Racket's macro system makes it so all of the above methods have the possibility of either missing identifiers or including extraneous results, as described in the introduction.
+Therefore, the only sure way to know what identifiers are available is to fully expand and link the program.
 The downside to this is that the source has to be compilable for this to work.
 The upside is that the information gained is the most accurate.
 
-Because getting any results requires the file to compile without errors, we did not use the truncate source alteration method for any of these tests.
+Because getting any results requires the file to compile without errors, we do not use the truncate source alteration method for any of these tests.
 
-Racket source files can be expanded and compiled to byte code with \scheme{zo-parse}.
-The result of this process is .zo file that contains all the information needed to run the program.
-
+Racket source files can be expanded and compiled to byte code resulting in a file that contains all the information needed to run the program.
 The two pieces of information we used for the completer were required identifiers and top level (or global) identifiers.
 These are tokens that could most likely be used at any point in the program.
 
 \subsection{Combined}
 
-We hypothesized that a select combination of all the above methods would give the best results.
-Because all of the methods could just be called one after the other, the real problem was deciding how to order them.
+We hypothesize that a select combination of all the above methods would give the best results.
+Because all of the methods could just be called one after the other, the real problem is deciding how to order them.
 
-We found the best results by putting nesting structural heuristics results first, then just appending the results of macro analysis in alphabetical order.
+We found the best results by putting nesting structural heuristics results first, then appending the results of macro analysis in alphabetical order.
 
 \section{Ranker Results}
 
