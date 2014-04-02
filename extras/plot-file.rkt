@@ -7,8 +7,9 @@
 (struct rankings (filename ranked unranked missed) #:transparent)
 
 (module+ main
-  (produce-ranker-graphs)
-  (produce-checker-graphs))
+  (parameterize ([plot-font-size 17])
+    (produce-ranker-graphs)
+    (produce-checker-graphs)))
 
 (define (produce-checker-graphs)
   (define remove-results
@@ -92,7 +93,7 @@
    (format "/Users/heather/Nick/thesis/thesis/output/synthesis/checker/~a.png" name)
    #:title " "
    #:x-label " "
-   #:y-label "Percent"
+   #:y-label "Percent Passed"
    #:height GRAPH-HEIGHT
    #:width GRAPH-WIDTH))
 

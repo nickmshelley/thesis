@@ -556,7 +556,7 @@ This shows that the results provided by the two methods were significantly non-o
 \centering
 \hrule
 \includegraphics[width=1.0\textwidth]{../output/synthesis/checker/Remove-Percent.png}
-\caption{Results of checker using the token removal source alteration method.}
+\caption{Percent of checker runs without errors using the token removal source alteration method.}
 \label{checker-remove-percent}
 \end{figure}
 
@@ -564,7 +564,7 @@ This shows that the results provided by the two methods were significantly non-o
 \centering
 \hrule
 \includegraphics[width=1.0\textwidth]{../output/synthesis/checker/Truncate-Percent.png}
-\caption{Results of checker using the file truncate source alteration method.}
+\caption{Percent of checker runs without errors using the file truncate source alteration method.}
 \label{checker-truncate-percent}
 \end{figure}
 
@@ -602,16 +602,24 @@ Although macro heuristics/analysis performed significantly worse on their own th
 Analyzing the data from the testing framework also helped reveal the fact that, although macro methods didn't do extremely well on their own, the subset of completions they provide is significantly non-overlapping to the subset of completions the textual methods provide.
 By combining the best of both categories, the number of tokens that simply didn't appear in the completion list was reduced by a significant 75\%.
 
-Data from checking completions for errors can also be valuable in catching bugs and making informed decisions.
-For instance, when analyzing the data from the testing framework, we noticed that the top occurring error for the function keyword method didn't really make sense.
-The ensuing investigation led to the discovery and fixing of a bug in the regular expression used to find function names in the \scheme{let} form.
-
 Comparing the results of the ranking part of the test framework to the error checking part can also lead to making informed decisions based on the priorities of the completer.
 For instance, while the nesting method performed better at ranking results, the function keyword method did better at not suggesting failing results.
 Different priorities can lead to different informed decisions about where to invest resources.
 
 In general, we found that the data provided by a testing framework is valuable data that can lead to making more informed decisions about the direction of the completion system.
 Although user testing and resulting feedback is very valuable, having an automated testing framework can be invaluable in making early informed decisions that can save time and money.
+
+\section{Future Work}
+
+The testing framework collects a significant amount of raw data, but for the most part this data must be synthesized and displayed manually.
+It is probable that certain data from the set would be more useful in improving and iterating on completion systems.
+As these data patters arise, it would make sense for the testing framework to automatically extract and conveniently display this data every run.
+
+The macro heuristics and analysis methods barely scratched the surface of what information is available because of the power and complexity of the macro system.
+Although the macro heuristics method finds the most common macro patterns, there are many others that are ignored that may provide differing returns depending on the code the method is run on.
+
+The most beneficial work for the completers would probably come from improving the macro analysis method by gleaning more information from the bytecode.
+The bytecode has all of the information necessary to run the program, giving opportunity for more sophisticated methods of extracting and ordering the available completions.
 
 \bibliographystyle{plainnat}
 \bibliography{bib}
