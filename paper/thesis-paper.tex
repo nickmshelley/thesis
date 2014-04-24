@@ -177,7 +177,8 @@ Since the auto-completer can't statically know what type a function will return,
 \end{tabular}
 \vspace{0.5cm}
 \hrule
-\caption{Problems with Dynamic Typing} \label{fig:dynamic-type}
+\caption{Problems with Dynamic Typing}
+\label{fig:dynamic-type}
 \end{figure*}
 
 \section{First-class Functions}
@@ -227,7 +228,8 @@ However, because we don't know what function will be returned, we cannot bring u
 \end{tabular}
 \vspace{0.5cm}
 \hrule
-\caption{Problems with First-class Functions} \label{fig:first-class-functions}
+\caption{Problems with First-class Functions}
+\label{fig:first-class-functions}
 \end{figure*}
 
 \section{Powerful Macro System}
@@ -307,7 +309,8 @@ However, if we remove the definition of \scheme{x} at the top-level, then there 
 \end{tabular}
 \vspace{0.5cm}
 \hrule
-\caption{Problems with Macros} \label{fig:macros}
+\caption{Problems with Macros}
+\label{fig:macros}
 \end{figure*}
 
 \paragraph{} As shown, these language features make it especially hard to implement completion systems for such languages.
@@ -520,7 +523,7 @@ We found the best results by putting nesting structural heuristics results first
 \hrule
 \includegraphics[width=1.0\textwidth]{../output/synthesis/ranker/Remove-combined.png}
 \caption{Ranking results. Ranked refers to completions in the top five positions. Missed means they weren't in the results at all.}
-\label{ranker-combined}
+\label{fig:ranker-combined}
 \end{figure}
 
 \begin{figure}[h]
@@ -528,12 +531,18 @@ We found the best results by putting nesting structural heuristics results first
 \hrule
 \includegraphics[width=1.0\textwidth]{../output/synthesis/ranker/Remove-uber-combined.png}
 \caption{Pass/fail ranking results}
-\label{ranker-uber-combined}
+\label{fig:ranker-uber-combined}
 \end{figure}
+
+Figure~\ref{fig:ranker-combined} shows the results of the ranker.
+The ranked section shows how many tokens appeared in the top five suggestions for each method.
+The unranked section shows how many tokens were suggested anywhere in the list.
+The missed section shows how many tokens did not appear in the completion suggestions at all.
+Figure~\ref{fig:ranker-uber-combined} shows the same data, but combines the ranked and unranked sections into one hit section, focusing more on existence rather than order.
 
 Looking at the methods individually, the textual methods did a much better job than the macro methods at not only including expected tokens in the list of results, but also prioritizing them well.
 Even though macro heuristics and analysis suggested many of the correct tokens, almost none of the results were in the top five positions.
-This is mainly because textural heuristics are done on the source code, making different ordering algorithms easy to experiment with and use.
+This is mainly because textual heuristics are done on the source code, making different ordering algorithms easy to experiment with and use.
 On the other hand, macro heuristics and analysis are more meta by nature, not lending themselves to obvious sorting algorithms, leaving alphabetical the main alternative.
 
 Among the textual methods, sorting by nesting level was by far the most effective.
@@ -557,7 +566,7 @@ This shows that the results provided by the two methods were significantly non-o
 \hrule
 \includegraphics[width=1.0\textwidth]{../output/synthesis/checker/Remove-Percent.png}
 \caption{Percent of checker runs without errors using the token removal source alteration method.}
-\label{checker-remove-percent}
+\label{fig:checker-remove-percent}
 \end{figure}
 
 \begin{figure}[h]
@@ -565,8 +574,16 @@ This shows that the results provided by the two methods were significantly non-o
 \hrule
 \includegraphics[width=1.0\textwidth]{../output/synthesis/checker/Truncate-Percent.png}
 \caption{Percent of checker runs without errors using the file truncate source alteration method.}
-\label{checker-truncate-percent}
+\label{fig:checker-truncate-percent}
 \end{figure}
+
+Each original source token removed results in a list of completion suggestions.
+The checker replaces the token with a single suggestion and runs the resulting new program.
+If the program compiles and runs to completion without exceptions, the completion is considered a success.
+Otherwise, the run is marked as a failure.
+
+Figure~\ref{fig:checker-remove-percent} shows the percent of successful runs for each completion method when the removal source alteration method was used to modify the original source.
+Figure~\ref{fig:checker-truncate-percent} shows the same data, but for completions suggested after using the truncate source alteration method.
 
 Because the checker checks the first five results for success or failure, it is expected that the success rate of the checker would to a certain degree follow the success rate of the ranker.
 Therefore, it is not surprising that the textual methods had a higher success rate than the macro methods.
@@ -587,13 +604,31 @@ The one interesting thing to note is that the success percentage actually went u
 This could mean that because the truncated file had fewer functions to choose from, the likelihood that one of them would match the calling function signature would be higher.
 However, it also suggests that functions are generally used after the definition, so truncating later functions tends to prune the number of incorrect functions.
 
+\section{Summary}
+
+The purpose of the testing framework is to provide useful information about specific completion implementations.
+Implementing and analyzing several completion methods serves to validate the testing framework.
+
+Some things we discovered about the completion methods from running the testing framework include:
+
+\begin{itemize}
+
+\item Textual methods performed better than macro methods in general.
+\item Completions from textual methods and macro methods were largely non-overlapping.
+\item Combining methods improved results
+\item Results degraded with the truncate source alteration method.
+
+\end{itemize}
+
+Without a testing framework to test completion methods against, this information would be guesswork.
+
 \chapter{Conclusions}
 
 There is little to no formal testing of auto-completion systems in the literature.
 Without testing frameworks such as the one implemented in this thesis, knowing how well the completer performs and what improvements will give the best results is hard at best, requiring user studies or user feedback from actual users.
 To show the value a testing framework can provide, we ran different completion methods against the testing framework and compared the results to our initial hypotheses about the relative value of the methods.
 
-Our initial guess was that textural heuristics would be the least useful, and that structural heuristics and macro heuristics/analysis would be equally better than textual heuristics.
+Our initial guess was that textual heuristics would be the least useful, and that structural heuristics and macro heuristics/analysis would be equally better than textual heuristics.
 By analyzing the results of the testing framework, we realize that macro heuristics/analysis is significantly worse than the textual methods, and that textual heuristics only performed slightly worse than structural heuristics.
 This data can help lead to the important conclusion that most tokens used are already somewhere else in the same source file.
 This conclusion can then lead to more informed decisions about how best to improve the completer and its results.
