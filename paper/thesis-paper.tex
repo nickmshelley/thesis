@@ -544,19 +544,14 @@ We found the best results by putting nesting structural heuristics results first
 \label{fig:ranker-uber-combined}
 \end{figure}
 
-Figure~\ref{fig:ranker-combined} shows the results of the ranker.
-The ranked section shows how many tokens appeared in the top five suggestions for each method.
-The unranked section shows how many tokens were suggested anywhere in the list.
-The missed section shows how many tokens did not appear in the completion suggestions at all.
-Figure~\ref{fig:ranker-uber-combined} shows the same data, but combines the ranked and unranked sections into one hit section, focusing more on existence rather than order.
-
-Looking at the methods individually, the textual methods did a much better job than the macro methods at not only including expected tokens in the list of results, but also prioritizing them well.
-Even though macro heuristics and analysis suggested many of the correct tokens, almost none of the results were in the top five positions.
+Figure~\ref{fig:ranker-uber-combined} tells us that the textual methods did a much better job than the macro methods at including expected tokens in the list of results.
+In addition, we can see from figure~\ref{fig:ranker-combined} that the textual methods also did much better at prioritizing the list of suggested results.
+Even though macro heuristics and analysis suggested many of the correct tokens, almost none of the results were in the top five positions, which is what the ranked section of that graph shows.
 This is mainly because textual heuristics are done on the source code, making different ordering algorithms easy to experiment with and use.
 On the other hand, macro heuristics and analysis are more meta by nature, not lending themselves to obvious sorting algorithms, leaving alphabetical the main alternative.
 
 Among the textual methods, sorting by nesting level was by far the most effective.
-Of the tokens that correctly made it into the list of results, nearly 45\% of them were ranked in the top five, as opposed to less than 25\% for the other two textual methods.
+We can see from figure~\ref{fig:ranker-combined} that of the tokens that correctly made it into the list of results, nearly 45\% of them were ranked in the top five, as opposed to less than 25\% for the other two textual methods.
 
 Of the macro methods, macro analysis did roughly 25\% better than macro heuristics.
 This makes sense as macro analysis is actually compiling the code to get fully expanded macros as well as all external dependencies.
@@ -566,8 +561,9 @@ It is also interesting to note that truncating the text (as opposed to simply re
 
 Since macro analysis did better in the macro camp and nesting level did better in the textual camp, we decided to combine the two.
 Nesting level did much better at ordering, so those results were ordered first, with macro analysis results appended.
-The results were that the results showing up in the top five spots stayed about the same, whereas the results that didn't show up at all were decreased by about 75\%.
-This shows that the results provided by the two methods were significantly non-overlapping.
+Figure~\ref{fig:ranker-combined} shows how the results showing up in the top five spots stayed about the same.
+However, figure~\ref{fig:ranker-uber-combined} clearly shows the increased number of correct suggestions appearing in the list, while the results that didn't show up at all were significantly decreased by about 75\%.
+This shows that the results provided by the two types of methods were significantly non-overlapping.
 
 \section{Checker Results}
 
@@ -592,13 +588,10 @@ The checker replaces the token with a single suggestion and runs the resulting n
 If the program compiles and runs to completion without exceptions, the completion is considered a success.
 Otherwise, the run is marked as a failure.
 
-Figure~\ref{fig:checker-remove-percent} shows the percent of successful runs for each completion method when the removal source alteration method was used to modify the original source.
-Figure~\ref{fig:checker-truncate-percent} shows the same data, but for completions suggested after using the truncate source alteration method.
-
 Because the checker checks the first five results for success or failure, it is expected that the success rate of the checker would to a certain degree follow the success rate of the ranker.
-Therefore, it is not surprising that the textual methods had a higher success rate than the macro methods.
+As we can see from figure~\ref{fig:checker-remove-percent}, the percent of successful runs of completion suggestions is higher for the textual methods than the macro methods, which matches our expectation.
 
-It is interesting to note that, among the textual methods, the function keywords approach led to the least failures.
+Figure~\ref{fig:checker-remove-percent} also shows that, among the textual methods, the function keywords approach led to the least failures.
 This makes sense because it is not unlikely to have multiple functions that take the same number and type of arguments, thus allowing the program to run without crashing (although likely with incorrect end results).
 
 The type of the top occurring error for each method is also instructive.
@@ -609,7 +602,7 @@ The function keywords approach had the least percentage of unbound identifier fa
 For the macro methods, the top occurring errors were syntax errors, which happened about twice as much as unbound identifier errors.
 This is instructive and expected because the point of the macro methods is to bring in globally available identifiers from external sources such as ones provided by the language itself or by imported modules, so incorrect use of them is most likely to be syntax related.
 
-The results didn't show much difference between removing tokens and truncating the file as far as failures go.
+As we can see from figure~\ref{fig:checker-truncate-percent}, there isn't much difference between removing tokens and truncating the file as far as failures go.
 The one interesting thing to note is that the success percentage actually went up by truncating text for the function keywords method.
 This could mean that because the truncated file had fewer functions to choose from, the likelihood that one of them would match the calling function signature would be higher.
 However, it also suggests that functions are generally used after the definition, so truncating later functions tends to prune the number of incorrect functions.
