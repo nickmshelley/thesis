@@ -349,14 +349,16 @@ They then took out half of the Swing method calls in the test data and ran their
 They measured recall, which is how often a used method was in the suggestion list, and precision, which is what fraction of suggested methods were actually used.
 They then combined these two measures into an F1-measure to give an overall grade to a system.
 
-Several papers related to code completion but not immediately relavent to this thesis are described here.
+Several papers use methods that rely heavily on static information and context that is not feasible to get in Racket because of the reasons described in the introduction.
 One paper uses a database of API usage patterns to improve completion~\cite{Graph}.
 Another allows developers to customize inline documentation~\cite{Active}.
-Calcite~\cite{Calcite} suggests popular ways to instantiate a given class or interface.
 Similarly, another paper provides suggestions based on current structural context~\cite{StructuralContext}.
-Another paper explores the effects of sorting, filtering, and grouping~\cite{SortFilter}.
 Vertical Code Completion~\cite{Vertical} uses data mining to extract and suggest code patterns.
 One paper offers suggestions based on partial expressions written by programmers~\cite{Partial}.
+
+A few papers use methods that are orthogonal to this thesis, but could be starting points for potential future improvements.
+Calcite~\cite{Calcite} suggests popular ways to instantiate a given class or interface based on analysis of existing code.
+Another paper explores the effects of sorting, filtering, and grouping~\cite{SortFilter}.
 Finally, Automatic method completion~\cite{Automatic} attempts to take completion beyond names to function bodies as well.
 
 The lack of testing done on dynamic auto-completers helped emphasize the need for a validation system for such languages.
