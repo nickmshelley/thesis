@@ -1,4 +1,4 @@
-\documentclass[ms,electronic,twosidetoc,letterpaper,chaptercenter,parttop,lol,lof,lot]{byumsphd}
+\documentclass[ms,electronic,twosidetoc,letterpaper,chaptercenter,parttop,lof]{byumsphd}
 \usepackage{slatex}
 \usepackage{graphicx}
 \usepackage[
@@ -15,7 +15,7 @@
 \usepackage[numbers,sort&compress]{natbib}
 \usepackage{hypernat}
 
-\newcommand{\Title}{Autocompletion for the Rest of Us}
+\newcommand{\Title}{Autocompletion Without Static Typing}
 \newcommand{\Author}{Nick Shelley}
 \newcommand{\GraduationMonth}{August}
 \newcommand{\GraduationYear}{2014}
@@ -54,7 +54,7 @@ Because static type information makes these goals possible and feasible for qual
 It follows that almost all validation techniques for this work have focused on proving how well a completion system can put a desired result at the top of the list.
 However, because of the lack of static type information in dynamically-typed languages, achieving the aforementioned goals is much harder, and many of the completion suggestions may even result in compile-time or runtime crashes.
 Unfortunately, of the work done on creating completers for these languages, little validation work has been done, making it hard to determine what improvements can be made.
-This thesis will provide two validation techniques that will provide information both on how well completion suggestions are ordered and also which completion suggestions result in errors.
+This thesis provides two validation techniques that provide information both on how well completion suggestions are ordered and also which completion suggestions result in errors.
 This information will be used to guide the development and evolution of a completion system for the Racket programming language.
 }
 
@@ -99,8 +99,7 @@ This information will be used to guide the development and evolution of a comple
 
 \chapter{Introduction}
 
-\paragraph{Thesis Statement} For auto-completers for languages like Racket, textual and structural heuristics perform better than macro heuristics and analyses, and when combined perform better than either alone.
-Macro heuristics perform almost equivalent to macro analyses, and structural heuristic performance varies depending on editing mode.
+\paragraph{Thesis Statement} Automated testing frameworks for completion systems reveal information and patterns that enable more informed and targeted improvements to such systems.
 
 \paragraph{} The main purpose of autocompletion is to improve programmer productivity.
 This has mainly been accomplished in two ways.
@@ -315,7 +314,8 @@ However, if we remove the definition of \scheme{x} at the top-level, then there 
 
 \paragraph{} As shown, these language features make it especially hard to implement completion systems for such languages.
 Because of this, work in this area has focused on providing suggestions in a similar way to static completers.
-Because validation efforts for such completers are minimum, improvements to such systems relies on user complaints, and implementing new systems correctly is hard at best.
+Because validation efforts for such completers are minimal, improvements to such systems rely on user complaints, and implementing new systems correctly is hard at best.
+We show how automated testing frameworks help to alleviate these problems.
 
 \chapter{Related Work}
 
@@ -337,7 +337,7 @@ The second uses limited context information to create association rules that gov
 For instance, one rule might be that after objects are created, suggest setters on those objects.
 The third gathers context and uses a modification of the k-nearest-neighbor algorithm to order suggestions based on the nearest snippets found in the training data.
 
-Most validation techniques ran their systems on modified existing code and ranked the results in some way.
+Most validation techniques run their systems on modified existing code and rank the results in some way.
 The authors of the abbreviated input paper~\cite{Abbreviated} ran their system on 3000 lines of code from 6 open source projects that were turned into acronym-like abbreviations.
 They measured how many lines could be completed and how many of those were in the top-N (i.e. top-1 or top-5) suggested completions.
 Hou and Pletcher~\cite{Towards} ran their completion system at every Swing method in several open source projects.
@@ -361,10 +361,10 @@ Calcite~\cite{Calcite} suggests popular ways to instantiate a given class or int
 Another paper explores the effects of sorting, filtering, and grouping~\cite{SortFilter}.
 Finally, Automatic method completion~\cite{Automatic} attempts to take completion beyond names to function bodies as well.
 
-The lack of testing done on dynamic auto-completers helped emphasize the need for a validation system for such languages.
-The testing done on most static auto-completers inspired the use of random testing on existing code.
-The metrics they used are all similar and helped define metrics in a way that works best for such validation systems.
-Lastly, although a lot of improvements were type-system specific, some methods inspired ideas for completion approximation methods implemented as part of this thesis.
+The lack of testing done on dynamic auto-completers helps emphasize the need for a validation system for such languages.
+Most testing is done by comparing completion results of modified existing source to the original source.
+The metrics they used are all similar and help define metrics in a way that works best for such validation systems.
+Lastly, although a lot of improvements are type-system specific, some methods work without static type information and are used as starting points for methods implemented in this thesis.
 
 \chapter{Implementation}
 
@@ -416,7 +416,7 @@ We implement both methods of verification in our automated testing framework.
 
 \subsection*{Ranker}
 
-For a given token in a source file, the ranker will modify the file at that position, either by removing or truncating as described above, and then invoke an auto-completer to get a list of completion results.
+For a given token in a source file, the ranker modifies the file at that position, either by removing or truncating as described above, and then invoke an auto-completer to get a list of completion results.
 It then compares the list of results to the original token, which represents the programmer's intent.
 If the original token is found in the first $n$ results (a configurable number), its rank is recorded.
 It is also noted whether the original token is found later in the list or not at all.
@@ -534,7 +534,7 @@ We found the best results by putting nesting structural heuristics results first
 \centering
 \hrule
 \includegraphics[width=1.0\textwidth]{../output/synthesis/ranker/Remove-combined.png}
-\caption{Ranking results. Ranked refers to completions in the top five positions. Missed means they weren't in the results at all.}
+\caption[Ranking results]{Ranking results. Ranked refers to completions in the top five positions. Missed means they weren't in the results at all.}
 \label{fig:ranker-combined}
 \end{figure}
 
