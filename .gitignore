@@ -34,3 +34,5 @@ compiled
 *.mtc1
 *.out
 *.swp
+
+.Z*
