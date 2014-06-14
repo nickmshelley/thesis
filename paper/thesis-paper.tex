@@ -1,4 +1,4 @@
-\documentclass[ms,electronic,twosidetoc,letterpaper,chaptercenter,parttop,lof]{byumsphd}
+\documentclass[ms,electronic,letterpaper,oneside,chaptercenter,parttop,lof]{byumsphd}
 \usepackage{slatex}
 \usepackage{graphicx}
 \usepackage[
@@ -17,7 +17,7 @@
 
 \newcommand{\Title}{Autocompletion Without Static Typing}
 \newcommand{\Author}{Nick Shelley}
-\newcommand{\GraduationMonth}{August}
+\newcommand{\GraduationMonth}{July}
 \newcommand{\GraduationYear}{2014}
 
 \hypersetup{%
@@ -280,7 +280,8 @@ However, if we remove the definition of \scheme{x} at the top-level, then there 
 (define-syntax (not-define stx)
   (syntax-case stx ()
     [(_ v)
-     (with-syntax ([id (datum->syntax stx 'x)])
+     (with-syntax 
+      ([id (datum->syntax stx 'x)])
        (syntax
         (define id v)))]))
 
@@ -292,7 +293,8 @@ However, if we remove the definition of \scheme{x} at the top-level, then there 
 \begin{minipage}[t]{\linewidth}
 \begin{schemedisplay}
 #lang racket
-(require (for-syntax syntax/strip-context))
+(require 
+ (for-syntax syntax/strip-context))
 (define-for-syntax anchor #'here)
 (define-syntax (f stx)
   (syntax-case stx ()
@@ -448,7 +450,7 @@ The second category attempts to solve or mitigate the problems presented to comp
 
 \subsection{Textual Heuristics}
 
-One obvious source of potential completion options if from the source file itself.
+One obvious source of potential completion options is from the source file itself.
 We estimate that many correct completions can be pulled from the source file because much of programming is about naming pieces of code for convenient use.
 
 Textual heuristics uses source code tokenization of individual source files to determine which completions to suggest.
@@ -631,7 +633,7 @@ Some things we discovered about the completion methods from running the testing 
 
 \item Textual methods performed better than macro methods in general.
 \item Completions from textual methods and macro methods were largely non-overlapping.
-\item Combining methods improved results
+\item Combining methods improved results.
 \item Results degraded with the truncate source alteration method.
 
 \end{itemize}
